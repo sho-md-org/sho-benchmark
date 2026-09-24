@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "description": "Test harness for sho's promise-warning benchmark on a fictional company.",
+  "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.30.0",
     "zod": "4.5.4"
