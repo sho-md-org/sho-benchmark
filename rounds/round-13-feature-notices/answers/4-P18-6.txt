@@ -1,0 +1,48 @@
+## Cobalt Retail — QBR Brief
+
+**⚠️ Read this first:** Your Q1 2027 audit log export promise to Sam Ortiz (CRM-38600) is flagged. There's a decision I can't see that may or may not affect it. **Do not reaffirm the date on the call** until you've checked with the product owner for Audit log export. This is the single most important item on the agenda — see below.
+
+### Where things stand
+
+The account is active and broad-based, but the record trail is thin on substance — mostly call logs with topics and owners, not outcomes. Engagement spans at least six Brightline people (you, Jordan Blake, Priya Shah, Omar Haddad, Tess Brown, Sam Lee), which is healthy coverage but also means no single narrative thread.
+
+Recent activity, most recent first:
+- **Mobile app / search** — DRI-72283 (Sam Lee, Priya Shah)
+- **Sandbox / hosting** — DRI-35074 (you and Sam Lee, 2026-08-23)
+- **Offline / mobile app** — DRI-82140 (Jordan Blake, Tess Brown)
+- **Billing / audit prep** — DRI-75222 (Ana Petrova, Omar Haddad)
+- **QBR prep** — CRM-12694, owner Jordan Blake, next step "follow up on audit prep"
+- **Notifications** — CRM-35990 · **Reporting** — CRM-94849 · **Pricing** — CRM-87224
+
+**Audit prep is the recurring thread.** It shows up as the "next step" on CRM-12694, CRM-24323, and CRM-87224, and again in DRI-75222. Cobalt keeps circling back to it and it keeps getting handed forward. Expect it to dominate the QBR.
+
+### Open commitments
+
+| Commitment | To | Due | Source | Status |
+|---|---|---|---|---|
+| Audit log export, delivered as CSV | Sam Ortiz | Q1 2027 | CRM-38600 | **Flagged — verify before reaffirming** |
+
+On CRM-38600 (2026-07-24) you told Sam: *"you'll have it by Q1 2027 as a CSV export, you have my word."* The note records that **the customer is planning around it** — so this isn't a nice-to-have on their side.
+
+Separately: you made a parallel audit log export commitment to Lena Fox at Granite Insurance, also Q1 2027 (SLA-77342), carrying the same flag. Not a Cobalt agenda item, but one conversation with the product owner covers both.
+
+### Risks
+
+1. **The audit log export commitment is the main exposure.** You gave a personal, unhedged word on a specific date and format, and Cobalt is building plans on it. If anything has shifted, walking that back cold on a QBR is the worst possible venue.
+2. **Audit prep has been unresolved for months** — open as a follow-up since June (CRM-24323) and still open in August (CRM-12694). Cobalt will likely notice.
+3. **Ownership is diffuse.** QBR prep sits with Jordan Blake, audit prep with Omar Haddad, pricing with Priya Shah. Worth confirming who's actually on the call and who answers what.
+4. **No renewal date, ARR, health score, or escalation history** surfaced in these records. If you need commercial framing for the QBR, that has to come from somewhere other than what I can see.
+
+### What to say
+
+**Before the call — the one blocking action:** ask the product owner for Audit log export whether your Q1 2027 CSV commitment to Sam Ortiz still holds. Everything below branches on the answer.
+
+**If it holds:** reaffirm plainly and specifically — Q1 2027, CSV — and give Sam a concrete checkpoint date so he can plan against something firmer than a quarter.
+
+**If it doesn't hold, or you haven't heard back by the call:** don't improvise a new date and don't repeat the old one. Say something like — *"I know audit log export is the one you're planning around. I want to give you a date I can stand behind rather than repeat one, so let me come back to you this week with a firm answer and the detail behind it."* That buys you time without burning credibility, and it's honest. If it has genuinely slipped, own it directly rather than letting Sam discover it later — you gave your word, and how you handle a change matters more to the relationship than the change itself.
+
+**On audit prep:** don't let it cycle again. Name an owner and a date on the call.
+
+**Elsewhere:** the sandbox/hosting work (DRI-35074) is yours and recent — good material for a "here's what we've moved" opener that isn't the audit conversation.
+
+I'd hold the brief here until you've had the product owner conversation; it's the one input that changes what you actually say.

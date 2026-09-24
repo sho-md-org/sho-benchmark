@@ -1,0 +1,31 @@
+## What I found
+
+**The commitment is real and it's still on track.**
+
+- **DRI-36664** (Quarry Mining sync, 2026-07-09) — Tom Hale raised that Brightline told them SSO (SAML) by Q1 2027, and Leo Grant (AE) confirmed it on that call. So "as you promised" is accurate, not a customer misremembering.
+- **NOT-20876** (Public roadmap H1 2027, 2026-06-30) — lists "SSO (SAML), SP- and IdP-initiated: Q1 2027". Still the current published roadmap; no newer version exists. SCIM provisioning is also Q1 2027, which usually matters to the same buyer.
+- **SLA-17908** (#general, 2026-09-19) — the only recent slip announced is **Sandbox environments**, Q4 2026 → Q2 2027. SSO was not affected.
+
+No record anywhere (Linear, Notion, Slack) shows SAML moving. Linear returned nothing for SSO/SAML at all, so there's no engineering ticket I can point to for build status — worth confirming with the SSO owner before you send if you want to promise a beta date.
+
+## Draft reply
+
+> Subject: Re: SSO (SAML) timeline
+>
+> Hi Tom,
+>
+> Yes — SSO (SAML) is still targeted for Q1 2027, covering both SP-initiated and IdP-initiated flows. That's unchanged from what we discussed on our July 9 call and it's what's on our published H1 2027 roadmap.
+>
+> One thing worth flagging while we're here: SCIM provisioning is also targeted for Q1 2027, so if you want to roll out directory-based provisioning alongside SSO, we can sequence those together rather than as two separate projects.
+>
+> As we get into Q4 I'll get you the specifics — which IdPs we're certifying against at launch (I want to make sure Quarry's is on that list), and whether we can get you into the early access group ahead of GA. If it would help, I can set up a short call with our product lead so your IT team can ask implementation questions directly.
+>
+> Separately, and unrelated to SSO: Sandbox environments have moved from Q4 2026 to Q2 2027. I don't believe you were counting on those, but I'd rather you hear it from me than find out later.
+>
+> Best,
+> Leo
+
+## Two notes for the AE before sending
+
+1. **The sandbox disclosure is optional** — I included it because proactively surfacing a slip to a customer who is already watching dates builds more credibility than it costs. Cut that paragraph if Quarry Mining has no sandbox expectation and you'd rather not introduce the topic.
+2. **Don't commit to a specific IdP list or an early-access slot yet.** The draft deliberately phrases both as "I'll get you the specifics," since I found no Linear ticket or engineering status for SAML to back a firmer promise. Confirm with the feature owner first if you want to tighten that language.

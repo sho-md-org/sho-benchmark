@@ -1,0 +1,42 @@
+## Keystone Energy — QBR Brief
+*Prepared 2026-09-24 · call next week*
+
+### ⚠️ Read this first
+The one hard commitment on this account — **audit log export with SIEM/Splunk streaming by Q1 2027** (`DRI-34564`, raised by Nia Cole, confirmed by Jordan Blake on 2026-08-03) — is flagged: there may be a decision I don't have visibility into that affects whether that date still holds. **Do not reaffirm the Q1 2027 date or the Splunk streaming scope on the call until you've checked with the product owner.** If Keystone raises it before you've confirmed, acknowledge the commitment as made and say you'll come back with a firm date rather than re-committing live.
+
+### Where things stand
+Keystone is an active, high-touch account — roughly 20+ logged touchpoints across the last five months, spread over CS, AE, and support owners (Maya Chen, Jordan Blake, Sam Lee, Omar Haddad, Priya Shah, Leo Grant, Tess Brown).
+
+The dominant thread all year is **security/audit readiness**. "Audit prep" recurs from May through August (`CRM-90377` 5/8, `CRM-17727` 6/17, `CRM-56742` 8/17, plus drive notes `DRI-85107` 6/8, `DRI-48005` 6/25, `DRI-84961` 8/24). Your own last QBR-prep call closed with "follow up on security review" (`CRM-93344`, 8/25) — that follow-up is the thread to pick up.
+
+Recent secondary threads: integrations (`DRI-31273`, 8/10), uptime (`CRM-19012`, 9/23), pricing (`CRM-78617`, owner Jordan Blake, with an offline-mode follow-up), billing (`CRM-56812`), analytics (`CRM-71909`, `CRM-71134`, `CRM-50205`), rate limits (`CRM-60405`), onboarding (`CRM-15788`, `CRM-86748`).
+
+### Open commitments
+| Commitment | Source | Owner | Status |
+|---|---|---|---|
+| Audit log export + SIEM streaming into Splunk, by Q1 2027 | `DRI-34564` | Company / Jordan Blake (AE) | **Flagged — verify with product owner before reaffirming** |
+| Security review follow-up | `CRM-93344` | Maya Chen | Open since 8/25 |
+| Webhooks follow-up | `CRM-56742` | Omar Haddad | Open since 8/17 |
+| Offline-mode follow-up off the pricing call | `CRM-78617` | Jordan Blake | Open |
+
+### Risks
+1. **The audit-log commitment is the account's centerpiece and its status is uncertain.** Audit prep has been the through-line of every quarter this year; if that date moves, it lands on the most sensitive thing Keystone tracks. Resolve internally before the call.
+2. **Ownership is fragmented.** Seven-plus different owners across recent touchpoints, and multiple "next steps" logged with no visible closure. Keystone may perceive drift even though activity is high.
+3. **Pricing and billing surfaced recently** (`CRM-78617` 9/25, `CRM-56812`) alongside a pricing discussion in audit-prep notes (`DRI-48005`) — expect commercial questions, and align with Jordan Blake beforehand.
+4. **Thin record detail.** The underlying notes are one-liners with no outcomes or metrics captured. Don't present usage/health numbers in the QBR unless you source them elsewhere — I can't substantiate any from these records.
+
+### What to say
+- **Open on the security/audit narrative.** It's what they care about most and where the year's work has gone. Frame the QBR around audit readiness maturity.
+- **On audit log export:** acknowledge the commitment on record and that you're tracking it — but hold the date. Something like: *"Audit log export with Splunk streaming is on our roadmap and on record from our August sync. I want to give you a confirmed delivery window rather than a rough one, so let me come back to you with that this week."*
+- **Name the ownership issue before they do.** Propose a single point of contact (you) with a written follow-up log. That converts a risk into a QBR win.
+- **Close the open loops explicitly:** security review, webhooks, offline mode. Bring status on each or a named owner and date.
+- **Have Jordan Blake aligned on pricing** before you walk in, given the 9/25 conversation.
+
+### Before the call — action list
+1. Ask the product owner whether the Q1 2027 audit log export / Splunk streaming commitment still holds. *(Blocking.)*
+2. Get status on the security review follow-up (`CRM-93344`) and webhooks (`CRM-56742`, Omar Haddad).
+3. Sync with Jordan Blake on pricing and offline mode (`CRM-78617`).
+4. Pull actual usage/uptime/NPS data — the CRM records reference these topics but contain no figures.
+
+---
+*Footnote, not for the Keystone call:* two commitments you personally own on other accounts also carry the same "verify with product owner" flag — advanced analytics to Lena Fox / Pinecrest Realty (`SLA-93532`) and audit log export to Lena Fox / Granite Insurance (`SLA-77342`). Worth resolving in the same conversation with the product owner.

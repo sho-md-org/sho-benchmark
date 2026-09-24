@@ -1,0 +1,74 @@
+## First, the thing you need to know before you read the rest
+
+**Every Harbor Clinics record in our systems is a one-line stub.** I pulled all 29 of them — 16 CRM records and 13 meeting notes spanning 2026-04-09 to 2026-09-11 — and they contain only a topic, a date, an owner/attendee list, and a "next: follow up on X" pointer. There are no numbers, no contract terms, no named Harbor-side stakeholders, no health score, no ticket detail, no dollar figures.
+
+Slack, Linear, and Notion returned **zero** Harbor results — and zero for generic probes too (`customer escalation`, `bug`, `customer success`), so those three tools appear unpopulated rather than Harbor-specific gaps.
+
+So I can't write you a factual "here's the ARR, here's the renewal date" brief — anything like that would be invented. What I *can* give you is a real analysis of the record trail, which turns out to say quite a lot, plus the specific gaps you need to close before the call.
+
+---
+
+## Where things stand
+
+**Cadence is healthy; substance is undocumented.** 29 touchpoints over ~5 months, most recent 2026-09-11 (DRI-17950). No coverage gap longer than ~3 weeks.
+
+**The churn signal is real and accelerating.** Three meetings titled "Churn":
+- DRI-17076 — 2026-07-20 (Leo Grant, Jordan Blake)
+- DRI-26772 — 2026-09-06 (Leo Grant, Priya Shah)
+- DRI-17950 — 2026-09-11 (you, Tess Brown)
+
+Two of those are five days apart, and the most recent touchpoint on the account is a churn conversation. **You were not in the 2026-09-06 one** — worth finding out from Leo or Priya what triggered it before you walk in.
+
+**Recurring pain themes**, by frequency: support queue (4× — DRI-86859, DRI-83049, DRI-75152, DRI-20995), latency (3× — CRM-94239, DRI-36034, DRI-64445), pricing (3× — DRI-51027, DRI-40615, DRI-55004), dashboards (3× — DRI-60679, DRI-20197, CRM-64035). Support queue and pricing both recurring alongside churn talk is the pattern I'd be most concerned about.
+
+**Two structural gaps worth noting:** there is no `Qbr prep (Harbor Clinics)` doc, though ten other accounts have one (e.g. DRI-28856 Northstar, DRI-33743 Kestrel). And there are no Harbor renewal call notes in CRM, though seven other accounts have them (e.g. CRM-52816, CRM-70743). Harbor is being worked but not documented to the standard of comparable accounts.
+
+## Open commitments
+
+Derived from the `Next:` field on each CRM record, checked against whether any later record covers that topic. **This is inference from metadata, not confirmed status** — verify with the owner before repeating any of it to Harbor.
+
+| Commitment | Owner | Opened | Status |
+|---|---|---|---|
+| Follow up on **search** | Leo Grant | 2026-04-09 (CRM-99028) | No search record exists |
+| Follow up on **webhooks** | Omar Haddad | 2026-04-25 (CRM-97969) | No webhooks record exists |
+| Follow up on **analytics** | Ana Petrova | 2026-05-24 (CRM-73374) | No analytics record exists |
+| Follow up on **webhooks** | you | 2026-06-18 (CRM-34130) | No webhooks record exists |
+| Follow up on **SSO questions** | Sam Lee | 2026-07-15 (CRM-34883) | No SSO record after this date |
+| Follow up on **search** | Omar Haddad | 2026-07-25 (CRM-75336) | Still nothing |
+| Follow up on **search** | Priya Shah | 2026-08-03 (CRM-96355) | Still nothing |
+| Follow up on **rate limits** | Sam Lee | 2026-08-22 (CRM-49163) | No rate limits record |
+| Follow up on **search** | Ana Petrova | 2026-08-22 (CRM-34983) | Still nothing |
+| Follow up on **notifications** | Priya Shah | 2026-08-26 (CRM-39320) | No notifications record since 2026-06-15 |
+| Follow up on **analytics** | Ana Petrova | 2026-08-26 (CRM-64035) | Still nothing |
+
+**The standout: "follow up on search" has been committed four separate times by three different people across Apr→Aug, and no record of a search follow-up exists anywhere.** If Harbor raises this, you have no defensible answer. Closed-out threads, for contrast: permissions UI (CRM-78984 → CRM-34983), onboarding (CRM-36695 → CRM-48825), latency (CRM-41255 → DRI-64445).
+
+## Risks
+
+1. **Churn conversations are active and you're not centrally in them.** Highest-priority pre-call item.
+2. **Four unanswered "search" commitments.** A visible, repeated pattern of dropped follow-through.
+3. **Ownership is fragmented** — 9 different owners across 16 CRM records; you own only 2 (CRM-94239, CRM-34130). Nobody is holding the thread, which is likely *why* items keep dropping.
+4. **Pricing discussed three times with no recorded resolution** and no renewal notes on file.
+5. **You are under-informed relative to your own account team.** Leo Grant appears in the most churn-adjacent material.
+
+## What I'd say on the call
+
+I'd hold these loosely until you've filled the gaps below — they're a structure, not scripted claims.
+
+- **Open by naming the follow-through problem before Harbor does.** "I've reviewed our last two quarters and we've been inconsistent closing loops with you — specifically on search. I want to fix that with a single owner and dates." Pre-empting this is far stronger than defending it.
+- **Propose yourself as single point of contact**, with a named owner and date per open item. This directly addresses the fragmentation that caused the misses.
+- **Ask about support queue and latency directly** — recurring across the whole period. Come with the actual ticket data (see below).
+- **Do not open the pricing conversation** until you know the renewal date and current terms. You'd be negotiating blind.
+- **Let them talk.** With records this thin, your best asset is listening; don't assert account facts you can't source.
+
+## Before the call — fill these gaps
+
+You'll need to source these outside these tools:
+
+1. **Talk to Leo Grant and Priya Shah about the 2026-09-06 churn discussion (DRI-26772).** Do this first.
+2. Renewal date, contract value, seat/usage trend — nowhere in CRM.
+3. Actual support ticket volume, SLA breaches, latency metrics.
+4. Real status on the search, webhooks, SSO, rate limits, analytics, and notifications items — from Omar, Sam, Ana, and Priya.
+5. Harbor-side stakeholders and who's attending. No customer contact is named in any record.
+
+If you can get me the renewal terms and ticket data, I'll turn this into a finished QBR deck. I'd also suggest logging a proper `Qbr prep (Harbor Clinics)` doc afterward — its absence is conspicuous next to the rest of your book.

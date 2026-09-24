@@ -1,0 +1,95 @@
+I pulled every Aster Health record across all four systems — 25 records, ~20 fetched in full. Here's the brief, plus an important caveat about what the systems actually contain.
+
+---
+
+# Aster Health — QBR Brief
+**Prepared for:** Maya Chen · **Call:** week of 2026-09-28 · **Sources:** CRM + Drive (Slack, Linear, Notion have no Aster-specific records)
+
+## ⚠️ Read this first: the underlying data is thin
+
+Every Aster Health record in CRM and Drive is a **one-line metadata stub** — attendees, a topic tag, an owner, and a "next step" tag. Not one contains substance. There is no recorded ARR, renewal date, contract term, health score, NPS number, usage data, ticket volume, or description of any actual issue.
+
+So this brief gives you the **shape** of the account — cadence, themes, who's involved, which follow-ups never closed — which is real and citable. It cannot give you the numbers, and I haven't invented any. The gaps are listed at the end with where to source each.
+
+---
+
+## 1. Where things stand
+
+**Engagement cadence has fallen off sharply.** April–June: 18 touchpoints. July–September: 6.
+
+| Period | Records | Topics |
+|---|---|---|
+| Apr 2026 | 8 | sandbox, NPS, exports ×2, dashboards, support queue, integrations |
+| May 2026 | 4 | sandbox ×2, hosting, QBR prep |
+| Jun 2026 | 6 | QBR prep, integrations, audit prep, latency ×2, support queue |
+| Jul 2026 | 3 | NPS, search, dashboards |
+| Aug 2026 | 1 | SSO questions (DRI-46065) |
+| Sep 2026 | 3 | pricing (DRI-53905), dashboards (DRI-75615), NPS (DRI-36735) |
+
+That drop is the single clearest signal in the data. It may be normal post-implementation settling, or disengagement — the records don't say which, and that's worth knowing before you dial in.
+
+**Recent activity (last 45 days), which sets your agenda:**
+- **2026-09-10 — Pricing** (DRI-53905, Dana Ortiz): pricing discussed alongside support queue. First pricing conversation in the record. Late-cycle pricing talk usually precedes a renewal or a budget challenge.
+- **2026-09-17 — Dashboards** (DRI-75615, Omar Haddad + you): dashboards + search.
+- **2026-09-28 — NPS + audit prep** (DRI-36735, Omar Haddad + Ana Petrova): **dated four days from now** — this is either your call or immediately adjacent to it. Confirm whether it's the same meeting; if it's separate, you have two Aster touchpoints in one week that should be coordinated.
+
+**Recurring themes across the year:** dashboards (5 mentions, the most persistent), support queue (4), NPS (4), search (3), exports (3), sandbox (3), latency (2), integrations (2), plus security/audit and SSO threads.
+
+**People:** Omar Haddad is the most frequent participant and appears in all three recent sessions — treat as primary relationship. Also recurring: Ana Petrova, Dana Ortiz, Jordan Blake, Leo Grant. Internal owners across records: Leo Grant (4), Ana Petrova (3), Sam Lee (2), Maya Chen (2 — CRM-62644, CRM-70994), Priya Shah, Tess Brown.
+
+## 2. Open commitments
+
+No record shows a closure, so every "next step" is formally open. Tracing each forward against later records, they split into two groups:
+
+**Appear to have been picked up** *(follow-up meeting on that topic exists — confirm actual resolution)*
+| Commitment | Opened | Apparent follow-through |
+|---|---|---|
+| SSO questions | CRM-57156 (Apr 19) | DRI-46065, Aug 7 |
+| Dashboards | CRM-88906 (Apr 28), CRM-97035 (Jun 14) | DRI-75615, Sep 17 |
+| Search | CRM-62644 (May 10, **your record**) | DRI-36553, Jul 19 |
+| Support queue | CRM-70994 (Jun 3, **your record**) | DRI-53905, Sep 10 |
+| Audit prep | CRM-45213 (Apr 18) | DRI-48323 Jun 13; again Sep 28 |
+| NPS | CRM-75476 (Jul 21) | DRI-36735, Sep 28 |
+
+**No trace of follow-through — these are your exposure**
+| Commitment | Opened | Status |
+|---|---|---|
+| **Security review** | CRM-26522 (Apr 13), CRM-16329 (Jun 14) | Committed **twice**, five months ago and three months ago. No security-review record exists in any system. |
+| **Hosting** | CRM-81799 (May 11, owner Tess Brown) | Next step was "follow up on hosting" — no later hosting record anywhere. |
+| **Churn follow-up** | CRM-76005 (Apr 18), CRM-64767 (May 17), CRM-68765 (Jun 22) | Flagged three times as a next step; also the paired topic in DRI-48323 (Jun 13) and DRI-46065 (Aug 7). No churn-specific record exists. |
+
+## 3. Risks
+
+1. **"Churn" recurs five times as a follow-up theme and was never worked.** This is the most serious thing in the file. Whether it means Aster's own customer churn (they're a health company — plausibly a metric they're tracking in your product) or *their* risk of churning is genuinely ambiguous in the records. **Resolve this before the call** — the two readings demand opposite conversations.
+2. **An unfulfilled security review, asked twice.** In healthcare, security review requests are rarely casual — they're usually tied to procurement, compliance, or an internal audit deadline. Combined with the recurring audit-prep thread (Jun 13 and again Sep 28), something compliance-shaped is running in the background that Brightline hasn't served.
+3. **Pricing entered the conversation on Sep 10 and you weren't in it.** Dana Ortiz covered it. You need that readout before you walk in.
+4. **Declining cadence** — 18 touchpoints in Q2, 6 since. Reduced contact ahead of a pricing discussion is the classic pre-renewal pattern.
+5. **Ownership is fragmented.** Eight different internal owners across 14 CRM records, with no consistent thread. Aster has likely experienced this as inconsistency.
+6. **Dashboards never resolved.** Raised April, June, July, and again Sep 17. A topic that recurs for six months is usually an unmet need, not a healthy recurring check-in.
+
+## 4. What to say
+
+**Open — name the gap yourself.** Going in claiming a clean record won't survive contact with Omar. Something like: *"Before we get to the numbers, I want to own something. You asked us for a security review in April and again in June, and we didn't deliver it. I'm taking that one personally and I'll have a date for you by end of this call."* Leading with the miss buys credibility for everything after.
+
+**Then hand the agenda to them.** With cadence down and pricing suddenly live, your highest-value move is diagnostic, not presentational. Ask directly: *"What's changed on your side since June?"* and *"When Dana raised pricing a couple of weeks ago — what was driving that?"*
+
+**Close the three dead threads with dates, not sympathy.** Security review, hosting, and dashboards. Each needs a named owner and a calendar date before the call ends. Dashboards especially — after six months of recurring mentions, propose a single working session to define what "done" means rather than another status touch.
+
+**Do not lead with NPS.** You have no score in the record, and DRI-36735 pairs NPS with audit prep on Sep 28 — let that session carry it.
+
+**Get ahead of "churn."** Once you know which meaning it carries, either bring data (if it's their metric) or bring a retention conversation (if it's their risk). Walking in without knowing is the one avoidable unforced error.
+
+---
+
+## 5. Before the call — fill these gaps
+
+The records genuinely do not contain these. Sourcing, in priority order:
+
+1. **What "churn" refers to** — ask Leo Grant (owner of CRM-76005, CRM-68765) or Jordan Blake (DRI-48323, DRI-46065).
+2. **Pricing readout from Sep 10** — Dana Ortiz, DRI-53905. *Highest urgency.*
+3. **Contract facts** — ARR, renewal date, term, seat count. Not in any system I can reach; pull from billing or finance.
+4. **Whether Sep 28 (DRI-36735) is your call or a separate one** — Omar Haddad or Ana Petrova.
+5. **Why the security review stalled** — Ana Petrova (CRM-26522) and Priya Shah (CRM-16329).
+6. **Product health** — usage trend, open ticket count, actual NPS score, latency status post-June (CRM-16329, CRM-68765).
+
+One note on sourcing: the generic "Qbr prep" pages in Notion (NOT-42571 Sep 15, NOT-52051 Sep 5, both owned by Omar Haddad) are not Aster-tagged and are also stubs, so I couldn't confirm whether they relate to this account. Given Omar's involvement, worth a direct look before the call.

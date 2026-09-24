@@ -1,0 +1,85 @@
+## First, the thing that changes how you should use this
+
+I searched all five systems and read every Keystone Energy record I could find. **Every record is a one-line stub.** There is no substantive account data anywhere: no ARR, no renewal date, no health score, no seat/usage numbers, no stakeholder map, and no commitments with owners and due dates. Slack and Linear returned **zero** Keystone results.
+
+A representative example, in full — this is the entire record:
+
+> `CRM-19012` · Uptime (Keystone Energy), 2026-09-23 — "Call with Keystone Energy. Discussed uptime. Owner Sam Lee. Next: follow up on NPS."
+
+So I can't hand you a real QBR brief, because the underlying facts don't exist in the tools. What follows is the scaffolding I *can* build from metadata — topic timeline, owners, recurring themes, and dangling threads — plus a list of what you must source elsewhere before the call. Treat every theme below as a **pointer to a conversation you need to reconstruct**, not as a finding.
+
+---
+
+## Where things stand (topic timeline)
+
+| Date | Record | Topic |
+|---|---|---|
+| 2026-09-25 | `CRM-78617` | Pricing — owner Jordan Blake |
+| 2026-09-23 | `CRM-19012` | Uptime — owner Sam Lee |
+| 2026-08-15 | `DRI-20667` | Churn **and pricing** — Ana Petrova |
+| 2026-08-12 | `DRI-41756` | Sandbox and latency — Jordan Blake, Omar Haddad |
+| 2026-08-10 | `DRI-31273` | Integrations **and QBR prep** — Sam Lee, **Maya Chen** |
+| 2026-07-21 | `DRI-75981` | NPS **and churn** — Leo Grant, Dana Ortiz |
+| 2026-07-21 | `CRM-71909` | Analytics — Leo Grant |
+| 2026-07-12 | `CRM-56812` / `DRI-64156` | Billing / Uptime and analytics |
+| 2026-07-07 | `DRI-39787` | Dashboards |
+| 2026-06-22 | `CRM-79549` | Support queue — Priya Shah |
+| 2026-06-18 | `CRM-86748` | Onboarding — Sam Lee |
+| 2026-06-17 | `CRM-17727` | Audit prep — Ana Petrova |
+| 2026-05-28 | `DRI-85290` | Roadmap and notifications — Maya Chen |
+| 2026-04-07 | `CRM-25431` | Security review — Tess Brown |
+
+Two notes. `CRM-78617` is dated **2026-09-25 — tomorrow**, so it's likely a scheduled call rather than a completed one; check whether that's your QBR or a separate pricing conversation, because it changes your prep. And `DRI-31273` (Aug 10) is the only record that mentions QBR prep and you were in it — that's your best memory anchor.
+
+## Recurring themes, by weight
+
+1. **Reliability — uptime and latency.** The single most persistent thread, spanning April to September 23: `CRM-23178`, `DRI-46374`, `DRI-64156`, `DRI-41756`, `CRM-19012`. Two separate calls also close with "follow up on uptime" (`CRM-86748`, `CRM-71909`). This is almost certainly your central QBR topic.
+2. **Commercial pressure.** Pricing appears Aug 15 (`DRI-20667`) and again Sept 25 (`CRM-78617`), plus billing (`CRM-56812`).
+3. **Churn and sentiment.** Churn discussed twice (`DRI-75981` Jul 21, `DRI-20667` Aug 15), and critically, **`DRI-20667` pairs churn directly with pricing** — the combination a CSM should worry about most.
+4. **Analytics, reporting, dashboards.** The highest-volume topic cluster (`CRM-50205`, `CRM-71134`, `CRM-71909`, `CRM-71045`, `CRM-79992`, `DRI-39787`) — likely an unmet need or an expansion opening.
+5. **Support load.** `CRM-79549`, and two other calls end with "follow up on support queue" (`CRM-17727`, `CRM-25431`).
+6. **Compliance.** Security review (`CRM-25431`) → audit prep (`CRM-17727`).
+
+## Open commitments — the honest version
+
+There are no tracked commitments. What exists is a "Next:" line on each CRM record, with no due date and no completion status. Nine are dangling:
+
+| Source | Owner | "Next" |
+|---|---|---|
+| `CRM-78617` | Jordan Blake | follow up on offline |
+| `CRM-19012` | Sam Lee | follow up on NPS |
+| `CRM-71909` | Leo Grant | follow up on uptime |
+| `CRM-56812` | Leo Grant | follow up on search |
+| `CRM-86748` | Sam Lee | follow up on uptime |
+| `CRM-71045` | Jordan Blake | follow up on webhooks |
+| `CRM-79549` | Priya Shah | follow up on integrations |
+| `CRM-17727` | Ana Petrova | follow up on support queue |
+| `CRM-25431` | Tess Brown | follow up on support queue |
+
+I can't tell you whether any of these were closed — and I also can't tell you which of these people are Brightline colleagues versus Keystone contacts, because no record distinguishes them. **Do not read these into the room as commitments.** Verify first; walking in and citing an obligation that was actually closed in July is worse than not raising it.
+
+## Risks
+
+Two I can support, one meta:
+
+- **Churn risk tied to price.** Supported by `DRI-20667` and `DRI-75981`. Unquantified — no NPS score, no renewal date.
+- **Reliability fatigue.** A six-month unbroken uptime/latency thread, still live 24 hours ago, suggests an issue that hasn't been put to bed.
+- **You are walking in under-prepared on paper.** The account has near-zero institutional memory. If Keystone's team references a specific incident, SLA credit, or commitment, nothing in these tools will back you up.
+
+## What to say
+
+Given the data gap, I'd steer toward a **listening-led QBR** rather than an assertive one:
+
+- **Open on reliability, and name it first.** "I want to start with platform reliability, because it's come up in nearly every conversation we've had since the spring." You're on safe ground — the record supports the pattern even if not the specifics.
+- **Ask them to quantify the pain** rather than asserting you know it. This converts your gap into a genuine discovery question.
+- **Raise analytics as an opportunity, not a complaint.** It's your highest-frequency topic and the natural expansion conversation.
+- **On pricing, don't go first.** Given churn and pricing are linked in the record, let them frame it. Sync with Jordan Blake beforehand — they own both pricing records.
+- **Close by rebuilding the commitment log,** with owners and dates, in writing. That fixes the root problem for next quarter.
+
+## Before the call — fill these gaps
+
+Sources outside these tools: renewal date and ARR; current NPS and who gave it; uptime/incident history and any SLA credits; the actual status of the nine open threads; a stakeholder map with economic buyer; and whether `CRM-78617` (Sept 25) *is* your call.
+
+Fastest path: 15 minutes with **Jordan Blake** (pricing, `CRM-78617`) and **Sam Lee** (uptime + your Aug 10 QBR prep session, `DRI-31273`). Between them they cover your two biggest unknowns.
+
+Want me to draft the agenda and talk track as a document you can edit, or pull the comparable renewal notes from other accounts (`CRM-52816` Northstar Pharma, `CRM-74447` Riverton City) to see whether those are richer and worth using as a template?

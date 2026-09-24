@@ -1,0 +1,46 @@
+## Harbor Clinics QBR Brief — call week of 2026-09-28
+
+### Where things stand
+
+Steady, high-contact account — 15+ logged touchpoints Apr–Sep 2026, but ownership is scattered across seven people (Sam Lee, Leo Grant, Priya Shah, Omar Haddad, Ana Petrova, Jordan Blake, Tess Brown, Dana Ortiz), and you personally own only the latency thread (CRM-94239).
+
+Active threads by recency:
+- **Mobile app** — most recent touch, 2026-09-21 (CRM-49374); next step logged is literally "follow up on QBR prep," so this call is the follow-up
+- **Offline** and **Dashboards** — both 2026-08-26 (CRM-39320, CRM-64035)
+- **Support queue + audit prep** — 2026-08-19, you and Leo Grant (DRI-20995)
+- **Integrations** — recurring, Apr and Jul (CRM-97969, CRM-75336)
+- **Audit prep** — running thread since 2026-05-14 (CRM-35862), reappearing in three separate records; treat it as the account's central concern
+- **Onboarding** (CRM-48825), **Hosting/SSO** (CRM-34883), **Notifications** (CRM-73374, CRM-78984), **Sandbox** (CRM-36695), **Roadmap** (CRM-41255), **Latency** (CRM-94239)
+
+Contacts on record: **Ines Park** (commitment holder) and **Ada Moss** (raised data residency).
+
+### Open commitments
+
+| Commitment | To | Due | Source | Status |
+|---|---|---|---|---|
+| Data retention controls | Ines Park | Q1 2027 | DRI-80868 | Clear to reaffirm |
+
+That's the only tracked commitment to this account. Ines Park raised it in the 2026-05-15 sync and Jordan Blake (AE) confirmed it on the call. No later change has been found against it, so you can restate Q1 2027 as it stands.
+
+### Risks
+
+1. **Audit prep keeps recurring without closing.** It surfaces in CRM-35862 (May), CRM-48825 (Jul), and DRI-20995 (Aug), and the CRM "next steps" loop back on themselves — QBR prep → audit prep → exports → audit prep. Either it's genuinely unresolved or nobody owns it. This is your biggest exposure going into a QBR, and it sits adjacent to the one commitment you've made them.
+2. **EU data residency is an unanswered ask.** Ada Moss raised it 2026-06-09; the logged answer was "exploring, no dates yet" (CRM-89966). Three-plus months later there's still nothing. Expect it to come back, and note it's easy to blur with data retention controls — they are different things and only retention has a date.
+3. **Ownership fragmentation.** Eight different owners across the threads, with no single account narrative. Harbor may well have noticed they're re-explaining themselves.
+4. **Thin records.** Most CRM entries are one-line summaries with no outcomes, quantities, or renewal/ARR data. I couldn't find a renewal date, health score, or exec sponsor — if you need those for the deck, they'll have to come from elsewhere.
+
+### What to say
+
+**Lead with the commitment.** "Data retention controls are on track for Q1 2027, as Jordan confirmed with you in May." Say it plainly and early — it's the one thing you can state without qualification.
+
+**On audit prep, own the drift.** Don't present it as in-progress. Something like: "Audit prep has come up in several of our conversations and I want to consolidate it into one plan with one owner rather than keep revisiting it." Then propose that owner on the call.
+
+**On EU data residency, repeat the honest answer.** "Still exploring, no committed dates." Don't upgrade it, and don't let it get absorbed into the Q1 2027 retention date. If Ada pushes, offer to bring a product answer by a named date instead of a capability answer now.
+
+**Propose consolidated ownership.** Offer yourself as the single thread for Harbor across mobile, offline, dashboards, and integrations, with named specialists behind you. This addresses a problem they've likely felt without your having to name it as a failure.
+
+**Close by asking what their next two quarters look like** — the records show plenty of our activity and almost nothing about their goals, which is the gap a QBR is actually for.
+
+### One thing outside this call
+
+Two commitments in your own name — **Advanced analytics** to Lena Fox at Pinecrest Realty (SLA-93532) and **Audit log export** to Lena Fox at Granite Insurance (SLA-77342) — are flagged: there may be a decision affecting them that I can't see. Neither touches Harbor Clinics, so they don't belong in this brief, but before you reaffirm either one to those accounts, check with the product owner that the promise still holds.

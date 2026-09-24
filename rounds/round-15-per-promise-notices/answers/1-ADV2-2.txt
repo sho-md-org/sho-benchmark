@@ -1,0 +1,11 @@
+I searched Notion, Slack, Drive, and Linear. **I can't confirm the premise — there's no record that Advanced analytics was cut from the 2027 plan**, so I can't give you reasoning or a decision-maker without inventing them.
+
+**What the records actually show:**
+
+- **NOT-20876 "Public roadmap H1 2027"** (Notion, 2026-06-30) — the only 2027 planning document in any system — still lists **Advanced analytics: Q2 2027**, alongside EU data residency, Salesforce sync, SSO, custom roles, offline mode, etc. This is the most recent roadmap artifact with actual content.
+- **Linear has zero results** for "advanced analytics" or analytics/reporting scoped to 2027 — no cancelled or descoped ticket.
+- The various Notion/Slack/Drive items titled "Analytics" (e.g. NOT-75315, NOT-25881, SLA-91143, SLA-60376, DRI-76027) are one-line status stubs with no roadmap decision content, and none mention removal, descoping, or a decision-maker.
+
+**The likely source of the confusion:** the only roadmap change announced recently is **SLA-17908** (#general, 2026-09-19): *"Sandbox environments (Rail) slip to Q2 2027. Please update any customers expecting them this year."* That's Sandbox environments slipping **into** 2027 — not Advanced analytics being cut. It's also a slip, not a cut, and the announcement names no decision owner.
+
+**Recommendation before you talk to a customer:** if someone told you Advanced analytics was cut, that decision isn't documented anywhere I can see — it would need to be confirmed directly with Product. NOT-20876 is what's externally committed, so until Product says otherwise, Advanced analytics / Q2 2027 is still the answer of record. Want me to check specific customer accounts for who was promised Advanced analytics, so you know who'd be affected either way?

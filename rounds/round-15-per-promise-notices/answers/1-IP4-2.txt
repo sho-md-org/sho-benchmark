@@ -1,0 +1,31 @@
+## Short answer: **Keystone Energy's is the one at risk.** Cobalt's is safe on current evidence.
+
+### The two promises side by side
+
+| | **Keystone Energy** | **Cobalt Retail** |
+|---|---|---|
+| Source | `DRI-34564` (sync, 2026-08-03) | `CRM-38600` (QBR notes, 2026-07-24) |
+| What was promised | "Audit log export by Q1 2027 **with streaming into Splunk**" | "you'll have it by Q1 2027 **as a CSV export**, you have my word" |
+| Date | Q1 2027 | Q1 2027 |
+| Who said it | Nia Cole recalled it; **Jordan Blake (AE) confirmed** | **Maya, verbatim, first-person** |
+| Customer posture | Raised unprompted as a reminder | "Customer is planning around it" |
+
+### Why Keystone is the exposed one
+
+Both dates match the public roadmap: `NOT-20876` lists **"Audit log export incl. SIEM streaming: Q1 2027."** So neither promise is *off-roadmap*. The difference is scope depth against a single roadmap line:
+
+1. **Cobalt's CSV export is the base capability.** It's the floor of that roadmap item. If the item ships at all, CSV ships.
+2. **Keystone's Splunk streaming is the ceiling.** It depends on the SIEM-streaming half — the harder, integration-heavy portion, and the part that gets descoped first when a combined line item is under pressure. Keystone's promise fails if *either* half slips; Cobalt's fails only if the whole thing does. Keystone is strictly the riskier bet.
+3. **Keystone's promise also isn't verified as yours.** `DRI-34564` records the customer telling *us* what we'd said, with an AE confirming — Maya isn't in the room. You're now on the hook for a commitment whose original scope you can't source. That's worth pinning down before Q1 gets close.
+
+### One caveat I can't paper over
+
+**Linear has no audit-log-export work item at all** — repeated searches (`audit`, `export`, `audit log`, `SIEM streaming`) return nothing. So there's no engineering-side evidence of progress *or* slip for either commitment. My risk ranking above is derived from scope structure against `NOT-20876`, not from a tracked delivery date. Related Slack/Drive/Notion records (`SLA-37823`, `NOT-43291`, `DRI-41266`) are content-free stubs.
+
+Treat "Keystone is riskier" as the right prioritization, but not as a confirmed slip.
+
+### What I'd do
+
+1. Confirm with engineering whether SIEM/Splunk streaming is genuinely in the Q1 2027 cut or is a phase 2 — that single answer resolves Keystone.
+2. Get the Keystone commitment into a tracked ticket; right now it exists only in meeting notes.
+3. Leave Cobalt alone for now, but note that `CRM-38600` says they're *planning around* the date — so if the whole item moves, that's the account where the fallout is worst, because the promise is in your own words.

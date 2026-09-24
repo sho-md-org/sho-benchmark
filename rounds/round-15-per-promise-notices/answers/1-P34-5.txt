@@ -1,0 +1,56 @@
+## Bottom line first
+
+I found and read every Aster Health record in the connected systems — 25 records across CRM and Drive, plus the Notion QBR-prep pages. **They are all one-line stubs.** Not one contains an ARR figure, renewal date, health score, customer-side contact name, ticket number, or a logged commitment. Slack and Linear return nothing at all for this workspace (verified with unrelated control queries — both are empty, not just Aster-silent).
+
+So I can't write you a factual "where things stand / open commitments" section, and I'm not going to invent one for a customer-facing call. Here's the real signal the record *does* support, the gaps you need to close, and a talk-track skeleton.
+
+## What the record actually supports
+
+**Topic frequency over the last 6 months** (this is the most useful thing in there):
+
+| Theme | Touches | Records |
+|---|---|---|
+| NPS | 4 | CRM-26522, DRI-30445, CRM-75476, DRI-36735 |
+| Dashboards | 4 | CRM-57156, CRM-88906, CRM-75476, DRI-75615 |
+| Security / audit / SSO | 4 | CRM-26522, DRI-48323, CRM-16329, DRI-46065 |
+| Support queue | 3 | CRM-88906, CRM-97035, DRI-53905 |
+| Sandbox | 3 | DRI-86962, CRM-62644, CRM-64767 |
+| Exports | 3 | CRM-45213, CRM-76005, DRI-23711 |
+| Search | 3 | DRI-70983, DRI-36553, DRI-75615 |
+| Latency | 2 | CRM-16329, CRM-68765 |
+| Pricing | 1 | DRI-53905 |
+
+**Three things I'd treat as genuine flags:**
+
+1. **"Churn" is the recurring next-step, April through August** — named as the follow-up in CRM-76005 (Apr 18), CRM-64767 (May 17), CRM-68765 (Jun 22), DRI-48323 (Jun 13), DRI-46065 (Aug 7). Five records across four months. Whatever drove that, it was never closed out in writing.
+2. **The recent arc points at commercial pressure.** SSO + churn (DRI-46065, Aug 7) → **pricing** + support queue (DRI-53905, Sep 10) → dashboards + search (DRI-75615, Sep 17, you attended). A pricing conversation three weeks before a QBR usually means the QBR is really a renewal conversation.
+3. **Aster Health has no `renewal call notes` record.** Seven other accounts do, and those are where commitments get logged as renewal conditions — e.g. CRM-52816 (Northstar Pharma), where Tess Brown committed to HubSpot sync by a date and it was logged explicitly. Aster has no such record, so either nothing was ever committed, or commitments were made and never logged. Worth assuming the latter until someone confirms otherwise.
+
+**Also:** DRI-36735 is dated **2026-09-28** — next week, future-dated. NPS + audit prep, with Omar Haddad and Ana Petrova. That's either your call or sits right beside it. Check whether you're on it.
+
+**Internal bench** (no customer-side names appear anywhere): Omar Haddad and Ana Petrova are the most frequent participants; Leo Grant and Jordan Blake carry the exports/integrations/SSO thread; Dana Ortiz owns audit prep and pricing; Priya Shah on latency; Sam Lee and Tess Brown on dashboards/hosting. Your own last touch was DRI-75615 on Sep 17.
+
+## Gaps to close before the call
+
+Five answers you need, none of which are in the tools:
+
+1. Renewal date, ARR, and whether this QBR is pre-renewal. *(Ask Dana Ortiz — owns DRI-53905, the pricing conversation.)*
+2. What the pricing discussion on Sep 10 actually was — increase, repackaging, or their pushback.
+3. What "churn" referred to in those five records. *(Jordan Blake and Leo Grant appear in most of them.)*
+4. Any commitments made verbally that were never logged — specifically on dashboards, search, and SSO. *(Omar Haddad, Ana Petrova.)*
+5. Current NPS and the status of the audit/SOC review.
+
+## Talk-track skeleton
+
+Structure is sound; the bracketed values are yours to fill:
+
+- **Open — value delivered.** Lead with adoption on dashboards and search, the two most-worked areas. `[need: usage numbers]`
+- **Service health.** Support queue and latency both recurred through Q2. Get ahead of it: name the trend and what changed. `[need: ticket volume, resolution time, latency now vs. June]`
+- **Compliance.** Security review, audit prep, and SSO ran continuously April–September. If their audit is live, this is your strongest credibility moment — bring status, not reassurance. `[need: audit + SSO state]`
+- **Roadmap.** Search and roadmap were discussed with you directly in DRI-36553 (Jul 19). Only re-commit to dates Product has confirmed.
+- **Commercial.** Don't let pricing surface as a surprise from their side. If a change is coming, you raise it.
+- **Close — written commitments.** End by restating every commitment with an owner and date, and log it as a renewal-conditions record the way CRM-52816 does. That's the gap that bit this account already.
+
+One caveat on the QBR-prep pages (NOT-42571, NOT-52051, NOT-44808 and the others): they're owned by Omar Haddad and none of them name Aster Health, so I couldn't confirm any apply to this account.
+
+Want me to draft the slide-by-slide narrative once you've filled in the renewal and pricing facts, or pull the comparable QBR structure from one of the accounts that does have complete renewal notes?

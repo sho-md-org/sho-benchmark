@@ -1,0 +1,63 @@
+# Aster Health — QBR Brief
+
+## 1. Where things stand
+
+The account has been active all year, but the record trail is thin — nearly every entry is a one-line call log with no metrics, health score, or renewal date attached. What's visible:
+
+| Theme | Records | Latest |
+|---|---|---|
+| Sandbox | DRI-86962, CRM-62644, CRM-64767 | May 17 |
+| Exports | CRM-45213, CRM-76005 | Apr 18 |
+| Dashboards | CRM-57156, CRM-75476 | Jul 21 |
+| Support queue | CRM-88906, CRM-97035 | Jun 14 |
+| Audit prep | DRI-48323 | Jun 13 |
+| SSO questions | DRI-46065 | Aug 7 |
+| Latency | CRM-68765 | Jun 22 |
+| Pricing | DRI-53905 | Sep 10 |
+| NPS | DRI-36735 | **Sep 28 (scheduled — after today)** |
+
+Named contacts across the year: Omar Aziz, Omar Haddad, Ana Petrova, Dana Ortiz.
+
+Two signals worth noting on trajectory: **pricing came up on Sep 10 (DRI-53905)** and an **NPS session is on the calendar for Sep 28 (DRI-36735)** — likely just after your call. Both suggest a commercial conversation is already forming around this QBR.
+
+## 2. Open commitments
+
+**Higher API rate limits — delivered. ✅**
+
+Priya Shah (AE) committed higher API rate limits to Omar Aziz by October, and Omar reminded the team of it on the Jun 12 sync where Priya reconfirmed (DRI-86231). Crane shipped Sep 20, raising API rate limits for all paid plans (SLA-26281).
+
+This is your strongest talking point and it's safe to state flatly — it landed ahead of the October date, and no later change contradicts it.
+
+That is the only tracked commitment on Aster Health. Nothing else in the record set carries an outstanding promise to this account.
+
+## 3. Risks
+
+1. **"Churn" is the recurring next-step.** Four separate threads — CRM-64767 (sandbox), CRM-76005 (exports), CRM-68765 (latency), DRI-46065 (SSO) — and the Jun 13 audit-prep session (DRI-48323) all route to a churn follow-up. That's a pattern, not a coincidence. Combined with the Sep 10 pricing discussion, treat this as a renewal-risk QBR, not a routine check-in.
+2. **Support queue keeps resurfacing.** Raised Apr 28 (CRM-88906) and again Jun 14 (CRM-97035), and it's the follow-up item from your own Jun 3 QBR-prep call (CRM-70994). No record shows it resolved. Assume they will raise it.
+3. **No single owner.** Aster threads are owned by Leo Grant, Sam Lee, Ana Petrova, Tess Brown, Dana Ortiz, Jordan Blake, and you. Nothing indicates the loops were closed across those handoffs — you may walk in without knowing what they were last told.
+4. **Quiet since July on delivery topics.** Dashboards (Jul 21) and SSO (Aug 7) are the last substantive product threads; since then only pricing and NPS. A gap before a pricing conversation is not a good shape.
+
+## 4. What to say
+
+**Lead with the win.** "Higher API rate limits went live Sep 20 — ahead of the October date we committed to Omar in June." Concrete, on time, theirs specifically.
+
+**Get ahead of support.** Don't wait for them to raise it. Name it yourself, say what changed since June, and if nothing has, say that and bring a response plan. Raising it first is the difference between accountability and being caught out.
+
+**Ask directly about the renewal.** Given the churn follow-ups and the Sep 10 pricing thread, ask where they are and what would make them confident. Better to hear it now than after the NPS session on Sep 28.
+
+**Close the open loops by name** — sandbox, exports, dashboards, SSO, latency. Confirming status on each signals the handoffs didn't drop anything.
+
+**Don't promise anything new on the call.** Nothing else is committed to this account; keep it that way until you've checked with the owning teams.
+
+## Gaps to fill before the call
+
+The records don't contain: renewal date or contract value, health/usage metrics, NPS history, or outcomes on the support-queue issues. I'd pull those from whoever owns the account plan — the brief above is complete on commitments and risk signals, but thin on the numbers a QBR usually opens with.
+
+## Separate note — two of your own commitments need a check
+
+Not Aster Health, but they're yours and both are flagged:
+
+- **Advanced analytics → Lena Fox, Pinecrest Realty**, spring release (SLA-93532)
+- **Audit log export → Lena Fox, Granite Insurance**, Q1 2027 (SLA-77342)
+
+Something outside my visibility may affect both. **Check with the product owner before you reaffirm either one** to that customer — I can't tell you whether they still hold.

@@ -1,0 +1,57 @@
+## Harbor Clinics — QBR Brief
+
+**Prepared 2026-09-24 · Maya Chen · call next week**
+
+---
+
+### Where things stand
+
+Harbor Clinics is an active, multi-thread account with steady engagement across the year — 14 logged touchpoints since April, spread across six internal owners (Sam Lee, Priya Shah, Omar Haddad, Ana Petrova, Jordan Blake, Leo Grant, Tess Brown, Dana Ortiz).
+
+Recurring themes, roughly in order of how often they come up:
+
+| Theme | Records | Latest |
+|---|---|---|
+| Audit prep / exports | CRM-35862, CRM-48825, DRI-20995 | 2026-08-19 |
+| Integrations & webhooks | CRM-97969, CRM-75336 | 2026-07-25 |
+| Notifications | CRM-73374, CRM-78984 | 2026-06-15 |
+| Analytics / dashboards | CRM-64035 | 2026-08-26 |
+| Mobile & offline | CRM-49374, CRM-39320 | 2026-09-21 |
+| Platform (latency, hosting, sandbox, roadmap) | CRM-94239, CRM-34883, CRM-36695, CRM-41255 | 2026-07-15 |
+
+Most recent contact is CRM-49374 (2026-09-21, mobile app, Sam Lee) — its stated next step is "follow up on QBR prep," so this call is the expected continuation. Audit prep is the most persistent thread: it shows up as the open next-step in three separate records (CRM-45542, CRM-35862, CRM-48825) and again in the August support-queue session (DRI-20995). Assume Harbor will lead with it.
+
+### Open commitments
+
+**Data retention controls — by Q1 2027** (DRI-80868, 2026-05-15). Jordan Blake (AE) confirmed this to Ines Park in the May sync, after Ines raised it as something we'd previously told them. No later change to this commitment appears in the record, so you can reaffirm the Q1 2027 date as it stands.
+
+That is the only recorded commitment to Harbor Clinics. Nothing in the record commits us on EU data residency, exports, mobile, or offline.
+
+### Risks
+
+1. **Audit prep is drifting.** Four records across four months, still framed as a follow-up, no closure logged. If Harbor's audit has a real deadline, we may be closer to it than our notes suggest. Go in knowing the current status or be ready to own the gap.
+2. **EU data residency is an unbounded ask.** Ada Moss raised it on 2026-06-09 (CRM-89966); our position was "exploring, no dates yet." Three months on, still no dates in the record. Expect it to resurface — possibly linked to data retention, since both are compliance-driven and Harbor is a clinical operator.
+3. **Ownership is fragmented.** Eight different internal owners across fourteen touchpoints, and next-steps hand off between unrelated themes (integrations → search, notifications → analytics). Harbor may perceive this as no one holding the thread. Worth naming a single point of contact at the QBR.
+4. **Q1 2027 is approaching.** Data retention controls is ~two quarters out. Confirm engineering is tracking it before you restate the date on a QBR, where it carries extra weight.
+
+### What to say
+
+**Open with the commitment you can stand behind.** "Data retention controls are on track for Q1 2027, as Jordan confirmed with Ines in May." It's the one thing you can say without qualification, and it's the one Harbor's compliance stakeholders care most about.
+
+**On audit prep, lead with a concrete status, not a promise to follow up.** This has been an open next-step since May; another "we'll circle back" will land badly. Pull the current state from Leo Grant before the call.
+
+**On EU data residency, hold the line at "exploring."** Don't attach a date or a release. If Ada pushes, offer a specific checkpoint — e.g., a product conversation scheduled by a named date — rather than a delivery estimate.
+
+**Propose consolidated ownership.** With eight owners in the file, offering yourself as the single thread for Harbor is a credible, low-cost QBR win.
+
+**Close by asking what their next audit or compliance milestone actually is.** It's the thing most likely to drive escalation next quarter, and we don't appear to have it written down anywhere.
+
+### Before the call
+
+- Get audit-prep status from Leo Grant (DRI-20995, CRM-35862).
+- Confirm with engineering that data retention controls are tracking to Q1 2027.
+- Ask product whether there's anything new on EU data residency you're allowed to share.
+
+---
+
+**Separate note, not Harbor:** two of your own commitments on other accounts — advanced analytics to Lena Fox at Pinecrest Realty (SLA-93532) and audit log export to Lena Fox at Granite Insurance (SLA-77342) — are flagged as possibly affected by something I can't see. Check with the product owner before you reaffirm either of those to the customer. Neither affects this QBR.

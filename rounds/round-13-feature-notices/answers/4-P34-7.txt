@@ -1,0 +1,48 @@
+## Aster Health — QBR Brief
+
+**Prepared for Maya Chen · Call week of 2026-09-29**
+
+---
+
+### 1. Where things stand
+
+The account has been active but scattered across owners all year. Contact records show Brightline-side ownership rotating between you, Priya Shah (AE), Leo Grant, Ana Petrova, Sam Lee, and Tess Brown. Customer-side attendees recur as Omar Aziz, Omar Haddad, Ana Petrova, and Dana Ortiz.
+
+Recurring themes by quarter:
+
+| Theme | Records | Period |
+|---|---|---|
+| Exports | CRM-45213, CRM-76005 | April |
+| Sandbox | DRI-86962, CRM-62644, CRM-64767 | April–May |
+| Dashboards | CRM-57156, CRM-75476 | April, July |
+| Hosting | CRM-81799 | May |
+| Latency | CRM-16329, CRM-68765 | June |
+| Audit prep | DRI-48323 | June |
+| SSO questions | DRI-46065 | August |
+| NPS | CRM-26522, DRI-36735 | April, and scheduled 2026-09-28 |
+
+One caveat on this section: the CRM entries are one-line call logs that record the topic and the next follow-up, but not outcomes or resolution. I can tell you what was discussed and when; I can't tell you from these records whether latency or exports were actually resolved. Worth confirming with Leo Grant and Priya Shah before the call.
+
+### 2. Open commitments
+
+**Higher API rate limits — delivered.** Priya Shah committed to Omar Aziz that rate limits would be raised by October (DRI-86231, 2026-06-12, where Omar explicitly held us to it). Crane shipped 2026-09-20 and raised API rate limits for all paid plans (SLA-26281). This lands ahead of the promised date and is your strongest opening for the QBR.
+
+That is the only tracked commitment to Aster Health. Nothing else in the record set is an outstanding promise to this account.
+
+### 3. Risks
+
+- **Churn signals in the follow-up trail.** Five separate records route their next step to churn: CRM-64767, CRM-76005, CRM-68765, DRI-48323, DRI-46065. That spans sandbox, exports, latency, audit prep, and SSO — May through August, and it doesn't resolve. Whatever is driving it, it hasn't closed out.
+- **Ownership churn on our side.** Six different Brightline owners across ten calls. Aster is likely feeling the handoffs, and nobody has continuous narrative on the account.
+- **Audit and exports are an unresolved thread.** Audit prep (DRI-48323) and exports (CRM-45213, CRM-76005) both came up, and CRM-45213's next step was audit prep. Aster has no audit-log-export commitment from us — so if Omar or Dana pushes for a date on the call, **don't give one.** Confirm with the product owner first. There's a separate audit log export commitment of yours on another account whose status I'd want the product owner to reconfirm before you repeat any timeline language to anyone.
+- **NPS meeting lands 2026-09-28**, days before your QBR. Get that result before you walk in — it may reset the tone of the whole conversation.
+
+### 4. What to say
+
+1. **Open with the win.** "We told you higher API rate limits by October. They went live September 20th." It's the one clean, verifiable delivery you have, and Omar personally raised it in June.
+2. **Name the ownership problem before they do.** Six owners in six months is visible from their side. Proposing yourself as the single point of contact turns a complaint into a commitment.
+3. **Ask directly about the churn thread.** Latency, exports, sandbox, SSO. Something has been unresolved since May. Ask what's still broken rather than presenting a status deck that assumes it isn't.
+4. **On audit/exports, listen and scope — don't date.** Capture the requirement, tell them you'll come back with a timeline. Then check with the product owner.
+
+### Housekeeping outside this account
+
+Two of your own commitments on other accounts came back flagged — Advanced analytics (Pinecrest Realty, SLA-93532) and Audit log export (Granite Insurance, SLA-77342). Both need the product owner to confirm the promise still holds before you reaffirm them to those customers. Not QBR material, but don't let them sit.

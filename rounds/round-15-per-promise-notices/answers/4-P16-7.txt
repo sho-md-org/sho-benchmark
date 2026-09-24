@@ -1,0 +1,47 @@
+## Keystone Energy — QBR Brief (call week of Sept 28)
+
+### ⚠️ Read this first
+The **audit log export / SIEM streaming by Q1 2027** commitment to Keystone (`DRI-34564`, confirmed by Jordan Blake, AE) is flagged: there may be a decision I don't have visibility into that affects it. **Don't reaffirm the Q1 2027 date or the Splunk streaming scope on this call until you've checked with the product owner.** The public roadmap (`NOT-20876`, last updated 2026-06-30) still lists it as Q1 2027, but that predates whatever the flag refers to — treat it as stale, not as confirmation. Jordan Blake owns a roadmap note dated 2026-09-26 (`NOT-77133`, related: audit prep), which is the most likely place that decision landed — worth asking him directly before the call.
+
+### Where things stand
+Keystone is an engaged, high-touch account — roughly monthly contact since April, spread across CS, AE, and support owners.
+
+- **Dominant theme: audit prep.** Six separate touchpoints Apr–Aug (`CRM-90377`, `CRM-17727`, `CRM-56742`, `DRI-85107`, `DRI-48005`, `DRI-84961`). This is clearly their driving initiative and the reason audit log export matters to them.
+- **Security review** ran in parallel across three calls (`CRM-25431` Apr, `CRM-64056` Jul, `CRM-30791` Jul). Your own QBR prep note (`CRM-93344`, 2026-08-25) lists "follow up on security review" as the next step — that's still open as far as the records show.
+- **Recent activity:** uptime discussion 2026-09-23 with Sam Lee (`CRM-19012`), pricing discussion with Jordan Blake (`CRM-78617`), integrations (`DRI-31273`), rate limits (`CRM-60405`), onboarding (`CRM-15788`, `CRM-86748`).
+- **Main contact on the commitment side:** Nia Cole, who raised the audit log export promise at the Aug 3 sync.
+
+### Open commitments to Keystone
+| Commitment | Source | Owner | Status |
+|---|---|---|---|
+| Audit log export incl. SIEM streaming into Splunk, by Q1 2027 | `DRI-34564` | Company, confirmed by Jordan Blake (AE) | ⚠️ Verify with product owner before reaffirming |
+
+That's the only commitment in the records scoped to Keystone. The other open commitments in the system (offline mode, SCIM, advanced analytics) belong to other accounts and shouldn't come up here.
+
+### Risks
+1. **Commitment exposure on audit log export.** Nia Cole proactively reminded us of this promise in August and got it confirmed by an AE. It's tied to their audit program, so it's load-bearing for them. If the date or the Splunk streaming scope has moved, this is a trust event, not a scheduling detail — and they'll remember it was confirmed, not hedged.
+2. **Owner fragmentation.** At least eight different Brightline owners across the last six months (Dana Ortiz, Tess Brown, Ana Petrova, Priya Shah, Omar Haddad, Sam Lee, Jordan Blake, you). Risk that Keystone hears inconsistent answers — which is arguably how the audit log export confirmation happened in the first place.
+3. **Security review has no visible close.** It was the stated next step from your August QBR prep and hasn't resurfaced in the records. If Keystone's audit depends on it, an unresolved review is a live blocker.
+4. **Pricing + uptime in the same month.** A pricing conversation (`CRM-78617`) alongside an uptime conversation (`CRM-19012`) in late September is a pattern worth walking into prepared for — have uptime numbers ready.
+
+### What to say
+
+**Open with their wins, then audit.** Lead on the audit program — six months of consistent work, that's the narrative they care about.
+
+**On audit log export, if it comes up (and Nia will likely raise it):**
+> "I know audit log export with Splunk streaming is central to your audit timeline. I want to give you a precise answer on timing and scope rather than repeat what's on the public roadmap, so let me come back to you with that confirmed this week."
+
+That acknowledges the commitment and their dependency without re-committing to a date you can't currently stand behind. Don't volunteer a date, and don't describe any internal deliberation — just own the follow-up with a deadline.
+
+**On security review:** ask directly where they need us to land it, and name an owner. It's been open since your August prep note.
+
+**On ownership:** offer a single point of contact for the audit workstream. Given the number of hands on this account, that's a concrete improvement you can announce.
+
+**On uptime/pricing:** bring numbers to the uptime conversation. Let Jordan lead pricing rather than opening it yourself.
+
+### Before the call
+1. **Ask Jordan Blake (or the audit log export product owner) whether the Q1 2027 + Splunk streaming commitment still holds.** This is the one blocking item.
+2. Get a status and owner for the security review (`CRM-30791`).
+3. Pull uptime figures for the QBR period.
+
+I can draft the customer-facing follow-up email once you have the product owner's answer on item 1.

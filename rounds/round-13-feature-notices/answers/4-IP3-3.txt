@@ -1,0 +1,16 @@
+I can't answer this one directly — I don't have visibility into the decision record behind the Advanced analytics change, so I can't tell you who made it or what it says.
+
+**What I can see:**
+
+- **NOT-31499** (Notion, 2026-04-16) — Analytics notes, **owner: Omar Haddad**. That's the product owner to ask.
+- **SLA-91143** (Slack, 2026-07-13) — Tess Brown posting a generic analytics update; no decision content.
+- **SLA-93532** (Slack, 2026-06-28) — your own commitment: you told Lena Fox at Pinecrest Realty that Advanced analytics (Osprey) would land in the spring release so they could finish their rollout.
+
+**The thing to act on:** that Pinecrest commitment is flagged as potentially affected by the decision I can't see. Before you reaffirm the spring-release timeline to Lena Fox, check with Omar Haddad whether the promise still holds. I'd treat that as a blocker on any outbound message to Pinecrest.
+
+Two other commitments carry the same flag, in case they're on your plate:
+
+- **SLA-77342** — your commitment to Lena Fox / Granite Insurance on Audit log export by Q1 2027.
+- **SLA-12035** — Jordan Blake's commitment to Kai Berg (Umber Studios) on SCIM provisioning by Q1 2027.
+
+Want me to draft the question to Omar covering Advanced analytics and Audit log export together?

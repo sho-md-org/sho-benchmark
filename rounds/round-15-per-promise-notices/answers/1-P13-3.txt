@@ -1,0 +1,34 @@
+## What the records say
+
+**The commitment is real and documented.** DRI-36664 (Quarry Mining sync, 2026-07-09): Tom Hale explicitly reminded the team that "we told them SSO (SAML) by Q1 2027," and Leo Grant (AE) confirmed it on the call. So Quarry Mining isn't misremembering.
+
+**It's still the published date.** NOT-20876 (Public roadmap H1 2027, 2026-06-30) lists "SSO (SAML), SP- and IdP-initiated: Q1 2027." This is the current public roadmap — no newer version exists in Notion.
+
+**The one slip announced doesn't touch SSO.** SLA-17908 (#general, 2026-09-19) announced Sandbox environments (Rail) slipping to Q2 2027, with a request to update affected customers. That's a different line item. Quarry Mining has no sandbox expectation on record, so it doesn't need to come up.
+
+---
+
+## Draft reply
+
+> **Subject: Re: SSO (SAML) timeline**
+>
+> Hi Tom,
+>
+> Yes — SSO (SAML) is still planned for Q1 2027, covering both SP-initiated and IdP-initiated flows. That's unchanged from what we discussed in July and it remains the date on our published H1 2027 roadmap.
+>
+> Two related items you may care about are also targeted for Q1 2027: SCIM provisioning and audit log export (including SIEM streaming). If those matter for your rollout, I'm happy to walk through how they sequence together.
+>
+> As we get closer, I'd like to get your IdP details in front of our team early so your configuration is ready to go rather than starting from scratch at launch. Would a short call in the next few weeks work?
+>
+> I'll flag any change to this timeline proactively — you won't have to ask.
+>
+> Best,
+> Leo
+
+---
+
+## Two things to know before you send
+
+**I could not verify engineering execution status.** Linear returned zero results for SSO, SAML, and single sign-on — there is no ticket I can find backing this work. The Q1 2027 date rests on a roadmap page from 2026-06-30 and the AE's own verbal confirmation, not on observable delivery progress. With roughly one quarter until the target, I'd get a yes/no from Maya Chen (roadmap owner, NOT-64137) before sending. If engineering is non-committal, soften "is still planned" to "remains on our published roadmap" — that's the claim the evidence actually supports.
+
+**This is a second confirmation of the same date.** Tom Hale asked in July and is asking again in September. Repeat verification usually means the date is load-bearing for something on their side — an audit or compliance deadline is likely, given DRI-62153 (Audit prep, 2026-09-07). Worth asking what it's tied to; if it's a hard external deadline, a Q1 slip becomes a churn risk rather than a scheduling annoyance, and DRI-67006 (Churn, 2026-08-25) suggests this account already has some history there.

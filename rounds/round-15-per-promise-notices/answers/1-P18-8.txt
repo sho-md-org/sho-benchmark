@@ -1,0 +1,78 @@
+I have what I need. Here's the brief.
+
+---
+
+# Cobalt Retail — QBR Brief
+**Prepared for Maya Chen · call week of 2026-09-28 · data as of 2026-09-24**
+
+## Headline
+
+Three open feature asks drive this account. One is a promise you personally made, one is a competitive gap you're better positioned on than the file suggests, and one you under-sold. There is **no renewal date, ARR, or health score** on file — see Data Gaps before you walk in.
+
+---
+
+## 1. Where things stand
+
+Cobalt is an active, high-touch account: ~15 CRM touchpoints and 10 meeting docs since April 2026, spanning onboarding, dashboards, reporting, search, notifications, webhooks, billing, rate limits, SSO, and a case study in progress (`CRM-80312`, `DRI-95243`, `DRI-20022`).
+
+Most of that record is thin, templated one-liners with no substance. **Four records carry real content**, and they're the whole story:
+
+| Record | Date | Substance |
+|---|---|---|
+| `CRM-38600` | 2026-07-24 | Sam Ortiz pushed on audit log export. **You said: "you'll have it by Q1 2027 as a CSV export, you have my word."** Customer is planning around it. |
+| `CRM-15486` | 2026-08-06 | Ada Moss asked about sandbox environments. Incumbent vendor promised them; **we did not**. |
+| `CRM-84001` | 2026-08-22 | Sam Ortiz asked about bulk import v2. Told "exploring, no dates yet." |
+| `NOT-20876` | 2026-06-30 | Public roadmap H1 2027 — the source of truth against which all three above must be checked. |
+
+A case study is mid-flight and there's a mobile app / search session on the calendar for 2026-09-26 (`DRI-72283`) — likely just before your call.
+
+---
+
+## 2. Open commitments — checked against the roadmap
+
+**① Audit log export — your personal word. Holds up.**
+You committed Q1 2027, CSV. The public roadmap (`NOT-20876`) lists *"Audit log export incl. SIEM streaming: Q1 2027."* Timing matches, and you scoped to CSV — a narrower subset than what's planned. **This is defensible.** Caveat: you staked "you have my word" on a roadmap date, not a shipped feature, and I found no engineering ticket confirming it (see Data Gaps).
+
+**② Sandbox environments — better news than the file implies.**
+`CRM-15486` records this as a loss: their incumbent promised it, we didn't. But the roadmap lists **"Sandbox environments: Q4 2026"** — the single nearest-term item on the entire roadmap, starting next week. Nobody appears to have gone back to Ada Moss with this. **This is your strongest positive.**
+
+**③ Bulk import v2 — you under-sold it.**
+On 2026-08-22 Cobalt was told "exploring, no dates yet." But the roadmap — published 2026-06-30, *seven weeks earlier* — lists **"Bulk import v2: Q1 2027."** Cobalt was given a vaguer answer than our own public roadmap. Easy, credible upgrade.
+
+---
+
+## 3. Risks
+
+**Your "you have my word" is the exposure.** Q1 2027 is one quarter out and depends on a roadmap item with no verifiable engineering plan in our tools. If it slips, it's not a roadmap miss — it's a named personal guarantee to a customer who is *planning around it*. Consider softening to a status-backed commitment now, while you can do it from strength rather than apology.
+
+**Inconsistent posture on the same feature across accounts.** Kestrel Foods asked about audit log export and was told *"on the roadmap, no commitment"* (`CRM-25829`) — 25 days after Cobalt got "you have my word." If these customers ever compare notes, the gap is awkward.
+
+**Two contact-name collisions worth verifying before you use names.** "Sam Ortiz" appears as the contact at both Cobalt Retail (`CRM-38600`, `CRM-84001`) and Kestrel Foods (`CRM-25829`). "Ada Moss" appears at both Cobalt (`CRM-15486`) and Bluewater Logistics (`CRM-16328`). These are probably CRM data-quality artifacts or common names — **I did not merge them**, and you shouldn't either. But if Sam Ortiz genuinely is one person across both accounts, they personally received two contradictory answers on audit log export. Worth 5 minutes with the AE before the call.
+
+**Competitive displacement pressure.** The sandbox note is the only explicit incumbent-vs-us comparison in the file, and it went against us. Don't let it sit unanswered.
+
+---
+
+## 4. What to say
+
+**Open with the sandbox win.** *"When we last spoke, sandbox environments were something our competitor offered and we didn't. That's changing — sandbox is on our roadmap for Q4 2026, which starts next week. I want to get you early access as it lands."* Closes your one known competitive gap.
+
+**Reaffirm the audit log export deliberately, not casually.** *"Audit log export is still tracking Q1 2027. I committed to CSV and that remains the plan — the broader release also includes SIEM streaming."* Then add the honest hedge: *"I gave you my word on that and I stand behind it. Let me get you the engineering milestones in writing so you're not planning against a single date."* Converts a verbal guarantee into something jointly managed — protects you without walking anything back.
+
+**Proactively upgrade bulk import v2.** *"I owe you a correction — in August I said we were exploring bulk import v2 with no dates. I've since confirmed it's on our published roadmap for Q1 2027."* Volunteering a correction in the customer's favor buys real credibility, and it costs you nothing because it's already public.
+
+**Land the pairing.** Audit log export and bulk import v2 are both Q1 2027 — frame them as one coordinated wave rather than two separate waits.
+
+**Ask for the case study.** It's been open since July across three records with no visible close. If the sandbox and roadmap news lands well, that's your moment.
+
+---
+
+## 5. Data gaps — know these before you walk in
+
+- **No renewal date, contract value, or ARR** anywhere in CRM. Other accounts have dedicated "renewal call notes" records; Cobalt has none. **If this QBR is renewal-adjacent, get this from the AE first — I could not source it.**
+- **No health score or NPS result.** An NPS record exists (`CRM-92187`) but contains no score.
+- **Linear returned zero results** for every query I tried (Cobalt, audit log export, bulk import, exports, bugs). Either it isn't populated or isn't linked to accounts — so **no engineering confirmation exists in our tools for any Q1 2027 date.** Your audit log export commitment is verified against a roadmap doc only.
+- **No open support escalations or churn-risk record** for Cobalt, while many peer accounts have them. Reads as genuinely healthy rather than missing, but I can't prove the negative.
+- Most Cobalt records are content-free templates, so "where things stand" rests on the four substantive records above.
+
+**One thing to chase before the call:** confirm the sandbox Q4 2026 date is still real with whoever owns it — `NOT-19494` (dated today, owner Jordan Blake) and `NOT-13669` are recent sandbox notes flagged "Related: QBR prep," but neither contains status. It's your best talking point and the only one with a date inside the next 90 days.

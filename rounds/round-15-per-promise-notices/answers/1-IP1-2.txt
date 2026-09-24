@@ -1,0 +1,26 @@
+## Short answer: none of them — the roadmap change that just landed isn't SSO
+
+I searched Slack, CRM, Drive, Notion, and Linear. **SSO is unchanged.** The only roadmap slip announced is a different feature:
+
+- **SLA-17908** (#general, 2026-09-19): "Sandbox environments (Rail) slip to Q2 2027. Please update any customers expecting them this year." That's the only slip/change notice in the records.
+- **NOT-20876** (Public roadmap H1 2027, 2026-06-30): SSO (SAML), SP- and IdP-initiated is still **Q1 2027**, as is SCIM provisioning. No superseding roadmap doc exists, and Linear has no SSO tickets at all.
+
+## Your SSO touchpoints, for the record
+
+Three records have your name on them, and none contains a dated commitment — they're logged as discussions, not promises:
+
+| Record | Account | Date | What's logged |
+|---|---|---|---|
+| **CRM-74174** | Evergreen Bank | 2026-08-22 | Owner: you. Next step: follow up on audit prep |
+| **DRI-18519** | Harbor Clinics | 2026-08-08 | Attendees: you, Ana Petrova. SSO + notifications |
+| **DRI-79562** | Norrland AB | 2026-04-05 | Attendees: Priya Shah, you. SSO + offline |
+
+So there's no SSO promise of yours that the slip invalidates. Whatever you told Evergreen Bank, Harbor Clinics, and Norrland AB about Q1 2027 SSO still matches the current roadmap.
+
+## Two things worth flagging
+
+**1. Your real exposure is sandbox, not SSO.** If you came to this because you saw SLA-17908 and worried, the question to ask instead is which of your *sandbox* promises are affected. I didn't find sandbox commitments under your name, but I also didn't audit that exhaustively — say the word and I will. One useful precedent: Meridian Travel was told sandbox is "on the roadmap, no commitment" (**CRM-64912**, 2026-09-21), which is the right framing to reuse.
+
+**2. SSO and sandbox got discussed together in at least one account.** Bluewater Logistics covered both in the same meeting (**DRI-19269**, 2026-09-04 — Omar Haddad and Dana Ortiz, not you). Where features are bundled in one conversation, customers can hear "Q1 2027" as applying to both. Not your account, but worth a nudge to Omar or Dana.
+
+One caveat on confidence: these records are thin — most SSO entries are one-line summaries with an owner and a "next step," with no dates or commitment language captured. I can tell you nothing contradicts your SSO promises, but the records also can't confirm what you actually said verbally. If you have email or call notes outside these systems for Evergreen Bank, Harbor Clinics, or Norrland AB, those are the authoritative check.

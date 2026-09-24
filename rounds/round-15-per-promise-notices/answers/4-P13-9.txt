@@ -1,0 +1,23 @@
+**Context checked — the commitment stands.** SSO (SAML) for Quarry Mining by Q1 2027 is on record (`DRI-36664`, Leo Grant reconfirmed to Tom Hale on 2026-07-09), it carries no pending-change flag, and the public roadmap `NOT-20876` still lists "SSO (SAML), SP- and IdP-initiated: Q1 2027". So this is a clean reaffirmation — no hedging needed.
+
+---
+
+**Subject: Re: SSO (SAML) timing**
+
+Hi Tom,
+
+Yes — SSO (SAML) is still planned for Q1 2027, exactly as we confirmed on our July 9 sync. Nothing has changed on our side since then.
+
+For specifics: the scope is SAML SSO with both SP-initiated and IdP-initiated flows. SCIM provisioning is also tracking to Q1 2027, in case that's part of what your IT team is planning around.
+
+Happy to set up a session with our product team ahead of the release so your identity team can walk through the configuration requirements and we can line up a smooth rollout on your side. Just let me know what timing works.
+
+Best,
+Leo Grant
+Account Executive, Brightline
+
+---
+
+Two small notes for you before sending:
+- I mentioned SCIM (`NOT-20876`, Q1 2027) since it usually travels with a SAML rollout — drop that line if you'd rather not widen the conversation.
+- `CRM-14429` (2026-06-25, owner Ana Petrova) has an open "follow up on support queue" item from an earlier SSO call. Worth confirming that was closed out, since Tom may raise it.

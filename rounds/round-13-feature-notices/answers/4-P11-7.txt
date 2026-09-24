@@ -1,0 +1,54 @@
+## Vantage Telecom — QBR brief
+
+**⚠️ Read this first:** The SSO (SAML) commitment is flagged. A decision I don't have visibility into may or may not have changed it. **Do not reaffirm the Q1 2027 SSO date on the call until you've checked with the product owner.** That's the single most important prep item.
+
+---
+
+### Where things stand
+
+Account activity has been steady but the record trail is thin — most entries are one-line call logs without outcomes. What's there:
+
+| Date | Topic | Owner | Record |
+|---|---|---|---|
+| 2026-09-19 | SSO questions | Priya Shah | CRM-57082 |
+| 2026-09-13 | Dashboards → next: exports | Maya Chen | CRM-65747 |
+| 2026-09-11 | SSO questions + NPS (Dana Ortiz, Omar Haddad) | — | DRI-67178 |
+| 2026-09-06 | **Churn + QBR prep** (Dana Ortiz, Tess Brown) | — | DRI-14442 |
+| 2026-08-04 | Dashboards | — | CRM-10757 |
+| 2026-07-10 | NPS → next: reporting | Tess Brown | CRM-37016 |
+| 2026-06-22 | Pricing → next: audit prep | Jordan Blake | CRM-36270 |
+| 2026-06-08 | **QBR — SSO commitment made** | Priya Shah | CRM-31062 |
+
+The shape of it: SSO is the recurring theme (June QBR, then again 2026-09-11 and 2026-09-19 — two SSO conversations in nine days). Alongside that, a churn discussion on 2026-09-06 (DRI-14442) and unresolved threads on dashboards/exports and NPS/reporting.
+
+### Open commitments
+
+**SSO (SAML) — to Ines Park, by Q1 2027** (CRM-31062, made by Priya Shah, 2026-06-08)
+Priya's exact words at the June QBR: *"you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word."* The note records that **the customer is planning around it.** This is flagged — status unconfirmed. Ask the product owner before the call.
+
+No other Vantage-specific commitments surfaced. (The other commitments in your queue — Advanced analytics/Pinecrest, Audit log export/Granite, SCIM/Umber, Offline mode/Meridian — belong to other accounts and aren't QBR material. Note that your two, SLA-93532 and SLA-77342, carry the same kind of flag; worth a separate check.)
+
+### Risks
+
+1. **SSO exposure.** A strongly-worded promise ("you have my word"), a specific technical scope (IdP-initiated login from Okta), a customer planning around it, and a status I can't verify. If that date has moved, the QBR is where it surfaces — and Ines will ask.
+2. **Churn signal.** A churn conversation on 2026-09-06 that you weren't in. Get the substance from Dana Ortiz or Tess Brown before the call — walking into a QBR without knowing why churn was discussed is the avoidable risk here.
+3. **Repeated SSO questions.** Two sessions in September suggests the June answer didn't land or the customer is pressure-testing it. Priya owns the 2026-09-19 thread — sync with her.
+4. **Dangling follow-ups.** Dashboards→exports (yours, CRM-65747), NPS→reporting (Tess), pricing→audit prep (Jordan). Close or update these before the QBR so they don't get raised as neglect.
+
+### What to say
+
+**On SSO — until you've heard from the product owner, don't restate the date.** Safe framing: *"SSO is the top item on our side too. I want to give you a precise status rather than a repeat of June, so I'm confirming the delivery detail with our product team and will come back to you with specifics."* That's honest, doesn't retract Priya's commitment, and doesn't re-commit you to something that may have changed.
+
+If the product owner confirms it still holds, reaffirm plainly — Q1 2027, including IdP-initiated Okta login — and offer Ines a rollout-planning checkpoint.
+
+If it's changed, don't deliver that cold in the QBR. Coordinate with Priya first; she made the promise and should be in the room.
+
+**On the rest:** lead with the dashboards work as concrete progress, bring a closed answer on exports, and have the NPS/reporting thread ready. Let Ines set the agenda after SSO — the repeated questions suggest something specific behind them.
+
+### Before the call
+- [ ] Ask the product owner whether the Q1 2027 SSO commitment still holds — **blocking**
+- [ ] Get the churn context from Dana Ortiz / Tess Brown (DRI-14442)
+- [ ] Sync with Priya on the 2026-09-19 SSO thread (CRM-57082)
+- [ ] Close your exports follow-up (CRM-65747)
+
+One caveat on sourcing: most of these records are single-line logs, so the status picture is inferred from topics and cadence, not from documented outcomes. The SSO commitment in CRM-31062 is the one item quoted verbatim.

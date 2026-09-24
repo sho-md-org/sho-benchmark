@@ -1,0 +1,24 @@
+## Short answer: Keystone is the one at risk. Cobalt looks clean.
+
+**Keystone Energy — flagged**
+- Promise: Audit log export **by Q1 2027, with streaming into Splunk** (`DRI-34564`, 2026-08-03). Nia Cole raised it; Jordan Blake (AE) confirmed on the call.
+- The context tool attaches a **notice** to this one: a decision I can't see may or may not change it. I can't confirm, deny, or describe that decision — the instruction is to **check with the product owner before reaffirming the commitment to Keystone.**
+- Worth noting for your own records: this one wasn't yours. It was a company-level promise confirmed by Jordan Blake, though you're the CS contact on the account (`DRI-84961`, `CRM-56742`). So the conversation about scope changes probably needs Jordan in it.
+
+**Cobalt Retail — no flag**
+- Promise: Audit log export **by Q1 2027 as a CSV export** — your words to Sam Ortiz at the QBR, "you have my word" (`CRM-38600`, 2026-07-24). Customer is planning around it.
+- No notice, no later change found. Treat it as normal.
+
+**The material difference:** scope. Cobalt was promised **CSV export only**; Keystone was promised **export plus SIEM/Splunk streaming**. Streaming is the harder, more differentiated piece, and it's the promise carrying the flag. If you're triaging, the narrow CSV commitment is the safer one.
+
+## One thing you didn't ask about
+
+You have a **third** audit-export promise that also carries a notice: Lena Fox at **Granite Insurance** (`SLA-77342`, 2026-05-26) — Q1 2027 **including SIEM streaming**, tied to finishing their rollout. That one *is* yours, and it has the same streaming scope as Keystone's. Same guidance applies: ask the product owner before you reaffirm it.
+
+So the pattern is that the streaming-scoped promises are flagged and the CSV-only one isn't.
+
+## Suggested next step
+
+One question to the product owner covering both flagged commitments: *does Q1 2027 audit log export still include SIEM/Splunk streaming?* That answer resolves Keystone and Granite at once. Until you have it, avoid re-confirming dates or scope to Nia Cole or Lena Fox. Cobalt you can continue to speak to normally — just keep it to CSV, which is what you actually promised.
+
+Want me to draft that note to the product owner?

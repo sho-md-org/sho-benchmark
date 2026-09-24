@@ -1,0 +1,68 @@
+I pulled every Harbor Clinics record in the system — 10 CRM, 10 Drive, and zero in Slack, Linear, and Notion. Here's the brief, but one thing up front that changes how you should use it.
+
+## The honest caveat
+
+**Every Harbor Clinics record is a one-line stub.** Not redacted — genuinely thin. A representative example, in full:
+
+> `CRM-64035` · Dashboards (Harbor Clinics), 2026-08-26 — "Call with Harbor Clinics. Discussed dashboards. Owner Ana Petrova. Next: follow up on analytics."
+
+All 20 records follow that template. There is **no ARR, renewal date, contract term, named Harbor-side contact, health score, NPS value, support ticket, or resolution status** anywhere in the tools. So I can't build the numbers section of a normal QBR, and you shouldn't walk in citing figures — there are none to cite. What the record *does* support is a pattern analysis, and the pattern is the story.
+
+## Where things stand
+
+**Topic map (Apr 23 – Sep 11, 2026).** Recurring themes, by frequency:
+
+| Theme | Records | Dates |
+|---|---|---|
+| Pricing | 3 | `DRI-51027` Apr 23, `DRI-40615` May 18, `DRI-55004` Jul 21 |
+| **Churn** | **3** | `DRI-17076` Jul 20, `DRI-26772` Sep 6, `DRI-17950` Sep 11 |
+| Notifications | 2 | `CRM-73374` May 24, `CRM-78984` Jun 15 |
+| Integrations | 2 | `CRM-97969` Apr 25, `CRM-75336` Jul 25 |
+| Sandbox | 2 | `CRM-36695` Jun 13, `DRI-18426` Aug 20 |
+| Dashboards | 2 | `DRI-60679` Jul 5, `CRM-64035` Aug 26 |
+
+Also single-touch: latency (`CRM-94239`), hosting (`CRM-34883`), roadmap (`CRM-41255`), offline (`CRM-39320`), exports (`DRI-88564`), reporting (`DRI-67100`).
+
+**The structural split matters.** CRM records are customer-facing ("Call with Harbor Clinics"). Drive records are internal — attendees are all Brightline names (Maya Chen, Tess Brown, Leo Grant, Priya Shah, Jordan Blake, Dana Ortiz, Sam Lee, Ana Petrova, Omar Haddad). Read that way:
+
+- **Last logged customer contact: 2026-08-26** (`CRM-39320`, `CRM-64035`). That's ~4 weeks of silence going into the call.
+- **Churn has been discussed internally three times, twice in the last three weeks** — Sep 6 (`DRI-26772`, Leo Grant + Priya Shah) and Sep 11 (`DRI-17950`, **you** + Tess Brown). Accelerating internal churn conversation with no customer touch alongside it.
+
+## Open commitments
+
+This is the sharpest finding. Each CRM record ends with a "Next: follow up on X." I traced all ten against every downstream record. **Nine of ten have no corresponding record showing the follow-up happened.**
+
+| Commitment | From | Owner | Status |
+|---|---|---|---|
+| Follow up on **analytics** | `CRM-73374` (May 24) | Ana Petrova | No analytics record exists |
+| Follow up on **analytics** (again) | `CRM-64035` (Aug 26) | Ana Petrova | **Promised twice, 3 months apart, still nothing** |
+| Follow up on webhooks | `CRM-97969` (Apr 25) | Omar Haddad | No webhooks record |
+| Follow up on onboarding | `CRM-36695` (Jun 13) | Jordan Blake | No onboarding record |
+| Follow up on latency | `CRM-41255` (Jun 14) | Tess Brown | Only latency record predates it (Jun 2) |
+| Follow up on permissions UI | `CRM-78984` (Jun 15) | Dana Ortiz | No permissions record |
+| Follow up on SSO questions | `CRM-34883` (Jul 15) | Sam Lee | No SSO record |
+| Follow up on search | `CRM-75336` (Jul 25) | Omar Haddad | No search record |
+| Follow up on notifications | `CRM-39320` (Aug 26) | Priya Shah | Only notifications records predate it (May/Jun) |
+| Follow up on reporting | `CRM-94239` (Jun 2) | Maya Chen | ✅ `DRI-67100` Reporting, Jun 26 — the one that closed |
+
+Caveat on this table: absence of a record isn't proof the work didn't happen — it may have gone untracked. But as a prep list, these are nine things Harbor may raise that you currently have no evidence anyone closed. Verify the live ones with the owners before the call.
+
+## Risks
+
+1. **Churn risk is live and internal.** Three churn discussions, two in September, most recently with you. Whatever drove that Sep 11 conversation is the real agenda of this call.
+2. **The analytics double-promise is the exposure.** Committed May 24, re-committed Aug 26, no evidence of delivery either time. If Harbor tracks their own asks, this is what they open with.
+3. **Four-week contact gap** before a QBR, during the window when churn concern spiked.
+4. **Zero engineering footprint.** Nothing in Linear, Slack, or Notion — despite logged latency, offline, exports, and integration issues. Their technical complaints don't appear to have become tracked work.
+5. **Pricing pressure, unresolved.** Three pricing discussions across Apr–Jul with no recorded outcome. Expect it to resurface.
+
+## What to say
+
+Given you have no verified numbers, **don't lead with a metrics victory lap** — you'd be improvising, and if Harbor contradicts you it costs credibility in exactly the meeting where you can least afford it. Lead with ownership instead:
+
+- **Open by closing the loop, not by presenting.** "I want to start with what we owe you." Naming the analytics follow-up before they do converts your weakest point into a credibility gain.
+- **Come with the nine-item list resolved.** Before the call, get status from Ana Petrova (analytics ×2), Omar Haddad (webhooks, search), Dana Ortiz (permissions UI), Sam Lee (SSO), Priya Shah (notifications), Jordan Blake (onboarding), Tess Brown (latency). Walk in with each marked done / in flight / dropped-and-here's-why.
+- **Ask for their numbers rather than assert yours.** "Here's what we see — I want to check it against what you're seeing." This surfaces the usage reality you don't have, and reads as partnership.
+- **Probe pricing before they ambush you.** It came up three times and never resolved. Ask directly whether the commercial structure still fits.
+- **Get a renewal date on the record.** It isn't anywhere in the CRM. You need it.
+
+**Two things to do before the call:** confirm the renewal timeline and ARR from whoever owns the contract, and ask Tess Brown what prompted the Sep 11 churn discussion (`DRI-17950`). That conversation is the one piece of context that would most change this brief, and it isn't written down anywhere I can reach.

@@ -1,0 +1,47 @@
+## Aster Health — QBR brief
+
+Pulled from Sho. One flag up front: **the record detail on this account is thin** — most CRM entries are one-line call logs with a "next: follow up on X" and no closure. I've marked what's solid vs. what you'll need to verify with the internal owners before the call.
+
+### Where things stand
+
+- **Main contacts:** Omar Aziz (commercial/API side, via Priya Shah), Omar Haddad and Ana Petrova (recurring QBR/NPS attendees, `DRI-70983`, `DRI-36735`).
+- **Account coverage is fragmented.** Call ownership rotates across Leo Grant, Tess Brown, Priya Shah, Sam Lee, Ana Petrova and you (`CRM-45213`, `CRM-81799`, `CRM-16329`, `CRM-75476`, `CRM-64767`, `CRM-70994`). No single thread owner shows up across the year.
+- **Recurring themes in 2026:** exports (April), sandbox (April–May), hosting (May), latency (June, twice), audit prep (June), dashboards (July), NPS (April and again scheduled).
+- **NPS session is on the calendar for 2026-09-28** (`DRI-36735`) — that lands before or right around your call. Get the result before the QBR; it's your single best read on sentiment and you don't have one yet.
+
+### Open commitments
+
+**Higher API rate limits — delivered. Safe to confirm.**
+Priya Shah committed this to Omar Aziz by October (`DRI-86231`, reconfirmed on the 2026-06-12 sync). Crane shipped 2026-09-20 and raised rate limits for all paid plans (`SLA-26281`). This is your headline: promised by October, live in September.
+
+**No other commitments to Aster Health appear on record.** That's worth knowing precisely — if Omar raises something he believes was promised (audit log export is a plausible one given the June audit-prep thread, `DRI-48323`), don't confirm or date it in the room. Take it as an action item and come back.
+
+One thing to handle separately, not in this call: you have an **audit log export commitment to Lena Fox at Granite Insurance** (`SLA-77342`), and Sho flags that a decision you can't see may affect it. Check with the product owner before you reaffirm that date to Granite. Same situation on your **advanced analytics / Osprey commitment to Lena Fox at Pinecrest Realty** (`SLA-93532`). Neither is Aster's, but both are yours and both are live.
+
+### Risks
+
+1. **Churn keeps surfacing as the next step.** Three separate threads end with "follow up on churn" — audit prep (`DRI-48323`, attended by Dana Ortiz and Jordan Blake), latency (`CRM-68765`), sandbox (`CRM-64767`). Nothing on record shows that follow-up happening. Treat this as the real agenda item.
+2. **Latency, twice in eight days in June** (`CRM-16329` 6/14, `CRM-68765` 6/22), with no resolution logged. If it's fixed, say so with numbers. If you don't know, find out before the call — unresolved performance complaints plus churn signals is the combination that loses renewals.
+3. **Dangling open loops with no owner:** hosting (`CRM-81799` — next step was "follow up on hosting," logged by Tess Brown, nothing since), security review (raised in both `CRM-26522` and `CRM-16329`), support queue (`CRM-70994`, your own note from June). Any of these can resurface in the room.
+4. **Coverage discontinuity.** Five different owners means Omar has likely repeated himself. Expect friction if he has to explain context again.
+
+### What to say
+
+**Lead with the win.** "We told you higher API rate limits by October — they went live on September 20th, across all paid plans." Then ask directly whether their integration volume is where they need it now.
+
+**Get ahead of latency.** Don't wait for Omar to raise June. "You flagged latency twice in June — here's where that landed." Bring the actual status; if it's still open, bring a date and an owner.
+
+**Name the coverage problem and fix it.** "You've worked with several people on our side this year. Going forward I'm your single point of contact." This is the cheapest credibility you'll buy all call.
+
+**Close the open loops explicitly.** Walk hosting, security review, exports and the support queue one by one — either close them or assign an owner and a date in the room.
+
+**Probe on renewal without flinching.** Churn is showing up internally in three places; better to hear the reason from Omar directly than to infer it. Ask what would make them expand rather than hold flat.
+
+**Don't date anything new.** If a new ask comes up — audit log export, dashboards, anything — commit to a response date, not a ship date.
+
+### Before the call
+
+- Get the 9/28 NPS result (`DRI-36735`).
+- Get latency resolution status from Leo Grant or Priya Shah.
+- Ask Dana Ortiz or Jordan Blake what drove the churn note in `DRI-48323` — that meeting is the origin of the signal and you weren't in it.
+- Separately, check with the product owner on your Granite (`SLA-77342`) and Pinecrest (`SLA-93532`) commitments before either comes due.

@@ -1,0 +1,16 @@
+## Short answer: I can't find any record that it was cut — and the roadmap says it's still in.
+
+I searched Notion, Slack, Drive, Linear, and the CRM for a descoping decision on Advanced analytics. There is no such decision recorded anywhere I can see.
+
+**What the records actually say:**
+
+- **NOT-20876 · "Public roadmap H1 2027"** (Notion, 2026-06-30) — the only authoritative roadmap doc in the system — lists **"Advanced analytics: Q2 2027"**. It's on the plan, not cut. I checked for a newer roadmap doc that might supersede it; the other Notion items titled "Roadmap" (NOT-64137, NOT-85086, NOT-67486, NOT-15543, NOT-72642, and others) are one-line stubs with no roadmap contents.
+- **Linear** returns zero results for "advanced analytics" — no ticket, no cancelled epic.
+- The Slack threads that mention analytics (SLA-91143, SLA-60376, SLA-25394, SLA-64584) are all routine status pings with no decision content. No thread names a decision-maker or a rationale.
+- The analytics items in Drive and CRM (DRI-78883, DRI-76027, CRM-70722, CRM-84231, etc.) are customer-call notes, not planning decisions.
+
+So I can't give you the reasoning or the decider, because neither exists in these tools. I'd rather tell you that than reconstruct a plausible-sounding rationale.
+
+**One thing that may be the source of the rumor:** the only 2027 scope change actually announced is a *different* feature — **SLA-17908 · #general "Rail update"** (2026-09-19, five days ago): *"Sandbox environments (Rail) slip to Q2 2027. Please update any customers expecting them this year."* That's a slip, not a cut, and it's Sandbox environments, not Advanced analytics. If someone in a customer call heard "Q2 2027 roadmap change," this is the likely origin — and note Advanced analytics was already Q2 2027, which makes the two easy to conflate.
+
+**Before you tell a customer anything:** don't repeat "Advanced analytics was cut" — as far as the system of record goes, that's not true. If you heard it from a specific person or meeting, tell me where and I'll chase that thread. Otherwise the person to confirm with is whoever owns NOT-20876; the roadmap-adjacent Notion stubs are owned by Ana Petrova, Jordan Blake, and Priya Shah, so one of them is the right first ask.

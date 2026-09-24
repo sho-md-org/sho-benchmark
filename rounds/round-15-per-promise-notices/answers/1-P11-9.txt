@@ -1,0 +1,77 @@
+I pulled all 19 Vantage Telecom records across the four systems. One important caveat before the brief: **every record is a one-line stub** — topic, date, owner/attendees, and a "next step" tag. None contain ARR, renewal date, health score, customer-side stakeholders, or issue detail. So I can give you a well-evidenced picture of *cadence, commitments, and risk signals*, but the account-standing numbers have to come from you or the CRM account object (which didn't surface in search).
+
+---
+
+# Vantage Telecom — QBR Brief
+
+## Where things stand
+
+19 touchpoints between **2026-04-02** and **2026-09-13** — a steady ~2/month cadence. The topic mix tells the story:
+
+| Period | Topics |
+|---|---|
+| Apr–Jun | integrations, onboarding, billing, dashboards, exports, search, analytics, reporting, webhooks, trial conversion |
+| Jul–Sep | NPS, billing, search, rate limits, support queue, trial conversion, **churn**, SSO, dashboards |
+
+The account moved from *build-out* topics to *operational strain and risk* topics. Rate limits (DRI-89702, 2026-08-05) and support queue (DRI-10836, 2026-08-18) are load/friction signals, not adoption signals.
+
+**Most recent contact:** CRM-65747 (2026-09-13), your call on dashboards.
+
+## The signal that should shape your prep
+
+**An internal churn discussion happened on 2026-09-06 (DRI-14442)** — Dana Ortiz and Tess Brown, explicitly "churn and QBR prep." You were not in it. Before you walk into this call, find out what prompted it and what they concluded. This is the single highest-value thing you can do this week.
+
+Supporting context: **NPS recurs in four separate records** — DRI-57024 (May 28), CRM-37016 (Jul 10), DRI-77676 (Aug 11), DRI-67178 (Sep 11). A satisfaction metric that keeps resurfacing over four months is usually one that isn't moving.
+
+## Open commitments
+
+Each CRM record logs a "next: follow up on X." I traced each one forward to see whether a matching record ever appeared. These have **no closing record**:
+
+| Committed | Date | Source | Status |
+|---|---|---|---|
+| Latency | 2026-04-12 | CRM-24363 | Open — **re-promised** 2026-07-23 (CRM-92524), still nothing |
+| Integrations | 2026-04-27 | CRM-20779 | Open (the only integrations meeting, DRI-81968, predates it) |
+| Sandbox | 2026-05-18 | CRM-53521 | Open — no sandbox record exists |
+| Webhooks | 2026-06-17, 2026-06-22 | CRM-74774, CRM-15845 | Open — the one webhooks session (DRI-57024) predates both asks |
+| Reporting | 2026-07-10 | CRM-37016 | Open (DRI-68417 reporting predates it) |
+| **Exports** | **2026-09-13** | **CRM-65747** | **Open — yours, 11 days old** |
+
+Closed: webhooks after CRM-23907 (→ DRI-57024), QBR prep after CRM-84868 (→ DRI-14442).
+
+**Latency is the worst of these.** Promised in April, promised again in July, no evidence of follow-through either time. If Vantage raises it, you have no answer.
+
+## Risks
+
+1. **Unclosed commitment loop.** Six open follow-ups, two re-promised. From the customer's seat this reads as a pattern, not an oversight.
+2. **No engineering trace.** I searched Linear twice and found **zero** Vantage records. Slack and Notion: also zero. The product asks — latency, sandbox, webhooks, exports — don't appear to have been filed as work anywhere. They were promised in calls and stopped there.
+3. **Owner churn.** Seven different people own or attend across 19 records: Leo Grant, Tess Brown, Ana Petrova, Jordan Blake, Priya Shah, Dana Ortiz, Omar Haddad — plus you. No consistent relationship owner. You appear on only three records (DRI-81968, DRI-89702, CRM-65747), and the churn conversation happened without you.
+4. **Internal churn flag, externally unaddressed.**
+5. **Rate limits + support queue together.** Either alone is routine; both within two weeks suggests Vantage is hitting friction at scale.
+
+## What to say
+
+**Open by owning the gap, before they raise it.** You have six open items and a latency ask that's five months old. Leading with this is far stronger than being caught by it:
+
+> "Before we get to metrics — I went back through our last two quarters. We committed to follow-ups on latency, sandbox access, webhooks, reporting, and exports, and we haven't closed those out. That's on us. Here's the owner and date for each."
+
+Bring that list with a named owner and a real date per item. That single artifact is the most valuable thing you can put on the table.
+
+**Then, three things to land:**
+- **Latency and rate limits as one story.** These are connected — a customer hitting rate limits is a customer with a scale problem. Treat it as a capacity conversation, not a ticket.
+- **Ask directly about support experience.** DRI-10836 says support queue was discussed twice in one session. Ask what their team's experience has been, and be ready to hear it.
+- **Name yourself as the owner.** Seven people have touched this account in six months. Say plainly that you're the single point of contact going forward.
+
+**Do not** present NPS as a win, and don't open with metrics. Four NPS discussions in four months is not a trend you want to headline.
+
+## Before the call — fill these gaps
+
+The tools don't have these; you'll need them:
+1. **What came out of DRI-14442?** Ask Dana Ortiz and Tess Brown what triggered the churn discussion. Do this first.
+2. **Renewal date and ARR** — not in any record I found.
+3. **Latency and sandbox status** — was anything ever actually done? Nothing in Linear.
+4. **Customer-side stakeholders** — no Vantage names appear anywhere; all names in these records are Brightline-side.
+5. **Actual usage/NPS numbers** — referenced repeatedly, never recorded.
+
+---
+
+**Records cited:** CRM-15845, CRM-20779, CRM-23907, CRM-24363, CRM-37016, CRM-53521, CRM-65747, CRM-74774, CRM-84868, CRM-92524, DRI-10836, DRI-14442, DRI-57024, DRI-64274, DRI-67178, DRI-68417, DRI-77676, DRI-81968, DRI-89702. Slack, Linear, Notion: no matches.

@@ -1,0 +1,20 @@
+## Short answer: no — nothing about SSO changed, IdP-initiated or otherwise
+
+I searched Slack, Notion, Linear, Drive, and the CRM. There's no record of any change to SSO scope, dates, or flow support.
+
+**What the roadmap actually says** — `NOT-20876` ("Public roadmap H1 2027", 2026-06-30), the only record where SSO scope is defined:
+
+> SSO (SAML), SP- and IdP-initiated: Q1 2027
+
+Both flows are a single line item, committed together for Q1 2027. That line has not been revised — it's still the current public roadmap, and SSO hasn't shipped yet.
+
+**What did change recently.** The only two roadmap/shipping announcements in the last several weeks are:
+
+- `SLA-17908` (#general, 2026-09-19): **Sandbox environments (Rail) slip from Q4 2026 → Q2 2027.** "Please update any customers expecting them this year."
+- `SLA-26281` (#general, 2026-09-20): Crane is live — API rate limits raised for all paid plans.
+
+Sandbox was the *only* Q4 2026 item on the roadmap, and it's the only date that moved. My guess is that's the change you're thinking of — it's easy to cross with SSO since sandbox comes up in the same customer conversations (e.g. `DRI-19269`, Bluewater Logistics, 2026-09-04, covered both SSO and sandbox in one call).
+
+**One caveat worth your judgment.** There are a lot of SSO records — roughly 30+ across Slack, Notion, Drive, and CRM (`CRM-57082` Vantage Telecom 2026-09-19, `CRM-93928` Pinecrest Realty 2026-09-12, `DRI-67178` Vantage Telecom 2026-09-11, etc.) — but they're all one-line stubs like "Discussed SSO questions," with no substance logged. So I can confirm nothing was *written down* about an SSO change; I can't rule out that someone said something verbally that never made it into a record. Tess Brown owns the SSO notes (`NOT-20443`, 2026-08-24; `SLA-94820`, 2026-08-18) and would be the one to confirm.
+
+If you're about to tell a customer something, the safe line is: SSO (SAML) with both SP- and IdP-initiated remains Q1 2027, unchanged. The item to proactively correct is sandbox, not SSO.

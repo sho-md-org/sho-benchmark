@@ -1,0 +1,25 @@
+## Short answer: none — you have no SSO promise on record
+
+I checked your commitment list and the SSO records. **No commitment attributed to you is on the SSO feature.** So there's nothing on SSO for you to re-check with the customer.
+
+**The one real SSO commitment in the system isn't yours:**
+- `CRM-62434` (Umber Studios renewal, 2026-08-17) — **Priya Shah (AE)** committed SAML SSO with IdP-initiated sign-in by March, logged as a renewal condition. Worth flagging to Priya since it's a renewal condition, but it's not your promise to reaffirm.
+
+**Your SSO-tagged records are discussion notes, not promises:** `DRI-18519` (Harbor Clinics), `DRI-79562` (Norrland AB), `SLA-21939`, `NOT-29833`, `NOT-58902`, `CRM-74174` (Evergreen Bank). All are "discussed SSO questions" — no commitment language, no dates, no deliverables.
+
+## What *is* flagged for you (different features)
+
+Three of your four commitments carry a notice that something outside your visibility may have changed them. Two are yours:
+
+| Commitment | Customer | Due | Source |
+|---|---|---|---|
+| Advanced analytics (Osprey) | Lena Fox, Pinecrest Realty | spring release | `SLA-93532` |
+| Audit log export | Lena Fox, Granite Insurance | Q1 2027 | `SLA-77342` |
+
+For both: **check with the product owner before reaffirming these to the customer.** I can't tell you whether they still hold.
+
+The third flagged one, SCIM provisioning (Kai Berg, Umber Studios, Q1 2027, `SLA-12035`), belongs to Jordan Blake (AE). It's adjacent to SSO in the identity area and it's the *same account* as Priya's SAML commitment — so if Umber Studios asks you about "SSO," you may get pulled into a conversation covering both `CRM-62434` and `SLA-12035`, neither of which is yours. Route that to Priya and Jordan rather than answering directly.
+
+Offline mode (Tom Hale, Meridian Travel, `SLA-24221`) is clean — no later change found.
+
+**If you were thinking of a specific SSO promise you made verbally**, it isn't captured in any record I can see. Tell me the customer and I'll search that account directly.

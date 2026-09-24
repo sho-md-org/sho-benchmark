@@ -1,0 +1,85 @@
+# Aster Health — QBR Brief
+
+**Important caveat up front:** I pulled all 17 Aster Health records across CRM and Drive, and every one is a topic-level stub — a subject line, attendees/owner, and a "next: follow up on X." There are no ARR figures, renewal dates, NPS scores, usage metrics, support-ticket counts, or written commitments anywhere in the systems. Slack, Linear, and Notion return **zero** records mentioning Aster Health.
+
+So I can't give you "where things stand" in the numbers sense — that data doesn't exist in these tools. What I *can* give you is the account's thread map: what keeps coming up, who owns it, and which follow-ups never visibly closed. That's genuinely useful for a QBR, and I've flagged what you'll need to source elsewhere.
+
+---
+
+## 1. Engagement timeline (Apr–Sep 2026)
+
+| Date | Topic | Owner / Attendees | Stated next step | ID |
+|---|---|---|---|---|
+| Apr 12 | Sandbox | Ana Petrova, Dana Ortiz | — | DRI-86962 |
+| Apr 13 | NPS | Ana Petrova | Security review | CRM-26522 |
+| Apr 18 | Exports | Leo Grant | Churn | CRM-76005 |
+| Apr 18 | Exports | Leo Grant | Audit prep | CRM-45213 |
+| Apr 19 | Dashboards | Ana Petrova | SSO questions | CRM-57156 |
+| Apr 28 | Exports / Integrations | Ana Petrova, Leo Grant, Omar Haddad | — | DRI-23711, DRI-82652 |
+| May 10 | Sandbox | **Maya Chen** | Search | CRM-62644 |
+| May 11 | Hosting | Tess Brown | Hosting | CRM-81799 |
+| May 11 | QBR prep | Omar Haddad, Ana Petrova | — | DRI-70983 |
+| May 17 | Sandbox | Ana Petrova | Churn | CRM-64767 |
+| Jun 12 | Integrations | Jordan Blake, Priya Shah | — | DRI-48732 |
+| Jun 14 | Latency | Priya Shah | Security review | CRM-16329 |
+| Jun 22 | Latency | Leo Grant | Churn | CRM-68765 |
+| Jul 5 | NPS | Omar Haddad, Dana Ortiz | — | DRI-30445 |
+| Jul 19 | Search / roadmap | Jordan Blake, **Maya Chen** | — | DRI-36553 |
+| Jul 21 | Dashboards | Sam Lee | NPS | CRM-75476 |
+| Sep 10 | Pricing / support queue | Dana Ortiz | — | DRI-53905 |
+| Sep 17 | Dashboards / search | Omar Haddad, **Maya Chen** | — | DRI-75615 |
+| Sep 28 | NPS / audit prep | Omar Haddad, Ana Petrova | — | DRI-36735 *(future-dated)* |
+
+**Omar Haddad** is the most recurring name (5 records, including your Sep 17 call and both recent Notion QBR-prep pages NOT-42571, NOT-52051) — treat as the primary counterpart. **Ana Petrova** carries the most CRM ownership historically.
+
+---
+
+## 2. Risks
+
+**Churn flagged three times, never visibly closed.** Three separate CRM records set "follow up on churn" as the next step — Exports Apr 18 (CRM-76005), Sandbox May 17 (CRM-64767), Latency Jun 22 (CRM-68765). Three different product areas, spanning two quarters, three different owners. No record anywhere shows that follow-up happening. This is your single strongest risk signal.
+
+**Latency is a repeat complaint with no engineering trail.** Discussed twice in eight days (CRM-16329 Jun 14, CRM-68765 Jun 22) — and Linear has no Aster Health ticket at all. Either it was fixed and never logged, or it was never escalated to engineering. You need to know which before the call.
+
+**Compliance thread keeps resurfacing.** Security review appears as the next step in April (CRM-26522) and again in June (CRM-16329); audit prep appears in April (CRM-45213) and again on the Sep 28 agenda (DRI-36735). Four touches over six months with no visible closure — likely a procurement or InfoSec gate that hasn't cleared.
+
+**Pricing entered the conversation two weeks ago.** Sep 10 (DRI-53905) is the first pricing discussion in the record, and it was paired with "support queue." Pricing plus support complaints immediately before a QBR usually means a commercial conversation is coming toward you, not from you.
+
+**Dashboards are a nine-month-old unresolved theme.** Apr 19 → Jul 21 → Sep 17 (CRM-57156, CRM-75476, DRI-75615). Still being discussed with you and Omar last week.
+
+---
+
+## 3. Open commitments
+
+Honest answer: **no commitment in these systems has a deliverable, owner-plus-date, or closure status.** What exists is a chain of "next step" markers, none of which have a matching record showing completion:
+
+- Churn follow-up ×3 — Leo Grant, Ana Petrova, Leo Grant
+- Security review ×2 — Ana Petrova, Priya Shah
+- Audit prep — Leo Grant (Apr), back on the Sep 28 agenda
+- SSO questions — Ana Petrova, Apr 19, **never mentioned again in any record**
+- Hosting follow-up — Tess Brown, May 11
+- Search follow-up — **yours**, CRM-62644, May 10 (you did discuss search Jul 19 and Sep 17, so this one plausibly progressed)
+- NPS follow-up — Sam Lee, Jul 21
+
+Before the call, I'd chase three of these directly: SSO (went silent entirely), latency (no eng ticket), and the security review/audit gate.
+
+---
+
+## 4. What to say on the call
+
+**Open by naming the pattern, not the metrics.** You don't have the numbers, and Omar will. Lead with continuity instead: "We've worked through sandbox, exports, integrations, latency, dashboards and search together since April — I want to use this session to close the loops that are still open rather than replay the list."
+
+**Get ahead of latency and audit.** These are the two threads most likely to be raised as grievances. Arriving with a status on each — even "here's where it sits and here's the date" — converts them from complaints into agenda items you control.
+
+**Ask directly about the churn signal.** Don't say "churn." Say: "Three separate times this year our team flagged internally that we weren't confident we were meeting expectations — on exports, on sandbox, on latency. I'd rather ask you straight than guess: where are we actually falling short?"
+
+**Expect pricing, and don't improvise.** Given DRI-53905, assume Omar raises commercials. If the support-queue complaint is real, a pricing conversation will be framed as value-for-money. Have your line ready or defer it to a scheduled follow-up.
+
+**Close on the Sep 28 session (DRI-36735).** There's already an NPS/audit-prep meeting with Omar and Ana on the books days after your call — use it as the landing spot for anything unresolved.
+
+---
+
+## 5. What you need to source before the call — I couldn't find it
+
+ARR and renewal date · contract terms · current NPS score (discussed 3×, never recorded) · support ticket volume and SLA performance · product usage/adoption data · named stakeholder map and exec sponsor · outcome of the Apr–Jun churn concerns · status of the security review and audit.
+
+Every one of these is standard QBR content and none of it is in CRM, Drive, Notion, Slack, or Linear. If Brightline keeps this in a billing system, a support desk, or a product analytics tool I don't have access to, point me at it and I'll fold it in. Otherwise the numbers will have to come from you or from Omar's own reporting.

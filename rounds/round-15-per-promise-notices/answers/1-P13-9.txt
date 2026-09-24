@@ -1,0 +1,31 @@
+## What the records say
+
+**The commitment is real and on the record.** In the 2026-07-09 sync, Tom Hale explicitly reminded Brightline that we told Quarry Mining SSO (SAML) by Q1 2027, and AE Leo Grant confirmed it (`DRI-36664`).
+
+**The roadmap still backs it.** The public roadmap lists "SSO (SAML), SP- and IdP-initiated: Q1 2027" (`NOT-20876`, dated 2026-06-30). SCIM provisioning is also Q1 2027 on the same doc.
+
+**No slip has been announced for SSO.** The only recent slip broadcast was Sandbox environments (Rail) moving to Q2 2027 (`SLA-17908`, 2026-09-19) — a different item. The Quarry Mining SSO threads (`NOT-20443`, `SLA-53734`) contain no re-dating.
+
+So: this is a straightforward "yes, still on track" — no walk-back needed.
+
+## Draft reply
+
+> Subject: Re: SSO (SAML) timeline
+>
+> Hi Tom,
+>
+> Yes — SSO (SAML) is still targeted for Q1 2027, covering both SP-initiated and IdP-initiated flows. That's unchanged from what we confirmed on our July 9 call and it's what's on our published H1 2027 roadmap.
+>
+> Two things worth flagging while we're here:
+>
+> - SCIM provisioning is also targeted for Q1 2027, so if you're planning to automate user lifecycle alongside SSO, those should land in the same window.
+> - As we get closer to the build, I'd like to get your IdP details (Okta, Entra, something else?) and any specific attribute-mapping or enforcement requirements in front of our product team, so your configuration is accounted for rather than retrofitted.
+>
+> If it's useful, I can set up a short session with our product lead in the new year to walk you through the rollout plan and what the migration looks like on your side.
+>
+> Best,
+> Leo
+
+## One thing to check before you send
+
+The most recent SSO-specific confirmation I can find is the roadmap doc from 2026-06-30 — about three months old — and there's no engineering ticket for SAML in Linear to corroborate progress. Given Quarry Mining has an open churn thread (`DRI-67006`), I'd get a one-line confirmation from Maya Chen (roadmap owner, `NOT-85086`) before reaffirming the date in writing. Re-committing to Q1 2027 and then slipping would be materially worse than a short delay in replying.

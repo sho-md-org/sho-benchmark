@@ -1,0 +1,53 @@
+## Keystone Energy — QBR Brief
+
+**Before you read the rest: one thing needs clearing first.**
+
+### ⚠️ Do not reaffirm the audit log export date on this call until you check with the product owner
+
+The commitment on record is **audit log export with SIEM streaming (into Splunk) by Q1 2027**, made by the company and confirmed by Jordan Blake (AE) on the 2026-08-03 sync (`DRI-34564`). Nia Cole raised it herself in that meeting, so she considers it a live promise and will likely bring it to the QBR.
+
+There may be a more recent decision affecting that promise that isn't visible to me. I can't tell you whether it does or doesn't. **Ask the product owner whether the Q1 2027 commitment still holds before you restate it to Keystone.** If you can't get an answer before the call, say you'll confirm the timeline in writing afterward rather than re-committing to the date verbally — Nia already has one confirmation from Jordan on the books, and a second one from you would be hard to walk back.
+
+### Where things stand
+
+Audit readiness has been the dominant thread all year — six touchpoints from May through August:
+
+| Date | Record | Owner / attendees | Note |
+|---|---|---|---|
+| 2026-05-08 | `CRM-90377` | Dana Ortiz | Audit prep; next step notifications |
+| 2026-06-08 | `DRI-85107` | Jordan Blake, Omar Haddad | Audit prep + case study |
+| 2026-06-17 | `CRM-17727` | Ana Petrova | Audit prep; next step support queue |
+| 2026-06-25 | `DRI-48005` | Omar Haddad, Maya Chen | Audit prep + pricing |
+| 2026-08-17 | `CRM-56742` | Omar Haddad | Audit prep; next step webhooks |
+| 2026-08-24 | `DRI-84961` | Maya Chen, Sam Lee | Audit prep and exports |
+
+Other threads: onboarding (`CRM-15788`, 2026-06-10, Priya Shah), rate limits (`CRM-60405`, 2026-06-04, Tess Brown), integrations (`DRI-31273`, 2026-08-10, with Sam Lee). Your own QBR prep call (`CRM-93344`, 2026-08-25) left one open next step: **follow up on the security review** — that's still unresolved in the records and is the obvious loose end to close before the QBR.
+
+### Open commitments (Keystone-specific)
+
+- **Audit log export + Splunk streaming, Q1 2027** — `DRI-34564`. Status uncertain, see above. This is the only commitment on record tied to the Keystone account.
+
+Other commitments in the system (advanced analytics/Osprey, offline mode, SCIM) belong to Pinecrest Realty, Meridian Travel, and Umber Studios — not Keystone. Don't let them bleed into this conversation.
+
+### Risks
+
+1. **Timeline exposure on audit log export.** The commitment is confirmed by an AE, the customer is tracking it, and its current status is unverified. This is the single biggest risk in the account.
+2. **Ownership churn.** Five different internal owners across audit-prep calls (Dana, Ana, Omar, Tess, Priya). Keystone has likely noticed. A named single point of contact would help.
+3. **Unclosed threads.** Security review (from your 2026-08-25 call), webhooks (`CRM-56742`), notifications (`CRM-90377`), support queue (`CRM-17727`) — all recorded as next steps with no visible closure. Expect at least one to resurface.
+4. **Thin records.** The notes I can see are short and don't capture health scores, usage, renewal date, or sentiment. Worth pulling those separately if they exist elsewhere — my read of this account is based only on meeting/call summaries.
+
+### What to say
+
+**Open with the audit story, not the roadmap.** Their whole year with you has been audit readiness — lead by summarizing the arc from May to August and what's actually landed.
+
+**On audit log export, if it comes up (it will):** "I know Nia raised the Q1 2027 audit log export and Splunk streaming in August. I want to give you a precise answer rather than a hallway one — I'm confirming the delivery detail internally and will come back to you in writing this week." Then actually do that. Don't reaffirm or retract the date live.
+
+**Name yourself as the owner.** "Going forward I'm your single point of contact across audit, integrations, and support escalations." Directly addresses the churn risk.
+
+**Close the security review explicitly** — either report it done or give a date.
+
+**Ask, don't just present:** what does their audit calendar look like for Q1 2027, and what do they need from you by when? That reframes the export timeline as a joint plan instead of a promise you're defending.
+
+### Your one action before the call
+
+Ask the product owner whether the Q1 2027 audit log export + SIEM streaming commitment (`DRI-34564`) still holds. Everything else in this brief is ready to use as-is.

@@ -1,0 +1,72 @@
+# Cobalt Retail — QBR Brief
+
+**Prepared 2026-09-24 · Primary customer contact: Sam Ortiz · Brightline team: Maya Chen (CS), Jordan Blake, Priya Shah, Omar Haddad, Tess Brown**
+
+## ⚠️ Read this before the call
+
+Your audit log export promise is the one thing you should **not** reaffirm without checking first.
+
+At the last QBR you told Sam Ortiz, verbatim: *"you'll have it by Q1 2027 as a CSV export, you have my word"* — Cobalt is planning around it (**CRM-38600**, 2026-07-24). That commitment itself shows no recorded change.
+
+However, you made a parallel audit log export commitment to Lena Fox at Granite Insurance (**SLA-77342**), and that one carries a flag: there is a decision I don't have visibility into that may or may not affect the promise. Since it's the same feature, I can't treat the Cobalt date as safely confirmed either.
+
+**Action before the QBR:** ask the audit log export product owner whether Q1 2027 still holds. If you can't reach them in time, describe status as "on the published roadmap for Q1 2027, and I'll confirm the exact delivery shape with the product team" rather than re-giving your word.
+
+One scope detail worth resolving in the same conversation: you promised Cobalt a **CSV export**; the public roadmap (**NOT-20876**) lists "Audit log export incl. SIEM streaming" for Q1 2027, and that's what you promised Granite. Confirm whether Cobalt's CSV need is covered by the same release or is a separate deliverable.
+
+## Where things stand
+
+Engagement is steady and broad — roughly a dozen touchpoints since April 2026, spread across multiple Brightline owners. Recent themes:
+
+| Date | Topic | Owner | Record |
+|---|---|---|---|
+| 2026-08-11 | Billing + audit prep | Omar Haddad | DRI-75222 |
+| 2026-08-04 | QBR prep | Jordan Blake | CRM-12694 |
+| 2026-08-01 | Notifications | Omar Haddad | CRM-35990 |
+| 2026-07-24 | QBR — audit log export pushed hard | Maya Chen | CRM-38600 |
+| 2026-07-23 | Reporting | Priya Shah | CRM-94849 |
+| 2026-06-23 | Pricing | Priya Shah | CRM-87224 |
+| 2026-06-12 | Audit prep | Omar Haddad | CRM-24323 |
+
+**Audit prep is the through-line.** It recurs as the "next step" across CRM-12694, CRM-87224, and DRI-75222, and appears in internal threads (SLA-12553, SLA-13802). Cobalt is clearly working toward a compliance deadline, which is why audit log export is their pressure point.
+
+## Open commitments
+
+1. **Audit log export, Q1 2027, CSV** — yours, to Sam Ortiz (CRM-38600). Status: no recorded change, but see the flag above. **Verify before reaffirming.**
+2. **Pricing follow-up** — CRM-87224 (Priya Shah) closed with a next step that doesn't appear resolved in later records. Worth confirming with Priya so you're not blindsided if Sam raises commercials.
+3. **Billing** — DRI-75222 (Ana Petrova, Omar Haddad). Check with Omar whether anything is outstanding.
+
+No other Cobalt-specific commitments appear in the records I can see. The other flagged commitments in the system (advanced analytics, SCIM, offline mode) belong to Pinecrest Realty, Umber Studios, and Meridian Travel — not Cobalt, so they're not your problem on this call.
+
+## Risks
+
+- **Highest: the audit log export date.** Sam pushed on this and is planning a rollout around it. You gave a personal guarantee. If the date or scope moves and Cobalt hears it late, the credibility damage lands on you directly.
+- **Scope mismatch (CSV vs. SIEM streaming)** — a quiet risk that only surfaces at delivery if not clarified now.
+- **Ownership churn** — five different Brightline owners across the account's records. Sam may have heard slightly different things from different people. Go in knowing who said what.
+- **Thin recent records.** Most call notes are one-liners without outcomes. If anything material happened recently, it may not be written down — a quick pre-call ping to Jordan (QBR prep owner) and Omar (audit prep owner) is worth the five minutes.
+
+## What to say
+
+**Opening — lead with their goal, not our roadmap:**
+> "I know audit readiness is driving your quarter. Let's start there, then cover billing, reporting, and where we're headed."
+
+**On audit log export — if you've confirmed with the product owner:** restate the date plainly and give Sam a written follow-up with scope and timing.
+
+**If you haven't confirmed yet, say this instead:**
+> "Audit log export is on our published roadmap for Q1 2027. I want to give you the precise delivery shape rather than a rough one — I'm confirming the export format details with our product team and will have that to you in writing this week."
+
+That's honest, holds your credibility, and buys you the confirmation window. Set a specific date for the follow-up and hit it — Sam is planning around this, and a missed follow-up costs more than the original uncertainty.
+
+**On the roadmap generally:** stick to what's published in NOT-20876. Don't extend new dates in the room.
+
+**Closing:**
+> "What's the one thing that would most de-risk your audit timeline? I'd rather solve that than show you a feature list."
+
+## Before the call — checklist
+
+1. Ask the audit log export product owner whether Q1 2027 still holds for Cobalt, and whether CSV is in scope (blocking — do this first).
+2. Ping Priya on the open pricing thread (CRM-87224).
+3. Ping Omar on billing (DRI-75222) and audit prep status.
+4. Ask Jordan what came out of QBR prep (CRM-12694) — those notes have no recorded outcome.
+
+**Key record IDs:** CRM-38600 (your commitment), SLA-77342 (flagged sibling commitment), NOT-20876 (public roadmap), DRI-75222, CRM-12694, CRM-87224.

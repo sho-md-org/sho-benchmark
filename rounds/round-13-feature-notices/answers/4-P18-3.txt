@@ -1,0 +1,58 @@
+## Cobalt Retail — QBR brief
+
+**One flag up front, and it drives the whole call.**
+
+### ⚠️ Do not re-promise the audit log export date
+
+At the July QBR (`CRM-38600`, 2026-07-24), Sam Ortiz pushed on **Audit log export (Lark)** and you said: *"you'll have it by Q1 2027 as a CSV export, you have my word."* The record notes the customer is planning around it.
+
+Sho flags that commitment: a decision I don't have visibility into may or may not have changed it. I can't tell you which way, and I can't rule it out either. **Check with the product owner before you reaffirm Q1 2027 on this call.** The last artifact I can see is the public roadmap (`NOT-20876`, 2026-06-30), which lists "Audit log export incl. SIEM streaming: Q1 2027" — but that predates the flag, so treat it as stale, not as confirmation.
+
+This is the one item where getting it wrong is expensive: you gave a personal word, the customer is building plans on it, and it's a named-feature date.
+
+### Where things stand
+
+The Cobalt record trail is thin — mostly one-line call logs without substance:
+
+| Date | Record | Topic / owner |
+|---|---|---|
+| 2026-04-20 | `CRM-70221` | Roadmap — Maya Chen |
+| 2026-04-27 | `CRM-49779` | Onboarding |
+| 2026-05-26 | `CRM-24697` | Dashboards — Tess Brown |
+| 2026-06-12 | `CRM-24323` | Audit prep — Omar Haddad |
+| 2026-06-15 | `CRM-16603` | Onboarding — Omar Haddad |
+| 2026-06-23 | `CRM-87224` | Pricing — Priya Shah |
+| 2026-07-23 | `CRM-94849` | Reporting — Priya Shah |
+| 2026-07-24 | `CRM-38600` | **QBR notes — audit log export commitment** |
+| 2026-08-01 | `CRM-35990` | Notifications — Omar Haddad |
+| 2026-08-04 | `CRM-12694` | QBR prep — Jordan Blake |
+| 2026-08-11 | `DRI-75222` | Billing — Ana Petrova, Omar Haddad |
+
+Two things stand out. **Audit prep is the account's spine** — it's the named next step out of `CRM-87224`, `CRM-12694`, and the subject of `CRM-24323`, `DRI-75222`, and Slack threads `SLA-12553` (Aug 6) and `SLA-13802` (Sep 19, yours: "roadmap next week"). Whatever Cobalt's compliance timeline is, it's the thing they keep coming back to. **And the account has gone quiet** — nothing Cobalt-specific since 2026-08-11, roughly six weeks. Worth knowing before you walk in.
+
+Ownership is also scattered across Jordan Blake, Omar Haddad, Priya Shah, Tess Brown, and Ana Petrova, with no single thread visible. If Cobalt has felt handed-around, that's probably why.
+
+### Risks
+
+1. **The audit log export date** — as above. The exposure isn't the feature, it's that you personally guaranteed it.
+2. **Six weeks of silence into a QBR.** You'll be reconstructing status live unless you pre-call someone.
+3. **Billing came up in August** (`DRI-75222`) alongside audit prep, with no visible resolution. Find out where that landed before the call so it doesn't surface as a surprise.
+4. **No health signal in any record** — no usage, renewal date, or sentiment. Don't assume green.
+
+### What to say
+
+**Before the call:** ping the product owner on audit log export — "is Q1 2027 CSV still good for Cobalt?" Also ask Omar or Ana where billing landed, and Jordan what came out of the Aug 4 QBR prep.
+
+**On the call, if the date is confirmed:** restate it plainly and move to what Cobalt needs to do to be ready.
+
+**If it's changed, or you couldn't reach the product owner in time:**
+
+> "I know the audit log export is what you're planning around. I don't want to give you a date I can't stand behind, so let me get you a confirmed answer in writing this week rather than reconfirm something on the fly."
+
+That's a clean hold. It doesn't walk back your July commitment, it doesn't signal bad news, and it buys you the confirmation. What you want to avoid is repeating "you have my word" on a date you haven't re-verified — that converts a recoverable slip into a broken promise.
+
+**Then steer to audit prep.** It's what they actually care about across five months. Ask what their audit deadline is and work backward — that's the conversation that makes the QBR useful regardless of how the date question resolves.
+
+---
+
+Separately, three of your other flagged commitments carry the same "verify before reaffirming" notice and aren't Cobalt: Advanced analytics to Lena Fox / Pinecrest (`SLA-93532`), audit log export to Lena Fox / Granite Insurance (`SLA-77342`, also yours), and SCIM to Kai Berg / Umber Studios (`SLA-12035`, Jordan's). Since you're already asking the product owner about audit log export, folding Granite into that same question is nearly free. Want me to draft that message?

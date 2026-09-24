@@ -1,0 +1,28 @@
+## I can't confirm that — and I'd push back on the premise
+
+I searched Slack, Notion, Linear, Drive, and the CRM for anything about an SSO change. **There's no record of any SSO change at all**, let alone one scoped to IdP-initiated vs. SP-initiated flows.
+
+**What actually exists:**
+
+| Source | What's there |
+|---|---|
+| Slack | SLA-94820 (2026-08-18, Tess Brown), SLA-95210, SLA-21939 (yours, 2026-05-01), SLA-55194 — all one-line status pings: "update on SSO questions" |
+| Notion | NOT-20443 (2026-08-24, Tess Brown), NOT-40327, NOT-29159 — "Notes on SSO questions" + an owner + an unrelated tag |
+| Drive | DRI-67178 (Vantage Telecom, 2026-09-11), DRI-19269 (Bluewater Logistics, 2026-09-04), and ~8 more — attendee lists, no technical content |
+| CRM | CRM-57728 (Pinecrest Realty, 2026-09-26), CRM-57082 (Vantage Telecom, 2026-09-19), CRM-93928 — "Discussed SSO questions," next-step is always a generic follow-up |
+| Linear | **Nothing.** Zero results for "SSO," "SAML," "authentication," or "login" |
+
+**The two things that stand out:**
+
+1. **Linear is empty.** If Brightline had shipped a change to SAML binding, assertion handling, or IdP-initiated flows, there'd be an engineering ticket. There isn't one. That's the strongest signal that no such change was made — or that it happened somewhere outside these tools.
+2. **Every SSO record is a content-free stub.** Not one mentions SAML, IdP-initiated, SP-initiated, ACS URLs, certificates, Okta, or Entra. "SSO questions" appears to be a recurring topic label, not a change log.
+
+**So the honest answer to your question:** I don't have evidence that *anything* changed in SSO, so I can't tell you whether it was the IdP-initiated part. If you ask a customer "yes, that's the part that changed," you'd be confirming something no record here supports.
+
+**Where I'd go next:**
+
+- **Ask Tess Brown directly.** She owns the two most recent SSO items (SLA-94820, NOT-20443) and her August note flags *"EU customers next week"* — worth checking whether an EU rollout touched auth.
+- **Check engineering's actual sources** — release notes, changelog, the SAML service repo, or #eng channels. The gap between "customers are asking" and "zero Linear tickets" suggests the technical detail lives somewhere I can't see.
+- **Nail down where you heard it.** If a specific customer reported IdP-initiated logins breaking, that ticket or email is the real starting point — and it'd be a live bug, not a planned change.
+
+One caveat on my search: these tools return only the top 10 matches per query, and the indexed records are uniformly shallow, so I can't rule out that richer detail exists in a system or channel not surfaced here.

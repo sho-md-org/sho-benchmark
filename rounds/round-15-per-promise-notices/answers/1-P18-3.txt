@@ -1,0 +1,83 @@
+## First, the honest headline
+
+I searched all five systems (CRM, Drive, Notion, Slack, Linear) for Cobalt Retail. **Every record is a one-line stub** — a topic, an owner, and a "next: follow up on X" pointer. There is no ARR, renewal date, NPS score, usage/adoption data, named customer-side stakeholders, or dated commitment anywhere in the account.
+
+So I can't hand you a real QBR deck, and I'd be inventing numbers if I tried. What I *can* give you — and what's below — is an accurate relationship map, a genuine open-loop analysis from the "next step" chains, and a talk track. The metrics you'll have to pull from wherever they actually live (billing/product analytics), because they're not in these tools.
+
+---
+
+## Where things stand
+
+22 Cobalt touchpoints from 2026-04-01 to today, running at a steady ~2/month. No gaps, no obvious cooling off. Five Brightline people carry the account: Priya Shah (most active, 5 CRM calls), Omar Haddad (4), Tess Brown, Sam Lee, Ana Petrova, plus you.
+
+The relationship has moved through three phases:
+
+- **Apr–Jun — onboarding & enablement.** Onboarding appears three times (`CRM-49779`, `CRM-16603`, `DRI-18657`), alongside webhooks, search, dashboards, exports. A long onboarding tail.
+- **Jun–Aug — commercial.** Pricing (`CRM-87224`), reporting→billing (`CRM-94849`), billing + audit prep (`DRI-75222`), and two case-study sessions (`DRI-20022`, `DRI-95243`). They agreed to be a reference — that's a positive signal worth banking.
+- **Aug–Sep — technical friction.** Rate limits become the dominant thread (`DRI-33978`, `CRM-12380`), plus sandbox/hosting (`DRI-35074`) and offline/mobile (`DRI-82140`).
+
+**Note the trajectory.** The account moved *from* onboarding *to* commercial *to* technical friction — and the most recent entry, `CRM-12380` (2026-09-12, Priya), has next step **"follow up on churn."** That's the only risk word in the entire account history, and it's the newest thing in it.
+
+---
+
+## Open commitments
+
+Tracing every "next: follow up on X" against whether a Cobalt record on that topic actually followed:
+
+**Unresolved:**
+
+| Opened | Commitment | Owner | Age |
+|---|---|---|---|
+| `CRM-70221` 04-20 | Security review | **You** | ~5 mo |
+| `CRM-36268` 05-22 | Security review | **You** | ~4 mo |
+| `CRM-49779` 04-27 | Latency | Priya | ~5 mo |
+| `CRM-24323` 06-12 | Trial conversion | Omar | ~3 mo |
+| `CRM-12380` 09-12 | Churn | Priya | 2 wk |
+
+I confirmed via dedicated searches that **no Cobalt Retail security-review or latency record exists** in CRM or Drive.
+
+**Resolved or progressing:** webhooks→case study (`DRI-20022`, `DRI-95243`), reporting→billing (`DRI-75222`), NPS→mobile app (`DRI-82140`, `DRI-72283`), dashboards/onboarding→rate limits (`DRI-33978`, `CRM-12380`), QBR prep→audit prep (`DRI-75222`).
+
+---
+
+## Risks
+
+**1. An unaddressed security/compliance cluster — and you own the oldest piece.** Three separate threads point the same direction and none closed:
+- Security review, promised twice by you (`CRM-70221`, `CRM-36268`)
+- SSO questions raised 2026-07-27 (`DRI-20022`), never revisited
+- EU customers / data residency (`DRI-33978`) and hosting (`DRI-35074`)
+
+Individually these look like loose ends. Together they look like a stalled security workstream — and this is exactly the category that blocks renewals late and hard. Assume it comes up.
+
+**2. "Churn" as the latest next step.** Caveat honestly: in this system "churn" is a topic tag, and the Notion churn notes (`NOT-21725`, `NOT-30253`, both Ana Petrova) are generic and *not* tagged to Cobalt — I could not tie them to this account. So this is a flag, not a finding. **Talk to Priya before the call.** If there's a real churn signal, it reframes the entire QBR.
+
+**3. Rate limits are the recurring technical complaint.** Surfaced repeatedly since May and still open as of 2026-09-12. A customer raising the same ceiling for four months is either about to outgrow the tier or about to get frustrated. Either way it needs an answer, and it's plausibly connected to the pricing thread.
+
+**4. Onboarding ran long.** Three sessions across three months may mean time-to-value slipped — relevant if they push back on pricing.
+
+---
+
+## What to say
+
+**Open with the reference win.** They've engaged on a case study twice. Lead from strength and thank them.
+
+**Then get ahead of security.** Don't let them raise it. Something like: *"I owe you a security review — that's been open on my side since spring, and I want to close it properly. Let me bring SSO and EU data residency into the same conversation and come back with a date."* Owning a five-month-old slip costs you thirty seconds and buys credibility for the rest of the call.
+
+**Turn rate limits into a tier conversation.** It's been live since May. Reframe from complaint to growth: they're hitting ceilings because they're using the product. That connects naturally to pricing (`CRM-87224`, `CRM-35990`).
+
+**Listen hard on renewal posture.** Given the churn flag, your main job is diagnostic. Ask open questions about what's working and where they're frustrated, and let them talk.
+
+**Close with a dated commitment list.** This account's pattern is follow-ups that point at topics and then evaporate. Break it — end with owners and dates.
+
+---
+
+## Before the call
+
+Four things, roughly in priority order:
+
+1. **Ask Priya what "churn" meant** in `CRM-12380`. This is the one that could change everything.
+2. **Pull the real numbers** — ARR, renewal date, seat/usage trend, support volume, actual NPS. None are in these tools; `CRM-92187` records that an NPS conversation happened but not the score.
+3. **Get the readout from `DRI-72283`** — a mobile app meeting with Sam Lee and Priya Shah is dated **2026-09-26**, two days out and ahead of your QBR.
+4. **Confirm who's attending on Cobalt's side.** No customer-side names appear anywhere in the account record.
+
+One process note worth raising with your team separately: an account with 22 logged touchpoints and zero retrievable substance is a data-quality problem, not just a Cobalt problem. Every account I sampled (Aster Health, Kestrel Foods, Evergreen Bank) looks the same.

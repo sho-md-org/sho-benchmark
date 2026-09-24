@@ -1,0 +1,31 @@
+## Short answer: none of your tracked promises are on SSO
+
+I checked your commitment records and every SSO record in the tools. The SSO material is all discussion, not commitment:
+
+- **DRI-18519** — Harbor Clinics, SSO questions + notifications (you, Ana Petrova)
+- **DRI-79562** — Norrland AB, SSO questions + offline (you, Priya Shah)
+- **CRM-74174** — Evergreen Bank, SSO questions, next step is audit prep
+- **SLA-21939**, **NOT-29833**, **NOT-58902** — status updates and notes you own
+
+No dated deliverable to a named customer appears in any of them, so there's nothing on SSO to be affected.
+
+## What is flagged, and is probably what prompted the question
+
+Three commitments carry a flag — meaning a change I can't see may or may not affect them. Two are yours:
+
+| Commitment | Customer | Due | Source |
+|---|---|---|---|
+| Advanced analytics (Osprey) | Lena Fox, Pinecrest Realty | spring release | **SLA-93532** |
+| Audit log export | Lena Fox, Granite Insurance | Q1 2027 | **SLA-77342** |
+
+The third, **SCIM provisioning** to Kai Berg at Umber Studios by Q1 2027 (**SLA-12035**), is also flagged — and since SCIM is identity/provisioning work that customers routinely bundle with SSO, this may be the "SSO promise" you have in mind. It was made by **Jordan Blake (AE)**, not you, so it's his to reaffirm, though it's worth coordinating if Umber Studios is your account.
+
+For context, **offline mode** to Tom Hale at Meridian Travel (**SLA-24221**, Priya Shah) came back clean — no later change found.
+
+## Why, and what to do
+
+I can't tell you *why* those three are flagged — the underlying decision isn't visible to me, and I can't confirm, deny, or characterize it. The flag itself is the signal, not evidence that anything changed.
+
+Before you reaffirm the analytics or audit-log-export dates to Lena Fox in writing, **check with the product owner** that they still hold. Same for Jordan on SCIM. Until then, it's safe to keep talking to customers about SSO generally — just don't attach new dates to analytics, audit log export, or SCIM.
+
+One caveat: if you made an SSO promise verbally or over email outside these systems, it wouldn't appear here. If you have a specific customer and date in mind, tell me who and I'll dig into that account.

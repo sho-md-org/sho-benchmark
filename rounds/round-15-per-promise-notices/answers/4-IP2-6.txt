@@ -1,0 +1,20 @@
+## Short answer: I found no record of anything changing on SSO — IdP-initiated or otherwise.
+
+**What the records actually say about SSO:**
+
+- **NOT-20876** (Public roadmap H1 2027, 2026-06-30) lists **"SSO (SAML), SP- and IdP-initiated: Q1 2027"** — both flows, together, one line item. That's the most recent SSO statement I can see.
+- **CRM-62434** (Umber Studios, 2026-08-17) — Priya Shah committed SSO (SAML) by March *with IdP-initiated sign-in*, logged as a renewal condition.
+- **CRM-31062** (Vantage Telecom, 2026-06-08) — Priya Shah: "by Q1 2027, including IdP-initiated login from Okta, you have my word."
+- **DRI-36664** (Quarry Mining, 2026-07-09) and **CRM-74447** (Riverton City, 2026-08-18) — SSO (SAML) by Q1 2027 / "early next year," no flow specified.
+
+Nothing in these splits IdP-initiated out, reschedules it, or narrows it to SP-initiated only. The four SSO records I could find beyond these (NOT-29159, NOT-40327, SLA-95210, SLA-21939) are stubs with no substance. So on the SSO commitments, nothing flagged — treat them as they stand.
+
+**But I think you may be thinking of a different feature.** The flagged item on Umber Studios — the same account as the "by March, with IdP-initiated" promise — is **SCIM provisioning**, not SSO: Jordan Blake told Kai Berg SCIM by Q1 2027 (**SLA-12035**). It's identity-adjacent, same account, same quarter, which makes it easy to blur with SSO. I can't verify whether that one still holds — **check with the product owner before reaffirming SCIM to Umber Studios.**
+
+**Two of your own commitments need the same check** before you restate them to anyone:
+- **SLA-93532** — Advanced analytics (Osprey) in the spring release, to Lena Fox at Pinecrest Realty
+- **SLA-77342** — Audit log export by Q1 2027, to Lena Fox / Granite Insurance
+
+For both, confirm with the product owner rather than repeating the date to the customer.
+
+One inconsistency worth cleaning up regardless: the SSO promises are worded four different ways across accounts — "by March," "Q1 2027," "early next year." Q1 2027 covers all of them, but "by March" is the tightest reading and it's a logged renewal condition, so Umber Studios is the one with the least slack.

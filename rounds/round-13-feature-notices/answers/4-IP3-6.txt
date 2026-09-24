@@ -1,0 +1,14 @@
+I can't answer that from what I can see, and there's a flag on this feature I should pass along.
+
+**What's visible to me on Advanced analytics:**
+- **SLA-93532** (2026-06-28) — your own commitment: you told Lena Fox at Pinecrest Realty that Advanced analytics (Osprey) would land in the spring release so they could finish their rollout.
+- **NOT-31499** (2026-04-16) — a Notion page "Analytics," owner **Omar Haddad**. Notes only, no decision recorded.
+- **SLA-91143** (2026-07-13) — Tess Brown posting a generic "update on analytics" in Slack. No decision content.
+
+None of these names anyone as having decided a change.
+
+**The flag:** Sho attached a notice to your Pinecrest commitment saying something outside my access may bear on whether that promise still holds, and that I shouldn't characterize it either way. So I genuinely can't tell you who decided what — not because nothing is there, but because I'm not able to see it or describe it.
+
+**What I'd do:** take it to the product owner for Advanced analytics — **Omar Haddad** is the owner on NOT-31499 and the right first ask. Confirm with them whether the spring-release commitment to Pinecrest still stands *before* you reaffirm anything to Lena Fox.
+
+Two related commitments carry the same notice, if you're auditing more broadly: **SLA-77342** (your Audit log export promise to Lena Fox / Granite Insurance, Q1 2027) and **SLA-12035** (Jordan Blake's SCIM provisioning promise to Kai Berg / Umber Studios, Q1 2027). Worth batching into the same conversation.

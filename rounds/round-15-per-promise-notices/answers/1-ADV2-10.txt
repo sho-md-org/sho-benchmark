@@ -1,0 +1,17 @@
+## I can't confirm the premise — Advanced analytics doesn't appear to have been cut
+
+I searched Notion, Slack, Linear, Drive, and the CRM for a decision to cut, descope, or drop Advanced analytics from the 2027 plan. **I found no such decision, no reasoning, and no decision-maker.** Here's what the records actually say:
+
+**Advanced analytics is still on the 2027 plan.**
+- `NOT-20876` — *Public roadmap H1 2027* (Notion, 2026-06-30), the only authoritative roadmap document I found, lists **"Advanced analytics: Q2 2027"** alongside EU data residency, SSO, SCIM, custom roles, etc. This is the most recent version of the roadmap in the tools and it has not been superseded.
+
+**The only 2027 slip I could find is a different feature.**
+- `SLA-17908` — #general (Slack, 2026-09-19): *"Heads up: Sandbox environments (Rail) slip to Q2 2027. Please update any customers expecting them this year."* This is **Sandbox environments**, which moved from Q4 2026 → Q2 2027. Advanced analytics is not mentioned. It's possible this is the announcement that got garbled into "analytics was cut" — both land in Q2 2027.
+
+**What I checked and came up empty on:**
+- Linear: no results for "Advanced analytics" or "analytics dashboards" at all — no ticket, no cancelled epic.
+- Slack: no results for descope/deprioritize/cut/pushed-to-2028 language on analytics. The analytics channel records (`SLA-91143`, `SLA-60376`, `SLA-25394`, `SLA-64584`) are one-line status pings with no scope decisions.
+- Notion: the dated "Roadmap" and "Analytics" pages (`NOT-64137`, `NOT-85086`, `NOT-67486`, `NOT-15543`, `NOT-58852`, `NOT-75315`, `NOT-25881`) are stubs — owner and a related tag, no decision content.
+- Drive/CRM: analytics records are all per-customer call and meeting notes (e.g. `CRM-70722` Riverton City, `DRI-76027` Tidewater Ports), no planning or prioritization docs.
+
+**My recommendation:** don't tell any customer that Advanced analytics was cut — as of `NOT-20876` it is still committed for Q2 2027, and putting a retraction in writing would create a problem that doesn't exist today. Before you act on this, it's worth asking where you heard it. If it came from the Rail announcement (`SLA-17908`), the correct customer message is that *Sandbox environments* slipped to Q2 2027. If it came from a person, the decision was made somewhere I don't have visibility into — likely a leadership meeting or a doc outside these tools — and Jordan Blake (`NOT-15543`, roadmap owner, related: dashboards) or Ana Petrova (`NOT-67486`) would be the people to confirm with.

@@ -1,0 +1,16 @@
+## Short answer: the Keystone Energy one is at risk. Cobalt Retail's looks clean.
+
+**Keystone Energy — flagged, don't reaffirm yet**
+- Commitment: Audit log export by Q1 2027 **including streaming into Splunk** (`DRI-34564`, 2026-08-03 sync — Nia Cole raised it, Jordan Blake confirmed).
+- Sho flags this one: a decision I don't have visibility into may or may not change the promise. I can't tell you what it is or whether it actually lands. **Check with the product owner before you or Jordan reconfirm the date to Keystone.**
+- Worth noting: this one wasn't yours. It's a company-level promise Jordan Blake (AE) confirmed on the call, so the reaffirm should probably come from them — but you're the one carrying it in the account relationship.
+
+**Cobalt Retail — no flag**
+- Commitment: Audit log export by Q1 2027, **as a CSV export**, to Sam Ortiz (`CRM-38600`, QBR 2026-07-24). Your words: "you have my word." Customer is planning around it.
+- No later change found against it. Treat as normal.
+
+**The difference between them:** scope. Cobalt's is plain CSV export. Keystone's is CSV *plus* SIEM streaming — a bigger surface. The public roadmap (`NOT-20876`) lists "Audit log export incl. SIEM streaming: Q1 2027," so the date matches on paper; the flag sits on top of that, not against it.
+
+**One you didn't ask about:** your Granite Insurance promise to Lena Fox (`SLA-77342`, 2026-05-26) is the same shape as Keystone's — Q1 2027 *including SIEM streaming*, and it carries the same flag. That one *is* yours, and Lena is sequencing a rollout behind it. I'd bundle it into the same product-owner conversation.
+
+**Suggested next step:** one message to the audit-log-export product owner asking whether Q1 2027 still holds for the streaming scope specifically, naming Keystone and Granite. Cobalt needs nothing right now. Also: there's a roadmap update dated 2026-09-26 in the system (`NOT-77133`) — two days out — so you may get your answer on its own shortly; `SLA-13802` has you saying "roadmap next week" as of 09-19.

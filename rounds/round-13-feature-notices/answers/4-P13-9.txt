@@ -1,0 +1,22 @@
+**Before this goes out:** there's a flag on the SSO (SAML) commitment to Quarry Mining — a decision I don't have visibility into may or may not affect the Q1 2027 date. Leo Grant reconfirmed that date to Tom Hale on 2026-07-09 (DRI-36664), and the public roadmap still lists SSO (SAML), SP- and IdP-initiated, for Q1 2027 (NOT-20876). But I can't verify the date still holds, so I've drafted this **without** re-promising Q1 2027. Check with the product owner, then either send as-is or swap in the confirmed date.
+
+---
+
+**Subject: Re: SSO (SAML) timing**
+
+Hi Tom,
+
+Thanks for checking in — and good to hear from you.
+
+SSO (SAML), SP- and IdP-initiated, is on our roadmap and it's firmly on our radar as a commitment to Quarry Mining. Rather than repeat a date back to you off the cuff, I'm confirming the current delivery timing with our product team this week so what I give you is solid.
+
+I'll come back to you by [date] with the confirmed timeline, and if anything has shifted, I'll tell you straight away along with what it means for your rollout plan.
+
+If it's useful in the meantime, I'm happy to set up a short call with our product owner for SSO so you can hear the implementation detail directly and get your IdP requirements in front of them early.
+
+Best,
+Leo
+
+---
+
+Two notes: fill in the `[date]` once you know when you'll have an answer from the product owner, and if they confirm Q1 2027 is intact, replace the second and third paragraphs with a direct reaffirmation — Tom explicitly asked for a yes/no and a hedge will read as a soft no if it isn't one.

@@ -1,0 +1,68 @@
+I pulled every Harbor Clinics record across all four systems — 36 records (23 CRM, 13 Drive; Slack and Linear have zero Harbor content). Here's the brief, but I need to lead with a caveat that changes how you should use it.
+
+## Read this first: the records are empty
+
+Every single Harbor record is a one-line stub. The complete text of the most recent CRM entry, verbatim:
+
+> **CRM-20713 · Pricing (Harbor Clinics), 2026-09-19** — "Call with Harbor Clinics. Discussed pricing. Owner Priya Shah. Next: follow up on support queue."
+
+That's the pattern across all 36. There is **no** recorded ARR, renewal date, contract term, customer-side contact name, health score, usage data, ticket volume, NPS value, or outcome of any conversation. So I can't tell you "where things stand" in the numbers sense — that data does not exist in these tools, and I'd be inventing it if I wrote it.
+
+What the trail *does* support is a read of the account's **shape**, and that read is not reassuring.
+
+## Where things stand
+
+**The churn signal is the headline.** There are three internal churn meetings about Harbor, and they're accelerating:
+
+- **DRI-17076** (Jul 20) — Leo Grant, Jordan Blake
+- **DRI-26772** (Sep 6) — Leo Grant, Priya Shah
+- **DRI-17950** (Sep 11) — **you** and Tess Brown
+
+Two in a single week this month. Harbor has more internal churn discussions than any other account I saw in the churn set. You were in the most recent one five days before the last customer call — so you likely know context here that the records don't capture. **Everything below should be checked against what you actually remember from Sep 11.**
+
+**Pricing has been live for five months and never closed:** DRI-51027 (Apr 23) → DRI-40615 (May 18) → DRI-55004 (Jul 21, you attended) → CRM-20713 (Sep 19). Recurring pricing pressure running alongside escalating internal churn talk is the classic renewal-risk pattern.
+
+**Engagement is steady but scattered.** 23 logged calls Apr–Sep across ~16 distinct topics — integrations, notifications, sandbox, latency, hosting, offline, dashboards, exports, reporting, onboarding, mobile app, rate limits, permissions UI, EU customers, security review, audit prep. Broad surface area, no evident throughline.
+
+## Open commitments
+
+Each CRM record ends with a "Next:" that has no recorded closure anywhere. The ones that look genuinely dropped:
+
+| Commitment | From | Date | Status |
+|---|---|---|---|
+| Follow up on **search** | CRM-99028, CRM-75336, CRM-96355, CRM-34983 | Apr 9 – Aug 22 | **Promised 4 separate times. Zero Harbor search records exist.** |
+| Follow up on **SSO questions** | CRM-34883 | Jul 15 | No Harbor SSO record (other accounts have them) |
+| Follow up on **trial conversion** | CRM-54833 | Sep 9 | No record |
+| Follow up on **support queue** | CRM-20713 | Sep 19 | Only support-queue doc is DRI-86859, from Apr 14 |
+| Follow up on **audit prep** | CRM-48825 | Jul 24 | Only audit-prep record is CRM-35862, from May 14 — predates the ask |
+
+**"Search" promised on four calls over four months with nothing logged against it** is the single most concrete open item I can give you, and the most likely thing they raise.
+
+## Risks
+
+1. **Renewal/churn risk** — the Sep 6 and Sep 11 churn meetings plus the unresolved pricing thread.
+2. **No consistent owner.** Nine different Brightline people own Harbor records: Omar Haddad, Ana Petrova, Priya Shah, Sam Lee, Leo Grant, Tess Brown, Dana Ortiz, Jordan Blake, and you. Priya Shah has drifted into de facto ownership recently (CRM-20713, CRM-39320, CRM-96355, CRM-48825). To the customer this likely feels like repeating themselves to a rotating cast — which is also the most plausible explanation for how "search" got dropped four times.
+3. **Tone risk on the case-study ask.** On Sep 9 (**CRM-54833**) we asked a churn-flagged account to be a reference. If that's still open, don't push it at the QBR — it reads badly if they're unhappy.
+4. **Compliance thread went quiet.** Security review (CRM-99028, Apr) and audit prep (CRM-35862, May) haven't appeared since. For a clinical customer, unresolved audit/security items are a renewal blocker.
+5. **Your own prep is exposed.** Whatever the numbers are, they're not in these systems. If they ask "what did we get this quarter," you have no data to answer with.
+
+## What I'd say
+
+Given you can't bring metrics, **don't run a performance-review QBR — run an accountability-and-listening one.** Attempting a polished value narrative without numbers will get picked apart.
+
+**Open by naming the follow-through gap before they do.** Something like: *"Before we look forward — you've raised search with us several times since the spring and we haven't closed it out. You've also had a rotating set of people from our side. I want to own that and fix the ownership piece today."* Naming it first converts your biggest liability into credibility.
+
+**Then a single owner.** Propose one named point of contact — you or Priya, given her recent activity. This is the concrete deliverable you can offer without any data.
+
+**Then listen on pricing.** Don't open with a defense or a discount. *"Pricing has come up repeatedly since April — I'd rather understand what's driving it than keep circling."* Their answer tells you whether this is budget, perceived value, or a competitive bid, and that determines the renewal play.
+
+**Close the specific loops:** search, SSO, trial conversion, support queue, and audit/security status.
+
+**Hold the case study.** Only raise it if the call goes clearly well.
+
+## Two things to do before the call
+
+1. **Pull the commercials from wherever they actually live** — billing, the contract system, a finance dashboard. Renewal date, ARR, and seat/usage trend are the load-bearing facts and none of them are in CRM, Drive, Slack, or Linear.
+2. **Reconcile against your Sep 11 memory** (DRI-17950). You and Tess discussed churn *and dashboards* — the doc records only those two words, but you'll know why Harbor was on that agenda. That context is the real foundation for this brief.
+
+One caveat on my reasoning: I'm inferring "dropped commitments" from the *absence* of follow-up records. If your team closes items over email or Slack DMs without logging them, some of these may already be resolved — worth a quick check with Priya Shah and Omar Haddad, who own the most recent threads.

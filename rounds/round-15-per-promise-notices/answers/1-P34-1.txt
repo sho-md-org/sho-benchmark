@@ -1,0 +1,61 @@
+## Bottom line first
+
+I searched all five systems (CRM, Drive, Notion, Linear, Slack) and found **20 Aster Health records** — 10 CRM, 10 Drive, zero in Slack or Linear, and nothing Aster-specific in Notion. But every one of those records is a **one-line stub**. There are no numbers, decisions, or dated commitments anywhere in them.
+
+A representative example, in full — this is the entire record:
+
+> **CRM-75476** · Dashboards (Aster Health), 2026-07-21 — "Call with Aster Health. Discussed dashboards. Owner Sam Lee. Next: follow up on NPS."
+
+So I can't write the "where things stand / what you should say" narrative from evidence. There's no ARR, renewal date, NPS score, ticket volume, contract term, or stakeholder map in any system. Writing that section would mean inventing it, and invented numbers in a customer-facing QBR are the worst possible failure mode. Below is the real signal I *can* derive — topic threads and timing — plus the specific gaps you need to fill.
+
+## What the record trail actually shows
+
+**Threads that are still live (recent activity):**
+- **Search** — DRI-70983 (5/11), DRI-36553 (7/19, with you), DRI-75615 (9/17, with you). Recurring for four months.
+- **Dashboards** — CRM-57156 (4/19), CRM-75476 (7/21), DRI-75615 (9/17). Recurring, active as of last week.
+- **Integrations** — DRI-82652 (4/28), DRI-48732 (6/12), DRI-64776 (8/20). Longest-running thread; the August session is tagged "EU customers," which is new context.
+- **NPS** — CRM-26522 (4/13), DRI-30445 (7/5), CRM-75476's follow-up (7/21), DRI-36735 (9/28). Runs the entire period and is still open.
+- **Pricing** — DRI-53905 (9/10), paired with "support queue." This topic appears **once, recently**, and it's the newest theme in the account.
+
+**Threads that went quiet:** Exports (three records, all April, then nothing), Latency (two records in June, then nothing), Hosting (one record, 5/11), Sandbox (April–May only).
+
+**Two patterns worth your attention:**
+
+1. **"Churn" appears as the stated next step on three separate CRM records** — CRM-76005 (4/18), CRM-64767 (5/17), CRM-68765 (6/22). I want to be precise: that's a follow-up *topic label*, not a risk assessment by anyone. But it recurs across three months and three different owners (Leo Grant, Ana Petrova, Leo Grant), and pricing surfacing on 9/10 sits next to it uncomfortably. Worth checking before you walk in.
+2. **A compliance/security cluster** — security review (CRM-26522, CRM-16329), audit prep (CRM-45213, and again on DRI-36735), SSO questions (CRM-57156). Spread across the year and never visibly closed. Plausible to matter for a healthcare customer.
+
+## Open commitments (complete list)
+
+These are every "Next:" field in the CRM — the only commitment data that exists. None has a due date, and none has a visible closure record:
+
+| Record | Date | Owner | Stated next step |
+|---|---|---|---|
+| CRM-26522 | 4/13 | Ana Petrova | Security review |
+| CRM-76005 | 4/18 | Leo Grant | Churn |
+| CRM-45213 | 4/18 | Leo Grant | Audit prep |
+| CRM-57156 | 4/19 | Ana Petrova | SSO questions |
+| CRM-62644 | 5/10 | **Maya Chen** | Search |
+| CRM-81799 | 5/11 | Tess Brown | Hosting |
+| CRM-64767 | 5/17 | Ana Petrova | Churn |
+| CRM-16329 | 6/14 | Priya Shah | Security review |
+| CRM-68765 | 6/22 | Leo Grant | Churn |
+| CRM-75476 | 7/21 | Sam Lee | NPS |
+
+One is yours: **CRM-62644** (search follow-up, opened 5/10). Search did keep recurring through 9/17, so it was likely picked up, but nothing records that.
+
+## Two flags
+
+- **DRI-36735 is dated 2026-09-28** — four days from now. "NPS and audit prep," with Omar Haddad and Ana Petrova. That may be your call, or a session running into it. Either way it's on the calendar and you should know whether you own it.
+- **Omar Haddad appears on 5 of 10 Drive records** (DRI-70983, DRI-30445, DRI-75615, DRI-36735, plus owning the generic QBR-prep Notion pages NOT-42571 and NOT-52051) — the most frequent name in the account by a wide margin. The records don't say whether he's Brightline-side or Aster-side, so I won't guess, but he's your densest source of context and likely a faster path to the real story than any document here.
+
+## What I'd suggest
+
+The fastest unblock is Omar, not more searching — I've exhausted what the tools hold. To turn this into a real brief I need five things that exist nowhere in the systems:
+
+1. ARR, contract term, and renewal date
+2. Current NPS score and trend (NPS is discussed seven times; the number is never recorded)
+3. Whether the "churn" follow-ups reflect actual risk or were routine pipeline hygiene
+4. What the 9/10 pricing conversation was — expansion, a discount request, or renewal pressure
+5. Status of the security/audit/SSO thread, which likely carries real weight for a healthcare account
+
+Send me those and I'll draft the full brief with talking points the same day. Separately — a QBR account with a year of history and no substantive notes anywhere is a process gap worth raising with your team, independent of this call.

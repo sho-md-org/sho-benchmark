@@ -1,0 +1,23 @@
+I searched all four systems (Slack, Linear, Notion, Drive, CRM) for SSO records, for Maya's name, and for any timeline change. I can't answer the question as asked, and I want to be direct about why rather than construct something plausible.
+
+## The presupposition doesn't hold up
+
+Your question assumes (a) there are recorded SSO promises of yours, and (b) something changed that affects them. I found neither in the tools.
+
+**No SSO change event exists.** Searches for delay/slip/timeline/deprecation returned nothing relevant. Linear — where a scope or date change would live — returns **zero results** for "SSO", "SAML", "single sign-on", and "delay/slip/deprecation". There is no engineering record of an SSO commitment, let alone one that moved.
+
+**No promises of yours are recorded.** Across ~20 SSO records in CRM, Drive, Notion, and Slack, you appear exactly once: **DRI-18519** (Harbor Clinics, 2026-08-08), as an attendee alongside Ana Petrova — "Discussed SSO questions and notifications." Attendance, no commitment, no date, no scope. The SSO records are owned by others: Priya Shah (**CRM-57082**, **CRM-12111**), Jordan Blake (**CRM-93928**, **NOT-29159**), Ana Petrova (**CRM-57728**), Leo Grant (**NOT-40327**), Tess Brown (**NOT-20443**, **SLA-94820**), Sam Lee (**SLA-95210**).
+
+**The records are too thin to carry a promise anyway.** Every SSO entry I fetched is a one-line stub — "Discussed SSO questions. Next: follow up on roadmap" (**CRM-57082**), "update on SSO questions; EU customers next week" (**SLA-94820**). None contains a deliverable, a date, or committed scope. Even for the accounts most likely to be affected — Vantage Telecom (**CRM-57082**, **DRI-67178**), Pinecrest Realty (**CRM-57728**, **CRM-93928**) — there's nothing specific enough to be broken by a change.
+
+Your only Slack message in range is **SLA-15166** (2026-08-26): "Maya Chen: update on roadmap; offline next week" — not SSO-specific.
+
+## What I'd need from you
+
+I could produce a confident-sounding list of at-risk accounts by treating "Maya was in a meeting where SSO came up" as "Maya promised something," but that would be invention, and you'd take it into customer conversations.
+
+Tell me either:
+- **What changed** — if you heard about an SSO delay or descope verbally or in email, name it and I'll trace which accounts and owners are exposed via the records above.
+- **Where your promises live** — if you tracked commitments in email, a spreadsheet, or a doc outside these tools, that source isn't indexed here.
+
+One thing worth flagging independently: if you *did* make SSO commitments, the fact that none are written down in any of these systems is itself a risk — Priya, Jordan, and Ana are actively fielding SSO questions on these same accounts with no visibility into what you told them.

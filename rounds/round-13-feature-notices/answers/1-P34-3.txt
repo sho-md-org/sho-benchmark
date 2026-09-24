@@ -1,0 +1,46 @@
+I pulled and read all 20 Aster Health records that exist across the five systems. Before the brief itself, one thing you need to know upfront.
+
+## The source data won't support a real QBR brief
+
+Every Aster Health record is a one-line template stub. There is no substantive content in any of them — no ARR, renewal date, health score, NPS number, ticket volume, stakeholder map, or commitment with a status. Representative examples, verbatim and complete:
+
+- `CRM-75476` (2026-07-21): "Call with Aster Health. Discussed dashboards. Owner Sam Lee. Next: follow up on NPS."
+- `DRI-75615` (2026-09-17): "Attendees: Omar Haddad, Maya Chen. Discussed dashboards and search."
+
+That's the entire record in both cases. Slack, Linear, and Notion return **zero** Aster Health results on any query — the account has no coverage in those systems at all. CRM and Drive search also appear keyword-insensitive: "renewal contract ARR" and "escalation churn risk" returned the identical account-scoped set as the bare account name, so there is no hidden pocket of records I failed to surface.
+
+I'm not going to invent stakeholder positions, metrics, or talking points to fill that in — on a QBR call, fabricated specifics are worse than no brief.
+
+## What the records legitimately support
+
+**Coverage:** 20 records, 2026-04-12 through 2026-09-28. 10 CRM, 10 Drive.
+
+**Recurring themes**, by frequency — a reasonable proxy for what this account keeps raising: Integrations (`DRI-82652`, `DRI-48732`, `DRI-64776`), Sandbox (`CRM-62644`, `CRM-64767`, `DRI-86962`), Exports (`CRM-76005`, `CRM-45213`, `DRI-23711`), Dashboards (`CRM-75476`, `CRM-57156`, `DRI-75615`), NPS (`CRM-26522`, `DRI-30445`, `DRI-36735`), Latency (`CRM-16329`, `CRM-68765`).
+
+**The two threads that recur most** — the closest thing to signal here:
+- **Churn** flagged as next step three separate times: `CRM-68765` (6/22), `CRM-76005` (4/18), `CRM-64767` (5/17).
+- **Security review / audit prep** four times: `CRM-26522` (4/13), `CRM-16329` (6/14), `CRM-45213` (4/18), `DRI-36735` (9/28).
+
+Both are recorded only as "follow up on X" with no outcome, so I can't tell you whether either was ever resolved.
+
+**Three things worth your attention:**
+
+1. `DRI-36735` is dated **2026-09-28 — four days in the future**, topic "NPS and audit prep," attendees Omar Haddad and Ana Petrova. That may be your call, or a meeting you should know is happening alongside it. Worth confirming.
+2. `DRI-53905` (9/10) is a **pricing** conversation two weeks before your QBR, owned by Dana Ortiz. Pricing surfacing right before a QBR usually matters, and the record says nothing about what was discussed. This is the single highest-value gap to close before you walk in.
+3. Recorded activity thins sharply after July — only three records since 2026-08-01. Given the stub quality and total absence from Slack/Linear, I'd read this as a logging gap rather than genuine disengagement, but it does mean recent history is undocumented.
+
+**People in the account:** Omar Haddad appears most often (4 Drive notes, including the 9/17 one with you). Also Ana Petrova, Dana Ortiz, Leo Grant, Priya Shah, Tess Brown, Jordan Blake, Sam Lee. The records don't distinguish Brightline staff from Aster Health contacts.
+
+**Data quality:** `CRM-76005` and `CRM-45213` are both "Exports," both dated 4/18, different owners — likely duplicates. `DRI-53905` lists "Dana Ortiz, Dana Ortiz" as attendees.
+
+## What I'd suggest
+
+Five things would let me write you a real brief, none of which live in these tools:
+
+- Commercial facts — ARR, renewal date, contract terms, expansion pipeline (billing or your CRM opportunity records, which don't appear in this connector)
+- What happened on the 9/10 pricing call — **ask Dana Ortiz**
+- Current support/escalation state, especially whether latency and exports were resolved — **Leo Grant and Priya Shah**
+- Actual NPS scores and the audit/security review status — **Ana Petrova**
+- Your own read from the 9/17 call with Omar Haddad
+
+Send me any of those, or paste in a prior Aster QBR deck, and I'll turn it into the standing/commitments/risks/talking-points brief you asked for. If it's faster, I can draft a structured skeleton with the sections and the questions each one needs answered, so you can fill it during those conversations — say the word.

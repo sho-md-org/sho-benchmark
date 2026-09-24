@@ -1,0 +1,15 @@
+## Short answer: I can't confirm it was cut — the records say the opposite
+
+I searched Notion, Slack, Drive, Linear, and the CRM for a decision to drop Advanced analytics from 2027, and there isn't one. There's no decision doc, no decision-maker, and no reasoning to report, because the only roadmap of record still has the feature scheduled.
+
+**What the records actually show:**
+
+- **NOT-20876 "Public roadmap H1 2027"** (Notion, dated 2026-06-30) — the most recent roadmap document with any actual content — lists **"Advanced analytics: Q2 2027"**, still on plan. This is the only record in any tool that states a date for it.
+- **SLA-17908** (#general, 2026-09-19) is the one recent roadmap-change announcement I found: *"Sandbox environments (Rail) slip to Q2 2027. Please update any customers expecting them this year."* That's a **slip of Sandbox environments**, not a cut of Advanced analytics. It's plausible this is the source of the "something got pulled from 2027" impression — note it moves *into* Q2 2027, the same quarter Advanced analytics sits in.
+- Linear returns **zero** results for "advanced analytics," "roadmap 2027," or "analytics dashboards" — so no ticket was closed as won't-do.
+- The other ~20 Notion "Roadmap"/"Analytics" pages (NOT-85086, NOT-64137, NOT-67486, NOT-74204, NOT-15543, NOT-58852, etc.) are one-line stubs with an owner and a tag, no decision content. Same for the Slack analytics/roadmap threads (SLA-60376, SLA-91143, SLA-89041, SLA-15166) — all status pings like "update on analytics; NPS next week."
+- The Drive and CRM hits (DRI-76027, CRM-70722, CRM-62518, etc.) are all customer-call notes about analytics, not internal prioritization.
+
+**What I'd suggest before you tell a customer anything:** the risk here is the reverse of what you asked — if you relay "Advanced analytics was cut" based on secondhand information, you'd be contradicting the published Q2 2027 commitment in NOT-20876. Worth confirming with whoever owns the roadmap doc.
+
+If you tell me where you heard it was cut (which meeting, which channel, or which customer raised it), I can search against that specific thread — it's possible the decision lives somewhere these tools don't index, or that it's genuinely a confusion with the Sandbox slip in SLA-17908.

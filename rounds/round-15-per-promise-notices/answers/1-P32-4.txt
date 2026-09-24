@@ -1,0 +1,63 @@
+I pulled every Harbor Clinics record across all five tools: 10 CRM records, 10 Drive meeting notes, and **zero** in Slack, Linear, and Notion. One caveat up front, because it shapes how you should use this brief.
+
+## Read this first: the source data is thin
+
+Every Harbor record is a one-line stub. A representative example, in full:
+
+> **CRM-64035** (2026-08-26): "Call with Harbor Clinics. Discussed dashboards. Owner Ana Petrova. Next: follow up on analytics."
+
+That's the entire record. There is **no** ARR figure, renewal date, contract value, named customer-side contact, health score, support ticket, or usage metric anywhere in the system for this account. So I can give you an accurate map of *topics, owners, and unclosed loops* — which turns out to be genuinely revealing — but I cannot give you the numbers a QBR normally opens with. Don't walk in without filling the gaps in the last section.
+
+## Where things stand
+
+**The churn signal is the headline.** Three internal docs titled "Churn (Harbor Clinics)" — DRI-17076 (Jul 20), DRI-26772 (Sep 6), DRI-17950 (Sep 11). The cadence tightened from one in July to two in the first eleven days of September. DRI-26772 was Leo Grant and Priya Shah without you; DRI-17950 was you and Tess Brown.
+
+**Your last logged customer contact was Aug 26** (CRM-39320, CRM-64035). That's a month of silence on the customer side while churn conversations accelerated internally. Going into a QBR cold after that gap is itself a risk.
+
+**Ownership is fragmented.** Ten customer calls, eight different owners (Omar Haddad and Ana Petrova twice each; Sam Lee, Tess Brown, Jordan Blake, Dana Ortiz, Priya Shah, and you once each). You appear in only 3 of 20 records total — CRM-94239, DRI-55004, DRI-17950. Harbor has had no consistent face.
+
+**Recurring themes,** by volume: Pricing (DRI-51027, DRI-40615, DRI-55004 — Apr through Jul), Integrations (CRM-97969, CRM-75336), Notifications (CRM-73374, CRM-78984), Dashboards/analytics (CRM-64035, DRI-60679), Sandbox (CRM-36695, DRI-18426). Pricing came up three times across four months and then stopped after July.
+
+## Open commitments
+
+Each CRM record ends with a "Next:" promise. I checked whether any later record closes it. These have **no** closing record anywhere:
+
+| Promised | Date | Owner | Age |
+|---|---|---|---|
+| Webhooks follow-up (CRM-97969) | Apr 25 | Omar Haddad | ~5 months |
+| Onboarding follow-up (CRM-36695) | Jun 13 | Jordan Blake | ~3.5 months |
+| Permissions UI (CRM-78984) | Jun 15 | Dana Ortiz | ~3.5 months |
+| SSO questions (CRM-34883) | Jul 15 | Sam Lee | ~2 months |
+| Search follow-up (CRM-75336) | Jul 25 | Omar Haddad | ~2 months |
+| Analytics follow-up (CRM-64035) | Aug 26 | Ana Petrova | ~1 month |
+| Notifications follow-up (CRM-39320) | Aug 26 | Priya Shah | ~1 month |
+
+Two arguably closed: CRM-94239's reporting follow-up (yours, Jun 2) is plausibly DRI-67100 on Jun 26 — but that meeting was Sam Lee and Jordan Blake, not you. CRM-41255's latency follow-up (Tess Brown, Jun 14) is partially covered by DRI-55004 on Jul 21.
+
+**Two patterns worth flagging.** Ana Petrova was promised an analytics follow-up on May 24 (CRM-73374) and promised it *again* on Aug 26 (CRM-64035) — the same commitment re-made three months later, which suggests the first never landed. And notifications were discussed May 24, Jun 15, and again Aug 26 without resolution. These are inferences from absent closing records, not stated failures — but the re-promise in CRM-64035 is hard to read another way.
+
+## Risks
+
+1. **Churn is live and being discussed without you in the room.** DRI-26772 (Leo Grant, Priya Shah) had no CS presence you're recorded in.
+2. **Seven unclosed commitments, the oldest five months old.** If Harbor is tracking these, they have a stronger grievance list than we have a delivery record.
+3. **Pricing went quiet after Jul 21** following three conversations in three months. Unresolved pricing friction that stops surfacing often resurfaces at renewal.
+4. **No renewal date in any system.** You may be closer to a decision point than the record shows.
+5. **Eight owners, no continuity.** Likely a direct contributor to items 1–3.
+
+## What to say
+
+**Open by owning the gap, before they raise it.** "It's been about a month since we last connected, and I want to start by closing loops rather than presenting slides." This converts your weakest fact into a credibility move.
+
+**Go through the seven open items by name, with dates and owners.** Don't summarize them as "some outstanding items" — specificity is what rebuilds trust here. For each, bring either a resolution or a dated commitment with a named owner.
+
+**Lead with the oldest two** — webhooks (Apr 25) and onboarding (Jun 13). They're the most likely to be quietly resented.
+
+**Name yourself as the single point of contact** and make that the structural commitment of the QBR. Eight owners in ten calls is the root cause; fixing it is something you can promise unilaterally.
+
+**Ask directly about pricing.** "Pricing came up several times in the spring and then we stopped talking about it — where did that land for you?" You need to know whether it's settled or dormant.
+
+**Do not present this as a healthy account.** Three churn docs means someone internally already believes it isn't.
+
+## Fill these in before the call
+
+Contract value and renewal date; who the customer-side stakeholders are; actual product usage; whether DRI-17950 (your Sep 11 session with Tess Brown) produced a retention plan you should be executing against — the record doesn't say, and you were in the room. Ask Leo Grant and Priya Shah what drove DRI-26772 on Sep 6, since that conversation happened without you.

@@ -1,0 +1,40 @@
+## What the records show
+
+**The promise is real and documented.** In the 2026-07-09 sync (`DRI-36664`), Tom Hale raised that Brightline had told them SSO (SAML) by Q1 2027, and Leo Grant (AE) confirmed it on the call.
+
+**The public roadmap still backs that date.** `NOT-20876` (Public roadmap H1 2027, dated 2026-06-30) lists "SSO (SAML), SP- and IdP-initiated: Q1 2027". SCIM provisioning and audit log export incl. SIEM streaming are also Q1 2027 on the same page.
+
+**One gap you should know about before sending:** searches of Linear for "SSO", "SAML", and "authentication identity provider" returned **zero** issues (`mcp__w__linear_search`). There is no engineering work item I can find backing this commitment. The roadmap notes after June (`NOT-67486` 2026-08-14, `NOT-85086` 2026-09-25, `NOT-64137` 2026-09-26, owners Maya Chen / Ana Petrova) are stubs with no scope or status detail, and the Quarry SSO threads (`SLA-53734`, `SLA-28907`, `SLA-67092`) contain no substantive update either. So I can confirm *what was promised* and *what is published*, but I cannot confirm *delivery is on track*. Nothing contradicts Q1 2027 — there's just no positive evidence.
+
+I've drafted the reply to confirm the published commitment without inventing a firmer guarantee than the record supports.
+
+---
+
+## Draft reply
+
+**Subject: Re: SSO (SAML) timeline**
+
+Hi Tom,
+
+Yes — SSO (SAML) is still targeted for Q1 2027, and that's unchanged from what we discussed on our July 9 call.
+
+For scope, what's planned covers both SP-initiated and IdP-initiated SAML, so it should fit whichever flow your identity provider is set up for. SCIM provisioning and audit log export (including SIEM streaming) are tracked to the same Q1 2027 window, which I mention since those usually land alongside an SSO rollout on the security review side.
+
+Two things that would help me keep this tight for you:
+
+1. Can you confirm which IdP you'll be standing up against (Okta, Entra ID, Ping, other)? That lets me get you into testing as early as possible rather than at GA.
+2. If you have an internal deadline driving this — an audit date or a security review — tell me what it is and I'll flag it to our product team directly.
+
+I'm getting a current build status from our product team this week and will come back to you with a firmer view on timing within the quarter.
+
+Best,
+Leo
+
+---
+
+## Before you send
+
+- **Verify with product first.** Given there's no Linear ticket, I'd get a yes from the roadmap owner (Maya Chen, per `NOT-85086`/`NOT-64137`) before this goes out. If SSO has quietly slipped, this email re-confirms a date for the second time and makes the eventual conversation much worse.
+- **I kept it to "targeted," not "guaranteed."** Roadmap dates in `NOT-20876` are published targets, not contractual commitments. If Quarry has a contractual SSO obligation, that's not in the records I searched and you should check the agreement before using stronger language.
+- **The last line is a real promise.** I wrote "this week" — either hold to it or cut it.
+- **Context worth a glance:** there's a churn discussion on this account (`DRI-67006`, 2026-08-25) and audit prep (`DRI-62153`, 2026-09-07). If the audit is what's driving Tom's question, question 2 in the draft is the one that matters most.

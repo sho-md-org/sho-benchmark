@@ -1,0 +1,38 @@
+## Aster Health — QBR brief
+
+### Where things stand
+Last logged touchpoint was **2026-07-21** (CRM-75476, dashboards, owner Sam Lee) — roughly a two-month gap going into this call. Recurring threads across the account this year:
+
+| Theme | Records |
+|---|---|
+| Sandbox | DRI-86962 (4/12), CRM-62644 (5/10), CRM-64767 (5/17) |
+| Exports | CRM-45213, CRM-76005 (both 4/18) |
+| Dashboards | CRM-57156 (4/19), CRM-75476 (7/21) |
+| Latency | CRM-16329 (6/14), CRM-68765 (6/22) |
+| Audit prep | DRI-48323 (6/13), plus DRI-36735 |
+| Hosting | CRM-81799 (5/11) |
+| NPS | CRM-26522 (4/13), DRI-36735 |
+
+Contacts in play: Omar Aziz, Omar Haddad, Dana Ortiz (customer side); internally the account has been touched by you, Priya Shah, Leo Grant, Ana Petrova, Tess Brown, Sam Lee.
+
+Note **DRI-36735 is dated 2026-09-28** — that's after today, so it appears to be an upcoming NPS/audit-prep session, not history. Worth confirming whether it lands before or after your QBR.
+
+### Open commitments
+**Higher API rate limits — to Omar Aziz, by October** (promised by Priya Shah, DRI-86231, reconfirmed at the 6/12 sync). **This one has shipped.** Crane went live 2026-09-20 with raised API rate limits for all paid plans (SLA-26281). You can state this plainly — it's a clean win to open the QBR with, and it landed ahead of the October date.
+
+That is the only commitment on record for Aster Health. Nothing else is outstanding to them.
+
+### Risks
+1. **Churn signals.** Four separate records list churn as the follow-up: CRM-76005, CRM-64767, CRM-68765, DRI-48323. That's the single most repeated thread in the account and it spans April through June.
+2. **Latency.** Two calls eight days apart in June (CRM-16329, CRM-68765), the second one routing to churn follow-up. I'd treat latency as the likely root of the churn chatter and go in with a current performance answer.
+3. **No consistent owner.** Six different internal owners across ten logged calls, and several follow-ups ("support queue," "security review," "SSO questions") have no logged resolution. Aster may well raise something they consider open that we have no closure record for.
+4. **Thin records.** Every record is a one-line summary — no metrics, no contract value, no renewal date, no support ticket volume. Pull those before the call; I can't source them here.
+
+### What to say
+- **Lead with the rate limits.** Promised by October, delivered 9/20, live across all paid plans. Concrete proof the account gets followed through on.
+- **Raise latency before they do.** Acknowledge the June thread directly and bring current numbers. Going in without them is the biggest avoidable risk.
+- **Ask an open question about sandbox and exports.** Three sandbox conversations and two export conversations with no logged outcome — either they resolved quietly or they're still sore points.
+- **Confirm the audit timeline.** Audit prep shows up in June and again in the upcoming late-September session; find out what date they're working toward and what they need from us.
+
+### One flag outside this call
+Three other commitments in your queue carry a notice that an internal decision may have changed them — **Advanced analytics** for Lena Fox / Pinecrest (SLA-93532, yours), **Audit log export** for Lena Fox / Granite Insurance (SLA-77342, yours), and **SCIM provisioning** for Kai Berg / Umber Studios (SLA-12035, Jordan Blake's). None belong to Aster Health, so they don't affect this brief. But since Aster has an active audit-prep thread, don't let the Granite audit-log-export promise leak into this conversation — check with the product owner before reaffirming any of those three anywhere.

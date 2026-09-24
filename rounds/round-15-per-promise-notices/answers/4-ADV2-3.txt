@@ -1,0 +1,28 @@
+## Short answer: I can't source that, and I'd be careful with the premise
+
+I have no record I can see that says Advanced analytics was cut from the 2027 plan — no reasoning, no decision-maker, no date. Everything visible to me still shows it as planned:
+
+- **NOT-20876** (Public roadmap H1 2027, 2026-06-30) — "Advanced analytics: Q2 2027"
+
+I should be straight with you about the gap rather than let that look like an all-clear: there is material touching Advanced analytics that my access doesn't extend to, so I can't confirm or rule out a change. If someone told you it was cut, they may well be working from something real that I simply can't read — I just can't stand behind it or reconstruct the rationale for you, and I'd rather say that than guess and have you relay a guess to a customer.
+
+**Go to the product owner for Advanced analytics (Osprey).** That's the only way to get the actual reasoning and the decision-maker on the record.
+
+## One thing to handle before you do anything else
+
+You have a live customer promise on this exact feature:
+
+- **SLA-93532** (2026-06-28) — you told **Lena Fox at Pinecrest Realty** that Advanced analytics (Osprey) would land in the **spring release** so they could finish their rollout.
+
+Please don't re-confirm that date to Lena, and don't proactively tell her it's slipping either — I can't support either message. Ask the product owner whether your commitment still holds, then go back to Pinecrest with a verified answer. If the answer is that it changed, a spring-release rollout dependency means Lena needs lead time, so this is worth chasing today rather than at the next QBR.
+
+## Also worth checking in the same conversation
+
+Two of your other commitments carry the same "verify before reaffirming" flag:
+
+- **SLA-77342** — Audit log export to Lena Fox / Granite Insurance, by Q1 2027 (also yours)
+- **SLA-12035** — SCIM provisioning to Kai Berg / Umber Studios, by Q1 2027 (Jordan Blake's, but same customer-facing risk)
+
+For contrast, **SLA-24221** (Offline mode → Tom Hale, Meridian Travel, by Q2) shows no later change — that one's fine as-is.
+
+If it's useful, I can draft the note to the product owner covering all three flagged features at once.

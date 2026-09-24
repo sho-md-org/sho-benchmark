@@ -1,0 +1,56 @@
+I pulled every Keystone Energy record across all four systems: 10 CRM records, 10 Drive meeting notes, plus Notion, Slack, and Linear searches. Here's what I found, and an important caveat up front.
+
+## The data problem
+
+**Every Keystone record is a one-line stub.** Not one contains ARR, renewal date, contract terms, health score, seat counts, named customer-side stakeholders, or the substance of any commitment. A representative example, in full:
+
+> CRM-78617 · Pricing (Keystone Energy), 2026-09-25 — "Call with Keystone Energy. Discussed pricing. Owner Jordan Blake. Next: follow up on offline."
+
+Slack and Linear return **zero** Keystone results. The seven Notion "Qbr prep" docs (NOT-42571, NOT-52051, NOT-44808, NOT-44127, NOT-32484, NOT-38605, NOT-92225) never name Keystone — they're generic and mostly owned by Omar Haddad, so I can't attribute them to this account.
+
+I can't write "where things stand" or "what you should say" from this, and I'm not going to invent numbers for a customer-facing meeting. What I *can* give you is a real read of the account's shape from the metadata — which turns out to carry genuine signal — plus the specific gaps you need to close before the call.
+
+## What the record actually supports
+
+**Cadence and a notable gap.** Ten CRM touchpoints from 2026-04-24 to 2026-09-25, roughly every 2–4 weeks through July, then **a two-month silence between 2026-07-21 (CRM-71909) and 2026-09-23 (CRM-19012)** — the longest gap in the account's history.
+
+**Recurring themes, in order of persistence:**
+- *Reliability* — latency (CRM-23178, DRI-46374) evolving into uptime (DRI-64156, CRM-19012). Live across five months and it's the most recent non-pricing topic.
+- *Analytics/dashboards/reporting* — six records (CRM-50205, CRM-71134, CRM-71909, CRM-79992, CRM-71045, DRI-39787). The heaviest theme by volume.
+- *Commercial* — billing (CRM-56812), then pricing (CRM-78617).
+
+**The risk cluster.** This is the part I'd take seriously. On 2026-08-15, Ana Petrova logged an internal meeting (DRI-20667) on **churn and pricing**. On 2026-07-21, Leo Grant and Dana Ortiz met on **NPS and churn** (DRI-75981). The 2026-09-23 uptime call (CRM-19012) sets its next step as **"follow up on NPS."** Churn → pricing → NPS → an active pricing negotiation is a recognizable at-risk pattern, and it sits right underneath your QBR.
+
+**Timing you may not have clocked:** CRM-78617, the pricing call with Jordan Blake, is dated **tomorrow, 2026-09-25** — ahead of your QBR. Sync with Jordan before you walk in; pricing posture set on that call will constrain what you can say.
+
+**Open commitments with no recorded closure.** Each CRM record names a "next," and five have no matching follow-up record anywhere:
+
+| Committed | Source | Date | Status |
+|---|---|---|---|
+| Webhooks | CRM-71045 | 05-02 | No webhooks record exists |
+| Hosting | CRM-79992 | 05-24 | No Keystone hosting record |
+| Search | CRM-56812 | 07-12 | No Keystone search record |
+| NPS | CRM-19012 | 09-23 | Last NPS touch was 07-21 |
+| Offline | CRM-78617 | 09-25 | Last offline touch was 04-20 |
+
+Webhooks and hosting have been open roughly four months. Treat this as *unrecorded* rather than *undelivered* — but that distinction is exactly what you need to verify, because an unclosed commitment surfacing in a QBR is the worst way to find out.
+
+**Ownership is fragmented.** Five owners across ten CRM records — Leo Grant (4), Jordan Blake (2), Ana Petrova (2), Sam Lee (2). No continuous account owner appears in the data. Your own involvement is on the Drive side: DRI-85290 (roadmap, 05-28), DRI-39787 (dashboards, 07-07), and DRI-31273 with Sam Lee on 08-10, logged as **integrations and QBR prep** — the closest thing to a prior prep artifact, and it's a one-liner too.
+
+## To make the call-ready version, you need five things
+
+None are in the tools; all should be quick from a person:
+
+1. **Contract facts** — ARR, renewal date, seats/usage vs. entitlement. Likely Jordan Blake or whoever owns the 09-25 pricing thread.
+2. **The churn conversation** — ask Ana Petrova directly what DRI-20667 was actually about. This is the highest-value single question on the list.
+3. **Reliability numbers** — actual uptime/latency against SLA. Without these you cannot speak credibly to the account's most persistent complaint.
+4. **NPS score and verbatims** — referenced three times, never recorded. Leo Grant or Dana Ortiz.
+5. **Status of the five open commitments** above.
+
+## On "what I should say"
+
+I'd rather give you the honest structure than a script built on nothing. Once you have items 1–5, the brief writes itself along these lines: open on value delivered (needs #3 and the analytics work), close out the open commitments explicitly before Keystone raises them (#5), address the reliability narrative with real numbers rather than reassurance, and only then move to commercial — where your position depends entirely on what happens tomorrow with Jordan.
+
+One judgment call worth flagging: if the churn signal in DRI-20667 is real, this is a **retention conversation wearing a QBR's clothing**, and the framing should change accordingly. Ana's answer determines that, which is why I'd make that call first.
+
+Want me to draft the full brief as a fill-in template with these slots marked, so it's ready the moment you have the inputs?

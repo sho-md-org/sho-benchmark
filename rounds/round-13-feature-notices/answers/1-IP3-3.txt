@@ -1,0 +1,15 @@
+I searched Slack, Notion, Linear, Drive, and the CRM. I can't find any record of a change to **Advanced analytics**, so I also can't attribute one to a decision-maker. Here's what does exist:
+
+**Advanced analytics' only appearance is as an unchanged roadmap line item**
+- `NOT-20876` (Notion, "Public roadmap H1 2027", 2026-06-30) lists **Advanced analytics: Q2 2027**. That's the current published commitment, and no later roadmap doc supersedes it.
+- The ten other "Roadmap" Notion pages (`NOT-85086`, `NOT-64137`, `NOT-67486`, `NOT-15543`, `NOT-72642`, `NOT-58852`, `NOT-11866`, `NOT-97531`, `NOT-97641`, `NOT-63038`) are stub notes with only an owner and a related-topic tag — none record an analytics scope or date decision.
+
+**The only roadmap change actually announced is a different feature**
+- `SLA-17908` (#general, 2026-09-19): "Sandbox environments (Rail) slip to Q2 2027. Please update any customers expecting them this year." Note it lands in the same quarter Advanced analytics already occupied, which is an easy thing to conflate. That post names no decider either — it's an unattributed heads-up.
+- `SLA-26281` (#general, 2026-09-20) is the other recent change post: Crane shipped, raising API rate limits on paid plans. Unrelated to analytics.
+
+**Analytics discussions I found are customer conversations, not decisions** — e.g. `CRM-70722` (Riverton City, 2026-09-12, owner Maya Chen), `CRM-62518` (Bluewater Logistics, 2026-09-21, owner Leo Grant), `DRI-13837` (Ironwood Legal pricing call, 2026-09-24, Jordan Blake and Sam Lee). All log the topic without any decision or rationale.
+
+So I'd push back gently on the premise: there's no "change to Advanced analytics" in any system of record. Two likely explanations are that you're thinking of the Sandbox environments slip in `SLA-17908`, or that a customer was told something about analytics verbally that never got written down.
+
+If you can tell me where you heard about the change — which customer, or which channel or meeting — I can chase that specific thread. And if you need a decision-owner for Advanced analytics scope, the roadmap stubs point at Jordan Blake and Ana Petrova as the most frequent roadmap owners, but that's inference from ownership metadata, not a documented decision.

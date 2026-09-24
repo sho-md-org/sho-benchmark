@@ -1,0 +1,53 @@
+## Vantage Telecom — QBR Brief
+
+### Where things stand
+Steady, multi-thread account with active engagement across several workstreams over the last six months. Recent touchpoints:
+
+| Date | Topic | Owner | Record |
+|---|---|---|---|
+| 2026-09-19 | SSO questions → next: roadmap | Priya Shah | CRM-57082 |
+| 2026-09-13 | Dashboards → next: exports | Maya Chen | CRM-65747 |
+| 2026-09-11 | SSO questions + NPS (internal) | Dana Ortiz, Omar Haddad | DRI-67178 |
+| 2026-09-06 | Churn + QBR prep (internal) | Dana Ortiz, Tess Brown | DRI-14442 |
+| 2026-08-04 | Dashboards → next: SSO | Jordan Blake | CRM-10757 |
+| 2026-07-23 | Billing → next: latency | Jordan Blake | CRM-92524 |
+| 2026-07-10 | NPS → next: reporting | Tess Brown | CRM-37016 |
+| 2026-06-22 | Pricing → next: audit prep | Jordan Blake | CRM-36270 |
+
+The through-line: **SSO keeps resurfacing.** It's been the "next step" out of dashboards (CRM-10757), had a dedicated call ten days ago (CRM-57082), and an internal session before that (DRI-67178). It's the center of gravity for this QBR.
+
+Also worth noting: an internal churn/QBR-prep discussion happened on 2026-09-06 (DRI-14442) that you weren't on — worth syncing with Dana Ortiz or Tess Brown before the call so you're aligned on how churn risk is being framed internally.
+
+### Open commitments
+
+**SSO (SAML) — by Q1 2027** — CRM-31062
+Made by Priya Shah (AE) to Ines Park at the June 8 QBR, in strong terms: *"you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word."* Notes explicitly say the customer is planning around it.
+
+⚠️ **Flag: do not reaffirm this on the call without checking first.** There's a decision affecting this commitment that isn't visible to me — I can't tell you whether it changes the Q1 2027 date or not. **Confirm with the product owner before the QBR**, and until then don't restate the date or the Okta IdP-initiated detail to Ines. This is the single highest-value prep item; the commitment was made emphatically, by name, to a customer who is building plans on it.
+
+No other Vantage-specific commitments surfaced in the records.
+
+### Risks
+1. **SSO expectation gap** — the most likely blow-up. A verbal "you have my word" from the AE, a customer roadmap built on it, and an unresolved question on our side. Left unmanaged into the QBR, this is where trust gets spent.
+2. **Churn is on the internal radar** (DRI-14442) — expect Ines to read tone carefully. Go in with substance, not reassurance.
+3. **Loose threads with no visible closure**: exports (CRM-65747), reporting (CRM-37016), latency (CRM-92524), audit prep (CRM-36270). Each was logged as a "next step" and I found no follow-up record. Chase these down before the call — showing up without answers on four open items compounds the SSO problem.
+4. **Ownership is fragmented** — Priya, Jordan, Tess, Ana and you all own threads. Customer may perceive a lack of a single accountable owner.
+
+### What to say
+
+**Open with delivery, not roadmap.** Lead with dashboards progress (CRM-65747, CRM-10757) — it's your most active recent workstream and your own thread.
+
+**On SSO — pending your check with the product owner:**
+- *If the commitment is confirmed intact:* restate it plainly and give Ines a concrete milestone she can plan against.
+- *If it has changed:* tell Ines directly and early in the call, with a revised date and the reason. Don't let it emerge under questioning.
+- *If you can't get an answer before the call:* say you're doing a full delivery-confidence review on SSO and will come back with a firm date by a named day — then hit that day. Don't repeat the Q1 2027 date to buy comfort in the room.
+
+**Then close the loop on the four open threads** — exports, reporting, latency, audit prep. Naming them before Ines does converts a liability into evidence you're tracking the account.
+
+**Propose a single point of contact** (you) with named specialists behind you. Cheap to offer, and directly addresses the fragmentation risk.
+
+---
+
+**Before the call:** ① Ask the product owner about the SSO (SAML) commitment status. ② Sync with Dana Ortiz / Tess Brown on the churn discussion (DRI-14442). ③ Gather status on exports, reporting, latency, audit prep.
+
+**Separately** — two of your own commitments on other accounts carry the same flag and need the same product-owner check: Advanced analytics / Osprey to Lena Fox at Pinecrest Realty (SLA-93532, spring release) and Audit log export to Lena Fox at Granite Insurance (SLA-77342, Q1 2027). Not QBR items, but same conversation with the product owner — worth batching.

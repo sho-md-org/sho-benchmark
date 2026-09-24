@@ -1,0 +1,68 @@
+I pulled all 20 Harbor Clinics records that exist across the tools (10 CRM, 10 Drive). One important caveat up front, because it shapes how much you can lean on this brief.
+
+## Read this first: the record trail is thin
+
+Every Harbor Clinics record is a one-line stub — topic, attendee or owner, and a pointer to a next step. There are no numbers, no contract terms, no renewal date, no named customer-side stakeholders, and no ticket status anywhere. Slack, Linear, and Notion return **zero** Harbor Clinics results.
+
+So: what follows is a reliable map of *what was discussed and when*, and I've flagged where I'm inferring. It is not a substitute for the commercial facts, which you'll need to pull from wherever your contract data actually lives.
+
+## Where things stand
+
+Activity runs 2026-04-23 (DRI-51027) through 2026-09-11 (DRI-17950) — 13 days of silence going into your call.
+
+Recurring themes, by frequency:
+
+| Theme | Records | Span |
+|---|---|---|
+| Pricing | DRI-51027, DRI-40615, DRI-55004 | Apr–Jul |
+| Churn | DRI-17076, DRI-26772, DRI-17950 | Jul–Sep |
+| Notifications | CRM-73374, CRM-78984, CRM-39320 | May–Aug |
+| Sandbox | CRM-36695, DRI-18426, DRI-26772 | Jun–Sep |
+| Dashboards/analytics | DRI-60679, CRM-64035, DRI-17950 | Jul–Sep |
+| Latency | CRM-94239, CRM-41255, DRI-55004 | Jun–Jul |
+| Integrations | CRM-97969, CRM-75336 | Apr–Jul |
+
+The shape of it: pricing conversations dominate the spring, churn conversations dominate the summer and continue into September. You personally attended the most recent churn discussion (DRI-17950, 2026-09-11, with Tess Brown).
+
+## Open commitments
+
+These are the "Next:" items logged on CRM calls that have **no corresponding follow-up record anywhere** in the system:
+
+- **Webhooks** — CRM-97969 (Apr 25, Omar Haddad). Open ~5 months.
+- **SSO questions** — CRM-34883 (Jul 15, Sam Lee).
+- **Permissions UI** — CRM-78984 (Jun 15, Dana Ortiz).
+- **Onboarding** — CRM-36695 (Jun 13, Jordan Blake).
+- **Search** — CRM-75336 (Jul 25, Omar Haddad).
+- **Notifications** — CRM-39320 (Aug 26, Priya Shah). Notifications had already been the subject of two prior calls.
+
+Caveat: absence of a record isn't proof the work didn't happen — it may have closed over email or in a channel these tools don't index. But six commitments with no closing artifact is the single most actionable thing in this dataset, and each one has a named owner you can chase before the call.
+
+## Risks
+
+**1. Churn language is escalating and recent.** Three churn-titled documents, clustered Jul → Sep (DRI-17076, DRI-26772, DRI-17950), with the two most recent five days apart. Whatever is driving that was live two weeks ago.
+
+**2. Pricing pressure plus churn talk.** Three pricing discussions Apr–Jul preceding the churn cluster. This is inference, not something any record states — but it's the pattern worth walking in prepared for.
+
+**3. Account ownership is fragmented.** Eight CRM calls span seven different owners (Omar Haddad ×2, plus Sam Lee, Tess Brown, Jordan Blake, Dana Ortiz, Ana Petrova, Priya Shah). You own exactly one, CRM-94239, back in June. Nobody has had continuous view of this account, which plausibly explains the dropped follow-ups above.
+
+**4. Nothing is in Linear.** If latency, notifications, or permissions UI were real product asks, no engineering work appears to be tracked against them. Verify before you promise any timeline on the call.
+
+**5. Repeat topics suggest unresolved topics.** Notifications raised three times across four months, sandbox three times across four months. Recurrence usually means the first two conversations didn't land.
+
+## What to say
+
+**Open by acknowledging the gaps rather than glossing them.** With six unclosed follow-ups and seven owners, Harbor Clinics has likely felt the discontinuity. Naming it first is stronger than being told.
+
+**Come with a closure list, not a status update.** Go through webhooks, SSO, permissions UI, onboarding, search, and notifications item by item with a real owner and date on each. That directly answers the most probable complaint.
+
+**Name yourself as the single point of contact.** The fragmentation is fixable and it's the cheapest credibility win available.
+
+**Ask directly about renewal intent.** Three churn conversations mean your team is already discussing it internally; find out what the customer actually thinks rather than continuing to model it.
+
+**Don't commit to product dates.** Nothing is tracked in Linear. Offer to come back with dates within a set window instead.
+
+## Before the call, get these
+
+The brief can't supply them and they'll determine how the conversation goes: contract value and renewal date; who at Harbor Clinics attends and their role; actual usage and adoption trend; open support tickets; the NPS figure referenced in DRI-67100; and what specifically triggered the churn discussions — ask Tess Brown, who was in DRI-17950 with you, and Leo Grant, who was in two of the three.
+
+If you point me at wherever contract and usage data lives, I'll fold it in and tighten this into a one-pager you can take into the room.

@@ -1,0 +1,18 @@
+## Short answer: I can't source that, and I'd be careful with the premise
+
+Nothing I have access to shows Advanced analytics being cut. Everything visible still has it on plan:
+
+- **NOT-20876** (Public roadmap H1 2027, 2026-06-30) — "Advanced analytics: Q2 2027"
+- **NOT-31499**, **SLA-91143**, **SLA-60376** — analytics records with no scoping decision in them, just status chatter
+
+Roadmap change decisions and their rationale aren't in the records available to me, so I can't give you the reasoning or the decision-maker. I'd rather tell you that than reconstruct a story from a roadmap doc that predates whatever you're hearing about.
+
+**Flag on your own commitment.** You have an open promise here — in **SLA-93532** (2026-06-28) you told Lena Fox at Pinecrest Realty that Advanced analytics (Osprey) would land in the spring release so they could finish their rollout. Before you reaffirm that to Lena, or repeat any version of "it's still Q2," confirm with the product owner that the commitment holds. Note also that "spring release" and "Q2 2027" aren't obviously the same date — worth pinning down regardless.
+
+**Who to ask:** the analytics product owner. **NOT-31499** lists Omar Haddad as owner on the analytics notes, so that's the starting point.
+
+Suggested message to Omar:
+
+> Hi Omar — I committed Advanced analytics (Osprey) to Pinecrest Realty for the spring release (SLA-93532), and they're sequencing a rollout against it. Public roadmap still says Q2 2027. Can you confirm that's still accurate, and tell me the exact date I should be giving them? If anything has changed, I need to know before my next call with them.
+
+Want me to pull the other accounts with analytics exposure (Tidewater Ports, Lumen Labs, Orchid Hotels, Vantage Telecom, Delta Freight, Umber Studios, Bluewater Logistics all have analytics records) so you can scope the blast radius in one pass?

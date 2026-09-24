@@ -1,0 +1,27 @@
+I searched Notion, Slack, CRM, Drive, and Linear. **I can't confirm the premise — Advanced analytics doesn't appear to have been cut.**
+
+## What the records actually show
+
+**It's still on the plan.** The most recent roadmap document, `NOT-20876` "Public roadmap H1 2027" (2026-06-30), lists:
+
+> Advanced analytics: **Q2 2027**
+
+No later roadmap record supersedes this. The newer Notion items titled "Roadmap" (`NOT-85086`, `NOT-64137`, `NOT-67486`) are stub notes with no content about analytics scope.
+
+**No cut decision exists in any tool.** There is no record of a deprioritization, a decision-maker, or reasoning for removing Advanced analytics:
+- Linear returns zero results for "analytics," "roadmap," or "advanced analytics" — no ticket was closed or descoped.
+- Slack, Notion, CRM, and Drive analytics records (e.g. `SLA-91143`, `NOT-75315`, `CRM-70722`, `DRI-76027`) are routine status/call notes with no scope changes.
+
+## The likely source of the confusion
+
+There *was* a recent roadmap change announced, but it was a different item — `SLA-17908` (#general, 2026-09-19):
+
+> "Heads up: **Sandbox environments (Rail) slip to Q2 2027.** Please update any customers expecting them this year."
+
+That's a *slip*, not a cut, and it's Sandbox environments — which moved **into** Q2 2027, the same quarter Advanced analytics sits in. It's plausible that got relayed secondhand as "something got pushed off the 2027 plan."
+
+## Recommendation
+
+I'd avoid telling any customer Advanced analytics was cut — the only written commitment on record says Q2 2027. If you heard this from someone internally, it's worth asking them for the source, since whatever decision they're referring to isn't documented anywhere I can see. If a decision was made verbally, it needs to land in `NOT-20876` before CS starts repositioning accounts.
+
+One caveat: the public roadmap record is nearly three months old (2026-06-30), so a very recent decision could exist outside these tools.

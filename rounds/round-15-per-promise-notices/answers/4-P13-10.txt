@@ -1,0 +1,28 @@
+**Checks passed — this one is clear to reaffirm.**
+
+- The commitment (SSO/SAML to Tom Hale by Q1 2027, made by Leo Grant and reconfirmed on the 2026-07-09 sync, `DRI-36664`) shows **no later change found** — nothing supersedes or walks it back.
+- The public roadmap `NOT-20876` (2026-06-30, the most recent roadmap record) independently lists "SSO (SAML), SP- and IdP-initiated: Q1 2027."
+- The one flagged commitment in this account context is **Custom roles for Ironwood Legal** — a different feature and a different customer. It has no bearing on Quarry Mining's SSO answer, so I've left it out of the reply. (Separately: Leo shouldn't reaffirm that Ironwood custom-roles date without checking with the product owner first.)
+
+---
+
+**Draft reply — Leo Grant → Tom Hale, Quarry Mining**
+
+> Subject: Re: SSO (SAML) timing
+>
+> Hi Tom,
+>
+> Yes — SSO (SAML) is still on track for Q1 2027, exactly as we discussed on our July 9 sync. It's on our published H1 2027 roadmap, covering both SP-initiated and IdP-initiated flows.
+>
+> One thing worth flagging since it usually travels with SSO: SCIM provisioning is also targeted for Q1 2027, so if automated user provisioning/deprovisioning is part of your rollout plan, we can sequence those together.
+>
+> As we get closer, I'd like to set up a call with our product team to walk your IT group through the configuration details and get Quarry Mining into the early-access group so you can validate against your IdP before general availability. Would that be useful?
+>
+> Happy to jump on a call in the meantime if anything else would help.
+>
+> Best,
+> Leo
+
+---
+
+Two notes on the draft: I kept it to a straight confirmation rather than hedging, since the record supports the date. I added the SCIM mention because it's on the same Q1 2027 roadmap and is a natural adjacency for an SSO rollout — drop it if Quarry Mining hasn't raised provisioning. The early-access offer is a suggestion, not a commitment on record; Leo should confirm that program exists before sending.

@@ -1,0 +1,48 @@
+## Harbor Clinics — QBR brief
+
+**Last logged contact:** 2026-09-21, mobile app (CRM-49374). Contacts appearing in records: Ines Park, Ada Moss.
+
+One flag up front: the CRM trail for this account is thin. Most entries are one-line call logs with an owner and a "next step," no outcomes. I found no renewal date, ARR, health score, or usage data in what I can see — if you want those in the deck, they'll have to come from somewhere outside these records.
+
+---
+
+### Where things stand
+
+Open threads, grouped, with the owner each was last logged under:
+
+| Theme | Records | Owner(s) |
+|---|---|---|
+| Audit prep / exports | CRM-35862 (5/14), CRM-48825 (7/24), DRI-20995 (8/19) | Leo Grant, Priya Shah, you |
+| Integrations → webhooks, search | CRM-97969 (4/25), CRM-75336 (7/25) | Omar Haddad |
+| Notifications → analytics, permissions UI | CRM-73374 (5/24), CRM-78984 (6/15) | Ana Petrova, Dana Ortiz |
+| Mobile / offline | CRM-49374 (9/21), CRM-39320 (8/26) | Sam Lee, Priya Shah |
+| Dashboards / reporting | CRM-64035 (8/26), CRM-94239 (6/2) | Ana Petrova, you |
+| Platform: hosting/SSO, sandbox, latency, roadmap | CRM-34883 (7/15), CRM-36695 (6/13), CRM-94239 (6/2), CRM-41255 (6/14) | Sam Lee, Jordan Blake, Tess Brown |
+| EU data residency | CRM-89966 (6/9) | — |
+
+Audit prep is the spine of this account. It's the "next step" out of QBR prep (CRM-45542), out of onboarding (CRM-48825), and it's on the August support-queue sync you attended (DRI-20995) — five months, four touchpoints, no logged closure.
+
+### Open commitments
+
+**Data retention controls — by Q1 2027.** Promised to Ines Park, made by Jordan Blake (AE). Ines raised it on the 5/15 sync and Jordan reconfirmed on the call (DRI-80868). Nothing later changes it, so this one is safe to restate as-is.
+
+That's the only dated commitment to Harbor Clinics I can find. Everything else in the thread list is an open discussion, not a promise.
+
+### Risks
+
+1. **Q1 2027 retention date has no visible progress.** It's two quarters out and reconfirmed to the customer in person. Get a status read from the retention owner before the call so you're not restating a date you can't back.
+2. **EU data residency is the soft spot.** Ada Moss asked on 6/9; the answer was "exploring, no dates" (CRM-89966), and there's nothing since. Three months of silence on a compliance question reads to a healthcare customer as either a yes or as neglect. Address it unprompted.
+3. **Audit/exports keeps reopening.** If they push for a date on audit log export specifically, don't give one — we have no Harbor commitment on that feature, and I'd want the product owner to confirm the current position before anyone states timing. Scope your answer to their audit prep needs instead.
+4. **Ownership churn.** Nine different names own threads on this account across five months, with no single thread owner. Worth pre-empting — offer them one point of contact.
+
+### What to say
+
+- **Open with retention.** "Data retention controls are on track for Q1 2027, as Jordan confirmed in May." Only lead with this if the owner confirms; if they don't, say you're getting a delivery update rather than repeating the date.
+- **Volunteer the residency status.** "EU data residency is still in exploration and we don't have dates. I'd rather tell you that directly than let it sit." Then commit to a date by which you'll have a real answer — that's a commitment you control.
+- **Close the audit loop.** Ask what their audit timeline actually is and what artifacts they need. It's come up four times; treat this QBR as the place it gets resolved.
+- **Name the handoffs.** "You've talked to a lot of us. Going forward I'm your single thread on this account."
+- **Don't quote timing** on audit log export, or on anything in the integrations/notifications/dashboards threads — none of those have commitments behind them.
+
+---
+
+Separately, two commitments in *your* name on other accounts came back flagged — Advanced analytics for Pinecrest Realty (SLA-93532) and Audit log export for Granite Insurance (SLA-77342). Something I can't see may affect both; check with the product owner before you reaffirm either. Not Harbor Clinics, but you'll want to know before those calls.

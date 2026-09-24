@@ -1,0 +1,29 @@
+## Short answer: none of your promises are on SSO
+
+I searched your commitment record and the SSO material. Everything filed under SSO for you is **discussion, not a promise**:
+
+- `SLA-21939` (2026-05-01) — your Slack update on SSO questions
+- `NOT-29833` (2026-04-01) and `NOT-58902` (2026-04-16) — notes you own
+- `DRI-18519` (Harbor Clinics, 2026-08-08) and `DRI-79562` (Norrland AB, 2026-04-05) — meeting notes
+- `CRM-74174` (Evergreen Bank, 2026-08-22) — call notes; open next step is follow-up on audit prep
+
+No date, scope, or availability commitment to a customer appears in any of them.
+
+## The nearest thing to an SSO promise isn't yours
+
+`SLA-12035` — **SCIM provisioning by Q1 2027** to Kai Berg at Umber Studios. That's identity/provisioning territory, so customers may hear it as adjacent to SSO, but it was made by **Jordan Blake (AE)**, not you. It carries a flag: a decision I can't see may or may not change it. If you're covering that account, don't reaffirm the Q1 2027 date — route it to Jordan and the product owner.
+
+## Your two flagged promises — both non-SSO
+
+Worth knowing, since you asked what's affected:
+
+| Promise | Record | Customer | Status |
+|---|---|---|---|
+| Advanced analytics (Osprey), spring release | `SLA-93532` | Lena Fox, Pinecrest Realty | ⚠️ Flagged |
+| Audit log export incl. SIEM streaming, Q1 2027 | `SLA-77342` | Lena Fox, Granite Insurance | ⚠️ Flagged |
+
+For each, a decision exists that I don't have visibility into and that may or may not change the promise. I can't tell you what it is or whether it actually affects these. **Check with the product owner before you reaffirm either date to Lena** — and note both are to the same person at two different accounts, so an unqualified reassurance in one conversation can easily bleed into the other.
+
+Your one unflagged data point for contrast: Offline mode for Meridian Travel (`SLA-24221`) shows "no later change found" — but that's Priya Shah's promise, not yours.
+
+One caveat on scope: I can only see records available to me, so if you made an SSO date commitment somewhere outside these tools — a customer email thread or a call that never got written up — it wouldn't appear here. If you have a specific SSO conversation in mind, tell me the account and I'll dig into that one.

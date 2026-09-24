@@ -1,0 +1,45 @@
+## Vantage Telecom — QBR Brief
+
+**One thing before you walk in:** do not re-commit to the SSO (SAML) date on this call. See the risk section.
+
+### Where things stand
+
+The account record is thin — most touchpoints are one-line call logs without outcomes, so treat the timeline below as coverage, not substance.
+
+| Date | Record | Topic | Owner |
+|---|---|---|---|
+| 2026-09-13 | CRM-65747 | Dashboards; next step = exports follow-up | Maya Chen |
+| 2026-09-06 | DRI-14442 | Internal churn + QBR prep (Dana Ortiz, Tess Brown) | — |
+| 2026-07-10 | CRM-37016 | NPS; next step = reporting | Tess Brown |
+| 2026-07-08 | CRM-84868 | Search; next step = QBR prep | Priya Shah |
+| 2026-06-22 | CRM-36270 | Pricing; next step = audit prep | Jordan Blake |
+| 2026-06-17 | CRM-74774 | Search; next step = webhooks | Priya Shah |
+| 2026-06-08 | CRM-31062 | QBR — SSO pressure from Ines Park | Priya Shah |
+| 2026-05-14 | CRM-23907 | Exports; next step = webhooks | Ana Petrova |
+| 2026-04-27 | CRM-20779 | Dashboards; next step = integrations | Tess Brown |
+| 2026-04-12 | CRM-24363 | Billing; next step = latency | Leo Grant |
+| 2026-04-02 | DRI-81968 | Integrations + audit prep (you, Leo Grant) | — |
+
+Themes across the year: dashboards/reporting/exports recur four times, search twice, and there's an unresolved thread on webhooks (raised in CRM-23907 and CRM-74774, no closing record). There's an internal churn discussion on file from 2026-09-06 (DRI-14442) — worth knowing that exists, not worth raising with the customer.
+
+### Open commitments
+
+**SSO (SAML) — to Ines Park, by Q1 2027** (CRM-31062). Priya Shah promised it explicitly, including IdP-initiated login from Okta, "you have my word." The note says the customer is planning around it. This is the only formal commitment on the Vantage account.
+
+### Risks
+
+1. **The SSO commitment may no longer hold.** There's a later decision affecting SSO (SAML) that I can't see, so I can't tell you whether the Q1 2027 date still stands. **Ask the product owner to confirm before the call.** If you don't hear back in time, don't reaffirm the date and don't hint that anything changed — say you're confirming the delivery plan and will come back with specifics by a named date. Priya Shah made the original promise, so loop them in either way.
+2. **Churn signal.** An internal churn conversation two weeks before your QBR, plus a customer planning a rollout around a date you can't currently confirm, is a bad combination. Go in with a concrete follow-up commitment you *can* keep.
+3. **Webhooks thread never closed.** Raised twice (May, June), no resolution logged. Ines may raise it.
+4. **Fragmented ownership.** Six different owners across eleven records. If the customer feels handed around, that's a retention risk in itself — worth signalling you're the single point of contact now.
+
+### What to say
+
+- **Open:** recap the year on dashboards, reporting, and exports — that's where their engagement actually is. Ask what's landed and what hasn't.
+- **On SSO:** "I know Q1 2027 and the Okta IdP-initiated piece are what you're planning against. I'm confirming the delivery plan with our product team and I'll come back to you with specifics by [date]." Then actually do it. Don't restate the guarantee.
+- **On webhooks:** acknowledge it's been open since May and give it an owner and a date.
+- **Close:** name yourself as the single point of contact and set the next check-in.
+
+### Also flagged for you
+
+Two commitments **you personally made** on other accounts carry the same "may have changed" flag — Advanced analytics (Osprey) to Lena Fox at Pinecrest (SLA-93532) and Audit log export to Lena Fox at Granite Insurance (SLA-77342). Both need the same product-owner check before you reaffirm them. Not Vantage, but same exposure.

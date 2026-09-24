@@ -1,0 +1,19 @@
+I can't answer this one, and I want to be straight about why rather than guess.
+
+**What I can see**
+
+- **NOT-20876** (public roadmap H1 2027, 2026-06-30) still lists **Advanced analytics: Q2 2027**. Nothing in the records I have access to shows it being cut.
+- **SLA-93532** (2026-06-28) is your own commitment: you told Lena Fox at Pinecrest Realty that Advanced analytics (Osprey) would land in the spring release so they could finish their rollout.
+
+**What I can't do**
+
+Sho flagged that there's material on Advanced analytics outside my access, and I'm not permitted to confirm, deny, or characterize it. So I genuinely can't tell you whether it was cut, what the reasoning was, or who decided — not because there's nothing there, but because I can't see it and can't infer around it. Anything I reconstructed from the roadmap alone would be misleading.
+
+**What to do**
+
+Go to the **product owner for Advanced analytics** directly. Two things worth asking in the same message:
+
+1. The decision itself — was it cut, why, and who made the call.
+2. Whether your Pinecrest commitment still holds. Don't reaffirm the spring release to Lena Fox until you've heard back — your promise (SLA-93532) is the thing most exposed here, and Pinecrest is sequencing a rollout around it.
+
+One related item while you're there: your **audit log export** commitment to Lena Fox at Granite Insurance (SLA-77342, Q1 2027) carries the same flag. Same advice — confirm with the product owner before restating the date.

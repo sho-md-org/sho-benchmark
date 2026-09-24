@@ -1,0 +1,34 @@
+I searched Notion, Slack, Linear, Drive, and the CRM. **I could not find any record of Advanced analytics being cut from the 2027 plan — and the evidence points the other way: it's still on the roadmap.**
+
+## What the records actually say
+
+**Advanced analytics is scheduled for Q2 2027.** The only substantive roadmap document in the workspace, `NOT-20876` ("Public roadmap H1 2027," last dated 2026-06-30), lists:
+
+> Advanced analytics: Q2 2027
+
+alongside EU data residency (Q1), Salesforce sync (Q1), Custom roles (Q2), Offline mode (Q2), and others. No item is marked as cut, deferred, or removed in that doc.
+
+**The one roadmap change on record is a different feature.** `SLA-17908` (#general, 2026-09-19) announces:
+
+> "Heads up: Sandbox environments (Rail) slip to Q2 2027. Please update any customers expecting them this year."
+
+That's Sandbox environments moving from Q4 2026 → Q2 2027 — a slip, not a cut, and not analytics. It's the most likely source of a "something got moved off the plan" impression, and it lands in the same quarter Advanced analytics occupies, which may be where the wires crossed.
+
+## What I checked and came up empty on
+
+- **Linear:** no results for "Advanced analytics," for analytics/roadmap 2027, or for cancelled/won't-do work. There is no ticket recording a descope decision.
+- **Notion:** ~10 "Analytics" pages and ~10 "Roadmap" pages exist, but all are one-line stubs with an owner and a "related" tag (e.g. `NOT-74204`, owner Ana Petrova; `NOT-75315`, owner Omar Haddad; `NOT-64137` and `NOT-85086`, owner you). None contain scope or prioritization decisions.
+- **Slack:** the Analytics and Roadmap threads (`SLA-91143`, `SLA-60376`, `SLA-25394`, `SLA-89041`, `SLA-48472`, `SLA-15166`) are all status one-liners of the form "update on analytics; X next week." No decision thread.
+- **Drive:** roadmap/analytics files are all customer-meeting notes (`DRI-57993`, `DRI-95069`, `DRI-76027`, etc.) with attendees and a topic line. No planning offsite or prioritization review doc.
+- **CRM:** analytics-tagged records like `CRM-70722` (Riverton City, 2026-09-12, owner Maya Chen) are call summaries with no roadmap commitment detail.
+
+## Bottom line
+
+There is no decision, no decision-maker, and no reasoning to report, because no such decision appears anywhere in these systems. I can't give you the "exact reasoning and who decided" for an event I can't find evidence of — and I'd rather tell you that than assemble a plausible-sounding rationale from the stub documents.
+
+Two things worth doing before you tell a customer anything:
+
+1. **Confirm the premise at the source.** If you heard this secondhand, go back to whoever said it and ask which artifact it came from. `NOT-20876` is dated 2026-06-30, so a decision made in the last ~3 months could exist somewhere I don't have access to (a private channel, an exec doc, a deck).
+2. **Check whether Sandbox is what you actually need to communicate.** That slip (`SLA-17908`) is real, is recent, and explicitly asks CS to update affected customers.
+
+If you can tell me where you heard about the analytics cut, I can search that specific thread or doc directly.

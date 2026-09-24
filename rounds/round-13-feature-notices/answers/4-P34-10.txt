@@ -1,0 +1,45 @@
+## Aster Health — QBR Brief
+
+**Prepared 2026-09-24 · call next week · CSM: Maya Chen**
+
+### Where things stand
+
+Activity has been steady and broad across the year — sandbox, exports, hosting, dashboards, integrations, latency, SSO, and rate limits all have touchpoints. Main contacts appearing in records: **Omar Haddad**, **Omar Aziz**, **Ana Petrova**, **Dana Ortiz**. Internal owners are spread across Maya, Leo Grant, Sam Lee, Tess Brown, Ana Petrova, Priya Shah (AE), and Jordan Blake.
+
+Recent threads:
+- Dashboards + search — DRI-75615 (2026-09-17, you and Omar Haddad)
+- Dashboards — CRM-75476 (2026-07-21), next step logged as NPS follow-up
+- Rate limits — CRM-28889 (2026-07-05)
+- SSO questions — DRI-46065 (2026-08-07)
+- Latency — CRM-68765 (2026-06-22)
+
+### Open commitments
+
+| Commitment | Owner | Due | Status |
+|---|---|---|---|
+| Higher API rate limits (to Omar Aziz) | Priya Shah (AE) | October 2026 | **Shipped** — Crane went live 2026-09-20, rate limits raised for all paid plans (SLA-26281, DRI-86231) |
+
+That is the only commitment on record tied to Aster Health, and it's delivered ahead of the deadline. **Lead with it.**
+
+### Risks
+
+1. **"Churn" recurs as the next-step tag** across four separate records spanning April–August: CRM-64767, CRM-76005, CRM-68765, DRI-46065. No record states a reason, but the repetition across owners and months is the thing I'd want an answer to before the call. Ask Leo Grant and Jordan Blake what's behind it.
+2. **Ownership is fragmented** — six different internal owners on Aster records. Follow-ups chain from one topic to another (exports → audit prep → churn) without a visible close. Plausible that some threads have simply lapsed.
+3. **Audit prep** appears twice (DRI-48323 in June, again as a topic in DRI-36735) without a documented outcome. If they raise compliance, you may not have an answer ready.
+4. **Rate limits shipped platform-wide, not as a bespoke deliverable.** If Omar Aziz expected Aster-specific limits, "raised for all paid plans" could land as less than promised. Confirm the new ceiling meets their actual volume before you present it as closed.
+
+### What to say
+
+- **Open with the win.** "The higher API rate limits we committed to by October are live as of last week." Delivered early, against a commitment their team raised directly with us in June.
+- **Ask about dashboards and search.** Your 09-17 conversation with Omar Haddad is the freshest thread; pick it up rather than restarting.
+- **Name the fragmentation before they do.** Offer a single point of contact for open items — that's a concrete fix to a real problem and it reads as ownership, not apology.
+- **Ask directly about health and renewal intent.** Given the churn signals, probe rather than present. Let them tell you what's not working.
+- **Don't commit to anything new on the call** until you've checked delivery dates internally. You have one clean delivery on the board; keep it that way.
+
+### Two flags before you go
+
+**Records are thin.** Nearly every entry is a one-line topic stub with no outcome captured. The narrative above is inferred from titles, dates, and follow-up tags — not from substance. Before the call I'd get 15 minutes each with Leo Grant (exports, latency, churn tags) and Jordan Blake (SSO, audit prep) to fill the gaps.
+
+**DRI-36735 is dated 2026-09-28** — after today, and likely after this brief is useful. It's an NPS + audit prep session with Omar Haddad and Ana Petrova. Check whether it lands before your QBR; the NPS result would change your framing materially.
+
+**Separately — not Aster, but yours:** two of your own commitments carry advisories I can't see behind — **Advanced analytics to Lena Fox / Pinecrest Realty** (SLA-93532, spring release) and **Audit log export to Lena Fox / Granite Insurance** (SLA-77342, Q1 2027). Check with the product owner on each before you reaffirm either to the customer. Neither affects the Aster QBR.

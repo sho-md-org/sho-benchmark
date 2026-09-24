@@ -1,0 +1,35 @@
+## What the records show
+
+**The promise is real and documented.** DRI-36664 (Quarry Mining sync, 2026-07-09): Tom Hale explicitly reminded us we'd committed to SSO (SAML) by Q1 2027, and Leo Grant (AE) confirmed it on the call.
+
+**It's still on the roadmap.** NOT-20876 (Public roadmap H1 2027, 2026-06-30) lists *"SSO (SAML), SP- and IdP-initiated: Q1 2027."*
+
+**The only known slip is a different item.** SLA-17908 (#general, 2026-09-19) announced Sandbox environments moving Q4 2026 → Q2 2027. Nothing in that notice or anywhere else touches SSO.
+
+⚠️ **One caveat you should resolve before sending:** I found **no Linear ticket** for SAML/SSO build work — searches for "SSO SAML", "SAML authentication", and "single sign-on enterprise auth" all returned zero results. The Q1 2027 date rests on a roadmap doc that's now ~3 months old, with no tracked engineering execution behind it. The Slack "SSO questions" threads (SLA-53734, SLA-28907, SLA-67092) are customer-question chatter, not build updates. **Recommend a quick confirm with Maya Chen (roadmap owner) before this goes out.** The draft below reaffirms the date without hardening it into a contractual guarantee.
+
+---
+
+## Draft reply
+
+> **Subject: Re: SSO (SAML) timeline**
+>
+> Hi Tom,
+>
+> Yes — SSO (SAML) is still targeted for Q1 2027, covering both SP-initiated and IdP-initiated flows. That's unchanged from what we discussed on our July 9 sync and it remains on our published H1 2027 roadmap.
+>
+> Two related items on the same Q1 2027 track that I expect will matter for your rollout:
+>
+> - **SCIM provisioning** — Q1 2027, so user lifecycle management lands alongside SSO rather than after it.
+> - **Audit log export, including SIEM streaming** — Q1 2027, which should feed directly into the audit prep work your team has underway.
+>
+> As we get into Q4 I'll have firmer visibility into the release sequencing within the quarter, and I'd like to get your team into early access so your IdP configuration is validated before general availability. If it's useful, I can set up a working session with our product team to walk through the implementation details and confirm we've got your identity provider specifics covered.
+>
+> If anything shifts on our side, you'll hear it from me first rather than from a release note.
+>
+> Best,
+> Leo
+
+---
+
+**Why it's worded this way:** Tom is asking because he's tracking a commitment — he pre-emptively reminded us of it in July. The reply confirms plainly, adds the two adjacent Q1 items he'll need anyway (SCIM, audit log export — the latter ties to DRI-62153, Audit prep), and offers early access to convert a date promise into a joint plan. The closing line commits to proactive notification, which is worth honoring given the missing Linear ticket. If Maya flags any risk, tell me and I'll rework the draft to set expectations rather than reaffirm.

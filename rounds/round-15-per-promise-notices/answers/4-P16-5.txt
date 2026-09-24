@@ -1,0 +1,44 @@
+## Keystone Energy — QBR brief
+
+**One flag up front:** the single hard commitment on this account — audit log export with SIEM/Splunk streaming by Q1 2027 (DRI-34564) — is **not safe to reaffirm on the call**. Sho flags that something outside my visibility may bear on it. Check with the product owner for audit log export before the QBR and don't restate the Q1 2027 date until they confirm it. This is the one thing on the agenda where getting it wrong is expensive.
+
+### Where things stand
+
+The account is active and broadly healthy — steady cadence of calls across the quarter, no escalations in the record.
+
+- **Security review** is the dominant thread: three touches (CRM-25431 Apr 7, CRM-64056 Jul 7, CRM-30791 Jul 23), and your own QBR prep call closed with "follow up on security review" as the next step (CRM-93344, Aug 25). This is what they care about.
+- **Audit prep** runs in parallel and is the most-discussed topic all year — CRM-90377 (May 8), CRM-15788 (Jun 10), DRI-85107 (Jun 8), CRM-17727 (Jun 17), DRI-48005 (Jun 25), CRM-56742 (Aug 17), DRI-84961 (Aug 24, you + Sam Lee on exports). Read together with the Q1 2027 export commitment, their audit timeline is the spine of the relationship.
+- **Recent activity:** uptime review (CRM-19012, Sep 23, Sam Lee) and a pricing conversation with Jordan Blake (CRM-78617) with offline mode as the follow-up.
+- **Earlier in the year:** latency (CRM-23178, Apr), analytics (CRM-71078, May), reporting (CRM-71045), roadmap (DRI-85290), integrations (DRI-31273).
+
+### Open commitments
+
+| Commitment | Source | Owner | Status |
+|---|---|---|---|
+| Audit log export + Splunk streaming, Q1 2027 | DRI-34564 | Company, confirmed by Jordan Blake (AE) | **Verify with product owner before reaffirming** |
+
+That's the only commitment on record scoped to Keystone. Worth knowing for context: your own audit log export promise to Granite Insurance (SLA-77342) carries the same flag, so treat the feature's dates as unsettled generally, not as a Keystone-specific problem.
+
+### Risks
+
+1. **Date exposure on audit log export.** Nia Cole raised it unprompted on Aug 3 and Jordan Blake confirmed on the spot — they are tracking this date and will likely raise it at the QBR. If it has moved, a QBR is a bad place to find out live.
+2. **Ownership churn.** Seven different owners across Keystone calls this year (you, Omar Haddad, Dana Ortiz, Ana Petrova, Priya Shah, Sam Lee, Jordan Blake, Tess Brown). Follow-ups chain from topic to topic without visible closure — the records show "next: follow up on X" repeatedly, never a resolution.
+3. **Thin closure record.** Several meetings (DRI-84961, DRI-31273, DRI-85290) note only the topic. If they ask "what happened with the export scoping from August," you may not have an answer without asking Sam Lee first.
+4. **Pricing + offline mode** surfaced with Jordan Blake very recently (CRM-78617). Sync with him before the call so pricing doesn't arrive as a surprise in the room.
+
+### What to say
+
+- **Lead with security and audit readiness** — mirror their priority, walk their audit timeline, and position Brightline against it.
+- **On audit log export:** acknowledge it's committed and that you're bringing the current delivery view, *after* you've confirmed it. If the product owner hasn't come back to you by the call, say you're confirming sequencing and will follow up in writing within a set number of days. Don't repeat "Q1 2027 with Splunk streaming" on faith — a reconfirmed slipped date is much worse than a deferred answer.
+- **Name a single point of contact.** Given eight owners in six months, offering yourself as the consistent thread is a credible, concrete QBR win.
+- **Close the loop on the loose ends** so they see follow-through: uptime (post-Sep 23), integrations, offline mode.
+- **Don't open** pricing or the case study (DRI-85107) unless they do — align with Jordan Blake first.
+
+### Before the call
+
+1. Ask the audit log export product owner whether the Q1 2027 + Splunk commitment still holds. **Blocking.**
+2. Ask Sam Lee what came out of the Aug 24 exports discussion (DRI-84961).
+3. Sync with Jordan Blake on the pricing thread (CRM-78617).
+4. Get the security review status from Omar Haddad (CRM-30791) — it's your stated next step from CRM-93344.
+
+Once you hear back on #1, send me the answer and I'll draft the export section of the deck to match.

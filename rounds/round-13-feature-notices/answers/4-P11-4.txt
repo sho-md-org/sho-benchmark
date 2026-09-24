@@ -1,0 +1,39 @@
+## Vantage Telecom — QBR Brief
+
+**⚠️ Read this first:** The headline commitment on this account — SSO (SAML) by Q1 2027 — is flagged. There may be a change affecting it that isn't visible to me, so **do not reaffirm the SSO date on the call until Priya Shah or the SSO product owner confirms it still holds.** That's the one prep item I can't close for you.
+
+### Where things stand
+The account is active and well-touched — roughly a dozen logged interactions since April 2026, spread across four owners (you, Priya Shah, Jordan Blake, Tess Brown, plus Dana Ortiz and Leo Grant on internal threads).
+
+Recurring themes, by volume:
+- **SSO** — the live thread. Raised at the June QBR (CRM-31062), follow-up questions internally on 2026-09-11 (DRI-67178) and with the customer on 2026-09-19 (CRM-57082, owner Priya Shah, next step "roadmap"). This is the most recent customer conversation on file.
+- **Dashboards** — three touches across the year (CRM-20779 Apr, CRM-10757 Aug, CRM-65747 Sep 13, yours). Your open next step is exports.
+- **Billing** (CRM-24363, CRM-92524) — both threads ended on "follow up on latency."
+- **Search** (CRM-74774, CRM-84868), **Exports** (CRM-23907), **Analytics** (CRM-53521), **Onboarding** (CRM-15845), **Integrations** (DRI-81968), **NPS** (CRM-37016).
+
+### Open commitments
+| Commitment | Made by | To | Due | Status |
+|---|---|---|---|---|
+| SSO (SAML), incl. IdP-initiated login from Okta | Priya Shah (AE) | Ines Park | Q1 2027 | **Flagged — verify before reaffirming** |
+
+Priya's exact words in CRM-31062: *"you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word."* The note records that the customer is planning around it. That's a strong, specific, named-integration promise — the kind that's expensive if the date has moved.
+
+### Risks
+1. **SSO expectation gap.** The commitment is verbal, specific, and the customer is building plans on it. Ines Park pushed hard enough for it to be logged. If anything has shifted, the QBR is the moment it surfaces.
+2. **Internal churn discussion.** DRI-14442 (2026-09-06, Dana Ortiz + Tess Brown) is titled "Churn" and pairs it with QBR prep. The record has no detail beyond that, so I can't tell you whether Vantage is being flagged as at-risk or churn was discussed generally — **worth asking Dana or Tess directly before the call.**
+3. **Unclosed loops.** Several threads end on a next step with no follow-up record: exports (yours, from Sep 13), latency (twice, from billing calls), webhooks (three times). Expect at least one of these to come back at you.
+4. **Fragmented ownership.** Six people have touched this account. Ines Park may have heard slightly different things from different owners.
+
+### What to say
+- **Open on value, not roadmap.** Lead with dashboards and analytics adoption — that's where the engagement has been steadiest.
+- **On SSO, acknowledge without re-committing.** Something like: *"SSO is our top priority for you, and I know your team is planning around it. Priya and I are syncing with the product owner this week and I'll come back to you with a confirmed date in writing."* This is honest, keeps trust, and doesn't double down on a date you can't verify. Avoid repeating "Q1 2027" or the Okta IdP-initiated detail until it's confirmed.
+- **Close your own loop first.** You owe the exports follow-up from Sep 13 (CRM-65747). Arrive with an answer on it — cheap credibility.
+- **Get ahead of latency.** It surfaced in both billing conversations. Bring data rather than waiting to be asked.
+- **Ask Ines directly about renewal sentiment.** Given the internal churn thread, you want her read in her own words, not inferred.
+
+### Before the call
+1. Ask the SSO product owner whether the Q1 2027 commitment still holds — blocking item.
+2. Ask Dana Ortiz or Tess Brown what the churn discussion in DRI-14442 was actually about.
+3. Pull the exports answer and current latency numbers.
+
+One side note, unrelated to this brief: two of your own commitments elsewhere carry the same kind of flag — Advanced analytics (Osprey) to Lena Fox at Pinecrest Realty for the spring release (SLA-93532), and Audit log export to Lena Fox at Granite Insurance for Q1 2027 (SLA-77342). Same guidance applies: check with the product owner before reaffirming either. Want me to prep those separately?

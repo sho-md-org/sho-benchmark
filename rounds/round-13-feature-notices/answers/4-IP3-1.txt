@@ -1,0 +1,11 @@
+I can't answer that from what's available to me — nothing I can access identifies a decision-maker for a change to Advanced analytics, and there's material on this feature I don't have visibility into. I'd rather not speculate than give you a name that's wrong.
+
+What I can see:
+
+- **SLA-93532** (Slack, #cs, 2026-06-28) — your own commitment: you told Lena Fox at Pinecrest Realty that Advanced analytics (Osprey) would land in the spring release so they could finish their rollout.
+- **NOT-31499** (Notion, 2026-04-16) — an Analytics page listing **Omar Haddad** as owner.
+- **SLA-91143** (Slack, 2026-07-13) — Tess Brown posting a generic "update on analytics, analytics next week"; no decision content.
+
+Recommended next step: go to **Omar Haddad** as the product owner for analytics and ask two things — who owns the current call on Advanced analytics / Osprey, and whether your spring-release commitment to Pinecrest still holds. Worth doing before you reaffirm anything to Lena Fox.
+
+One related flag while you're at it: your Audit log export commitment to Lena Fox / Granite Insurance (Q1 2027, **SLA-77342**) is in the same position — confirm with the product owner before restating it.

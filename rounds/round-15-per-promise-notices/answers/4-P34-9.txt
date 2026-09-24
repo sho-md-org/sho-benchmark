@@ -1,0 +1,53 @@
+## Aster Health — QBR brief
+
+**Upfront caveat on sourcing:** the Aster record trail is broad but shallow. Most CRM/Drive entries are topic stubs ("Discussed X and Y") with no metrics, no renewal date, no ARR, and no documented outcomes. I've flagged below what's evidenced versus what's only a pattern. Don't treat the pattern items as facts in the room — use them as questions.
+
+### Where things stand
+
+The one substantive, verified item is the API rate limits commitment:
+
+- Priya Shah (AE) confirmed to Omar Aziz that higher API rate limits would land **by October** (DRI-86231, 2026-06-12).
+- **It shipped early.** Crane went live 2026-09-20 — rate limits raised for all paid plans (SLA-26281).
+
+This is your headline. It's clean, it's ahead of schedule, and it's the only Aster promise with a confirmed delivery behind it. Lead with it.
+
+Active workstreams by recency: dashboards + search with Omar Haddad (DRI-75615, 2026-09-17), pricing (DRI-53905, 2026-09-10), SSO questions (DRI-46065, 2026-08-07), support queue (NOT-80501, 2026-08-18).
+
+**Scheduling note:** DRI-36735 is an NPS session with Omar Haddad and Ana Petrova dated **2026-09-28** — that's next week, same window as your call. Worth confirming whether it's before or after the QBR; NPS landing mid-QBR-week changes what you want to say about satisfaction.
+
+### Open commitments
+
+**To Aster:** only the rate limits one, and it's delivered. No other outstanding Aster-specific promise appears in the record.
+
+**Adjacent, and this matters for you personally:** two commitments you made are to *other* accounts but carry Sho notices saying a decision you can't see may affect them:
+
+- Advanced analytics → Lena Fox, Pinecrest Realty, spring release (SLA-93532)
+- Audit log export → Lena Fox, Granite Insurance, Q1 2027 (SLA-77342)
+
+Neither belongs in the Aster QBR. But **"audit prep" is a live Aster thread** (DRI-48323, and it recurs as a follow-up in CRM-45213 and DRI-36735). If Aster asks about audit log export timing next week, do not give them a date — check with the product owner first. Same for advanced analytics. I can't tell you what changed, only that you should confirm before reaffirming.
+
+### Risks
+
+**"Churn" is the recurring next-step across four unrelated threads:** latency (CRM-68765), SSO questions (DRI-46065), audit prep (DRI-48323), and support queue (NOT-80501). No record states a churn conclusion — but four different topics routing to the same concern is the strongest signal in this dataset.
+
+**Support queue is the most-repeated unresolved topic** — April (CRM-88906, Sam Lee), June (CRM-97035, Leo Grant), August (NOT-80501, Omar Haddad) — and both April and June entries close with "follow up on dashboards," which suggests the queue issue kept getting deferred rather than closed.
+
+**Ownership has churned on Brightline's side:** Sam Lee → Leo Grant → Priya Shah → you, across roughly five months. Inconsistent ownership is a plausible root cause for the support-queue drift, and it's the kind of thing customers notice.
+
+**Pricing came up two weeks ago** (DRI-53905) with no recorded outcome. Go in knowing what was discussed — if that's a renewal or expansion conversation, it's the real agenda item behind the QBR.
+
+### What to say
+
+1. **Open with the win.** "We committed to higher API rate limits by October — that shipped on September 20, ahead of schedule, and it's live on all paid plans." It's concrete and you delivered early.
+2. **Get ahead of the support queue.** Don't wait for Omar to raise it. Name it, acknowledge it's been open since April across three owners, and bring a specific owner and date. This is where your credibility is most exposed.
+3. **Make ownership explicit.** State that you're the single point of contact now. It directly addresses the handoff churn.
+4. **Ask, don't assert, on health.** You have no NPS, usage, or renewal data in hand. Use the QBR to collect it rather than presenting a health narrative you can't support.
+5. **Deflect roadmap dates.** On audit log export or advanced analytics: "Let me confirm the current timeline and come back to you this week." Then actually check with the product owner.
+
+### Before the call
+
+- Confirm the renewal date and ARR — neither is in any record I can see.
+- Get the outcome of the 2026-09-10 pricing discussion from Dana Ortiz.
+- Check whether the 09-28 NPS session lands before or after your QBR.
+- Ask the product owner about audit log export and advanced analytics status.
+- Clarify whether Omar Haddad and Omar Aziz are two contacts — both appear, Aziz only on the rate-limits thread. Worth knowing who's in the room.

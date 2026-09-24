@@ -1,0 +1,21 @@
+## Short answer: I can't confirm that — and I can't confirm the premise either
+
+I searched all four systems and found **no record of any SSO change at all**, and **zero mentions of "IdP-initiated," "SP-initiated," or any related SAML flow detail** anywhere in Slack, Notion, Drive, CRM, or Linear.
+
+**What actually exists.** There's a large volume of SSO activity, but every record is a content-free stub. The most recent ones:
+
+- `CRM-57728` (Pinecrest Realty) — "Discussed SSO questions. Owner Ana Petrova."
+- `CRM-57082` (Vantage Telecom) — "Discussed SSO questions. Owner Priya Shah."
+- `DRI-67178` (Vantage Telecom), `DRI-19269` (Bluewater Logistics) — "Discussed SSO questions and NPS / sandbox."
+- `NOT-20443`, `NOT-40327` — "Notes on SSO questions. Owner Tess Brown / Leo Grant."
+- `SLA-94820` — Tess Brown: "update on SSO questions; EU customers next week."
+
+None of them describe a change, a deprecation, a migration, a config difference, or a distinction between login flows. They're topic labels, not substance.
+
+**The signal I'd weight most.** Linear returned **nothing** for `SSO`, `IdP initiated`, `authentication login SAML`, or `SSO SAML change` — four separate queries, all empty (`mcp__w__linear_search`). If engineering had shipped a change to SAML behavior, I'd expect a ticket. Its complete absence is evidence against a change having happened, not just missing documentation.
+
+**So where did "SSO changed" come from?** That framing isn't in the tools, which means it likely came from a customer, a colleague, or an earlier conversation I don't have. I'd rather flag that than invent a plausible-sounding answer about assertion consumer URLs or certificate rotation — I have no basis for one, and guessing wrong on an auth detail is the kind of thing that burns credibility with a customer's IT team.
+
+**Suggested next step:** Tess Brown owns the two most recent SSO threads (`SLA-94820`, `NOT-20443`) and flagged EU customers as a follow-on — they're the best person to ask what changed and whether it touches IdP-initiated flows specifically. If you can tell me which customer raised this, or paste what they said, I can re-search against that account and give you a real answer.
+
+One small note: `CRM-57728` is dated 2026-09-26 and `NOT-38140` is dated 2026-09-27, both after today (2026-09-24) — worth knowing if you rely on those dates for sequencing.

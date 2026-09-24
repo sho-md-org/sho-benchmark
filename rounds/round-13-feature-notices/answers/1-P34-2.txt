@@ -1,0 +1,97 @@
+I pulled every Aster Health record in all five systems — 20 total (10 CRM, 10 Drive; Slack, Linear, and Notion have zero). **One important caveat up front: all 20 records are one-line stubs.** They log topic, date, attendee, and a "next step" phrase, but contain no ARR, renewal date, usage metrics, NPS score, ticket status, or decisions. So I can give you a real activity map, the open-loop list, and a defensible talk track — but the quantitative half of a QBR isn't in these systems and you'll need to source it elsewhere.
+
+---
+
+# Aster Health — QBR Brief
+**Prepared 2026-09-24 · Coverage: 2026-04-12 → 2026-09-17**
+
+## 1. Where things stand
+
+**Relationship cadence.** 20 logged touchpoints over ~5 months. Steady and healthy through July, then a change in pattern:
+
+| Period | CRM calls | Drive meetings |
+|---|---|---|
+| Apr | 4 | 3 |
+| May | 3 | 1 |
+| Jun | 2 | 1 |
+| Jul | 1 | 2 |
+| Aug | 0 | 1 |
+| Sep | 0 | 2 |
+
+**CRM-logged calls stop entirely after 2026-07-21** (CRM-75476). Two months of no logged CRM activity is the single most visible signal in the data. It's either a logging-hygiene gap or a real drop in commercial contact — worth knowing which before you walk in.
+
+**Recurring topics**, by volume across both systems:
+- **Integrations** — DRI-82652 (Apr 28), DRI-48732 (Jun 12), DRI-64776 (Aug 20). The most persistent thread, spanning the entire period and still live in August.
+- **Dashboards** — CRM-57156 (Apr 19), CRM-75476 (Jul 21), DRI-75615 (Sep 17). Also spans the full window; most recent meeting on record.
+- **Exports** — CRM-76005, CRM-45213 (both Apr 18), DRI-23711 (Apr 28). Clustered in April, no recurrence since. Likely resolved.
+- **Sandbox** — DRI-86962 (Apr 12), CRM-62644 (May 10), CRM-64767 (May 17). Clustered Apr–May, no recurrence. Likely resolved.
+- **Latency** — CRM-16329 (Jun 14), CRM-68765 (Jun 22). Two calls eight days apart in June, then silent. Reads like an acute incident that closed out.
+- **NPS** — CRM-26522 (Apr 13), DRI-30445 (Jul 5), DRI-36735 (Sep 28, upcoming).
+- **Pricing** — DRI-53905 (Sep 10), paired with "support queue."
+
+**Your personal footprint is thin.** You appear on three records in five months: CRM-62644 (May 10), DRI-36553 (Jul 19), DRI-75615 (Sep 17). Most of this account has been carried by Ana Petrova, Leo Grant, Omar Haddad, and Priya Shah.
+
+**Contacts / working group.** Omar Haddad is the most frequent participant (DRI-82652, DRI-70983, DRI-30445, DRI-75615 — and the upcoming DRI-36735), and is your most likely primary stakeholder. Ana Petrova is next (DRI-86962, DRI-23711, DRI-70983, plus CRM ownership on CRM-26522, CRM-57156, CRM-64767). Also recurring: Dana Ortiz, Leo Grant, Priya Shah, Tess Brown, Jordan Blake, Sam Lee. Note the records don't distinguish Brightline staff from Aster Health staff — confirm who sits on which side before you use any of these names in the room.
+
+## 2. Open commitments
+
+Every CRM record ends with a "Next:" that has no closure record anywhere in the corpus. These are your open loops, and three of them are yours or land on your team:
+
+| Commitment | Source | Date | Owner | Age |
+|---|---|---|---|---|
+| Follow up on **security review** | CRM-26522 | Apr 13 | Ana Petrova | 164 days |
+| Follow up on **churn** | CRM-76005 | Apr 18 | Leo Grant | 159 days |
+| Follow up on **audit prep** | CRM-45213 | Apr 18 | Leo Grant | 159 days |
+| Follow up on **SSO questions** | CRM-57156 | Apr 19 | Ana Petrova | 158 days |
+| Follow up on **search** | CRM-62644 | May 10 | **Maya Chen** | 137 days |
+| Follow up on **hosting** | CRM-81799 | May 11 | Tess Brown | 136 days |
+| Follow up on **churn** | CRM-64767 | May 17 | Ana Petrova | 130 days |
+| Follow up on **security review** | CRM-16329 | Jun 14 | Priya Shah | 102 days |
+| Follow up on **churn** | CRM-68765 | Jun 22 | Leo Grant | 102 days |
+| Follow up on **NPS** | CRM-75476 | Jul 21 | Sam Lee | 65 days |
+
+Caveat: absence of a closure record is not proof the work didn't happen — this CRM simply may not log completions. Verify the top four with the owners before the call rather than assuming they're outstanding.
+
+## 3. Risks
+
+**High — "churn" flagged three separate times, never resolved.** CRM-76005 (Apr 18), CRM-64767 (May 17), CRM-68765 (Jun 22), across two different owners. Three independent flags over two months is a pattern, not noise. Nothing in the record says what drove it. This is the thing to understand before the call, and the record won't tell you — go ask Leo Grant and Ana Petrova directly.
+
+**High — an unresolved compliance thread running the full period.** Security review (CRM-26522 Apr, CRM-16329 Jun), audit prep (CRM-45213 Apr), SSO questions (CRM-57156 Apr). And critically: **the upcoming DRI-36735 on 2026-09-28 is "NPS and audit prep."** Audit prep resurfaces in a scheduled meeting five months after it was first raised, which means it is still live. If Aster Health has an audit deadline, that is your most likely source of friction.
+
+**Medium — pricing entered the conversation on Sep 10 (DRI-53905), paired with "support queue."** A pricing discussion coupled with a support-load discussion, two weeks before a QBR, usually means one of: renewal negotiation opening, a value-for-money challenge, or an expansion. The record doesn't say which. Note this meeting lists Dana Ortiz twice and no one else — the attendee data is unreliable here.
+
+**Medium — integrations never stabilized.** Three meetings Apr / Jun / Aug, twice paired with "notifications" (DRI-82652, DRI-48732), then with "EU customers" (DRI-64776, Aug 20). Combined with the hosting thread (CRM-81799, DRI-23711), this points at a **data-residency / EU deployment question** that is still open.
+
+**Medium — the two-month CRM gap** described above.
+
+**Low — latency.** Two June calls, nothing since. Probably closed, but it's cheap to confirm and it's the kind of thing a customer remembers even after it's fixed.
+
+**Process risk — you may not be in the room for the relevant conversation.** DRI-36735 (Sep 28) covers NPS and audit prep, with Omar Haddad and Ana Petrova. You are not on it. If that's the week of your call, sync with Ana beforehand or get yourself added.
+
+## 4. What to say
+
+**Open by naming the arc, not the metrics.** "Since April we've worked through sandbox, exports, and the June latency issue — those are behind us. What's still open is integrations, the audit and security review track, and dashboards." This is accurate to the record and shows you've tracked the relationship.
+
+**Lead with the compliance thread.** It's the oldest unresolved item and it's on their calendar for Sep 28. Ask directly: *"Where does the audit stand, and what's the deadline we're working back from?"* Come with a date and an owner for the security review and the SSO questions — those have been open since April and you should not arrive empty-handed on them.
+
+**Address the EU/hosting question as a roadmap item.** Integrations plus EU customers plus hosting is a deployment-architecture conversation, not a support ticket. Ask what their EU footprint looks like over the next two quarters.
+
+**Do not raise churn.** It's an internal flag; there's nothing in the record indicating the customer voiced it. Instead, surface it indirectly: *"How are we doing against what you expected when you brought us in?"* and listen for the gap. Then close the loop internally with Leo and Ana afterward.
+
+**Let them open pricing.** It's live (DRI-53905) but you don't have the context on what was actually discussed. Get briefed by Dana Ortiz first. If it comes up unprepared, take it away rather than negotiate.
+
+**Close on dashboards.** It's your most recent meeting (DRI-75615, Sep 17, with Omar) and the most likely constructive forward-looking topic.
+
+## 5. What you need before the call
+
+The following don't exist in any connected system, and a QBR without them will feel thin:
+
+1. **ARR, contract terms, and renewal date** — nothing in CRM. This determines the entire tone of the meeting.
+2. **The actual NPS score and trend** — five records discuss NPS; none contain a number.
+3. **Product usage / adoption data** — no telemetry in any system.
+4. **Support ticket volume and SLA performance** — "support queue" is referenced once (DRI-53905) with no data.
+5. **What the pricing conversation on Sep 10 actually was** — ask Dana Ortiz.
+6. **What drove the three churn flags** — ask Leo Grant and Ana Petrova.
+7. **Confirmation of which named people are Aster Health vs. Brightline.**
+
+Items 1–4 are almost certainly in a billing system, product analytics tool, or support desk that isn't connected here. If you can point me at those, or paste the numbers, I'll fold them in and turn this into a finished QBR deck outline.

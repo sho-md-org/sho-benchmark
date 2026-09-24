@@ -1,0 +1,61 @@
+I pulled the full Harbor Clinics record set — 10 CRM records, 10 Drive meeting notes, and the Notion QBR prep pages. Here's the brief, but one thing shapes it and you should know it up front.
+
+## Read this first: the source data is thin
+
+Every Harbor record in CRM and Drive is a one-line stub — topic, attendees, and a "next step" pointer. Nothing more. For example, the most recent churn note reads in full: *"Attendees: Maya Chen, Tess Brown. Discussed churn and dashboards."* (DRI-17950).
+
+That means the tools contain **no** renewal date, contract value, health score, named Harbor-side contacts, or record of what Harbor actually said or asked for. I won't invent those. What I *can* give you is real, because the metadata pattern itself is informative — especially the commitment trail and the churn cadence.
+
+## Where things stand
+
+Activity is steady and recent: 20 touchpoints from 2026-04-23 through 2026-09-11. The recurring topics, by volume:
+
+- **Notifications** — CRM-73374 (May 24), CRM-78984 (Jun 15), and re-raised as a follow-up in CRM-39320 (Aug 26)
+- **Pricing** — DRI-51027 (Apr 23), DRI-40615 (May 18), DRI-55004 (Jul 21) — you were in the last one
+- **Sandbox** — CRM-36695 (Jun 13), DRI-18426 (Aug 20), and still live in Notion NOT-19494 (dated today)
+- **Dashboards/analytics/reporting** — DRI-67100, DRI-60679, CRM-64035, DRI-17950
+- **Integrations** — CRM-97969 (Apr 25), CRM-75336 (Jul 25)
+
+Your most recent contact was DRI-17950 on 2026-09-11 with Tess Brown.
+
+## Open commitments
+
+This is the strongest real finding. Each CRM call logged a "next: follow up on X." Tracing each one forward through every later record, **six have no visible follow-through**:
+
+| Commitment | Owner | Logged | Age | Status |
+|---|---|---|---|---|
+| Webhooks | Omar Haddad | CRM-97969, Apr 25 | ~5 mo | No trace anywhere |
+| Permissions UI | Dana Ortiz | CRM-78984, Jun 15 | ~3 mo | No trace anywhere |
+| SSO questions | Sam Lee | CRM-34883, Jul 15 | ~2 mo | No trace anywhere |
+| Search | Omar Haddad | CRM-75336, Jul 25 | ~2 mo | No trace anywhere |
+| Notifications | Priya Shah | CRM-39320, Aug 26 | ~1 mo | Third time raised |
+| Analytics | Ana Petrova | CRM-64035, Aug 26 | ~1 mo | No record since |
+
+Webhooks, permissions UI, SSO, and search appear **exactly once each in the entire corpus** — the moment someone promised to follow up. Four commitments resolved normally (reporting, latency, onboarding, and an earlier analytics thread), so the gap is selective, not a logging artifact.
+
+## Risks
+
+**1. Churn is an active internal workstream, and the cadence is tightening.** Three dedicated churn docs: DRI-17076 (Jul 20), DRI-26772 (Sep 6), DRI-17950 (Sep 11). Two months between the first and second, five days between the second and third. Rising frequency on a churn thread is the single most concerning signal here.
+
+**2. Ownership is fragmented.** Nine different owners across 10 CRM calls — Omar, Ana, Dana, Sam, Tess, Jordan, Priya, and you. No one owner appears twice consecutively. That likely explains the dropped follow-ups and probably reads to Harbor as "nobody owns us."
+
+**3. Notifications keeps coming back.** Raised May, June, and again August. Recurrence after three touches usually means it was never actually resolved.
+
+**4. A sequence worth checking, not asserting.** Pricing was discussed three times (Apr–Jul) and then stopped entirely; the first churn doc appears Jul 20, nine days after the last pricing conversation. The records don't state any causal link and I'm not claiming one — but if pricing pressure is behind the churn risk, that changes your whole approach, so confirm it before the call.
+
+## What to say
+
+Given you don't have Harbor's stated positions in the record, I'd open by listening rather than presenting. A rough track:
+
+- **Lead with accountability on the gaps.** Don't wait for Harbor to raise them. "I went back through our last six months and we owe you follow-ups on webhooks, SSO, permissions, and search. That's on us." Naming them first converts your weakest point into a credibility win.
+- **Bring named owners and dates for all six.** Chase these internally *before* the call — an apology without a date makes it worse.
+- **Address notifications directly as a repeat issue**, not as a fresh one. Acknowledge it's the third ask.
+- **Propose a single point of contact** — ideally you. It's the concrete fix for the fragmentation, and it's cheap to offer.
+- **Probe pricing gently** if it hasn't come up since July. You were in that last pricing conversation (DRI-55004), so you have a natural reason to revisit it.
+- **Don't raise churn.** That's an internal frame. Use it to set your urgency, not your language.
+
+## Before the call, get these from outside the tools
+
+The records can't tell you: renewal date and contract value, who Harbor's execs and day-to-day users are, actual product usage, open support tickets, and what Harbor said in those churn discussions. Tess Brown was in your Sep 11 churn meeting and Leo Grant was in two of the three — a 15-minute conversation with either would fill most of this in.
+
+Two caveats on my sources: the Notion "Qbr prep" pages (NOT-42571, NOT-52051, owner Omar Haddad) are **not** labeled Harbor Clinics and I couldn't confirm they're for this account — worth a quick check with Omar, since if they are, he's already done some of this work. And search in these tools returns the same result set regardless of query terms, so while I believe I retrieved the complete Harbor corpus, I can't fully rule out records the search simply won't surface.

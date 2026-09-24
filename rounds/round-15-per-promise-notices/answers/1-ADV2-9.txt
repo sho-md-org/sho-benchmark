@@ -1,0 +1,19 @@
+## I can't confirm the premise — Advanced analytics doesn't appear to have been cut
+
+I searched Notion, Slack, Linear, Drive, and the CRM. **There is no record of a decision to cut Advanced analytics from the 2027 plan** — no reasoning, no decision-maker, no meeting where it was descoped.
+
+What the records actually show:
+
+- **NOT-20876 "Public roadmap H1 2027" (Notion, 2026-06-30)** — the only 2027 planning artifact in the tools — lists **"Advanced analytics: Q2 2027"**, alongside EU data residency (Q1), Salesforce sync (Q1), SSO/SAML (Q1), SCIM (Q1), custom roles (Q2), HubSpot sync (Q2), offline mode (Q2), and others. As of the most recent roadmap document available, it is *on* the plan, not off it.
+- The Notion "Roadmap" pages after that date are stubs with no decision content: **NOT-67486** (2026-08-14, Ana Petrova), **NOT-58852** (2026-08-10, Leo Grant), **NOT-85086** and **NOT-64137** (late Sept, owner Maya Chen). None mention analytics scope.
+- Slack roadmap threads — **SLA-48472** (2026-07-16, Sam Lee), **SLA-89041** (2026-07-23, Tess Brown), **SLA-15166** (2026-08-26, Maya Chen) — are one-line status pings about pricing, dashboards, and offline. No cut discussion.
+- Slack analytics threads **SLA-91143** (2026-07-13), **SLA-60376** (2026-08-12) are likewise status-only.
+- **Linear returns zero results** for "advanced analytics," "analytics dashboards," or "roadmap 2027," so there's no ticket showing it cancelled or moved out.
+- Customer-side analytics records (e.g. **CRM-62518** Bluewater Logistics 2026-09-21, **CRM-70722** Riverton City 2026-09-12) show ongoing customer demand, not a withdrawal.
+
+Two plausible explanations, and I can't distinguish them from what's here:
+
+1. **The cut hasn't happened / isn't real.** Someone may have relayed a rumor, or confused Advanced analytics with a different item.
+2. **The decision was made somewhere these tools don't index** — a leadership doc, email, or verbal call in a planning meeting that produced no written artifact I can reach.
+
+I'd rather tell you this than invent a rationale and a name. Suggested next step: ask whoever told you it was cut for the source, or ping the roadmap owners directly — **Ana Petrova** and **Leo Grant** own the most recent substantive Roadmap pages (NOT-67486, NOT-58852), and **Tess Brown** posted the dashboards update (SLA-89041). If it turns out there is a decision doc outside these systems, send it my way and I'll reconcile it against NOT-20876.

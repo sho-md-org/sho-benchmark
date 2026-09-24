@@ -1,0 +1,65 @@
+# Vantage Telecom — QBR Brief
+*Prepared 2026-09-24 · for call week of Sep 28*
+
+## ⚠️ Read this first: do not re-promise SSO on the call
+
+The one hard commitment on this account is SSO (SAML):
+
+> **CRM-31062** (2026-06-08, QBR notes): Ines Park pushed on SSO (SAML). Priya Shah (AE): *"you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word."* Customer is planning around it.
+
+Sho flags that a **later decision I can't see may affect this promise**. I can't tell you whether it still holds, and I can't see what changed. **Before the call, ask the product owner whether the Q1 2027 SSO commitment — including IdP-initiated Okta login — still stands.** Until you have that answer, don't reaffirm the date to Ines.
+
+This matters more than anything else in the brief: Priya gave a personal-word commitment, the customer is planning their rollout around it, and Ines has already pushed once.
+
+## Where things stand
+
+Coverage across the year is steady but the account has passed through a lot of hands — Priya Shah, Jordan Blake, Tess Brown, Dana Ortiz, Leo Grant, Ana Petrova, and you. Recent touchpoints:
+
+| Date | Topic | Owner | Record |
+|---|---|---|---|
+| 2026-09-13 | Dashboards; next step = exports follow-up | Maya Chen | CRM-65747 |
+| 2026-09-06 | Churn / QBR prep (Dana Ortiz, Tess Brown) | — | DRI-14442 |
+| 2026-07-23 | Billing | Jordan Blake | CRM-92524 |
+| 2026-07-10 | NPS | Tess Brown | CRM-37016 |
+| 2026-07-08 | Search; next = QBR prep | Priya Shah | CRM-84868 |
+| 2026-06-22 | Pricing; next = audit prep | Jordan Blake | CRM-36270 |
+| 2026-06-22 | Onboarding | Dana Ortiz | CRM-15845 |
+| 2026-06-08 | QBR — SSO commitment made | Priya Shah | CRM-31062 |
+
+Earlier: search (CRM-74774), analytics (CRM-53521), exports (CRM-23907), dashboards (CRM-20779), billing (CRM-24363), integrations (DRI-81968).
+
+**Caveat:** these CRM entries are one-line summaries with no outcomes recorded. I can tell you what was discussed and who owned it, but not what was decided or whether follow-ups closed. Treat the table as a map of threads, not a status report.
+
+## Open commitments
+
+- **SSO (SAML), by Q1 2027** — Priya Shah to Ines Park (CRM-31062). Status uncertain, see above.
+
+No other commitments in the system are tied to Vantage. The other open items Sho surfaced (advanced analytics for Pinecrest, offline mode for Meridian, SCIM for Umber, audit log export for Granite) belong to different accounts and don't belong in this QBR.
+
+## Risks
+
+1. **SSO expectation gap.** Highest-probability source of a bad moment on the call. Ines is planning around a date whose status you can't confirm. Going in without checking with the product owner risks either re-promising something that moved, or visibly hedging in front of a customer who already pushed once.
+2. **A churn conversation happened internally** on 2026-09-06 (DRI-14442) between Dana Ortiz and Tess Brown, tied to QBR prep. The note has no detail. **Ask Dana or Tess what prompted it before the call** — you shouldn't walk into a QBR where churn was discussed internally without knowing why.
+3. **Dangling follow-ups.** Several "next steps" have no visible closure — exports (CRM-65747, yours), audit prep (CRM-36270), webhooks (three separate records), latency (CRM-92524, CRM-24363). If Ines raises any of these, you don't currently have an answer.
+4. **Owner churn.** Six-plus owners in six months. Customers notice; expect a "who owns us?" question.
+
+## What to say
+
+**Open with continuity, not a feature list.** You're the current owner — say so, and name the thread you're carrying (exports, from CRM-65747). That preempts the owner-churn question.
+
+**On SSO — depends on what the product owner tells you:**
+- *If the commitment holds:* reaffirm it plainly, including IdP-initiated Okta login, and give Ines a checkpoint date so she can plan.
+- *If it has changed:* lead with it yourself rather than letting Ines discover it. Acknowledge that Priya gave her word, say what's true now, and bring a concrete alternative or interim path. Don't let this surface as a surprise in Q4.
+- *If you can't reach the product owner before the call:* say you're confirming timing and will come back with a firm answer by a specific date. Do **not** repeat "Q1 2027" as a commitment you can't currently stand behind.
+
+**Close the loop on exports** — it's your own open action and the easiest credibility win available.
+
+**Ask, don't present, on the churn signal.** Open-ended: how the rollout is tracking, where Brightline is falling short, what would make next quarter a success. Let Ines tell you whether the internal concern is real.
+
+## Before the call
+
+1. Ask the product owner: does the Q1 2027 SSO commitment (incl. IdP-initiated Okta login) still hold? — **blocking**
+2. Ask Dana Ortiz / Tess Brown what drove the churn discussion in DRI-14442 — **blocking**
+3. Get status on exports (CRM-65747), audit prep (CRM-36270), and the webhooks/latency threads
+
+Want me to draft the outreach to the product owner and to Dana/Tess?

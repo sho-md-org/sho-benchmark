@@ -1,0 +1,25 @@
+I searched Notion, Slack, Linear, Drive, and the CRM. **I can't substantiate the premise: there's no record of Advanced analytics being cut from the 2027 plan, and no decision or decision-maker documented anywhere.** Here's what the records actually say.
+
+## Advanced analytics is still on the plan
+
+- **NOT-20876 — "Public roadmap H1 2027"** (Notion, 2026-06-30) lists **Advanced analytics: Q2 2027**. This is the most recent roadmap document with actual dated line items in it, and Advanced analytics is on it, in Q2 2027, alongside EU data residency, SSO/SAML, SCIM, Salesforce sync, etc.
+
+There is no later roadmap record that removes it, re-dates it, or marks it out of scope. Nothing in Linear at all — searches for "advanced analytics," "analytics," "roadmap 2027," and "reporting/dashboards" all return zero issues, so there's no engineering record of a descope either.
+
+## The one roadmap change that *was* announced
+
+- **SLA-17908 — #general: "Rail update"** (Slack, 2026-09-19): "Sandbox environments (Rail) slip to Q2 2027. Please update any customers expecting them this year."
+
+That's the only roadmap change communicated recently. It's **Sandbox environments slipping from Q4 2026 to Q2 2027** — not Advanced analytics. Given both now land in Q2 2027, this is the most likely source of a garbled "analytics got cut" rumor, but that's my inference, not something a record states.
+
+## The commitment worth knowing about either way
+
+- **CRM-86750 — Lumen Labs QBR notes** (2026-06-27): Tom Hale pushed on Advanced analytics; Priya Shah (AE) said *"you'll have it by mid-2027, you have my word."* Note says the customer is planning around it.
+
+That's a verbal, unhedged commitment that tracks the Q2 2027 roadmap date with zero buffer — so if Advanced analytics ever does move, Lumen Labs is your first exposure and it needs a proactive conversation.
+
+## What I'd suggest
+
+The remaining Notion/Slack/Drive hits titled "Analytics" and "Roadmap" (e.g. NOT-75315, NOT-25881, SLA-91143, SLA-60376, DRI-76027) are stub records — one-line placeholders like "update on analytics; NPS next week" with an owner and no substance. If a decision was made, it isn't captured in any system I can reach.
+
+Two things would help me close this out: where did you hear it was cut (a meeting, a Slack thread, a customer)? And if it came from someone specific, I can search around that person and date directly. Otherwise, the honest answer to give a customer or colleague today is that Advanced analytics remains Q2 2027 per NOT-20876, and the confirmed slip is Sandbox environments (SLA-17908).

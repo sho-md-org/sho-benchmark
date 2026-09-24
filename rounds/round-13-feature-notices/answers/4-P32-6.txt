@@ -1,0 +1,41 @@
+## Harbor Clinics — QBR brief (call week of Sep 28, 2026)
+
+### Where things stand
+Coverage is broad but thin — the account has a steady cadence of calls across many workstreams, with ownership spread across at least eight people, and no single thread showing a resolution.
+
+| Theme | Latest | Owner |
+|---|---|---|
+| Mobile app | CRM-49374 (Sep 21) — next step is literally "follow up on QBR prep" | Sam Lee |
+| Offline | CRM-39320 (Aug 26) | Priya Shah |
+| Dashboards / analytics | CRM-64035 (Aug 26) | Ana Petrova |
+| Support queue + audit prep | DRI-20995 (Aug 19, you attended) | Leo Grant |
+| Integrations | CRM-75336 (Jul 25) | Omar Haddad |
+| Onboarding | CRM-48825 (Jul 24) | Priya Shah |
+| Hosting / SSO | CRM-34883 (Jul 15) | Sam Lee |
+| Roadmap | CRM-41255 (Jun 14) | Tess Brown |
+| Latency | CRM-94239 (Jun 2) | you |
+| Audit prep → exports | CRM-35862 (May 14) | Leo Grant |
+
+Last QBR prep record is CRM-45542 (Apr 8, Sam Lee), so this is roughly a two-quarter gap.
+
+### Open commitment (one, and it's clean)
+- **Data retention controls by Q1 2027** — made to Ines Park, confirmed by Jordan Blake (AE) at the May 15 sync (DRI-80868). Nothing later contradicts it, so you can reaffirm it as stated.
+
+### Risks to manage
+1. **Two loose threads that sound like commitments but aren't.**
+   - *EU data residency*: Ada Moss asked on Jun 9; we said we're "exploring, no dates yet" (CRM-89966). Three months on with no follow-up record — expect her to press. Hold the line at exploring, no dates.
+   - *Audit log export*: Harbor's audit-prep thread explicitly points to "follow up on exports" (CRM-35862), but **there is no Harbor commitment on exports**. Separately, you made an audit-log-export commitment to Lena Fox at Granite Insurance (SLA-77342) — and that one is flagged: a decision I can't see may affect it. Don't let the Granite date migrate into the Harbor conversation, and check with the product owner before reaffirming it even to Granite.
+2. **Fragmented ownership.** Ten-plus active threads, no consistent owner, and several "next steps" that just point at each other (audit prep → exports → audit prep). Harbor may well raise this as a responsiveness complaint.
+3. **Stale items.** Latency (your thread, Jun 2) and roadmap (Jun 14) have had no movement in three months.
+
+### Also flagged for you (not Harbor, but yours)
+Your **Advanced analytics / Osprey spring-release** commitment to Lena Fox at Pinecrest Realty (SLA-93532) is flagged the same way — confirm with the product owner before you reaffirm it anywhere.
+
+### What to say
+- **Open with the commitment you can keep:** "Data retention controls are on track for Q1 2027 — that's the commitment Jordan confirmed with Ines in May, and it stands."
+- **On EU data residency:** "We're still exploring it and I don't have dates for you. I'd rather tell you that than give you a quarter I can't stand behind. What I can do is get you a decision timeline by [date]."
+- **On exports/audit prep:** ask what they actually need rather than offering a date. This thread has been circling since May.
+- **Propose a fix for the fragmentation:** consolidate to a single owner and one tracked action list. This converts their likely complaint into your agenda item.
+- **Close by re-baselining:** mobile app, offline, and dashboards are all live threads with recent touches — pick the two Harbor cares most about and drop or defer the rest.
+
+**Before the call:** ping the product owner on the audit-log-export status so you're not caught flat if Harbor raises exports and you're tempted to reach for the Granite answer.

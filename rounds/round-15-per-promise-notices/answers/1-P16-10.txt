@@ -1,0 +1,42 @@
+## Bottom line first
+
+I can't write the brief you asked for from these systems. I pulled every Keystone Energy record across all five tools — 11 in CRM, 11 in Drive, **zero** in Slack, Linear, and Notion — and every single one is a content-free stub. There is no account status, no commitment, no risk, no number, no contract date anywhere in the corpus.
+
+A representative example, in full:
+
+> **CRM-19012** (2026-09-23): "Call with Keystone Energy. Discussed uptime. Owner Sam Lee. Next: follow up on NPS."
+
+That's the entire record. All 22 look like that. If I gave you "where things stand, open commitments, risks," I'd be inventing all four sections.
+
+This isn't a limitation of the tools. Other accounts have real substance — **CRM-52816** (Northstar Pharma) reads: *"Tess Brown (CS) committed that HubSpot sync will be available by before summer. Logged as a renewal condition."* That's a real commitment with an owner and renewal stakes. Keystone has nothing of that kind.
+
+## What the records do tell you
+
+Only metadata, but some of it is usable:
+
+- **Cadence is healthy** — ~22 logged touches Apr–Sep 2026, roughly 3–4/month. This is an engaged account, not a neglected one.
+- **Recurring topics**, by frequency: analytics (CRM-50205, CRM-71134, CRM-71909), uptime/latency (CRM-19012, CRM-23178, DRI-64156, DRI-46374), dashboards (CRM-79992, DRI-39787), sandbox (DRI-41756, DRI-27950), then pricing, billing, integrations, notifications, offline, reporting, NPS.
+- **Internal owners rotate a lot**: Sam Lee, Jordan Blake, Leo Grant, Ana Petrova across CRM records. No single consistent owner.
+- **You are barely on this account in the record.** You appear in three items (DRI-31273, DRI-39787, DRI-85290), most recently **Aug 10**. The two most recent touches are owned by Sam Lee and Jordan Blake.
+
+## Three things worth your attention
+
+1. **No renewal record exists.** Seven other accounts have explicit "renewal call notes" (CRM-52816, CRM-70743, CRM-74447, CRM-62434, and others). Keystone has none. So renewal date, ARR, and any logged renewal conditions are unknown to me — and that's exactly the material a QBR turns on.
+
+2. **CRM-78617 is dated 2026-09-25 — tomorrow.** A pricing call owned by Jordan Blake, not you. Either a scheduled call already on the books or a data-entry error. Find out which before your call; if it's real, pricing gets discussed with Keystone *before* you walk in, and you need Jordan's readout.
+
+3. **A soft pricing/churn signal.** Churn and pricing were discussed together in **DRI-20667** (Aug 15), NPS and churn in **DRI-75981** (Jul 21), and pricing again in CRM-78617. I want to flag the pattern without overselling it — these are topic labels on empty records, not evidence of an at-risk account. Treat it as a question to ask, not a finding.
+
+One more data-quality tell: DRI-20667 lists attendees as "Ana Petrova, Ana Petrova" and DRI-85290 as "Maya Chen, Maya Chen." These records look auto-generated or templated, which fits the across-the-board emptiness.
+
+## What I'd do instead, this week
+
+The fastest path to a real brief is people, not systems:
+
+- **Jordan Blake** — what happened on the 9/25 pricing call, and is pricing pressure live?
+- **Sam Lee** — owns the two most recent touches and was in your Aug 10 QBR-prep session (DRI-31273); likely has the freshest picture.
+- **Ana Petrova** — ran the Aug 15 churn/pricing conversation (DRI-20667).
+- **Your own notes** outside these tools — email, personal docs, call recordings. Given how thin the CRM is, the real history almost certainly lives somewhere I can't see.
+- **Pull the contract** from wherever it actually lives: renewal date, ARR, tier, any SLA on uptime given how often it comes up.
+
+If you can get me even a renewal date, an ARR figure, and Jordan's pricing readout, I can build you a genuine brief — structure, talking points, and objection handling — in one pass. I'd rather do that than hand you a polished document with fabricated substance you'd discover live on the call.

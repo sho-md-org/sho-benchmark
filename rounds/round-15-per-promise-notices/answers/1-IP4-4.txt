@@ -1,0 +1,25 @@
+## Short answer: **Cobalt Retail is the one at risk** — and one of these isn't actually your promise.
+
+### The two commitments, side by side
+
+| | **Keystone Energy** | **Cobalt Retail** |
+|---|---|---|
+| Record | `DRI-34564` (2026-08-03 sync) | `CRM-38600` (2026-07-24 QBR) |
+| What was promised | "Audit log export by Q1 2027 **with streaming into Splunk**" | "You'll have it by Q1 2027 **as a CSV export**, you have my word" |
+| Who said it | Relayed by Nia Cole, **confirmed by Jordan Blake (AE)** — not you | **You**, Maya Chen, explicitly |
+| Matches roadmap? | Yes, cleanly | Partially — see below |
+
+### Why Cobalt is the exposed one
+
+**1. It's the only one that's actually yours.** `DRI-34564` records Nia Cole reminding the room what "we told them," with Jordan Blake (AE) confirming. Your name isn't on the Keystone commitment. `CRM-38600` is you, on the record, with "you have my word" and the note that "customer is planning around it." No roadmap caveat, no conditional framing.
+
+**2. The scope language doesn't line up.** The published roadmap (`NOT-20876`, Public roadmap H1 2027) lists: *"Audit log export incl. SIEM streaming: Q1 2027."* Keystone's Splunk ask sits squarely inside "SIEM streaming" — the roadmap wording covers it. Your Cobalt promise of a **CSV export** isn't named anywhere in that line item. A SIEM-streaming feature shipping on time could still land without a customer-facing CSV download and technically hit the roadmap while missing what you promised Sam Ortiz.
+
+**3. Delivery-date risk looks equal — and currently low for both.** I found no slip signal on audit log export. The only roadmap slip announced is `SLA-17908` (2026-09-19): Sandbox environments (Rail) moving to Q2 2027. Audit prep chatter is routine and on-track — `SLA-37823` (2026-09-23, Sam Lee: "exports next week"), `SLA-13802`. So the risk here is **scope and attribution, not schedule**.
+
+### What I'd do
+
+- **Cobalt:** get written confirmation from the audit-log-export team that a customer-facing CSV export is in the Q1 2027 scope, not just SIEM streaming. If it isn't, re-set with Sam Ortiz now — you have five months, which is a very different conversation than five weeks.
+- **Keystone:** hand this to Jordan Blake to track. It's his commitment and it matches the roadmap as written; you don't need to carry it.
+
+**One caveat on the evidence:** many of the surrounding records (`DRI-84961`, `DRI-48005`, `CRM-24323`, `NOT-91719`, `NOT-45379`) are stub-level notes with no substantive content, and Linear returned zero results for every audit/export query I tried — so I have no engineering-side ticket status to confirm the Q1 2027 date from the build side. The scope gap above is inferred from the roadmap wording, not from an engineering scope doc I was able to locate.

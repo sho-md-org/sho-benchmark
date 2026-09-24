@@ -1,0 +1,64 @@
+## Keystone Energy — QBR brief
+
+**Heads-up before anything else:** the one hard commitment on this account is flagged. Details in Risks.
+
+---
+
+### Where things stand
+
+The account record is active but thin — most entries are one-line call logs without substance, so this is a shape-of-the-relationship read, not a metrics read.
+
+Recurring threads across the last ~5 months:
+
+- **Audit prep** — by far the dominant theme: CRM-90377 (May 8), CRM-17727 (Jun 17), DRI-48005 (Jun 25), CRM-56742 (Aug 17), DRI-84961 (Aug 24, you + Sam Lee, "audit prep and exports"). This is their driving priority.
+- **Security review** — CRM-25431 (Apr 7), CRM-64056 (Jul 7), CRM-30791 (Jul 23). Your own QBR-prep call (CRM-93344, Aug 25) closed with "next: follow up on security review" — that's your open loop going into this call.
+- **Recent activity** — uptime (CRM-19012, Sep 23, Sam Lee) and pricing (CRM-78617, Jordan Blake) with a next step on offline mode. Pricing surfacing right before a QBR usually means commercial conversation is warming up; worth confirming with Jordan before the call.
+- Earlier: onboarding (CRM-15788, CRM-86748), rate limits (CRM-60405), analytics, reporting, latency, integrations (DRI-31273).
+
+Ownership is spread across Maya, Sam Lee, Omar Haddad, Jordan Blake, Priya Shah, Tess Brown, Ana Petrova, Dana Ortiz — no single continuous thread. Expect the customer to have better recall of what they were told than our notes do.
+
+### Open commitments
+
+| Commitment | Source | Made by | Target |
+|---|---|---|---|
+| Audit log export **with SIEM streaming into Splunk** | DRI-34564 (Aug 3) | Company, confirmed by Jordan Blake (AE) | Q1 2027 |
+
+Context on DRI-34564: Nia Cole raised it in the Aug 3 sync as something we had already told them, and Jordan Blake confirmed it on the spot. That makes it a reaffirmed commitment, not a casual mention — and it lines up directly with their audit-prep and security-review push.
+
+### Risks
+
+**1. The audit log export commitment is flagged — do not reaffirm it on the call yet.**
+
+There is a decision I don't have visibility into that may or may not affect this promise. I can't tell you which way it goes or describe it. **Before the QBR, ask the product owner whether the Q1 2027 audit log export + SIEM streaming commitment still holds.** The public roadmap (NOT-20876, Jun 30) does list it as Q1 2027, but that document predates the thing I can't see, so treat it as stale rather than as confirmation.
+
+This is the single highest-value prep item: it's their top priority, they have already asked us to confirm it once, and Jordan confirmed it. If it has moved, the QBR is where that needs to be handled deliberately — not improvised.
+
+**2. Same check covers your Granite Insurance commitment.** Your own audit log export promise to Lena Fox (SLA-77342, Q1 2027) carries the same flag. Different account, same feature — one conversation with the product owner answers both.
+
+**3. Fragmented ownership.** Eight-plus owners across the history, no consolidated status anywhere. Risk of contradicting a colleague live. Sync with Jordan Blake (pricing, roadmap, made the Aug 3 confirmation) and Sam Lee (uptime, the Aug 24 exports discussion) beforehand.
+
+**4. Your Aug 25 security-review follow-up has no recorded closure.** If you haven't closed it offline, they may open with it.
+
+**5. Pricing + offline mode is an unmapped thread.** CRM-78617 points to a follow-up on offline mode, but there's no offline commitment recorded to Keystone. Don't volunteer a date.
+
+### What to say
+
+**Open with their agenda, not ours.** Audit readiness and security review are what they care about; lead there and let them state where they are in their audit cycle.
+
+**On audit log export — pending your check with the product owner:**
+
+- *If it holds:* "Audit log export with SIEM streaming into Splunk remains targeted for Q1 2027, consistent with what Jordan confirmed in August." Then get specific about what they need for their audit timeline.
+- *If it has changed:* deliver it yourself, early in the call, with the revised plan and an interim path for their audit — don't let it come out in Q&A.
+- *If you can't reach the product owner in time:* "I want to give you a firm answer on audit log export rather than a fast one — let me come back to you this week with the confirmed timeline." That's honest, holds the relationship, and doesn't create a new promise. **Don't restate Q1 2027 by default.**
+
+**Reinforce continuity:** name the Aug 3 sync with Nia Cole explicitly. It signals we're tracking what we told them, which offsets the fragmented ownership.
+
+**Close the Aug 25 loop:** bring a status on the security review, even if the status is "in progress, here's the owner and date."
+
+**Let Jordan lead pricing.** Given CRM-78617 was his call five days ago, align first rather than opening commercials cold.
+
+**Ask, don't assume:** their audit deadline, which SIEM (notes say Splunk — confirm it hasn't changed), and what "done" looks like for their rollout.
+
+---
+
+One caveat on sourcing: nearly every CRM record here is a single generic line. I've flagged where I'm inferring from topic patterns rather than recorded detail. The Aug 3 commitment (DRI-34564) is the one item with real substance behind it — and it's the one that's flagged.

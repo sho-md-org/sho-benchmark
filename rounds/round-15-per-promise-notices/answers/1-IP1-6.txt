@@ -1,0 +1,25 @@
+Write is disabled this session, so I couldn't save those notes to memory — flagging that rather than leaving it silent. Here's the answer.
+
+## None of them — you have no SSO promises on record
+
+I want to correct the premise rather than answer around it. I enumerated every explicit rep-to-customer commitment in the tools, and **neither of your two recorded promises is about SSO**:
+
+| Record | You told | Feature promised | Status vs. roadmap |
+|---|---|---|---|
+| `SLA-77342` (2026-05-26) | Lena Fox, Granite Insurance | Audit log export by Q1 2027, incl. SIEM streaming | ✅ Matches `NOT-20876` exactly (Q1 2027) |
+| `SLA-93532` (2026-06-28) | Lena Fox, Pinecrest Realty | Advanced analytics (Osprey) "in the spring release" | ⚠️ Roadmap says Q2 2027 — see below |
+
+The SSO-adjacent promise that *does* exist is **not yours**: `SLA-12035` — Jordan Blake (AE) told Kai Berg at Umber Studios we'd have **SCIM provisioning by Q1 2027**. That's the one to route to Jordan.
+
+## Why you may have thought SSO was affected
+
+The only slip announced is `SLA-17908` (#general, 2026-09-19): **Sandbox environments (Rail) slips Q4 2026 → Q2 2027**, with a request to "update any customers expecting them this year." That's Sandbox, not SSO. SSO (SAML), SCIM, and Audit log export all still sit at Q1 2027 in `NOT-20876` with no recorded slip.
+
+There's also a lot of SSO *noise* that contains no commitments — ~30 records titled "Sso questions" across CRM, Drive, Notion, and Slack (e.g. `CRM-57082`, `DRI-67178`, `NOT-20443`). These are stubs: attendees plus "discussed SSO questions." One is even yours — `SLA-21939`, your 2026-05-01 status update — but it's a status post, not a promise.
+
+## What actually deserves your attention
+
+1. **`SLA-93532` — Pinecrest Realty, the real exposure.** You said "the spring release"; the roadmap says Q2 2027. Those *probably* reconcile (Q2 = Apr–Jun = spring), but "spring" is unanchored to a year. If Lena Fox heard spring **2026**, that date has already passed. Worth a confirming note regardless of the SSO question.
+2. **`SLA-17908` — check your accounts for Sandbox expectations.** Sandbox comes up in your customers' conversations (`DRI-19269`, Bluewater Logistics; `CRM-64912`, Meridian Travel — though the latter is logged "no commitment"). You have no *promise* on Sandbox, so nothing is breached, but the slip notice asked CS to proactively update.
+
+One caveat on confidence: this rests on the `#cs:` Slack channels being the complete promise log. If you've made SSO commitments over email, in a QBR deck, or verbally without logging them there, they wouldn't show up in any of these tools — that's the one gap I can't close from here. If you recall making an SSO promise, tell me the account and I'll dig into that customer's records specifically.

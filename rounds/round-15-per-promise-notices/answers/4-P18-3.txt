@@ -1,0 +1,32 @@
+## Cobalt Retail — QBR brief
+
+**Note on source quality:** most Cobalt records in the system are one-line meeting stubs (topic + owner + next step, no substance). The one substantive record is the last QBR's notes. I've flagged where I'm inferring versus quoting.
+
+### Where things stand
+- Account is actively engaged across many workstreams — billing (DRI-75222), pricing (CRM-87224), reporting (CRM-94849), notifications (CRM-35990), dashboards (DRI-58616), onboarding (DRI-18657), sandbox/hosting (DRI-35074), exports/webhooks (DRI-41266), offline + mobile (DRI-82140).
+- **Audit prep is the through-line.** It recurs as the "next step" in CRM-24323, CRM-87224, and CRM-12694, and as a discussion topic in DRI-75222. Cobalt is driving toward an audit, and that's what makes the audit log export commitment load-bearing.
+- Account ownership looks split — Jordan Blake (CRM-12694), Omar Haddad (CRM-24323), Priya Shah (CRM-87224), you (CRM-70221). Worth confirming who leads the QBR.
+- Heads-up: **DRI-72283 (mobile app + search, Sam Lee / Priya Shah) is dated 2026-09-26** — that meeting is two days out, before your call. Same for NOT-77133 (roadmap). Pick up whatever lands there.
+
+### Open commitments
+| Commitment | Made by | To | Due | Status |
+|---|---|---|---|---|
+| Audit log export, delivered as CSV export | You (CRM-38600, 2026-07-24) | Sam Ortiz | Q1 2027 | No later change recorded |
+
+Your exact words at the last QBR: *"you'll have it by Q1 2027 as a CSV export, you have my word."* CRM-38600 notes the customer is planning around it. The public roadmap (NOT-20876, 2026-06-30) lists "Audit log export incl. SIEM streaming: Q1 2027" — consistent with what you promised.
+
+### Risks
+1. **Single point of exposure.** Audit log export is the only hard-dated promise to this account, it's tied to their audit timeline, and you gave your personal word. If the date moves, it's a credibility event, not a roadmap update. Before you restate Q1 2027 on the call, get a one-line confirmation from the audit-log-export product owner — cheap insurance on the highest-stakes item on your agenda.
+2. **Scope mismatch.** You promised **CSV export**; the roadmap line reads "incl. SIEM streaming." Confirm CSV specifically ships in Q1 2027 and isn't bundled behind the streaming work. Also confirm CSV alone satisfies their auditor.
+3. **Thin record.** No renewal date, ARR, health score, NPS detail, or support-escalation history surfaced. If you need those for the QBR, they're somewhere I can't see — pull them before the call.
+4. **Fragmented ownership** risks contradictory messaging. Align with Jordan, Omar, and Priya beforehand.
+
+### What to say
+- **Open:** "Last QBR, Sam, you pushed hard on audit log export and I gave you my word on Q1 2027. Let's start there." Leading with it signals you tracked it.
+- **On audit log export:** reaffirm Q1 2027 CSV *after* you've confirmed with the product owner. Then get concrete: which fields, what retention window, does their auditor need SIEM streaming or is CSV sufficient. Offer an early-access or beta slot if one exists — it de-risks their audit and yours.
+- **On audit prep broadly:** position Brightline as a partner in their audit, not just a vendor shipping a feature. That's the strongest relationship play available given the record.
+- **Ask:** their audit date. Everything downstream depends on whether Q1 2027 actually clears it. If their audit is Q1, the margin is thin and you should say so now rather than in January.
+- **Don't** pre-commit on mobile app, search, or offline for Cobalt — nothing is promised to them on those, and the Sept 26 meeting may change the picture.
+
+### One item outside this call
+Your separate **Advanced analytics** commitment to Lena Fox at Pinecrest Realty (spring release, SLA-93532) needs a check with the product owner before you reaffirm it anywhere. Unrelated to Cobalt, but it's your promise and it surfaced alongside this work.

@@ -1,0 +1,18 @@
+## Short answer: I can't source that
+
+Nothing I have access to documents Advanced analytics being cut from the 2027 plan — no decision record, no reasoning, no decision-maker. So I can't give you the exact reasoning or a name, and I don't want to reconstruct one from inference.
+
+What I can see:
+
+- **NOT-20876** (Public roadmap H1 2027, Notion, 2026-06-30) still lists **Advanced analytics: Q2 2027**. That's the latest roadmap doc in my view.
+- **SLA-93532** (#cs, 2026-06-28) is your own commitment: you told Lena Fox at Pinecrest Realty that Advanced analytics (Osprey) would land in the **spring release** so they could finish their rollout.
+- The remaining analytics records I can reach are account-level notes — Tidewater Ports (**DRI-76027**, **CRM-11536**), Bluewater Logistics (**DRI-78883**), Delta Freight (**DRI-56604**), Umber Studios (**DRI-50317**), plus QBRs for Lumen Labs (**CRM-86750**), Orchid Hotels (**CRM-14909**), Vantage Telecom (**CRM-31062**) — customer demand, not planning decisions.
+
+## What I'd do
+
+Take it to the **product owner for Advanced analytics** directly, and ask two things in one message:
+
+1. Is Advanced analytics still on for Q2 2027 as NOT-20876 shows, and if the plan changed, what's the reasoning and who signed off?
+2. Specifically: does the **spring release** timing I gave Pinecrest still hold?
+
+Worth doing before you reaffirm anything to Lena Fox — your Pinecrest promise (SLA-93532) is pinned to the spring release, and roadmap docs can lag decisions. If you heard "it was cut" from someone, tell me where, and I'll check whether I can reach that source.

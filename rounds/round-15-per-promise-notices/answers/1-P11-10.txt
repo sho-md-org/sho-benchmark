@@ -1,0 +1,59 @@
+I've now read every Vantage Telecom record in all five systems. Before the brief, there's a problem you need to know about.
+
+## The honest bottom line
+
+**I can't build you a factual QBR brief from these sources.** Every Vantage Telecom record is a one-line stub — topic, internal owner, and a "next: follow up on X" pointer. Nothing contains ARR, renewal date, contract terms, customer-side names, NPS scores, ticket volumes, or any commitment with an owner and a due date.
+
+The full corpus: 10 CRM records, 9 Drive docs, **zero** in Slack, Linear, and Notion. Example of the richest record — CRM-65747 (2026-09-13): *"Call with Vantage Telecom. Discussed dashboards. Owner Maya Chen. Next: follow up on exports."* That's the entire record.
+
+I'm not going to invent the numbers a QBR brief normally carries. Here's what the data *does* legitimately support, and how to close the rest fast.
+
+## What's factually established
+
+**Engagement timeline (CRM calls)**
+| Date | Topic | Internal owner | Stated next step |
+|---|---|---|---|
+| 04-12 | Billing | Leo Grant | latency (CRM-24363) |
+| 04-27 | Dashboards | Tess Brown | integrations (CRM-20779) |
+| 05-14 | Exports | Ana Petrova | webhooks (CRM-23907) |
+| 05-18 | Analytics | Jordan Blake | sandbox (CRM-53521) |
+| 06-17 | Search | Priya Shah | webhooks (CRM-74774) |
+| 06-22 | Onboarding | Dana Ortiz | webhooks (CRM-15845) |
+| 07-08 | Search | Priya Shah | QBR prep (CRM-84868) |
+| 07-10 | NPS | Tess Brown | reporting (CRM-37016) |
+| 07-23 | Billing | Jordan Blake | latency (CRM-92524) |
+| 09-13 | Dashboards | **Maya Chen** | **exports** (CRM-65747) |
+
+**Recent internal meetings:** Rate limits/hosting 08-05 (DRI-89702, you attended), Trial conversion 08-11 (DRI-77676), Support queue 08-18 (DRI-10836), **Churn 09-06** (DRI-14442, Dana Ortiz + Tess Brown), **SSO questions 09-11** (DRI-67178, Dana Ortiz + Omar Haddad).
+
+## What the pattern suggests — inference, not fact
+
+These read off record structure, so treat them as leads to verify, not talking points:
+
+- **A churn conversation happened on 09-06** (DRI-14442) explicitly tied to QBR prep. This is the single most important thing to chase. Someone was modeling Vantage as a churn risk three weeks ago and you should know why before you dial.
+- **SSO questions surfaced 09-11** (DRI-67178). Late-cycle SSO/security questions often mean procurement or IT review is engaged. Could signal renewal scrutiny — or an expansion into a new business unit.
+- **A 7-week cadence gap** between 07-23 and 09-13. If the customer noticed, expect it to come up.
+- **Webhooks is an unclosed loop.** Three separate calls (05-14, 06-17, 06-22) all end pointing at webhooks. The only webhooks meeting on record is 05-28 — *before* two of those pointers. No evidence it ever closed.
+- **Latency was flagged twice** (04-12, 07-23) and there is no latency document anywhere in any system.
+- **Seven different internal owners across ten calls.** You own only the most recent. Account continuity is thin, and the customer has likely felt it.
+- **Your own open item is exports** (CRM-65747). Note exports was also the 05-14 topic — it's a thread that reopened after four months.
+
+## Gaps you must fill before the call
+
+Renewal date and contract value · ARR and expansion/downgrade history · customer-side stakeholders and who attends · current NPS (referenced 5×, score recorded nowhere) · support ticket volume and any SLA breaches · the actual status of webhooks, exports, latency, SSO · **why the churn doc exists**.
+
+**Fastest path:** Dana Ortiz and Tess Brown wrote the churn doc — start there, today. Dana and Omar Haddad have the SSO context. Omar also owns two generic "QBR prep" Notion pages (NOT-42571 09-15, NOT-52051 09-05) that may be process templates worth reusing. Pull renewal and ARR from your billing or finance system of record, which isn't represented in these tools.
+
+## Talk track — question-led, until you have facts
+
+Since you can't safely assert numbers, run the call as a listening session. That's defensible and, given the 7-week gap, probably the right posture anyway.
+
+1. **Open by owning the continuity gap.** "I've taken over as your main point of contact and I want to make sure nothing's fallen through the cracks." Honest, and it pre-empts the complaint.
+2. **Close the loops by name.** Ask directly about webhooks, exports, and latency. Naming stale items yourself is far stronger than being told about them.
+3. **Let them set the priority list**, then confirm ownership and dates live on the call — that's what's missing from every record here.
+4. **Probe the SSO thread** to find out whether it's security review, a new deployment, or procurement.
+5. **Close with a written recap** including owner and date for each item, and put it in the CRM in full. The thinness of this account history is itself the root problem.
+
+One thing I'd flag: don't walk in with claims about their usage, satisfaction, or value realized. There is nothing in these systems to support such a claim, and being contradicted by the customer in their own QBR is the worst outcome available.
+
+Want me to draft the recap email template, or pull the two Notion QBR prep pages to see if they're reusable structure?

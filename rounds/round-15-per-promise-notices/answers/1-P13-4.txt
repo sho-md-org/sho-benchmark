@@ -1,0 +1,34 @@
+## What the records say
+
+**The promise is real and documented.** In the 2026-07-09 sync (`DRI-36664`), Tom Hale raised that Brightline had told Quarry Mining SSO (SAML) by Q1 2027, and Leo Grant (AE) confirmed it on the call. So the customer is quoting us accurately — this isn't a misunderstanding to walk back.
+
+**It's also a public commitment.** The H1 2027 public roadmap (`NOT-20876`, 2026-06-30) lists "SSO (SAML), SP- and IdP-initiated: Q1 2027." Related items they'll likely ask about next are on the same page: SCIM provisioning Q1 2027, audit log export incl. SIEM streaming Q1 2027.
+
+**No evidence of a slip.** I searched Slack, Notion, and Drive for schedule changes and found nothing moving SSO off Q1 2027. The account has open SSO follow-ups (`CRM-60566`, 2026-08-27, owner Sam Lee) but they read as pre-sales questions, not delivery risk.
+
+⚠️ **One gap before you send:** Linear returned **zero** results for SSO, SAML, and single sign-on. Every other signal is a roadmap or sales artifact — I could not find tracked engineering work behind this date. That may just mean the tickets live outside what I can search, but a Q1 2027 commitment with no visible ticket is worth a 5-minute check with Maya Chen (roadmap owner, `NOT-85086`) before you re-confirm the date in writing. The draft below is written so it's accurate either way — it confirms our published position without inventing delivery detail.
+
+## Draft reply
+
+> **Subject:** Re: SSO (SAML) timing
+>
+> Hi Tom,
+>
+> Yes — SSO with SAML is still committed for Q1 2027, covering both SP-initiated and IdP-initiated flows. That's where it sits on our published H1 2027 roadmap, and nothing has changed since we discussed it in July.
+>
+> Two related items on the same Q1 2027 track that I know matter for your rollout: SCIM provisioning and audit log export with SIEM streaming.
+>
+> As we get closer to the build, I'd like to get your team in front of it early — we can line up a technical session with your identity folks to walk through your IdP setup and make sure the implementation fits how you provision users, and get you into testing ahead of general availability.
+>
+> Happy to set that up whenever it's useful. Anything specific on your side driving the timing — an audit or internal deadline we should be planning around?
+>
+> Best,
+> Leo
+
+## Why it's written this way
+
+- **Confirms without over-promising.** It restates the public roadmap commitment rather than making a new personal guarantee, so it holds up even if the internal check turns up a wobble.
+- **No invented specifics.** I deliberately left out beta dates, release months, and named IdPs — none of that is in the records, and a fabricated detail here becomes the next thing they hold us to.
+- **The closing question is doing work.** Quarry Mining had an audit prep discussion on 2026-09-07 (`DRI-62153`) and a churn conversation on 2026-08-25 (`DRI-67006`). If an audit deadline is driving this question, you want to know now — and the SIEM/audit-log mention gives them an easy opening to say so.
+
+If the check with Maya confirms tickets exist and are scoped, you can strengthen "still committed" to include a build-start or beta window. If it comes back that nothing is scheduled, tell me and I'll rewrite this to hold the line on the roadmap date without the early-access offer, which would otherwise be a second promise you'd have to keep.

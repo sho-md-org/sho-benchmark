@@ -1,0 +1,47 @@
+## Keystone Energy — QBR brief
+
+**⚠️ One thing to clear before the call:** The audit log export commitment is the centerpiece of this account, and Sho flags that a decision I don't have visibility into may affect it. **Confirm with the product owner that the Q1 2027 / Splunk-streaming promise still holds before you reaffirm it on the call.** Don't restate the date as settled until you've heard back.
+
+### Where things stand
+
+The Keystone relationship is active and broad — roughly 20 logged touchpoints since April across security, uptime, pricing, integrations, and onboarding. Two honest caveats: the records are mostly one-line call summaries with no outcomes attached, and account ownership is scattered (Jordan Blake, Omar Haddad, Sam Lee, Tess Brown, Priya Shah, Dana Ortiz, Ana Petrova, Leo Grant have each owned a call). There's no health score, renewal date, or usage data in what I can see — if you want those in the brief, they'll have to come from elsewhere.
+
+The dominant thread all year is **audit prep / audit log export**: CRM-90377 (May 8), CRM-17727 (Jun 17), DRI-85107 (Jun 8), DRI-48005 (Jun 25), CRM-56742 (Aug 17), DRI-84961 (Aug 24). A parallel **security review** thread runs through CRM-25431 (Apr 7), CRM-64056 (Jul 7), CRM-30791 (Jul 23), and your own QBR prep call CRM-93344 (Aug 25) closed with "follow up on security review" — that's still open as far as the record shows.
+
+Most recent activity: uptime discussion Sep 23 (CRM-19012, Sam Lee) and a pricing conversation with Jordan Blake dated Sep 25 (CRM-78617) — that one is dated tomorrow, so check with Jordan whether it's already happened.
+
+### Open commitments
+
+| Commitment | To | Made by | Due | Status |
+|---|---|---|---|---|
+| Audit log export with SIEM streaming into Splunk | Keystone Energy (Nia Cole) | Company, confirmed by Jordan Blake, AE — DRI-34564 | Q1 2027 | **Verify with product owner before reaffirming** |
+
+That's the only commitment on record specific to Keystone. Nia Cole raised it herself at the Aug 3 sync (DRI-34564) and Jordan confirmed it — so they consider it locked, and they will likely lead with it at the QBR.
+
+Two of your own promises on other accounts carry the same "check before reaffirming" flag: advanced analytics/Osprey to Lena Fox at Pinecrest (SLA-93532) and audit log export to Lena Fox at Granite Insurance (SLA-77342). Not Keystone business, but worth batching into the same product-owner conversation.
+
+### Risks
+
+1. **Reaffirming a date you can't currently stand behind.** Keystone has already restated the Q1 2027 Splunk commitment back to us and gotten confirmation. If anything has moved, hearing it at a QBR — after a second confirmation — is the worst version of that conversation.
+2. **Ownership churn.** Eight different owners across a year of calls. Keystone may perceive no single point of accountability; the QBR is a good moment to name one.
+3. **Stale open loop.** Your own Aug 25 prep call (CRM-93344) left "follow up on security review" outstanding, and the security thread has no logged activity since Jul 23. Expect them to ask where it landed.
+4. **Pricing in play.** A pricing conversation is live with Jordan (CRM-78617). Sync with him before the call so you and he aren't giving different signals.
+
+### What to say
+
+**Open on their agenda, not ours.** "Audit log export and the security review are the two things we've spent the year on — I want to make sure you leave today knowing exactly where each stands."
+
+**On audit log export** — if the product owner confirms nothing has changed: reaffirm Q1 2027 with Splunk streaming, and offer a concrete milestone (design review or beta access) so the date isn't the only thing they have. If you haven't heard back by call time, say: *"I want to give you a precise status on audit log export rather than repeat a date — I'm confirming the delivery plan with our product team this week and will come back to you in writing by [date]."* That's accurate, doesn't retract anything, and doesn't over-commit.
+
+**On the security review:** acknowledge the gap directly rather than waiting for them to raise it, and commit to a written status with an owner and date.
+
+**On ownership:** tell them you're the single point of contact going forward and that Jordan stays on commercial. Given the churn, this will land well.
+
+**Close by asking what their Q1 2027 internal deadline actually is** — whether audit log export is gating their own compliance audit changes how much urgency this needs internally.
+
+### Before the call
+
+- Ask the product owner whether the DRI-34564 commitment (Q1 2027, Splunk streaming) still holds — and bundle SLA-93532 and SLA-77342 into the same ask
+- Get the security review status from Omar Haddad (CRM-30791)
+- Sync with Jordan Blake on where pricing stands (CRM-78617)
+- Pull renewal date, ARR, and usage/health data — none of it is in the records I can see

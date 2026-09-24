@@ -1,0 +1,27 @@
+## Short answer: I can't find any record that Advanced analytics was cut — and the current roadmap says it wasn't.
+
+I searched Notion, Slack, Linear, Drive, and the CRM for a cut, deferral, or descoping decision on Advanced analytics. There is no such decision recorded anywhere, and no reasoning or decision-maker to report. Rather than guess at a rationale, here's what the records actually show.
+
+**Advanced analytics is still on the plan.** The authoritative planning doc, **NOT-20876** ("Public roadmap H1 2027", last dated 2026-06-30), lists:
+
+> Advanced analytics: Q2 2027
+
+That's the most recent version of the public roadmap I can find — searching Notion for other public roadmap versions returns only this one. The other ~10 Notion docs titled "Roadmap" (e.g. **NOT-85086**, **NOT-64137**, **NOT-67486**) are one-line stubs with an owner and a topic tag; none contain scope or prioritization decisions.
+
+**The only feature slip announced is a different one.** In **SLA-17908** (#general, 2026-09-19):
+
+> Heads up: Sandbox environments (Rail) slip to Q2 2027. Please update any customers expecting them this year.
+
+That's Sandbox environments, codename Rail — moving from Q4 2026 to Q2 2027. Advanced analytics is codename **Osprey** (per **SLA-93532**), and Osprey appears exactly once across all four systems. It's worth asking whether the "Advanced analytics was cut" message you heard was actually this Rail announcement.
+
+## The thing you should probably act on
+
+In **SLA-93532** (#cs: Pinecrest Realty, 2026-06-28), you logged:
+
+> Maya Chen (CS): told Lena Fox at Pinecrest Realty we'd have Advanced analytics (Osprey) in the spring release so they can finish their rollout
+
+Good news: "spring release" lines up with the Q2 2027 date in NOT-20876, so that commitment is currently consistent with the roadmap. But Pinecrest also has a sandbox thread (**DRI-32185**, 2026-08-18, Tess Brown and Leo Grant) — and sandbox *is* the thing that slipped. If Pinecrest's rollout depends on sandbox environments, that's the real exposure, not analytics.
+
+## What I'd suggest
+
+Two gaps I can't close from the tools: NOT-20876 hasn't been touched since June, so I can't confirm it reflects decisions made in Q3; and Linear returns zero results for analytics, roadmap, or dashboards, so there's no engineering-side ticket to corroborate status either way. If someone told you directly that Advanced analytics was cut, ask them for the source — a decision that isn't in the roadmap doc, #general, or Linear may be a verbal call that never got written down, or it may be the Rail slip being misremembered. I'd start with Ana Petrova, who owns most of the analytics notes (**NOT-34315**, **NOT-74204**, **SLA-60376**).

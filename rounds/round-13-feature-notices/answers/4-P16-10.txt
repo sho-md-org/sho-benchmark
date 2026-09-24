@@ -1,0 +1,51 @@
+## Keystone Energy — QBR brief
+
+**One thing to handle before the call:** the audit log export commitment may have changed. Details in Risks.
+
+---
+
+### Where things stand
+
+Steady, multi-thread engagement across the year, but the account's center of gravity is **compliance/audit readiness** — it's by far the most recurring theme (CRM-90377 May, CRM-17727 Jun, DRI-85107 Jun, DRI-48005 Jun, CRM-56742 Aug, DRI-84961 Aug).
+
+Threads by workstream:
+- **Audit & exports** — ongoing since May; most recent working session with Sam Lee on exports (DRI-84961, 2026-08-24).
+- **Security review** — three touches (CRM-25431 Apr, CRM-64056 Jul, CRM-30791 Jul). Your own QBR prep note (CRM-93344, 2026-08-25) lists "follow up on security review" as the open next step — it appears not to have closed.
+- **Integrations** — with Sam Lee (DRI-31273, 2026-08-10); webhooks flagged as open from CRM-56742.
+- **Platform health** — uptime discussed most recently (CRM-19012, 2026-09-23), earlier latency (CRM-23178) and rate limits (CRM-60405).
+- **Commercial** — pricing with Jordan Blake (CRM-78617, dated 2026-09-25), with offline mode as the follow-up.
+- **Onboarding** — CRM-15788, CRM-86748 (June); appears settled.
+
+Ownership is spread across Maya, Sam Lee, Jordan Blake, Omar Haddad, Tess Brown, Priya Shah, Dana Ortiz. Worth naming a single thread owner per workstream at the QBR.
+
+### Open commitments
+
+| Commitment | To | Due | Source | Status |
+|---|---|---|---|---|
+| Audit log export with SIEM (Splunk) streaming | Keystone Energy (Nia Cole) | Q1 2027 | DRI-34564 | ⚠️ See risks — do not reaffirm yet |
+
+Made by the company, confirmed by Jordan Blake (AE) at the 2026-08-03 sync after Nia Cole raised it. This is the commitment Keystone is tracking.
+
+Open follow-ups that aren't formal commitments but will likely come up: security review closure (CRM-93344), webhooks (CRM-56742), offline mode (CRM-78617), NPS (CRM-19012).
+
+### Risks
+
+1. **The audit log export promise may have moved.** Sho flags that a decision exists which I can't see and which may or may not affect the Q1 2027 Splunk-streaming commitment. I can't tell you what it is or whether it changes anything. **Action: ask the product owner whether the commitment still holds before you reaffirm it on the call.** Given Nia Cole raised this unprompted in August and Jordan confirmed it, walking it back live would be costly — get the answer first.
+2. **Single point of dependency.** Audit log export is load-bearing for their compliance timeline; five months of audit-prep meetings suggest their internal audit is the forcing function. Any slip is a renewal risk, not just a roadmap risk.
+3. **Stale security review.** Open since at least July and still the named next step in your August QBR prep. Expect them to ask.
+4. **Fragmented ownership.** Seven owners across ten-plus touchpoints raises the odds something has fallen between threads.
+
+### What to say
+
+**Do say:**
+- Lead with audit readiness — mirror their priority. Recap the export work from the Aug 24 session (DRI-84961) concretely.
+- "I want to give you a firm status on audit log export and the Splunk streaming piece" — then deliver whatever the product owner confirms.
+- Close the security review loop explicitly, with an owner and a date.
+- Propose a named point of contact per workstream to fix the fragmentation.
+- Ask what their internal audit milestone dates are, so the Q1 2027 target can be validated against their real deadline rather than ours.
+
+**Don't say:**
+- Don't restate "Q1 2027, Splunk streaming, confirmed" as settled fact until product confirms. If it comes up before you've heard back: *"That's the commitment on record and I'm confirming the delivery detail with our product team this week — I'll come back to you with specifics rather than guess."* That's honest and buys you the window.
+- Don't commit to webhooks or offline mode dates; both are follow-ups with no dated commitment behind them.
+
+**Prep checklist before the call:** (1) product owner — audit log export status; (2) Omar Haddad/Tess Brown — security review state; (3) Jordan Blake — what was landed on the Sept 25 pricing call.

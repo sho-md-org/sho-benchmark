@@ -1,0 +1,27 @@
+## Short answer: none of your commitments are on SSO itself
+
+Everything in the system tagged SSO for you is discussion, not a promise:
+
+- `DRI-18519` — Harbor Clinics, SSO questions + notifications (w/ Ana Petrova)
+- `DRI-79562` — Norrland AB, SSO questions + offline (w/ Priya Shah)
+- `CRM-74174` — Evergreen Bank, SSO questions; next step is audit prep
+- `SLA-21939`, `NOT-29833`, `NOT-58902` — status notes/pages you own
+
+No commitment record attaches a date or deliverable to SSO for any of these accounts, so there's nothing on SSO to be affected.
+
+## What *is* flagged, and why it may be what you're after
+
+Two SSO-adjacent identity commitments carry a notice:
+
+| Commitment | Source | Owner | Status |
+|---|---|---|---|
+| Audit log export incl. SIEM streaming → Lena Fox, Granite Insurance, by Q1 2027 | `SLA-77342` | **You** | ⚠️ Flagged |
+| SCIM provisioning → Kai Berg, Umber Studios, by Q1 2027 | `SLA-12035` | Jordan Blake (AE) | ⚠️ Flagged |
+
+**Audit log export is the one that's yours.** It's the closest thing to an SSO promise in your name — and it's plausibly what prompted your question, given the Evergreen Bank SSO call (`CRM-74174`) ends on audit prep. There's a decision I can't see that may or may not change it; I can't tell you what that decision is or whether it lands. Check with the product owner before you reaffirm the Q1 2027 date or the SIEM streaming scope to Granite Insurance.
+
+SCIM (`SLA-12035`) is Jordan Blake's promise, not yours — worth a heads-up to them rather than action by you, but the same caveat applies.
+
+Also flagged, though unrelated to SSO: **Advanced analytics (Osprey), spring release → Lena Fox, Pinecrest Realty** (`SLA-93532`). Same guidance — confirm with the product owner first. Note Lena Fox appears on both this and the Granite Insurance commitment; if that's the same person across two accounts, one conversation with the product owner covers both.
+
+Clear and unaffected: **Offline mode → Tom Hale, Meridian Travel, by Q2** (`SLA-24221`, Priya Shah's) — no later change found.

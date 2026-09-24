@@ -1,0 +1,54 @@
+## Vantage Telecom — QBR Brief
+
+**One thing to handle before the call:** the SSO commitment needs a check with the product owner before you reaffirm it (details below).
+
+### Where things stand
+
+The account has been in steady, high-frequency contact all year — roughly monthly touchpoints across multiple workstreams, with ownership spread over Priya Shah, Jordan Blake, Tess Brown, Dana Ortiz, Leo Grant, Ana Petrova and you.
+
+Recurring threads, by theme:
+
+| Theme | Records | Latest |
+|---|---|---|
+| Dashboards / reporting | CRM-20779, CRM-10757, CRM-65747 | 2026-09-13 (you own; next step: exports) |
+| SSO (SAML) | CRM-31062, DRI-67178, CRM-57082 | 2026-09-19 (Priya owns; next step: roadmap) |
+| Search | CRM-74774, CRM-84868 | 2026-07-08 |
+| Billing | CRM-24363, CRM-92524 | 2026-07-23 |
+| Exports / integrations | CRM-23907, DRI-81968 | 2026-05-14 |
+| NPS | CRM-37016, DRI-67178 | 2026-07-10 |
+| Pricing, analytics, onboarding | CRM-36270, CRM-53521, CRM-15845 | 2026-06-22 |
+
+Two signals worth reading together: **SSO went from a QBR ask in June (CRM-31062) to three separate touchpoints in September** (DRI-67178, CRM-57082, plus CRM-10757 routing into it), and there is an internal **churn discussion dated 2026-09-06** (DRI-14442, Dana Ortiz and Tess Brown) explicitly tied to QBR prep. The escalating SSO cadence and the churn conversation are almost certainly the same story.
+
+A caveat on sourcing: most of these CRM entries are one-line call logs with a topic and a next step, not substantive notes. The account history is dense but thin on detail, so the narrative above is inferred from the pattern of contact rather than stated anywhere. Before the call, it's worth 15 minutes with Dana or Tess on what actually drove DRI-14442 — that's the only record that would tell you how much renewal risk is real.
+
+### Open commitments
+
+**SSO (SAML) — Priya Shah to Ines Park, by Q1 2027** (CRM-31062). Priya's exact words were "you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word," and the note records that the customer is planning around it.
+
+⚠️ **Do not reaffirm this in the QBR until you've checked with the product owner.** There's a flag on this commitment indicating a decision exists that may or may not affect it, and that isn't visible to me — I can't tell you whether the date still holds or what changed. Ines will very likely push on SSO given the September cadence, so resolve this beforehand rather than in the room.
+
+No other open commitments are on record for Vantage.
+
+### Risks
+
+1. **SSO is the account's load-bearing issue.** A specific, verbally-guaranteed commitment with named technical scope (Okta IdP-initiated login), a customer planning their rollout around it, and an unresolved status question. If the date has moved, this is a trust problem, not a roadmap problem.
+2. **Churn is already being discussed internally** (DRI-14442) without your involvement — you weren't an attendee. Go in knowing what your colleagues concluded.
+3. **Ownership is diffuse.** Seven different people own touchpoints across ten-plus interactions. Ines may be getting inconsistent answers, particularly on SSO timing.
+4. **Several threads log a next step that never appears again** — webhooks (CRM-23907, CRM-74774, CRM-15845), latency (CRM-24363, CRM-92524), sandbox (CRM-53521), audit prep (CRM-36270, DRI-81968). Either these closed without a record or they lapsed; the second is the kind of thing customers remember at a QBR.
+
+### What to say
+
+**Open with the year in review** — dashboards, search, billing and integrations all progressed, and contact has been consistent. This is a well-served account on paper.
+
+**On SSO, once you have the product owner's answer:** if the Q1 2027 date holds, state it plainly and give Ines the written confirmation Priya's verbal promise never produced. If it has moved, lead with it yourself before Ines asks — name the new date, acknowledge they planned their rollout around the original, and bring a concrete bridge (timeline for what ships when, or interim options). Don't let a slipped date surface as a surprise in the room.
+
+**Consolidate ownership.** Offer Ines a single point of contact — you — for roadmap questions, with a standing monthly check-in. This addresses the diffuse-ownership risk directly and signals seriousness on retention.
+
+**Close the loose threads proactively.** Ask Ines directly about webhooks, latency, sandbox and audit prep. If they've lapsed, better that you raise them than that she does.
+
+**Ask an open renewal question.** Something like "what would make next year clearly worth it for you?" — given DRI-14442, you want her framing of value in her own words before renewal conversations start.
+
+---
+
+*Separately, three of your other flagged commitments carry the same "check with the product owner" notice — Advanced analytics to Pinecrest Realty (SLA-93532), Audit log export to Granite Insurance (SLA-77342), and Jordan's SCIM commitment to Umber Studios (SLA-12035). Not Vantage, but the same verification applies before you reaffirm any of them.*

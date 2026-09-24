@@ -1,0 +1,54 @@
+## Vantage Telecom — QBR Brief
+
+**One flag up front:** the SSO (SAML) commitment needs a check with the product owner before you reaffirm it on the call. Details in Risks below.
+
+---
+
+### Where things stand
+
+Activity is steady but the records are thin — most are one-line call logs without outcomes, so treat this as a map of threads, not a status report.
+
+| Date | Thread | Owner | Stated next step |
+|---|---|---|---|
+| 2026-09-13 | Dashboards (CRM-65747) | Maya Chen | Follow up on exports |
+| 2026-09-06 | Churn / QBR prep (DRI-14442) | Dana Ortiz, Tess Brown | — |
+| 2026-07-10 | NPS (CRM-37016) | Tess Brown | Follow up on reporting |
+| 2026-07-08 | Search (CRM-84868) | Priya Shah | Follow up on QBR prep |
+| 2026-06-22 | Pricing (CRM-36270) | Jordan Blake | Follow up on audit prep |
+| 2026-06-17 | Search (CRM-74774) | Priya Shah | Follow up on webhooks |
+| 2026-06-08 | QBR / SSO (CRM-31062) | Priya Shah | — |
+| 2026-05-14 | Exports (CRM-23907) | Ana Petrova | Follow up on webhooks |
+| 2026-04-27 | Dashboards (CRM-20779) | Tess Brown | Follow up on integrations |
+| 2026-04-12 | Billing (CRM-24363) | Leo Grant | Follow up on latency |
+| 2026-04-02 | Integrations / audit prep (DRI-81968) | Maya Chen, Leo Grant | — |
+
+Recurring themes: dashboards/exports/reporting, search, webhooks, integrations + audit prep, and pricing. You own the most recent touch (dashboards → exports, CRM-65747), so that's the natural continuity thread to open on.
+
+### Open commitments to Vantage
+
+**SSO (SAML), by Q1 2027** — made by Priya Shah (AE) to Ines Park at the June QBR (CRM-31062). The record is specific: *"you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word."* The note says the customer is planning around it. This is the only formal dated commitment to this account in the record.
+
+Two older threads have unresolved follow-ups that Vantage may treat as implied commitments even though nothing is logged as promised: **exports** (CRM-23907 → CRM-65747) and **webhooks** (raised twice, CRM-74774 and CRM-23907, with no later record of resolution).
+
+### Risks
+
+1. **SSO is the big one, and you can't confirm it as-is.** There's an internal decision bearing on this promise that isn't visible to me — I can't tell you whether it changes the Q1 2027 date or not. **Ask the product owner whether the commitment still holds before you reaffirm it on the call.** Do not restate the Q1 2027 date or the Okta IdP-initiated login detail until you have that answer. Given the promise was made in strong personal terms ("you have my word") and the customer is planning a rollout around it, a surprise here would land hard.
+2. **Churn is on someone's radar.** DRI-14442 (2026-09-06) pairs churn with QBR prep, attended by Dana Ortiz and Tess Brown. The note has no substance beyond the topic, so don't assume a specific concern — but sync with Dana and Tess before the call so you're not the last to know.
+3. **Fragmented ownership.** Six different owners across eleven touchpoints (Maya, Priya, Tess, Jordan, Leo, Ana). Vantage may perceive this as lack of a single throat to choke; open follow-ups on webhooks and exports appear to have crossed hands without closure.
+4. **Pricing + audit prep were linked in June** (CRM-36270, Jordan Blake). If a renewal or audit is approaching, expect pricing to resurface. Check with Jordan on where that landed.
+
+### What to say
+
+**Open with:** continuity on your own last thread — dashboards and the exports follow-up (CRM-65747). It's the freshest item and it's yours.
+
+**On SSO — pending your check with the product owner.** If it's confirmed: reaffirm plainly with the date and the Okta detail. If it's changed or uncertain: say you're confirming the delivery plan internally and will come back with a firm answer by a specific date. Don't improvise a new date on the call, and don't repeat Priya's original wording as if it were freshly verified.
+
+**On the open threads:** name webhooks and exports explicitly and say who owns each going forward. Proposing a single point of contact addresses the ownership fragmentation without making it a topic.
+
+**Ask them:** how the integrations/audit prep work is tracking on their side (DRI-81968, and the audit thread in CRM-36270), and what's driving their NPS/reporting needs (CRM-37016). Both give you the information the records are missing.
+
+**Prep calls before the QBR:** product owner (SSO), Dana Ortiz and Tess Brown (the churn note), Jordan Blake (pricing/audit).
+
+---
+
+Separately — three commitments you own or co-own on *other* accounts carry the same "check with the product owner" flag: Advanced analytics for Pinecrest Realty (SLA-93532), Audit log export for Granite Insurance (SLA-77342), and SCIM provisioning for Umber Studios via Jordan Blake (SLA-12035). Not QBR material, but worth clearing in the same conversation with the product owner.

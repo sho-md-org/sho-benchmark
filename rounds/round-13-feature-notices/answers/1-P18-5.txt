@@ -1,0 +1,82 @@
+## Cobalt Retail — QBR Brief
+*Prepared 2026-09-24 · sources: CRM (13 account records), Drive meeting notes (10). Nothing account-tagged for Cobalt exists in Slack, Linear, or Notion — see Gaps.*
+
+---
+
+### 1. Where things stand
+
+Steady, high-frequency engagement from April through early August, then a stop.
+
+- **13 logged CRM calls** between 2026-04-01 (CRM-98822, webhooks) and 2026-08-04 (CRM-12694, QBR prep).
+- **10 Drive meeting notes** between 2026-06-07 (DRI-41266, exports) and 2026-09-26 (DRI-72283, mobile app + search — dated *after* today, so it's the scheduled session, not a record of one that happened).
+- **The QBR was already pre-briefed once**: CRM-12694 (2026-08-04, owner Jordan Blake), whose stated next step was audit prep.
+- **Last CRM-logged customer call: 2026-08-01** (CRM-35990, notifications, owner Omar Haddad). That's a **seven-week gap in logged CRM activity** going into the QBR. Working sessions continued in Drive through 2026-08-23 (DRI-35074, sandbox + hosting — the one you attended, with Sam Lee), but nothing in September.
+
+**Topic footprint across the year:** onboarding (CRM-49779, CRM-16603, DRI-18657), dashboards (CRM-24697, DRI-58616), search (CRM-36268), reporting (CRM-94849), webhooks/exports (CRM-98822, DRI-41266), rate limits (DRI-33978), billing (DRI-75222), sandbox/hosting (DRI-35074), mobile app/offline (DRI-82140, DRI-72283), NPS (CRM-92187), and a persistent commercial + compliance thread (pricing, SSO, audit prep, security review).
+
+---
+
+### 2. Open commitments
+
+Each CRM record logs a "next step." Tracing them against later records, these were **closed**:
+
+| Commitment | Closed by |
+|---|---|
+| Case study (from CRM-98822, 4/1) | DRI-20022 (7/27), DRI-95243 (8/5) |
+| Rate limits (from CRM-24697 5/26, CRM-16603 6/15) | DRI-33978 (7/25) |
+| Mobile app (from CRM-92187, 6/9) | DRI-82140 (8/17), DRI-72283 (9/26) |
+| Billing (from CRM-94849, 7/23) | DRI-75222 (8/11) |
+
+These are **still open** — no later record shows them addressed:
+
+1. **Security review — owned by you, promised twice.** CRM-70221 (2026-04-20, roadmap, owner Maya Chen) and CRM-36268 (2026-05-22, search, owner Maya Chen) both close with "follow up on security review." Five months, no record of delivery. This is the item most likely to be raised back at you.
+2. **Audit prep — re-requested after partial coverage.** Raised at CRM-24323 (6/12), touched at DRI-75222 (8/11, alongside billing), then re-opened as the next step out of the QBR prep call itself (CRM-87224 6/23 → audit prep; CRM-12694 8/4 → audit prep).
+3. **Pricing — raised four times, never resolved.** CRM-12111 (6/13, SSO) → pricing; CRM-87224 (6/23) discussed pricing; CRM-35990 (8/1) → pricing again; DRI-95243 (8/5) covered pricing alongside the case study. It keeps coming back.
+4. **Latency.** CRM-49779 (2026-04-27, onboarding, owner Priya Shah) → "follow up on latency." No subsequent record.
+5. **Trial conversion.** CRM-24323 (2026-06-12, audit prep, owner Omar Haddad) → "follow up on trial conversion." No subsequent record — worth knowing whether this refers to seats or a second business unit.
+
+---
+
+### 3. Risks
+
+- **Compliance cluster is the real exposure.** Security review (CRM-70221, CRM-36268), SSO questions (CRM-12111), audit prep (CRM-24323, CRM-12694), and EU customers (DRI-33978) are four expressions of the same underlying concern. Two of those threads are open and one is yours. If Cobalt has an audit deadline, this becomes a renewal issue rather than a roadmap issue.
+- **Seven-week silence before a QBR.** No CRM activity since 8/4, no Drive session since 8/23. Assume the account has been reprioritizing without you in the room.
+- **Pricing pressure is unresolved and recurring.** Four raises in eight weeks with no recorded outcome usually means they're building a case, not idly asking.
+- **No consistent owner.** Six owners across 13 calls — Priya Shah (4), Omar Haddad (3), Maya Chen (2), Tess Brown (2), Jordan Blake (1). Cobalt has had to re-explain itself repeatedly; that's a common source of "you don't know our account."
+- **You're asking for advocacy while their asks sit open.** Two case-study sessions (DRI-20022 7/27, DRI-95243 8/5) landed while security review and latency were still outstanding. Do not lead with the case study.
+- **Performance/reliability cluster.** Latency (open), rate limits (DRI-33978), offline (DRI-82140), sandbox/hosting (DRI-35074) — if the mobile rollout is live, these compound.
+
+---
+
+### 4. What to say
+
+**Open — own the gap before they name it.**
+> "Before we look forward: I owe you a security review. I flagged it in April and again in May and it didn't land. Here's where it actually is and when you'll have it."
+
+Naming CRM-70221 and CRM-36268 yourself converts your weakest item into credibility. Do this in the first two minutes.
+
+**Then show the year as a delivery record, not a meeting log.** Onboarding through dashboards, reporting, webhooks/exports, rate limits, billing, sandbox, and now mobile/offline — that's real ground covered. Anchor on the mobile app and search work (DRI-72283, DRI-82140) as the forward story.
+
+**Bring audit prep with a date attached.** It's been the stated next step twice, most recently out of your own QBR prep call (CRM-12694). Arrive with a plan, not a question.
+
+**Handle pricing deliberately.** Say: *"Pricing has come up on four of our last several calls and I haven't given you a straight answer. What's driving it — budget cycle, or scope changing?"* Get the real driver on record; don't negotiate live.
+
+**Close the small open items in one breath** — latency (CRM-49779) and trial conversion (CRM-24323) — so nothing lingers into next quarter.
+
+**Only then, the case study** — and frame it as a trade against the security review and audit prep you've just committed to dates on.
+
+**Ask for a single named owner going forward.** Six owners in six months is fixable and offering the fix reads as investment.
+
+---
+
+### 5. Gaps you need to fill before the call
+
+These aren't in any system I can reach, and I'd rather flag them than guess:
+
+- **No ARR, contract value, renewal date, seat count, or health score** appears in any Cobalt record. I cannot tell you whether this is a renewal QBR or a routine one — that changes the whole posture of the meeting.
+- **No product usage or adoption data.**
+- **No support tickets or escalations.** Linear returned zero results for Cobalt and for the account's topics (rate limits, offline/mobile), so I can't confirm engineering status on anything promised.
+- **NPS score not recorded.** CRM-92187 (6/9) logs that NPS was discussed but not the result; a Slack note (SLA-55835, dated 9/26, Omar Haddad) mentions "NPS next week" but is not tagged to any account.
+- **Slack and Notion have QBR-prep and sandbox notes from September** (NOT-42571 9/15, NOT-52051 9/5, NOT-19494 9/24, NOT-13669 9/15, SLA-55835, SLA-47639) **that are not account-tagged.** Several share owners with Cobalt work (Omar Haddad, Priya Shah, Jordan Blake) and topics (hosting, onboarding, sandbox), so they may well be Cobalt — but I won't attribute them without confirmation. Worth a two-minute skim from you, since if they are Cobalt, they're the freshest material available and would partly close the September gap.
+
+One caveat on the whole brief: the underlying records are one-line summaries with no substantive detail — topic, owner, and next step only. The commitment tracking above is inferred from chaining those "next step" fields, which is reliable for *what* was promised but tells you nothing about *what was said*. Confirm the security review and audit prep status with Omar Haddad and Priya Shah directly before you commit to dates on the call.

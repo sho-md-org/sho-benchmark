@@ -1,0 +1,30 @@
+## Cobalt Retail — QBR Brief
+
+**Prepared 2026-09-24 · Call next week**
+
+### Where things stand
+
+Cobalt is an active, multi-thread account — 20+ touchpoints across CS, AE, and solutions in the last six months. Coverage is split: Jordan Blake owns QBR prep (`CRM-12694`), Priya Shah has pricing and reporting (`CRM-87224`, `CRM-94849`), Omar Haddad has notifications and audit prep (`CRM-35990`, `CRM-24323`), you own the roadmap thread (`CRM-70221`).
+
+Recurring themes in their conversations: **audit prep** (comes up in at least four separate calls as the standing next step), plus billing (`DRI-75222`), sandbox/hosting (`DRI-35074`), offline and mobile (`DRI-82140`), exports/webhooks (`DRI-41266`), and dashboards (`DRI-58616`). Note there's a mobile app + search session on the calendar for 2026-09-26 with Sam Lee and Priya Shah (`DRI-72283`) — worth its outcome landing before your QBR.
+
+### Open commitment
+
+**Audit log export (Lark) — CSV, by Q1 2027.** You made this to Sam Ortiz at the July QBR in strong terms: *"you'll have it by Q1 2027 as a CSV export, you have my word"* (`CRM-38600`). Sam pushed for it and Cobalt is planning around the date. The public H1 2027 roadmap as of 2026-06-30 still lists audit log export incl. SIEM streaming for Q1 2027 (`NOT-20876`).
+
+⚠️ **Verify this date before you restate it.** Another audit log export commitment on the books (`SLA-77342`) is flagged in Sho as potentially affected by a decision outside my visibility. I can't see what that decision is or whether it touches Cobalt's timeline — but since it's the same feature, **check with the audit log export product owner before reaffirming Q1 2027 to Sam.** Given you gave your personal word and they're planning around it, a silent slip here is the single biggest relationship risk on this account.
+
+### Risks
+
+1. **Audit log export date** — see above. Unverified; highest stakes.
+2. **Audit prep is a perpetual "next step."** It's the follow-up item on calls from June, August, and in the QBR prep note itself, but I don't see a record of it closing. Either it's stalled or the work is happening off-record. Expect Sam to ask.
+3. **Ownership churn.** Four different Brightline owners across recent calls. Cobalt may be repeating themselves; the QBR is a chance to name a single point of contact.
+
+### What to say
+
+- **Open with audit prep** — own that it's been an open loop since June and bring a concrete close-out date, not another "we'll follow up."
+- **On audit log export:** only reconfirm Q1 2027 *after* the product owner confirms. If you can't get an answer before the call, say "Q1 2027 is what's on the public roadmap and I'm confirming the delivery detail on our side this week" — accurate, and doesn't double down on a date you haven't re-verified.
+- **Name the account team.** One owner, clear escalation path.
+- **Ask what's changed on their side** — the breadth of threads (billing, sandbox, offline, mobile, dashboards) suggests expanding usage worth confirming ahead of renewal conversations.
+
+**Before the call:** ping the audit log export product owner. That's the one blocking item.

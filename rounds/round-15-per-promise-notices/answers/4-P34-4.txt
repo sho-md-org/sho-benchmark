@@ -1,0 +1,64 @@
+I pulled the Aster Health record set and the commitment ledger. Here's the brief.
+
+---
+
+# Aster Health — QBR Brief
+**Prepared 2026-09-24 · Owner: Maya Chen**
+
+## 1. Where things stand
+
+Aster Health has been a high-touch account all year — roughly 20 logged touchpoints since April, spread across support, product, and commercial threads. Contacts in rotation: **Omar Haddad** (primary, appears in most Drive sessions), **Ana Petrova**, **Dana Ortiz**, and **Omar Aziz** (the AE-side relationship, via Priya Shah).
+
+Recurring themes, by volume:
+
+| Theme | Records | Read |
+|---|---|---|
+| Sandbox | CRM-62644, CRM-64767, DRI-86962 | Cluster of activity in April–May, then quiet |
+| Dashboards | CRM-57156, CRM-75476, DRI-75615 | Still live — most recent was 2026-09-17 with you and Omar Haddad |
+| Support queue | CRM-88906, CRM-97035, DRI-53905 | Persistent thread Apr→Sep; surfaced again alongside pricing |
+| Exports / audit prep | CRM-45213, CRM-76005, DRI-48323 | Audit prep is an active customer workstream |
+| NPS | CRM-26522, DRI-30445, DRI-36735 | Ongoing; next session 2026-09-28 |
+| Latency | CRM-16329, CRM-68765 | June spike, no records since |
+
+Two things to note on the arc: **pricing entered the conversation on 2026-09-10** (DRI-53905), paired with support queue — that combination usually means the customer is weighing value against service experience ahead of a commercial conversation. And **churn appears as the follow-up item on five separate records** (CRM-64767, CRM-68765, CRM-76005, DRI-46065, DRI-48323). No record says Aster is at risk, but internal follow-ups have been pointing that direction since May.
+
+## 2. Open commitments
+
+**Higher API rate limits — by October → DELIVERED ✅**
+Priya Shah (AE) confirmed this to Omar Aziz on 2026-06-12 (DRI-86231), after Omar raised it as something we'd already told them. Crane shipped 2026-09-20: rate limits raised across all paid plans (SLA-26281).
+
+This is your strongest card. It's the only commitment on the books to Aster Health, it was made at the AE level, the customer was tracking it closely enough to remind us, and it landed ahead of the October deadline. **Lead with it.**
+
+That's the complete Aster commitment list — no other outstanding promises to this account appear in the ledger.
+
+## 3. Risks
+
+**Pricing + support queue moving together (DRI-53905, 2026-09-10).** The most recent commercial signal. Go into the call knowing the support experience may be used as leverage. Have queue metrics ready; I couldn't find resolution data in these records, so pull it from support before the call.
+
+**Audit prep is a live customer workstream, and you should not commit to audit log export on this call.** Aster has audit prep threads (DRI-48323, DRI-36735) and export threads (CRM-45213, CRM-76005), so the topic is very likely to come up. There is no audit log export commitment to Aster Health in the ledger — but there is one you made for another account, and **it carries a flag: a decision I can't see may have changed it.** I can't tell you what that decision is or whether it affects timing. Practical consequence for your call: if Omar asks when audit log export lands, **don't give a date** — say you'll confirm and follow up. Check with the product owner before the QBR so you're not guessing live.
+
+**Churn as a recurring internal follow-up.** Five records route to it. Worth asking your team directly whether anyone has a concrete renewal concern, because the records show the signal without the substance.
+
+**Record quality is thin.** Most CRM entries are one-line summaries with no outcomes. Anything in this brief beyond the rate-limit commitment is inference from topic and timing, not from documented detail. Validate the account health read with Priya and Leo Grant before you walk in.
+
+## 4. What to say
+
+**Open with delivery.** "You asked for higher API rate limits by October. They went live on September 20th, across all paid plans." This is concrete, on time, and the thing they were tracking.
+
+**Then dashboards.** It's your most recent working thread (2026-09-17, DRI-75615) and you were in the room. Continuity signals attention.
+
+**Get ahead of support.** Don't wait for Omar to raise it — the queue has been a thread since April and it's now sitting next to pricing. Naming it first is worth more than defending it later.
+
+**On audit log export: acknowledge, don't date.** "I know audit prep matters to you. Let me confirm the current timeline and come back to you this week." Then actually confirm with the product owner.
+
+**Close on NPS.** You have a session on 2026-09-28, four days out. Use the QBR to frame what you want out of it.
+
+---
+
+### Before the call
+1. **Ask the product owner whether the audit log export timeline still holds** — do this first, it's the one thing that could go wrong live.
+2. Pull support queue resolution metrics.
+3. Sync with Priya Shah on where pricing actually stands after DRI-53905.
+4. Ask internally whether the recurring churn follow-ups reflect a real renewal concern.
+
+One note outside Aster's scope: two other commitments of yours — **advanced analytics for Pinecrest Realty** (SLA-93532) and **audit log export for Granite Insurance** (SLA-77342) — carry the same flag. Not QBR material, but they need the same product-owner check before you reaffirm either.

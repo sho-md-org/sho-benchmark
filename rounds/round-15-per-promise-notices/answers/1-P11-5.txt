@@ -1,0 +1,5 @@
+That last call was a stray — no file-writing tool is exposed in this session, so I haven't saved a note about these records being stubs for next time.
+
+**Bottom line:** the brief above is complete on timeline, open commitments, and risk signals, but the four numbers a QBR turns on — contract value, renewal date, NPS, adoption — aren't in any of the company's tools for this account. The Sep 6 churn discussion (DRI-14442) is the one thing I'd chase today; it's the most recent risk signal and its contents exist only with Dana Ortiz and Tess Brown.
+
+If you paste in the contract and NPS details, or what came out of that churn conversation, I'll turn this into the full narrative brief with actual talking points.

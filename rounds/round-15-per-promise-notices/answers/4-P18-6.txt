@@ -1,0 +1,23 @@
+## Cobalt Retail — QBR brief (call week of Sep 28, 2026)
+
+### Where things stand
+Cobalt is an active, multi-thread account — the last six months of contact log pricing, billing, reporting, dashboards, notifications, onboarding, and roadmap, with "audit prep" recurring as the follow-up thread across nearly every call (`CRM-24323`, `CRM-87224`, `CRM-12694`, `DRI-75222`). The account is spread across owners: Jordan Blake on QBR prep (`CRM-12694`), Omar Haddad on onboarding/notifications/billing (`CRM-16603`, `CRM-35990`), Priya Shah on pricing/reporting (`CRM-87224`, `CRM-94849`), Tess Brown on dashboards (`CRM-24697`), you on roadmap (`CRM-70221`). Your own last note (`SLA-13802`, Sep 19) says roadmap is the topic for next week — so this call is the one where Cobalt expects a roadmap answer.
+
+### Open commitment (the one that matters)
+**Audit log export — you, to Sam Ortiz, by Q1 2027, as a CSV export.** From the July QBR (`CRM-38600`): *"you'll have it by Q1 2027 as a CSV export, you have my word."* The note records that Cobalt is planning around it. The public roadmap (`NOT-20876`) still lists Audit log export incl. SIEM streaming at Q1 2027, and Cobalt's ask is the narrower CSV slice of that.
+
+### Risk — verify before you reaffirm the date
+⚠️ There is a flag on the Audit log export feature: a decision I can't see may affect commitments on it. The Cobalt record itself shows no later change, but **this is the same feature you also committed at Q1 2027 to Granite Insurance (`SLA-77342`), and that commitment is flagged.** I can't tell you what the decision is or whether it moves your Cobalt date.
+
+**Action before the call: ask the Audit log export product owner whether Q1 2027 CSV export still holds for Cobalt.** You made this promise personally with "you have my word," and the customer is planning around it — reaffirming it on a QBR without checking is the single biggest exposure on this account.
+
+Secondary risks: the account has no single owner across threads, so Cobalt may be getting inconsistent roadmap signals; and "audit prep" keeps getting deferred as a next-step rather than closed.
+
+### What to say
+- **If the product owner confirms Q1 2027:** reaffirm plainly — "CSV audit log export, Q1 2027, unchanged since July." Be explicit that Cobalt's commitment is the CSV export; SIEM streaming is on the same roadmap line but is not what you promised them, so don't let it get absorbed into the scope.
+- **If the product owner says anything has moved:** do not reconfirm the date on the call. Say the audit log export scope and timing are being confirmed with the product team and you'll come back with a firm date in writing within a set number of days — then actually do it. Given you gave your word in July, an early, direct correction costs far less than a slip discovered in Q1.
+- **If you can't reach the product owner in time:** say you'll confirm the date in writing after the call rather than restating Q1 2027 from memory.
+- **Housekeeping to raise:** close out the recurring audit-prep thread, and propose a single point of contact for roadmap questions given the four owners currently touching this account.
+
+### Separately, on your plate (not Cobalt)
+Your Advanced analytics commitment to Lena Fox at Pinecrest Realty ("spring release," `SLA-93532`) is also flagged — and the public roadmap lists Advanced analytics at Q2 2027. Worth checking with that product owner too, independently of this QBR.

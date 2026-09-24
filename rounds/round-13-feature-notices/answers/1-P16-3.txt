@@ -1,0 +1,59 @@
+I researched all four systems — CRM, Drive, Notion, Linear, Slack — and pulled every Keystone Energy record (~25). Here's the brief, but it starts with a problem you need to know about before the call.
+
+## Bottom line
+
+**The Keystone record cannot support the brief you asked for.** Every Keystone record in every system is a one-line stub naming a topic and nothing else. There are no outcomes, numbers, decisions, dollar figures, dates, health scores, or named commitments anywhere in the account.
+
+This is not a system-wide data problem — and that's what makes it worth flagging. Peer accounts hold real substance. Compare:
+
+- **CRM-52816** (Northstar Pharma): "Tess Brown (CS) committed that HubSpot sync will be available by before summer. Logged as a renewal condition."
+- **CRM-70743** (Kestrel Foods): "Priya Shah (AE) committed that Salesforce sync will be available by early 2027."
+- **CRM-74447** (Riverton City): "Tess Brown (CS) committed that SSO (SAML) will be available by early next year."
+
+Against **CRM-19012** (Keystone, two days ago, in full): "Call with Keystone Energy. Discussed uptime. Owner Sam Lee. Next: follow up on NPS."
+
+Seven accounts have renewal call notes with commitments logged as renewal conditions. **Keystone has no renewal record at all.**
+
+## What the record does support
+
+**Cadence and coverage are healthy.** 24 touchpoints April 17 – September 25, roughly weekly-to-biweekly, no gaps. This is an engaged account, not a neglected one.
+
+**Recurring threads** (topic, by date):
+- **Uptime / latency** — six touches: DRI-60948 (4/17), CRM-23178 (4/24), DRI-46374 (5/23), DRI-64156 (7/12), DRI-41756 (8/12), CRM-19012 (9/23). Five months, still live as of two days ago.
+- **Pricing** — DRI-48005 (6/25), DRI-20667 (8/15), CRM-78617 (9/25). Accelerating toward now.
+- **Churn** — DRI-75981 (7/21, with NPS), DRI-20667 (8/15, with pricing).
+- **Analytics** — CRM-50205, CRM-71134, CRM-71909 (5/16, 6/18, 7/21).
+- **Audit prep** — DRI-48005 (6/25), DRI-84961 (8/24). You attended both.
+
+**Your footprint:** you're on six Drive docs (DRI-72467, DRI-85290, DRI-48005, DRI-39787, DRI-31273, DRI-84961) and own zero CRM calls. DRI-31273 (8/10, with Sam Lee) is already logged as QBR prep. CRM owners are Sam Lee, Jordan Blake, Ana Petrova, and Leo Grant (four calls).
+
+## Two things to act on now
+
+**1. There's a pricing call dated tomorrow.** CRM-78617 is dated 2026-09-25 — Jordan Blake, pricing, "next: follow up on offline." Either that call happens before your QBR or the date is wrong. Find out. Walking into a QBR a few days after an unreviewed pricing conversation is how you get surprised.
+
+**2. Churn and pricing are co-occurring.** DRI-20667 pairs them explicitly, DRI-75981 pairs churn with NPS. I can't tell you *what* was said — the docs don't say — but churn is being discussed alongside pricing on an account with no renewal record, and a pricing call is imminent. That combination deserves a direct question to Ana Petrova and Jordan Blake before you're on the call.
+
+## Against your four asks
+
+| You asked for | Status |
+|---|---|
+| Where things stand | Only cadence and topics. No health, sentiment, usage, or contract state exists in any system. |
+| Open commitments | **None recorded.** CRM "next: follow up on X" chains never close — CRM-23178 points to analytics, three analytics calls follow, each spawning a new follow-up. No commitment is ever logged as made or met. |
+| Risks | Churn/pricing co-occurrence and the missing renewal record are real signals. Neither is a documented risk — both are inferences from metadata. |
+| What to say | Not scriptable from this record. See below. |
+
+I'm not going to invent talking points; anything specific I wrote would be fabrication dressed as prep.
+
+## What I'd actually do
+
+Reconstruct from people, not documents — you have about a week. Three conversations, each targeted:
+
+- **Sam Lee** — owns the most recent call (CRM-19012) and was your QBR-prep partner (DRI-31273) and audit-prep partner (DRI-84961). Best single source on current state.
+- **Ana Petrova** — the churn conversation (DRI-20667). Ask directly whether there's a retention concern.
+- **Jordan Blake** — pricing (CRM-78617). Ask what's on the table before it's discussed with the customer.
+
+Then ask why Keystone has no renewal call notes when seven comparable accounts do. Either the renewal is genuinely untracked, or it's recorded somewhere I have no access to. Both answers change how you run the call.
+
+On the uptime thread specifically: six touches over five months with **zero Linear tickets** for the account — Keystone appears nowhere in Linear or Slack. If uptime is a live customer complaint, nothing engineering-side is tracking it, and that's a question worth answering before a customer raises it in the room.
+
+I can draft the QBR deck structure once you've got substance from those three, or pull the full comparison of how peer accounts document renewal conditions if you want a template to push for.

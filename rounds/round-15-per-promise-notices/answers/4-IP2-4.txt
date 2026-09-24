@@ -1,0 +1,35 @@
+## Short answer: I can't confirm that premise — nothing I can see says any part of SSO changed
+
+I looked for a change to SSO (SAML), specifically the IdP-initiated piece, and found none. The most recent roadmap record I have, **NOT-20876** (Public roadmap H1 2027, dated 2026-06-30), still lists it intact:
+
+> SSO (SAML), SP- and IdP-initiated: Q1 2027
+
+That's the whole scope, both halves, unchanged as of that doc. No record in my view splits IdP-initiated out, deprioritizes it, or reschedules it.
+
+If you heard that something changed, it isn't from anything available to me. There are decisions I don't have visibility into, so I can't rule it out either — I just can't source it, and I won't guess at which half it might have been.
+
+**Before you say anything to a customer, get it from the SSO product owner (the feature is tagged "Heron" in CRM-74447).** That's the only way to answer the IdP-initiated question with authority.
+
+## Why this matters more than usual: IdP-initiated is explicitly promised, by name
+
+If the IdP-initiated part did move, it isn't a footnote — it's named in writing to at least two accounts:
+
+| Record | Account | What was promised | By whom |
+|---|---|---|---|
+| **CRM-31062** (2026-06-08) | Vantage Telecom | SSO (SAML) by Q1 2027, "**including IdP-initiated login from Okta**, you have my word" | Priya Shah (AE) |
+| **CRM-62434** (2026-08-17) | Umber Studios | SSO (SAML) by March, "**with IdP-initiated sign-in**" — logged as a **renewal condition** | Priya Shah (AE) |
+
+Three more accounts are promised SSO without the IdP-initiated detail spelled out, and they'd likely assume it's included: **CRM-64756** (Delta Freight, "end of Q1, you have my word"), **DRI-36664** (Quarry Mining, Q1 2027, confirmed by Leo Grant), and **CRM-74447** (Riverton City, "early next year," also a renewal condition).
+
+So the exposure is five accounts, two of them renewal conditions. Vantage Telecom named a specific IdP (Okta), which is the narrowest, most falsifiable version of the promise.
+
+## Separately — two of your own commitments are flagged
+
+Not what you asked, but they surfaced and they're yours:
+
+- **Advanced analytics (Osprey) to Lena Fox, Pinecrest Realty**, by the spring release (**SLA-93532**)
+- **Audit log export to Lena Fox, Granite Insurance**, by Q1 2027 (**SLA-77342**)
+
+Both carry a flag that a decision I can't see may affect them. Check with the product owner before you reaffirm either one. (**SLA-12035**, Jordan Blake's SCIM promise to Kai Berg at Umber Studios, is flagged the same way — and it's the same account as one of the IdP-initiated commitments, so that customer conversation is worth coordinating.)
+
+**Suggested next step:** one message to the SSO/Heron product owner asking specifically whether both SP- and IdP-initiated are still in Q1 2027 scope. Want me to draft it, with the five affected accounts listed?

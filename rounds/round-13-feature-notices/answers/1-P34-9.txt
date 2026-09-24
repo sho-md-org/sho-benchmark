@@ -1,0 +1,103 @@
+I pulled every Aster Health record across all five systems — 20 total (10 CRM, 10 Drive). Slack, Linear, and Notion have **zero** Aster Health content.
+
+**Important caveat up front:** every record is a one-line stub. No ARR, no renewal date, no health score, no NPS number, no ticket counts, no commitments with due dates. Here is a representative record in full:
+
+> CRM-75476 · "Call with Aster Health. Discussed dashboards. Owner Sam Lee. Next: follow up on NPS."
+
+So I can't write the QBR brief you actually want from this data, and I'd be inventing the substance if I tried. What follows is what the record genuinely supports — a topic map, open threads, and real signals — plus the specific gaps you must fill before the call.
+
+---
+
+# Aster Health QBR Brief
+
+## Where things stand
+
+**Engagement is steady but thinning in the CRM.** Coverage runs 2026-04-12 through 2026-09-17. The last *CRM* entry is 2026-07-21 (CRM-75476) — roughly two months of silence — while Drive meeting notes continued through September (DRI-53905 on 9/10, DRI-75615 on 9/17). Going into a QBR with a two-month CRM gap is itself worth closing.
+
+**Topics by activity:**
+
+| Theme | Records | Status signal |
+|---|---|---|
+| Integrations | DRI-82652 (4/28), DRI-48732 (6/12), DRI-64776 (8/20) | Most sustained thread; latest tied to **EU customers** |
+| Dashboards | CRM-57156 (4/19), CRM-75476 (7/21), DRI-75615 (9/17) | Most recent touch overall — likely live |
+| NPS | CRM-26522 (4/13), DRI-30445 (7/05), DRI-36735 (9/28) | Recurring all year, never a number attached |
+| Search | DRI-70983 (5/11), DRI-36553 (7/19) | Ongoing, tied to roadmap (DRI-36553) |
+| Pricing | DRI-53905 (9/10) | **Single, recent, isolated** — see risks |
+| Sandbox | DRI-86962 (4/12), CRM-62644 (5/10), CRM-64767 (5/17) | Went quiet after May |
+| Exports | CRM-45213, CRM-76005 (both 4/18), DRI-23711 (4/28) | Quiet since April |
+| Latency | CRM-16329 (6/14), CRM-68765 (6/22) | June only, then silent |
+| Hosting | CRM-81799 (5/11) | Quiet since May |
+
+Note CRM-45213 and CRM-76005 are both dated 4/18 on exports with the same owner — probably a duplicate entry worth cleaning.
+
+## Open commitments
+
+These are "Next: follow up on ___" strings — the closest thing to commitments in the system. **None has a due date, and none has a recorded closure.** Oldest first:
+
+| Owner | Commitment | Since | Age |
+|---|---|---|---|
+| Ana Petrova | Security review | 2026-04-13 (CRM-26522) | ~5 mo |
+| Leo Grant | Churn | 2026-04-18 (CRM-76005) | ~5 mo |
+| Leo Grant | Audit prep | 2026-04-18 (CRM-45213) | ~5 mo |
+| Ana Petrova | SSO questions | 2026-04-19 (CRM-57156) | ~5 mo |
+| **Maya Chen** | **Search** | **2026-05-10 (CRM-62644)** | **~4.5 mo** |
+| Tess Brown | Hosting | 2026-05-11 (CRM-81799) | ~4.5 mo |
+| Ana Petrova | Churn | 2026-05-17 (CRM-64767) | ~4 mo |
+| Priya Shah | Security review | 2026-06-14 (CRM-16329) | ~3 mo |
+| Leo Grant | Churn | 2026-06-22 (CRM-68765) | ~3 mo |
+| Sam Lee | NPS | 2026-07-21 (CRM-75476) | ~2 mo |
+
+**CRM-62644 is yours** — a search follow-up open since May. Close it or have an answer ready.
+
+## Risks
+
+**1. "Churn" flagged three separate times — the strongest signal in the data.** CRM-76005 (4/18), CRM-64767 (5/17), CRM-68765 (6/22), across two owners (Leo Grant, Ana Petrova). No record says *why*. Three independent flags over two months is not noise. This is the single thing to run down before the call.
+
+**2. Security/compliance thread recurs and never resolves.** Security review (CRM-26522, CRM-16329), audit prep (CRM-45213), SSO questions (CRM-57156), and audit prep again in DRI-36735. Five touches, no evidence of closure. In healthcare B2B this is usually a renewal gate.
+
+**3. Pricing surfaced on 2026-09-10 (DRI-53905) with no follow-up recorded.** A standalone recent pricing conversation two weeks before a QBR often precedes a discount ask or a budget challenge. That note also mentions support queue — pricing pressure plus support friction is a bad pairing.
+
+**4. EU customers / data residency (DRI-64776, 8/20).** Newest theme in the account, intersects with the hosting thread (CRM-81799, DRI-23711). Likely an expansion requirement or a compliance blocker — worth knowing which.
+
+**5. Latency went quiet without resolution.** Two touches in June (CRM-16329, CRM-68765), then nothing. Silence after a performance complaint is ambiguous — verify it was fixed rather than assuming.
+
+## What you can't walk in without
+
+These are absent from all five systems and I'd be fabricating them:
+
+- Renewal date, contract value, term
+- Usage/adoption numbers, seat utilization
+- The actual NPS score
+- Support ticket volume and backlog
+- **Who the customer contacts are.** Omar Haddad appears in 5 of 10 Drive notes — more than anyone — and is plausibly the champion, but nothing in the record distinguishes customer from Brightline staff. Confirm before you build a stakeholder slide.
+- What "churn" referred to
+
+Pull these from billing/support directly, and ask Leo Grant and Ana Petrova about the churn flags.
+
+## Scheduling flag
+
+DRI-36735 is dated **2026-09-28 — four days out**, attendees Omar Haddad and Ana Petrova, topic NPS and audit prep. If that's next week, it may *be* your call or may collide with it. Worth reconciling.
+
+## What to say
+
+Given you'll likely go in without hard numbers, lead with the threads rather than metrics:
+
+**Open:** "I want to use today to close the loop on a few things that have been open a while, and get your read on the year ahead."
+
+**Then, in order:**
+
+1. **Own the security/audit thread.** It's the oldest and most likely renewal gate. "Security review and audit prep have been on our list since the spring. I want to give you a firm owner and date today." — Don't let them raise it first.
+
+2. **Ask directly about value, to surface the churn concern.** Don't cite "churn" — you don't know what it meant. Instead: "Where is Brightline clearly earning its keep, and where is it falling short?" The answer tells you whether the flags were real.
+
+3. **Integrations and EU customers as the forward story (DRI-64776).** Newest and most sustained theme — your best expansion angle. "You mentioned EU customers last month — tell me where that's heading."
+
+4. **Let them raise pricing.** It came up 9/10 (DRI-53905) and you don't know the context. If they raise it, listen and take it away rather than negotiating cold.
+
+5. **Close your own item (CRM-62644).** Search has been open since May and is tied to roadmap (DRI-36553). Bring a status, even if it's "not prioritized."
+
+**Avoid:** quoting any NPS or adoption figure, and asserting anything was resolved. Where a thread went quiet — latency, sandbox, exports — ask rather than assume.
+
+---
+
+One process note worth raising with your team separately: an account heading into a QBR with ten unresolved follow-ups, no renewal date in the CRM, and three unexplained churn flags is a systems problem, not a prep problem.

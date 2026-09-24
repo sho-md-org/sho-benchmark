@@ -1,0 +1,58 @@
+I pulled every Harbor Clinics record across all four systems — 10 CRM calls, 6 Drive docs, plus adjacent Notion pages. One thing to flag before the brief itself:
+
+**Every record is a one-line stub.** There is no ARR figure, renewal date, contract value, health score, NPS number, support ticket, or named customer-side contact anywhere in these systems. So I can't give you the numbers a QBR deck normally opens with — you'll need those from the account record or Finance. What the metadata *does* support is a real and fairly pointed read on trajectory, commitments, and risk. That's what follows.
+
+---
+
+## Where things stand
+
+**Cadence has stalled.** Last logged customer call was **2026-08-26** (CRM-39320, CRM-64035) — about four weeks of silence going into a QBR.
+
+**Meanwhile, internal churn discussion has accelerated.** Three internal Drive sessions on Harbor churn: DRI-17076 (Jul 20), DRI-26772 (Sep 6), DRI-17950 (Sep 11). Two inside one week of September. You were in the most recent one with Tess Brown.
+
+Important read: these are *internal* meetings about churn. Nothing in these records shows Harbor themselves signaling intent to leave. Don't walk in treating it as a save call — but the internal concern is real and recent.
+
+**Recurring themes,** by frequency: integrations (CRM-97969, CRM-75336), notifications (CRM-73374, CRM-78984), pricing (DRI-51027, DRI-40615, DRI-55004 — Apr, May, Jul), sandbox (CRM-36695, DRI-18426, DRI-26772, and NOT-19494 dated *today*), dashboards/reporting/analytics (CRM-64035, DRI-60679, DRI-67100).
+
+Pricing surfacing three times across four months, and sandbox still live as of today, are the two threads I'd treat as unresolved.
+
+## Open commitments
+
+Each CRM call logged a "next step." **Six of ten have no traceable follow-through anywhere in any system:**
+
+| Commitment | From | Owner | Status |
+|---|---|---|---|
+| Webhooks | CRM-97969 (Apr 25) | Omar Haddad | No subsequent record — **5 months open** |
+| Permissions UI | CRM-78984 (Jun 15) | Dana Ortiz | No subsequent record |
+| SSO questions | CRM-34883 (Jul 15) | Sam Lee | No subsequent record |
+| Search | CRM-75336 (Jul 25) | Omar Haddad | No subsequent record |
+| Onboarding | CRM-36695 (Jun 13) | Jordan Blake | No Harbor-specific record |
+| Notifications | CRM-39320 (Aug 26) | Priya Shah | No notifications record since Jun 15 |
+
+Partially traced: latency→reporting (CRM-94239→DRI-67100, yours), roadmap→latency (CRM-41255→DRI-55004), analytics threads (CRM-73374, CRM-64035).
+
+Caveat: absence of a record isn't proof nothing happened — work may have occurred off-system. But you should assume Harbor remembers being promised webhooks in April.
+
+## Risks
+
+1. **Unclosed commitment backlog is the top risk.** Six dangling items, oldest five months. If Harbor raises any of these, you have no closure story. This is also the most plausible root cause behind the internal churn conversations.
+2. **Ownership is badly fragmented.** Ten calls, **eight different Brightline owners.** You own exactly one (CRM-94239, Jun 2). Harbor has no consistent counterpart — a common driver of the "nobody knows our account" complaint.
+3. **Four-week gap before a QBR**, against accelerating internal churn discussion.
+4. **Pricing unresolved across three sessions.** Expect it to come up; be ready or it derails the agenda.
+5. **Blind spot:** no commercial data available to me. Walking in without knowing renewal date and ARR is the real exposure.
+
+## What I'd say
+
+**Before the call** — get renewal date, ARR, and support ticket volume from the account record; and ask Jordan Blake about NOT-19494 (sandbox, dated today, flagged as QBR-related) — that's live and you should know it.
+
+**Open by owning the gap, not performing health.** Something like: *"Before we review the quarter, I want to acknowledge that a few things we committed to — webhooks, SSO, permissions — haven't moved as fast as they should have. I've pulled the full list and I want to close it out with you today."* Naming it first is far stronger than being told.
+
+**Fix the ownership problem out loud.** *"You've worked with a lot of different people on our side this year. I'm your single point of contact going forward."* Concrete and immediately credible.
+
+**Convert the backlog into a dated plan.** Go item by item, assign an owner and a date to each of the six. Leave with a written commitment list — that artifact is the QBR's real deliverable.
+
+**Let them raise pricing; don't lead with it.** If it comes up, listen and take it away rather than negotiating live — you don't have commercial numbers in hand.
+
+**Ask the open question:** *"What would make the next quarter clearly better than this one?"* Their answer tells you whether the internal churn concern is justified.
+
+**What not to do:** don't reference churn risk — that's internal. Don't open with a feature roadmap; the credibility gap is delivery on past promises, not new capability.

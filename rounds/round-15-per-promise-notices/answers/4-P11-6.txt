@@ -1,0 +1,57 @@
+## Vantage Telecom — QBR Brief (call week of Sept 29)
+
+**⚠️ Read this first:** The SSO (SAML) commitment cannot be reaffirmed on this call without a check-in. Details in "Open commitments" below.
+
+---
+
+### Where things stand
+
+The account is active and engaged, with a steady cadence of calls across the year. Themes by recency:
+
+| Date | Topic | Record | Owner |
+|---|---|---|---|
+| 2026-09-19 | SSO questions | CRM-57082 | Priya Shah |
+| 2026-09-13 | Dashboards → next: exports | CRM-65747 | Maya Chen |
+| 2026-09-11 | SSO questions + NPS (internal) | DRI-67178 | Dana Ortiz, Omar Haddad |
+| 2026-09-06 | Churn + QBR prep (internal) | DRI-14442 | Dana Ortiz, Tess Brown |
+| 2026-08-04 | Dashboards → next: SSO questions | CRM-10757 | Jordan Blake |
+| 2026-07-10 | NPS → next: reporting | CRM-37016 | Tess Brown |
+| 2026-07-08 | Search → next: QBR prep | CRM-84868 | Priya Shah |
+| 2026-06-22 | Pricing → next: audit prep | CRM-36270 | Jordan Blake |
+| 2026-06-08 | QBR: SSO pressed hard | CRM-31062 | Priya Shah |
+
+**The through-line is SSO.** It was pushed at the June QBR (CRM-31062), resurfaced as the follow-up from the August dashboards call (CRM-10757), and has been the topic of two separate conversations in September alone (DRI-67178, CRM-57082). Expect Ines Park to open on it.
+
+Secondary threads: dashboards/exports/reporting (an ongoing cluster — CRM-65747, CRM-10757, CRM-23907, CRM-37016), and pricing/audit prep (CRM-36270, DRI-81968).
+
+### Open commitments
+
+**SSO (SAML) — Priya Shah to Ines Park, by Q1 2027 (CRM-31062)** — 🚩 **Do not reaffirm on the call without checking first.**
+
+The original promise was specific and strongly worded: Q1 2027, *including IdP-initiated login from Okta*, "you have my word." The customer is planning their rollout around it.
+
+There is a flag on this commitment in my context indicating something outside my visibility may bear on whether it still holds. I can't see what it is and can't tell you whether the date is safe. **Ask the SSO product owner to confirm the commitment still stands before you restate it to Ines.** Do this before the call, not during.
+
+### Risks
+
+1. **SSO expectation risk — highest.** Three touchpoints in five weeks on a feature the customer is planning around, plus an unresolved question about the commitment's status. If the date or the Okta IdP-initiated scope has moved and Ines hears it first as a surprise at a QBR, that is the worst version of this conversation.
+2. **Churn is already an internal topic.** DRI-14442 (Sept 6) paired churn discussion directly with QBR prep. Dana Ortiz and Tess Brown were in that room — worth syncing with them on what prompted it before you walk in. I don't have the substance of that discussion, only that it happened.
+3. **Loose follow-up thread.** CRM-65747 left "follow up on exports" open under your name, and the exports/reporting cluster has been passed between four different owners (Ana Petrova, Jordan Blake, Tess Brown, you) since May. Low stakes individually, but it reads as drift if Ines raises it.
+
+### What to say
+
+**Opening:** Lead with dashboards and the reporting work — that's the area with real recent momentum and it lets you set the agenda rather than having SSO set it.
+
+**On SSO — after you've checked with the product owner:**
+- *If the product owner confirms the commitment holds:* restate it plainly, with the Okta IdP-initiated detail, and offer Ines a concrete milestone to plan against.
+- *If it has changed, or you can't reach the product owner before the call:* do not repeat the Q1 2027 date and do not improvise a new one. Say you want to give them a properly grounded update on SSO, and commit to a specific date this week when you'll come back with it. A short, honest deferral costs far less than a second promise that moves.
+
+**On exports:** close your own open loop from CRM-65747 — bring the status rather than waiting to be asked.
+
+**Ahead of the call:** (1) product owner on SSO, (2) Dana and Tess on what surfaced in the Sept 6 churn discussion.
+
+---
+
+*Two caveats.* The Vantage records are thin — most are one-line call logs with a topic and a next step, no substance. Dates, owners, and the SSO promise language are solid; anything about customer sentiment is inference from the pattern of topics, not from recorded statements.
+
+Separately, three of your other open commitments carry the same "check with the product owner" flag — **Advanced analytics (Osprey) to Lena Fox at Pinecrest, spring release (SLA-93532)** and **Audit log export to Lena Fox at Granite Insurance, Q1 2027 (SLA-77342)** are both yours; **SCIM provisioning to Kai Berg at Umber Studios (SLA-12035)** is Jordan Blake's. Not Vantage, so out of scope here, but worth the same check before those come up.

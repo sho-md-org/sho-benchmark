@@ -1,0 +1,15 @@
+I can't source that answer from what I have access to — and I can't confirm the premise either way.
+
+**What the records actually show**
+
+- **NOT-20876** (Notion, public roadmap H1 2027, 2026-06-30) still lists **Advanced analytics: Q2 2027**. That's the most recent roadmap document visible to me, and it does not show the feature as cut.
+- **SLA-93532** (Slack, #cs, 2026-06-28) is your commitment: you told Lena Fox at Pinecrest Realty that Advanced analytics (Osprey) would land in the spring release so they could finish their rollout.
+- The remaining hits (CRM-11536, CRM-86750, CRM-14909, CRM-31062, DRI-76027, DRI-56604, DRI-50317, DRI-78883) are account-level analytics notes and QBRs — customer demand signal, no planning decision or decision-maker in any of them.
+
+So there's no reasoning, no decision record, and no named decider in anything I can see. I'm not able to tell you whether a cut happened, because my view of the planning material is incomplete — there are decisions affecting this feature that I don't have access to.
+
+**What I'd do instead**
+
+Take it to the product owner for Advanced analytics directly. They can tell you whether the Q2 2027 line in NOT-20876 still stands, what changed, and who signed off — none of which I can reconstruct secondhand.
+
+**One flag while you're there:** your Pinecrest commitment in SLA-93532 is exactly the kind of promise that would be affected. Please confirm with the product owner before you reaffirm the spring release date to Lena Fox. Same caution applies to your Audit log export commitment to Lena Fox at Granite Insurance (**SLA-77342**, Q1 2027) — also worth a check before restating.

@@ -1,0 +1,49 @@
+## Bottom line
+
+I can't write the brief you asked for, and I want to be direct about why rather than hand you something that reads complete but isn't.
+
+I searched all five systems. Keystone Energy has **20 records** — 10 in CRM, 10 in Drive, zero in Slack, Linear, or Notion. Every one of them is a one-line stub. There is no contract value, renewal date, health score, named customer-side contact, or a single logged commitment anywhere in the account.
+
+Here's a representative sample, verbatim and complete:
+
+> `CRM-78617` — "Call with Keystone Energy. Discussed pricing. Owner Jordan Blake. Next: follow up on offline."
+> `DRI-20667` — "Attendees: Ana Petrova, Ana Petrova. Discussed churn and pricing."
+
+That's the entire record. Not an excerpt.
+
+## This isn't a tooling limitation
+
+The system does hold real account detail — Keystone just doesn't have any. Compare a peer account:
+
+> `CRM-52816` — Northstar Pharma: "Tess Brown (CS) committed that HubSpot sync will be available by before summer. **Logged as a renewal condition.**"
+
+That's a named commitment, an owner, and a renewal linkage. Seven accounts have `renewal call notes` records in that format — Northstar Pharma, Kestrel Foods, Ironwood Legal, Riverton City, Norrland AB, Granite Insurance, Umber Studios. **Keystone Energy has none.** Your "open commitments" section is empty because nobody logged commitments, not because none were made.
+
+## What I can legitimately tell you
+
+**Fact — coverage and cadence.** 20 touchpoints spanning 2026-04-17 to 2026-09-25. Consistent contact, no gaps.
+
+**Fact — recurring topics.** Analytics appears 3× in CRM (`CRM-71909`, `CRM-71134`, `CRM-50205`). Uptime and latency recur across both systems from April through September (`CRM-23178`, `DRI-46374`, `DRI-64156`, `CRM-19012`).
+
+**Fact — ownership churn.** Eight different owners rotate across 20 records: Jordan Blake, Sam Lee, Leo Grant, Ana Petrova, Omar Haddad, Dana Ortiz, Priya Shah, and you. No consistent thread-holder.
+
+**Fact — your own footprint is thin.** You appear in three Drive docs (`DRI-31273`, `DRI-39787`, `DRI-85290`) and no CRM records. `DRI-31273` (2026-08-10, with Sam Lee) is titled integrations and mentions QBR prep — the closest thing to a prep artifact that exists.
+
+**Inference, flag it as such.** `DRI-20667` (2026-08-15) pairs *churn* with *pricing* in one conversation, and the most recent CRM record `CRM-78617` (2026-09-25) is also pricing. Churn and pricing surfacing together, with pricing as the freshest topic heading into a QBR, is worth walking in prepared for. I can't tell you what was actually said — the records don't say.
+
+**Data quality caveat.** `CRM-78617` (09-25) and `SLA-55835` (09-26) are dated after today. `DRI-20667` lists "Ana Petrova, Ana Petrova" as both attendees. Treat timestamps and attendee fields as unreliable.
+
+One dead end worth naming: the `Qbr prep` records in Notion and Slack (`NOT-42571`, `NOT-52051`, `SLA-55835`) are generic, owned by Omar Haddad and Leo Grant, and contain no Keystone reference. They aren't yours.
+
+## What to do before the call
+
+Four gaps block the brief, and three are fast:
+
+1. **Renewal date and ARR** — not in any system. Pull from billing or ask Jordan Blake, who owns the most recent pricing record.
+2. **Open commitments** — ask the recent owners directly what they promised: Jordan Blake (pricing, `CRM-78617`), Sam Lee (uptime, `CRM-19012`), Ana Petrova (churn/pricing, `DRI-20667`). This is the highest-value hour you can spend.
+3. **The churn conversation** — Ana Petrova is the only person who knows what `DRI-20667` actually contained.
+4. **Customer-side stakeholders** — no Keystone contact is named anywhere. You'll want to know who's in the room.
+
+On "what I should say": I'd be inventing it. Talking points have to be grounded in what was actually promised, and that record doesn't exist. Get me answers to #1–3 and I'll draft the full brief — standing, commitments, risks, and your narrative — same day.
+
+If it's useful, I can also draft the three messages to Jordan, Sam, and Ana right now so you can send them this afternoon.

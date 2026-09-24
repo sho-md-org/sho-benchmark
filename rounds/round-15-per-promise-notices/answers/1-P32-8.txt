@@ -1,0 +1,62 @@
+I researched all four systems. Before the brief itself, one thing you need to know up front, because it changes how you should use this.
+
+## The records are stubs, not content
+
+I found and read **all 20 Harbor Clinics records** — 10 in CRM, 10 in Drive. Slack, Linear, and Notion have **zero** records that mention Harbor Clinics. Every one of the 20 is a single line: a topic, an owner or attendee list, and sometimes a "Next:" pointer. Example, in full:
+
+> `CRM-64035` · Dashboards (Harbor Clinics), 2026-08-26 — "Call with Harbor Clinics. Discussed dashboards. Owner Ana Petrova. Next: follow up on analytics."
+
+That's the entire record. There is **no** contract value, renewal date, seat count, usage data, NPS score, named Harbor-side contact, sentiment, or resolution status anywhere in the system. So I can give you a verified skeleton and a set of real questions, but I can't give you "where things stand" in the substantive sense — the tools don't contain it. I'd rather tell you that than invent plausible-sounding numbers you'd repeat on a customer call.
+
+## Where things stand (what's actually verifiable)
+
+**Engagement is steady but has gone quiet.** Twenty touchpoints since 2026-04-23. Last logged CRM call: **2026-08-26** (`CRM-39320`, `CRM-64035`). Last internal doc: **2026-09-11** (`DRI-17950`). That's a ~4-week gap in logged customer contact heading into the QBR.
+
+**Recurring themes,** by volume: pricing (3 — `DRI-51027`, `DRI-40615`, `DRI-55004`), churn (3), notifications (2 — `CRM-73374`, `CRM-78984`), integrations (2 — `CRM-97969`, `CRM-75336`), sandbox (3 — `CRM-36695`, `DRI-18426`, and sandbox is the topic of the two most recent Notion notes). Also single hits on hosting, latency, roadmap, dashboards, exports, reporting, offline.
+
+**Your own history:** you own `CRM-94239` (latency, 2026-06-02), attended `DRI-55004` (pricing/latency, 2026-07-21), and `DRI-17950` (churn/dashboards, 2026-09-11, with Tess Brown).
+
+## Risks
+
+**1. Three internal "Churn (Harbor Clinics)" docs, two of them recent.** `DRI-17076` (Jul 20), `DRI-26772` (Sep 6), `DRI-17950` (Sep 11, you and Tess Brown). Two churn discussions in one week, five days apart, involving different people — Leo Grant and Priya Shah on the 6th, you and Tess Brown on the 11th.
+
+Important caveat: "Churn" here may be a topic label the system applies broadly, not a declaration that Harbor is at risk. The docs say only "discussed churn." I'm flagging the pattern, not asserting the conclusion — and you were in the most recent one, so you likely know which it is.
+
+**2. Pricing recurs three times across five months**, including a July session you attended. Pricing friction plus churn discussion is the combination worth walking into the call prepared for.
+
+**3. The documentation gap is itself the risk.** If Harbor asks "what did you do about X," there is no record to answer from.
+
+## Open commitments
+
+These are the "Next:" lines from CRM, with whether any later Harbor record shows follow-through. **No record carries a status field**, so "no visible closure" means undocumented, not necessarily undone.
+
+| Commitment | Owner | From | Closure? |
+|---|---|---|---|
+| Follow up on **notifications** | Priya Shah | `CRM-39320`, Aug 26 | None visible |
+| Follow up on **analytics** | Ana Petrova | `CRM-64035`, Aug 26 | None visible |
+| Follow up on **search** | Omar Haddad | `CRM-75336`, Jul 25 | None visible |
+| Follow up on **SSO questions** | Sam Lee | `CRM-34883`, Jul 15 | None visible |
+| Follow up on **permissions UI** | Dana Ortiz | `CRM-78984`, Jun 15 | None visible |
+| Follow up on **onboarding** | Jordan Blake | `CRM-36695`, Jun 13 | None visible |
+| Follow up on **webhooks** | Omar Haddad | `CRM-97969`, Apr 25 | None visible — oldest, 5 months |
+| Follow up on **latency** | Tess Brown | `CRM-41255`, Jun 14 | Partial — `DRI-55004` (Jul 21) covered latency |
+| Follow up on **reporting** | Maya Chen | `CRM-94239`, Jun 2 | Likely closed — `DRI-67100` (Jun 26) |
+
+**Both commitments from the most recent calls (Aug 26) show no follow-through**, and the webhooks item has been open since April. This is the part of the brief I'd act on first.
+
+## What you should say
+
+I won't script talking points, because doing that credibly requires the account substance the tools don't have. What I'd suggest instead:
+
+**Before the call — three conversations, roughly 30 minutes total.** These people hold the context the records don't:
+- **Tess Brown** — your Sep 11 churn/dashboards discussion. Start here; it's the most recent and you were in it. Settle whether "churn" means genuine renewal risk.
+- **Leo Grant / Priya Shah** — the Sep 6 churn doc (`DRI-26772`) you weren't part of. Find out what prompted a second churn discussion that week.
+- **Omar Haddad, Sam Lee, Dana Ortiz, Ana Petrova** — status on webhooks, SSO, permissions UI, and analytics. Even a one-line answer each turns the table above from a liability into an agenda.
+
+**Structure for the call itself:** lead by closing the loop on the open commitments (customers read unacknowledged follow-ups as being ignored, and you have seven); use pricing and sandbox as the substantive agenda, since those are where Harbor keeps returning; and reserve the back half for their forward-looking needs rather than your retrospective.
+
+**One thing to avoid:** don't present usage or health metrics. There are none in the system, and Harbor will have their own numbers.
+
+---
+
+Want me to draft the Slack messages to Tess, Leo, Priya, and the four commitment owners? That's the highest-leverage next step, and once their answers come back I can turn this skeleton into an actual brief with substance in it.

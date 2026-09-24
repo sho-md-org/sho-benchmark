@@ -1,0 +1,21 @@
+I can't find anything indicating SSO changed — including the IdP-initiated part.
+
+**What the records show:**
+
+- The most recent roadmap I can see, **NOT-20876** (Public roadmap H1 2027, 2026-06-30), still lists **"SSO (SAML), SP- and IdP-initiated: Q1 2027"** — one line covering both, with no split between SP- and IdP-initiated.
+- The SSO-tagged records are all thin call/note stubs with no substance on scope: **CRM-93928** (Pinecrest, 2026-09-12), **CRM-57082** (Vantage Telecom, 2026-09-19), **NOT-29159**, **NOT-40327**, **SLA-95210**, **SLA-21939**. None mention a change to either flavor.
+- No SSO commitment appears among your tracked promises at all, and nothing about SSO is flagged in my context.
+
+So I'd push back gently on the premise: if someone told you "SSO changed," that isn't reflected in anything I can see, and I'd want to know where that came from before you relay it to a customer.
+
+**One thing worth flagging separately.** Three of the commitments on your list do carry a flag saying a decision I can't see may affect them, and that I shouldn't confirm or restate them until the product owner weighs in:
+
+| Commitment | Source | Made by |
+|---|---|---|
+| Advanced analytics (Osprey) by spring release — Lena Fox, Pinecrest Realty | SLA-93532 | You |
+| SCIM provisioning by Q1 2027 — Kai Berg, Umber Studios | SLA-12035 | Jordan Blake (AE) |
+| Audit log export by Q1 2027 — Lena Fox, Granite Insurance | SLA-77342 | You |
+
+I can't tell you what those decisions are or whether they're related to what you heard. If your SSO question came out of a conversation touching any of these accounts, checking with the product owner is the way to resolve both at once — and that check is required before you reaffirm those three dates regardless.
+
+Want me to pull the full thread on any of those three, or dig further for a source on the SSO change you heard about?

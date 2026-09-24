@@ -1,0 +1,85 @@
+I pulled everything on Aster Health across all four systems — 13 CRM records, 13 Drive notes, the Notion QBR-prep docs; Slack and Linear returned nothing for "Aster." Here's the honest headline first, then the brief.
+
+## Read this first: the source data won't support a substantive QBR
+
+Every Aster Health record in CRM and Drive is a one-line stub. A representative example, in full:
+
+> **CRM-68765** · Latency (Aster Health), 2026-06-22 — "Call with Aster Health. Discussed latency. Owner Leo Grant. Next: follow up on churn."
+
+That is the entire record. Across all 26 records there is **no ARR, no renewal date, no NPS score, no ticket volumes or SLA data, no contract terms, and not one commitment with an owner and a due date.** The Notion "Qbr prep" docs (NOT-42571, NOT-52051, NOT-44808, NOT-44127) are generic and not Aster-specific — NOT-42571 reads only "Notes on QBR prep. Owner Omar Haddad. Related: onboarding."
+
+So I can't write the numbers slide, and I won't invent one. What follows is what the data genuinely supports: the account map, the themes, the real risk signal, and a talk track built to *extract* what's missing rather than assert it.
+
+## Where things stand
+
+**Activity is continuous but shallow.** Aster records run 2026-04-12 (DRI-86962) through 2026-09-28 (DRI-36735) with no gaps longer than three weeks.
+
+**One thing to check before the call:** the last logged *CRM* call is CRM-75476, dated 2026-07-21 — nine weeks ago. Recent activity (DRI-53905 pricing, 09-10; DRI-75615 dashboards, 09-17) lives only in Drive meeting notes. Either customer-facing calls stopped being logged in CRM in late July, or they stopped happening. Worth knowing which before you walk in.
+
+**Also flag:** DRI-36735 is dated 2026-09-28 — four days from now. Either it's a pre-created note for a scheduled NPS/audit-prep session with Omar Haddad and Ana Petrova, or the date is wrong. If that session is real and lands before your call, it's your freshest input.
+
+**Your own last touchpoints:** CRM-70994 (2026-06-03, you as owner), DRI-36553 (07-19, with Jordan Blake), DRI-75615 (09-17, with Omar Haddad).
+
+**Recurring topics, by volume:** integrations (DRI-82652, DRI-48732, DRI-64776) · NPS (CRM-26522, DRI-30445, DRI-36735) · dashboards (CRM-57156, CRM-75476, DRI-75615) · sandbox (CRM-62644, CRM-64767, DRI-86962) · exports (CRM-45213, CRM-76005, DRI-23711) · support queue (CRM-88906, CRM-97035) · latency (CRM-16329, CRM-68765). Singles: hosting (CRM-81799), SSO (DRI-46065), audit prep (DRI-48323), pricing (DRI-53905), search (DRI-36553).
+
+**Internal cast:** Omar Haddad is the most frequent participant (DRI-70983, DRI-30445, DRI-75615, DRI-36735) and owns the Notion QBR-prep docs — your best pre-call source. Also recurring: Ana Petrova, Jordan Blake, Dana Ortiz, Priya Shah, Leo Grant, Sam Lee, Tess Brown.
+
+## Open commitments
+
+Zero trackable commitments exist in the record. What exists instead is a chain of "Next: follow up on ___" pointers with an owner but **no due date and no closure evidence anywhere** — I checked for follow-through on each and found none:
+
+| Record | Date | Owner | Stated next step |
+|---|---|---|---|
+| CRM-26522 | 04-13 | Ana Petrova | security review |
+| CRM-57156 | 04-19 | Ana Petrova | SSO questions |
+| CRM-88906 | 04-28 | Sam Lee | dashboards |
+| CRM-70994 | 06-03 | **Maya Chen** | support queue |
+| CRM-16329 | 06-14 | Priya Shah | security review |
+| CRM-97035 | 06-14 | Leo Grant | dashboards |
+| CRM-75476 | 07-21 | Sam Lee | NPS |
+
+Two of these deserve attention. **The security review is referenced twice (CRM-26522 in April, CRM-16329 in June) by two different owners and never appears again** — no closure record exists. Given DRI-48323 (audit prep) and DRI-46065 (SSO questions), Aster looks like it has a compliance workstream in motion that our records don't track to completion. And **CRM-70994 is yours** — a support-queue follow-up from June 3 with no visible resolution.
+
+## Risks
+
+**1. "Churn" is the dominant secondary theme — five records.** CRM-76005 (04-18), CRM-64767 (05-17), CRM-68765 (06-22), DRI-48323 (06-13), DRI-46065 (08-07). It recurs across four months, three different owners, and both systems, attached to exports, sandbox, latency, audit prep, and SSO. I want to be careful here: these are stub labels, not documented customer statements. But churn is the most-repeated risk word in the account and it is trending *alongside compliance topics*, which is the pattern that usually precedes a security-driven non-renewal. Treat it as a signal to investigate, not a conclusion.
+
+**2. Unresolved compliance thread.** Security review raised twice and dropped; audit prep (DRI-48323) and SSO (DRI-46065) both tagged with churn. If Aster is blocked on a security or audit deliverable from us, that is your renewal risk.
+
+**3. Pricing entered the conversation on 09-10** (DRI-53905, Dana Ortiz — note the attendee list shows Dana twice, so the counterpart is unrecorded). Pricing surfacing two weeks before a QBR usually means a budget or renegotiation conversation is coming. You should not be surprised by it.
+
+**4. Persistent product friction.** Latency (2), support queue (2), exports (3), integrations (3) — chronic, never marked resolved.
+
+**5. EU/data-residency angle.** DRI-64776 (08-20) pairs integrations with "EU customers." Combined with hosting (CRM-81799), there may be a residency requirement in play.
+
+**6. No renewal date on file.** You are prepping a QBR without knowing whether renewal is 30 days or 10 months out. Get this first; it determines the entire tone of the call.
+
+## What to say
+
+Because the substance isn't documented, run this as a **listening-and-confirming call, not a reporting call.** Do not present metrics you can't source — if Aster corrects a number you asserted, you lose the room. Ask them to tell you where things stand, and close every loop in writing.
+
+**Open (set the frame):** "I want to use this hour mostly to listen. I've reviewed our history since April and I'd rather hear your version of what's working and what isn't than walk you through slides."
+
+**Then, in order:**
+
+1. **Close the security/audit loop.** "Security review came up with us in April and again in June, and we've talked audit prep and SSO since. Where does that stand on your side, and what do you still need from us?" — This is your highest-value question. If something is open here, it outranks everything else.
+
+2. **Name the friction directly.** "Latency, export reliability, integrations, and support responsiveness are the four things that recur most in our notes. Rank them for me — which one, if we fixed it, would matter most?" Then commit to one, with a date.
+
+3. **Get the pricing conversation on the table yourself.** "Pricing came up on our side recently. Is there a budget or structure conversation we should be having now rather than at renewal?" Better you raise it than they do.
+
+4. **Ask for the health read straight.** "If you were scoring us internally today, what would you say — and who on your team would disagree?" The second half is what surfaces the churn risk.
+
+5. **Confirm the renewal timeline out loud.** Get the date and the decision process, including who signs.
+
+**Close:** "I'll send written follow-up within 48 hours with every item, an owner, and a date. Our tracking on this account has been thinner than it should be, and I'm fixing that."
+
+## Before the call — three things, in priority order
+
+1. **Talk to Omar Haddad.** Most frequent participant, owner of the QBR-prep docs, and in the 09-17 meeting with you (DRI-75615) and the 09-28 session (DRI-36735). He holds the context the records don't.
+2. **Get renewal date and ARR from whoever owns the contract** — genuinely not in any system I can see.
+3. **Ask Ana Petrova and Priya Shah what happened to the security review** (CRM-26522, CRM-16329).
+
+Also worth asking Dana Ortiz what the 09-10 pricing discussion (DRI-53905) was actually about.
+
+One process note: the gap here isn't your prep, it's that Aster call notes are being captured as topic stubs with no outcomes or dates. If you want, I can draft a short structured note template for the account so the next QBR has real inputs — and I can write up a post-call summary once you've had the conversation.

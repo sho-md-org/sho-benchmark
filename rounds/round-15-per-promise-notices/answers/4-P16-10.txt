@@ -1,0 +1,72 @@
+## Keystone Energy — QBR Brief
+
+⚠️ **One blocker before the call:** don't reaffirm the audit log export date until you've checked with the product owner. Details in Risks.
+
+---
+
+### Where things stand
+
+Keystone has been a steady, engaged account through 2026, with a consistent throughline: **audit readiness**. Nearly every touchpoint since May has been audit prep, exports, or the integrations that feed them.
+
+| Date | Record | Topic | Owner |
+|---|---|---|---|
+| 2026-05-08 | CRM-90377 | Audit prep | Dana Ortiz |
+| 2026-06-04 | CRM-60405 | Rate limits | Tess Brown |
+| 2026-06-08 | DRI-85107 | Audit prep + case study | Jordan Blake, Omar Haddad |
+| 2026-06-10 | CRM-15788 | Onboarding | Priya Shah |
+| 2026-06-17 | CRM-17727 | Audit prep | Ana Petrova |
+| 2026-06-25 | DRI-48005 | Audit prep + pricing | Omar Haddad, you |
+| 2026-08-03 | DRI-34564 | Sync — audit log export commitment | Jordan Blake, Nia Cole |
+| 2026-08-10 | DRI-31273 | Integrations + QBR prep | Sam Lee, you |
+| 2026-08-17 | CRM-56742 | Audit prep | Omar Haddad |
+| 2026-08-24 | DRI-84961 | Audit prep + exports | you, Sam Lee |
+| 2026-08-25 | CRM-93344 | QBR prep | you |
+
+Two things worth noting: coverage has been **fragmented across seven-plus owners** in five months, and there's been no logged Keystone activity in the month since CRM-93344 (2026-08-25). Expect Nia Cole to arrive with continuity questions.
+
+### Open commitments
+
+**Audit log export with SIEM streaming into Splunk — due Q1 2027.** Company commitment, raised by Nia Cole and confirmed by Jordan Blake (AE) at the 2026-08-03 sync (DRI-34564). This is the single named, dated deliverable on the account and it's the one Keystone will ask about.
+
+### Open threads (logged "next steps," no closure recorded)
+
+- Security review follow-up — from your own QBR prep call (CRM-93344)
+- Webhooks follow-up — Omar Haddad's action (CRM-56742)
+- Support queue follow-up (CRM-17727)
+- Notifications follow-up (CRM-90377)
+- Pricing — surfaced at DRI-48005, never resurfaced
+- Case study — floated at DRI-85107, no status since
+
+Chase owners on webhooks and the security review before the call; those two sit closest to the audit narrative and are the likeliest to be raised.
+
+### Risks
+
+**1. Audit log export commitment — verify before you speak to it.** There's a decision on this feature that isn't visible to me, and it may or may not affect the Q1 2027 date. I can't tell you which way it cuts. **Ask the product owner whether the commitment still holds before you reaffirm it on the call.** If you can't get an answer in time, do not restate the date — take it as a follow-up instead.
+
+**2. Timeline pressure.** Q1 2027 is roughly one quarter out. Keystone's audit work has been continuous all year, so the date is almost certainly load-bearing for an external deadline on their side. A slip would be costly.
+
+**3. Relationship continuity.** Seven different owners across five months, plus a month of silence. Name it before Nia does.
+
+**4. Unclosed loops.** Six follow-ups logged with no recorded resolution. Nia may well have a list.
+
+### What to say
+
+**Open:** Thank Nia for the engagement, and acknowledge the handoffs directly — "you've talked to a lot of us this year; I want to be your single point of contact going forward." Owning it disarms it.
+
+**Anchor on audit readiness:** Reflect back that this has been the organizing theme all year and that you understand it's driving their compliance calendar. Ask them to confirm the external date they're working toward — it sharpens everything downstream.
+
+**On audit log export — pick based on what the product owner tells you:**
+- *If confirmed:* restate it cleanly — Q1 2027, with Splunk streaming, per the 2026-08-03 sync.
+- *If not confirmed in time:* "I want to give you a precise answer on audit log export rather than a fast one. I'm confirming the delivery detail with our product team and will come back to you with specifics by [date]." Set a real date — within a week.
+
+Either way, **do not volunteer a revised date or hint at a change.** If Nia presses on whether anything has shifted, the honest and safe answer is that you're confirming specifics with product and will follow up — not a reassurance, not a warning.
+
+**Close the loops:** Walk the six open follow-ups and assign an owner and date to each. This is your strongest QBR move — it converts the fragmented-coverage weakness into a demonstration of control.
+
+**Park these unless Nia raises them:** pricing (DRI-48005) and the case study (DRI-85107). Neither belongs in a QBR where the deliverable question is unresolved — a case study ask especially lands badly if they're anxious about a date.
+
+**Leave with:** their confirmed compliance deadline, a named date for your audit log export follow-up, and owners on every open thread.
+
+---
+
+**Before the call:** (1) product owner — does the audit log export commitment still hold? (2) Omar Haddad — webhooks status. (3) Your own security review follow-up from CRM-93344.

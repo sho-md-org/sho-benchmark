@@ -1,0 +1,58 @@
+I've pulled every Vantage Telecom record across all four systems. Before the brief, one thing you need to know up front.
+
+## The data problem
+
+Every Vantage record is a one-line stub. There are 18 of them spanning Apr 12 – Sep 13, 2026, and not one contains a renewal date, contract value, NPS score, named customer-side stakeholder, or the substance of any decision. A representative example, in full:
+
+> **CRM-65747** (2026-09-13): "Call with Vantage Telecom. Discussed dashboards. Owner Maya Chen. Next: follow up on exports."
+
+That's the entire record — and it's your most recent touchpoint. Slack, Linear, and Notion returned **zero** Vantage results.
+
+So I can't write "where things stand" on commercial health or script what you should say about results, because the systems don't record either. What I can give you is the account's real shape, which turns out to be the story worth telling.
+
+## Where things stand
+
+Eighteen touchpoints in five months — an actively engaged account. But ownership is scattered across **eight different people**: Ana Petrova, Jordan Blake, Leo Grant, Tess Brown, Priya Shah, Dana Ortiz, Omar Haddad, and you.
+
+You appear on exactly two records in five months: owner of CRM-65747 (Sep 13) and an attendee on DRI-89702 (Aug 5, rate limits). If you're fronting this QBR, you're fronting an account you've touched twice.
+
+## Open commitments
+
+Each record ends with a "next: follow up on X." Tracing those pointers shows loops that never close:
+
+**Webhooks — open since May, requested 3×.** CRM-23907 (May 14) → webhooks. A webhooks meeting happened May 28 (DRI-57024). Then CRM-74774 (Jun 17) → webhooks again, and CRM-15845 (Jun 22) → webhooks again. It kept resurfacing *after* being discussed.
+
+**Latency — open since April, requested 2×, 3 months apart.** CRM-24363 (Apr 12, Leo Grant) → latency. CRM-92524 (Jul 23, Jordan Blake) → latency. Different owners, same unanswered ask.
+
+**Exports — the loop eats its own tail.** Exports was the topic on May 14 (CRM-23907). Your Sep 13 call (CRM-65747) closes with "follow up on exports." Four months, back to the same place.
+
+**SSO — open, 13 days old.** DRI-67178 (Sep 11) records SSO questions with no answer logged.
+
+**QBR prep itself.** CRM-84868 (Jul 8) says "follow up on QBR prep." The Notion QBR prep docs (NOT-42571, NOT-52051, both Omar Haddad) don't mention Vantage.
+
+## Risks
+
+**1. Churn was discussed internally three weeks ago — and nobody wrote down why.** DRI-14442 (Sep 6): "Attendees: Dana Ortiz, Tess Brown. Discussed churn and QBR prep." Both internal. This is the single most important item in the account and it has no content. **Find out what prompted it before your call.** Ask Dana and Tess directly.
+
+**2. No engineering tickets exist.** Exports, webhooks, SSO, rate limits, latency — all customer asks, and Linear has nothing for Vantage. Either the work was filed under names I can't match, or it was never filed. If it's the latter, you'd be walking in to promise things again that were promised in May.
+
+**3. Recurring asks across rotating owners.** Latency went Leo → Jordan with no visible handoff. From the customer's side, this reads as "we keep telling different people the same thing."
+
+**4. NPS is discussed constantly and never recorded.** It appears in CRM-37016, DRI-57024, DRI-77676, DRI-67178 — no score, ever. Don't cite a trend you can't source.
+
+## What to say
+
+I'd push back on scripting talking points from this. Walking in with confident claims backed by one-line stubs is how you get caught out by a customer who has *their* list. Three things to do first:
+
+1. **Ask Dana Ortiz and Tess Brown what the Sep 6 churn conversation was about.** Nothing else matters until you know.
+2. **Ask Jordan Blake and Leo Grant whether latency was ever resolved**, and Ana Petrova/Priya Shah the same for webhooks.
+3. **Confirm whether any Vantage engineering work is tracked anywhere.**
+
+For the call itself, the honest posture — which is also the strong one:
+
+- **Lead by naming the fragmentation.** "You've worked with several of us this year. I'm consolidating this account under me." It converts your weakness into a commitment.
+- **Take the open items in writing.** Exports, webhooks, SSO, latency — with owners and dates. Don't verbally re-promise.
+- **Go in asking, not telling.** You don't have the results data to present. A listening QBR is a legitimate format and it's the one this account supports.
+- **Do not cite NPS, usage, or ROI numbers.** They aren't in any system I can reach.
+
+If Vantage's commercial data lives in a billing or BI tool I don't have access to, point me at it and I'll fold the numbers in. Otherwise the gap is real and worth raising with whoever owns CRM hygiene — an 18-touchpoint account with a churn flag and no recorded substance isn't a Vantage problem, it's a process one.

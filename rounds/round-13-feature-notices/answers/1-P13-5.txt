@@ -1,0 +1,35 @@
+## What the records say
+
+**The commitment is real and documented.** At the 2026-07-09 sync (`DRI-36664`), Tom Hale explicitly reminded Brightline that SSO (SAML) was promised by Q1 2027, and Leo Grant (AE) confirmed it on the call.
+
+**It still matches the current published roadmap.** `NOT-20876` (Public roadmap H1 2027, 2026-06-30) lists "SSO (SAML), SP- and IdP-initiated: Q1 2027." SCIM provisioning is also Q1 2027 on the same roadmap, which is usually what enterprise buyers want alongside SAML.
+
+**No slip signal for SSO.** The only schedule change announced is `SLA-17908` (2026-09-19): Sandbox environments moved Q4 2026 → Q2 2027. That's a different line item and does not touch SSO.
+
+---
+
+## Draft reply
+
+> **Subject: Re: SSO (SAML) timing**
+>
+> Hi Tom,
+>
+> Yes — SSO (SAML) is still targeted for Q1 2027, consistent with what we confirmed on our July 9 call and with our published H1 2027 roadmap. That scope covers both SP-initiated and IdP-initiated flows.
+>
+> Two things worth flagging while we're on the topic:
+>
+> - SCIM provisioning is also on the Q1 2027 roadmap. Most teams roll it out alongside SAML, so if that's part of your plan we should scope both together.
+> - Separately, Sandbox environments have moved from Q4 2026 to Q2 2027. That's unrelated to SSO, but I'd rather you hear it from me now than be surprised later.
+>
+> If it would help your planning, I can set up a session with our product team to walk through the SSO implementation details and what we'd need from your side on the IdP configuration — that way you can start prep before the release lands.
+>
+> Best,
+> Leo
+
+---
+
+## One caveat before you send
+
+I could not find any Linear tickets for SSO/SAML — engineering searches returned nothing. So I can verify the **commitment** (`DRI-36664`) and the **published roadmap** (`NOT-20876`), but not the actual build status behind it. The roadmap is public and current, so restating Q1 2027 is defensible. Given that Quarry Mining has an open churn discussion (`DRI-67006`, 2026-08-25) and a pending SSO follow-up (`CRM-60566`), I'd suggest Leo ping Maya Chen (roadmap owner, `NOT-64137`) for a quick confirmation before hitting send — a second reaffirmation of this date is a commitment you don't want to walk back twice.
+
+I included the sandbox slip proactively because `SLA-17908` asked teams to notify affected customers, and volunteering it builds credibility for the SSO date in the same email. Drop that bullet if Quarry Mining was never expecting sandbox.

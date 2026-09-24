@@ -1,0 +1,38 @@
+## Harbor Clinics — QBR Brief
+
+### Where things stand
+
+The account has been in steady, high-touch contact all year — roughly a dozen logged calls from April through September, spread across seven different Brightline owners (Sam Lee, Leo Grant, Omar Haddad, Priya Shah, Ana Petrova, Jordan Blake, Tess Brown, Dana Ortiz, and you). Most recent touch is 2026-09-21 on the mobile app (CRM-49374), whose logged next step is literally "follow up on QBR prep" — so this call is the expected close of that loop.
+
+Recurring threads, by volume:
+- **Audit/compliance prep** — CRM-35862 (May), CRM-48825 (Jul), DRI-20995 (Aug, you and Leo Grant). This is the account's most persistent theme.
+- **Integrations** — CRM-97969 (Apr), CRM-75336 (Jul), still open toward webhooks and search.
+- **Notifications** — CRM-73374 (May), CRM-78984 (Jun).
+- **Platform/infra** — latency (CRM-94239), hosting (CRM-34883), sandbox (CRM-36695), offline (CRM-39320), dashboards (CRM-64035), roadmap (CRM-41255).
+
+Known contacts: **Ines Park** (commitment-holder, DRI-80868) and **Ada Moss** (CRM-89966).
+
+### Open commitments
+
+**1. Data retention controls — by Q1 2027.** Made by Jordan Blake (AE) to Ines Park; Ines re-raised it in the 2026-05-15 sync and Jordan reconfirmed on the spot (DRI-80868). No later change to this commitment in the record. This is the one firm, dated promise on the account, and it sits squarely in their compliance theme. Safe to reaffirm as it stands.
+
+**2. EU data residency — no commitment, and keep it that way.** Ada Moss asked on 2026-06-09; the logged answer was "exploring, no dates yet" (CRM-89966). Nothing since. If this comes up, repeat that answer verbatim — do not let Q1 2027 retention dates bleed into a residency expectation.
+
+### Risks
+
+- **Ownership sprawl.** Nine different Brightline owners across twelve calls. From Harbor's side there's no obvious single throat to choke, and threads get handed off rather than closed. This is a relationship risk more than a product one.
+- **Dangling next steps.** Several logged "next" items have no follow-up record: integrations → search (CRM-75336), audit prep → exports (CRM-35862), hosting → SSO questions (CRM-34883), notifications → permissions UI (CRM-78984), latency → reporting (CRM-94239), dashboards → analytics (CRM-64035). Expect at least one of these to resurface as "we asked about this months ago."
+- **Compliance clustering.** Audit prep, exports, retention, and residency all pointing the same direction suggests an audit or procurement review on their side that we haven't named. Worth asking directly what's driving it and when.
+- **Thin record.** I found no renewal date, ARR, health score, support-ticket volume, or exec sponsor in what's accessible to me. If you need those for the QBR deck, they'll have to come from somewhere I can't see.
+
+### What to say
+
+1. **Lead with the commitment you can keep.** "Data retention controls are on track for Q1 2027 — that's the same date Jordan gave you in May, and it hasn't moved."
+2. **Name the compliance thread and ask the driver.** "Audit prep, exports, retention, residency — we've touched all four this year. What's the underlying deadline on your side?" Their answer reframes the whole roadmap conversation.
+3. **Offer a single point of contact.** Propose consolidating to you as the named CS owner with a standing cadence. This directly addresses the sprawl and costs nothing.
+4. **Close the dangling loops out loud.** Bring the list above and ask which still matter. Retiring three of them is a win; discovering one is urgent is better found here than in a renewal conversation.
+5. **On EU data residency, hold the line:** exploring, no dates. Don't improve on it.
+
+### Separate flag — not for this call
+
+Three commitments you or Jordan hold for *other* accounts are marked as possibly affected by a decision I can't see: **Advanced analytics** to Lena Fox at Pinecrest Realty (SLA-93532, yours), **Audit log export** to Lena Fox at Granite Insurance (SLA-77342, yours), and **SCIM provisioning** to Kai Berg at Umber Studios (SLA-12035, Jordan's). None touch Harbor Clinics, so they don't change this brief — but before you reaffirm any of those dates to those customers, check with the product owner that the promise still holds. Worth doing since two are your own.

@@ -1,0 +1,31 @@
+## Short answer: none of them — you don't have any SSO promises on record
+
+I searched CRM, Slack, Drive, and Notion for commitments attributed to you. Every forward-looking promise I can find in your name is about something other than SSO, and the SSO promises that do exist belong to other people.
+
+**Your commitment ledger (4 records, 0 on SSO):**
+
+| Record | Customer | What you promised | Status vs. roadmap (NOT-20876) |
+|---|---|---|---|
+| CRM-98566 | Bluewater Logistics | Higher API rate limits, "this autumn" | ✅ Shipped — Crane went live 2026-09-20 (SLA-26281) |
+| CRM-38600 | Cobalt Retail | Audit log export (Lark) by Q1 2027, as CSV | ✅ Roadmap says Q1 2027 |
+| SLA-77342 | Granite Insurance | Audit log export by Q1 2027 *including SIEM streaming* | ✅ Roadmap line explicitly includes SIEM streaming, Q1 2027 |
+| SLA-93532 | Pinecrest Realty | Advanced analytics (Osprey) "in the spring release" | ⚠️ Roadmap says Q2 2027 — consistent, but "spring release" is vaguer than the roadmap date; worth pinning down |
+
+**The SSO promises that exist are other people's:**
+- CRM-64756 — Delta Freight, Tess Brown (CS): "end of Q1, you have my word"
+- CRM-31062 — Vantage Telecom, Priya Shah (AE): "Q1 2027, including IdP-initiated login from Okta"
+- CRM-74447 — Riverton City, Tess Brown (CS): SSO (SAML) "early next year," logged as a renewal condition
+- CRM-62434 — Umber Studios, Priya Shah (AE): SSO (SAML) "by March" with IdP-initiated sign-in, renewal condition
+- SLA-12035 — Umber Studios, Jordan Blake (AE): SCIM provisioning by Q1 2027
+
+All of these are consistent with the published roadmap (SSO SAML SP- and IdP-initiated: Q1 2027; SCIM: Q1 2027), and I found **no announcement changing the SSO dates**.
+
+## Why you may have been asked this
+
+The only schedule change in flight is SLA-17908 (2026-09-19): **Sandbox environments (Rail) slip from Q4 2026 to Q2 2027**, with a request to update affected customers. That's Sandbox, not SSO. I checked whether it touches you — no one, including you, has a logged Sandbox delivery commitment. Your Sandbox items (CRM-62644 Aster Health, DRI-80569 Kestrel Foods, SLA-13766) are discussions, not promises.
+
+Two caveats worth naming:
+- You *own* several open SSO conversations even though you haven't promised dates on them — e.g. CRM-74174 (Evergreen Bank, 2026-08-22, next step "audit prep") and DRI-80569 (Kestrel Foods, 2026-09-23). If those customers are anchoring on Q1 2027, the risk is real even though the promise isn't yours.
+- Many SSO records in these systems are one-line stubs with no content (e.g. DRI-67178, NOT-20443), so the corpus supports "no SSO promise is logged under your name" more strongly than "you never made one verbally."
+
+If the question came from someone flagging SSO risk specifically, I'd push back and ask what they saw — the Q1 2027 SSO dates appear unchanged, and the exposure sits with Tess Brown and Priya Shah, most urgently on the two renewal conditions (Riverton City CRM-74447, Umber Studios CRM-62434) where "early next year" and "by March" are tighter than a Q1 2027 target that has no slack left.

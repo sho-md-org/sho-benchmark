@@ -1,0 +1,63 @@
+I read all 20 Keystone Energy records across the tools. Before the brief, one thing you need to know upfront, because it changes how you should use this:
+
+## The source data won't support a normal QBR brief
+
+Every Keystone record is a one-line stub. Representative examples, quoted in full:
+
+> **CRM-19012** (2026-09-23): "Call with Keystone Energy. Discussed uptime. Owner Sam Lee. Next: follow up on NPS."
+> **DRI-20667** (2026-08-15): "Attendees: Ana Petrova, Ana Petrova. Discussed churn and pricing."
+
+There is no contract value, renewal date, health score, usage data, support ticket, or named customer-side contact anywhere in the 20 records — every attendee listed is Brightline-side. Slack, Linear, and Notion returned **zero** results, not just for Keystone but for generic queries too (`renewal`, `bug latency`, `account plan`), so those three tools appear unpopulated rather than merely missing this account.
+
+I won't invent the numbers a QBR needs. What I can give you is real, and it's the structure underneath those stubs.
+
+## Where things stand
+
+- **20 touchpoints, 2026-04-17 to 2026-09-25** — 10 CRM calls, 10 Drive meeting notes. Steady cadence, no gaps in the account relationship.
+- **Account owner is split across five people**: Sam Lee, Jordan Blake, Leo Grant, Ana Petrova, Dana Ortiz all appear as owner or attendee. No single consistent owner.
+- **Drive meeting notes stop on 2026-08-15** (DRI-20667). Six weeks with no logged meeting notes, though CRM calls continued through 09-23.
+- **You have prior QBR groundwork**: DRI-31273 (2026-08-10), you and Sam Lee, "Discussed integrations and QBR prep."
+
+**Two flags on the data itself:**
+
+1. **CRM-78617 is dated 2026-09-25 — tomorrow.** It's written as a completed call ("Discussed pricing. Owner Jordan Blake"). Either it's a scheduled call logged early, or the date is wrong. Confirm with Jordan Blake before you reference anything from it.
+2. **Keystone has no renewal call notes record.** Seven other accounts do — Northstar Pharma (CRM-52816), Kestrel Foods (CRM-70743), Ironwood Legal (CRM-25995), Riverton City (CRM-74447), Norrland AB (CRM-18094), Granite Insurance (CRM-26651), Umber Studios (CRM-62434). Keystone is the exception. That's either a logging gap or a renewal conversation that hasn't happened.
+
+## Open commitments
+
+Each CRM record ends with an explicit "Next: follow up on X." I traced every one against later records to see which closed. These are the only documented commitments in the account — four have no follow-up record:
+
+| Commitment | From | Owner | Status |
+|---|---|---|---|
+| Follow up on **webhooks** | CRM-71045 (05-02) | Jordan Blake | **Open ~5 months** — no webhooks record exists |
+| Follow up on **hosting** | CRM-79992 (05-24) | Ana Petrova | **Open ~4 months** — no hosting record exists |
+| Follow up on **search** | CRM-56812 (07-12) | Leo Grant | **Open ~2.5 months** — only search mention is DRI-46374, which predates it |
+| Follow up on **NPS** | CRM-19012 (09-23) | Sam Lee | Open, recent — last NPS doc was DRI-75981 (07-21) |
+| Follow up on **offline** | CRM-78617 (09-25) | Jordan Blake | Open, tied to the future-dated record above |
+
+Closed cleanly: latency→analytics (CRM-23178→CRM-50205), analytics→onboarding (CRM-50205→CRM-86748), onboarding→uptime (CRM-86748→CRM-19012), analytics→uptime (CRM-71909→CRM-19012).
+
+## Risks
+
+- **Churn is an explicitly logged topic, twice.** DRI-20667 (08-15) pairs churn with *pricing*; DRI-75981 (07-21) pairs churn with *NPS*. The topic isn't hypothetical — it's in the record. The content isn't.
+- **Pricing is the most recent subject discussed** (CRM-78617), and it's the topic churn was paired with. Assume price sensitivity is live going into this call.
+- **Reliability is the dominant recurring theme.** Uptime appears in five records (CRM-19012, CRM-86748, CRM-71909, DRI-64156, DRI-60948); latency in three (CRM-23178, DRI-46374, DRI-41756); analytics in four (CRM-71909, CRM-71134, CRM-50205, DRI-64156). Analytics recurring three separate times in CRM suggests it was not resolved on first pass.
+- **The three stale commitments** (webhooks, hosting, search) are the kind of thing a customer raises in a QBR. Walking in without status on them is the most avoidable risk here.
+
+## What to say
+
+**Open with reliability, because that's what they keep raising.** Come with actual uptime and latency figures for the quarter — you'll need to pull these, they're not in any record. Frame it as: "Uptime and latency have come up in five of our conversations since April; here's the trend."
+
+**Own the three stale follow-ups before they do.** Get status from Jordan Blake (webhooks), Ana Petrova (hosting), and Leo Grant (search) beforehand. Naming them yourself converts a liability into a credibility win.
+
+**Let them lead on pricing; don't open it.** It's the freshest topic and the one paired with churn. Go in with your renewal terms settled internally, but let them raise it.
+
+**Propose a single account owner.** Five Brightline names across 20 touchpoints is a coherence problem the customer likely feels. Offering yourself as the consistent point of contact is a concrete, cheap commitment.
+
+**Close on analytics.** Three separate CRM calls means it never landed. Ask directly whether it's resolved.
+
+## Before the call — you'll have to source these yourself
+
+None of this exists in the tools: contract value and renewal date; current NPS (last touched DRI-75981, 07-21); actual uptime/latency numbers; named Keystone-side stakeholders; any open support tickets. I'd also confirm the CRM-78617 date with Jordan Blake, and check whether the Drive gap since 08-15 means meetings stopped or just went unlogged — those are different problems.
+
+If you can get me the renewal terms and usage numbers, I'll fold them in and turn this into a slide-ready brief.

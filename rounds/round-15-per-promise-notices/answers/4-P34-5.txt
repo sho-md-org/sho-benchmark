@@ -1,0 +1,46 @@
+## Aster Health — QBR brief
+
+**Caveat up front:** the record trail for this account is thin. Most entries are one-line call logs with a topic and a next step, no substance — no ARR, renewal date, NPS score, or ticket volumes are recorded anywhere I can see. What follows is what's actually documented; I've flagged where you'll need to fill gaps yourself.
+
+### Where things stand
+
+The account has been active and broad-based all year — roughly a dozen logged touchpoints since April across exports, sandbox, hosting, dashboards, rate limits, latency, SSO, and audit prep. Ownership is spread across Maya, Leo Grant, Sam Lee, Ana Petrova, and Tess Brown, which is worth noting: no single person holds the full picture going into the call.
+
+Named contacts on their side: **Omar Aziz**, **Omar Haddad**, **Ana Petrova**.
+
+Recurring threads:
+- **Sandbox** — three separate calls in May (CRM-62644, CRM-64767, DRI-86962), never resolved in the record.
+- **Exports / audit prep** — two April calls (CRM-45213, CRM-76005), handing off to audit prep, which then surfaces again in June (DRI-48323).
+- **Dashboards** — April and July (CRM-57156, CRM-75476).
+- **Latency** — June (CRM-68765).
+- **SSO questions** — August (DRI-46065).
+
+An NPS session is on the calendar for **2026-09-28** (DRI-36735) — that lands before or around your call, so the result may be fresh material.
+
+### Open commitments
+
+**Higher API rate limits, by October** — made by Priya Shah (AE) to Omar Aziz, reconfirmed in the 2026-06-12 sync (DRI-86231). **This shipped on 2026-09-20** — Crane is live and rate limits are raised for all paid plans (SLA-26281). You can state this plainly: delivered, ahead of the October date. It's your strongest opening.
+
+That is the only commitment on record made to Aster Health. Nothing else in the commitment log is theirs.
+
+### Risks
+
+**"Churn" is the single most repeated follow-up thread on this account** — it appears as the next step on CRM-64767, CRM-76005, CRM-68765, DRI-46065, and DRI-48323, spanning April through August. No record explains what's driving it. That pattern is the main thing I'd want you to walk in understanding, and I can't tell you from these records what it is. Ask Leo Grant and Jordan Blake before the call; they own the most entries in that chain.
+
+**Sandbox and audit prep look unresolved.** Both recur across months with no closing entry. If either is a blocker for an Aster-side rollout or compliance deadline, expect it raised.
+
+**Fragmented ownership.** Five Brightline owners across twelve touchpoints. Be ready for them to reference a conversation you weren't in.
+
+### What to say
+
+1. **Lead with the win.** Rate limits were promised by October and went live 20 September. Delivered, on a commitment their own team raised.
+2. **Name the open threads before they do** — sandbox and audit prep. Even without resolution, showing you're tracking them is better than being told.
+3. **Go directly at the churn signal.** Don't raise the word, but do ask an open question about what's not working and where they're getting value. Five separate internal flags means something is there.
+4. **Ask who owns what on their side**, and consolidate to a single Brightline point of contact coming out of the QBR.
+5. **Don't commit to dates on sandbox, audit export, dashboards, or SSO.** There's no delivery record behind any of them, and the audit-log-export area in particular has an internal status I'd want confirmed by the product owner before anyone promises a date to a customer.
+
+### Separately — two of your own commitments need checking
+
+Not Aster, so not for this call, but flagging while it's in front of you: your **Advanced analytics** promise to Lena Fox at Pinecrest Realty (SLA-93532) and your **Audit log export** promise to Lena Fox at Granite Insurance (SLA-77342) both have internal status I can't see. Check with the product owner before you reaffirm either one to those customers.
+
+**To close the gaps before the call:** ask Leo Grant and Jordan Blake about the churn thread, pull the renewal date and ARR from wherever that actually lives, and check whether the 28 Sept NPS session produced a number.

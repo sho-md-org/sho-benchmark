@@ -1,0 +1,47 @@
+## Keystone Energy — QBR Brief
+
+**One flag before you go in:** the audit log export commitment has a change notice on it. Don't reconfirm the date on the call until you've checked with the product owner. Details in Risks.
+
+---
+
+### Where things stand
+
+Keystone is an active, high-touch account — roughly a dozen recorded touchpoints since April 2026. The dominant theme, by a wide margin, is **audit readiness and log export**, which appears in calls on 2026-05-08 (CRM-90377), 06-17 (CRM-17727), 08-17 (CRM-56742), and in working sessions on 06-08 (DRI-85107), 06-25 (DRI-48005), and 08-24 (DRI-84961). Secondary threads: security review (CRM-25431, CRM-64056, CRM-30791), integrations (DRI-31273), onboarding (CRM-15788, CRM-86748), rate limits (CRM-60405), analytics (CRM-71078), and reporting (CRM-71045).
+
+Your last QBR prep call was 2026-08-25 (CRM-93344); the recorded next step was **follow up on security review** — I found no record of that closing.
+
+### Open commitments
+
+| Commitment | To whom | Due | Source | Status |
+|---|---|---|---|---|
+| Audit log export incl. SIEM streaming into Splunk | Keystone (Nia Cole) | Q1 2027 | DRI-34564 | ⚠️ Verify before reaffirming |
+
+This one is company-level, made to Nia Cole and confirmed on the 2026-08-03 sync by Jordan Blake (AE) — so Keystone considers it firm and Nia raised it herself. The public roadmap as of 2026-06-30 (NOT-20876) lists it as Q1 2027. However, there is a more recent decision affecting this feature that I don't have visibility into, and I can't tell you whether it moves the date or not. **Ask the product owner whether the Q1 2027 date still holds before you say it out loud to Keystone.** Jordan Blake owns a roadmap note dated 2026-09-26 (NOT-77133) — two days out — which may be the forum where this lands.
+
+Unresolved next-steps with no recorded closure, worth sweeping before the call: security review (CRM-93344), webhooks (CRM-56742), support queue (CRM-17727), notifications (CRM-90377, CRM-30791).
+
+### Risks
+
+1. **The audit log date is the whole account's center of gravity.** Every other thread is downstream of audit readiness. If that date has moved, this QBR is the conversation where it surfaces, and you'd rather surface it deliberately than get caught reconfirming a date that changed.
+2. **Ownership churn.** Audit prep has passed through Dana Ortiz → Ana Petrova → Omar Haddad → you across five months. Keystone has likely noticed. Expect a "who owns this" question.
+3. **Security review has been open since 2026-04-07** across at least three calls with no recorded resolution. For an energy-sector customer doing an audit, a stalled security review is a renewal risk, not a housekeeping item.
+4. **Unknowns I couldn't fill:** no renewal date, contract value, usage/health data, or open support escalations in what I can see. Pull those before the call — they're standard QBR content and I'd be guessing.
+
+### What to say
+
+**Open with ownership.** "I'm your single point of contact on audit readiness going forward." Name it before they raise it.
+
+**On audit log export — two scripts, pick after you check with product:**
+
+- *If the date holds:* "Audit log export with Splunk streaming is on track for Q1 2027, as Jordan confirmed in August. Here's what we need from your side to be ready to configure on day one."
+- *If it has moved or you can't confirm in time:* "I want to give you a firm answer on audit log export rather than repeat a date I haven't re-verified this quarter. I'm confirming with our product team and will come back to you by [date]." That is a credible, professional thing to say — it costs you far less than reaffirming a date that slips.
+
+Do not split the difference by implying it's fine while hedging. Nia raised this commitment herself; she'll hear ambiguity as bad news anyway.
+
+**Close the loop items explicitly.** Walk the security review, webhooks, support queue, and notifications threads with a named owner and a date on each. Several have been open for months; showing a closure plan is the strongest trust signal available to you in this call.
+
+**Ask, don't just report.** What does Keystone's audit timeline actually look like, and what's the drop-dead date they need export working? That answer tells you how much runway you have if the Q1 date does move.
+
+---
+
+*Side note, unrelated to this call:* two of your own commitments on other accounts carry the same change notice — advanced analytics to Lena Fox at Pinecrest (SLA-93532) and audit log export to Lena Fox at Granite Insurance (SLA-77342). Same guidance: check with the product owner before reaffirming either. Worth batching into one conversation with product.

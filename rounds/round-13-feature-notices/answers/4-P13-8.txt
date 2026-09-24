@@ -1,0 +1,32 @@
+## One flag before you send
+
+Sho flags the SSO (SAML) Q1 2027 commitment to Quarry Mining (made by Leo Grant in `DRI-36664`, 2026-07-09, reconfirming an earlier promise to Tom Hale): **a decision I can't see may or may not have changed it.** I can't tell you what that decision is, and neither of us should reaffirm the date until the product owner confirms it still holds. The public roadmap `NOT-20876` (2026-06-30) still lists SSO (SAML), SP- and IdP-initiated, at Q1 2027 — but it predates whatever the flag refers to, so it isn't confirmation.
+
+So: **check with the product owner before this goes out.** The roadmap owner of record is Maya Chen (`NOT-85086`), which is the best starting point I have; there's no record naming an explicit SSO product owner.
+
+The draft below is written to hold the relationship without re-committing to the date. If Maya confirms Q1 2027 stands, swap in the bracketed alternative and send.
+
+---
+
+**Subject: Re: SSO (SAML) timing**
+
+Hi Tom,
+
+Thanks for checking in, and for being direct about it.
+
+You're right about what we told you — SSO (SAML) by Q1 2027, and I reconfirmed that when we spoke in July. I don't want to restate a date to you today that I haven't re-verified on my end this week, so let me do that properly rather than give you a quick yes.
+
+I'm confirming the current status with our product team now and will come back to you by **[Friday, 2026-10-02]** with either a firm reconfirmation or a clear picture of what's changed and what it means for you. If the timing has moved, you'll hear the specifics from me, not a vague update.
+
+If it's useful, tell me what's driving the question on your side — whether it's a security review, an IdP migration, or a rollout date you're planning around. That helps me get you the answer that actually matters, and to plan around it if we need to.
+
+Best,
+Leo
+
+---
+
+**If the product owner confirms Q1 2027 holds,** replace paragraphs two and three with:
+
+> You're right about what we told you — SSO (SAML) by Q1 2027, and I've just re-confirmed with our product team that this still stands. It covers both SP- and IdP-initiated flows. I'll flag it to you immediately if that ever changes.
+
+**What I deliberately avoided:** any "still on track" or "no changes on our end" phrasing. If the date has in fact moved, that sentence becomes a second broken promise on top of the first, and it's the kind of thing that surfaces at renewal. The holding reply costs you a few days; the wrong reassurance costs more.

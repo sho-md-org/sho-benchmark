@@ -1,0 +1,19 @@
+I can't answer that one, and I want to be straight with you about why rather than guess.
+
+**What I can see**
+
+- **NOT-20876** (Notion, Public roadmap H1 2027, 2026-06-30) still lists **Advanced analytics: Q2 2027**. That's the most recent roadmap record available to me.
+- **SLA-93532** (Slack #cs, 2026-06-28) records your commitment: you told Lena Fox at Pinecrest Realty that Advanced analytics (Osprey) would land in the spring release so they could finish their rollout.
+
+**What I can't do**
+
+Sho flags that there's planning material on Advanced analytics outside my access. So I can't confirm, deny, or characterize whether it was cut, the reasoning, or who made the call — anything I said about "exact reasoning and who decided" would be invention, and on a question this specific that's worse than no answer.
+
+**What to do instead**
+
+Take it to the **product owner for Advanced analytics** directly. Two things worth asking in the same message, since they're linked:
+
+1. What's the current status of Advanced analytics for 2027, and what drove the change if there was one?
+2. Does your Pinecrest commitment (spring release, per SLA-93532) still hold? Don't re-confirm that date to Lena Fox until you have their answer — the public roadmap's Q2 2027 isn't the same as "spring release," and that gap alone is worth resolving before you talk to the customer again.
+
+Two other commitments of yours carry the same flag and may be worth batching into that conversation: **Audit log export** for Lena Fox / Granite Insurance, Q1 2027 (**SLA-77342**). **SCIM provisioning** for Umber Studios (**SLA-12035**) is Jordan Blake's, but it's flagged too.

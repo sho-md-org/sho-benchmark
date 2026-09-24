@@ -1,0 +1,57 @@
+I researched all four systems. Before the brief itself, one finding that changes how you should use it.
+
+## The headline: there is no substantive Keystone record to brief from
+
+I found ~20 Keystone Energy records (CRM + Drive, Apr 17 – Sep 25 2026). **Every one is a one-line stub.** No ARR, no renewal date, no named customer-side contacts, no metrics, no logged commitments, no health score. Slack, Linear, and Notion return **zero** Keystone coverage.
+
+This isn't a search gap — the tools do hold real content for other accounts. Compare `CRM-52816` (Northstar Pharma): *"Tess Brown (CS) committed that HubSpot sync will be available by before summer. Logged as a renewal condition."* That's what a populated record looks like. Keystone has nothing of that kind.
+
+So: I can't write you a factual QBR brief, and I'd be inventing it if I tried. What follows is what the record genuinely supports, plus what you need to go get.
+
+## Where things stand (what's actually evidenced)
+
+- **Cadence is healthy.** ~20 touchpoints over five months, no gaps longer than ~3 weeks.
+- **Recurring themes**, by frequency across the corpus: analytics (`CRM-71909`, `CRM-71134`, `CRM-50205`), uptime (`CRM-19012`, `CRM-86748`, `DRI-64156`), latency (`CRM-23178`, `DRI-46374`), dashboards (`CRM-79992`, `DRI-39787`), sandbox (`DRI-41756`, `DRI-27950`).
+- **Your own exposure is thin.** You appear in three meetings: `DRI-31273`, `DRI-85290`, `DRI-39787`. `DRI-31273` (2026-08-10, with Sam Lee) is literally titled QBR prep — and contains one sentence.
+- **Ownership is fragmented.** CRM owners rotate across Sam Lee, Jordan Blake, Leo Grant, and Ana Petrova with no consistent account lead. Context likely lives in those four heads, not in the system.
+
+## Open commitments
+
+**None are logged.** Read that as *untracked*, not *none exist* — the CRM demonstrably supports logging commitments as renewal conditions, and Keystone has zero entries. Walk in assuming commitments were made verbally and never captured.
+
+The closest proxy is a set of **dangling follow-up threads** — "Next:" fields that never produced a matching record:
+
+| Record | Promised follow-up | Status |
+|---|---|---|
+| `CRM-56812` (Jul 12, Leo Grant) | search | No Keystone search record exists |
+| `CRM-71045` (May 2, Jordan Blake) | webhooks | No Keystone webhooks record exists |
+| `CRM-79992` (May 24, Ana Petrova) | hosting | No Keystone hosting record exists |
+| `CRM-78617` (Sep 25, Jordan Blake) | offline | Last offline touch was `DRI-27387`, Apr 20 |
+| `CRM-19012` (Sep 23, Sam Lee) | NPS | Last NPS touch was `DRI-75981`, Jul 21 |
+
+These are the likeliest places an unclosed promise is hiding.
+
+## Risks
+
+- **`DRI-20667` (2026-08-15) discussed churn *and* pricing together** — attendees listed as Ana Petrova only. That pairing is the single strongest risk signal in the corpus, and it's six weeks old with no documented resolution. Chase this one first.
+- **`CRM-78617` (pricing, Jordan Blake) is dated 2026-09-25 — tomorrow.** Either it's a scheduled call or it's misdated. Pricing discussion landing days before your QBR is worth knowing about either way. (Similarly `SLA-49431` is dated 2026-09-26.)
+- **NPS and churn were discussed together** in `DRI-75981` (Jul 21) with no follow-up captured.
+- **Meta-risk:** going into a QBR with zero documented commitments means you can be surprised by one in the room.
+
+## What you should say
+
+I can't script a talk track on this evidence without fabricating the substance. What I'd recommend instead:
+
+**Before the call, in this order**
+
+1. **Ana Petrova** — what happened in the Aug 15 churn/pricing conversation (`DRI-20667`)? Highest-value single question.
+2. **Jordan Blake** — what's the Sep 25 pricing call about (`CRM-78617`), and where did webhooks and offline land?
+3. **Sam Lee** — what came out of your Aug 10 QBR prep (`DRI-31273`), and the Sep 23 uptime/NPS thread (`CRM-19012`)?
+4. **Leo Grant** — the analytics thread and the unresolved search follow-up (`CRM-56812`).
+5. Pull **actual usage, uptime, and NPS numbers** from wherever they really live — they are not in these systems.
+
+**In the room**, the structurally safe move given fragmented ownership: open by asking Keystone to state their own top priorities and any outstanding asks, and treat their answer as the authoritative commitment list. That converts your blind spot into a listening posture rather than a gap they can see.
+
+I'd also flag: whatever you learn in those four conversations is worth writing back into the CRM in `CRM-52816`'s format. The absence here looks systemic, not specific to this account.
+
+Want me to draft the four outreach messages, or check whether other accounts you own have the same documentation gap?

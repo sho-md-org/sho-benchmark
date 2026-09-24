@@ -1,0 +1,92 @@
+I pulled all 21 Keystone Energy records across CRM and Drive (Slack, Linear, and Notion have **zero** Keystone records). Here's the brief — but I need to lead with a significant caveat about what the source data actually contains.
+
+---
+
+# Keystone Energy — QBR Prep Brief
+
+## ⚠️ Read this first: the record won't support a data-driven QBR
+
+Every one of the 21 Keystone records is a **one-line stub**. They contain a topic, an owner or attendee list, and a generic "next: follow up on X" — and nothing else. There is no logged ARR, renewal date, contract term, health score, usage data, named stakeholder, or specific commitment anywhere in the account history.
+
+For contrast, peer accounts have genuinely substantive notes. Northstar Pharma's renewal record (`CRM-52816`) reads: *"Tess Brown (CS) committed that HubSpot sync will be available by before summer. Logged as a renewal condition."* That's a real commitment with a named owner. **Nothing of that kind exists for Keystone.**
+
+Seven other accounts have dedicated "renewal call notes" records (`CRM-52816`, `CRM-70743`, `CRM-25995`, `CRM-74447`, `CRM-18094`, `CRM-26651`, `CRM-62434`). **Keystone has none.** Either the renewal conversation hasn't happened, or it happened and was never logged.
+
+I've given you everything the data genuinely supports below. I have not invented numbers, commitments, or stakeholder names to fill the gaps — for a QBR, a confidently stated fabrication is worse than a known blank.
+
+---
+
+## Where things stand
+
+**Engagement is steady and heavy.** 21 touchpoints between 2026-04-17 and 2026-09-25 — roughly one every eight days. This is not a neglected or disengaged account.
+
+**The dominant threads, by frequency:**
+
+| Theme | Records |
+|---|---|
+| Analytics | `CRM-50205`, `CRM-71134`, `CRM-71909` (+ follow-up in `CRM-23178`, `DRI-64156`) |
+| Uptime / reliability | `CRM-19012`, `DRI-64156`, `DRI-60948` (+ follow-up in `CRM-86748`, `CRM-71909`) |
+| Latency | `CRM-23178`, `DRI-46374`, `DRI-41756` |
+| Dashboards | `CRM-79992`, `DRI-39787`, `DRI-27950` |
+| Sandbox | `DRI-27950`, `DRI-41756` |
+| Notifications | `DRI-60948`, `DRI-85290`, `DRI-39787` |
+
+Analytics and uptime are the two threads that keep resurfacing across the full six months — those are your account's center of gravity.
+
+## Risks
+
+**1. The conversation shifted from technical to commercial in August.** This is the most important pattern in the data. April through July is almost entirely product friction — latency, uptime, dashboards, sandbox, analytics. Then:
+
+- 2026-07-21 — NPS **and churn** discussed (`DRI-75981`)
+- 2026-08-15 — churn **and pricing** discussed (`DRI-20667`)
+- 2026-09-25 — pricing (`CRM-78617`)
+
+Churn appearing twice in four weeks, paired with NPS and then pricing, is the clearest risk signal available. I'd treat it as real. But be aware: I'm inferring this from record *titles and topics* — the notes themselves say nothing about what was actually concluded. **Do not walk into the QBR asserting you know Keystone's churn posture.**
+
+**2. No consistent account owner.** Ownership rotates across at least four people: Sam Lee (`CRM-86748`), Jordan Blake (`CRM-71045`, `CRM-78617`), Leo Grant (`CRM-23178`, `CRM-56812`, `CRM-71909`, `CRM-71134`), Ana Petrova (`CRM-79992`, `CRM-50205`). You appear in only three records (`DRI-31273`, `DRI-85290`, `DRI-39787`). Fragmented ownership is very likely *why* the notes are this thin, and it means institutional knowledge lives in people's heads, not the CRM.
+
+**3. Unresolved reliability history.** Uptime and latency recur from April through September (`CRM-19012` on 2026-09-23 is one of the two most recent records). Six months of recurring reliability topics without a visible resolution is a pattern worth taking seriously into a QBR.
+
+**4. No documented renewal position.** You do not know, from the record, when Keystone renews or on what terms.
+
+## Open commitments
+
+**I could not identify a single specific, verifiable commitment to Keystone.** The records contain only generic next-steps with no owner accountability, deadline, or deliverable:
+
+- `CRM-78617` (2026-09-25) — "follow up on offline," owner Jordan Blake
+- `CRM-19012` (2026-09-23) — "follow up on NPS," owner Sam Lee
+- `CRM-56812` (2026-07-12) — "follow up on search," owner Leo Grant
+- `CRM-71045` (2026-05-02) — "follow up on webhooks," owner Jordan Blake
+
+These are the freshest open loops, but none states what was actually promised. **Treat this section as unknown, not as empty** — the risk is that Keystone believes it has commitments from Brightline that were never written down.
+
+## Two data caveats
+
+- `CRM-78617` is dated **2026-09-25 — tomorrow**. That's a scheduled pricing call with Jordan Blake, not a past one. It may well happen before your QBR; get the readout.
+- Attendee data is unreliable. `DRI-20667` lists "Ana Petrova, Ana Petrova" and `DRI-85290` lists "Maya Chen, Maya Chen" — duplicated entries. Don't trust these lists to tell you who was in the room.
+
+---
+
+## What I'd do before the call
+
+The honest answer is that **your prep work is offline, not in the tools.** In priority order:
+
+1. **Ana Petrova — highest value.** She's on the churn/pricing doc (`DRI-20667`) and the dashboards records. She is the closest thing to a source on why churn came up twice.
+2. **Jordan Blake** — owns tomorrow's pricing call (`CRM-78617`). Get that readout; it's your freshest commercial signal.
+3. **Get the renewal date and ARR from finance or the contract.** You cannot run a credible QBR without these and they are not in the CRM.
+4. **Sam Lee** — your co-attendee on the actual QBR prep doc (`DRI-31273`, 2026-08-10) and owner of the most recent uptime call (`CRM-19012`).
+5. **Reconstruct the uptime/latency history** from whatever support system holds it — it's not in any tool I searched, and it's likely Keystone's top agenda item.
+
+## What to say on the call
+
+Given that you're going in without documented specifics, **lean on structure and listening rather than on assertions.** A QBR where you confidently recite numbers you can't source is how accounts get lost.
+
+- **Open by acknowledging the reliability thread directly.** Uptime and latency have come up repeatedly since April. Naming it first — rather than waiting for them to raise it — buys credibility. Come with the actual incident history (see prep item 5).
+- **Make analytics the value narrative.** It's the single most recurring topic across six months, which means it's where they're investing attention. Ask what "good" looks like for them in the next quarter.
+- **Ask them to state their open items back to you.** Frame it as "I want to make sure nothing we've promised has slipped." This is your safest route to recovering the commitments the CRM failed to capture — and it's genuinely useful rather than an admission of weak records.
+- **Do not raise churn or pricing proactively.** You have topic labels, not context. If *they* raise it, listen and take it away rather than negotiating live off an undocumented position.
+- **Propose a single named account owner going forward.** Four rotating owners in six months is a fixable problem, and offering to fix it is a concrete, credible commitment you can make in the room.
+
+---
+
+One process note worth raising separately: the gap between Keystone's records and Northstar's (`CRM-52816`) suggests this is a logging-discipline problem, not a Keystone-specific one. Want me to check whether other accounts in your book have the same stub pattern? If it's widespread, that's a team-level issue worth flagging before the next renewal cycle catches someone out.

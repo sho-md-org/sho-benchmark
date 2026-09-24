@@ -1,0 +1,23 @@
+## Short answer: none — you don't have any SSO promises on record.
+
+I searched Slack, CRM, Notion, Drive, and Linear. There are exactly **four** customer commitments logged in the `#cs:` channels, and neither of the two that are yours is about SSO:
+
+| Record | Who promised | Customer | What | When |
+|---|---|---|---|---|
+| `SLA-93532` | **Maya Chen (CS)** | Pinecrest Realty (Lena Fox) | Advanced analytics (Osprey) | spring release |
+| `SLA-77342` | **Maya Chen (CS)** | Granite Insurance (Lena Fox) | Audit log export incl. SIEM streaming | Q1 2027 |
+| `SLA-12035` | Jordan Blake (AE) | Umber Studios (Kai Berg) | **SCIM provisioning** | Q1 2027 |
+| `SLA-24221` | Priya Shah (AE) | Meridian Travel (Tom Hale) | Offline mode | Q2 |
+
+### The likely source of the confusion
+The identity-adjacent commitment — **SCIM provisioning** for Umber Studios (`SLA-12035`) — is the one people tend to file mentally under "SSO," since the public roadmap `NOT-20876` lists *SSO (SAML), SP- and IdP-initiated: Q1 2027* and *SCIM provisioning: Q1 2027* side by side. But that promise is **Jordan Blake's**, not yours. If SSO/SCIM timing is what's in motion, Jordan is the one who needs to own the customer conversation.
+
+### Second thing worth flagging
+I also found **no record of any SSO delay or re-scope**. The only roadmap source of truth is `NOT-20876` (2026-06-30), which still shows SSO (SAML) and SCIM at Q1 2027. Linear returns zero results for SSO, SAML, identity, provisioning, or authentication — there's no engineering ticket backing the SSO line at all. The other SSO-titled records (`SLA-94820`, `NOT-20443`, `CRM-57082`, `DRI-67178`, etc.) are routine status notes with no timeline content.
+
+So if you heard that SSO slipped, that news isn't in any of these systems yet — worth confirming where it came from before anyone contacts a customer.
+
+### Your actual exposure
+If something *is* shifting in the Q1 2027 security/compliance block, the promise of yours to watch is **`SLA-77342` — Granite Insurance, audit log export with SIEM streaming, Q1 2027**. It sits in the same roadmap cluster as SSO and audit-log work, it's dated Q1 2027, and Lena Fox was told it would let them finish their rollout. Your Pinecrest analytics promise (`SLA-93532`) is unrelated to this area, though note it's pegged to "spring release" while the roadmap puts Advanced analytics at **Q2 2027** — you may want to double-check that one independently.
+
+Want me to trace the Granite Insurance audit-log commitment or the Pinecrest analytics date discrepancy in more depth?

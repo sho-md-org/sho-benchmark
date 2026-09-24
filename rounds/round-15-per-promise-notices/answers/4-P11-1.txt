@@ -1,0 +1,60 @@
+## Vantage Telecom — QBR Brief
+
+**Heads-up before you read on:** the SSO (SAML) commitment is flagged. There's a decision I can't see that may or may not affect it. **Do not reaffirm the Q1 2027 SSO date on the call until you've checked with the product owner.** More below.
+
+---
+
+### Where things stand
+
+Vantage is an active, high-touch account — roughly 20 logged touchpoints across CRM and Drive since April, spread over several owners (Priya Shah, Jordan Blake, Tess Brown, Ana Petrova, Dana Ortiz, and you). Recent threads:
+
+| Date | Record | Topic |
+|---|---|---|
+| 2026-09-19 | CRM-57082 | SSO questions (Priya Shah) — next step: roadmap follow-up |
+| 2026-09-13 | CRM-65747 | Dashboards (you) — next step: exports |
+| 2026-09-11 | DRI-67178 | SSO questions + NPS (Dana Ortiz, Omar Haddad) |
+| 2026-09-06 | DRI-14442 | **Churn** + QBR prep (Dana Ortiz, Tess Brown) |
+| 2026-08-11 / 08-05 | DRI-77676 / DRI-89702 | Trial conversion + NPS; rate limits + hosting |
+
+Earlier in the year: integrations (DRI-81968), webhooks (DRI-57024), reporting (DRI-68417), pricing (CRM-36270), billing (CRM-92524, CRM-24363), search (CRM-84868, CRM-74774), onboarding (CRM-15845).
+
+One caveat worth stating plainly: most of these records are one-line stubs with no substance beyond the topic. I can tell you *what* was discussed, not *what was decided*. For the QBR narrative — usage numbers, health score, renewal date, ARR — you'll need to pull those from the account record directly; they aren't in what I can see.
+
+### Open commitments
+
+**SSO (SAML) — Q1 2027 — the one that matters.**
+Source: CRM-31062 (Vantage QBR notes, 2026-06-08). Ines Park pushed on SAML; Priya Shah (AE) said: *"you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word."* The note records that the customer is planning around it.
+
+This promise carries a flag: a decision I don't have visibility into may or may not change it. I can't tell you what that decision is or whether it changes anything — I genuinely don't know. What I can tell you is the right move: **ask the product owner whether the Q1 2027 SSO commitment still holds before you say anything about timing to Ines.**
+
+For reference, the public roadmap (NOT-20876, 2026-06-30) lists SSO (SAML), SP- and IdP-initiated at Q1 2027 — consistent with what Priya said. But that document is nearly three months old and predates whatever the flag refers to, so don't lean on it as confirmation.
+
+### Risks
+
+1. **SSO is the account's live nerve.** Three SSO touchpoints in the last two weeks of available records (DRI-67178 on 9/11, CRM-57082 on 9/19, both trailing the June commitment). A customer that keeps re-asking about a dated promise is a customer who isn't confident in it. Walking into a QBR and being vague — or worse, over-confident and wrong — both hurt.
+2. **Churn is already being discussed internally.** DRI-14442 (9/6) has Dana Ortiz and Tess Brown discussing churn *in the context of QBR prep*. Find out from Dana what prompted that before the call; it's the single highest-value piece of prep you can do, and it's not in the records.
+3. **Ownership is scattered.** Priya, Jordan, Tess, Ana, Dana, and you have all fronted this account. Ines has heard commitments from at least Priya. Make sure you know what she's been told by others before you're in the room.
+4. **Verbal absolutes.** "You have my word" on a specific quarter *and* a specific feature detail (Okta IdP-initiated) is a tight commitment. If anything moves, that's the sentence that gets quoted back.
+
+### What to say
+
+**On SSO** — only after you've confirmed with the product owner. Two scenarios:
+
+- *If it holds:* reaffirm directly and specifically. "Q1 2027, SP- and IdP-initiated, including Okta." Specificity is what rebuilds confidence here.
+- *If you can't reach the product owner in time:* do not improvise a date. Say something like — "I want to give you a precise answer on SSO rather than a directional one. I'm confirming the delivery detail with our product team and will come back to you with it in writing by [date]." Then actually do it. Ines is planning her rollout around this; a firm follow-up commitment is better received than a soft reassurance that later moves.
+
+**On the rest of the QBR:**
+- Open with their agenda, not yours. Ask Ines what's changed on her side since June — this surfaces the churn driver if there is one.
+- Close the loop on the small stuff to show follow-through: exports (the open next-step from CRM-65747), rate limits and hosting (DRI-89702), reporting (DRI-68417). These are cheap credibility.
+- Acknowledge the multi-owner churn: "You've talked to a few of us this year — I'm your single point of contact going forward." Then be that.
+- Ask directly about renewal timing and what would make it an easy yes. Given DRI-14442, don't leave the call without that answer.
+
+### Before the call — three asks
+
+1. **Product owner:** does the Q1 2027 SSO (SAML) commitment from CRM-31062 still hold, including IdP-initiated Okta login?
+2. **Dana Ortiz:** what's behind the churn conversation in DRI-14442?
+3. **Priya Shah:** anything said to Ines since the June QBR that isn't written down.
+
+---
+
+Separately, and not for this call: three of your other flagged commitments carry the same kind of notice — Advanced analytics to Lena Fox at Pinecrest (SLA-93532), Audit log export to Lena Fox at Granite (SLA-77342), and Jordan Blake's SCIM promise to Umber Studios (SLA-12035). Two of those are yours. Worth the same product-owner check before you next speak to either account.

@@ -1,0 +1,58 @@
+## Vantage Telecom — QBR Brief
+
+**One flag before anything else:** the SSO (SAML) commitment is the centerpiece of this account, and I can't verify it still holds. Details below — please clear it with the product owner before the call.
+
+---
+
+### Where things stand
+
+Twelve touchpoints on file between April and September 2026. The account is actively engaged but the records are thin — mostly one-line call logs with an owner and a "next step," no health score, renewal date, or ARR in anything I can see.
+
+| Date | Topic | Owner | Record |
+|---|---|---|---|
+| 2026-09-13 | Dashboards → follow up on exports | Maya Chen | CRM-65747 |
+| 2026-09-06 | Churn / QBR prep (internal: Dana Ortiz, Tess Brown) | — | DRI-14442 |
+| 2026-07-23 | Billing → follow up on latency | Jordan Blake | CRM-92524 |
+| 2026-07-10 | NPS → follow up on reporting | Tess Brown | CRM-37016 |
+| 2026-07-08 | Search → follow up on QBR prep | Priya Shah | CRM-84868 |
+| 2026-06-22 | Pricing → follow up on audit prep | Jordan Blake | CRM-36270 |
+| 2026-06-22 | Onboarding → follow up on webhooks | Dana Ortiz | CRM-15845 |
+| 2026-06-17 | Search → follow up on webhooks | Priya Shah | CRM-74774 |
+| 2026-06-08 | **QBR: SSO (SAML) commitment** | Priya Shah | CRM-31062 |
+| 2026-05-18 | Analytics → follow up on sandbox | Jordan Blake | CRM-53521 |
+| 2026-05-14 | Exports → follow up on webhooks | Ana Petrova | CRM-23907 |
+| 2026-04-27 | Dashboards → follow up on integrations | Tess Brown | CRM-20779 |
+| 2026-04-12 | Billing → follow up on latency | Leo Grant | CRM-24363 |
+
+Themes that recur: **search** (June–July, twice), **billing/latency** (April and July, same open follow-up both times), **dashboards/exports/reporting** (April, July, September), and **webhooks** (three separate "next steps" logged, no record of resolution).
+
+### Open commitments
+
+**SSO (SAML) — to Ines Park, due Q1 2027** (CRM-31062). Priya Shah committed on the June 8 QBR: "you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word." The note says Vantage is planning around it.
+
+⚠️ **There's a development affecting this commitment that I don't have visibility into.** I can't tell you whether it changes the Q1 2027 date or the Okta IdP-initiated login scope. **Ask the product owner whether the commitment still holds before you reaffirm it on the call.** Don't restate the date or the Okta detail to Ines until you've done that.
+
+No other Vantage-specific commitments appear in the records. Separately, two open commitments of *yours* on other accounts are live right now — Advanced analytics (Osprey) to Lena Fox at Pinecrest (SLA-93532) and Audit log export to Lena Fox at Granite Insurance (SLA-77342) — both carry the same "check with the product owner" flag. Not QBR material, but worth batching into the same conversation.
+
+### Risks
+
+1. **SSO is the account's load-bearing promise.** Ines pushed for it, got a personal guarantee with a specific date and a specific IdP detail, and is planning a rollout around it. If anything has moved, this is the highest-consequence thing on the call — and reaffirming it blind is the worst outcome.
+2. **Churn is already a named internal topic** (DRI-14442, Sept 6, Dana and Tess). The record gives no reasoning, so I can't tell you what's driving it. Worth asking Dana or Tess directly before the call — going in without knowing why churn came up is a real gap.
+3. **Open loops with no closure on record.** Webhooks (three asks), billing latency (twice, five months apart, same unresolved follow-up), exports/reporting. If Vantage raises any of these, you'll be in the dark.
+4. **Ownership is scattered** across Priya, Jordan, Tess, Dana, Leo, Ana. No single thread owner means the customer may have heard different things from different people.
+
+### What to say
+
+**Open with what you've delivered, not what's pending.** Dashboards and reporting have been the steadiest thread — lead with the September dashboards work (CRM-65747) and the exports follow-up as the current active item.
+
+**On SSO — hold the line until you've checked.** If Ines raises it, acknowledge it without re-committing: *"SSO is tracked and it's the top item on our side for this account. Let me confirm the current delivery detail with our product team and come back to you this week with something firm rather than repeat a date secondhand."* That's honest, it doesn't retract anything, and it buys you the day you need. Once the product owner confirms, you can state the date plainly.
+
+**Proactively close the loops.** Name webhooks, billing latency, and exports yourself before Ines does: *"Three things have come up more than once and I want to make sure none of them are sitting open on your side."* This turns a weakness into evidence you're tracking the account.
+
+**Probe on health.** Given the churn discussion, use the QBR to ask directly about adoption, blockers, and who else at Vantage is using the product. You need a read you don't currently have on file.
+
+**Ask for a single point of contact on each side.** Six internal owners across five months is a coordination risk for them as much as for you.
+
+---
+
+**Before the call:** (1) get the SSO answer from the product owner, (2) ask Dana or Tess what prompted the churn discussion on Sept 6, (3) confirm the renewal date and ARR — neither is in anything I can see.

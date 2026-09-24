@@ -1,0 +1,44 @@
+## Harbor Clinics QBR Brief — call week of 2026-09-28
+
+### Where things stand
+The account is active and broadly engaged, but the record is thin on outcomes — the CRM trail is mostly recurring touchpoints with no documented resolutions. Threads over the last six months:
+
+| Theme | Latest record | Owner |
+|---|---|---|
+| Mobile app | CRM-49374 (2026-09-21) | Sam Lee |
+| Offline | CRM-39320 (2026-08-26) | Priya Shah |
+| Dashboards | CRM-64035 (2026-08-26) | Ana Petrova |
+| Support queue | DRI-20995 (2026-08-19) | Leo Grant / Maya |
+| Integrations | CRM-75336 (2026-07-25) | Omar Haddad |
+| Onboarding | CRM-48825 (2026-07-24) | Priya Shah |
+| Hosting | CRM-34883 (2026-07-15) | Sam Lee |
+| Roadmap | CRM-41255 (2026-06-14) | Tess Brown |
+| Audit prep | CRM-35862 (2026-05-14) | Leo Grant |
+
+Audit prep is the most persistent thread — it's the "next step" on CRM-45542, CRM-48825, and DRI-20995, and CRM-35862 points onward to exports. That's the storyline to lead with; it's clearly what they care about.
+
+Contacts in play: **Ines Park** (DRI-80868, retention/compliance) and **Ada Moss** (CRM-89966, data residency).
+
+### Open commitments
+**Data retention controls — by Q1 2027.** Made by Jordan Blake (AE), confirmed to Ines Park in the 2026-05-15 sync (DRI-80868). No later change on record, so you can speak to this normally and reaffirm the Q1 2027 target.
+
+That is the only formal commitment on Harbor Clinics. Nothing else in the account carries a dated promise.
+
+### Risks
+1. **EU data residency is an open, undated ask.** Ada Moss raised it on 2026-06-09 and the position recorded was "exploring, no dates yet" (CRM-89966). Three months on there's still no date in the record. If this is gating anything on their side, expect pressure in the QBR — and do not put a timeline on it.
+2. **Audit prep has no recorded close.** It has been the trailing next-step since May across three records with two different owners (Leo Grant, Priya Shah). Either it quietly resolved and nobody logged it, or it's still open. Worth confirming with Leo Grant before the call so you're not surprised.
+3. **Ownership is fragmented.** Nine-plus named owners across the account's threads. If Harbor asks "who owns X," you'll want a single answer per theme going in.
+4. **Thin documentation generally.** The records capture that calls happened, not what was decided. Treat anything not in DRI-80868 as unconfirmed rather than assuming it's on track.
+
+### What to say
+- **Open on compliance.** "Data retention controls are on track for Q1 2027 as we committed in May" — that's your strongest, cleanest message and it's aimed straight at Ines Park's concern.
+- **On EU data residency, hold the line at exploration.** "It's something we're actively looking at, and I don't have dates to share yet." Then ask what their actual deadline is — that gives you something concrete to take back to product instead of another undated thread.
+- **Close out audit prep explicitly.** Ask directly whether they consider it done. Getting a yes or no on the call ends a five-month loop.
+- **Propose one owner per workstream.** Offer a named point of contact for compliance, integrations, and mobile/offline. Low cost, and it addresses the fragmentation before they notice it.
+- **Ask what changes next quarter.** Nothing in the record tells you their 2027 priorities. Use the QBR to get that, rather than only reporting backward.
+
+### Prep before the call
+Confirm audit-prep status with **Leo Grant** (CRM-35862, DRI-20995), and get whatever product will say about EU data residency so you're not improvising on CRM-89966.
+
+### Separate heads-up — not Harbor Clinics
+Two commitments of **your own** on other accounts came back flagged: **Advanced analytics** to Lena Fox at Pinecrest Realty (SLA-93532) and **Audit log export** to Lena Fox / Granite Insurance (SLA-77342). Check with the product owner on each before you reaffirm them to those customers. Neither touches Harbor Clinics, so they don't belong in this QBR — but since Lena Fox is a live contact for you, worth clearing before your next conversation with her. Jordan Blake's SCIM commitment to Umber Studios (SLA-12035) is flagged the same way and should go to him.

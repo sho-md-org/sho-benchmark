@@ -1,0 +1,44 @@
+## Before you send: one blocker
+
+The SSO (SAML) Q1 2027 commitment to Quarry Mining is flagged in our system. There's a decision I don't have visibility into that may or may not affect this date — I can't tell you which. **The flag's instruction is explicit: confirm with the product owner that the promise still holds before reaffirming it.**
+
+So the draft below deliberately does *not* restate Q1 2027. Once the product owner confirms the date is intact, you can send the stronger version I've included underneath.
+
+**What's on record:**
+- **DRI-36664** (2026-07-09) — Tom Hale reminded us of the Q1 2027 SSO commitment; you confirmed it on that call. That's the promise he's referencing.
+- **NOT-20876** (2026-06-30) — Public roadmap still lists SSO (SAML), SP- and IdP-initiated, at Q1 2027.
+- **CRM-14429** (2026-06-25) — Earlier SSO call, owner listed as Ana Petrova. She may be your fastest route to the product owner, though the records don't name the owner for the feature itself.
+
+---
+
+## Draft reply (send now)
+
+> Subject: Re: SSO (SAML) timing
+>
+> Hi Tom,
+>
+> Thanks for checking in, and for being direct about it.
+>
+> SSO (SAML) — both SP- and IdP-initiated — is on our roadmap for Q1 2027, and it remains a priority for your account. Before I give you a firm re-confirmation on timing, I want to check in with our product team directly rather than just repeat the date back to you. You've built plans around this, and you deserve an answer that's actually current, not one that's just consistent with the last conversation.
+>
+> I'm reaching out to them today and will come back to you by [date] with a definitive answer on timing. If anything has shifted, you'll hear it from me straight away along with what we'd do about it.
+>
+> Best,
+> Leo
+
+---
+
+## Follow-up version (only after the product owner confirms)
+
+> Hi Tom,
+>
+> Confirmed with our product team — SSO (SAML), SP- and IdP-initiated, is still on track for Q1 2027, as we committed. No change.
+>
+> Happy to set up a technical session with your team ahead of rollout so your IdP config is ready to go on day one. Let me know if that's useful.
+>
+> Best,
+> Leo
+
+---
+
+**Two notes on the draft:** fill in a specific date for the callback — an open-ended "I'll get back to you" on a promise he's already had to chase once will read as evasion. And if the product owner comes back saying the date has moved, don't send the follow-up with a softened timeline buried in it; that warrants a call.

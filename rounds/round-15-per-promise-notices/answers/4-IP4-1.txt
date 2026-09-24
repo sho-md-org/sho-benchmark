@@ -1,0 +1,21 @@
+## Short answer: Keystone Energy is the one at risk. Cobalt Retail looks normal.
+
+**Keystone Energy — flagged** (`DRI-34564`, 2026-08-03)
+- Promise: Audit log export **with streaming into Splunk**, by Q1 2027. Nia Cole raised it; Jordan Blake (AE) confirmed on the company's behalf.
+- Sho attaches a notice to this one: a decision I don't have visibility into may or may not have changed it. I can't confirm, deny, or characterize that decision. **Check with the audit-log-export product owner before you reaffirm the date or the Splunk scope to Keystone.**
+
+**Cobalt Retail — no flag** (`CRM-38600`, 2026-07-24)
+- Promise: Audit log export by Q1 2027, **as a CSV export** — "you have my word" to Sam Ortiz, who is planning around it.
+- Status: no later change found. Treat as normal.
+
+## The difference worth noticing
+
+The two promises aren't the same product scope. Cobalt's is CSV export; Keystone's is export **plus SIEM/Splunk streaming**. The public roadmap `NOT-20876` (2026-06-30) still lists "Audit log export incl. SIEM streaming: Q1 2027," but that's a June snapshot and predates the sync — don't lean on it as confirmation.
+
+## One you didn't ask about
+
+You have a **third** audit-export promise, and it's also flagged: Granite Insurance / Lena Fox (`SLA-77342`, 2026-05-26) — audit log export by Q1 2027 **including SIEM streaming**, tied to finishing their rollout. Same notice, same guidance. If you're going to the product owner about Keystone, cover Granite in the same conversation.
+
+## Suggested next step
+
+One question to the audit-log-export product owner, covering both flagged commitments: *does Q1 2027 still hold, and does it still include SIEM streaming?* Until you have that answer, it's safe to keep confirming Cobalt's CSV export, and best to stay non-committal with Keystone and Granite rather than restating the date.

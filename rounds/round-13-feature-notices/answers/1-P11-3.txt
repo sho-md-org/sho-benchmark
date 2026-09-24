@@ -1,0 +1,82 @@
+## First, an important caveat
+
+I searched all four systems. Every Vantage Telecom record is a one-line stub — topic, attendees, owner, and a "next step" phrase, nothing more. There is **no** ARR, renewal date, contract term, health score, NPS number, usage data, or named exec sponsor anywhere in CRM, Drive, Notion, Linear, or Slack. Vantage returns **zero** hits in Slack, Linear, and Notion entirely.
+
+So I can't write the QBR brief you'd actually want. What follows is everything the records genuinely support, with my inferences marked as inferences, plus the specific gaps you need to fill before the call.
+
+---
+
+## Where things stand
+
+**16 touchpoints, 2026-04-02 → 2026-09-13.** Steady cadence, roughly every 2–3 weeks, no gaps.
+
+The topic mix shifts noticeably around August:
+
+| Period | Topics |
+|---|---|
+| Apr–Jul | Billing, dashboards, exports, analytics, search, onboarding, reporting, webhooks, integrations, trial conversion, NPS |
+| Aug–Sep | Rate limits (DRI-89702), support queue (DRI-10836), **churn** (DRI-14442), SSO (DRI-67178) |
+
+*Inference, not documented:* the first five months read as adoption and feature topics; the last six weeks read as friction and retention topics. That's the single most important pattern in the data.
+
+**Most recent contact:** CRM-65747, 2026-09-13, dashboards call, **you** as owner.
+
+**Most recent internal discussion:** DRI-67178, 2026-09-11, SSO questions — Dana Ortiz and Omar Haddad, not you.
+
+---
+
+## Open commitments
+
+**Yours, and it's open:**
+- **CRM-65747** (2026-09-13) — "follow up on exports." No record after this date shows it closed. This is the newest outstanding item and it's on you. Close it or have an answer before the QBR.
+
+**Logged but never visibly closed** — each of these was recorded as a next step with no follow-up record on that topic:
+
+- **Webhooks** — logged three separate times: CRM-23907 (2026-05-14), CRM-74774 (2026-06-17), CRM-15845 (2026-06-22). The only webhooks meeting, DRI-57024, predates all three (2026-05-28 note, but it was internal — Ana Petrova and Leo Grant). Three re-logs of the same next step is the signature of something that kept getting deferred.
+- **Latency** — logged twice, both out of billing calls: CRM-24363 (2026-04-12, Leo Grant) and CRM-92524 (2026-07-23, Jordan Blake). Three months apart, same unresolved thread, different owners.
+- **Sandbox** — CRM-53521 (2026-05-18, Jordan Blake). No Vantage sandbox record follows.
+- **Integrations** — CRM-20779 (2026-04-27). DRI-81968 (integrations) predates it by three weeks.
+- **Reporting** — CRM-37016 (2026-07-10). DRI-68417 (reporting) predates it by a month.
+
+**Unanswered from their side:** the SSO questions in DRI-67178 (2026-09-11) have no resolution record.
+
+---
+
+## Risks
+
+**1. A churn conversation happened and you weren't in it.** DRI-14442, 2026-09-06 — Dana Ortiz and Tess Brown, topic churn, explicitly tied to QBR prep. Talk to Dana and Tess before the call. This is the highest-priority item on this list.
+
+**2. No account continuity.** Ten CRM calls, seven different owners: Leo Grant, Tess Brown (×2), Ana Petrova, Jordan Blake (×2), Priya Shah (×2), Dana Ortiz, and you (once, CRM-65747). You appear in only three of sixteen records total — CRM-65747, DRI-81968 (2026-04-02), DRI-89702 (2026-08-05). If Vantage feels they're re-explaining themselves to a new person each time, the record supports that feeling.
+
+**3. Recurring technical complaints with no engineering trail.** Webhooks, latency, rate limits, and SSO all surfaced repeatedly — and Vantage has **zero** Linear tickets. Either this work was never filed or it was never tagged to the account. Check before the QBR: if they ask "what happened to X," you need a real answer.
+
+**4. Stacked open threads.** Five-plus next steps logged without visible closure. Individually minor; as a pattern going into a QBR, it's the thing a customer notices.
+
+---
+
+## What I'd say on the call
+
+**Open by owning the handoffs.** Don't wait for them to raise it. Something like: *"You've worked with several people on our side this year. I'm your point of contact going forward, and I've gone back through every conversation since April so you don't have to repeat yourself."* This converts your weakest fact into a credibility move.
+
+**Bring exports unprompted.** It's your own open commitment from 2026-09-13 (CRM-65747) and it's the freshest. Lead with a resolution, not a status.
+
+**Name the recurring threads before they do.** Webhooks, latency, SSO. Say plainly which are resolved, which are in flight with a date, and which you're closing as not-planned. A customer will accept "not planned" far better than a fourth deferral.
+
+**Ask directly about the August–September shift.** Rate limits, support queue volume, SSO — *"The last few months have been more about friction than features. What's driving that on your end?"* Open the churn conversation rather than hoping it stays closed.
+
+**Do not present metrics.** There is no NPS score, usage trend, or adoption number in any system. If you show a number, you'll be sourcing it from somewhere other than these records.
+
+---
+
+## Before the call — you have to gather these
+
+None of this exists in the tools:
+
+1. **Renewal date and contract value.** Determines whether this is a save motion or a growth motion. Everything above changes depending on the answer.
+2. **Debrief Dana Ortiz and Tess Brown** on DRI-14442 — what specifically triggered the churn discussion.
+3. **Actual NPS score.** NPS is referenced in four records (CRM-37016, DRI-57024, DRI-67178, DRI-77676) and the number appears in none.
+4. **Status of webhooks, latency, rate limits, SSO** from Engineering — nothing is tracked in Linear.
+5. **Stakeholder map.** No Vantage-side names appear anywhere. You don't currently know who's in the room.
+6. **Omar Haddad** appears in four of the last five records (DRI-89702, DRI-10836, DRI-67178, plus NOT-42571/NOT-52051 QBR prep, though those aren't Vantage-tagged). He has the most recent context of anyone.
+
+If you get me the renewal date and the Dana/Tess debrief, I can turn this into the real brief.

@@ -1,0 +1,51 @@
+## Bottom line first
+
+I researched every Keystone Energy record across CRM, Drive, Notion, Slack, and Linear — 23 records total. **I can't write the brief you asked for, because the underlying records don't contain the content.** Every Keystone record is a templated one-liner with a topic label and no substance.
+
+Representative examples, verbatim and complete:
+
+- `CRM-19012` (2026-09-23): "Call with Keystone Energy. Discussed uptime. Owner Sam Lee. Next: follow up on NPS."
+- `DRI-20667` (2026-08-15): "Attendees: Ana Petrova, Ana Petrova. Discussed churn and pricing."
+- `DRI-31273` (2026-08-10): "Attendees: Sam Lee, Maya Chen. Discussed integrations and QBR prep."
+
+There is no ARR figure, no renewal date, no named customer-side contact, no commitment, no open issue, and no health score anywhere in the account. Writing "where things stand, risks, and what to say" from this would mean inventing it — and a fabricated QBR brief is worse than none, because you'd carry it into a live customer call.
+
+Here's what the research *does* legitimately support.
+
+## What's verifiable
+
+**Engagement is steady and high-volume.** 13 CRM call records and 13 meeting notes between 2026-04-17 and 2026-09-25. This is not a neglected account in terms of contact frequency.
+
+**Recurring themes, by frequency:** analytics (`CRM-71909`, `CRM-71134`, `CRM-50205`, `CRM-23178`), audit prep (`DRI-85107`, `DRI-48005`, `DRI-84961`), uptime (`CRM-19012`, `CRM-86748`, `DRI-64156`), latency (`CRM-23178`, `DRI-46374`), dashboards, sandbox, notifications, pricing.
+
+**You personally attended five of these:** `DRI-85290` (roadmap, 5/28), `DRI-48005` (audit prep, 6/25), `DRI-39787` (dashboards, 7/7), `DRI-31273` (integrations + QBR prep, 8/10), `DRI-84961` (audit prep, 8/24). Your own recall is the best source available — better than the CRM.
+
+**Two signals worth taking seriously:**
+
+1. **Churn and pricing were discussed together** on 2026-08-15 (`DRI-20667`), and NPS alongside churn on 2026-07-21 (`DRI-75981`). Those pairings usually aren't idle.
+2. **Audit prep is the most sustained thread** — three meetings across June–August, plus your own Slack update on 2026-09-19 (`SLA-13802`: "update on audit prep; roadmap next week"). This looks like the account's live workstream.
+
+**No stable internal owner.** Owners rotate across records: Jordan Blake, Sam Lee, Leo Grant, Ana Petrova, Omar Haddad, Dana Ortiz, Priya Shah. That's a coordination risk for a QBR regardless of what's in the notes.
+
+**The most important finding — a structural gap:**
+
+Every other major account has a dedicated renewal record capturing explicit commitments. For example, `CRM-52816` (Northstar Pharma, 2026-08-22): *"Tess Brown (CS) committed that HubSpot sync will be available by before summer. Logged as a renewal condition."* Comparable records exist for Kestrel Foods (`CRM-70743`), Ironwood Legal (`CRM-25995`), Riverton City (`CRM-74447`), Norrland AB (`CRM-18094`), Granite Insurance (`CRM-26651`), and Umber Studios (`CRM-62434`).
+
+**Keystone Energy has no renewal record at all.** So on your central question — open commitments — the honest answer is that if anything was promised to Keystone, it was never logged anywhere I can search. Treat that as unknown, not as zero.
+
+## Two scheduling notes
+
+`CRM-78617` (pricing, owner Jordan Blake) is dated **2026-09-25 — tomorrow**, and `SLA-55835` (Omar Haddad, "NPS next week") is dated **2026-09-26**. Both postdate today. A pricing conversation is happening the day before your QBR week, and you should know its outcome before you walk in. Jordan Blake is your first call.
+
+## What I'd do before the call
+
+Rather than a brief built on air, four targeted asks that would actually produce one:
+
+1. **Jordan Blake** — outcome of tomorrow's pricing call (`CRM-78617`), and whether the 8/15 churn-and-pricing discussion (`DRI-20667`) reflected a real retention concern.
+2. **Ana Petrova** — she owned `DRI-20667`; ask directly whether Keystone has signalled churn risk.
+3. **Whoever owns the renewal** — Keystone's renewal date, ARR, and any commitments made. Given the missing renewal record, assume nothing is written down.
+4. **Omar Haddad** — status of the audit-prep workstream, the thread with the most momentum and your most likely QBR centrepiece.
+
+I'd rather hand you those four questions than a polished document that invents the answers. If you give me the renewal date, ARR, and any commitments you remember making, I'll draft the full brief — structure, talk track and all — in one pass.
+
+One process flag worth raising separately: an account with 26 touchpoints and zero recorded substance is a reporting problem beyond this QBR. If Keystone's records look like this, others probably do too.

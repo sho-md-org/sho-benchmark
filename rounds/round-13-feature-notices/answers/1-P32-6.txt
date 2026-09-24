@@ -1,0 +1,72 @@
+I pulled and read all 20 Harbor Clinics records across CRM and Drive, plus the QBR prep pages in Notion. Slack and Linear have **zero** Harbor records — that turns out to matter.
+
+**One caveat up front:** every Harbor record is a one-line stub (topic, attendees, and a generic "next: follow up on X"). There is no contract value, renewal date, stakeholder map, usage data, or NPS score anywhere in the tools. So I can't tell you the commercial state of the account — no source contains it. What I *can* reconstruct from the activity pattern is genuinely useful, and the pattern itself is the story. Brief below.
+
+---
+
+# Harbor Clinics — QBR Brief
+*Prepared 2026-09-24 · 20 records reviewed, 2026-04-23 → 2026-09-11*
+
+## Where things stand
+
+Steady contact cadence all year — roughly two touchpoints a month from late April through August. Then it stops. **The last customer-facing call logged is 2026-08-26** (CRM-39320 on offline, CRM-64035 on dashboards). That's a four-week gap going into your QBR.
+
+What happened in that gap is the part to pay attention to. Internal churn discussion continued *after* customer contact stopped:
+
+- **DRI-26772** (2026-09-06) — Leo Grant, Priya Shah — churn and sandbox
+- **DRI-17950** (2026-09-11) — **you and Tess Brown** — churn and dashboards
+
+These are the two most recent Harbor records of any kind. A third churn doc, **DRI-17076** (2026-07-20, Leo Grant + Jordan Blake), started the thread in July. All three are Drive docs, not CRM calls — this is internal concern about the account, not something Harbor has said to us. Pricing also came up three separate times earlier in the year (**DRI-51027** Apr 23, **DRI-40615** May 18, **DRI-55004** Jul 21).
+
+Read together: pricing pressure in spring → internal churn conversations from July → customer contact goes quiet in September. You were in the most recent one, so you likely know the substance the records don't capture.
+
+## Open commitments
+
+Seven "next steps" were logged and have no follow-up record anywhere. Two are repeats, which is the bigger problem:
+
+| Committed | Source | Owner | Status |
+|---|---|---|---|
+| Webhooks follow-up | CRM-97969 (Apr 25) | Omar Haddad | Open, 5 months |
+| **Analytics follow-up** | CRM-73374 (May 24) | Ana Petrova | Open — **re-promised Aug 26** |
+| Permissions UI | CRM-78984 (Jun 15) | Dana Ortiz | Open, 3 months |
+| SSO questions | CRM-34883 (Jul 15) | Sam Lee | Open, no SSO record exists |
+| Search follow-up | CRM-75336 (Jul 25) | Omar Haddad | Open |
+| **Notifications follow-up** | CRM-39320 (Aug 26) | Priya Shah | Open — **third notifications thread** |
+| Analytics follow-up | CRM-64035 (Aug 26) | Ana Petrova | Open, duplicates May ask |
+
+Analytics was promised in May, went nowhere, and was promised again in August. Notifications came up in May (CRM-73374), June (CRM-78984), and again in August. **Assume Harbor has noticed.**
+
+**The sharpest finding:** none of these have engineering work behind them. Linear has no Harbor tickets at all — no webhooks, no SSO, no permissions UI, no analytics. Whatever was committed on these calls, nothing is in flight. Don't promise dates on the QBR without checking with engineering first.
+
+## Risks
+
+1. **Churn is being discussed internally and you're in the room for it** — three docs since July, two in the last three weeks. This QBR is probably a save motion, not a routine check-in.
+2. **Credibility gap on follow-through.** Seven open items, two re-promised, zero engineering tickets. This is the risk you can actually control next week.
+3. **No single owner.** Nine different people own Harbor records — Omar Haddad, Ana Petrova, Jordan Blake, Tess Brown, Sam Lee, Dana Ortiz, Priya Shah, Leo Grant, you. You own exactly one CRM record (CRM-94239, latency, Jun 2). The account has no consistent voice, which plausibly explains why follow-ups die.
+4. **Four weeks of silence** right when internal concern peaked.
+5. **Pricing is unresolved.** Three discussions, no recorded outcome. If Harbor is cost-sensitive and also feeling ignored, those compound.
+6. **Blind spots:** no NPS value (DRI-67100 references NPS but records no score), no usage data, no support ticket history, no named Harbor contacts.
+
+## What to say
+
+**Open by owning the gap, before they raise it.** "I want to start with what we owe you." Naming the analytics and notifications slippage yourself is far stronger than being caught on it. It's the credible move given the record.
+
+**Commit to being the single point of contact.** The fragmentation is visible in our own records and almost certainly visible to them. Fixing it is concrete, free, and immediate.
+
+**Bring a dated, owned list for the seven open items — but verify first.** Confirm with engineering this week what's actually buildable before you walk in. An eighth unkept promise is worse than saying "I don't have a date yet, here's when I will."
+
+**Ask directly what's driving the pricing conversation.** It surfaced three times and never resolved. If it's a budget cycle or a competitive bid, you need to hear it now.
+
+**Listen for the churn signal rather than asserting the account is healthy.** Our own team has flagged risk three times since July; going in with a "great partnership" framing will land badly if they're already considering leaving.
+
+## Before the call
+
+- Ask **Tess Brown** what specifically prompted the Sep 11 churn discussion (DRI-17950) — you were there, the record captured nothing
+- Ask **Leo Grant** what's behind DRI-17076 and DRI-26772
+- Get contract value, renewal date, and Harbor stakeholder names from whoever holds them — not in any tool I can reach
+- Check with engineering on webhooks / SSO / permissions UI / analytics before committing to anything
+- Note **NOT-42571** and **NOT-52051** are "Qbr prep" pages owned by **Omar Haddad** — they don't mention Harbor, but worth confirming they aren't meant for this call
+
+---
+
+The largest risk here is the one the records can't show you: they capture topics but never outcomes, so a real objection or commercial signal could have been raised on any of these calls and left no trace. The two conversations with Tess Brown and Leo Grant are the fastest way to close that gap.

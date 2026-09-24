@@ -1,0 +1,51 @@
+## Harbor Clinics — QBR brief
+
+**A caveat up front:** the Harbor record set is thin. Nearly every entry is a one-line call log ("Discussed X. Owner Y. Next: follow up on Z") with no outcome, status, or numbers recorded. There's no renewal date, ARR, health score, or usage data in what I can see. So this brief is an accurate map of *what's been discussed and promised* — not a substantiated account of how the deployment is actually performing. You'll want to fill the performance half from your own knowledge or ask Sam Lee.
+
+### Where things stand
+
+Active threads over the last two quarters, by topic:
+
+| Theme | Records | Owner |
+|---|---|---|
+| Audit prep / exports | CRM-35862 (5/14), DRI-20995 (8/19) | Leo Grant |
+| Integrations & webhooks | CRM-97969 (4/25), CRM-75336 (7/25) | Omar Haddad |
+| Notifications / dashboards / analytics | CRM-73374 (5/24), CRM-78984 (6/15), CRM-64035 (8/26) | Ana Petrova |
+| Onboarding / offline | CRM-48825 (7/24), CRM-39320 (8/26) | Priya Shah |
+| Mobile app | CRM-49374 (9/21) — most recent touch | Sam Lee |
+| Latency | CRM-94239 (6/2) | you |
+| Sandbox | CRM-36695 (6/13) | Jordan Blake |
+| Hosting / SSO | CRM-34883 (7/15) | Sam Lee |
+| Roadmap | CRM-41255 (6/14) | Tess Brown |
+
+Two patterns worth naming on the call. First, **audit prep keeps recurring** — May, July (CRM-48825 next-step), and again in the August support-queue sync you attended (DRI-20995). It's been open roughly four months across three different owners. Second, **ownership is scattered** across seven people with no single thread carrying to closure; the next-steps chain loops back on itself (QBR prep → audit prep → exports; mobile app → QBR prep).
+
+### Open commitments
+
+**One commitment on record to Harbor Clinics:**
+
+- **Data retention controls, by Q1 2027** — made by Jordan Blake (AE), confirmed to Ines Park in the 5/15 sync (DRI-80868). Ines raised it herself, so it matters to them.
+
+This one is **safe to reaffirm**. No later change found, and it matches the public roadmap (NOT-20876: Data retention controls, Q1 2027).
+
+Also relevant from the public roadmap, if Harbor asks: Sandbox environments Q4 2026, Webhooks v2 / Bulk import v2 / SSO (SAML) Q1 2027, Offline mode Q2 2027. Those are published targets, not commitments made to Harbor.
+
+### Risks
+
+1. **Audit prep is the real risk.** It's the most-repeated unresolved topic, it's tied to a compliance need for a clinical customer, and it's bounced between Leo Grant, Priya Shah, and the support queue without a recorded resolution. If Harbor has an external audit deadline, this is where the QBR goes wrong.
+2. **No account continuity.** Seven owners, no consolidated status. Ines had to remind *us* of our own commitment in May (DRI-80868) — that's a signal they're tracking us more carefully than we're tracking ourselves.
+3. **Unverifiable health.** I can't see renewal timing or adoption, so I can't flag commercial risk either way. Treat that as unknown, not as "fine."
+
+### What to say
+
+- **Open with the commitment you can keep.** "Data retention controls are on track for Q1 2027, consistent with what Jordan confirmed to you in May." It's the strongest trust signal you have and it's verified.
+- **Name the audit thread before they do.** Ask directly what their audit timeline is and what specifically they still need. Then assign one owner and a date on the call. Don't promise a delivery mechanism you haven't confirmed (see caution below).
+- **Propose single-threading the account.** One owner, one status doc, monthly. This fixes the actual problem and reads as an upgrade rather than an apology.
+- **Ask, don't assert, on usage.** Since you have no data in front of you, make adoption a question for them — it's better positioning than guessing.
+- **Don't commit to dates for sandbox, webhooks, SSO, or offline.** Reference them as published roadmap targets only.
+
+### One caution
+
+If **audit log export** comes up on the Harbor call, don't put a date on it. There's a pending question on that feature's timing — check with the product owner before reaffirming anything about it, even though the existing commitment on it is to a different account.
+
+Separately, and outside this QBR: two of your own commitments elsewhere — **Advanced analytics to Lena Fox at Pinecrest Realty** (SLA-93532) and **Audit log export to Lena Fox / Granite Insurance** (SLA-77342) — are both flagged as needing product-owner confirmation before you reaffirm them. Worth clearing before your next calls with those accounts. (A third, SCIM for Umber Studios, sits with Jordan Blake.)

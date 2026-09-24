@@ -1,0 +1,43 @@
+## Aster Health QBR Brief — call week of 2026-09-28
+
+### Where things stand
+The account is active across a broad set of workstreams, but the record trail is thin — every touchpoint is a one-line log with no substance attached, so treat the topic list below as the agenda skeleton, not as findings.
+
+Recurring threads across the last two quarters:
+
+| Theme | Records | Latest |
+|---|---|---|
+| Sandbox | CRM-62644, CRM-64767, DRI-86962 | 2026-05-17 |
+| Exports | CRM-45213, CRM-76005 | 2026-04-18 |
+| Dashboards | CRM-57156, CRM-75476 | 2026-07-21 |
+| Support queue | CRM-88906, CRM-97035 | 2026-06-14 |
+| Audit prep | DRI-48323 | 2026-06-13 |
+| Latency | CRM-68765 | 2026-06-22 |
+| SSO questions | DRI-46065 | 2026-08-07 |
+| Pricing | DRI-53905 | 2026-09-10 |
+| Hosting | CRM-81799 | 2026-05-11 |
+| NPS | DRI-36735 | dated 2026-09-28 (upcoming/future-dated) |
+
+Ownership is scattered — Leo Grant, Sam Lee, Ana Petrova, Tess Brown, Dana Ortiz, Jordan Blake and you all own threads. Worth consolidating before the call so you aren't surprised by a topic someone else has been running.
+
+### Open commitments to Aster Health
+**Higher API rate limits — delivered.** Priya Shah (AE) committed to Omar Aziz that rate limits would be raised by October (DRI-86231, 2026-06-12). Crane shipped 2026-09-20 with limits raised for all paid plans (SLA-26281). This is the one firm, dated promise on the account, and it landed ahead of the deadline — say so plainly.
+
+No other commitments in the system are attached to Aster Health.
+
+### Risks
+1. **"Churn" is the recurring follow-up flag.** Five separate threads close with a churn follow-up — CRM-64767 (sandbox), CRM-76005 (exports), CRM-68765 (latency), DRI-46065 (SSO questions), DRI-48323 (audit prep). That's a pattern, not a one-off, and it spans the technical topics. Nothing in the records explains the underlying concern, which is itself the risk.
+2. **Pricing surfaced recently and quietly.** DRI-53905 (2026-09-10) pairs pricing with the support queue, and it's logged as an internal Dana Ortiz discussion rather than a customer conversation. Find out where that landed before the QBR — you don't want the customer raising pricing ahead of you.
+3. **Unresolved technical threads.** Latency (June), SSO (August), and audit prep (June) have no closing record. If any are still open, they'll come up.
+4. **Records are too thin to brief from.** Genuinely the biggest risk to this call: I can't tell you the health score, ARR, renewal date, or what the churn concern actually is, because those aren't in what I can see. Chase Leo Grant and Dana Ortiz for the substance before you walk in.
+
+### What to say
+- **Lead with the win:** "We committed to higher API rate limits by October — that shipped on September 20, with limits raised across all paid plans." Only firmly-backed claim you have.
+- **Ask Omar Aziz directly whether the new limits unblocked what they needed.** Delivery isn't value; confirm it landed.
+- **Name the churn signal rather than dancing around it:** ask what would make the next twelve months a clear yes. Their answer will tell you which of the five threads is the real one.
+- **Get ahead of pricing.** Ask whether commercial terms are on their mind for renewal rather than letting them open it.
+- **Close each open technical thread explicitly** — sandbox, exports, dashboards, latency, SSO, audit prep — with a named owner and a date. Six owners across ten topics is the likeliest source of a dropped ball.
+- **Don't promise anything new on the call.** Nothing else is committed to this account, and there's no roadmap backing I can see for a new ask.
+
+### One flag outside this account
+Three of your other open commitments carry a notice that an internal decision may have changed them — advanced analytics to Pinecrest Realty (SLA-93532, yours), audit log export to Granite Insurance (SLA-77342, yours), and SCIM provisioning to Umber Studios (SLA-12035, Jordan Blake's). None touch Aster Health, so they don't affect this brief — but check with the product owner before you reaffirm any of them on those accounts' calls.

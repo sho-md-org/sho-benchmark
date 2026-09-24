@@ -1,0 +1,16 @@
+I can't answer the "why" or "who" from what I have access to — and I want to be straight with you about that rather than reconstruct a plausible-sounding story.
+
+**What I can actually see:**
+
+- **NOT-20876** (Notion, public roadmap H1 2027, dated 2026-06-30) still lists **Advanced analytics: Q2 2027**. That's the most recent roadmap record available to me, and it doesn't show the feature as cut.
+- **SLA-93532** (Slack #cs, 2026-06-28) is your commitment: you told Lena Fox at Pinecrest Realty that Advanced analytics (Osprey) would land in the spring release so they could finish their rollout.
+- The rest of what's surfaced for this topic is account-side material — QBR and call notes (**CRM-86750** Lumen Labs, **CRM-14909** Orchid Hotels, **CRM-31062** Vantage Telecom, **CRM-11536** Tidewater Ports) and analytics docs (**DRI-76027**, **DRI-56604**, **DRI-50317**, **DRI-78883**). None of these are planning decisions and none contain reasoning or a decision-maker.
+
+**What I can't do:** there is no record in my access that documents a decision to cut Advanced analytics, its rationale, or who made the call. I'm not going to characterize planning decisions I can't read — anything I said about the reasoning or the decision-maker would be invention.
+
+**What I'd do next:** take this to the **product owner for Advanced analytics** directly. Two things to ask in the same message:
+
+1. What's the current status of Advanced analytics for 2027, and if it moved, what's the reasoning and who signed off?
+2. **Does your Pinecrest commitment still hold?** Before you reaffirm the spring-release timeline to Lena Fox — or tell her it's changed — get the product owner to confirm. Given you've already put a date in front of the customer for a rollout they're sequencing against, that confirmation is worth getting before your next touchpoint with her, not after.
+
+One flag while you're there: you have a second commitment on **Audit log export** to Lena Fox at Granite Insurance for Q1 2027 (**SLA-77342**). Worth confirming that one in the same conversation rather than making two trips.

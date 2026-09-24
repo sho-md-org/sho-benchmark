@@ -1,0 +1,22 @@
+I can't answer the "why" or "who" — and I want to be precise about why.
+
+**What I can see**
+
+- The current public roadmap (`NOT-20876`, Notion, 2026-06-30) still lists **Advanced analytics: Q2 2027**. Nothing in the records available to me shows it removed or rescheduled.
+- No decision record, meeting note, or planning doc explaining a cut is in my access.
+
+**The flag**
+
+Sho flagged Advanced analytics: there is material about this feature that I don't have access to, and it may or may not affect the roadmap position above. I can't tell you whether a cut decision exists, what it says, or who made it — I genuinely don't have it, and I shouldn't infer from the absence either way. **The product owner is the person to ask**, and they can give you the actual reasoning and decision-maker, which is what you're after.
+
+**Why this matters more than a research question for you**
+
+You have a live commitment on this feature: per `SLA-93532` (Slack #cs, 2026-06-28), you told **Lena Fox at Pinecrest Realty** that Advanced analytics (Osprey) would land in the **spring release** so they can finish their rollout. That promise is inside the flagged zone. Before you reconfirm that date to Lena — or send any "here's what's happening with analytics" update — check with the product owner that it still holds.
+
+Separately, your **Audit log export** commitment to Lena Fox / Granite Insurance for Q1 2027 (`SLA-77342`) carries the same flag. Same advice: confirm with the product owner before reaffirming.
+
+**Suggested ask to the product owner**
+
+> Two things on the 2027 plan: (1) Is Advanced analytics still on for Q2 2027? I have a commitment to Pinecrest Realty for the spring release and I've heard it may have been cut — if so I need the reasoning and who decided so I can brief them properly. (2) Same question on Audit log export for Q1 2027 (Granite Insurance).
+
+If you tell me who the product owner is, I can draft that message in full.

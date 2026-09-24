@@ -1,0 +1,21 @@
+## Short answer: I can't confirm it was cut — and the evidence points the other way.
+
+I searched Notion, Slack, Linear, Drive, and the CRM for a decision to cut Advanced analytics. **I found no such decision, no reasoning, and no decision-maker.** I don't want to invent a rationale for a decision I can't find a record of.
+
+**What the records actually say:**
+
+- **NOT-20876 "Public roadmap H1 2027"** (2026-06-30) — the only substantive roadmap document in the system — still lists **`Advanced analytics: Q2 2027`**, alongside EU data residency (Q1), SSO/SAML (Q1), Custom roles (Q2), Offline mode (Q2), and others. It is on the plan, not off it.
+- No newer roadmap doc supersedes it. **NOT-85086** (2026-09-25, owner: Maya Chen) is titled "Roadmap" but contains only a one-line placeholder — no feature list, no changes.
+- **Linear returned zero results** for "advanced analytics," "analytics 2027," and "roadmap" — so there's no ticket recording a descope, deferral, or cancellation.
+- The Slack roadmap threads (**SLA-15166**, **SLA-89041** Tess Brown, **SLA-48472** Sam Lee, **SLA-95150**) and analytics threads (**SLA-91143**, **SLA-60376** Ana Petrova, **SLA-64584**, **SLA-25394**) are all one-line status pings with no content about cutting anything.
+- The Notion analytics pages (**NOT-75315** Omar Haddad, **NOT-25881** Priya Shah, **NOT-74204** Ana Petrova, **NOT-31499** Omar Haddad) are placeholder notes with no scope or status detail.
+- Drive and CRM hits are all customer-specific call/meeting notes (e.g. **DRI-57993** Northstar Pharma, **DRI-95069** Juniper Schools, **CRM-78539** Lumen Labs) — customer conversations about analytics, not internal planning decisions.
+
+**What this likely means:** either the cut happened somewhere these tools don't index (an exec meeting, email, or a verbal decision), or the premise is mistaken — possibly a confusion with a different feature, or with the Q2 vs. Q1 timing, which could read as "not in the first half of the plan."
+
+**Two flags worth your attention as CS:**
+
+1. Advanced analytics sits on the **public** roadmap for Q2 2027. If it genuinely has been cut internally, that's a customer-communication problem that needs fixing fast — several accounts have active analytics threads.
+2. You own **NOT-85086**, the most recent "Roadmap" page, and it's empty. If a revised 2027 plan exists, that's the natural place for it.
+
+**Suggested next step:** ask whoever told you it was cut for their source, or check directly with Tess Brown / Sam Lee, who post most often in the roadmap channels. If you can point me at a specific meeting or doc, I'll pull the reasoning from there.

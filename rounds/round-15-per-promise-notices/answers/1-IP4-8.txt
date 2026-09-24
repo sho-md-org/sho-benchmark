@@ -1,0 +1,33 @@
+## Answer: Cobalt Retail's is the one at risk
+
+Both promises land on the same quarter, so the risk isn't the date — it's the **scope wording**.
+
+### The two promises side by side
+
+| | **Keystone Energy** | **Cobalt Retail** |
+|---|---|---|
+| Source | `DRI-34564` (Keystone Energy sync, 2026-08-03) | `CRM-38600` (Cobalt Retail QBR notes, 2026-07-24) |
+| What was promised | "Audit log export by Q1 2027 with streaming into Splunk" | "you'll have it by Q1 2027 as a CSV export, you have my word" |
+| Who promised | Raised by Nia Cole (customer), **confirmed by Jordan Blake (AE)** | **Maya Chen (you)**, personally |
+| Customer posture | Customer proactively reminding us | "Customer is planning around it" |
+
+### What the roadmap actually commits to
+
+`NOT-20876` (Public roadmap H1 2027, 2026-06-30) lists:
+
+> **Audit log export incl. SIEM streaming: Q1 2027**
+
+- **Keystone is covered.** Their ask — audit log export *plus Splunk streaming* — maps almost word-for-word onto the roadmap line. Splunk is a SIEM, and SIEM streaming is explicitly in the Q1 2027 scope.
+- **Cobalt has a scope gap.** Maya promised a **CSV export** specifically. The roadmap commits to an audit log export oriented around SIEM streaming; nothing in the roadmap or any other record confirms a CSV file deliverable. If the Q1 2027 ship is a streaming/SIEM integration, Keystone gets exactly what they were told and Cobalt gets something that technically ships on time but isn't the artifact Sam Ortiz is planning around.
+
+### Why Cobalt's exposure is worse beyond the scope gap
+1. **It's your personal word**, not an AE's roadmap restatement — harder to reframe later.
+2. **The customer is building plans on it**, so a format mismatch surfaces as a broken promise, not a spec detail.
+3. **Cobalt already has a promise-comparison pattern**: `CRM-15486` (2026-08-06) records Ada Moss noting their incumbent vendor promised sandbox environments and we did not. This account keeps score.
+4. The "(Lark)" qualifier in `CRM-38600` appears nowhere else in CRM, Notion, Slack, or Drive — so whatever it scopes is undocumented internally.
+
+### Recommended next step
+Get written confirmation from product on whether the Q1 2027 audit log export includes a plain CSV download, or only SIEM streaming. If it's streaming-only, correct the expectation with Sam Ortiz now — nine months of Cobalt planning around a CSV is the actual risk, not the ship date.
+
+### Caveats on the evidence
+The two documents above and `NOT-20876` are the only substantive records. Everything else I checked is a one-line stub with no detail: the Slack `Audit prep` threads (`SLA-37823` 2026-09-23 — "exports next week"; `SLA-13802`, `SLA-12553`, `SLA-83737`, `SLA-77881`), the Notion `Audit prep`/`Roadmap`/`Exports` pages (`NOT-45379`, `NOT-91719`, `NOT-67486`, `NOT-58358`), and the Drive notes (`DRI-84961`, `DRI-48005`, `DRI-85107`, `DRI-41266`). **Linear returned zero results for every export/audit query**, so I have no engineering-side signal on whether Q1 2027 is still tracking — that's an unverified assumption underneath both promises.

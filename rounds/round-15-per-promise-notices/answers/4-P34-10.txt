@@ -1,0 +1,63 @@
+Pulled the account context. Here's the brief — plus one caveat up front: **the Aster Health records in the system are unusually thin** (most are one-line call logs with topic + next step, no outcomes, no numbers). So the win and the commitment below are solid; the risk section is pattern-inference from topic recurrence, not documented escalations. I'd verify the renewal date and ARR from the account record before you walk in.
+
+---
+
+# Aster Health — QBR Brief
+**Call: week of 2026-09-29 · Prepared 2026-09-24**
+
+## Where things stand
+
+**Your headline: the API rate limit commitment landed, on time.**
+- Priya Shah (AE) confirmed to Omar Aziz on 2026-06-12 that higher API rate limits would ship by October (`DRI-86231`) — Omar raised it himself, so it matters to them.
+- Crane went live 2026-09-20: rate limits raised for all paid plans (`SLA-26281`). **Shipped, ahead of the October date.** No caveats on this one — you can state it flatly.
+
+**Engagement is steady but scattered.** ~14 touchpoints since April across sandbox, exports, hosting, dashboards, support queue, latency, SSO, pricing, and audit prep. Ownership rotated constantly — Maya, Leo Grant, Sam Lee, Tess Brown, Ana Petrova, Jordan Blake, Dana Ortiz. No single thread owner is visible in the record.
+
+**Recurring themes, by volume:** support queue (Apr 28, Jun 14, and again in the Sep 10 pricing discussion), sandbox (Apr 12, May 10, May 17), dashboards (Apr 19, Jul 21), exports (Apr 18 ×2), audit prep (Jun 13, and on the NPS agenda).
+
+## Open commitments
+
+| Commitment | To | Owner | Due | Status |
+|---|---|---|---|---|
+| Higher API rate limits | Omar Aziz | Priya Shah (AE) | October 2026 | ✅ **Shipped** 2026-09-20 (`SLA-26281`) |
+
+That is the only tracked commitment to Aster Health. Nothing else is recorded as promised to this account — which is itself worth noting: if Omar or Ana raises something they believe was committed, it isn't captured anywhere, so **don't confirm it live**. Take it away and check.
+
+## Risks
+
+1. **Churn keeps appearing as the follow-up.** Four separate records list churn as the next item: audit prep (`DRI-48323`), sandbox (`CRM-64767`), latency (`CRM-68765`), and SSO questions (`DRI-46065`, Aug 7). That's a thread running from June through August that no record shows being closed.
+2. **Pricing + support queue in the same conversation, two weeks ago.** `DRI-53905` (Sep 10, Dana Ortiz) pairs pricing with the support queue. Pricing scrutiny alongside service complaints is the classic pre-renewal squeeze — assume they're building a case.
+3. **Support queue is unresolved across five months.** Raised April, again in June, and still live in September. Nothing in the record shows it being fixed.
+4. **Audit prep is open and customer-facing.** `DRI-48323` (Jun 13) and it's on the NPS agenda for Sep 28. If they're under an external audit, this becomes a hard deadline for you, not a nice-to-have.
+5. **No continuity.** Seven different internal owners in six months. From their side this likely feels like re-explaining themselves every call.
+6. **Two different Omars in the file** — Omar Aziz (`DRI-86231`, the rate-limits stakeholder) and Omar Haddad (`DRI-70983`, `DRI-36735`). Confirm who's on the call; getting this wrong in the room is costly.
+
+**Timing note:** `DRI-36735` (NPS + audit prep, with Omar Haddad and Ana Petrova) is dated Sep 28 — that's *before* your QBR. Get the readout from that session first; it likely sets the tone.
+
+## What to say
+
+**Open with the win, specifically.** "Omar raised rate limits with us in June, we committed to October, and it went live September 20th for all paid plans." Name the date and the commitment. This is your credibility deposit — spend it before the hard part.
+
+**Then go to the support queue before they do.** You've discussed it three times without visible resolution. Bringing it up yourself is the difference between accountability and being cornered. Come with a concrete number — ticket volume, time-to-resolution trend — which you'll need to pull from support, it isn't in these records.
+
+**Ask directly about audit prep.** "Where are you in the audit, and what's the deadline?" This surfaces whether it's a real date and lets you commit resource to it deliberately rather than reactively.
+
+**Name the continuity problem yourself and fix it.** Propose a single named owner for the account. Cheap to offer, addresses a real irritant, and it reads as a structural investment rather than an apology.
+
+**On pricing: listen, don't counter.** Dana's Sep 10 conversation paired pricing with support. Let them frame it; take it back to Priya rather than negotiating in the room.
+
+**Guardrail:** be careful not to promise anything new on dashboards, exports, sandbox, or SSO. Those are all recurring discussion topics with no commitment attached — keep it that way until you've checked roadmap status.
+
+---
+
+## Separate flag — not for this call
+
+Three of your other accounts' commitments came back flagged, meaning a decision I can't see may affect them. Two are yours:
+
+- **Advanced analytics → Lena Fox, Pinecrest Realty**, promised for the spring release (`SLA-93532`)
+- **Audit log export → Lena Fox, Granite Insurance**, promised by Q1 2027 (`SLA-77342`)
+- **SCIM provisioning → Kai Berg, Umber Studios**, Q1 2027, Jordan Blake's (`SLA-12035`)
+
+**Check with the product owner before you reaffirm any of these** to the customer. None touch Aster Health, so they won't come up next week — but the first two are your name on the promise, and Lena Fox appears on both. Worth clearing before your next call with either account.
+
+**Want me to draft the QBR deck or a pre-call email to Omar?** I'd suggest waiting for the Sep 28 NPS readout first.

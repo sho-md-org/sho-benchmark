@@ -1,0 +1,27 @@
+## Short answer: I can't confirm that — and nothing I can see says the IdP-initiated piece changed
+
+I don't have a record of any change to SSO, IdP-initiated or otherwise. The most recent roadmap I can see still lists it as one combined item:
+
+- **NOT-20876** (Public roadmap H1 2027, 2026-06-30): "SSO (SAML), SP- and IdP-initiated: Q1 2027" — one line, both flows, no split.
+
+So there's no visible evidence of the scenario your question implies (IdP-initiated being carved out, slipped, or descoped while SP-initiated holds). That's not the same as me being able to tell you nothing changed — it means I have no record either way, and I'd be guessing if I answered yes or no.
+
+## Why this matters more than usual
+
+The SSO commitments on file are specific about IdP-initiated, so if it *did* move, three accounts are exposed:
+
+| Record | Account | What was promised | Who |
+|---|---|---|---|
+| **CRM-31062** (2026-06-08) | Vantage Telecom (Ines Park) | SSO by Q1 2027 "including IdP-initiated login from Okta, you have my word" — customer planning around it | Priya Shah (AE) |
+| **CRM-62434** (2026-08-17) | Umber Studios (Ruth Kim) | SSO by March, with IdP-initiated sign-in — **logged as a renewal condition** | Priya Shah (AE) |
+| **DRI-36664** (2026-07-09) | Quarry Mining (Tom Hale) | SSO by Q1 2027, confirmed on the call (no IdP-specific wording) | Leo Grant (AE) |
+
+Two of those name IdP-initiated explicitly, and Umber Studios has it tied to renewal — so a change to just that sub-feature wouldn't be a cosmetic scope note, it would be a renewal conversation.
+
+## What I'd do
+
+Take the question to the SSO product owner directly, and ask it the narrow way you just asked me: *is SP- and IdP-initiated still shipping together in Q1 2027, or has the IdP-initiated flow been separated out?* Until you have that in writing, I'd avoid reaffirming the IdP-initiated detail to Vantage Telecom or Umber Studios, since both were promised that specific capability by name.
+
+Two other flags while you're there, unrelated to SSO but both yours: your **Advanced analytics / Osprey** commitment to Lena Fox at Pinecrest Realty (SLA-93532) and your **Audit log export** commitment to Lena Fox / Granite Insurance (SLA-77342) both have open questions I can't resolve from what I can see — check with the product owner before reaffirming either. Same for **SCIM provisioning** to Kai Berg at Umber Studios (SLA-12035), which is Jordan Blake's commitment but lands on the same account as the SSO renewal condition. **Offline mode** for Tom Hale at Meridian Travel (SLA-24221) shows no later change.
+
+One thing worth asking yourself: where did you hear that SSO changed? If it came from a channel I don't have access to, that source is ahead of my records and is the better thing to trace back.

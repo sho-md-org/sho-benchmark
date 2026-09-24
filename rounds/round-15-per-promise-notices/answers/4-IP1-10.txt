@@ -1,0 +1,30 @@
+## Short answer: none of your tracked promises are on SSO itself
+
+I checked every SSO record you touch and every commitment attributed to you. There's no promise from you on SSO.
+
+**The SSO records are conversations, not commitments:**
+
+| Record | What it is |
+|---|---|
+| SLA-21939 (2026-05-01) | Your Slack update on SSO questions |
+| NOT-29833 / NOT-58902 (Apr 2026) | Your Notion notes, no dated commitment |
+| DRI-79562 (Norrland AB, 2026-04-05) | Discussion with Priya Shah |
+| DRI-18519 (Harbor Clinics, 2026-08-08) | Discussion with Ana Petrova |
+| CRM-74174 (Evergreen Bank, 2026-08-22) | Call, next step is audit prep follow-up |
+
+None of these contain a dated deliverable, so there's nothing on SSO to be affected.
+
+## The adjacent one worth knowing about
+
+**SCIM provisioning — Umber Studios, Q1 2027 (SLA-12035).** This is the identity/SSO-adjacent commitment, and it's flagged: a decision I can't see may or may not change it. It was made by **Jordan Blake (AE)**, not you — so it's Jordan's to reaffirm, though it may land on you if Umber Studios treats SCIM as part of their SSO rollout. Before anyone confirms that date to Kai Berg, check with the product owner.
+
+## Your own flagged promises (not SSO)
+
+Both are flagged for the same reason, and I'd treat them as your real action items:
+
+- **Audit log export** — Lena Fox / Granite Insurance, Q1 2027 including SIEM streaming (SLA-77342)
+- **Advanced analytics (Osprey)** — Lena Fox / Pinecrest Realty, spring release (SLA-93532)
+
+For all three flagged items, I can't tell you what changed or whether it actually affects the dates — only that something may have. Don't reaffirm these dates to customers until the product owner confirms they still hold.
+
+One caution: both of your flagged promises are to the same person, Lena Fox, across two accounts. If you're opening a conversation with the product owner, bundle them so you don't have to go back to her twice.

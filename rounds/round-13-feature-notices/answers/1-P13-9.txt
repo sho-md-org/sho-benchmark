@@ -1,0 +1,29 @@
+## What the records show
+
+**The promise is real and documented.** DRI-36664 (Quarry Mining sync, 2026-07-09): Tom Hale reminded us we'd told them SSO (SAML) by Q1 2027, and Leo Grant (AE) confirmed it on the call.
+
+**The roadmap still backs it.** NOT-20876 (Public roadmap H1 2027, 2026-06-30) lists "SSO (SAML), SP- and IdP-initiated: Q1 2027." I found no later roadmap doc superseding it — the other Notion "Roadmap" entries (NOT-64137, NOT-85086, NOT-67486, NOT-58852) are stubs with no dates in them.
+
+**The only announced slip is a different feature.** SLA-17908 (#general, 2026-09-19) moves Sandbox environments to Q2 2027 and asks AEs to notify affected customers. SSO is not mentioned. Quarry has no sandbox expectation in their records, so this doesn't affect them.
+
+⚠️ **One caveat before you send:** Linear returns zero results for SSO, SAML, single sign-on, or authentication. I can confirm what we published and promised, but I cannot verify engineering is actually tracking it. Worth a ping to the SSO owner (Tess Brown owns the SSO notes, NOT-20443) before this goes out — Quarry is asking because they're planning around it, and a second confirmation you can't back is expensive.
+
+## Draft reply
+
+> Subject: Re: SSO (SAML) timing
+>
+> Hi Tom,
+>
+> Yes — SSO (SAML) is still on track for Q1 2027, covering both SP-initiated and IdP-initiated flows. That's unchanged from what we committed to on our July 9 call and from our published H1 2027 roadmap.
+>
+> Two things that may be useful as you plan the rollout:
+>
+> - SCIM provisioning is also targeted for Q1 2027, so you'd be able to pair automated user provisioning with SSO rather than sequencing them.
+> - I'd like to get you time with our product owner for SSO in the next few weeks to walk through your IdP setup and confirm the implementation fits how your team is configured. Better to surface any gaps now than during rollout.
+>
+> Would a 30-minute session in the next two weeks work? Happy to bring the relevant people from our side.
+>
+> Best,
+> Leo
+
+**Note on tone:** I kept this to confirming the date without adding new commitments or a specific ship week. If you get a soft answer from product, swap the opener for "still on track, and I'll flag it immediately if that changes" rather than restating the date flat — Quarry has already been told once, and a third confirmation followed by a slip is the version that damages the account.

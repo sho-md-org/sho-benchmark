@@ -1,0 +1,56 @@
+## Aster Health — QBR Brief
+
+**Caveat up front:** the Aster Health records in CRM/Drive are one-line call logs — topic, owner, next-step keyword — with no outcomes, metrics, or renewal date recorded. So this brief is an accurate map of *what's been discussed and by whom*, but I can't give you usage numbers, ARR, or NPS scores because they aren't in the system. Worth pulling those separately before the call.
+
+### 1. Where things stand
+
+Active threads over the last six months, by theme:
+
+| Theme | Records | Owner(s) |
+|---|---|---|
+| Sandbox | DRI-86962 (4/12), CRM-62644 (5/10), CRM-64767 (5/17) | Maya, Ana Petrova, Dana Ortiz |
+| Exports | CRM-45213, CRM-76005 (both 4/18) | Leo Grant |
+| Dashboards | CRM-57156 (4/19), CRM-75476 (7/21) | Ana Petrova, Sam Lee |
+| Rate limits | DRI-69821 (4/24), CRM-28889 (7/5) | Tess Brown, Sam Lee |
+| Hosting | CRM-81799 (5/11) | Tess Brown |
+| Latency | CRM-68765 (6/22) | Leo Grant |
+| Audit prep | DRI-48323 (6/13) | Dana Ortiz, Jordan Blake |
+| SSO | DRI-46065 (8/7) | Jordan Blake |
+| QBR prep | DRI-70983 (5/11), CRM-70994 (6/3) | Maya |
+
+Main customer-side contacts appearing in notes: **Omar Haddad** and **Ana Petrova** (DRI-70983, DRI-36735), **Omar Aziz** on the API/commercial track (DRI-86231). Priya Shah is the AE.
+
+**Also:** DRI-36735 is an NPS + audit-prep session with Omar Haddad and Ana Petrova dated **2026-09-28** — that's four days out, i.e. likely *before* your QBR. Confirm whether that's happening and fold the NPS result into your deck rather than presenting stale sentiment.
+
+### 2. Open commitments
+
+**Higher API rate limits — by October, to Omar Aziz. Status: shipped. ✅**
+
+This is the one hard commitment on the account. Priya Shah made it; Omar Aziz held us to it explicitly in the 6/12 sync (DRI-86231) and Priya reconfirmed. It landed: Crane went live 2026-09-20, raising API rate limits for all paid plans (SLA-26281). You can state this as delivered, on time, without qualification. Lead with it.
+
+No other Aster Health commitments appear in the record.
+
+### 3. Risks
+
+- **Churn is the recurring internal follow-up.** Five separate records close with churn as the next step: CRM-76005 (4/18), CRM-64767 (5/17), CRM-68765 (6/22), DRI-48323 (6/13), DRI-46065 (8/7). That spans exports, sandbox, latency, audit prep and SSO — so it's not one broken thing, it's a persistent internal concern that keeps resurfacing across unrelated conversations. I'd treat this as the real signal in the file even though no record states a reason. Find out from Priya what's driving it before the call.
+- **Latency (CRM-68765, 6/22)** — raised once, then no follow-up record. If it was never resolved, it's the kind of thing that shows up in a QBR unprompted. Check before you're surprised.
+- **Audit prep + SSO (DRI-48323, DRI-46065)** — both involve Jordan Blake and both point at churn. Suggests a compliance or security review in progress on their side. Those reviews often gate renewal.
+- **Ownership is scattered.** Nine different internal owners across ~15 touchpoints, and no single thread has continuity. Aster Health has likely noticed.
+
+### 4. What to say
+
+1. **Open on the delivery.** "We committed to higher API rate limits by October — that shipped on September 20th." Concrete, on-time, and it's what Omar Aziz personally asked about.
+2. **Name the scattered-ownership problem before they do,** and propose yourself as the single thread going forward. It converts a weakness into a commitment that costs nothing.
+3. **Ask directly about latency and the audit/SSO review.** Open questions, not claims — you don't have resolution status for either, and guessing is worse than asking.
+4. **Don't promise anything new in the room.** Nothing else on this account has a dated commitment attached, and that's a clean position to hold.
+
+### 5. Separate heads-up — not Aster Health
+
+Two commitments in **your** name on other accounts need checking before you reaffirm them anywhere:
+
+- **Advanced analytics (Osprey), spring release** → Lena Fox, Pinecrest Realty (SLA-93532)
+- **Audit log export, Q1 2027** → Lena Fox, Granite Insurance (SLA-77342)
+
+For both, there's an internal decision I don't have visibility into that may affect whether the promise still holds. I can't tell you what it is or which way it goes. **Check with the product owner before restating either date to those customers.** Same flag applies to Jordan Blake's SCIM provisioning commitment to Umber Studios (SLA-12035) — worth passing along to Jordan.
+
+Want me to draft the QBR deck outline, or the note to Priya asking about the churn signal?

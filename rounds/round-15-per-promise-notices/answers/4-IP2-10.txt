@@ -1,0 +1,17 @@
+Short answer: I can't find anything showing SSO changed at all — so I can't confirm that it's the IdP-initiated part.
+
+**What I can see:**
+
+- The most recent roadmap I have, **NOT-20876** (public roadmap H1 2027, dated 2026-06-30), still lists **"SSO (SAML), SP- and IdP-initiated: Q1 2027"** — both halves, same date. No split between them.
+- The SSO records that exist are all thin stubs with no substance: **NOT-29833** (2026-04-01), **SLA-21939** (2026-05-01), **SLA-95210** (2026-05-26), **NOT-29159** (2026-07-22), **NOT-40327** (2026-08-05). Each is a one-line "notes on SSO questions" / "update, offline next week" placeholder. None of them describes a scope decision.
+- Nothing in my context flags SSO as affected by a decision I can't see.
+
+**Worth knowing, given the question:** the commitments that specifically name IdP-initiated aren't yours — they're Priya Shah's:
+- **CRM-31062** (Vantage Telecom, 2026-06-08): "by Q1 2027, including IdP-initiated login from Okta, you have my word."
+- **CRM-62434** (Umber Studios, 2026-08-17): SSO by March *with IdP-initiated sign-in*, logged as a renewal condition.
+
+Two others are date-only, no scope detail: **CRM-74447** (Riverton City, Tess Brown, "early next year") and **DRI-36664** (Quarry Mining, Leo Grant confirmed Q1 2027).
+
+**Suggested next step:** if you heard SSO scope moved, that came from somewhere I can't see — go to the SSO product owner and ask directly whether IdP-initiated is still in the Q1 2027 cut. Loop in Priya, since her two accounts have IdP-initiated named explicitly and Umber Studios has it as a renewal condition. Don't relay a scope change to any customer until the product owner confirms it.
+
+Separately, three of your own commitments — **Advanced analytics** (SLA-93532, Pinecrest Realty), **Audit log export** (SLA-77342, Granite Insurance), and Jordan Blake's **SCIM provisioning** (SLA-12035, Umber Studios) — are flagged as possibly affected by a decision I can't see. Unrelated to SSO, but check with the product owner before reaffirming any of those. Your **Offline mode** commitment (SLA-24221) is clean.

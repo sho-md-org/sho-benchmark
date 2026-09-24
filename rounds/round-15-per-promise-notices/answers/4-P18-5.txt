@@ -1,0 +1,41 @@
+## Cobalt Retail — QBR brief
+
+**One thing to do before the call:** confirm the Audit log export timeline with the product owner. Details in Risks below.
+
+### Where things stand
+The Cobalt record is mostly routine call logs — light on substance, so don't expect the CRM to carry the meeting for you.
+
+| Date | Topic | Owner | Record |
+|---|---|---|---|
+| 2026-08-11 | Billing + audit prep (Ana Petrova, Omar Haddad) | — | DRI-75222 |
+| 2026-08-04 | QBR prep | Jordan Blake | CRM-12694 |
+| 2026-08-01 | Notifications | Omar Haddad | CRM-35990 |
+| 2026-07-24 | **QBR — audit log export commitment** | Maya | CRM-38600 |
+| 2026-07-23 | Reporting | Priya Shah | CRM-94849 |
+| 2026-06-23 | Pricing | Priya Shah | CRM-87224 |
+| 2026-06-15 / 04-27 | Onboarding | Omar Haddad / Priya Shah | CRM-16603, CRM-49779 |
+| 2026-06-12 | Audit prep | Omar Haddad | CRM-24323 |
+| 2026-05-26 | Dashboards | Tess Brown | CRM-24697 |
+| 2026-04-20 | Roadmap | Maya | CRM-70221 |
+
+Recurring threads: audit prep (running since April), billing, pricing, onboarding. Jordan Blake owns QBR prep and the current roadmap notes (NOT-77133).
+
+### Open commitment
+**Audit log export → Sam Ortiz, by Q1 2027** (CRM-38600, 2026-07-24). Your exact words: *"you'll have it by Q1 2027 as a CSV export, you have my word."* Sam is planning around it. Note the scope you promised was **CSV export** — narrower than the public roadmap line (NOT-20876), which says "Audit log export incl. SIEM streaming: Q1 2027." Keep to CSV so Sam doesn't leave hearing SIEM streaming.
+
+No other open commitments to this account.
+
+### Risks
+1. **Don't reaffirm the Q1 2027 date until you've checked.** Sho flags that a decision I can't see may affect the Audit log export commitment you made on the same feature to Lena Fox at Granite Insurance (SLA-77342). Cobalt's own record shows no later change, but it's the same feature — ask the product owner whether the date still holds before you restate it to Sam. I can't tell you what that decision is or whether it changes anything. If you can't get an answer before the call, say the team is confirming sequencing and you'll come back with a date in writing — don't re-give your word.
+2. **Name collision.** A Sam Ortiz also asked about Audit log export at Kestrel Foods (CRM-25829), where it's explicitly *roadmap, no commitment*. Don't let the two blur — Cobalt has a promise, Kestrel doesn't.
+3. **Thin discovery.** Ten touchpoints and almost no recorded outcomes on billing, pricing, or onboarding. Going in cold on renewal posture is a real risk; ask Jordan Blake and Omar Haddad for the unwritten state.
+4. **Audit prep has been open five months** (CRM-24323 → DRI-75222 → SLA-13802, 2026-09-19) with no recorded close. Likely Sam's real driver behind the export ask.
+
+### What to say
+- **Open:** "Audit prep has been the through-line since spring — let's start there and make sure we're aligned on what you need for the audit itself, not just the export."
+- **On the export (if the product owner confirms):** "Q1 2027, CSV export, as I committed in July." Then put it in writing same day.
+- **On the export (if unconfirmed):** "I want to give you a date I can stand behind, so I'm confirming sequencing with product this week and you'll have it in writing by [date]." Acknowledge you committed in July — don't let it look like a quiet retreat.
+- **Scope check:** ask whether CSV actually satisfies their auditor, or whether they're assuming SIEM streaming. Better to find out now.
+- **Close:** get Sam's audit date and work backwards from it.
+
+Nothing here is outward-facing yet — say the word and I'll draft the note to the product owner and the follow-up email to Sam.

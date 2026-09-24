@@ -1,0 +1,18 @@
+I searched Slack, Notion, Linear, Drive, and the CRM. I want to flag a premise problem before answering.
+
+**There's no record of a decision to change Advanced analytics.** Advanced analytics appears in exactly two substantive places, and neither is a change:
+
+- **NOT-20876** (Public roadmap H1 2027, 2026-06-30) — lists `Advanced analytics: Q2 2027`. No owner, no decision history, no prior date to compare against.
+- **SLA-93532** (#cs: Pinecrest Realty, 2026-06-28) — you told Lena Fox at Pinecrest that Advanced analytics (internal codename **Osprey**) would land in the spring release so they could finish their rollout.
+
+Those two are consistent with each other — Q2 2027 *is* the spring release — so as of the last record, nothing about Advanced analytics has moved.
+
+**The one roadmap change that did happen is a different feature.** SLA-17908 (#general, 2026-09-19) announces that **Sandbox environments (codename Rail)** slipped from Q4 2026 to Q2 2027, with a request to update any customers expecting them this year. That's the only slip announcement in the workspace, it's recent, and it's the likeliest thing being conflated with Advanced analytics — but it isn't the same feature, and the announcement is unattributed anyway (no named decider).
+
+A few things worth knowing about the evidence quality:
+
+- "Osprey" appears exactly **once** across all four tools — only in your own Slack message. There is no Linear ticket, spec, or Notion page for it, so there's no engineering-side trail that could record a scope or date decision.
+- Linear returns **zero results** for "analytics" and "Osprey" entirely. The dozens of records titled "Analytics" in Slack/Notion/CRM (e.g. SLA-60376, NOT-75315, CRM-70722) are one-line status stubs — "update on analytics; NPS next week" — with no decision content.
+- The roadmap doc NOT-20876 has no revision history exposed, so I can't tell whether Q2 2027 replaced an earlier date.
+
+**What I'd suggest:** if you can tell me what change you heard about — a date slip, a move to a different pricing tier, a scope cut — I can search against that specific shape. If what you're actually chasing is the Pinecrest commitment, the live risk there is that Lena Fox is expecting spring and the roadmap still says Q2 2027, so that promise is currently intact and no outreach is needed. And if someone mentioned "the slip" to you verbally, they most likely meant Rail/Sandbox environments per SLA-17908, which is worth checking against your accounts.

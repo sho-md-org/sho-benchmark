@@ -1,0 +1,50 @@
+## Cobalt Retail — QBR brief (call next week)
+
+**One flag up front:** your Q1 2027 audit log export promise has a notice on it — there's a decision I can't see that may or may not affect it. **Check with the product owner before you reaffirm that date on the call.** Everything else below is clean.
+
+### Where things stand
+
+Account contact: **Sam Ortiz**. Internal owners rotate across records — Jordan Blake, Priya Shah, Omar Haddad all appear as call owners; worth confirming who's the current AE before the call.
+
+The record trail is thin (most entries are one-line call logs with no substance), but the recurring threads over the last six months are:
+
+| Thread | Latest touch |
+|---|---|
+| Audit prep — the dominant theme, referenced as "next step" in 4+ records | DRI-75222 (2026-08-11), CRM-24323 (2026-06-12) |
+| Billing | DRI-75222 (2026-08-11) — Ana Petrova, Omar Haddad |
+| Notifications | CRM-35990 (2026-08-01) |
+| Reporting | CRM-94849 (2026-07-23) |
+| Pricing | CRM-87224 (2026-06-23) |
+| Onboarding | CRM-16603 (2026-06-15), CRM-49779 (2026-04-27) |
+| QBR prep | CRM-12694 (2026-08-04) — owner Jordan Blake |
+
+### Open commitments
+
+1. **Audit log export (Lark) — CSV export, by Q1 2027.** Made by you to Sam Ortiz at the last QBR (**CRM-38600**, 2026-07-24). Your words: *"you'll have it by Q1 2027 as a CSV export, you have my word."* Record notes the customer is planning around it. **Carries the notice above — verify with the product owner first.**
+2. For context, the public roadmap (**NOT-20876**) lists audit log export incl. SIEM streaming at Q1 2027. Don't treat that as clearance to restate the date — it predates whatever the notice refers to.
+
+No other Cobalt-specific commitments surfaced.
+
+### Risks
+
+- **Audit log export is the single point of exposure.** It's a personal, emphatic promise ("you have my word"), the customer is planning around it, and there's an unresolved question over it. If it slips, it's a trust problem, not just a roadmap problem.
+- **Same-feature concentration:** you hold a second audit log export promise to Lena Fox at Granite Insurance for the same Q1 2027 window (**SLA-77342**), also flagged. One upstream change hits both accounts.
+- **Ownership ambiguity.** Four different internal owners across Cobalt records in six months. Sam may have experienced that as churn.
+- **Thin QBR substrate.** No health score, usage data, renewal date, or open escalations in the records I can see. If you need those for the deck, they're somewhere I don't have access to.
+
+### What to say
+
+**Do say:**
+- Recap the audit-prep workstream as the through-line of the quarter — it's clearly what Cobalt cares about and it's referenced in nearly every call.
+- Acknowledge audit log export is the top open item and that you know they're planning around it. You can say it's actively tracked and you're confirming the delivery specifics ahead of a firm date.
+- Ask Sam what "done" looks like for their audit — CSV sufficient, or do they need SIEM streaming? The roadmap bundles both; your promise was CSV only. Worth surfacing that gap now rather than at delivery.
+- Confirm the single point of contact going forward.
+
+**Don't say:**
+- Don't re-commit to Q1 2027 until the product owner confirms it holds. If Sam pushes, the honest line is: *"It's on the roadmap for Q1 2027 and I'm confirming the delivery detail with our product team this week — I'll come back to you with specifics rather than repeat a date I haven't re-verified."* That holds the relationship without creating a second promise.
+
+### Before the call
+
+1. Ping the **product owner** on audit log export (Lark) — does the Q1 2027 CSV commitment still hold? This is the one blocking item.
+2. Confirm current AE of record for Cobalt.
+3. Pull renewal date, health, and usage from wherever CS tracking lives — not in the records available to me.

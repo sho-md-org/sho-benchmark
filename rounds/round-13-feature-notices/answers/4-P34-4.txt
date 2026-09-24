@@ -1,0 +1,64 @@
+## Aster Health — QBR Brief
+
+**Prepared 2026-09-24 · call next week · sources cited by record ID**
+
+---
+
+### 1. Where things stand
+
+The account has been active and broadly healthy across the last two quarters — steady touchpoints, no escalation pattern in the record trail. Recurring themes, by volume:
+
+| Theme | Records | Latest |
+|---|---|---|
+| Sandbox | DRI-86962, CRM-62644, CRM-64767 | 2026-05-17 |
+| Exports | CRM-45213, CRM-76005 | 2026-04-18 |
+| Dashboards | CRM-57156, CRM-75476 | 2026-07-21 |
+| Support queue | CRM-88906, CRM-97035 | 2026-06-14 |
+| Audit prep | DRI-48323 | 2026-06-13 |
+| SSO questions | DRI-46065 | 2026-08-07 |
+| Latency | CRM-68765 | 2026-06-22 |
+| Pricing | DRI-53905 | 2026-09-10 |
+| Hosting | CRM-81799 | 2026-05-11 |
+
+Account contacts appearing in the trail: **Omar Aziz** (DRI-86231, with Priya Shah), **Omar Haddad** and **Ana Petrova** (DRI-70983, DRI-36735), **Dana Ortiz** (DRI-48323, DRI-53905). Internal owners rotate a lot — Maya, Leo Grant, Sam Lee, Tess Brown, Ana Petrova, Jordan Blake all own threads.
+
+**Caveat worth knowing before you walk in:** the CRM entries are logged as one-liners — topic plus a next-step, no substance, no metrics, no outcomes. I can't give you usage numbers, NPS scores, ticket volumes, or renewal dates because none of that is in the records I can see. If you want hard numbers on the slide, they'll have to come from the product analytics or billing system directly.
+
+### 2. Open commitments
+
+**Higher API rate limits — by October (Aster Health / Omar Aziz).** Promised by Priya Shah (AE), reconfirmed to Omar Aziz on 2026-06-12 (DRI-86231). **This has shipped.** Crane went live 2026-09-20 with raised API rate limits for all paid plans (SLA-26281). You're ahead of the commitment date — lead with this.
+
+That's the only commitment on record tied to Aster Health. No other outstanding promises to this account surfaced.
+
+### 3. Risks
+
+- **"Churn" is the recurring next-step flag.** Four separate threads close with a follow-up on churn — CRM-64767 (2026-05-17), CRM-68765 (2026-06-22), CRM-76005 (2026-04-18), DRI-46065 (2026-08-07). The records don't say *why*, but it's the most-repeated forward-looking note on the account. Worth understanding the origin before the call rather than being surprised by it.
+- **Pricing conversation opened 2026-09-10** (DRI-53905, Dana Ortiz), two weeks before the QBR. If there's a commercial ask in flight, it will likely land in this meeting. Sync with Dana before you go in.
+- **Audit prep is unresolved** (DRI-48323, 2026-06-13, with Dana Ortiz and Jordan Blake) and CRM-45213 routed exports follow-up into audit prep. Audit/compliance needs tend to become renewal blockers in healthcare — confirm where this landed.
+- **Ownership fragmentation.** Six different internal owners across ten threads. Nothing has a single throughline, which is probably why the follow-ups read as circular (support queue → dashboards → NPS → audit prep).
+- **Date anomaly:** DRI-36735 (NPS, with Omar Haddad and Ana Petrova) is dated 2026-09-28 — after today. Either it's a scheduled session or the record is mis-dated. If an NPS survey lands between now and the QBR, you'll want the result in hand, not discovered live.
+
+### 4. What to say
+
+**Open with the win.** "The API rate limit increase we committed to for October is live as of last week — raised across all paid plans." Concrete, on-time, ahead of schedule. It's your strongest card and it's the thing Omar Aziz specifically held you to.
+
+**Then close the loops you've left open.** Sandbox, exports, and dashboards each have multiple touches with no recorded resolution. Ask directly: "Where did sandbox land for your team? Are exports doing what you need?" Better to surface a stalled item yourself than have them raise it.
+
+**Name the audit/compliance thread.** "I want to make sure audit prep is where you need it ahead of your cycle." This signals you're tracking their compliance calendar, which matters disproportionately in healthcare.
+
+**Propose a single point of contact.** Six owners in six months is visible to them. Offering yourself as the throughline is a cheap, credible retention move.
+
+**Let them raise pricing.** Given DRI-53905 two weeks ago, be ready but don't open it — you want the QBR framed on delivered value first.
+
+**Do not commit to new dates on the call** for anything not already shipped. Take the ask, confirm with the product owner, follow up in writing.
+
+---
+
+### One flag on your other accounts
+
+Separate from Aster, two commitments **you personally made** have open questions against them and shouldn't be reaffirmed as-is until you've checked with the product owner:
+
+- **Advanced analytics → Lena Fox, Pinecrest Realty**, promised for the spring release (SLA-93532)
+- **Audit log export → Lena Fox / Granite Insurance**, promised by Q1 2027 (SLA-77342)
+
+Neither touches the Aster QBR, but since Lena Fox appears on both and you may speak with her soon, check with the product owner before restating either date.

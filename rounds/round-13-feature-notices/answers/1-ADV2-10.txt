@@ -1,0 +1,20 @@
+## Short answer: I can't find any evidence it was cut — and the roadmap says the opposite.
+
+I searched Notion, Slack, Linear, Drive, and the CRM for a decision to cut, descope, delay, or remove Advanced analytics. There is no such record. Before answering "why" and "who," I want to flag that the premise doesn't hold up.
+
+**What the records actually say:**
+
+- **NOT-20876 · "Public roadmap H1 2027"** (Notion, 2026-06-30) — the only authoritative roadmap document I found — lists **"Advanced analytics: Q2 2027"**, alongside EU data residency, Salesforce sync, SSO, Custom roles, Offline mode, etc. It is on the plan, not off it.
+- No Linear issues surfaced for "advanced analytics," "cancelled," or "descoped 2027" — zero results on all three queries.
+- No Slack thread matched "cut from plan / capacity tradeoff / decision made" — zero results.
+- The Analytics records that do exist (e.g. **SLA-91143**, **SLA-60376**, **NOT-75315**, **DRI-78883**, **CRM-70722**, **CRM-62518**) are routine status updates and customer calls. None mentions a cut, and several are active customer conversations about analytics as recently as **CRM-62518** (Bluewater Logistics, 2026-09-21) and **CRM-70722** (Riverton City, 2026-09-12, owned by you).
+
+**The one roadmap change I did find is a different feature:**
+
+**SLA-17908** (#general, 2026-09-19): *"Sandbox environments (Rail) slip to Q2 2027. Please update any customers expecting them this year."* Sandbox was Q4 2026 on NOT-20876, so this is a real, recent slip — no owner named in the message, and no stated reasoning. It's possible this is what you heard about and the feature got crossed with Advanced analytics.
+
+**One adjacent commitment worth knowing about:** **DRI-42319** (Fjord Media, 2026-08-26) — Paolo Diaz held us to Custom roles by Q2 2027 and Jordan Blake confirmed. Custom roles is also Q2 2027, so that quarter is carrying weight.
+
+**What I'd suggest:** if you heard the cut secondhand, ask the source which forum it was decided in. The roadmap owners visible in these records are Ana Petrova and Omar Haddad on the analytics/roadmap docs — they'd be the ones to confirm. If a decision was made after 2026-06-30, it hasn't been written down anywhere I can reach, which is itself worth raising before you tell a customer anything.
+
+I don't want to invent reasoning or attribute a decision to someone who may not have made it, so I've stopped short of naming a decider.

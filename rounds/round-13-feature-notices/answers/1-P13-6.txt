@@ -1,0 +1,31 @@
+## What the records show
+
+**The commitment is real and documented.** DRI-36664 (Quarry Mining sync, 2026-07-09): Tom Hale reminded us we'd told them SSO (SAML) by Q1 2027, and Leo Grant (AE) confirmed it on the call. So this isn't a customer misremembering — we said it, twice.
+
+**The date still stands on the current roadmap.** NOT-20876 (Public roadmap H1 2027, 2026-06-30) lists "SSO (SAML), SP- and IdP-initiated: Q1 2027." SCIM provisioning and audit log export/SIEM streaming are also Q1 2027, which is useful since those usually travel with an SSO rollout.
+
+**No slip has been announced for SSO.** The only timeline change in the record is SLA-17908 (#general, 2026-09-19), where Sandbox environments slipped to Q2 2027 — unrelated. Nothing in Slack, Notion, or CRM indicates SSO moved.
+
+⚠️ **One thing to check before you send:** Linear returned zero results for SSO/SAML — no ticket, no project, no owner. Every other signal is a roadmap doc or a sales conversation, not an engineering artifact. That may just be a gap in what's indexed, but given you're re-confirming a date a customer is holding you to, I'd get a yes from Maya Chen (roadmap owner, NOT-64137) or eng before hitting send. The draft below is written to be accurate either way — it confirms the roadmap position without inventing a delivery guarantee we can't source.
+
+## Draft reply
+
+> **Subject:** Re: SSO (SAML) timeline
+>
+> Hi Tom,
+>
+> Yes — SSO (SAML) is on our roadmap for Q1 2027, covering both SP- and IdP-initiated flows. That's unchanged from what we discussed on our July 9 sync.
+>
+> Two related items land in the same quarter that I'd flag, since they usually matter to the same rollout:
+>
+> - **SCIM provisioning** — Q1 2027, so user lifecycle management arrives alongside SSO rather than after it.
+> - **Audit log export, including SIEM streaming** — Q1 2027.
+>
+> I'd suggest we get your identity team in front of ours once the implementation details firm up, so your IdP configuration and any provisioning requirements are accounted for in the design rather than at rollout. Happy to set that up whenever it's useful.
+>
+> If anything on the timeline shifts, you'll hear it from me directly and early — you won't have to ask.
+>
+> Best,
+> Leo
+
+Two notes on the wording. I wrote "on our roadmap for Q1 2027" rather than "we guarantee Q1 2027," because the sourceable fact is a roadmap position, not a contractual date — it confirms what Tom is asking without creating exposure we haven't checked. And the closing line is a real commitment, so it's worth setting a reminder to actually watch the roadmap doc for changes; the Rail slip went out as a one-line Slack message that's easy to miss.

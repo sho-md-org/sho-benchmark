@@ -1,0 +1,63 @@
+I read all 20 Aster Health records that exist across the four systems (10 CRM, 10 Drive; Slack and Notion return nothing for this account). Here's the honest headline before the brief itself:
+
+**Every record is a one-line stub.** Not one contains an ARR figure, renewal date, contract term, NPS score, ticket count, named commitment with an owner and due date, or a stated risk. A representative example in full: *"Call with Aster Health. Discussed dashboards. Owner Sam Lee. Next: follow up on NPS."* (CRM-75476). That is the entire record.
+
+So I can't write the brief you'd actually walk into the room with — the underlying facts aren't in these systems. What I can give you is the real signal in the aggregate pattern, plus a precise list of what to go get. I'd rather flag that now than hand you a polished document with invented numbers in it.
+
+---
+
+# Aster Health QBR — Working Brief
+*Sources: CRM-16329, 26522, 45213, 57156, 62644, 64767, 68765, 75476, 76005, 81799; DRI-23711, 30445, 36553, 36735, 48732, 53905, 70983, 75615, 82652, 86962. Coverage: 2026-04-12 → 2026-09-28.*
+
+## Where things stand
+
+**Activity arc.** Heavy engagement April–July, then a notable thinning in August (zero records), then two September touches. The account ran hot for four months and has gone quiet.
+
+**What they actually talk about,** by frequency: dashboards (CRM-57156, CRM-75476, DRI-75615 — and it's the most *recent* recurring topic, 4/19 → 7/21 → 9/17), exports (CRM-76005, CRM-45213, DRI-23711), sandbox (DRI-86962, CRM-62644, CRM-64767), NPS (CRM-26522, DRI-30445, DRI-36735), integrations (DRI-82652, DRI-48732), latency (CRM-16329, CRM-68765), then single hits on hosting, search, and pricing.
+
+**Two clusters worth your attention.** Latency appears twice in eight days in June (CRM-16329 6/14, CRM-68765 6/22) and never again — the only problem-shaped cluster in the record. And pricing surfaces on 9/10 (DRI-53905, Dana Ortiz) with no prior pricing discussion all year, two weeks before a QBR. A first-ever pricing conversation immediately preceding a QBR usually means renewal or expansion is live. **Confirm which before the call** — it changes the entire posture of the meeting.
+
+**Your own exposure is thin.** You appear in three of twenty records: CRM-62644 (5/10, as owner), DRI-36553 (7/19), DRI-75615 (9/17, most recent touch). Most of this account's history sits with other people.
+
+## Open commitments
+
+This is the clearest finding, and it isn't good. **All ten CRM records carry a "Next:" follow-up. Not one shows it closed.** There's no resolution field anywhere in the data. Unresolved threads, by recurrence:
+
+- **Churn follow-up — 3×** (CRM-76005 4/18, CRM-64767 5/17, CRM-68765 6/22). Flagged repeatedly across three months by two different owners.
+- **Security review — 2×** (CRM-26522 4/13, CRM-16329 6/14). Opened in April, still being raised in June.
+- **Audit prep** (CRM-45213 4/18), resurfacing in the 9/28 NPS discussion (DRI-36735).
+- **SSO questions** (CRM-57156), **hosting** (CRM-81799), **search** (CRM-62644), **NPS** (CRM-75476) — one apiece.
+
+Treat these as *probably* open, not *confirmed* open — absence of a closure field isn't proof of non-closure. But you should verify each one, because if any are genuinely still open five months later, that's the thing most likely to be raised at you in the room.
+
+## Risks
+
+**1. No single account owner.** Ownership rotates across six people: Sam Lee, Leo Grant, Tess Brown, Ana Petrova, Priya Shah, and you. Leo Grant owns both export records, Ana Petrova owns three. No one owns the relationship. This is the structural risk behind the dangling follow-ups.
+
+**2. "Churn" raised three times without visible resolution.** Whatever drove it — the June latency cluster is the plausible candidate — you need to know whether it was addressed or just stopped being written down.
+
+**3. A compliance thread that won't die.** Security review (April, June) plus audit prep (April, September) suggests Aster has an unmet governance requirement. For a healthcare customer this is rarely cosmetic, and it pairs with the unanswered SSO question (CRM-57156).
+
+**4. The August gap.** Four months of steady contact, then nothing, then a pricing call. Worth understanding.
+
+**5. A meeting you may not know about.** DRI-36735 is dated **2026-09-28 — four days from today** — covering NPS and audit prep, with Omar Haddad and Ana Petrova. You're not listed. Either this is a scheduled session you should join, or it's a data error. Check it; it may well be the same week as your call.
+
+## What I'd say — structure, not script
+
+I won't draft talking points on top of facts I don't have; you'd be reading invented numbers aloud to a customer. Here's the frame to fill once you have them:
+
+**Open by naming the follow-through gap before they do.** Six owners and a stack of unresolved threads is exactly what a customer notices. Getting ahead of it — "here's who owns this account going forward, and here's where each open item landed" — converts your weakest point into the credible part of the meeting.
+
+**Lead the substance with dashboards.** It's their most persistent and most recent theme, spanning April to September. It's what they care about.
+
+**Close the compliance loop explicitly.** Security review, audit prep, SSO. Come with a status on each, even if the status is "not done, here's the date."
+
+**Let the latency history stay closed** unless they raise it — but have the resolution ready in case they do.
+
+**Know your renewal posture before you walk in,** given DRI-53905.
+
+## To make this a real brief, I need five things
+
+None are in these systems: **(1)** contract value, renewal date, and term; **(2)** what the 9/10 pricing conversation was actually about (Dana Ortiz); **(3)** current NPS/health score and the June latency resolution; **(4)** true status of the security review and audit prep; **(5)** confirmation of who owns this account now.
+
+Tell me where those live — a billing system, a spreadsheet, a colleague — and I'll fold them in and write the full narrative with talking points. If Dana Ortiz and Ana Petrova are reachable, they hold most of the missing context between them.

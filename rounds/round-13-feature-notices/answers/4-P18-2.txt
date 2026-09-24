@@ -1,0 +1,61 @@
+## Cobalt Retail — QBR Brief
+
+⚠️ **One thing to clear before the call:** your audit log export commitment has a flag on it.
+
+---
+
+### 1. The one open commitment — and the blocker
+
+**Commitment:** Audit log export as a CSV export, delivered by Q1 2027, to Sam Ortiz — made by you at the 2026-07-24 QBR (**CRM-38600**). Your exact words: *"you'll have it by Q1 2027 as a CSV export, you have my word."* The note records that the customer is planning around it.
+
+**The flag:** there's a decision affecting this feature that I don't have visibility into, and it may or may not change your commitment. I can't tell you what it is or whether it actually changes anything.
+
+**What to do:** ask the **product owner for audit log export** whether the Q1 2027 CSV date still holds — before the call, not on it. This is the single highest-value prep item, because Sam pushed on this feature and is building plans around your word.
+
+For reference, the public roadmap as of 2026-06-30 (**NOT-20876**) lists "Audit log export incl. SIEM streaming: Q1 2027." Treat that as background only — it predates the flag and is not a substitute for confirming with the product owner.
+
+### 2. Where things stand
+
+Honest read: the account record is thin. The Cobalt Retail history is a run of short call logs with topic labels and no substantive detail:
+
+| Date | Record | Topic | Owner |
+|---|---|---|---|
+| 2026-08-11 | DRI-75222 | Billing + audit prep (Ana Petrova, Omar Haddad) | — |
+| 2026-08-04 | CRM-12694 | QBR prep | Jordan Blake |
+| 2026-08-01 | CRM-35990 | Notifications | Omar Haddad |
+| 2026-07-24 | CRM-38600 | **QBR — audit log export commitment** | Maya Chen |
+| 2026-07-23 | CRM-94849 | Reporting | Priya Shah |
+| 2026-06-23 | CRM-87224 | Pricing | Priya Shah |
+| 2026-06-15 | CRM-16603 | Onboarding | Omar Haddad |
+| 2026-06-12 | CRM-24323 | Audit prep | Omar Haddad |
+| 2026-05-26 | CRM-24697 | Dashboards | Tess Brown |
+| 2026-04-27 | CRM-49779 | Onboarding | Priya Shah |
+| 2026-04-20 | CRM-70221 | Roadmap | Maya Chen |
+
+Two signals worth reading into it:
+- **Audit/compliance is the through-line.** Audit prep recurs from June through August and is the named follow-up on three separate calls. The audit log export commitment sits squarely in that theme — it's not a side request.
+- **Ownership is scattered.** Five different internal owners across eleven touchpoints, with Jordan Blake on the most recent QBR prep. Worth confirming who's actually running this relationship before you walk in.
+
+I found **no record** of renewal date, ARR, health score, open support escalations, or a confirmed QBR agenda. If you need those for the deck, they're somewhere I can't see.
+
+### 3. Risks
+
+1. **Commitment risk (primary).** You gave a personal word on a date that now carries an unresolved question. If it has moved and Sam hears it first from someone else — or discovers it after planning around Q1 — that's a trust problem, not a roadmap problem.
+2. **Compliance timing.** Their audit prep cadence suggests the export feeds a real deadline. Ask Sam directly what date their audit actually lands on; that tells you how much slack exists if anything shifts.
+3. **Continuity.** Rotating internal owners means Cobalt may be re-explaining themselves each call.
+
+### 4. What to say
+
+**If the product owner confirms Q1 2027 holds:**
+> "Audit log export is on track for Q1 2027 as a CSV export, as we committed in July. Sam, what's the actual date your audit process needs it by? I want to make sure Q1 gives you enough runway on your side."
+
+**If it's changed, or you can't reach the product owner in time:**
+Don't reaffirm the date, and don't improvise a new one. Say:
+> "I want to give you a precise update on audit log export rather than a rough one. I'm confirming the delivery detail with our product team and I'll come back to you with specifics by [date] — I know you're planning around this, so I'd rather be exact than fast."
+
+That keeps your credibility intact without committing to something that may not hold. Then follow up in writing within the window you name.
+
+**To open the relationship thread:**
+> "Audit prep has come up on most of our calls since June — I'd like to spend real time on it today rather than treat it as a status line."
+
+**Note on your other commitments:** the flagged list also includes two of your own promises on *other* accounts — advanced analytics to Lena Fox at Pinecrest Realty (**SLA-93532**) and audit log export to Lena Fox at Granite Insurance (**SLA-77342**). Both carry the same kind of flag. Not for this call, but worth the same product-owner check on your next passes at those accounts.

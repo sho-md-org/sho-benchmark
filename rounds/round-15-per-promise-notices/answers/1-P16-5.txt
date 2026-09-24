@@ -1,0 +1,11 @@
+That search was mis-aimed — memory is a local file, not a drive item, and I don't have file-writing tools in this session. So the memory isn't saved; if it'd help, mention the stub-records issue at the start of the next account prep and I'll pick it up from there.
+
+## Summary
+
+I researched CRM, Drive, Notion, Slack, and Linear, and fetched all 20 Keystone Energy records (CRM-19012, 23178, 50205, 56812, 71045, 71134, 71909, 78617, 79992, 86748; DRI-20667, 27387, 31273, 39787, 41756, 46374, 60948, 64156, 75981, 85290).
+
+I did not write the four sections you asked for, and I want to be direct that this is a partial delivery. Standing, commitments, and talking points aren't recoverable from these records — they document that calls happened, not what came of them. I gave you the pattern analysis instead, which is what the data honestly supports.
+
+The three findings I'd act on: reliability has been unresolved for five months with **zero** corresponding engineering tickets; churn and pricing were discussed together in August (DRI-20667) and pricing is back on the calendar for tomorrow (CRM-78617); and there's a five-and-a-half-week contact gap sitting right after that churn discussion.
+
+Get me the answers from Jordan Blake and Ana Petrova and I'll turn the full brief around fast.

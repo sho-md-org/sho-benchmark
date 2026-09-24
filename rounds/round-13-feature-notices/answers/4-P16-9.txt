@@ -1,0 +1,46 @@
+## Keystone Energy — QBR Brief
+
+**⚠️ Read this first:** The one commitment Keystone cares most about — **audit log export with SIEM/Splunk streaming by Q1 2027** (`DRI-34564`) — is flagged in Sho. There may be a decision I can't see that affects whether that date still holds. **Do not reaffirm the Q1 2027 date on the call until you've checked with the product owner.** If it comes up before you've checked, acknowledge it's a live commitment you're tracking and promise a dated follow-up rather than re-confirming timing.
+
+---
+
+### Where things stand
+
+Keystone has been a high-touch, multi-thread account all year. The dominant theme across the record is **audit/compliance prep** — it recurs from May through late August (`CRM-90377` 5/8, `CRM-17727` 6/17, `DRI-85107` 6/8, `DRI-48005` 6/25, `CRM-56742` 8/17, `DRI-84961` 8/24). Alongside it:
+
+- **Security review** ran through the summer (`CRM-25431` 4/7, `CRM-64056` 7/7, `CRM-30791` 7/23). Your own QBR-prep call on 8/25 (`CRM-93344`) lists "follow up on security review" as the open next step — worth confirming it actually closed.
+- **Integrations** discussed 8/10 with Sam Lee (`DRI-31273`).
+- **Operational topics**: uptime as recently as 9/23 (`CRM-19012`), rate limits (`CRM-60405`), latency (`CRM-23178`).
+- **Commercial**: a pricing conversation with Jordan Blake dated 9/25 (`CRM-78617`) — that's tomorrow relative to today, so treat it as scheduled, not concluded. Sync with Jordan before the QBR so you aren't contradicted on price.
+
+Ownership is spread across at least eight people (Maya, Jordan Blake, Omar Haddad, Sam Lee, Priya Shah, Tess Brown, Dana Ortiz, Ana Petrova, Leo Grant). That's a coordination risk in itself for a QBR.
+
+### Open commitments to Keystone
+
+| Commitment | Made by | Due | Status |
+|---|---|---|---|
+| Audit log export + Splunk/SIEM streaming (`DRI-34564`) | Company, confirmed by Jordan Blake (AE) to Nia Cole, 8/3 | Q1 2027 | **Flagged — verify with product owner before reaffirming** |
+
+Note the provenance: Nia Cole *reminded* us of this on 8/3 and Jordan confirmed it in the room. Keystone considers it settled. That raises the cost of any change, and it's why the flag matters.
+
+Other commitments in Sho (Advanced analytics/Osprey, SCIM, Offline mode) belong to Pinecrest, Umber, Meridian and Granite — not Keystone. Don't reference them.
+
+### Risks
+
+1. **Audit log export timing** — highest-stakes item, flagged, and directly tied to their compliance work. If it slips, everything else in the QBR is noise to them.
+2. **Stale open loop** — security review follow-up from 8/25 (`CRM-93344`) has no visible closure record.
+3. **Pricing crosswind** — a pricing discussion lands 9/25 with a different owner; unaligned messaging is a real exposure a week out.
+4. **Ownership churn** — no single consistent DRI across the record; Keystone may perceive it as being handed around.
+
+### What to say
+
+- **Open on their agenda**: audit and compliance readiness — that's where nearly every conversation since May has gone.
+- **Close the security review loop explicitly** — either confirm it's done or give a date.
+- **On audit log export**: "It's on our roadmap and I'm tracking it closely — let me come back to you with a firm confirmation this week." Then actually do that, after talking to the product owner.
+- **Name a single point of contact** (you) for the coming quarter to address the ownership sprawl.
+- **Avoid**: restating Q1 2027 as a guarantee, and any pricing specifics until you've synced with Jordan.
+
+### Before the call
+1. Ask the product owner whether the Q1 2027 audit log export commitment still holds.
+2. Confirm the security review closed.
+3. Sync with Jordan Blake after the 9/25 pricing call.

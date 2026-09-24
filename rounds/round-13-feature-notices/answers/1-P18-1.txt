@@ -1,0 +1,80 @@
+## First, the thing that changes how you should use this
+
+I pulled all 21 Cobalt Retail records across CRM, Drive, Notion, Slack, and Linear. **Every one is a one-line stub.** There is no ARR, renewal date, contract term, health score, usage data, NPS number, or a single customer-side contact name anywhere in the tools. Slack and Linear return *zero* Cobalt results.
+
+So I can't give you a numbers-driven QBR deck — that data doesn't exist in these systems. What I can give you is the full interaction history, the commitment chain, and which threads went dark. That's genuinely useful, and the gaps are themselves a finding. Sourcing list at the bottom.
+
+---
+
+## Where things stand
+
+**Cadence is the story.** Steady contact April–August, then a ~6-week CRM gap (Aug 2 – Sept 11), one call Sept 12, nothing since.
+
+You are barely on this account. You appear on 3 of 21 records (CRM-70221, CRM-36268, DRI-35074). **Priya Shah is on 8** (CRM-98822, CRM-49779, CRM-87224, CRM-94849, CRM-12380, DRI-18657, DRI-95243, DRI-72283) and is the de facto account lead. Omar Haddad is on 4 more.
+
+**There's a meeting two days out you're not in:** DRI-72283 (2026-09-26), Sam Lee + Priya Shah, mobile app and search. Get that readout before your call — it's the freshest input you'll have.
+
+Also: Omar owns the two most recent "QBR prep" notes, NOT-52051 (Sept 5) and NOT-42571 (Sept 15). Neither is titled for Cobalt and neither names the account, so I can't confirm they're yours — but the timing is suggestive. Worth one Slack message to Omar.
+
+---
+
+## Open commitments
+
+Derived from the `Next:` field on each CRM record. "Dangling" = the named follow-up never produced a corresponding Cobalt record.
+
+| Commitment | Opened | Status |
+|---|---|---|
+| **Case study** | CRM-98822, Apr 1 | **Open to the customer.** Discussed 3× (DRI-58616 Jun 21, DRI-20022 Jul 27, DRI-95243 Aug 5). No evidence it ever shipped. Six months. |
+| **Security review** | CRM-70221 Apr 20 + CRM-36268 May 22 | **Dangling — and both are yours.** You flagged it twice; no Cobalt security-review record exists. The six Notion security-review docs are not Cobalt-attributed. |
+| **Rate limits** | CRM-24697 May 26, CRM-16603 Jun 15 | **Open, longest-running.** → DRI-33978 (Jul 25, tied to EU customers) → CRM-12380 (Sept 12). Four months, still live. No Linear ticket exists. |
+| **Churn follow-up** | CRM-12380, Sept 12 | **Dangling, 12 days.** See risks. |
+| **Latency** | CRM-49779, Apr 27 | **Dangling.** Never mentioned again. |
+| **SSO questions** | DRI-20022, Jul 27 | Open, no resolution record. |
+| Billing / audit prep | CRM-87224, CRM-94849 | Appear closed via DRI-75222 (Aug 11). |
+| Pricing | CRM-35990, Aug 1 | Last touch DRI-95243 (Aug 5). Ambiguous. |
+
+---
+
+## Risks
+
+**1. The churn signal — highest priority.** The most recent Cobalt record, CRM-12380 (Sept 12, rate limits, Priya), sets next step: *follow up on churn*. A rate-limits conversation escalating into a churn follow-up is the loudest signal in this dataset. CRM has ten churn records — Kestrel Foods, Umber Studios, Pinecrest Realty, Orchid Hotels, Willow Care, Delta Freight, Summit Gear — **none for Cobalt**. Twelve days on, that follow-up has produced nothing. Either it hasn't happened or it wasn't logged. Ask Priya today, not next week.
+
+**2. Rate limits is the through-line.** It's the only topic spanning May to September, and DRI-33978 ties it to EU customers — suggesting a real scaling constraint, not a config question. With no Linear ticket, there is likely no engineering commitment behind whatever was promised. Walking into a QBR without a rate-limit answer is the main way this call goes badly.
+
+**3. Your two security-review loops never closed.** You own both. If Cobalt raised security in April and May and got nothing, expect it back — possibly alongside the unresolved SSO questions from DRI-20022.
+
+**4. The six-week silence before a QBR.** Combined with the churn next-step, the gap is a risk in itself.
+
+**5. The case study is leverage you've spent.** Six months of asking a customer to be a reference while rate limits go unfixed is an awkward ledger. Don't ask again until you've given them something.
+
+---
+
+## What to say
+
+**Open by owning the gaps.** You're light on this account and there's been a quiet stretch. Name it before they do: *"I want to start with what we owe you, not with our slides."*
+
+**Lead with rate limits.** Bring a dated commitment — an owner and a target, ideally a Linear ticket number created before the call. Confirm whether the EU customer angle from DRI-33978 is still the binding constraint.
+
+**Close the security and SSO loops explicitly.** Say where the review stands or say it stalled and give a date. Don't let it surface as their question.
+
+**On the case study, give before you ask.** Acknowledge it's been open since April. Either deliver a draft or take it off the table for now.
+
+**Hold pricing unless they raise it.** With rate limits unresolved and a churn flag live, a commercial conversation now reads as tone-deaf.
+
+**Your real goal for this call is diagnosis.** You don't have the data to run a performance review of the account, so run a listening session instead — surface why "churn" got written down on Sept 12. Ask directly: *"What would make you reconsider this partnership?"*
+
+---
+
+## Source before the call
+
+Not available in any connected tool — you'll need these from elsewhere:
+
+- Contract value, renewal date, term
+- **What "churn" meant on CRM-12380** — ask Priya Shah
+- The Sept 26 readout (DRI-72283) — Sam Lee / Priya Shah
+- Whether NOT-52051 / NOT-42571 are Cobalt QBR prep — ask Omar Haddad
+- Customer-side attendees and their roles — no CRM record names a single one
+- Usage, support ticket volume, the NPS score behind CRM-92187
+- Engineering status on rate limits — nothing in Linear
+
+If you can get me the contract and usage data, I'll turn this into a finished brief.

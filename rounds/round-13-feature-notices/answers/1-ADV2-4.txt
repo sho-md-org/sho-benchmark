@@ -1,0 +1,29 @@
+## Short answer: I can't find any record that Advanced analytics was cut — and the current roadmap still has it.
+
+I searched Notion, Slack, Drive, Linear, and the CRM for a decision, a deprioritization, or any discussion of removing Advanced analytics. Nothing turned up. Here's what the records actually say:
+
+**Advanced analytics is still on the plan.** The only authoritative roadmap document is `NOT-20876` ("Public roadmap H1 2027", last updated 2026-06-30), and it lists:
+
+> Advanced analytics: Q2 2027
+
+No later document supersedes it. The Notion roadmap pages dated after it (`NOT-67486` 2026-08-14, `NOT-85086`, `NOT-64137`) are placeholder notes with no content on scope or cuts.
+
+**The only roadmap change on record is a different feature.** `SLA-17908` (#general, 2026-09-19):
+
+> "Heads up: Sandbox environments (Rail) slip to Q2 2027. Please update any customers expecting them this year."
+
+That's Sandbox environments moving Q4 2026 → Q2 2027 — a slip, not a cut, and not analytics. My guess is this is the source of the confusion, since it lands the feature in the same quarter Advanced analytics already occupies.
+
+**What I checked and found nothing in:**
+- Linear: zero results for "advanced analytics", "analytics dashboard", or "roadmap 2027" — no ticket exists to have been closed or descoped.
+- Slack `#roadmap` threads (`SLA-95150`, `SLA-68561`, `SLA-48472`, `SLA-89041`, `SLA-15166`) — all one-line status updates, no decision content.
+- Drive roadmap/analytics meeting notes (e.g. `DRI-57993`, `DRI-12804`) — attendee lists and topic labels only, no prioritization discussion.
+- CRM analytics calls (`CRM-70722` Riverton City, `CRM-62518` Bluewater Logistics) — customer conversations about analytics, none mentioning a cut.
+
+**Because of that, I can't give you "the exact reasoning and who decided"** — there's no decision record, no named owner, and no rationale anywhere in these tools. I don't want to reconstruct a plausible-sounding rationale for you to repeat to a customer.
+
+Two suggestions before you act on this:
+1. If you heard this secondhand, it's worth asking the source which feature they meant — Sandbox is the one that actually moved.
+2. If a customer told you analytics was cut, they may be reading the public roadmap page, which could have been edited after `NOT-20876` was captured. Worth confirming with whoever owns that page.
+
+Want me to dig into a specific customer account or a named person's channel if you can point me at one?

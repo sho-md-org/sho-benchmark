@@ -1,0 +1,56 @@
+I've read every Harbor Clinics record available. Here's the brief.
+
+# Harbor Clinics — QBR Brief
+*Prepared 2026-09-24 · for call week of Sept 28*
+
+## Where things stand
+
+The account is active and broad — 14+ touchpoints since April spanning integrations, notifications, onboarding, sandbox, latency, dashboards, hosting, offline, mobile app, and roadmap. Most recent contact: mobile app discussion on 2026-09-21 (`CRM-49374`), whose stated next step was *follow up on QBR prep* — so they are expecting this call.
+
+**Caveat worth knowing before you prep:** the CRM records for this account are thin. Most are one-line call logs ("Discussed X. Owner Y. Next: follow up on Z") with no outcomes, no health score, no renewal date, and no ARR. I can tell you what was *discussed* and what was *promised*, but the records don't support claims about satisfaction, adoption, or usage. Don't build the QBR narrative on metrics you don't have — pull those from the product analytics side before the call.
+
+**Named contacts in the record:** Ines Park (`DRI-80868`), Ada Moss (`CRM-89966`).
+
+**Internal ownership is fragmented** — nine different owners appear across these threads (Sam Lee, Leo Grant, Priya Shah, Omar Haddad, Ana Petrova, Jordan Blake, Tess Brown, Dana Ortiz, and you). That's a finding in itself; see Risks.
+
+## Open commitments
+
+**1. Data retention controls — by Q1 2027** ✅ safe to reaffirm
+Made by Jordan Blake (AE) to Ines Park. Source: `DRI-80868` (2026-05-15). Ines raised it in that sync and Jordan confirmed it on the spot. No later change to this commitment exists in the record — you can restate the Q1 2027 date on the call as it stands.
+
+**2. EU data residency — explicitly *not* a commitment** ⚠️ handle with care
+Ada Moss asked about EU data residency on 2026-06-09 (`CRM-89966`). The recorded answer was "we're exploring EU data residency, no dates yet." That's three and a half months with no follow-up record. Treat this as an open question, not a promise — do not let it drift into a date on this call.
+
+## Risks
+
+| Risk | Evidence | Why it matters |
+|---|---|---|
+| **EU data residency question is stale** | `CRM-89966`, 2026-06-09, no follow-up since | A compliance-flavored ask from a clinics customer, unanswered for 3+ months. Likely to resurface at the QBR. |
+| **Audit prep keeps recurring without visible closure** | `CRM-45542` (Apr), `CRM-35862` (May), `CRM-48825` (Jul), `DRI-20995` (Aug) | Four threads route back to "audit prep" over five months with no record of it being resolved. Either it's done and undocumented, or it's genuinely stuck. |
+| **Dangling next-steps with no follow-up record** | Integrations→search (`CRM-75336`, Jul 25); Hosting→SSO questions (`CRM-34883`, Jul 15); Offline→notifications (`CRM-39320`, Aug 26); Dashboards→analytics (`CRM-64035`, Aug 26) | Four committed follow-ups with nothing logged after. Any of these could be raised by the customer as "you said you'd get back to us." |
+| **No single internal owner** | Nine owners across the account | Increases the odds of exactly the dropped threads above, and makes the customer repeat themselves. |
+| **Data retention date is ~4 months out** | `DRI-80868` | Q1 2027 is close enough that slippage would land mid-renewal-cycle. Worth a private check with engineering on confidence before you're standing behind it publicly. |
+
+## What to say
+
+**Open with the one firm thing you have.** "Data retention controls are on track for Q1 2027" — that's your credibility anchor, it came from Jordan directly to Ines, and nothing has changed it.
+
+**Get ahead of EU data residency rather than waiting for Ada to raise it.** Suggested framing: *"When we spoke in June we said we were exploring EU data residency without dates. I want to be straight with you — I don't have a date for you today. Let me take this back and come to you with either a date or a clear answer on direction by [specific date]."* Committing to a *response* deadline is safe; committing to a *delivery* date is not, and you have no basis for one.
+
+**Close the audit prep loop explicitly.** Ask them directly whether audit prep is resolved from their side. If it is, say so and stop re-opening it. If it isn't, name a single owner on the call — this thread has bounced between Leo Grant, Priya Shah, and Sam Lee.
+
+**Name the ownership problem before they do.** Proposing yourself as the single point of contact turns a weakness into a QBR win, and it's the cheapest goodwill available on this call.
+
+**Do not improvise on:** SSO, search, analytics, offline, or mobile app. Each has a dangling follow-up but no recorded outcome. If raised, take the action item rather than characterizing status you can't verify.
+
+## Two items for you, outside this account
+
+Separate from Harbor Clinics, two commitments in your own name need a check with the product owner before you reaffirm them anywhere — **Advanced analytics to Lena Fox / Pinecrest Realty** (`SLA-93532`) and **Audit log export to Lena Fox / Granite Insurance** (`SLA-77342`). Something may have changed on both; I can't see what. Confirm with the product owner before those come up on any call. Neither affects the Harbor QBR.
+
+## Before the call
+
+1. Pull actual usage/adoption metrics — the CRM has none, and a QBR without them is thin.
+2. Confirm the Q1 2027 data retention date with engineering privately.
+3. Get a position on EU data residency, even if the position is "no date yet."
+4. Confirm whether audit prep is closed.
+5. Check renewal date and ARR — not in any record I can see.

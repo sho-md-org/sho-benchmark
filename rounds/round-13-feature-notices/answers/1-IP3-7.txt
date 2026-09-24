@@ -1,0 +1,23 @@
+I searched Slack, Notion, Linear, Drive, and the CRM. Here's what I found — and the direct answer is that **there's no record of anyone deciding a change to Advanced analytics.**
+
+## What exists on Advanced analytics
+
+- **NOT-20876** ("Public roadmap H1 2027", 2026-06-30) lists **Advanced analytics: Q2 2027**. This is the current published position and I found no later version superseding it.
+- **SLA-93532** (#cs, 2026-06-28) — you told Lena Fox at Pinecrest Realty we'd have Advanced analytics (codename **Osprey**) "in the spring release."
+- **CRM-86750** (Lumen Labs QBR, 2026-06-27) — Priya Shah (AE) told Tom Hale "mid-2027, you have my word."
+- **CRM-14909** (Orchid Hotels QBR, 2026-05-23) — Jordan Blake (AE) told Lena Fox "Q2 2027, you have my word."
+- **CRM-11536** (Tidewater Ports, 2026-07-15) — Sam Ortiz asked; nothing promised.
+
+No decision log, product review, Linear issue, or announcement names a person who changed the scope, tier, or date of Advanced analytics. Linear returns nothing for analytics or Osprey at all.
+
+## The likely source of confusion
+
+**SLA-17908** (#general, 2026-09-19) announces a roadmap change, but for a *different* feature: **Sandbox environments (codename Rail) slipping to Q2 2027**, with a request to update customers expecting them this year. That's the only recent roadmap-change announcement I can find, and it's unattributed — the post names no decider either.
+
+## Worth flagging regardless
+
+Even with no change, the commitments on Advanced analytics are inconsistent and all firmer than the roadmap warrants:
+- Your Pinecrest commitment ("spring release", SLA-93532) is **earlier** than the Q2 2027 roadmap date.
+- Priya Shah's "mid-2027" (CRM-86750) and Jordan Blake's "Q2 2027" (CRM-14909) don't match each other, and both were given as personal guarantees to customers who are "planning around it."
+
+If you heard about a change secondhand, it's worth asking the source which feature they meant — if it was Osprey, the decision isn't documented anywhere I can reach, and three customers are holding dated promises against it.

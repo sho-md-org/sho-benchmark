@@ -1,0 +1,20 @@
+## Short answer: I can't tell you — and I'd be guessing if I did
+
+Nothing I can see says the IdP-initiated portion of SSO changed. Sho surfaced no SSO commitment status and no change notice on SSO at all, so I have no basis to confirm, deny, or narrow the change to one part of the feature. If you heard something changed, it came from somewhere I don't have visibility into.
+
+**What is on record for SSO (SAML):**
+
+| Record | Account | Commitment | Made by |
+|---|---|---|---|
+| CRM-31062 (2026-06-08) | Vantage Telecom | Q1 2027, **explicitly incl. IdP-initiated login from Okta** — "you have my word" | Priya Shah (AE) |
+| CRM-62434 (2026-08-17) | Umber Studios | By March, **with IdP-initiated sign-in** — renewal condition | Priya Shah (AE) |
+| CRM-74447 (2026-08-18) | Riverton City | "Early next year" (Heron) — renewal condition | Tess Brown (CS) |
+| CRM-64756 (2026-06-06) | Delta Freight | End of Q1 — "you have my word" | Tess Brown (CS) |
+| DRI-36664 (2026-07-09) | Quarry Mining | Q1 2027, confirmed | Leo Grant (AE) |
+| NOT-20876 (2026-06-30) | Public roadmap | "SSO (SAML), SP- and IdP-initiated: Q1 2027" | — |
+
+Two of these — Vantage Telecom and Umber Studios — name IdP-initiated specifically, and Umber Studios has it as a renewal condition. Those are the ones that would be exposed if the SP/IdP split in NOT-20876 ever moved.
+
+**Recommendation:** take the question to the SSO product owner directly rather than to me. None of these six commitments are yours — they're Priya Shah's, Tess Brown's, and Leo Grant's — so if the answer is that something moved, they're the ones who need to hear it.
+
+Separately, worth knowing: on your own commitments, Sho flagged Advanced analytics to Pinecrest Realty (SLA-93532) and Audit log export to Granite Insurance (SLA-77342) as needing a check with the product owner before you reaffirm them. Different features from SSO, but same conversation if you're already going.

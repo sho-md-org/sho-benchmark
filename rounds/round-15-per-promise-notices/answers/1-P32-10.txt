@@ -1,0 +1,76 @@
+I pulled and read all 20 Harbor Clinics records that exist across the tools. Before the brief, one thing you need to know upfront.
+
+## The honest headline
+
+**Every record is a one-line stub.** There is no substantive content in any of them — no renewal date, no ACV, no customer-side contacts, no product usage data, no ticket detail, no resolution status, no NPS value. A representative example, in full:
+
+> `CRM-39320` (2026-08-26): "Call with Harbor Clinics. Discussed offline. Owner Priya Shah. Next: follow up on notifications."
+
+That's the entire record. All 20 look like that. Slack, Linear, and Notion returned **zero** Harbor Clinics results.
+
+So I can't write you the QBR brief you asked for — the underlying facts aren't in the systems. What I can give you is a real read on the *pattern* of the account, which turns out to be informative on its own, plus a precise list of what you have to source elsewhere before the call.
+
+---
+
+## What the pattern actually shows
+
+**1. Churn risk is live, internal, and accelerating.** Three internal meetings titled "Churn":
+- `DRI-17076` (2026-07-20) — Leo Grant, Jordan Blake
+- `DRI-26772` (2026-09-06) — Leo Grant, Priya Shah
+- `DRI-17950` (2026-09-11) — **Maya Chen**, Tess Brown
+
+The gap went from seven weeks to five days. The most recent Harbor Clinics activity of *any* kind is that Sept 11 churn meeting — which you were in. You'll have context in your head that never made it into the record.
+
+**2. The churn concern has never surfaced in a customer conversation.** All three churn discussions are internal meeting notes. None of the ten CRM call records mentions churn, renewal, or risk. There's a real gap between what's being said internally and what's being said to Harbor.
+
+**3. Ten stated follow-ups, zero recorded completions.** Every CRM call ends with a "Next:" and no record anywhere shows one closing:
+
+| Record | Date | Owner | Stated next step |
+|---|---|---|---|
+| `CRM-97969` | Apr 25 | Omar Haddad | webhooks |
+| `CRM-73374` | May 24 | Ana Petrova | analytics |
+| `CRM-94239` | Jun 2 | **Maya Chen** | reporting |
+| `CRM-36695` | Jun 13 | Jordan Blake | onboarding |
+| `CRM-41255` | Jun 14 | Tess Brown | latency |
+| `CRM-78984` | Jun 15 | Dana Ortiz | permissions UI |
+| `CRM-34883` | Jul 15 | Sam Lee | SSO questions |
+| `CRM-75336` | Jul 25 | Omar Haddad | search |
+| `CRM-39320` | Aug 26 | Priya Shah | notifications |
+| `CRM-64035` | Aug 26 | Ana Petrova | analytics |
+
+Treat this as your open-commitment ledger with the caveat that **status is unknown, not open** — some may well be done and unlogged.
+
+**4. Topics recur without resolving.** Pricing three times (`DRI-51027`, `DRI-40615`, `DRI-55004`, spanning Apr–Jul). Offline three times (`DRI-60679`, `DRI-88564`, `CRM-39320`). Dashboards, sandbox, analytics, and latency three times each. Notifications and integrations twice. Things keep coming back.
+
+**5. Ownership is fragmented.** Eight different owners across ten calls. You own exactly one (`CRM-94239`, Jun 2). Nobody is consistently carrying this account.
+
+**6. None of the product complaints appear to be tracked as engineering work.** Latency, offline, exports, and dashboards come up repeatedly with customers, but Linear has nothing. If Harbor asks "where is my fix," there may be no answer.
+
+**7. Thirteen days of silence** going into a QBR on an account with an active churn discussion.
+
+---
+
+## What you must source before the call
+
+None of this is in the tools: renewal date and notice window; ACV and any pricing negotiation in flight; who attends from Harbor and their seniority; actual usage and adoption; open support tickets and SLA breaches; the NPS figure behind `DRI-67100`; and **what the specific churn trigger is** — a reference to it exists three times, the substance zero times.
+
+Fastest path: Leo Grant is in two of the three churn meetings and is your single best source. Tess Brown was with you on Sept 11. Your own notes from that meeting likely beat anything in these systems.
+
+---
+
+## What I'd say on the call
+
+I'd deliberately *not* prepare a wins-and-metrics deck — you can't verify a single number right now, and asserting one that Harbor can contradict is the worst outcome in a churn-risk QBR.
+
+Given the fragmentation, the strongest honest position is to **own the continuity problem and use the QBR to re-anchor**:
+
+- **Open by naming it.** Eight owners in five months is something they have felt. Saying so first is credible and costs you nothing they don't already know.
+- **Go through the ledger explicitly.** Walk the recurring themes — pricing, offline, dashboards, latency — and ask which are still live. This converts your data gap into a question that makes you look attentive rather than uninformed.
+- **Commit to a small number of dated items with named owners**, ideally yourself. The failure mode in this account is unclosed follow-ups; more of them won't help.
+- **Surface the renewal directly** once you know the date. The churn conversation is happening internally regardless; having it with Harbor is how you get the chance to affect it.
+
+Two things to avoid: don't claim a resolution you haven't confirmed with the owner, and don't let the meeting end with a generic "we'll follow up" — that's the exact pattern that got the account here.
+
+---
+
+If it's useful, I can draft the agenda and the question list for Leo and Tess as a working doc. I'd also flag that the CRM/Drive hygiene on this account is poor enough to be a standalone problem — if other accounts look like this, no QBR can be prepped from the systems of record.

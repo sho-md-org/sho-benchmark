@@ -1,0 +1,87 @@
+## Cobalt Retail — QBR Brief
+
+**Prepared 2026-09-24** · Sources cited by record ID. One item needs a check before you walk into the room — flagged below.
+
+---
+
+### Where things stand
+
+Account touchpoints have been steady and spread across the team rather than concentrated with you:
+
+| Date | Topic | Record | Owner/attendees |
+|---|---|---|---|
+| 2026-04-20 | Roadmap | CRM-70221 | Maya Chen |
+| 2026-06-12 | Audit prep | CRM-24323 | Omar Haddad |
+| 2026-06-23 | Pricing | CRM-87224 | Priya Shah |
+| 2026-07-23 | Reporting | CRM-94849 | Priya Shah |
+| 2026-07-24 | **QBR notes** | **CRM-38600** | Maya Chen / Sam Ortiz |
+| 2026-08-04 | QBR prep | CRM-12694 | Jordan Blake |
+| 2026-08-11 | Billing | DRI-75222 | Ana Petrova, Omar Haddad |
+| 2026-08-17 | Offline / mobile | DRI-82140 | Jordan Blake, Tess Brown |
+| 2026-08-23 | Sandbox / hosting | DRI-35074 | Maya Chen, Sam Lee |
+| **2026-09-26** | Mobile app / search | DRI-72283 | Sam Lee, Priya Shah |
+
+Two things to note: **audit prep is the recurring thread** — it's the "next step" out of CRM-12694, CRM-24323, and CRM-87224, and it's what Sam Ortiz pushed on at the last QBR. And **DRI-72283 hasn't happened yet** (26 Sep, two days out) — pull Sam Lee and Priya Shah for the readout before your call so you're not stale on mobile/search.
+
+The underlying records are thin one-liners, so I can't give you usage, health-score, or renewal-date detail from here — if you want those in the deck you'll need to pull them from the account dashboard.
+
+---
+
+### Open commitments
+
+**1. Audit log export — CSV, by Q1 2027 (yours, CRM-38600)**
+
+Your exact words to Sam Ortiz: *"you'll have it by Q1 2027 as a CSV export, you have my word."* The record notes the customer is planning around it. Sho shows no later change against this commitment, and the public roadmap (NOT-20876) still lists Audit log export at Q1 2027.
+
+⚠️ **Check before you reaffirm the date.** A separate audit log export commitment on another account carries a flag that a decision I can't see may affect it. I can't tell whether that decision touches your Cobalt CSV promise, and I'm not going to guess. **Ask the product owner whether the Q1 2027 audit log export date still holds before you restate it on the call.** If you can't get an answer in time, use the softer language in the talking points below rather than repeating "you have my word."
+
+**2. Sandbox environments — Q4 2026 (roadmap, NOT-20876)**
+
+Not a named commitment to Cobalt, but you discussed sandbox and hosting with Sam Lee on 2026-08-23 (DRI-35074) and it's the nearest-term roadmap item. Expect them to ask.
+
+**3. Offline mode / mobile app**
+
+Discussed 2026-08-17 (DRI-82140). Roadmap has Offline mode at Q2 2027 (NOT-20876). No Cobalt-specific promise on record — keep it that way unless you're ready to commit.
+
+---
+
+### Risks
+
+1. **Date exposure on audit log export.** This is the one to manage. A personal, emphatic promise ("you have my word") on a feature where roadmap certainty is currently unverified, to a customer who is *planning around it*. If the date moves, this is the item that damages trust.
+2. **Scope ambiguity — CSV vs. SIEM streaming.** You promised Cobalt a CSV export. The public roadmap (NOT-20876) describes the item as "Audit log export **incl. SIEM streaming**." If Sam Ortiz has read the public roadmap, he may be expecting streaming. Confirm what he actually needs before assuming CSV satisfies him.
+3. **Ownership churn.** Five different owners across ten touchpoints (Jordan Blake, Omar Haddad, Priya Shah, Ana Petrova, you). Cobalt may be getting inconsistent answers. Worth naming a single point of contact at the QBR.
+4. **Audit prep keeps rolling forward.** It's the open "next step" on three separate calls going back to June and still unresolved. If Cobalt has an external audit deadline, that's a live commitment you haven't closed.
+
+---
+
+### What to say
+
+**Open with the audit thread.** It's what they care about and it shows continuity from the last QBR:
+> "Last time we spoke, audit log export was the big one for you. I want to spend real time on it today, and I also want to make sure I understand exactly what your audit requires."
+
+**Ask, don't assume, on scope:**
+> "When you pull audit logs, what's on the other end — is a CSV into your own process enough, or do you need it streaming into a SIEM? That changes what 'done' looks like for you."
+
+**On the date — pick one:**
+
+- *If the product owner confirms Q1 2027:* "Q1 2027 for CSV export, as I told you in July. That still holds."
+- *If you don't have confirmation by the call:* "Q1 2027 is where this sits on our roadmap and it's what I committed to you. I'm doing a final confirmation with our product team this week and I'll come back to you in writing either way — I'd rather give you a date I've re-verified than repeat one from memory."
+
+The second version keeps your credibility if something has moved, without walking anything back prematurely.
+
+**On audit prep:**
+> "Audit prep has come up on every call since June. What's your actual audit date? I want to work backwards from it rather than keep listing it as a follow-up."
+
+**On ownership:**
+> "You've talked to several of us this quarter. Going forward I'm your single point of contact — anything roadmap or commitment-related comes through me."
+
+**Close with the near-term win:** Sandbox environments are Q4 2026 (NOT-20876) — the soonest thing you can give them. Lead with it if you need something concrete to offer.
+
+---
+
+### Before the call
+
+1. **Ask the product owner whether the Q1 2027 audit log export date still holds** — this gates your main talking point.
+2. Get the DRI-72283 readout (26 Sep) from Sam Lee / Priya Shah.
+3. Confirm Cobalt's actual audit deadline so audit prep stops rotating as an open action.
+4. Pull usage/health/renewal numbers from the account dashboard — not available in the records I can see.

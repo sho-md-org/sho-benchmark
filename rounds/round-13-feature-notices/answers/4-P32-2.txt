@@ -1,0 +1,47 @@
+## Harbor Clinics — QBR Brief
+
+**Prepared 2026-09-24 · call next week**
+
+### Where things stand
+
+The account is active and broad — 14+ touchpoints across the last six months, spread over multiple owners (Sam Lee, Priya Shah, Omar Haddad, Ana Petrova, Leo Grant, Jordan Blake, Tess Brown, Dana Ortiz). Recurring threads:
+
+| Theme | Latest record |
+|---|---|
+| Audit prep / exports | DRI-20995 (2026-08-19, you + Leo Grant), CRM-35862 |
+| Integrations & webhooks | CRM-75336 (2026-07-25), CRM-97969 |
+| Mobile app / offline | CRM-49374 (2026-09-21, most recent), CRM-39320 |
+| Notifications & dashboards | CRM-64035, CRM-78984, CRM-73374 |
+| Platform (latency, hosting, sandbox) | CRM-94239, CRM-34883, CRM-36695 |
+| Onboarding | CRM-48825 (2026-07-24) |
+
+The most recent contact (CRM-49374, 2026-09-21) explicitly lists "follow up on QBR prep" as next step, so they're expecting this.
+
+One structural observation worth naming to yourself, not to them: ownership is scattered across eight people. Audit prep alone has been handed between Leo Grant, Priya Shah, and Sam Lee since May. That's a coordination risk more than a product risk.
+
+### Open commitments
+
+**Data retention controls — by Q1 2027.** Committed by Jordan Blake (AE) to Ines Park, reconfirmed in the 2026-05-15 sync (DRI-80868) when Ines raised it directly. No later change found in the record, so this stands as-is and you can speak to it. Since it's Jordan's commitment rather than yours, get a delivery-status read from him before the call so you're not reaffirming a date you can't back.
+
+That is the only standing commitment to Harbor Clinics in the record.
+
+### Risks
+
+**1. EU data residency — the live exposure.** Ada Moss asked about it on 2026-06-09 (CRM-89966). The answer given was "exploring, no dates yet," and nothing has moved since. Three months of silence on a question a healthcare customer asked directly is the thing most likely to surface at a QBR. Go in with a deliberate answer rather than improvising.
+
+**2. Retention controls and residency will get conflated.** Ines has a Q1 2027 date for retention; Ada has no date for residency. If those blur together in the room, Harbor walks away believing residency is dated. Keep them explicitly separate.
+
+**3. Continuity.** With eight owners across six months, they may perceive drift even though activity is high. Pre-empt it.
+
+### What to say
+
+- **Open with the audit-prep thread** — it's the longest-running item and where you have the most recent direct involvement (DRI-20995).
+- **On data retention controls:** confirm Q1 2027. It's on record and unchanged. Name Jordan as the owner so Ines has a line to him.
+- **On EU data residency:** "Still exploring, and I don't have dates for you today — I'd rather tell you that than give you a date that moves." Then commit to a specific date by which you'll come back with a real answer. Don't leave it open a second time.
+- **Close by naming a single point of contact** for Harbor going forward. Given your involvement in latency (CRM-94239) and the support queue, that's plausibly you.
+
+### One flag outside this account
+
+Three commitments in your book carry notices that a decision you can't see may affect them: Advanced analytics to Pinecrest Realty (SLA-93532, yours), SCIM provisioning to Umber Studios (SLA-12035, Jordan's), and Audit log export to Granite Insurance (SLA-77342, yours). **None are Harbor Clinics**, so they don't touch this call. But two are yours, and if audit-log-export language migrates into the Harbor audit-prep conversation, check with the product owner before you reaffirm anything there.
+
+Want me to draft the QBR deck outline or the pre-call note to Jordan on retention status?

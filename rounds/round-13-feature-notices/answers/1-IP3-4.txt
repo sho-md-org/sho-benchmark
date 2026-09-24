@@ -1,0 +1,34 @@
+I searched all four systems (Slack, Notion, Linear, Drive, CRM) and **could not find a decision record for a change to "Advanced analytics"** — or any record that names "Advanced analytics" as a feature or tier at all. I don't want to hand you a name that isn't actually supported.
+
+## What I searched
+
+- **Slack** — "Advanced analytics", tier/packaging change, "moved to Enterprise plan", decision wording. Returns the same generic `Analytics` channel items each time: SLA-91143 (2026-07-13), SLA-60376 (2026-08-12), SLA-64584, SLA-25394.
+- **Notion** — analytics, pricing, roadmap, decision log. Ten `Analytics` pages, ten `Pricing` pages, ten `Roadmap` pages.
+- **Linear** — "Advanced analytics" and "analytics" both return **zero results**.
+- **Drive / CRM** — per-account analytics and pricing notes (DRI-13837, CRM-62518, etc.).
+
+## What the records actually contain
+
+Every record I opened is a one-line stub with an owner but no decision content:
+
+| ID | Date | Content |
+|---|---|---|
+| NOT-36076 (Pricing) | 2026-09-01 | "Notes on pricing. Owner **Jordan Blake**." |
+| NOT-58715 (Pricing) | 2026-08-24 | "Notes on pricing. Owner **Maya Chen**." |
+| NOT-75315 (Analytics) | 2026-08-08 | "Notes on analytics. Owner **Omar Haddad**." |
+| NOT-25881 (Analytics) | 2026-07-11 | "Notes on analytics. Owner **Priya Shah**." |
+| DRI-13837 (Pricing, Ironwood Legal) | 2026-09-24 | Attendees **Jordan Blake, Sam Lee**; "discussed pricing and analytics." |
+| SLA-60376 (Analytics) | 2026-08-12 | **Ana Petrova**: "update on analytics; NPS next week." |
+| SLA-91143 (Analytics) | 2026-07-13 | **Tess Brown**: "update on analytics." |
+
+These name *owners of notes*, which is not the same as a decision-maker. Jordan Blake is the closest thing to a recurring thread on the pricing side (NOT-36076, and the 2026-09-24 Ironwood Legal pricing call), but nothing states that they decided anything about Advanced analytics — inferring that would be a guess dressed up as a finding.
+
+## What would help
+
+Since the tools don't capture the change itself, can you tell me any of:
+
+1. **What the change was** — repackaged into a higher tier, deprecated, delayed, scope cut, price change?
+2. **Roughly when** you heard about it, so I can target the right window.
+3. **Where you encountered it** — a customer asking, a release note, a Slack thread?
+
+Any one of those gives me a real search handle. It's also possible the decision lives somewhere not connected here (an email thread or a pricing committee doc) — if so, Jordan Blake is the most reasonable person to ask first, based on ownership of the recent pricing records.

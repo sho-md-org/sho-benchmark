@@ -1,0 +1,32 @@
+## What the records show
+
+**The promise is real and documented.** At the 2026-07-09 sync (**DRI-36664**), Tom Hale reminded Brightline that "we told them SSO (SAML) by Q1 2027," and Leo Grant (AE) confirmed it on the call. Quarry isn't misremembering.
+
+**It also matches the published roadmap.** **NOT-20876** ("Public roadmap H1 2027," 2026-06-30) lists *"SSO (SAML), SP- and IdP-initiated: Q1 2027."* SCIM provisioning is also Q1 2027 on the same doc — worth mentioning, since identity teams usually want both together.
+
+**One caveat before you send:** NOT-20876 is dated 2026-06-30, roughly three months old. The two most recent roadmap entries (**NOT-64137**, 2026-09-26; **NOT-85086**, 2026-09-25, both owned by Maya Chen) are stubs with no dated commitments in them, and Linear returned nothing for SSO/SAML/auth work at all. So I can confirm the date was promised and published, but I **cannot** confirm from these tools that engineering has re-validated Q1 2027 recently or that build work is underway. I'd get a yes from Maya Chen before this goes out.
+
+## Draft reply
+
+> **Subject:** Re: SSO (SAML) timing
+>
+> Hi Tom,
+>
+> Yes — SSO (SAML) is still planned for Q1 2027, covering both SP- and IdP-initiated flows. That's what we committed to you, and it's what's on our published H1 2027 roadmap.
+>
+> Two things worth adding:
+>
+> SCIM provisioning is also targeted for Q1 2027. Most teams rolling out SAML want automated user provisioning and deprovisioning alongside it, so if that's on your list too, we should scope them together rather than sequentially.
+>
+> I'd also like to get you in front of the product team directly. I can set up a session with our roadmap owner so you can hear the delivery plan first-hand, ask about your specific IdP, and we can talk through what an early access or design-partner slot would look like. That gets you closer to the build than a status line from me, and it means you'd be testing against your own environment before general availability.
+>
+> Would a 30-minute call in the next couple of weeks work? Happy to work around your team's schedule.
+>
+> Best,
+> Leo
+
+## A note on the framing
+
+I kept the reply to "planned" and "targeted" rather than repeating "promised." The date is genuine and publicly published, so you should absolutely confirm it — but a roadmap date is a plan, and phrasing it as a guarantee is what turns an ordinary slip into a broken commitment later. The offer of direct product access is the part that actually reassures a customer who's asking this question a second time.
+
+Two loose threads you may want to pull before sending: there's a churn discussion on this account (**DRI-67006**, 2026-08-25) and audit prep activity (**DRI-62153**, 2026-09-07). Both are stubs with no detail in the tools, but if SSO is tied to an audit deadline or a renewal, the timing of this question is probably not a coincidence — and that would raise the cost of confirming a date nobody has re-checked.

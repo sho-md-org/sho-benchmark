@@ -1,0 +1,66 @@
+## Aster Health — QBR Brief
+
+**Prepared 2026-09-24 · Your call: next week**
+
+---
+
+### 1. Where things stand
+
+Activity is steady across April–September, spanning eleven+ logged touchpoints. Recurring themes, in rough order of frequency:
+
+| Theme | Records | Last touch |
+|---|---|---|
+| Sandbox | DRI-86962, CRM-62644, CRM-64767 | 2026-05-17 |
+| Exports | CRM-45213, CRM-76005 | 2026-04-18 |
+| Support queue | CRM-88906, CRM-97035, DRI-53905 | 2026-09-10 |
+| Dashboards | CRM-57156, CRM-75476 | 2026-07-21 |
+| Rate limits / API | DRI-86231, CRM-28889 | 2026-07-05 |
+| Audit prep / SSO | DRI-48323, DRI-46065 | 2026-08-07 |
+| Latency | CRM-68765 | 2026-06-22 |
+| Pricing | DRI-53905 | 2026-09-10 |
+
+Account contacts appearing across these: Omar Aziz, Omar Haddad, Ana Petrova, Dana Ortiz. Internal owners are spread thin — Leo Grant, Sam Lee, Tess Brown, Ana Petrova, Jordan Blake, and you all own separate threads.
+
+Two items are dated **2026-09-28** (next week): an NPS discussion (DRI-36735) and a trial-conversion call (CRM-81793, owner Leo Grant). Check whether these land before or after your QBR — the NPS result in particular is either a great talking point or a landmine, and you don't want to hear it first from the customer.
+
+### 2. Open commitments
+
+**Higher API rate limits — delivered. ✅**
+Priya Shah (AE) committed to Omar Aziz that rate limits would be raised **by October** (DRI-86231, re-confirmed 2026-06-12 after Omar reminded us of the original promise). Crane shipped **2026-09-20** — rate limits are now raised for all paid plans (SLA-26281). You're ahead of the deadline by about two weeks.
+
+This is your headline. It's the only commitment in the system tied to Aster Health, it was a promise the customer had to chase us on once, and we hit it early. Lead with it.
+
+**No other outstanding Aster Health commitments** appear in the records I can see.
+
+### 3. Risks
+
+- **Churn language recurs in follow-ups.** Four separate threads route to "follow up on churn" (CRM-64767, CRM-76005, CRM-68765, DRI-48323, DRI-46065). No single record explains why — but the pattern spans May through August and crosses sandbox, exports, latency, audit, and SSO. Worth understanding before the call rather than during it.
+- **Pricing surfaced recently** (DRI-53905, 2026-09-10) alongside support queue. Late-cycle pricing conversations plus churn chatter is a combination to take seriously. Ask Dana Ortiz what came out of that discussion.
+- **Support queue is a three-time repeat topic** across April, June, and September with three different owners. If the customer raises it at the QBR, "we're on it" won't land for the third time — go in with actual numbers.
+- **Ownership fragmentation.** Six different internal owners across ten threads. Nobody but you has the whole picture, and the customer likely feels that.
+- **Record detail is thin.** Most entries log the topic and next step but not the outcome or the customer's position. I can tell you what was discussed, not what was decided. Treat everything above as pointers to conversations you should refresh with the owners, not as settled fact.
+
+### 4. What to say
+
+**Open with the win.** "You asked us for higher API rate limits by October. They went live on the 20th — you have them now, across all paid plans." Concrete, on the record, early.
+
+**Name the queue before they do.** Get current ticket volume and time-to-resolution from Leo Grant and Sam Lee first. Acknowledging a three-quarter pattern with data is credible; being surprised by it is not.
+
+**Ask directly about sandbox and exports.** Both went quiet after spring with no closure recorded. Either they're resolved — say so and close them out — or they've been sitting, which is worth knowing.
+
+**Let them raise pricing.** Something happened on 2026-09-10; find out what from Dana Ortiz before the call. Don't open that door yourself without knowing what's behind it.
+
+**Close on consolidation.** Offer a single point of contact — you. Six owners is the clearest fixable irritant in this account.
+
+---
+
+### Separate heads-up (not Aster Health)
+
+Two of your own commitments on **other** accounts need a check with the product owner before you reaffirm them anywhere:
+
+- **Advanced analytics** → Lena Fox, Pinecrest Realty, promised for the spring release (SLA-93532)
+- **Audit log export** → Lena Fox, Granite Insurance, promised by Q1 2027 (SLA-77342)
+
+I can't see the current status of either. Confirm with the product owner that they still hold before repeating them to those customers — neither affects the Aster Health QBR.
+
+**Before the call:** ask Dana Ortiz about the pricing conversation, ask Leo Grant/Sam Lee for support queue numbers, and find out what's driving the churn follow-ups.

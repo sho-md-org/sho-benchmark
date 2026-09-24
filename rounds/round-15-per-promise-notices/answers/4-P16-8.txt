@@ -1,0 +1,60 @@
+# Keystone Energy — QBR Brief
+
+**⚠️ Read this first:** Do **not** reaffirm the Q1 2027 audit log export date on this call until you've checked with the product owner. There's a change flagged against that commitment that I can't see the contents of. It's the single highest-stakes item on the agenda — see Risks.
+
+---
+
+## Where things stand
+
+Keystone is an active, high-touch account — roughly 15 logged touchpoints since April 2026, with the account team spread across Maya (you), Jordan Blake (AE), Sam Lee, Omar Haddad, Tess Brown, and Priya Shah.
+
+The dominant thread all year is **audit/compliance prep**. It recurs in May (CRM-90377), June (CRM-17727, DRI-85107, DRI-48005), August (CRM-56742, DRI-84961), and again in Slack as recently as 2026-09-19 (SLA-13802). A parallel **security review** thread ran April through July (CRM-25431, CRM-64056, CRM-30791). These two threads are the customer's center of gravity.
+
+Recent activity, most recent first:
+- **2026-09-25** — Pricing, owner Jordan Blake; next step is offline mode (CRM-78617)
+- **2026-09-23** — Uptime, owner Sam Lee; next step NPS (CRM-19012)
+- **2026-09-19** — Audit prep Slack update, yours; "roadmap next week" (SLA-13802)
+- **2026-08-25** — Your QBR prep call; next step security review follow-up (CRM-93344)
+- **2026-08-24** — Audit prep and exports with Sam Lee (DRI-84961)
+- **2026-08-10** — Integrations and QBR prep with Sam Lee (DRI-31273)
+
+Note the pricing conversation on 09-25 (CRM-78617). If that's a renewal or expansion discussion, it changes the tenor of the QBR — worth syncing with Jordan before you walk in.
+
+## Open commitments to Keystone
+
+**Audit log export with SIEM streaming (Splunk), by Q1 2027.** Source: DRI-34564, the 2026-08-03 sync. Nia Cole raised it; Jordan Blake confirmed on behalf of the company. This is a company-level commitment, not just an AE's aspiration, and the public roadmap (NOT-20876, 2026-06-30) backs it: "Audit log export incl. SIEM streaming: Q1 2027."
+
+That is the only commitment on record made **to Keystone**. The other four open commitments in the system belong to other accounts (Pinecrest, Meridian, Umber, Granite) — don't let them bleed into this brief.
+
+## Risks
+
+**1. The audit log export date may have moved.** There's a flag on this commitment indicating a decision exists that I don't have visibility into. I can't tell you whether it changes the Q1 2027 date, and I'm not going to guess. What I can tell you:
+
+- The public roadmap still shows Q1 2027, but it's dated 2026-06-30 — nearly three months stale.
+- A newer roadmap record exists (NOT-77133, dated 2026-09-26), owned by **Jordan Blake**, explicitly tagged as related to audit prep. I can't see its substance.
+- Your own 09-19 Slack note says "roadmap next week."
+
+**Action before the call: ask the product owner directly whether Q1 2027 still holds.** Jordan Blake is the right first call — he made the confirmation to Nia and owns the newer roadmap record. If the date has slipped, you want to control that disclosure in a prepared QBR, not react to it when Nia asks.
+
+**2. Account team fragmentation.** Six different owners across recent touchpoints, and the "next steps" chain wanders — audit prep → support queue → notifications → webhooks → offline. Individually reasonable, collectively it reads as a customer being handed around. Nia may have noticed.
+
+**3. Compliance timing dependency.** Keystone has been preparing for an audit since at least May. If their audit window lands near Q1 2027, the export feature isn't a roadmap nice-to-have — it's on their critical path, and any slip is a material problem for them, not a disappointment.
+
+## What to say
+
+**Lead with the compliance thread.** It's what they care about. Acknowledge the full arc — five months of audit prep together, the security review closed out over the summer. Show you've tracked it.
+
+**On audit log export — script depends on your check with Jordan:**
+
+- *If Q1 2027 confirmed:* "Audit log export with SIEM streaming into Splunk is on track for Q1 2027, as we discussed on August 3rd." Then get concrete: which Splunk setup, what the integration work looks like on their side, when they need it in hand relative to their audit.
+- *If it has changed, or if you can't reach Jordan before the call:* don't restate the date. Say the roadmap is being refreshed and you'll come back with a firm date within a specific number of days — then hold that. A deferral you keep beats a date you retract.
+
+**Ask, don't assert, on their audit timeline.** "When does your audit window actually open?" You've discussed prep for five months without a date appearing in any record. You need it, and the question signals partnership.
+
+**Name the coverage issue before they do.** If you're the continuity point on this account, say so plainly. It costs nothing and it's the kind of thing that quietly erodes renewal confidence when left unsaid.
+
+**Coordinate with Jordan on pricing.** He had a pricing call on 09-25, the day before yesterday. Walking into a QBR unaware of where that landed is an avoidable own goal.
+
+---
+
+Records cited: CRM-93344, CRM-78617, CRM-19012, CRM-56742, CRM-30791, CRM-64056, CRM-25431, CRM-17727, CRM-90377, CRM-60405, CRM-15788, CRM-71078, DRI-34564, DRI-84961, DRI-31273, DRI-48005, DRI-85107, SLA-13802, SLA-12553, NOT-20876, NOT-77133.

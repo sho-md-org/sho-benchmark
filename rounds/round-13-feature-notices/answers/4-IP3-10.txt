@@ -1,0 +1,11 @@
+I can't answer that one — the decision record isn't visible to me.
+
+**What I can see:**
+
+- **SLA-93532** (2026-06-28) — your commitment to Lena Fox at Pinecrest Realty: Advanced analytics (Osprey) in the spring release, so they can finish their rollout.
+- **NOT-31499** (2026-04-16) — an Analytics notes page in Notion, owner listed as **Omar Haddad**.
+- **SLA-91143** (2026-07-13) — Tess Brown posting a general analytics update; no decision content.
+
+**The flag:** Sho notes that something outside my access may bear on your Pinecrest commitment. I can't confirm, deny, or characterize what that is — including who made any call or whether the spring-release date still stands.
+
+**Suggested next step:** check with the product owner before you reaffirm the spring release to Lena. Omar Haddad (per NOT-31499) is the right first ask; he can tell you both whether your promise holds and who owns the decision you're asking about. I'd hold off on any outbound update to Pinecrest until you hear back.

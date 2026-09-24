@@ -1,0 +1,49 @@
+## Bottom line first
+
+I can't write you an honest QBR brief from what's in the tools. I read all 20 Aster Health records across CRM and Drive, and every one is a one-line stub — topic, attendees, and a generic "next: follow up on X." None contain metrics, commitments, dollar figures, renewal dates, or outcomes. Slack, Linear, and Notion return **zero** Aster Health hits.
+
+Writing "where things stand, open commitments, risks" from this would mean inventing the substance. Here's what the record actually supports, plus what you need to fill before the call.
+
+## What the record actually shows
+
+**Activity timeline** (topic → record):
+
+| Date | Topic | Record | Internal owner |
+|---|---|---|---|
+| 2026-04-13 | NPS | CRM-26522 | Ana Petrova |
+| 2026-04-18 | Exports (×2) | CRM-45213, CRM-76005 | Leo Grant |
+| 2026-04-19 | Dashboards | CRM-57156 | Ana Petrova |
+| 2026-05-10 | Sandbox | CRM-62644 | **Maya Chen** |
+| 2026-05-11 | Hosting | CRM-81799 | Tess Brown |
+| 2026-05-17 | Sandbox | CRM-64767 | Ana Petrova |
+| 2026-06-14 | Latency | CRM-16329 | Priya Shah |
+| 2026-06-22 | Latency | CRM-68765 | Leo Grant |
+| 2026-07-21 | Dashboards | CRM-75476 | Sam Lee |
+| 2026-09-10 | Pricing | DRI-53905 | Dana Ortiz |
+| 2026-09-17 | Dashboards/search | DRI-75615 | Omar Haddad + you |
+
+**Three signals worth your attention:**
+
+1. **Latency came up twice in eight days in June** (CRM-16329, CRM-68765) — the only topic that repeats that tightly. Unresolved performance complaints are the most likely live risk.
+2. **Three records route to "follow up on churn"** (CRM-76005, CRM-64767, CRM-68765). That's templated text, not a verdict, but churn is the recurring next-step tag on this account.
+3. **A pricing conversation happened 2026-09-10** (DRI-53905, Dana Ortiz) two weeks before your QBR. You'll want to know what was said before you walk in.
+
+**On open commitments — the notable gap:** Brightline logs commitments in "renewal call notes" records. Seven accounts have one (Northstar Pharma CRM-52816, Kestrel Foods CRM-70743, Ironwood Legal CRM-25995, Riverton City CRM-74447, Norrland AB CRM-18094, Granite Insurance CRM-26651, Umber Studios CRM-62434). Northstar's, for example, logs a concrete renewal condition: Tess Brown committed HubSpot sync by a set date.
+
+**Aster Health has no such record.** So either no commitments were ever made, or they were made and never logged. That's worth resolving before you're in the room — an unlogged promise surfacing live is the worst version of this call.
+
+## What to chase before next week
+
+1. **Dana Ortiz** — what came out of the 2026-09-10 pricing discussion? Is Aster asking for a change?
+2. **Priya Shah / Leo Grant** — was the June latency issue resolved, and is there a fix shipped you can point to?
+3. **Omar Haddad** — he's on the most recent touchpoint with you (DRI-75615) and owns the current QBR prep thread; he's your best source for current state.
+4. **Confirm the commitment gap** — ask whether anything was promised to Aster that never got logged.
+5. Note DRI-36735 (NPS/audit prep, Omar Haddad + Ana Petrova) is dated **2026-09-28** — scheduled just after your call. Check whether that's pre- or post-QBR, since audit prep may be something Aster raises.
+
+## Two things I'd flag about the account itself
+
+**Owner churn.** Eight different Brightline people own the eleven logged touchpoints. You appear on only two (CRM-62644 in May, DRI-75615 in September). If Aster perceives that fragmentation, "who actually owns us?" is a fair question to expect — and worth pre-empting by opening with clear ownership.
+
+**No renewal date anywhere.** Nothing in the tools tells me when Aster renews or what they pay. You'll need that from whoever holds the contract; it determines whether this is a routine check-in or a save.
+
+Once you have the pricing outcome, the latency status, and the renewal date, send them over and I'll draft the full brief and your talk track — that's the missing 80%, and those three inputs are most of it.

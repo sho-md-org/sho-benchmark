@@ -1,0 +1,65 @@
+## Cobalt Retail — QBR Brief
+
+**One thing to handle before the call:** do not restate the Q1 2027 audit log export date to Sam until you've checked with the product owner. Details in Risks below.
+
+---
+
+### Where things stand
+
+The Cobalt record trail is thin — mostly one-line call notes with no outcomes logged — so this is a picture of activity, not health. Cadence has been steady and broad across the year:
+
+| Date | Topic | Internal owner | Record |
+|---|---|---|---|
+| 2026-04-20 | Roadmap | Maya Chen | CRM-70221 |
+| 2026-04-27 | Onboarding | Priya Shah | CRM-49779 |
+| 2026-05-26 | Dashboards | Tess Brown | CRM-24697 |
+| 2026-06-12 | Audit prep | Omar Haddad | CRM-24323 |
+| 2026-06-15 | Onboarding | Omar Haddad | CRM-16603 |
+| 2026-06-23 | Pricing | Priya Shah | CRM-87224 |
+| 2026-07-23 | Reporting | Priya Shah | CRM-94849 |
+| 2026-07-24 | **QBR — audit log export commitment** | Maya Chen | **CRM-38600** |
+| 2026-08-01 | Notifications | Omar Haddad | CRM-35990 |
+| 2026-08-04 | QBR prep | Jordan Blake | CRM-12694 |
+| 2026-08-11 | Billing (internal: Ana Petrova, Omar Haddad) | — | DRI-75222 |
+
+Two patterns worth naming out loud at the QBR: **audit prep is the thread that keeps recurring** (CRM-24323, DRI-75222, and the follow-up trail from CRM-87224 and CRM-12694 all point back to it), and **account ownership has rotated across at least five internal people** in five months. If Sam has felt continuity gaps, that's the likely source.
+
+### Open commitments
+
+**1. Audit log export (Lark) — CSV export, by Q1 2027.** Made by you to Sam Ortiz at the 2026-07-24 QBR (CRM-38600), in strong terms: *"you have my word."* Sam is planning around it. This is the commitment that matters at this call.
+
+**2. Audit log export — Granite Insurance, Q1 2027** (SLA-77342). Different account, also yours, same feature. Not a Cobalt agenda item, but whatever you learn from the product owner applies here too — worth closing both loops in one conversation.
+
+No other open commitments to Cobalt Retail appear in the records I can see.
+
+### Risks
+
+**The audit log export date is the live risk.** Sho flags that a decision I don't have visibility into may or may not affect this commitment. I can't tell you what it is or whether it changes anything — and neither should you assume it doesn't. What this means concretely:
+
+- The public roadmap as of 2026-06-30 (NOT-20876) still lists *Audit log export incl. SIEM streaming: Q1 2027*. That document is three months old and is not confirmation that your promise still holds.
+- **Ask the product owner whether the Q1 2027 commitment stands before you reaffirm it to Sam.** Do this before the call, not during.
+- Exposure is elevated because of how the promise was worded. "You have my word" plus a customer planning around the date means a slip lands as a broken promise, not a schedule change.
+
+**Secondary risks:**
+- *Ownership churn* (five owners since April) — a real retention risk on a multi-thread account, and something Sam may raise before you do.
+- *Record hygiene* — no outcomes, no health score, no renewal date, no usage data in anything I can access. If you want those in the deck, you'll need to pull them from a system I don't have; ask Jordan Blake (most recent QBR-prep owner, CRM-12694) or Ana Petrova on the billing side (DRI-75222).
+
+### What to say
+
+**On audit log export — branch on what the product owner tells you.**
+
+*If the date is confirmed:* "Audit log export is on track for Q1 2027 as we discussed in July — CSV export, and the roadmap also has SIEM streaming in that same release. Here's what we'd need from your side to be ready."
+
+*If it has moved or is uncertain:* tell Sam directly and early in the call, before he builds more plans on it. "I need to correct something I told you in July. I committed to Q1 2027 and I shouldn't have been that definitive — let me give you what I now know and what I'm doing to get you a firm answer." Then give a date by which you'll come back with certainty. Don't offer a replacement date you haven't verified.
+
+*If you haven't reached the product owner before the call:* say the timeline is being re-confirmed and you'll follow up within the week. That's better than reaffirming and retracting.
+
+**On continuity:** get ahead of it. "You've had several people across your account this year. Going forward I'm your single point of contact — here's who handles billing and who handles technical escalation, and you come to me for everything else."
+
+**On the audit thread:** it's come up in four separate conversations. Ask Sam what his actual audit deadline is. That's the number that determines whether a slip in audit log export is an inconvenience or a crisis, and you want it before you negotiate anything.
+
+**Ask for:** renewal timing, expansion signals, and his audit deadline. Those three make the next QBR easier to prep.
+
+---
+
+Want me to draft the follow-up note to the product owner, or turn this into slide-ready bullets?

@@ -1,0 +1,23 @@
+Checked the account context: the Q1 2027 SSO commitment to Quarry Mining is intact — reconfirmed by Leo Grant to Tom Hale on 2026-07-09 (DRI-36664), and SSO (SAML), SP- and IdP-initiated still sits at Q1 2027 on the public roadmap as of 2026-06-30 (NOT-20876). No later change recorded, so the AE can reaffirm it directly.
+
+**Draft reply:**
+
+> Subject: Re: SSO (SAML) timing
+>
+> Hi Tom,
+>
+> Yes — nothing has changed. SSO (SAML) is still targeted for Q1 2027, covering both SP-initiated and IdP-initiated flows. That's the same commitment Leo confirmed with you on our July 9 sync, and it remains on our published H1 2027 roadmap.
+>
+> One adjacent item you may find useful for planning: SCIM provisioning is also targeted for Q1 2027, so user provisioning and SSO should land in the same window.
+>
+> As we get closer, I'd like to set up a short call with our product team to walk your IT group through the IdP configuration steps so you can be ready to test as soon as it's available. Happy to get that on the calendar in the new year.
+>
+> Best,
+> [AE name]
+
+Two notes on the draft:
+
+- I kept it to a plain reaffirmation rather than a hard guarantee ("targeted for") — accurate to how the roadmap is stated, without walking back the promise.
+- The SCIM mention comes from the public roadmap (NOT-20876), so it's safe to share. Drop it if you'd rather not widen the conversation.
+
+One unrelated flag from the same context: an earlier custom roles commitment made to **Ironwood Legal** (SLA-46650) has an open question against it — check with the product owner before that one gets reaffirmed to anyone. It doesn't touch this Quarry Mining reply.

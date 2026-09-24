@@ -1,0 +1,86 @@
+## First, an important caveat
+
+I pulled all 25 Harbor Clinics records across CRM and Drive (Slack, Linear, and Notion have **no** Harbor-tagged content). Every record is a one-line stub — topic, date, attendees, and a "next" pointer. **None contains ARR, renewal date, contract terms, customer-side stakeholder names, ticket severity, resolution status, health score, or NPS values.**
+
+So I can't give you a real "where things stand" on commercials — that data isn't in these tools. What I *can* give you is a genuine and fairly revealing pattern analysis, plus a precise list of what to source before the call. I've flagged inference vs. fact throughout.
+
+---
+
+# Harbor Clinics — QBR Brief
+
+**Prepared:** 2026-09-24 · **Last recorded touch:** 2026-09-18 (DRI-30021)
+
+## Where things stand
+
+**Activity is heavy and broad.** 25 logged touches since April — roughly weekly. This is not a neglected account.
+
+**But ownership is diffuse.** Nine different Brightline owners appear across ten CRM calls: Omar Haddad (CRM-97969, CRM-75336), Ana Petrova (CRM-73374, CRM-64035), Maya Chen (CRM-94239), Jordan Blake (CRM-36695), Tess Brown (CRM-41255), Dana Ortiz (CRM-78984), Sam Lee (CRM-34883), Priya Shah (CRM-39320). No consistent thread-owner. *This is the finding I'd act on most.* From the customer's side, it likely feels like re-explaining themselves every call.
+
+**Topic clusters, by recency:**
+
+| Thread | Records | Signal |
+|---|---|---|
+| **Churn** | DRI-17076 (7/20), DRI-26772 (9/6), DRI-17950 (9/11) | ⚠️ Accelerating — two in the last month |
+| Dashboards / reporting / analytics | DRI-67100, DRI-60679, CRM-64035, DRI-17950 | Persistent, unresolved |
+| Performance (latency/uptime/offline) | CRM-94239, DRI-25457, DRI-60679, DRI-88564, CRM-39320 | Long-running |
+| Security (SSO/security review/audit prep) | DRI-25457, CRM-34883, DRI-18519, DRI-20995 | Active through August |
+| Sandbox | CRM-36695, DRI-18426, DRI-26772 | Recurring |
+| **Pricing** | DRI-51027 (4/23), DRI-40615 (5/18), DRI-55004 (7/21) | 🔻 Went quiet after July 21 |
+
+## Risks
+
+1. **"Churn" is now a standing internal topic on this account.** Three Harbor-tagged churn discussions, the two most recent on 9/6 and 9/11 — and you were in the 9/11 one (DRI-17950, with Tess Brown). Whatever drove that is the real subtext of this QBR.
+2. **CRM has gone dark for four weeks.** Last CRM entries are both 8/26 (CRM-39320, CRM-64035). The only activity since is Drive notes. Either logging lapsed or engagement cooled — worth knowing which before you walk in.
+3. **Pricing conversations stopped in July** while churn conversations started. That sequence is worth understanding; it's a plausible renewal-risk signal, though the records don't say so.
+4. **Dashboards/analytics is the most-repeated unresolved ask** — raised at least four times across five months, including the 9/11 churn conversation. A repeatedly-requested, never-closed item is classic churn fuel.
+5. **Diffuse ownership** (above) compounds all of the above.
+
+## Open commitments
+
+Tracing each CRM "next" against whether a follow-up record exists:
+
+**Closed:**
+- Reporting — CRM-94239 → DRI-67100 ✅
+- Latency — CRM-41255 → DRI-55004 ✅
+- SSO questions — CRM-34883 → DRI-18519 ✅
+
+**No follow-up on record:**
+- **Notifications** — CRM-39320 (8/26, Priya Shah) — most recent, still open
+- **Analytics** — CRM-64035 (8/26, Ana Petrova) — most recent, still open
+- **Search** — CRM-75336 (7/25, Omar Haddad)
+- **Permissions UI** — CRM-78984 (6/15, Dana Ortiz)
+- **Onboarding** — CRM-36695 (6/13, Jordan Blake)
+- **Webhooks** — CRM-97969 (4/25, Omar Haddad) — open ~5 months
+
+⚠️ These are *topic pointers*, not commitments with deliverables or dates. The records don't say what was actually promised. **Confirm each with the named owner before the call** — walking in and claiming these are open commitments when one was quietly resolved would cost you credibility.
+
+## What I'd say on the call
+
+**Open by naming the pattern, not hiding it.** You've had ~25 touches across nine owners. Lead with: *"I've gone back through everything since April, and I want to start by owning something — you've been passed between a lot of people here."* Then name yourself as the single thread-owner going forward. This directly addresses the most likely source of frustration and costs you nothing.
+
+**Go straight at dashboards/analytics.** It's their most-repeated ask and your weakest follow-through. Come with a dated commitment or an honest "not on the roadmap, here's the workaround" — but don't let it get raised a fifth time with no answer.
+
+**Close the loop on the six open threads explicitly.** Even "webhooks — we dropped this in April, is it still relevant?" is better than silence. Some may have gone stale, and retiring them is a win.
+
+**Ask the renewal question directly.** Pricing stopped in July; churn talk started. Don't dance around it: *"Where's your head on the renewal?"* You need the real answer more than you need a smooth meeting.
+
+**Don't oversell.** With no health-score or NPS data in hand, avoid "we're seeing great engagement." Ask more than you assert.
+
+---
+
+## Before the call — you need to source these
+
+None of this exists in CRM/Drive/Slack/Linear/Notion:
+
+- **ARR, contract terms, and renewal date** (billing/finance system)
+- **Customer-side stakeholders** — no Harbor contact is named in *any* record, including economic buyer and champion status
+- **What actually triggered the churn discussions** — ask Leo Grant (in both DRI-17076 and DRI-26772) and Tess Brown (with you on DRI-17950); Leo is your best single source
+- **Support ticket volume/severity** — two "support queue" notes (DRI-86859, DRI-20995) with no detail
+- **Real status of the six open threads** — from Priya Shah, Ana Petrova, Omar Haddad, Dana Ortiz, Jordan Blake
+- **Audit prep status** (DRI-20995) — if they're in an audit cycle, that's leverage and a deadline
+
+**Two ambiguities I did not resolve for you:** the Notion "Qbr prep" docs (NOT-42571 9/15, NOT-52051 9/5, both owned by Omar Haddad) name no account — they may or may not be Harbor's, worth 30 seconds to check with Omar. Likewise the `#churn` Slack threads (SLA-93428 9/25, SLA-59527 8/26) are a general channel, not Harbor-specific; I did not attribute them to this account.
+
+**Useful tailwind:** per SLA-40138, the data team owes CS a weekly Monday churn-risk report starting October — that may give you standing Harbor signal right after this QBR.
+
+Want me to draft the actual talk track or customer-facing deck once you've filled in the renewal number and the churn backstory?

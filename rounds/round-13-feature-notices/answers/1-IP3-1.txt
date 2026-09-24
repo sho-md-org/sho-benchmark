@@ -1,0 +1,16 @@
+## Short answer: I can't find it — and I don't think the record exists
+
+I searched Slack, Notion, Linear, Drive, and the CRM for "Advanced analytics," plus related angles (pricing/packaging changes, tier moves, add-ons, decision logs, roadmap). **There is no record of a feature or tier called "Advanced analytics," and no decision record about changing it.**
+
+What I actually found:
+
+- **No entity by that name.** Every hit is a generically-titled "Analytics" item, not "Advanced analytics." Linear returned zero results for `Advanced`, `analytics`, and `pricing packaging`.
+- **The analytics records contain no decisions.** They're status stubs and call logs with owners but no outcome. E.g. `SLA-91143` (2026-07-13, Tess Brown: "update on analytics"), `SLA-60376` (2026-08-12, Ana Petrova), `NOT-75315` (2026-08-08, owner Omar Haddad), `DRI-78883` (2026-08-24, Bluewater Logistics — Priya Shah, Leo Grant), `CRM-62518` (2026-09-21, Bluewater Logistics, owner Leo Grant), `CRM-70722` (2026-09-12, Riverton City, owner Maya Chen).
+- **The pricing records are equally thin.** `SLA-48655` (2026-09-06, Jordan Blake), `NOT-36076` (2026-09-01, owner Jordan Blake), `NOT-58715` (2026-08-24, owner Maya Chen) — all "notes on pricing," no decision, no approver.
+- **No decision log at all.** A Slack search for `decided / approved / sign-off / owner decision` returned nothing.
+
+I could name Jordan Blake (owns the most recent pricing notes) or Omar Haddad (owns the analytics Notion page) as plausible candidates, but that would be me inferring a decision-maker from document ownership, not reporting one. Owning a notes page isn't the same as making the call, and I'd rather not hand you a name to take into a customer conversation on that basis.
+
+**To get you a real answer, it'd help to know:** where you heard about the change (a customer escalation? a release note? an internal announcement?), and roughly when. A customer name or a date range would let me search the specific account records — several accounts have analytics threads (Fjord Media, Bluewater Logistics, Pinecrest Realty, Riverton City, Evergreen Bank, Northstar Pharma, Tidewater Ports) that I could pull in full.
+
+If "Advanced analytics" is the customer-facing name for something tracked internally under a different label, that would also explain the miss — the search tools only match on title text here.

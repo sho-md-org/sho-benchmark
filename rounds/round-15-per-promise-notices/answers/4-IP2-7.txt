@@ -1,0 +1,24 @@
+I can't answer that one, and the reason matters more than the non-answer.
+
+**What I can see**
+
+Two SSO (SAML) commitments are on record, neither made by you:
+
+| Account | Who promised | What | Status |
+|---|---|---|---|
+| Riverton City (`CRM-74447`) | Tess Brown (CS) | SSO (SAML), "early next year", renewal condition | No later change found |
+| Umber Studios (`CRM-62434`) | Priya Shah (AE) | SSO (SAML) by March, **with IdP-initiated sign-in** | Flagged — see below |
+
+The Umber Studios commitment carries a notice: there's a decision I don't have access to that may or may not change that promise. I can't confirm, deny, or characterize what that decision is — including whether it touches IdP-initiated specifically. So I genuinely can't tell you whether the IdP-initiated piece is what moved.
+
+**One thing to guard against**
+
+It's tempting to read significance into the fact that the flagged commitment is the one that mentions IdP-initiated. Don't. `CRM-62434` is the only SSO record that spells out sub-scope at all — the Riverton City note just says "SSO (SAML)" with no breakdown, and `DRI-36664` (Quarry Mining, Leo Grant confirming Q1 2027) is similarly unscoped. The notice attaches to the whole commitment, not to a named part of it. The correlation is an artifact of how the notes were written.
+
+For reference, the public roadmap `NOT-20876` (2026-06-30) still lists "SSO (SAML), SP- and IdP-initiated: Q1 2027" — but that predates the flag, so I wouldn't lean on it as current.
+
+**What to do**
+
+Ask the product owner for SSO (Heron) directly: has the scope or date on `CRM-62434` changed, and does SP- vs IdP-initiated split out? Until they answer, don't reaffirm the March date or the IdP-initiated scope to Umber Studios — it's logged as a renewal condition, so a quiet reaffirmation there is expensive if it's wrong.
+
+Worth flagging separately: Umber Studios has two other commitments with the same notice — SCIM provisioning (`SLA-12035`, Q1 2027) and Webhooks v2 (`CRM-60841`, Q1 2027). If you're going back to that account anyway, get all three answered in one pass rather than one at a time.

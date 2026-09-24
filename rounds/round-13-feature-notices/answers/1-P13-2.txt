@@ -1,0 +1,43 @@
+I have what I need. Here's the verification summary and the draft.
+
+## What the records show
+
+| Question | Finding | Source |
+|---|---|---|
+| Did we promise it? | Yes — Tom Hale raised it, Leo Grant (AE) confirmed SSO (SAML) by Q1 2027 | DRI-36664 (2026-07-09) |
+| Is it on the roadmap? | Yes — "SSO (SAML), SP- and IdP-initiated: Q1 2027" | NOT-20876, Public roadmap H1 2027 |
+| Has it slipped? | No SSO slip found. The only announced slip is **Sandbox environments** Q4 2026 → Q2 2027 | SLA-17908 (2026-09-19) |
+
+So this is a clean "yes, still on track" — the customer's recollection is accurate and the roadmap still backs it. Two things worth adding: **SCIM provisioning is also Q1 2027** (NOT-20876), which customers usually want alongside SAML, and the roadmap entry explicitly covers **both SP- and IdP-initiated** flows, which is a detail Quarry's IT team will ask about.
+
+---
+
+## Draft reply
+
+**Subject: Re: SSO (SAML) timeline**
+
+Hi Tom,
+
+Yes — SSO (SAML) is still planned for Q1 2027, consistent with what we discussed on our July 9 call.
+
+A couple of specifics that may be useful for your IT team's planning:
+
+- The scope covers both **SP-initiated and IdP-initiated** flows, so you won't be constrained to one entry path.
+- **SCIM provisioning** is also targeted for Q1 2027. Most teams want automated user provisioning/deprovisioning alongside SAML, so it's worth scoping the two together on your side.
+
+I'd suggest we set up a short call with our product team once we're closer, so your identity team can walk through IdP specifics and we can line up your configuration ahead of general availability. Happy to get that on the calendar in the new year.
+
+If anything shifts on our side, you'll hear it from me before you hear it anywhere else.
+
+Best,
+Leo
+
+---
+
+## Two notes before you send
+
+**The roadmap is ~3 months old** (NOT-20876, dated 2026-06-30) and Q1 2027 is still two quarters out. Nothing indicates SSO is at risk, but I'd ping Maya Chen (roadmap owner, per NOT-85086/NOT-64137) for a same-day confirmation before you commit in writing to a named quarter. The Rail/Sandbox slip (SLA-17908) is a reminder that dates on this roadmap do move.
+
+**I kept the language at "planned/targeted" rather than "guaranteed."** The customer's word was "promised," and I'd avoid echoing it — a roadmap date isn't a contractual commitment, and matching their framing makes it one. I couldn't find a Quarry Mining contract record specifying SSO as a renewal condition; if one exists outside these systems, check it, because that would change the stakes on the wording.
+
+One flag on account health: there's a churn discussion for Quarry Mining from 2026-08-25 (DRI-67006) and audit prep on 2026-09-07 (DRI-62153). The details are thin in the notes, but a timeline question from an account with a recent churn conversation is worth treating as more than a routine status check — it may be worth a call rather than just an email reply.

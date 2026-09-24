@@ -1,0 +1,105 @@
+I searched all four systems (CRM, Drive, Slack, Linear, Notion) for Vantage Telecom. Here's the brief — with one important caveat up front.
+
+# Vantage Telecom — QBR Brief
+
+## ⚠️ Read this first: the source data is thin
+
+Every Vantage record in our systems is a **one-line stub**. There is no contract record, no ARR or renewal date, no NPS score, no health score, no named customer-side contacts, and no ticket history (Linear returns **zero** Vantage results). I traced 19 records; none contain numbers or substance.
+
+**So this brief cannot tell you how the account is actually performing.** What it *can* do is reconstruct the engagement timeline, surface the open commitments, and flag a real risk pattern. Treat the "where things stand" section as *what we've been talking about*, not *how we're doing*.
+
+---
+
+## Where things stand
+
+**Engagement timeline** (19 records, 2026-04-02 → 2026-09-13):
+
+| Date | Record | Topic | Owner/Attendees |
+|---|---|---|---|
+| 2026-09-13 | `CRM-65747` | Dashboards | **Maya Chen** |
+| 2026-09-11 | `DRI-67178` | SSO questions + NPS | Dana Ortiz, Omar Haddad |
+| 2026-09-06 | `DRI-14442` | **Churn + QBR prep** | Dana Ortiz, Tess Brown |
+| 2026-08-18 | `DRI-10836` | Support queue | Leo Grant, Omar Haddad |
+| 2026-08-11 | `DRI-77676` | Trial conversion + NPS | Tess Brown, Ana Petrova |
+| 2026-08-05 | `DRI-89702` | Rate limits + hosting | **Maya Chen**, Omar Haddad |
+| 2026-07-23 | `CRM-92524` | Billing | Jordan Blake |
+| 2026-07-10 | `CRM-37016` | NPS | Tess Brown |
+| 2026-07-08 | `CRM-84868` | Search | Priya Shah |
+| 2026-06-22 | `CRM-15845` | Onboarding | Dana Ortiz |
+| 2026-06-17 | `CRM-74774` | Search | Priya Shah |
+| 2026-06-14 | `DRI-68417` | Reporting | Ana Petrova, Tess Brown |
+| 2026-05-28 | `DRI-57024` | Webhooks | Ana Petrova, Leo Grant |
+| 2026-05-18 | `CRM-53521` | Analytics | Jordan Blake |
+| 2026-05-14 | `CRM-23907` | Exports | Ana Petrova |
+| 2026-05-06 | `DRI-64274` | Trial conversion | Dana Ortiz |
+| 2026-04-27 | `CRM-20779` | Dashboards | Tess Brown |
+| 2026-04-12 | `CRM-24363` | Billing | Leo Grant |
+| 2026-04-02 | `DRI-81968` | Integrations + audit prep | **Maya Chen**, Leo Grant |
+
+**Recurring themes:** Dashboards/Exports/Reporting (6 records) is the dominant thread. Billing (2), Search (2), Trial conversion (2), NPS (3 mentions) follow.
+
+**Cadence note:** contact was steady through August, then stops at 2026-09-13. You're going into the QBR after ~11 days of silence.
+
+---
+
+## Open commitments
+
+The CRM "Next:" fields are the only commitment data that exists. I cross-checked each against later records to see if it was ever closed:
+
+| From | Commitment | Owner | Status |
+|---|---|---|---|
+| `CRM-65747` (09-13) | Follow up on **exports** | **Maya Chen — you** | 🔴 Open, no follow-up record |
+| `CRM-92524` (07-23) | Follow up on **latency** | Jordan Blake | 🔴 Open — no Vantage latency record exists, ever |
+| `CRM-37016` (07-10) | Follow up on **reporting** | Tess Brown | 🔴 Open — reporting doc predates it |
+| `CRM-84868` (07-08) | Follow up on **QBR prep** | Priya Shah | 🟡 This call |
+| `CRM-15845` (06-22) | Follow up on **webhooks** | Dana Ortiz | 🔴 Open |
+| `CRM-74774` (06-17) | Follow up on **webhooks** | Priya Shah | 🔴 Open |
+| `CRM-53521` (05-18) | Follow up on **sandbox** | Jordan Blake | 🔴 Open — no Vantage sandbox record |
+| `CRM-23907` (05-14) | Follow up on **webhooks** | Ana Petrova | 🟢 Likely closed by `DRI-57024` (05-28) |
+| `CRM-20779` (04-27) | Follow up on **integrations** | Tess Brown | 🔴 Open — integrations doc predates it |
+| `CRM-24363` (04-12) | Follow up on **latency** | Leo Grant | 🔴 Open |
+
+**8 of 10 logged commitments have no visible closure.** The one you personally own (exports, from your 09-13 call) is among them.
+
+---
+
+## Risks
+
+1. **Churn is already on the table.** `DRI-14442` (09-06) pairs "churn" with "QBR prep" in the same session — Dana Ortiz and Tess Brown, not you. Someone flagged this account before this QBR. **Find out what prompted that meeting before you walk in.** This is the single most important prep item.
+2. **Latency asked for twice, never delivered.** Both billing calls (`CRM-24363` April, `CRM-92524` July) ended with "follow up on latency." There is no latency record for Vantage in any system. A performance concern raised alongside billing, twice, unanswered for five months, is the classic shape of a renewal problem.
+3. **Webhooks asked for three times** (`CRM-23907`, `CRM-74774`, `CRM-15845`) with one delivery. Repeat asks signal the answer didn't land.
+4. **Owner churn on our side.** Eight different Brightline people across 19 touches, with no consistent lead. The customer has likely repeated themselves a lot.
+5. **Dashboards/exports is unresolved after 5 months.** First raised 04-27, still the open item on 09-13.
+6. **You are going in blind on commercials.** No renewal date, no ARR, no usage data. If they open with a pricing or renewal question, you have nothing.
+
+---
+
+## What to say
+
+**Open by naming the gap — don't let them do it:**
+> "Before we get to the roadmap, I want to close the loop on things we owed you. Exports from our last call, the webhook questions, and the latency follow-up from the billing conversations. I don't think we've served you well on those, and I'd rather start there."
+
+Leading with this converts your weakest position into credibility. If you present a polished QBR deck while eight commitments sit open, they will raise it and you'll be reacting.
+
+**Then anchor on the dashboards/exports thread** — it's their most persistent ask and the most likely place to show a concrete win.
+
+**Questions to ask them:**
+- "What's the one thing that would make the biggest difference in the next 90 days?"
+- "How is the team finding performance day to day?" *(surfaces the latency thread without admitting we dropped it)*
+- "Who else on your side should be in these conversations?" *(we have no mapped contacts)*
+- "How are you thinking about the relationship heading into next term?" *(tests the churn signal directly)*
+
+**Commit to one thing, specifically.** Given the track record, leaving with three vague follow-ups repeats the pattern. Pick exports — you own it, it's freshest, it's their recurring theme — and give a dated deliverable with your name on it.
+
+**Do not** present NPS or health metrics. We have three records mentioning NPS and not one score. If asked, say you'll send it after.
+
+---
+
+## Before the call — do these four things
+
+1. **Ask Dana Ortiz and Tess Brown what the 09-06 churn conversation was about** (`DRI-14442`). Highest-value 10 minutes of your prep.
+2. **Get the commercials** — renewal date, ARR, contract terms — from whoever owns the contract. Not in any system I can see.
+3. **Ask Jordan Blake and Leo Grant about the latency follow-ups** (`CRM-92524`, `CRM-24363`). Know whether anything happened before they ask.
+4. **Check with Priya Shah** — they logged "follow up on QBR prep" back on 07-08 (`CRM-84868`) and may have material already.
+
+One note on sourcing: Slack and Notion have many "QBR prep" items (e.g. `SLA-55835`, `NOT-42571`, `NOT-52051`, mostly owned by Omar Haddad), but **none are tagged to Vantage**, so I haven't attributed them to this account. `SLA-55835` is dated 2026-09-26 — two days out — and may be relevant; worth asking Omar Haddad directly.

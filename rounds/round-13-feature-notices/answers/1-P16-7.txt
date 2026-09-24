@@ -1,0 +1,66 @@
+I researched all four systems. Before the brief, one thing you need to know up front.
+
+## The honest headline
+
+**The source data can't support a substantive QBR brief.** All 17 Keystone Energy records — 10 CRM, 7 Drive — are one-line topic stubs. Representative examples, quoted in full:
+
+> CRM-19012: "Call with Keystone Energy. Discussed uptime. Owner Sam Lee. Next: follow up on NPS."
+> DRI-20667: "Attendees: Ana Petrova, Ana Petrova. Discussed churn and pricing."
+
+There is no contract value, renewal date, ARR, health score, named stakeholder on the customer side, or a single logged commitment anywhere in the Keystone file. Slack, Linear, and Notion return **zero** results for "Keystone" or "Keystone Energy."
+
+I know this is a data gap and not just sparse tooling, because comparison accounts do carry real content. Northstar Pharma's renewal note (CRM-52816) reads: "Tess Brown (CS) committed that HubSpot sync will be available by before summer. Logged as a renewal condition." That's a named commitment with an owner. **Keystone has no renewal-call record at all**, while Northstar, Kestrel Foods, Ironwood Legal, Riverton City, Norrland AB, Granite Insurance, and Umber Studios each have one.
+
+So: I can't tell you "where things stand" on commercials or list your open commitments with evidence. Inventing those for a customer-facing call is the one thing that would actually hurt you. Here's what the data *does* support.
+
+## What the record genuinely shows
+
+**Cadence is healthy.** 17 touchpoints across Apr–Sep 2026, roughly 3/month, continuing through last week. This is not a neglected account.
+
+**Recurring themes, by frequency:**
+- **Analytics** — 3 CRM calls (CRM-50205 May 16, CRM-71134 Jun 18, CRM-71909 Jul 21). Most-repeated topic; recurring across months suggests unresolved.
+- **Uptime / latency / performance** — CRM-23178, CRM-19012, DRI-46374, DRI-64156, DRI-60948, DRI-41756. The single largest cluster.
+- **Dashboards** — CRM-79992, DRI-39787.
+- **Sandbox** — DRI-27950, DRI-41756.
+
+**The one real risk signal:** DRI-20667 (Aug 15) pairs **churn with pricing** in the same discussion. DRI-75981 (Jul 21) pairs **NPS with churn**. Churn surfacing twice in two months, once alongside pricing, is the thing I'd want you to walk in prepared for.
+
+**Dangling follow-ups.** The "Next:" fields are the only commitment-like artifacts. Tracing each forward, these were promised and have **no subsequent record** on that topic:
+
+| Promised in | Date | Follow-up owed | Status |
+|---|---|---|---|
+| CRM-71045 | May 2 | webhooks | No webhooks record exists — open ~5 mo |
+| CRM-79992 | May 24 | hosting | No hosting record exists — open ~4 mo |
+| CRM-56812 | Jul 12 | search | No search record exists — open ~2 mo |
+| CRM-19012 | Sep 23 | NPS | Last NPS artifact Jul 21 — open |
+| CRM-78617 | Sep 25 | offline | Last offline artifact Apr 20 — open |
+
+Treat as leads to verify, not as confirmed misses — absence of a record isn't proof the work didn't happen.
+
+**Two flags:**
+1. **CRM-78617 is dated 2026-09-25 — tomorrow.** A pricing call with Jordan Blake. Either it's scheduled and pre-logged, or the date is wrong. Given pricing was tied to churn in August, find out which before your call.
+2. **Ownership rotates constantly** — Sam Lee, Jordan Blake, Leo Grant, and Ana Petrova each own records, with no stable owner. For an account where churn is being discussed, that's a risk in itself.
+
+Data quality caveat: DRI-20667 lists "Ana Petrova, Ana Petrova" and DRI-85290 lists "Maya Chen, Maya Chen" — duplicated attendees mean attendee fields are unreliable.
+
+## Fastest path to a real brief
+
+Three moves, in priority order:
+
+1. **DRI-31273** (Aug 10, Sam Lee + Maya Chen) is titled "integrations and QBR prep" — your own prior QBR prep session. The stub has no content, but you were in the room; your notes or Sam's likely hold the substance.
+2. **Ask Ana Petrova about DRI-20667.** She ran the churn/pricing discussion. That conversation is the center of gravity for this QBR.
+3. **Confirm the Sep 25 pricing call with Jordan Blake** — happening or mis-dated.
+
+## Call structure — with gaps marked
+
+Use this skeleton; everything in brackets needs a source I couldn't find.
+
+- **Where things stand** — `[renewal date, ARR, health score — not in any system]`. Lead with cadence: consistent partnership, ~3 touchpoints/month since April.
+- **Value delivered** — `[needs outcomes; no metrics exist in the record]`.
+- **Open commitments** — don't recite my table to the customer. Verify each internally first, then bring only confirmed items. Walking in and asking "did we owe you webhooks?" reads as disorganized.
+- **Risks** — internally, churn + pricing is the live one. On the call, probe rather than assert: ask how the commercial terms are landing and how their team rates the analytics and performance work.
+- **What you should say** — your strongest honest line is on responsiveness and continuity of engagement. I'd avoid claiming specific wins until someone can substantiate them.
+
+I'd also flag to your leadership that an account with active churn signals has no renewal record and no commitment log, when peer accounts have both. That's worth fixing regardless of how this QBR goes.
+
+Want me to draft the talk track once you've got the answers from Ana or your own notes from DRI-31273?

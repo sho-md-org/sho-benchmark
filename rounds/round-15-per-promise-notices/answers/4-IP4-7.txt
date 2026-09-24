@@ -1,0 +1,21 @@
+## Short answer: Keystone Energy's is the one at risk.
+
+**Keystone Energy — audit log export with Splunk/SIEM streaming, by Q1 2027** (`DRI-34564`, Keystone sync 2026-08-03; Nia Cole raised it, Jordan Blake confirmed)
+
+This one carries a flag: there's a decision I can't see that may or may not affect it. I can't tell you what it is or whether it actually changes anything — **check with the product owner before you reaffirm this promise to Keystone.** Don't re-confirm the Q1 2027 date to them until you have that answer.
+
+**Cobalt Retail — audit log export as CSV, by Q1 2027** (`CRM-38600`, QBR 2026-07-24; you told Sam Ortiz "you have my word")
+
+No flag, no later change found. Treat this as normal — nothing in what I can see suggests it's off track.
+
+## Two things worth flagging
+
+1. **The Keystone promise isn't actually yours.** `DRI-34564` records it as a company commitment confirmed by Jordan Blake (AE) — you show up on Keystone audit prep (`DRI-84961`, 2026-08-24) but not as the person who made the date commitment. If you're going to chase this, Jordan is the one who confirmed it.
+
+2. **You have a third audit-export promise that's also flagged.** `SLA-77342` — audit log export to Lena Fox at Granite Insurance, Q1 2027, made by you. Same situation as Keystone: ask the product owner before reaffirming. You asked about two, but this is the one that's genuinely yours *and* flagged, so it probably deserves your attention more than the Keystone one does.
+
+## One substantive difference, flag aside
+
+The scope isn't the same. Cobalt was promised a **CSV export**; Keystone was promised **streaming into Splunk**. Even if both land on time, those are different pieces of work — a shipped CSV exporter satisfies Sam Ortiz and does not satisfy Keystone. Worth confirming with product that both are in scope for Q1 2027, not just "audit log export" generically.
+
+**Suggested next step:** one message to the product owner covering Keystone (`DRI-34564`) and Granite (`SLA-77342`) together — asking whether the Q1 2027 dates still hold, and whether SIEM streaming specifically is in scope.

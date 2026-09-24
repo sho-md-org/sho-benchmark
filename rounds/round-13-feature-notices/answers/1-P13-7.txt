@@ -1,0 +1,28 @@
+## What the records say
+
+**The promise is real and documented.** At the 2026-07-09 sync (`DRI-36664`), Tom Hale reminded Brightline that Quarry had been told SSO (SAML) by Q1 2027, and AE Leo Grant confirmed it on the call. Quarry isn't misremembering.
+
+**It's still on the roadmap at that date.** The published H1 2027 roadmap (`NOT-20876`, 2026-06-30) lists "SSO (SAML), SP- and IdP-initiated: Q1 2027." Also Q1 2027: SCIM provisioning and audit log export with SIEM streaming — both relevant given their audit-prep work (`DRI-62153`).
+
+**No slip has been announced for SSO.** The only recent slip notice is Sandbox environments moving Q4 2026 → Q2 2027 (`SLA-17908`, 2026-09-19). That's a different line item and doesn't touch SAML.
+
+⚠️ **One caveat before you send.** I found no engineering tickets for SAML/SSO/auth in Linear at all — those searches came back empty. Combined with the roadmap being ~3 months stale, I can verify the *commitment* but not *build progress*. The recurring "SSO questions" threads (`SLA-67092`, `NOT-40327`, `CRM-14429`) are all status chatter with no substance. **Recommend a two-minute confirm with Maya Chen** (roadmap owner, `NOT-85086`) before this goes out — you're restating a dated commitment to a customer who has a churn conversation on file (`DRI-67006`).
+
+## Draft reply
+
+> Subject: Re: SSO (SAML) timeline
+>
+> Hi Tom,
+>
+> Yes — SSO (SAML) is still targeted for Q1 2027, covering both SP-initiated and IdP-initiated flows. That's unchanged from what we confirmed on our July 9 call and it remains on our published H1 2027 roadmap.
+>
+> Two related items land in the same window that I think matter for your setup: SCIM provisioning, and audit log export with SIEM streaming. Given the audit prep work your team has underway, it may be worth sequencing those together rather than treating SSO as standalone.
+>
+> I'd like to get you time with our product lead to walk through the rollout plan and what we'll need from your IdP side so you can start planning internally. Would sometime in the next two weeks work?
+>
+> If anything about the timeline changes, you'll hear it from me directly rather than finding out at the deadline.
+>
+> Best,
+> Leo
+
+I kept it to what the records support — no specific release dates, beta access, or contractual language, since none of that is backed by anything I found. If Maya confirms a firmer date, you can tighten the first paragraph. If she flags a risk, tell Tom now rather than in Q1; the last line commits you to that either way.

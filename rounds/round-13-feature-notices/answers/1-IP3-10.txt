@@ -1,0 +1,17 @@
+## Short answer: nobody, as far as the records go — I can't find a decision record for a change to Advanced analytics, and I'm not sure a change actually happened.
+
+**What I searched:** Slack, Notion, Linear, Drive, and CRM for "Advanced analytics," "Osprey," roadmap changes/slips, and pricing/packaging changes. Linear returned zero hits for analytics-related queries entirely.
+
+**What actually exists:**
+
+- **NOT-20876** — *Public roadmap H1 2027* (Notion, 2026-06-30): lists "Advanced analytics: Q2 2027." This is a flat list with **no author, no decider, no revision history, and no prior date to compare against.** There is nothing in it marking Advanced analytics as changed.
+- **SLA-93532** — #cs: Pinecrest Realty (Slack, 2026-06-28): *your own* message, saying you told Lena Fox at Pinecrest Realty that Advanced analytics (Osprey) would land "in the spring release" so they could finish their rollout.
+- "Osprey" appears in **exactly one record company-wide** — your Slack message above. There is no eng ticket, spec, or planning doc under that codename.
+
+**Two things worth flagging before you chase this further:**
+
+1. **There may be no conflict at all.** Q2 2027 is spring 2027. If "the spring release" meant spring 2027 when you said it in June 2026, the roadmap matches your commitment. The premise of a "change" only holds if you meant a different spring.
+
+2. **The one documented roadmap change in the corpus is for a different feature.** **SLA-17908** (#general, 2026-09-19) announces that *Sandbox environments (Rail)* slip to Q2 2027, with "please update any customers expecting them this year." That announcement is also posted unattributed — no named decision-maker. If you're thinking of a "heads up, it moved" message, that one was about Rail, not Osprey. Note Pinecrest also has a sandbox record (**DRI-32185**, 2026-08-18), so it's plausible the two got crossed.
+
+**Recommendation:** rather than hunting for a decider who may not be recorded, ask in #general who owns the Osprey line on the public roadmap (NOT-20876) and whether the Q2 2027 date has moved since it was published on 2026-06-30. Roadmap changes here are announced in #general without a named owner, so the tools won't give you attribution — a person will. I'd hold off re-committing anything to Lena Fox until you have that confirmation, given the commitment in SLA-93532 is on your name.

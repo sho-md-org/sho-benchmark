@@ -1,0 +1,75 @@
+I reviewed all 30 Harbor Clinics records across CRM and Drive (Slack, Linear, and Notion have nothing Harbor-specific). One thing to flag before the brief itself:
+
+**Every Harbor record is a one-line stub.** They contain a topic, attendees or an owner, and a generic "Next: follow up on X" — nothing more. There is no account record anywhere with ARR, renewal date, seat count, usage, health score, or a single named Harbor-side stakeholder. So I can give you a defensible account map, the risk picture, and a talk track, but I cannot give you the QBR *numbers*. Those have to come from elsewhere before the call — specifics at the end.
+
+## Where things stand
+
+Consistent engagement over six months, roughly 5 touches/month, with no gaps — the relationship is active, not drifting. Timeline by theme:
+
+| Period | Themes on the table |
+|---|---|
+| Apr | Support queue (DRI-86859), pricing (DRI-51027), integrations/webhooks (CRM-97969) |
+| May | Audit prep (CRM-35862), pricing (DRI-40615), notifications (CRM-73374) |
+| Jun | Heaviest month — latency (CRM-94239, DRI-36034, DRI-64445), security review (DRI-60473), uptime (DRI-25457), permissions UI (CRM-78984, DRI-40693), exports (CRM-82586), sandbox (CRM-36695), roadmap (CRM-41255), mobile app (CRM-34130), reporting (DRI-67100) |
+| Jul | Hosting/SSO (CRM-34883), integrations (CRM-75336), dashboards (DRI-60679), pricing (DRI-55004) |
+| Aug | Exports (DRI-88564), sandbox/billing (DRI-18426), offline (CRM-39320), dashboards (CRM-64035) |
+| Sep | Pricing (CRM-20713, Sep 19 — most recent touch) |
+
+The most recent customer-facing conversation was **pricing**, on Sep 19 (CRM-20713, owner Priya Shah). Expect commercial questions on your call.
+
+## Risks
+
+**1. Three internal "Churn" docs, clustering and accelerating — the top risk.** DRI-17076 (Jul 20), DRI-26772 (Sep 6), DRI-17950 (Sep 11). Two in the six days before your prep window. You are an attendee on the most recent one with Tess Brown. Be aware: these documents state only that churn was "discussed" — they record no reasoning, no score, no trigger. I can't tell you *why* someone opened a churn file on this account, and I'd treat that as the single most important thing to resolve before you dial in.
+
+**2. Pricing pressure alongside churn risk.** Five separate pricing conversations (DRI-51027, DRI-40615, DRI-55004, CRM-20713, plus billing in DRI-18426 and DRI-60473), and pricing is the newest thread. Recurring pricing discussion converging with churn docs is the classic renewal-squeeze pattern.
+
+**3. Unresolved reliability complaints.** Latency appears four times in June (CRM-94239, CRM-41255, DRI-36034, DRI-64445), with uptime alongside it (DRI-25457). CRM-41255's follow-up was "latency" — i.e. a June 14 call ended by pointing back at a problem already raised on June 2. Nothing in the record shows it closed.
+
+**4. Webhooks asked for twice, ~8 weeks apart, no evidence of resolution.** CRM-97969 (Apr 25) closed with "follow up on webhooks"; CRM-34130 (Jun 18, your call) also closed with "follow up on webhooks." A repeat ask that resurfaces is usually one that was never answered.
+
+**5. Owner sprawl — ten owners, no continuous thread.** Omar Haddad, Leo Grant, Ana Petrova, you, Tess Brown, Jordan Blake, Dana Ortiz, Sam Lee, Priya Shah all own Harbor records. Consecutive same-day calls went to different owners (CRM-39320 and CRM-64035, both Aug 26, Priya and Ana). Harbor has likely repeated itself to several people, which itself generates churn sentiment.
+
+## Open commitments
+
+Every commitment in the record is a bare "follow up on X" with no due date and no closure status. I could not verify a single one as completed. As recorded:
+
+- Webhooks — CRM-97969 (Omar Haddad) and CRM-34130 (you); raised twice
+- Analytics — CRM-73374 (Ana Petrova) and CRM-64035 (Ana Petrova); raised twice
+- Notifications — CRM-39320 (Priya Shah)
+- Support queue — CRM-20713 (Priya Shah), the newest open item
+- SSO questions — CRM-34883 (Sam Lee)
+- Permissions UI — CRM-78984 (Dana Ortiz)
+- Reporting — CRM-94239 (you)
+- Exports — CRM-35862 (Leo Grant)
+- Search — CRM-75336 (Omar Haddad)
+- Onboarding — CRM-36695 (Jordan Blake)
+- Latency — CRM-41255 (Tess Brown)
+- Case study — CRM-82586 (Tess Brown) — the one *ask of Harbor* rather than a deliverable to them; don't push this if churn risk is real
+
+Assume Harbor remembers at least some of these. Walking in without status on webhooks, latency, and the support queue is the main preventable failure mode.
+
+## What to say
+
+**Open by naming the fragmentation and fixing it.** "You've talked to a lot of different people at Brightline over the past six months. I want to consolidate that — I'm your single point of contact from here." This is credible, it's true, and it preempts the complaint.
+
+**Then close the loop deliberately, oldest first.** Take webhooks, latency, and permissions UI in order and give a real status on each. If a thread died internally, say so and give a date rather than re-promising vaguely — a second vague promise on a twice-asked item is what converts irritation into a churn conversation.
+
+**On pricing, listen before you counter.** It's their most recent topic and you don't yet know what was said on Sep 19. Ask Priya Shah first. On the call, get their actual constraint — budget cycle, per-seat math, or value doubt — before responding, since the right answer differs completely for each and guessing wrong is expensive against a churn backdrop.
+
+**Ask the health question directly.** "How are we doing, honestly? Is there anything that would make you reconsider expanding with us?" You have internal churn signals you can't explain; the fastest way to resolve that is to let Harbor tell you. Don't mention the internal churn docs.
+
+**Lead with the security and audit work as your strength.** Security review (DRI-60473), audit prep (CRM-35862), uptime (DRI-25457), and SSO (CRM-34883) show real investment in their compliance posture — genuine value for a clinical customer, and your best footing.
+
+**Hold the case study ask** unless the conversation goes clearly well.
+
+## Before the call — fill these gaps
+
+The record can't supply these and a QBR needs them:
+
+1. **Ask Tess Brown what's behind DRI-17950** (Sep 11, and you were in it). Then Leo Grant, who is on two of the three churn docs (DRI-17076, DRI-26772). This is the highest-priority item.
+2. **Ask Priya Shah what happened on the Sep 19 pricing call** (CRM-20713) and what the support queue follow-up refers to.
+3. **Get the renewal date and ARR from your billing or finance system** — genuinely absent from CRM here, and you can't frame a QBR without knowing how far out renewal sits.
+4. **Get usage/adoption data**, especially on dashboards, exports, and reporting — three recurring themes where "are they actually using it" is the question you'll be asked.
+5. **Get Harbor-side names and titles.** No record identifies who you're meeting.
+
+Want me to draft the slides or a one-page agenda once you have the churn context and renewal date?

@@ -1,0 +1,49 @@
+## Keystone Energy — QBR brief
+
+**One thing to handle before the call:** the audit-log export commitment needs a check with the product owner. Details below.
+
+### Where things stand
+
+Account activity has been steady and broad, but the records themselves are thin — mostly call logs without outcomes. Recent threads:
+
+| Date | Topic | Owner | Record |
+|---|---|---|---|
+| 2026-09-25 | Pricing (next: offline) | Jordan Blake | CRM-78617 |
+| 2026-09-23 | Uptime (next: NPS) | Sam Lee | CRM-19012 |
+| 2026-08-25 | QBR prep (next: security review) | Maya Chen | CRM-93344 |
+| 2026-08-24 | Audit prep & exports | Maya Chen, Sam Lee | DRI-84961 |
+| 2026-08-17 | Audit prep (next: webhooks) | Omar Haddad | CRM-56742 |
+| 2026-08-10 | Integrations & QBR prep | Sam Lee, Maya Chen | DRI-31273 |
+
+The dominant theme all year is **audit/compliance prep** — it recurs from May through August across at least six records (CRM-90377, CRM-17727, DRI-85107, DRI-48005, CRM-56742, DRI-84961). That's the spine of the QBR. Secondary threads: integrations/webhooks, pricing, uptime, onboarding.
+
+### Open commitments
+
+**Audit log export with SIEM streaming, by Q1 2027** (DRI-34564) — company commitment, confirmed by Jordan Blake (AE). Origin: Nia Cole raised it in the 2026-08-03 sync, specifically Splunk streaming, and Jordan confirmed on the call.
+
+⚠️ **This one is flagged.** There's a decision I don't have visibility into that may or may not affect this promise. I can't tell you which way it cuts, and I'd avoid speculating in either direction on the call. **Ask the product owner whether the Q1 2027 Splunk-streaming commitment still holds before you reaffirm it to Keystone.**
+
+Separately, your own audit-log-export commitment to Lena Fox at Granite Insurance (SLA-77342, also Q1 2027) carries the same flag. Same feature — so one conversation with the product owner covers both.
+
+Other open items with no record of resolution: security review follow-up (CRM-93344), webhooks (CRM-56742), and the offline follow-up from the pricing call (CRM-78617).
+
+### Risks
+
+1. **The audit-log dependency.** Compliance is Keystone's through-line for the year and Nia Cole is tracking the commitment closely enough to raise it unprompted. If anything has shifted, this is the account that will feel it hardest. Resolve it before the call, not on it.
+2. **Ownership churn.** Nine different internal owners appear across Keystone touchpoints this year — Maya, Jordan, Sam, Omar, Tess, Priya, Dana, Ana, Leo. Threads consistently hand off ("next: follow up on X") without a visible close. A customer can read this as no one owning the account.
+3. **No closure recorded on recurring asks.** Audit prep has been "discussed" six-plus times across five months with no outcome in the records. Expect Nia to ask what actually shipped.
+4. **Pricing + offline mode in play** right on the eve of the QBR (CRM-78617, 2026-09-25) — know where Jordan landed before you're in the room.
+
+### What to say
+
+**Lead with the compliance narrative.** It's what they care about and it's where the year's work went. Frame the QBR around their audit readiness rather than a feature list.
+
+**On audit log export:** if the product owner confirms the commitment holds, restate it plainly — Q1 2027, with Splunk streaming, as Jordan confirmed on 2026-08-03. If you haven't heard back by call time, say you're confirming delivery specifics internally and will come back with a date this week. Don't reconfirm the date on the strength of the August note alone.
+
+**Offer a single point of contact.** Given the owner churn, proactively naming yourself as the throughline is a cheap, credible win.
+
+**Come with closure, not topics.** Pick the two or three recurring items — audit exports, webhooks, the security review — and bring a status and a date for each rather than re-opening them as discussion items.
+
+**Ask:** what does their Q1 2027 audit timeline actually require, and by when do they need the export in hand to test against it? That tells you how much slack exists if anything moves.
+
+One caveat on all of the above: the underlying records are unusually sparse — most are one-line call logs with no outcomes. The activity pattern is reliable; the specific status of any given workstream isn't something I can confirm from what's here. Worth a quick sync with Sam Lee and Jordan Blake, who have the most recent touches.

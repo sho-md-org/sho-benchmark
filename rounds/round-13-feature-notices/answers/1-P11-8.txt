@@ -1,0 +1,69 @@
+I pulled every Vantage Telecom record across all four systems — 19 records total, plus adjacent QBR docs. Here's the honest situation first, then the brief.
+
+## Important caveat on sourcing
+
+Every Vantage record in CRM and Drive is a one-line stub. There are **no** ARR figures, renewal dates, contract terms, customer-side stakeholder names, NPS scores, usage data, or ticket counts anywhere in the tools. Slack and Linear return **zero** Vantage results — so there's no escalation channel and no engineering tickets tracked against this account.
+
+I won't invent those numbers. What follows is what the record genuinely supports, plus a list of what you must source before the call.
+
+## Where things stand
+
+**Engagement span:** 19 touchpoints, 2026-04-02 (DRI-81968) through 2026-09-13 (CRM-65747). Steady cadence, roughly 3–4 contacts/month. No gaps suggesting disengagement.
+
+**Most recent three:**
+- `CRM-65747` (Sep 13) — dashboards, **your** record, next step: exports
+- `DRI-67178` (Sep 11) — SSO questions + NPS, Dana Ortiz & Omar Haddad
+- `DRI-14442` (Sep 6) — **churn** + QBR prep, Dana Ortiz & Tess Brown
+
+**Recurring themes:** billing (`CRM-24363` Apr 12, `CRM-92524` Jul 23), dashboards (`CRM-20779` Apr 27, `CRM-65747` Sep 13), search (`CRM-74774` Jun 17, `CRM-84868` Jul 8), trial conversion (`DRI-64274` May 6, `DRI-77676` Aug 11), NPS (surfaces in four records).
+
+## Open commitments
+
+These are the "next steps" logged but with no closing record:
+
+| Commitment | Logged in | Date | Owner | Status |
+|---|---|---|---|---|
+| Follow up on exports | `CRM-65747` | Sep 13 | Maya Chen | **Yours, open** |
+| Follow up on latency | `CRM-92524` | Jul 23 | Jordan Blake | No latency record exists anywhere |
+| Follow up on latency | `CRM-24363` | Apr 12 | Leo Grant | Same thread, 3 months earlier |
+| Follow up on reporting | `CRM-37016` | Jul 10 | Tess Brown | Only reporting record predates it (`DRI-68417`, Jun 14) |
+| Follow up on webhooks | `CRM-74774` | Jun 17 | Priya Shah | Only webhooks record is `DRI-57024`, May 28 — before |
+| Follow up on webhooks | `CRM-15845` | Jun 22 | Dana Ortiz | Same |
+| Follow up on QBR prep | `CRM-84868` | Jul 8 | Priya Shah | Partially met by `DRI-14442` |
+
+## Risks
+
+1. **Churn was an explicit agenda item two weeks ago.** `DRI-14442` (Sep 6) pairs churn with QBR prep. That is the single strongest signal in the file and you should walk in assuming the QBR is partly a retention conversation.
+
+2. **Latency has been raised twice and answered never.** Both billing calls closed with "follow up on latency" — April and July, different owners, no latency record in between or since. A customer raising the same technical complaint across two quarters without resolution is a classic escalation precursor.
+
+3. **Webhooks were promised twice in one week (Jun 17, Jun 22) by two different owners**, with no follow-through record. Suggests the two owners didn't know about each other.
+
+4. **Ownership is badly fragmented.** Eight different Brightline owners across 19 records: Ana Petrova, Jordan Blake, Tess Brown, Priya Shah, Dana Ortiz, Leo Grant, Omar Haddad, and you. You appear on only three (`DRI-81968` Apr 2, `DRI-89702` Aug 5, `CRM-65747` Sep 13). Expect the customer to have noticed.
+
+5. **No engineering trail.** Zero Linear tickets means SSO, latency, exports, and webhooks asks were likely never filed as product work. If they ask "where is this in your roadmap," you currently have no answer.
+
+## What to say
+
+**Open by owning the continuity problem** before they raise it. Something like: *"You've talked to several people on our side this year. I'm consolidating this account under me going forward, and I've gone back through everything to make sure nothing's been dropped."* This converts your weakest point into a credibility move.
+
+**Lead with latency, unprompted.** Raising the thing they raised twice and got nothing on is the highest-trust action available. Don't wait to be asked.
+
+**Close your own loop on exports** (`CRM-65747`) — it's the freshest commitment and it's yours.
+
+**Have a specific answer on SSO.** It came up Sep 11 and is a common renewal gate for telecom buyers.
+
+**Ask directly about the churn conversation.** Dana and Tess discussed it on Sep 6; find out from them what prompted it before the call.
+
+## Before the call — you need to source these
+
+None of this exists in the tools:
+- ARR, contract value, renewal date
+- Customer-side stakeholders and who the economic buyer is
+- Actual NPS score and trend (discussed four times, never recorded)
+- Support ticket volume — `DRI-10836` (Aug 18, Leo Grant & Omar Haddad) references the support queue with no numbers
+- Product usage and seat adoption
+
+Two Notion docs titled "Qbr prep" sit close to your date — `NOT-42571` (Sep 15) and `NOT-52051` (Sep 5), both owned by Omar Haddad. Neither is labeled Vantage, so I can't confirm they're for this account. Worth asking Omar directly.
+
+The fastest path to a real brief is 15 minutes with Dana Ortiz and Tess Brown about `DRI-14442`, and pulling contract data from whatever system holds it — it isn't in this CRM.

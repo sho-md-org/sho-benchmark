@@ -1,0 +1,27 @@
+## Short answer: I can't confirm anything about SSO changed — and IdP-initiated specifically isn't tracked as a separate item.
+
+I searched Slack, Linear, Notion, Drive, and the CRM. Here's what's actually there.
+
+**The one substantive record:** the public roadmap, `NOT-20876` (2026-06-30), lists SSO as a **single combined line item**:
+
+> SSO (SAML), SP- and IdP-initiated: Q1 2027
+
+That's the key point for your question. SP-initiated and IdP-initiated are bundled into one deliverable on one date. There's no record anywhere of them being split, sequenced separately, or one shipping ahead of the other — so there's no "IdP-initiated part" that could have moved independently of the rest of SSO.
+
+**What I could not find:**
+- No changelog, release note, deprecation notice, or migration doc for SSO
+- No Linear issues at all — searches for `SSO`, `IdP-initiated SAML SSO change`, and `SAML authentication login flow change breaking` all returned **zero** results
+- No prior roadmap version showing a different SSO date to compare against
+
+**Why the rest of the search didn't help:** there are ~40 records titled "Sso questions" across all four tools, and every one I opened is a content-free stub — e.g. `CRM-57082` (Vantage Telecom, 2026-09-19): *"Discussed SSO questions. Owner Priya Shah. Next: follow up on roadmap."* Same for `SLA-94820`, `NOT-20443`, `DRI-67178`, `DRI-19269`, `CRM-57728`, `CRM-93928`. Titles only, no substance. The same is true of the eight other roadmap docs (`NOT-64137`, `NOT-85086`, `NOT-67486`, `NOT-97641` — all stubs), so I couldn't diff roadmap versions to detect a date change.
+
+## What this means for you
+
+I'd flag the premise before you act on it. If a customer told you the IdP-initiated piece changed, that claim isn't corroborated by anything in our systems — and given SP- and IdP-initiated ship together per `NOT-20876`, a change to one would almost certainly be a change to all of SSO, not just that half.
+
+Two things worth pinning down, and I can't resolve either from the tools:
+
+1. **Where did you hear it changed?** If it came from a specific call or thread, point me at it and I'll pull that record directly rather than relying on search.
+2. **Changed from what?** Without an earlier roadmap version that has real content, I have no baseline. `NOT-20876` is the only dated SSO commitment I can see.
+
+One caveat on my confidence: the stub problem means these tools may simply not be surfacing full text to me. Absence of a record here is weaker evidence than it would normally be — I'd treat this as "unconfirmed" rather than "didn't happen." The fastest resolution is probably asking Tess Brown, who owns the two most recent SSO items (`SLA-94820`, `NOT-20443`).

@@ -1,0 +1,17 @@
+## Short answer: I can't confirm that — I found no record of any SSO change at all
+
+I searched all five systems (Slack, Notion, Drive, CRM, Linear) for SSO, SAML, IdP-initiated, deprecations, and auth migrations. Nothing anywhere distinguishes **IdP-initiated from SP-initiated** flows, and nothing describes a change, cutover, or breaking change to SSO. So I can't tell you it's the IdP-initiated part, because I can't find the underlying change your question assumes.
+
+**What does exist** is a steady stream of generically-titled "SSO questions" touchpoints — recurring customer conversations, not a changelog:
+
+- **Slack SLA-94820** (2026-08-18, Tess Brown) — "update on SSO questions; EU customers next week." This is the closest thing to a change signal, and it's still just a status ping.
+- **Notion NOT-20443** (2026-08-24, Tess Brown) and **NOT-40327** (2026-08-05, Leo Grant) — notes on SSO questions, no technical detail.
+- **CRM CRM-57728** (2026-09-26, Pinecrest Realty, Ana Petrova), **CRM-57082** (2026-09-19, Vantage Telecom, Priya Shah), **CRM-93928** (2026-09-12, Pinecrest Realty, Jordan Blake).
+- **Drive DRI-67178** (2026-09-11, Vantage Telecom), **DRI-76928** (2026-09-08, Delta Freight), **DRI-19269** (2026-09-04, Bluewater Logistics).
+
+Two things worth flagging:
+
+1. **Linear returns zero results for SSO or SAML.** If engineering had shipped a change to the login flow, I'd expect a ticket. Its absence is meaningful evidence that no tracked change exists — or that the work lives somewhere I can't see.
+2. **Every record is a one-line stub.** None contain enough technical substance to describe a binding, an ACS URL, a RelayState behavior, or anything else that would let me distinguish the two flows. So the searches are weak evidence either way on details, even though the Linear gap is a real signal.
+
+**Suggested next step:** ask Tess Brown directly — they own both the August Slack update (SLA-94820) and the Notion notes (NOT-20443), and that "EU customers next week" line suggests they know what's actually moving. If you heard about this change from a specific customer or thread, point me at it and I'll trace it from there; it's likely in a channel or doc that doesn't use the word "SSO" in the title.

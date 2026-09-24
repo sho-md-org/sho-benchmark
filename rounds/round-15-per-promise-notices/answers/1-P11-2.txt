@@ -1,0 +1,84 @@
+I pulled everything Vantage Telecom across all five systems. Before the brief, one thing you need to know up front:
+
+**The source records are stubs.** All 19 Vantage touchpoints (10 CRM, 9 Drive) are one-line summaries — topic, attendees, and a "next" field. No ARR, no renewal date, no health score, no NPS number, no dollar figures, no named commitments with dates. Linear and Notion return **zero** Vantage records. So this brief is built on cadence, topic patterns, and dangling follow-ups, which turns out to be more revealing than it sounds. The gaps you must fill before the call are listed at the end.
+
+---
+
+# Vantage Telecom — QBR Brief
+**Prepared 2026-09-24 · Period covered: 2026-04-02 → 2026-09-13**
+
+## Bottom line
+The relationship is **active but unowned**, and **churn is already on the internal agenda**. Two weeks before your QBR, Dana Ortiz and Tess Brown met specifically to discuss "churn and QBR prep" for this account (`DRI-14442`, 2026-09-06). Engagement volume is healthy — that's not the problem. The problem is that Brightline has promised this account follow-ups it has no record of delivering, and nobody has held the relationship end to end.
+
+## Where things stand
+
+**Cadence is strong and steady** — roughly three touchpoints a month, no drop-off. Last contact was your own dashboards call on 2026-09-13 (`CRM-65747`), 11 days ago.
+
+| Month | Topics |
+|---|---|
+| Apr | Integrations (`DRI-81968`), billing (`CRM-24363`), dashboards (`CRM-20779`) |
+| May | Trial conversion (`DRI-64274`), exports (`CRM-23907`), analytics (`CRM-53521`), webhooks (`DRI-57024`) |
+| Jun | Reporting (`DRI-68417`), search (`CRM-74774`), onboarding (`CRM-15845`) |
+| Jul | Search (`CRM-84868`), NPS (`CRM-37016`), billing (`CRM-92524`) |
+| Aug | Rate limits (`DRI-89702`), trial conversion (`DRI-77676`), support queue (`DRI-10836`) |
+| Sep | Churn + QBR prep (`DRI-14442`), SSO + NPS (`DRI-67178`), dashboards (`CRM-65747`) |
+
+**Topics that keep coming back** — read these as unresolved, not as healthy interest: dashboards (3×, including the most recent call), billing (`CRM-24363`, `CRM-92524`), search (`CRM-74774`, `CRM-84868`), trial conversion (`DRI-64274`, `DRI-77676`), and NPS, which surfaces four separate times (`DRI-57024`, `CRM-37016`, `DRI-77676`, `DRI-67178`) without a score ever being recorded.
+
+**Live going into your call:** SSO. Raised 2026-09-11 with Omar Haddad (`DRI-67178`) and still open. SSO questions usually trail security review or procurement — assume it's renewal-adjacent until you learn otherwise.
+
+## Open commitments
+
+Every CRM call logs a "next" step. Tracing each one forward, **only one closed**:
+
+| Promised | Source | Status |
+|---|---|---|
+| Follow up on **exports** | `CRM-65747` (9/13, yours) | **Open** — yours, and the freshest. Exports last discussed 2026-05-14. |
+| Follow up on **latency** | `CRM-92524` (7/23, Jordan Blake) | **Open** — no latency record exists anywhere. |
+| Follow up on **latency** | `CRM-24363` (4/12, Leo Grant) | **Open, 5+ months** — same promise, made twice, never delivered. |
+| Follow up on **reporting** | `CRM-37016` (7/10, Tess Brown) | **Open** — reporting was 6/14, *before* the promise. |
+| Follow up on **webhooks** | `CRM-15845` (6/22), `CRM-74774` (6/17) | **Open** — webhooks only ever happened 5/28, before both. |
+| Follow up on **sandbox** | `CRM-53521` (5/18, Jordan Blake) | **Open** — no sandbox record in any system. |
+| Follow up on **integrations** | `CRM-20779` (4/27, Tess Brown) | **Open** — integrations was 4/2, before. |
+| Follow up on **QBR prep** | `CRM-84868` (7/8, Priya Shah) | Closing with next week's call. |
+| Follow up on **webhooks** | `CRM-23907` (5/14, Ana Petrova) | ✅ Closed by `DRI-57024` (5/28). |
+
+Latency is the one to watch: committed twice, three months apart, by two different people, with nothing logged either time.
+
+## Risks
+
+1. **Churn is being discussed internally about this account.** `DRI-14442` (9/6) pairs "churn" with "QBR prep" in the same session. Whatever Dana and Tess know, you should know before you walk in.
+2. **No continuous owner.** Eight different people own the 19 touchpoints — you, Tess Brown, Jordan Blake, Ana Petrova, Priya Shah, Dana Ortiz, Leo Grant, Omar Haddad. You personally own three (`DRI-81968`, `DRI-89702`, `CRM-65747`). The customer has likely repeated themselves a lot, and the unclosed follow-ups are a direct symptom.
+3. **Their technical asks aren't tracked anywhere.** Rate limits (`DRI-89702`), latency, SSO (`DRI-67178`), and sandbox have **zero Linear tickets** and **zero Notion pages**. If they ask "what's the status of X," there is no status.
+4. **No account plan exists.** Notion has nothing for Vantage — no success plan, no mutual action plan, no documented goals to report against.
+5. **NPS asked four times, never recorded.** If their score is poor, you'll be hearing it live for the first time.
+
+## What to say
+
+**Open by naming the gap before they do.** You have unclosed commitments going back to April; they know it. Pre-empting it converts your weakest point into credibility:
+
+> "Before we get into results — we've had a lot of hands on this account over the past six months, and I know that's meant some things you raised didn't come back to you. I want to fix that structurally today, starting with me as your single point of contact."
+
+**Then go item by item on the open list.** Lead with latency and sandbox — the two oldest and the two with nothing behind them. Don't improvise a status; say what's true and commit to a date.
+
+**Land the ownership change as the headline deliverable.** It's the most substantive thing you can offer, it costs nothing to promise, and it addresses the actual root cause.
+
+**Ask directly about SSO.** It's live as of 9/11 and it's the item most likely tied to their renewal decision. "Where did the SSO conversation land, and is it gating anything on your side?"
+
+**Ask for the NPS story in their words.** It's come up four times; make the fifth time the one where you actually hear it.
+
+**Convert dashboards and exports into the forward-looking piece.** Dashboards came up in April, September, and were your last live topic; exports is your own open commitment. That's the natural "here's what we're building toward" segment — assuming you can get a real status first.
+
+**Do not** present a growth or expansion pitch in this meeting. With churn on the internal agenda and seven open commitments, an upsell will read as tone-deaf.
+
+## Close these gaps before the call
+
+Nothing in the tools answers these, and you shouldn't walk in without them:
+
+- **Talk to Dana Ortiz and Tess Brown about `DRI-14442`** — highest priority. What specifically triggered the churn conversation?
+- **Contract basics** — ARR, renewal date, seat count, term. Not in any system I can see.
+- **Health score and actual NPS number.**
+- **Real status on latency, sandbox, rate limits, and SSO** — from engineering directly, since nothing is ticketed.
+- **Support ticket volume** — `DRI-10836` (8/18, Leo Grant + Omar Haddad) discussed their support queue but records no numbers.
+
+One caveat on sourcing: Slack has several "Churn" channel items from this period (`SLA-59527`, `SLA-93428`, `SLA-51985`) and `SLA-40138` notes the data team committed to a weekly CS churn-risk report starting in October. **None of these name Vantage**, so I haven't treated them as facts about this account — but the October report is worth knowing about, and it will land after your call rather than before it.

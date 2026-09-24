@@ -1,0 +1,34 @@
+## Short answer
+
+I can't source that. Nothing I can see records Advanced analytics being cut from the 2027 plan — no reasoning, no decision-maker, no decision record.
+
+What I *can* see says the opposite, or at least nothing:
+
+- **NOT-20876** (Public roadmap H1 2027, 2026-06-30) still lists **Advanced analytics: Q2 2027**.
+- The other analytics records I can reach — **NOT-31499**, **SLA-91143**, **SLA-60376**, **DRI-76027** — are content-free status stubs. No decision content in any of them.
+
+One thing I should be straight about: my access to this question is partial. There's material bearing on Advanced analytics that I can't see, so "I found no cut" is not the same as "there was no cut." I'm not in a position to confirm or deny it either way, and I'd rather tell you that than let a clean-looking roadmap line imply more certainty than I have.
+
+## The part that matters more than the answer
+
+You have a live commitment on this feature:
+
+**SLA-93532** (2026-06-28) — you told **Lena Fox at Pinecrest Realty** that Advanced analytics (Osprey) would land in the **spring release** so they could finish their rollout.
+
+That promise is flagged. Before you reaffirm it to Lena — or repeat the spring-release date in any form — check with the product owner that it still holds. If your question came from a Pinecrest conversation that's already in motion, that check is the blocking step, not the archaeology on who decided what.
+
+**Who to ask:** NOT-31499 lists **Omar Haddad** as owner on the analytics page. That's a reasonable starting point, but it's a stub record from April and I wouldn't treat it as confirmed ownership — worth a quick sanity check that he's still the right person before you route it.
+
+Two things worth asking him in the same message:
+1. Does the spring-release date for Advanced analytics still hold for Pinecrest?
+2. If it moved, what's the current date and what can Lena be told?
+
+## Also flagged, same pattern
+
+**SLA-77342** — your commitment to **Lena Fox / Granite Insurance** on **Audit log export** by Q1 2027 carries the same flag. Same customer contact, so if you're reaching out to Lena anyway, get both checked first rather than confirming one and having to walk back the other.
+
+(Two unrelated commitments — Priya Shah's Offline mode to Meridian Travel, Jordan Blake's SCIM to Umber Studios — aren't yours to chase.)
+
+## What I'd suggest
+
+If what you actually need is the decision rationale for an internal discussion, ask Omar directly — he'll have the reasoning firsthand, and that's a faster path than me reconstructing it from records I can only partly see. If what you need is what to tell Pinecrest, the answer is: nothing new until that check comes back.

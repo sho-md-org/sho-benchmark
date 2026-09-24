@@ -1,0 +1,31 @@
+## Verdict: **Cobalt Retail is the one at risk.**
+
+### The two promises side by side
+
+| | **Keystone Energy** | **Cobalt Retail** |
+|---|---|---|
+| Source | `DRI-34564` (2026-08-03 sync) | `CRM-38600` (2026-07-24 QBR) |
+| Wording | "Audit log export by Q1 2027 with **streaming into Splunk**" | "you'll have it by Q1 2027 as a **CSV export**, you have my word" |
+| Who committed | Nia Cole reminded us of it; **Jordan Blake (AE) confirmed** | **You**, personally, in the room |
+| Customer posture | Holding us to a prior statement | "Customer is planning around it" |
+
+### Why Keystone is covered and Cobalt isn't
+
+The public roadmap `NOT-20876` (2026-06-30) lists: **"Audit log export incl. SIEM streaming: Q1 2027."**
+
+- **Keystone's promise maps cleanly onto that line.** Splunk is a SIEM, the date matches, and the streaming delivery mechanism is explicitly in scope. Nothing to fix.
+- **Cobalt's promise names a delivery format the roadmap never mentions.** The roadmap commits to an export with SIEM streaming; it says nothing about a CSV file download. Sam Ortiz was pushed onto a Q1 2027 date that will likely be met, but possibly with a product that streams to a SIEM rather than hands them a CSV. Cobalt is a retail account — if they don't run a SIEM, "on time" still means "unusable."
+
+This is a **scope/format gap, not a date gap.** The date is the same on both, and I found no slip announced for audit log export (codename Lark). The only slip in the tools is `SLA-17908` (2026-09-19): Sandbox environments (Rail) → Q2 2027.
+
+### Two caveats on confidence
+
+1. **The CSV gap is an inference from the roadmap wording, not a confirmed miss.** Linear returned zero results for every audit/export/SIEM/CSV query I ran, so there's no engineering ticket in these tools that either confirms or rules out a CSV deliverable. Worth one question to product before you act on it.
+2. **The Q1 2027 date itself is only as good as `NOT-20876`** — a June roadmap page with no corroborating engineering record.
+
+### Suggested next steps
+
+1. Ask product whether Lark's Q1 2027 scope includes a user-facing CSV/file export, or SIEM streaming only.
+2. If CSV isn't in scope, go back to Sam Ortiz early. You gave your word personally and they're planning around it — a correction at six months out is a scheduling adjustment; at one month out it's a broken promise.
+3. **Separately on Keystone:** the commitment on record is the AE's confirmation, not yours (`DRI-34564` lists Jordan Blake and Nia Cole, not you). If you're carrying it as your promise, align with Jordan on who owns the follow-through.
+4. **Unrelated Cobalt exposure to watch:** Ada Moss asked about sandbox environments on 2026-08-06 (`CRM-15486`). The note says we did not promise it and their incumbent did — so you're clean, but Rail just slipped to Q2 2027 and the topic is live on that account.

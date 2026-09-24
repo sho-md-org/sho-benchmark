@@ -1,0 +1,16 @@
+## Short answer: Keystone Energy is the one at risk. Cobalt Retail looks normal.
+
+**Keystone Energy — flagged, don't reaffirm yet**
+- The promise: Audit log export **by Q1 2027 with streaming into Splunk** (`DRI-34564`, 2026-08-03 sync — Nia Cole raised it, Jordan Blake (AE) confirmed on the company's behalf).
+- This commitment carries a flag: there's a decision I don't have visibility into that may or may not affect it. I can't tell you what it is or whether it actually changes anything. **Check with the product owner before you re-confirm the Q1 2027 date or the SIEM piece to Keystone.**
+- Note on attribution: this one isn't really "yours" — it was confirmed by Jordan Blake, AE. Your Keystone touchpoints (`DRI-84961`, `DRI-48005`, `CRM-56742`) are generic audit-prep notes with no date commitment.
+
+**Cobalt Retail — no issue surfaced**
+- The promise: Audit log export **by Q1 2027 as a CSV export**, to Sam Ortiz at the 2026-07-24 QBR — "you have my word" (`CRM-38600`). Customer is planning around it.
+- No later change found against this one, and it's consistent with the public roadmap (`NOT-20876`, which lists "Audit log export incl. SIEM streaming: Q1 2027"). Treat it as on track.
+
+**Why the risk gap, structurally:** even setting the flag aside, the two promises aren't the same size. Cobalt was promised plain CSV export; Keystone was promised the same deadline *plus* SIEM/Splunk streaming. The streaming scope is the part that can slip independently of the base export shipping.
+
+**One thing you didn't ask about but should see:** you have a *third* audit-export promise — Granite Insurance / Lena Fox, Q1 2027 **including SIEM streaming**, made by you directly (`SLA-77342`, 2026-05-26). It carries the same flag as Keystone's. That one is genuinely yours, and it's the one I'd take to the product owner first.
+
+Suggested next step: one message to the audit-log-export product owner asking whether Q1 2027 still holds, and specifically whether SIEM streaming is still in that scope — that single answer unblocks Keystone and Granite together, and confirms Cobalt's narrower CSV promise as a side effect. Want me to draft it?

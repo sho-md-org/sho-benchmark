@@ -1,0 +1,38 @@
+## What the records show
+
+**The promise is real — the customer is not misremembering.** DRI-36664 (Quarry Mining sync, 2026-07-09): Tom Hale explicitly reminded the team that "we told them SSO (SAML) by Q1 2027," and Leo Grant (AE) confirmed it on the call. So the reply cannot hedge as if this were a misunderstanding.
+
+**The roadmap still backs it.** NOT-20876 (Public roadmap H1 2027, 2026-06-30) lists "SSO (SAML), SP- and IdP-initiated: Q1 2027." SCIM provisioning is also Q1 2027 — likely relevant to their rollout.
+
+**No slip has been announced for SSO.** This is a meaningful negative: SLA-17908 (#general, 2026-09-19) announced Sandbox environments (Rail) slipping to Q2 2027 with a request to notify affected customers. The slip-notification channel is active, and SSO was not in it.
+
+**One real gap:** Linear returns zero results for SSO/SAML/identity-provider work. The newest supporting artifact is a roadmap doc from 2026-06-30, now ~3 months old, and recent SSO chatter (SLA-53734, NOT-20443, CRM-14429) contains no build status. I can confirm the commitment stands on paper; I cannot confirm engineering progress against it. The draft below therefore reaffirms the date without inventing an "on track per engineering" claim.
+
+## Draft reply
+
+> Subject: Re: SSO (SAML) timing
+>
+> Hi Tom,
+>
+> Yes — SSO (SAML) remains scheduled for Q1 2027, consistent with what we committed to on our July call. Nothing has changed on that.
+>
+> Specifics on what's in scope for that release:
+>
+> - SAML SSO with both SP-initiated and IdP-initiated flows
+> - SCIM provisioning, also scheduled for Q1 2027, which most customers roll out alongside SSO for user lifecycle management
+>
+> If it would help your planning, I'd like to set up a session with our product lead to walk through the implementation details and your IdP specifically, so your team can scope the work on your side in parallel rather than waiting for GA. Happy to get that on the calendar in the next couple of weeks.
+>
+> I'll also keep you proactively informed if anything about the timeline changes — you shouldn't have to ask.
+>
+> Best,
+> Leo
+
+## Before you send
+
+Two things worth doing first:
+
+1. **Confirm with product/engineering.** There's no Linear ticket for SAML work, and your most recent written evidence is a June roadmap. Given you already confirmed this date verbally in July, a second written confirmation raises the stakes — get a status check from Maya Chen or the roadmap owner before it goes out.
+2. **Check whether Quarry Mining is also expecting Sandbox environments.** That one genuinely slipped to Q2 2027 (SLA-17908), and #general asked owners to notify affected customers. I found no Quarry record tying them to sandbox, but you'd know better — if they are expecting it, disclose it in this same email rather than letting them discover it later. Delivering one reassurance while sitting on an unrelated slip is how trust erodes.
+
+The last line of the draft ("I'll keep you proactively informed") is deliberate — but only include it if point 2 is clean, otherwise it reads badly in hindsight.

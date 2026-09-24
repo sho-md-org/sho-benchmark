@@ -1,0 +1,72 @@
+I've swept all five systems. Before the brief, one important caveat about the source data.
+
+## Data quality warning — read this first
+
+The Cobalt Retail records are **real but extremely thin**. Every CRM entry is one line (topic, owner, next step); every Drive note is attendees plus a two-topic summary. Across all systems there is **no ARR, no renewal date, no contract term, no health score, no NPS number, and no customer-side contact names**. Linear returns **zero results** for Cobalt or any of its topics — the account has no engineering tickets at all.
+
+So: everything below is inferred from meeting *cadence and topic chains*, which is genuinely useful for spotting open loops, but I cannot tell you the commercial state of the account. **Get the ARR, renewal date, and support ticket count from the account record or Omar before the call** — I couldn't source them.
+
+---
+
+# Cobalt Retail — QBR Brief
+
+## Where things stand
+
+Ten logged CRM calls between 2026-04-01 and 2026-08-01, plus ten Drive meeting notes from 2026-06-07 to 2026-09-26. The relationship is **active and broad** — onboarding, dashboards, reporting, webhooks, exports, search, mobile, offline, sandbox — but it has drifted from commercial conversations toward technical delivery.
+
+**The signal I'd flag hardest: the last logged CRM call is CRM-35990 on 2026-08-01 — roughly eight weeks of no recorded customer-facing account call going into a QBR.** Drive notes continued (DRI-75222 8/11, DRI-82140 8/17, DRI-35074 8/23), so work continued; it just stopped being logged as account activity. Either way, you're walking in without a recent commercial temperature check.
+
+**Ownership is fragmented.** Ten CRM records span five owners — Priya Shah (4), Omar Haddad (2), Tess Brown (2), you (2: CRM-70221, CRM-36268). There is no single consistent account owner in the data.
+
+One oddity: **DRI-72283 is dated 2026-09-26, two days from now** (Sam Lee, Priya Shah — mobile app and search). That's either a scheduled session or a data error. Worth knowing whether it happens before your call.
+
+## Open commitments
+
+Traced by following each CRM "next step" to see whether a later record closes it.
+
+| Commitment | Promised | Status |
+|---|---|---|
+| **Security review** | CRM-70221 (4/20), again CRM-36268 (5/22) — both yours | **No closing record anywhere.** Promised twice, open ~5 months |
+| **Case study** | CRM-98822 (4/1) | Three meetings — DRI-58616 (6/21), DRI-20022 (7/27), DRI-95243 (8/5) — **no published output** |
+| **Pricing** | CRM-87224 (6/23), re-raised CRM-35990 (8/1) | **Recurring, unresolved.** Also surfaced in DRI-95243 (8/5) |
+| **Latency** | CRM-49779 (4/27) | **No follow-up record** |
+| **SSO questions** | Raised DRI-20022 (7/27) | **No follow-up record** |
+| **EU customers** | Raised DRI-33978 (7/25) | **No follow-up record** |
+| **Hosting** | Raised DRI-35074 (8/23, your meeting with Sam Lee) | **No follow-up record** |
+| Rate limits | CRM-24697 (5/26), CRM-16603 (6/15) | Addressed in DRI-33978 (7/25) |
+| Audit prep | CRM-87224 (6/23) | Addressed in DRI-75222 (8/11) |
+| Billing | CRM-94849 (7/23) | Addressed in DRI-75222 (8/11) |
+| Mobile app | CRM-92187 (6/9) | Active — DRI-82140 (8/17), DRI-72283 (9/26) |
+
+## Risks
+
+**1. An unanswered security and compliance thread.** Security review (promised twice, by you), SSO questions (DRI-20022), and EU customers (DRI-33978) are three separate unclosed items pointing the same direction. If Cobalt is running a security or data-residency evaluation, this is the cluster most likely to become an escalation in the room. Highest priority to resolve before the call.
+
+**2. Pricing keeps coming back and never resolves.** It appears in CRM-87224, DRI-95243, and is the explicit next step out of CRM-35990 — the most recent CRM record on the account. A pricing question that recurs three times without closure usually means the customer is benchmarking. Expect it to be raised.
+
+**3. The case study is relationship debt running the wrong way.** Committed 2026-04-01, worked in three meetings, still unshipped. This is *our* ask of *them* — it's leverage they hold, and an unshipped case study after five months weakens any goodwill ask you make in this QBR.
+
+**4. Product commitments have no engineering backing.** Mobile app, offline, exports, rate limits and sandbox are all discussed with the customer, and **Linear has no Cobalt tickets whatsoever**. Don't commit to dates in the room — you have nothing to verify them against.
+
+**5. The eight-week CRM gap.** If Cobalt has been quiet on the commercial side while technical meetings continued, that can mean satisfaction or disengagement. The data cannot tell you which.
+
+## What to say
+
+**Open by owning the security review.** It's the oldest open item and it's yours (CRM-70221, CRM-36268). Lead with it before they do: name it, give a date, and assign someone. Volunteering it converts your weakest point into a credibility win.
+
+**Anchor on delivery.** You have a real record: rate limits resolved (DRI-33978), billing and audit prep closed (DRI-75222), mobile and offline actively in flight (DRI-82140, DRI-72283). That is a substantive quarter of work — say it concretely.
+
+**Bring pricing up yourself.** It's the next step out of your most recent call (CRM-35990) and it has stalled twice. Ask directly what's driving the question — budget cycle, contract benchmarking, or scope change. You'd rather hear it in a QBR than in a renewal negotiation.
+
+**Ask one clean question on compliance:** *"Are SSO and EU data residency tied to a deadline on your side?"* That collapses DRI-20022 and DRI-33978 into one answer and tells you whether risk #1 is urgent.
+
+**Handle the case study honestly.** Acknowledge the delay, give a firm date or explicitly park it. Don't let it sit open for a fourth month.
+
+**Do not commit to product dates.** Anything on mobile, offline, or exports: "let me confirm with engineering and come back to you this week." There are no tickets behind those conversations.
+
+**Close by naming a single account owner.** Five owners across ten calls is visible to the customer. Proposing one point of contact is a cheap, high-credibility fix.
+
+### Before the call
+- Pull ARR, renewal date, and support volume — not in any system I can reach
+- Confirm whether DRI-72283 (9/26) is happening, and get the readout
+- Ask Omar for context on SLA-55835 and NOT-42571 — he owns recent QBR prep, though neither names Cobalt, so I can't confirm they're about this account

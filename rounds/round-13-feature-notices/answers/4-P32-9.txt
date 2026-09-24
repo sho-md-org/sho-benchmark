@@ -1,0 +1,39 @@
+## Harbor Clinics — QBR brief
+
+**Caveat up front:** most Harbor records are topic-only stubs ("Discussed X. Next: follow up on Y") with no substance. The facts below are what's actually documented; I've separated them from inference and listed the gaps you should fill before the call.
+
+### Where things stand
+- **Contacts on record:** Ines Park (DRI-80868), Ada Moss (CRM-89966). No single relationship owner — calls over the last six months were owned by Sam Lee (CRM-45542), Leo Grant (CRM-35862), Jordan Blake (CRM-36695), Priya Shah (CRM-48825), Tess Brown (CRM-41255), Dana Ortiz (CRM-28952), Omar Haddad (CRM-97969, CRM-75336), Ana Petrova (CRM-73374), and you (CRM-94239).
+- **Most recent touch:** 2026-09-21, mobile app, owner Sam Lee, next step "follow up on QBR prep" (CRM-49374).
+- **Recurring themes across the period:** audit prep/exports, sandbox and billing, integrations/webhooks, latency, notifications, mobile app, pricing.
+
+### Open commitments
+| Commitment | To | Due | Source | Status |
+|---|---|---|---|---|
+| Data retention controls | Ines Park | Q1 2027 | DRI-80868 (Jordan Blake, reconfirmed 2026-05-15) | No later change found — safe to reaffirm |
+
+This lines up with the public roadmap, which lists Data retention controls at Q1 2027 (NOT-20876). That's the only logged commitment to Harbor.
+
+**Adjacent, not a commitment:** Ada Moss asked about EU data residency on 2026-06-09 and we said we were exploring it with no dates (CRM-89966). The public roadmap published 2026-06-30 now shows EU data residency at Q1 2027 (NOT-20876). That's a genuine update you can share — but frame it as published roadmap, not as a commitment to Harbor, since nothing account-specific was ever promised.
+
+### Risks
+1. **Churn signal, cause unknown.** Four internal discussions touching churn in under two months: DRI-17076 (Jul 20, with analytics), DRI-26772 (Sep 6, with sandbox), DRI-35782 (Sep 8, with mobile app), DRI-17950 (Sep 11, you and Tess Brown, with dashboards). The cadence is the signal; none of the notes record *why*. This is the thing to understand before you're on the call.
+2. **No continuity of ownership.** Nine different owners across ten logged calls. If Harbor has raised "we keep re-explaining ourselves," this is why, and the QBR is where it surfaces.
+3. **Follow-ups that never visibly closed.** The audit-prep/exports chain (CRM-45542 → CRM-35862 → CRM-48825 → DRI-20995) spans April to August with no recorded resolution. Same for latency, which is yours (CRM-94239, "next: follow up on reporting"). Assume Harbor remembers these even though our records don't.
+4. **Billing/pricing is live near renewal.** Pricing (DRI-40615) and sandbox+billing (DRI-18426) both came up. Expect a commercial question.
+
+### What to say
+- **Reaffirm the one firm thing:** data retention controls, Q1 2027. It's documented, reconfirmed by Jordan Blake to Ines, and consistent with the published roadmap. Say it plainly.
+- **Lead with the EU data residency update** to Ada — last time we had no dates, and the published H1 2027 roadmap now shows Q1 2027. Caveat it as roadmap.
+- **Offer good news on sandbox**, which they've raised repeatedly: sandbox environments are on the roadmap for Q4 2026 (NOT-20876) — the nearest-term item they care about.
+- **Get ahead of the ownership problem.** Name yourself as the single point of contact going forward rather than waiting for them to complain.
+- **Ask, don't assert, on the open threads.** "Where did we land on audit prep and exports?" is safer than claiming they're closed — our notes don't say.
+- **Don't quote dates for advanced analytics.** It's Q2 2027 publicly (NOT-20876), Harbor discussed analytics (DRI-17076), but nothing was promised to them. Leave it as roadmap or leave it out.
+
+### Fill before the call
+- Why churn keeps coming up — ask Tess Brown (DRI-17950) and Leo Grant (DRI-26772), who were in the most recent conversations.
+- Status of audit prep/exports, from Leo Grant (CRM-35862).
+- Whether there's an open billing question, from Dana Ortiz or Jordan Blake (DRI-18426).
+
+### Separate flag (not Harbor)
+Two of your own commitments to other accounts are marked as needing a check with the product owner before you reaffirm them: advanced analytics to Lena Fox at Pinecrest Realty (SLA-93532) and audit log export to Lena Fox at Granite Insurance (SLA-77342). Nothing to do for Harbor, but worth clearing with the product owner before those calls.

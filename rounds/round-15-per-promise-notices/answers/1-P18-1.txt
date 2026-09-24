@@ -1,0 +1,79 @@
+I've gone through every Cobalt Retail record in CRM and Drive, plus cross-account records on the same features. Here's the brief.
+
+---
+
+# Cobalt Retail — QBR Brief
+**Prepared for Maya Chen · call week of 2026-09-28**
+
+## ⚠️ Read this first
+
+At the last QBR you made a personal, dated promise that I cannot find any engineering backing for.
+
+> **CRM-38600** (Cobalt Retail: QBR notes, 2026-07-24): Sam Ortiz pushed on Audit log export (Lark). Maya Chen (CS): *"you'll have it by Q1 2027 as a CSV export, you have my word."* **Customer is planning around it.**
+
+The only status statement on this feature anywhere in the tools says otherwise:
+
+> **CRM-25829** (Kestrel Foods, 2026-08-18): *"Audit log export is on the roadmap, no commitment."*
+
+And the same feature has been promised to other accounts with **mutually incompatible specs**:
+
+| Account | What we said | Record |
+|---|---|---|
+| Cobalt Retail | Q1 2027, CSV export, "you have my word" | CRM-38600 |
+| Keystone Energy | Q1 2027, **streaming into Splunk** | DRI-34564 |
+| Pinecrest Realty | "early next year", CSV download | DRI-63243 |
+| Kestrel Foods | on roadmap, **no commitment** | CRM-25829 |
+
+**Do not walk into this call without an answer from Product/Eng on the real Q1 2027 status.** If it slips, Cobalt is planning around a promise that carried your name — that's the single largest relationship risk on this account.
+
+## Where things stand
+
+Engagement is steady and broad — 14 touchpoints since April across onboarding, pricing, reporting, dashboards, search, webhooks, notifications, NPS, and case study work. This reads as a healthy, actively-managed account, not a distressed one.
+
+Recent activity has concentrated on:
+- **Case study** — most recent CRM touch (CRM-80312, 2026-09-14, owner Leo Grant), building on DRI-95243 and DRI-20022. Cobalt is willing to be a reference, which is leverage and goodwill.
+- **Billing / audit prep** (DRI-75222, 2026-08-11)
+- **Support queue** (CRM-72317, 2026-08-21, owner Ana Petrova)
+- **Rate limits + EU customers** (DRI-33978, 2026-07-25)
+
+Account contacts: **Sam Ortiz** (pushes on roadmap/commitments) and **Ada Moss** (sandbox/competitive). Internal owners rotate a lot — Priya Shah, Omar Haddad, Tess Brown, Ana Petrova, Leo Grant, and you.
+
+Note: **DRI-72283** (Mobile app, Sam Lee + Priya Shah) is dated **2026-09-26** — two days out, ahead of your QBR. Worth syncing with them first.
+
+## Open commitments
+
+1. **Audit log export (Lark)** — Q1 2027, CSV. Your explicit word. Customer planning around it. *Status unverified.* (CRM-38600)
+2. **Bulk import v2** — "we're exploring, no dates yet" to Sam Ortiz (CRM-84001, 2026-08-22). Correctly hedged. Keep it that way — note Juniper Schools was promised this *before their January migration* (DRI-91134), so there may be pressure to firm up dates.
+3. **Sandbox environments** — Ada Moss raised that **their incumbent vendor promised sandbox and we did not** (CRM-15486, 2026-08-06). Follow-up discussed internally (DRI-35074, 2026-08-23, you + Sam Lee). This is a live competitive gap, and sandbox is itself uncommitted (CRM-64912: "on the roadmap, no commitment").
+
+## Risks
+
+- **Commitment gap (high).** The Q1 2027 audit-log promise is the exposure. A miss here is worse than a normal slip because it was framed as personal.
+- **Competitive displacement on sandbox (medium).** Ada Moss is explicitly comparing us to an incumbent that promised more. Unresolved since August.
+- **Pattern risk (medium).** Across accounts we've been confirming unshipped features back to customers who "reminded us" what we said — Keystone, Pinecrest, Juniper, Kestrel, Northstar. Worth raising with leadership beyond this one call.
+- **Owner churn (low-medium).** Seven different internal owners in six months invites dropped threads.
+
+## What to say
+
+**On audit log export** — get the real status first, then pick a lane:
+
+*If it's on track:* "Audit log export is tracking for Q1 2027 as CSV. I'll send written confirmation of scope and date this week so you're not planning off a verbal."
+
+*If it's uncertain or slipping — say it now, not in January:*
+> "I want to correct something I told you in July. I committed to audit log export by Q1 2027 and I gave you my word on it. I shouldn't have put it that firmly — it's on the roadmap but it isn't a locked commitment, and I've since learned it's been scoped differently for different customers. I'd rather tell you that today than in January when you've built around it. Here's what I can tell you with confidence, and here's what I'll get you in writing by [date]."
+
+That costs you something in the room and buys back the relationship. The alternative is a much worse conversation at renewal.
+
+**On sandbox:** Acknowledge it directly — it's been open since August. "You raised that our competitor committed to sandbox environments and we didn't. I don't have a date for you. What I can do is [workaround/timeline for an answer]." Don't invent a commitment to match the incumbent.
+
+**On bulk import v2:** Hold the line at "exploring, no dates." Your August framing was right.
+
+**On the case study:** Lead with it. It's the positive momentum item and reinforces partnership before the harder topics.
+
+## Gaps in what I could find
+
+- **Slack, Linear, and Notion returned zero results for every query** — not just for Cobalt, but for any search term. Either they're not populated or not connected. So I have **no engineering ticket status** for audit log export, bulk import v2, or sandbox. That's exactly the verification you need, and you'll have to get it from Product/Eng directly.
+- No contract value, renewal date, seat count, or NPS score is recorded anywhere for Cobalt. CRM-92187 logs an NPS *discussion* but no number. If you want commercial framing in the QBR, you'll need to pull that from another system.
+- Most Cobalt records are one-line topic stubs with no substance; the four narrative records (CRM-38600, CRM-15486, CRM-84001, CRM-72317) carry nearly all the signal.
+
+**Suggested next step before the call:** get a written Q1 2027 status on audit log export from Product, and loop in Jordan Blake — they confirmed conflicting versions of this feature to Keystone and Pinecrest, so a single consistent company answer matters.

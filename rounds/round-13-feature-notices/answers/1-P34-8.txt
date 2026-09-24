@@ -1,0 +1,60 @@
+## Bottom line first
+
+I can't write the brief you asked for from what's in the systems, and you should know that before the call rather than during it. Aster Health has **24 records across CRM and Drive, and every one of them is a topic stub** — "Call with Aster Health. Discussed dashboards. Owner Sam Lee. Next: follow up on NPS." There is no substance behind any of them.
+
+This isn't a search failure. Other accounts have real QBR and renewal records: Delta Freight's (`CRM-64756`) captures Paolo Diaz pushing on SAML SSO and Tess Brown answering *"you'll have it by end of Q1, you have my word"*; Northstar Pharma's (`CRM-52816`) logs a HubSpot sync commitment as a formal renewal condition. Aster Health has **no QBR notes record and no renewal call notes record at all** — the two document types that would carry the commitments, and risks you're asking for.
+
+So: what follows separates what the data actually supports from what you need to source elsewhere.
+
+## What the record genuinely supports
+
+**Engagement is steady and recent.** Roughly two touchpoints a month, April through September, unbroken. The account is not going quiet. `DRI-75615` (2026-09-17, you and Omar Haddad, dashboards) is the most recent logged contact, and `DRI-36735` is already on the calendar for 2026-09-28 (Omar Haddad, Ana Petrova — NPS and audit prep).
+
+**Recurring topic clusters**, which is the most useful signal available:
+
+| Theme | Touchpoints | Notable |
+|---|---|---|
+| Integrations | `DRI-82652`, `DRI-48732`, `DRI-64776` | Aug session tagged "EU customers" |
+| Dashboards | `CRM-57156`, `CRM-75476`, `DRI-75615` | Spans Apr→Sep, still live |
+| Sandbox | `CRM-62644`, `CRM-64767`, `DRI-86962` | Clustered Apr–May, then stops |
+| Exports | `CRM-45213`, `CRM-76005`, `DRI-23711` | All April, then stops |
+| Security / SSO / audit | `CRM-26522`, `DRI-48323`, `DRI-46065` | SSO questions as recently as Aug 7 |
+| Latency | `CRM-16329`, `CRM-68765` | Raised twice in two weeks, June |
+| NPS | `CRM-26522`, `DRI-30445`, `DRI-36735` | Three touchpoints, **zero scores recorded** |
+
+**Two things I'd genuinely flag:**
+
+1. **Account continuity is poor.** Eleven CRM records span six different owners — Ana Petrova, Leo Grant, Tess Brown, Priya Shah, Sam Lee, and you. You own only two (`CRM-62644`, `CRM-70994`). Whatever was promised, it was likely promised by someone who isn't you.
+2. **A pricing conversation happened without you.** `DRI-53905` (2026-09-10, Dana Ortiz, pricing and support queue) is two weeks before your QBR. Find out what was said there before you walk in.
+
+## What I could not find — and what that means
+
+- **No ARR, contract value, or renewal date.** You may be walking into a renewal conversation blind.
+- **No open commitments logged anywhere.** I searched for them directly; the commitment-bearing record types don't exist for this account.
+- **No health score, usage, or adoption data.**
+- **No NPS scores**, despite three NPS touchpoints.
+- **No support ticket data**, despite "support queue" follow-ups in `CRM-70994` and `DRI-53905`.
+- **Zero Slack results and zero Linear results.** This one matters most. Latency, exports, integrations, and SSO all read as product asks — but nothing is tracked in Linear against this account. Either the engineering work isn't linked to Aster, or it isn't happening. If you commit to a date on any of those next week, you'd be committing with no delivery signal behind you.
+
+One caution on reading the stubs: "Next: follow up on churn" appears on three records (`CRM-64767`, `CRM-68765`, `CRM-76005`) and churn is tagged in `DRI-46065` and `DRI-48323`. That *looks* alarming, but these next-step fields are clearly drawn from a fixed vocabulary and frequently don't match their record's topic. I'd treat it as worth one question internally, **not** as evidence Aster is at risk. Don't carry it into the call as a fact.
+
+## What I'd do before next week
+
+Four questions, answerable internally in about an hour, that would turn this into a real brief:
+
+1. **Tess Brown** — made dated promises to Delta Freight and Northstar. Did she commit anything to Aster? She owns `CRM-81799` and attended `DRI-64776`.
+2. **Dana Ortiz** — what came out of the Sept 10 pricing call (`DRI-53905`)?
+3. **Whoever holds the renewal** — date, ARR, and whether expansion or renegotiation is in play.
+4. **Support/eng** — is there an open latency or SSO thread? June latency and August SSO both stop abruptly with no resolution recorded.
+
+## Talk track
+
+This is scaffolding, not findings — every bracket needs filling from the answers above:
+
+- **Open on continuity, not metrics.** Six owners in six months is something they've likely felt. "I want to be your consistent point of contact going forward" lands well and is defensibly true.
+- **Anchor on the live threads**: dashboards (still active in September) and integrations, particularly the EU angle from `DRI-64776`.
+- **Ask, don't assert, on value.** Without usage data, "how has your team's usage evolved this quarter?" beats any claim you'd be guessing at.
+- **Make no dated commitments** on latency, SSO, exports, or integrations until you've confirmed the engineering position. Given Delta Freight's "you have my word" precedent, this account may already be carrying a promise nobody wrote down.
+- **Close by restating commitments aloud** and logging them in CRM immediately after — which is precisely what didn't happen for the last six months here.
+
+I'd rather hand you an accurate map of a gap than a polished brief with invented numbers in it. If you can get me the renewal terms and the Sept 10 pricing context, I'll turn this into the real thing.

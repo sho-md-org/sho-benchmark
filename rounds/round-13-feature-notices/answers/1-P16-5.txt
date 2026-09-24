@@ -1,0 +1,50 @@
+I researched all four systems. Before the brief itself, one thing you need to know upfront.
+
+## The source data won't support a real QBR brief
+
+Every Keystone Energy record across CRM, Drive, Notion, and Slack is a one-line stub. There are no numbers, no dated commitments, no contract terms, no escalation detail. A representative sample, verbatim and complete:
+
+- `CRM-19012` (2026-09-23): "Call with Keystone Energy. Discussed uptime. Owner Sam Lee. Next: follow up on NPS."
+- `DRI-20667` (2026-08-15): "Attendees: Ana Petrova, Ana Petrova. Discussed churn and pricing."
+- `NOT-42571` (2026-09-15): "Notes on QBR prep. Owner Omar Haddad. Related: onboarding."
+
+That's the whole record. I found no ARR, renewal date, health score, NPS value, SLA figure, support-ticket volume, or a single commitment with an owner and a due date. Linear returned zero Keystone results on every query I tried, so there's no engineering-side detail either.
+
+I'm not going to manufacture "where things stand" and "what you should say" out of topic labels — on a QBR call, invented specifics are worse than none. Here's what the record genuinely supports, then exactly what to pull.
+
+## What the record does establish
+
+**Cadence and topic history** (17 touchpoints, 2026-04-17 → 2026-09-26):
+
+| Theme | Records |
+|---|---|
+| Analytics | `CRM-50205` (05-16), `CRM-71134` (06-18), `CRM-71909` (07-21) |
+| Uptime | `DRI-60948` (04-17), `DRI-64156` (07-12), `CRM-19012` (09-23) |
+| Latency | `CRM-23178` (04-24), `DRI-46374` (05-23), `DRI-41756` (08-12) |
+| Dashboards | `CRM-79992` (05-24), `DRI-39787` (07-07) |
+| Pricing / churn | `DRI-20667` (08-15), `CRM-78617` (09-25) |
+| Onboarding, reporting, billing, integrations, offline, NPS, roadmap, sandbox | one record each |
+
+**Three observations that are inference, not fact, but worth walking in with:**
+
+1. **Pricing and churn are the live thread.** `DRI-20667` is the only record pairing churn with pricing, and pricing resurfaced most recently in `CRM-78617`. If there's a commercial risk on this account, that's where it lives — and it's the one thing I'd confirm with Jordan Blake before the call.
+2. **Analytics, uptime, and latency each recurred three times over five months.** Repeat topics across quarters usually mean unresolved, not merely recurring. Nothing in the record says they were closed out.
+3. **Ownership is fragmented.** Six different owners across twelve CRM/Drive records (Sam Lee, Jordan Blake, Leo Grant, Ana Petrova, Dana Ortiz, Omar Haddad), with no consistent account lead. Worth knowing who actually owns what before the customer asks.
+
+Two records are dated after today: `CRM-78617` (09-25) and `SLA-55835` (09-26). Likely scheduled entries or placeholders — check whether those calls have actually happened, since `CRM-78617` is the pricing one.
+
+## Open commitments, risks, talking points
+
+I can't fill these three honestly. Every "Next:" field is a bare topic pointer — "follow up on NPS," "follow up on offline," "follow up on search" — with no owner-plus-date pairing, and several point to topics that never appear again. There is no closure signal anywhere in the dataset, so I can't distinguish a resolved item from a dropped one.
+
+## What to pull before the call
+
+Five things, in priority order:
+
+1. **Jordan Blake — the pricing/churn thread.** Owner of `CRM-78617`, and the highest-stakes unknown. Ask directly whether renewal is at risk.
+2. **Contract facts from your billing or contract system** — ARR, renewal date, seat count, current tier. None of it is in CRM.
+3. **Actual uptime/latency numbers** from whoever owns the status data, plus whether the recurring issues in the table above were resolved.
+4. **The NPS score** referenced in `DRI-75981` and `CRM-19012` — the value itself isn't recorded.
+5. **Omar Haddad** — owns the three most recent QBR-prep notes (`NOT-42571`, `NOT-52051`, `SLA-55835`) and may be holding context that never reached these systems.
+
+Once you have items 1–4, send them over and I'll turn this into the full brief with the standing/commitments/risks/talk-track sections. The chronology above is solid and will carry straight across.

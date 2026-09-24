@@ -1,0 +1,33 @@
+## Short answer
+
+**None.** I searched CRM, Slack, Drive, Notion, and Linear, and there is no SSO promise on record attributed to Maya Chen. Every SSO commitment in the system belongs to someone else.
+
+## Maya's commitments on record — all six are non-SSO
+
+| Record | Customer | What was promised | Date given |
+|---|---|---|---|
+| `CRM-98566` | Bluewater Logistics | Higher API rate limits, "this autumn, you have my word" | 2026-05-03 |
+| `CRM-38600` | Cobalt Retail | Audit log export (Lark), Q1 2027, as CSV export | 2026-07-24 |
+| `SLA-93532` | Pinecrest Realty | Advanced analytics (Osprey), spring release | 2026-06-28 |
+| `SLA-77342` | Granite Insurance | Audit log export by Q1 2027, incl. SIEM streaming | 2026-05-26 |
+| `DRI-76161` | Evergreen Bank | Offline mode by Q2 2027 (confirmed a prior promise) | 2026-08-06 |
+| `DRI-13941` | Willow Care | HubSpot sync (Martin) by Q2 2027 (confirmed a prior promise) | 2026-05-24 |
+
+## The SSO promises that do exist belong to others
+
+- `CRM-64756` — Delta Freight: **Tess Brown (CS)**, "SSO (SAML) by end of Q1, you have my word."
+- `CRM-31062` — Vantage Telecom: **Priya Shah (AE)**, SSO (SAML) by Q1 2027 including IdP-initiated login from Okta.
+- `CRM-74447` — Riverton City: **Tess Brown (CS)**, SSO (SAML) (Heron) by early next year — logged as a renewal condition.
+- `CRM-62434` — Umber Studios: **Priya Shah (AE)**, SSO (SAML) by March with IdP-initiated sign-in — logged as a renewal condition.
+- `DRI-36664` — Quarry Mining: **Leo Grant (AE)** confirmed SSO (SAML) by Q1 2027.
+- `SLA-12035` — Umber Studios: **Jordan Blake (AE)**, SCIM provisioning by Q1 2027.
+
+Maya does appear in SSO *conversations* — `CRM-74174` (Evergreen Bank, Maya as owner), `DRI-18519` (Harbor Clinics), `SLA-21939` — but those records are discussion notes with no commitment language in them.
+
+## On the "why"
+
+I couldn't find the triggering event your question implies. There is no record in any tool of an SSO slip, descope, or re-plan: no engineering decision doc, no roadmap entry marking SSO/Heron as moved, and **Linear returned zero results for every query I tried** (`SSO`, `SAML`, `authentication`, `roadmap`, `bug`), so the engineering-side ticket history is either empty or not reachable from here. If you heard about an SSO change from a channel outside these tools, tell me what it was and I can trace it to the six commitments above.
+
+## One flag outside your question
+
+`CRM-98566` — Maya promised Bluewater Logistics higher API rate limits "this autumn, you have my word." Today is 2026-09-24, so that window is open now, and `DRI-86231` shows Priya Shah separately confirmed the same feature to Aster Health "by October." Not SSO, but it is the nearest-term exposure in Maya's list.

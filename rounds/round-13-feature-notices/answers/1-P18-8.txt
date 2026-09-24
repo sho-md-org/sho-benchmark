@@ -1,0 +1,68 @@
+I've worked through every Cobalt Retail record across all five tools. Here's the brief, plus an important caveat about the underlying data.
+
+---
+
+# Cobalt Retail — QBR Brief
+**Prepared for Maya Chen · call week of 2026-09-28 · sources: CRM + Drive (no Slack/Linear/Notion records exist for this account)**
+
+## Snapshot: where things stand
+
+Cobalt Retail is a high-touch, broad-surface account — 22 logged touchpoints since April 2026, spanning onboarding, webhooks, search, dashboards, exports, reporting, notifications, billing, rate limits, offline, sandbox, and mobile. The engagement arc looks like this:
+
+| Phase | Records |
+|---|---|
+| Apr–May: land & scope | Webhooks `CRM-98822`, Roadmap `CRM-70221`, Onboarding `CRM-49779`, Search `CRM-36268`, Dashboards `CRM-24697` |
+| Jun: compliance & config push | Exports `DRI-41266`, NPS `CRM-92187`, Audit prep `CRM-24323`, SSO `CRM-12111`, Onboarding `CRM-16603`/`DRI-18657`, Dashboards `DRI-58616`, Pricing `CRM-87224` |
+| Jul–Aug: expansion & advocacy | Reporting `CRM-94849`, Rate limits `DRI-33978`, Case study `DRI-20022`/`DRI-95243`, Notifications `CRM-35990`, QBR prep `CRM-12694`, Billing `DRI-75222`, Offline `DRI-82140`, Sandbox `DRI-35074` |
+| Sep: **risk emerges** | Rate limits `CRM-12380` (2026-09-12) |
+
+Two things stand out. **Positive:** they agreed to be a case-study reference (`DRI-20022`, `DRI-95243`) — customers don't do that while unhappy, so as of early August the relationship was healthy. **Negative:** the single most recent CRM entry, rate limits on 2026-09-12 (`CRM-12380`, owner Priya Shah), logs its next step as *"follow up on churn."* That is the newest signal in the account and it points the wrong way.
+
+## Open commitments
+
+Nothing in these records is confirmed closed, so I traced each logged "next step" to see whether a later record picked it up. These are the threads with **no downstream record**:
+
+1. **Churn follow-up** — `CRM-12380` (2026-09-12, Priya Shah). Newest and most urgent. No follow-up logged in the 12 days since.
+2. **Security review** — flagged twice as the next step, in Roadmap `CRM-70221` (Apr) and Search `CRM-36268` (May). **Both were Maya's own records**, and no Cobalt security-review record exists anywhere. This has been open ~5 months.
+3. **Trial conversion** — `CRM-24323` (Jun, Omar Haddad). No Cobalt trial-conversion record.
+4. **Latency** — `CRM-49779` (Apr, Priya Shah). Never revisited.
+5. **Audit prep** — named as next step by both Pricing `CRM-87224` (Jun 23) and QBR prep `CRM-12694` (Aug 4), but the only audit-prep record predates both (`CRM-24323`, Jun 12). So the post-August audit work is undocumented, and `DRI-75222` (Aug 11) shows billing *and* audit prep still under discussion.
+
+Closed-looking threads, for contrast: reporting → billing (`CRM-94849` → `DRI-75222`), onboarding/dashboards → rate limits (`CRM-16603`, `CRM-24697` → `DRI-33978`, `CRM-12380`), webhooks → case study (`CRM-98822` → `DRI-20022`).
+
+## Risks
+
+**1. The sandbox expectation gap — your top issue.** `CRM-15486` (2026-08-06) records: *"Ada Moss asked about Sandbox environments. their incumbent vendor promised Sandbox environments; we did not."* Two weeks later you and Sam Lee were discussing "sandbox and hosting" (`DRI-35074`, 2026-08-23). So the topic is live, the customer has a concrete expectation set **by a competitor**, and Brightline has made no matching commitment. The risk on this call is that you validate a promise Brightline never made. Note also there is **no Linear issue anywhere** for sandbox environments — nothing is being built against this.
+
+**2. Churn language in the latest record, unactioned.** See above. Whatever prompted Priya to write that on Sep 12 should be understood *before* you dial.
+
+**3. Compliance thread never resolved.** Security review (twice, yours), audit prep, and SSO questions form a cluster that fades out after June. If Cobalt is heading into an audit cycle, an unanswered security review is the kind of thing that stalls a renewal.
+
+**4. Fragmented ownership.** Six owners across the account — Priya Shah (5 records), Omar Haddad (3), Tess Brown (2), Jordan Blake, Maya Chen (2), plus Dana Ortiz, Sam Lee, Ana Petrova, Leo Grant as attendees. Your last owned CRM record is from May. Priya has the most current picture; talk to her first.
+
+**5. A note dated after today.** `DRI-72283` "Mobile app" is dated **2026-09-26** — two days in the future — with Sam Lee and Priya Shah, covering mobile app and search. Either a scheduled session or a data error; if it's real, it lands *before* your call and you should get the readout.
+
+## What I'd say on the call
+
+**Open with earned credit** — the case study (`DRI-20022`, `DRI-95243`). "You've been willing to go on record with us, and I don't take that lightly."
+
+**Then go straight at sandbox, and set the record straight.** This is where the call is won or lost:
+
+> "I want to be direct about sandbox environments, because I'd rather under-promise than have you plan around something that isn't committed. I know that capability was part of what you heard from your previous vendor. It is not something Brightline has committed to, and I don't have a date for you today. What I can do is take your actual requirement back and come to you with a straight answer on whether and when."
+
+**Ask, don't assert, on health:** "Coming out of the rate-limit conversation on the 12th — how are you feeling about the platform overall right now?" Let them tell you what's behind the churn note rather than surfacing the note.
+
+**Close the compliance loop yourself:** "The security review has been on my list since our roadmap conversation in April and I haven't closed it. I'd like to own that and get you a date."
+
+**Land three commitments with owners and dates:** sandbox answer (you), security review (you), audit-prep status (Omar).
+
+## Before you dial — what I couldn't get from the tools
+
+You should know how thin the source material is, because it limits this brief:
+
+- **Every Cobalt record except `CRM-15486` is a one-line stub** ("Discussed X. Owner Y. Next: follow up on Z"). There are no decisions, numbers, or quotes to work from. My read of open vs. closed commitments is inferred from whether a later record touches the topic — it is not confirmed status.
+- **No commercial baseline exists anywhere**: no renewal date, ARR, seat count, contract terms, or actual NPS score (`CRM-92187` logs that NPS was discussed, not the number). A QBR normally opens with these — **pull them from your billing/contract system before the call.**
+- **Zero Slack, Linear, or Notion records** for Cobalt Retail. So there's no engineering work tracked against any feature discussion — worth knowing if they ask "where is X?"
+- **Verify who Ada Moss is.** That name appears as the person pushing in *both* the Cobalt call notes (`CRM-15486`) and the Bluewater Logistics QBR (`CRM-16328`, where AE Leo Grant promised a Salesforce sync "before their Q2 planning cycle, you have my word"). I can't tell from the records whether that's one person spanning accounts, a Brightline-side attendee, or two people sharing a name — don't address them as Cobalt's stakeholder until you've checked.
+
+My recommendation: a 15-minute call with Priya Shah first. She owns the churn note and five of the account's records, and she's the only one who can tell you what changed on September 12.

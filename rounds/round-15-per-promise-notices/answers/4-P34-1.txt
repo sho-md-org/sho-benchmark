@@ -1,0 +1,56 @@
+## Aster Health — QBR Brief
+
+**Prepared 2026-09-24 for call next week.** Up front: the account records I can reach are one-line call/meeting stubs. They give reliable *topics, dates, and owners*, but no ARR, health score, ticket volume, or usage data. Everything below is grounded in those records; I've flagged where you'll need to fill gaps yourself.
+
+### Where things stand
+
+Twelve touchpoints since April, clustering into recurring themes:
+
+| Theme | Records | Latest |
+|---|---|---|
+| Sandbox | CRM-62644, CRM-64767, DRI-86962 | 2026-05-17 |
+| Exports | CRM-45213, CRM-76005 | 2026-04-18 |
+| Dashboards | CRM-57156, CRM-75476 | 2026-07-21 |
+| Latency | CRM-16329, CRM-68765 | 2026-06-22 |
+| Rate limits | CRM-28889, DRI-86231 | 2026-07-05 |
+| Audit prep / SSO / security review | DRI-48323, DRI-46065 | 2026-08-07 |
+| NPS | CRM-26522, DRI-36735 | 2026-09-28 (upcoming) |
+
+Engagement is steady but the cadence thinned after July — CRM-75476 (2026-07-21) is the last logged call, with only the SSO meeting DRI-46065 (2026-08-07) after it. Two months of quiet going into a QBR is itself worth a question.
+
+### Open commitments
+
+**Higher API rate limits, by October — DELIVERED.** Priya Shah (AE) confirmed this to Omar Aziz on 2026-06-12 (DRI-86231). Crane shipped 2026-09-20, raising limits for all paid plans (SLA-26281). This lands ahead of the October deadline — lead with it.
+
+That's the only commitment on record for Aster Health. Nothing else is outstanding against this account.
+
+### Risks
+
+1. **Churn is the recurring next-step.** Four records close with "follow up on churn": CRM-64767 (May), DRI-48323 (June), CRM-68765 (June), DRI-46065 (August). It persists across quarters and across different owners, which suggests it's been noted repeatedly and never closed out.
+2. **No single account thread-owner.** Eight different owners across twelve records — Maya Chen, Leo Grant, Ana Petrova, Sam Lee, Priya Shah, Tess Brown, Jordan Blake, Dana Ortiz. Follow-ups hand off between people and the chain breaks (CRM-70994, your own record from June, closes with "follow up on the support queue" and I find no record that it happened).
+3. **Compliance track is unresolved.** Audit prep (DRI-48323), SSO questions (DRI-46065), and security review (CRM-26522, CRM-16329) all appear as open follow-ups with no closing record.
+4. **Latency and exports went quiet without resolution** — last touched June and April respectively, no record of a fix or a customer sign-off.
+5. **NPS meeting DRI-36735 is dated 2026-09-28**, likely between now and your call. Check the outcome before you walk in; a fresh score could reframe the whole conversation.
+
+### What to say
+
+- **Open on the win.** "We committed to higher API rate limits by October and they went live on the 20th." Concrete, on time, and it's the one thing on record you promised this account.
+- **Ask Omar directly whether the new limits unblock what he needed.** Shipped ≠ adopted; nothing in the records confirms they've felt the change.
+- **Name the churn thread yourself rather than waiting for them to.** Ask what's driving it and what would have to be true for them to renew confidently.
+- **Propose a single named owner for the account** and say it out loud on the call. The eight-owner sprawl is your most fixable problem.
+- **Bring the compliance items into one plan** — audit prep, SSO, security review — with dates. These are the kinds of items that quietly become renewal blockers.
+- **Don't promise anything on latency, exports, dashboards, or sandbox.** There's no engineering status behind any of them in what I can see. Commit to getting answers, not to outcomes.
+
+### Two things to check before the call
+
+- **Contact identity.** DRI-86231 names **Omar Aziz**; DRI-70983 and DRI-36735 name **Omar Haddad**. Confirm whether these are two people or one misrecorded name before you address anyone by name.
+- **Support queue follow-up** you owned from CRM-70994 (2026-06-03) — expect them to raise it.
+
+### Separate from this call
+
+Two commitments **you personally made** to *other* accounts are flagged as possibly affected by a decision I can't see:
+
+- **Advanced analytics (Osprey), spring release** → Lena Fox, Pinecrest Realty (SLA-93532)
+- **Audit log export, Q1 2027** → Lena Fox, Granite Insurance (SLA-77342)
+
+Neither touches Aster Health, so they won't come up next week. But check with the product owner before you reaffirm either one to those customers. A third flagged item, SCIM provisioning for Umber Studios (SLA-12035), is Jordan Blake's commitment, not yours.

@@ -1,0 +1,26 @@
+## Answer: Keystone Energy is the one at risk
+
+Both promises land on the same date (Q1 2027), so the difference is entirely in **scope** and **provenance**.
+
+### The two promises side by side
+
+| | **Cobalt Retail** | **Keystone Energy** |
+|---|---|---|
+| Record | `CRM-38600` (QBR notes, 2026-07-24) | `DRI-34564` (sync notes, 2026-08-03) |
+| Promise | "you'll have it by Q1 2027 as a **CSV export**, you have my word" | "Audit log export by Q1 2027 **with streaming into Splunk**" |
+| Made by | Maya Chen, directly to Sam Ortiz | Unattributed ("we told them"), recalled by Nia Cole, confirmed by Jordan Blake (AE) |
+| Roadmap coverage | Fully covered | Partially covered |
+
+### Why Cobalt is the safer of the two
+The public roadmap (`NOT-20876`, 2026-06-30) lists **"Audit log export incl. SIEM streaming: Q1 2027."** A CSV export is the base capability of that line item — Maya promised a subset of what's already committed, on the committed date. Scope and timing both match.
+
+### Why Keystone is exposed
+1. **Scope is narrower than the roadmap language.** The roadmap commits to generic "SIEM streaming." Keystone was told **Splunk** specifically. A Q1 2027 ship that streams to a different SIEM first, or ships CSV-only with streaming to follow, satisfies the roadmap and still misses Keystone's expectation. Cobalt has no such failure mode — CSV is the floor, not the ceiling.
+2. **No first-party record of the promise.** Cobalt's commitment is Maya's own words in the CRM. Keystone's exists only as the *customer's* recollection of something "we told them," confirmed after the fact by an AE in a meeting Maya wasn't in (`DRI-34564`). Nobody owns it, and there's no record of what was actually said or when.
+3. **It's now being treated as settled.** Jordan Blake confirmed the recollection on the call, which converts an undocumented statement into a live commitment without anyone checking it against engineering.
+
+### A gap worth flagging
+I could not verify delivery status for either promise. There are **no Linear records at all** for audit log export, SIEM streaming, or exports — every search came back empty. The Slack and Notion "Audit prep" / "Exports" items (`SLA-37823` 2026-09-23, `SLA-33097` 2026-09-15, `NOT-58358`) are status stubs with no substance. So this assessment rests on promise-vs-roadmap comparison only; neither promise is confirmed to be on track by engineering evidence.
+
+### Suggested next step
+Get a written answer on one question: **does the Q1 2027 audit log export include a Splunk connector at GA, or is streaming phase two?** If it's phase two, Keystone needs re-setting now — and since the promise traces to an AE conversation rather than to Maya, Jordan Blake should be in that conversation. Cobalt needs nothing unless the whole Q1 2027 date slips.

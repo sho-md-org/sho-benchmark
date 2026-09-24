@@ -1,0 +1,80 @@
+I pulled every Vantage Telecom record across all four systems: **19 records total** (10 CRM, 9 Drive), spanning 2026-04-02 to 2026-09-13. Slack, Linear, and Notion have **zero** Vantage-specific records.
+
+**Important caveat up front:** every one of those 19 records is a one-line stub — topic, attendees, owner, and a "next step" phrase. None contain ARR, renewal date, seat counts, health score, NPS values, sentiment, or the substance of any commitment. So I can give you a reliable *map* of the relationship and the dangling threads, but the numbers and the actual content of promises are not in the tools. I've flagged exactly where you'll need to fill in.
+
+---
+
+# Vantage Telecom — QBR Brief
+
+## Where things stand
+
+Continuous contact since April, roughly two touches a month, no gaps. The relationship is active, not drifting.
+
+But the **topic mix changed sharply in August**. Apr–Jul was product/feature territory (dashboards, exports, search, analytics, reporting, onboarding, webhooks). Aug–Sep is operational strain:
+
+| Date | Record | Topic |
+|---|---|---|
+| 2026-08-05 | DRI-89702 | Rate limits + hosting (Maya Chen, Omar Haddad) |
+| 2026-08-11 | DRI-77676 | Trial conversion + NPS (Tess Brown, Ana Petrova) |
+| 2026-08-18 | DRI-10836 | Support queue (Leo Grant, Omar Haddad) |
+| 2026-09-06 | DRI-14442 | **Churn** + QBR prep (Dana Ortiz, Tess Brown) |
+| 2026-09-11 | DRI-67178 | SSO questions + NPS (Dana Ortiz, Omar Haddad) |
+| 2026-09-13 | CRM-65747 | Dashboards — your call (Maya Chen) |
+
+Rate limits, support queue, an internal churn discussion, and SSO questions inside six weeks is a recognizable pattern: the customer is hitting operational ceilings, and someone internally has started modeling the downside.
+
+## Risks
+
+**1. An internal churn conversation happened without you.** DRI-14442 (2026-09-06) — Dana Ortiz and Tess Brown discussed "churn and QBR prep" for this account. You were not an attendee. This is the single most important item to resolve *before* the call. The stub doesn't say whether Vantage is the churn risk or was discussed as context. **Ask Dana and Tess directly.** Walking into a QBR without knowing what triggered that meeting is the main exposure.
+
+**2. Latency has been raised twice and never has a record of resolution.** CRM-24363 (2026-04-12, Leo Grant) and CRM-92524 (2026-07-23, Jordan Blake) both close with "follow up on latency." There is no latency meeting, doc, or ticket anywhere in the four systems. A performance complaint raised in April and again in July, unresolved in September, is the kind of thing that surfaces in a QBR as a credibility problem.
+
+**3. Both latency mentions attach to billing calls.** Both records above are billing conversations. Performance concerns surfacing during billing discussions typically means value-for-money is being questioned.
+
+**4. Webhooks requested three times.** CRM-23907 (May 14), CRM-74774 (Jun 17), CRM-15845 (Jun 22) all end with "follow up on webhooks." Only the May request has a matching meeting (DRI-57024, May 28). The June asks have nothing after them.
+
+**5. Account ownership is fragmented.** Across 10 CRM calls the owner rotates through seven people — Leo Grant, Tess Brown, Ana Petrova, Jordan Blake, Dana Ortiz, Priya Shah, and you. **You own exactly one record** (CRM-65747, Sep 13) and attended only two meetings all year (DRI-81968 in April, DRI-89702 in August). Vantage has had no consistent face. That alone explains why threads keep dropping, and it's likely something they feel.
+
+**6. SSO arrived late and unowned.** DRI-67178 (Sep 11) is the first and only SSO record. SSO questions usually come from security or procurement review — either a renewal gate or an expansion into a more security-conscious part of the business. Worth knowing which before the call.
+
+## Open commitments
+
+These are "Next:" items with no evidence of closure anywhere in the tools:
+
+| Owner | Since | Commitment | Source |
+|---|---|---|---|
+| Leo Grant | Apr 12 | Latency | CRM-24363 |
+| Tess Brown | Apr 27 | Integrations | CRM-20779 |
+| Jordan Blake | May 18 | Sandbox | CRM-53521 |
+| Priya Shah | Jun 17 | Webhooks | CRM-74774 |
+| Dana Ortiz | Jun 22 | Webhooks | CRM-15845 |
+| Priya Shah | Jul 8 | QBR prep | CRM-84868 |
+| Tess Brown | Jul 10 | Reporting | CRM-37016 |
+| Jordan Blake | Jul 23 | Latency | CRM-92524 |
+| **Maya Chen** | **Sep 13** | **Exports** | **CRM-65747** |
+
+Two notes. Your own exports follow-up is open — exports were last substantively touched on 2026-05-14 (CRM-23907), so this is a topic returning after four months. And Priya's "follow up on QBR prep" from July 8 appears never to have produced a Vantage QBR document; there are seven "Qbr prep" pages in Notion (NOT-42571, NOT-52051, NOT-44127, NOT-44808, NOT-38605, NOT-32484, NOT-92225) but none name Vantage. **You are likely building this from scratch.**
+
+## What you'll need to source yourself
+
+Not in any system — get these before the call: renewal date and contract value, ARR and trend, actual NPS scores (NPS is referenced in four records, never with a number), seat/usage adoption, open support ticket volume, and the named stakeholders on Vantage's side. Every record says "Call with Vantage Telecom" without naming a single customer contact.
+
+## What to say
+
+**Open by owning the fragmentation.** Don't let them raise it. Something like: *"You've talked to a lot of different people at Brightline this year. I want to be your single point of contact going forward."* This converts your biggest liability into the meeting's most credible commitment.
+
+**Bring latency up yourself, before they do.** *"Performance came up in April and again in July, and I don't think we closed the loop. I want to start there."* Raising a five-month-old unresolved complaint unprompted buys more trust than any success metric. Get the actual status from Leo Grant and Jordan Blake first — don't raise it without an answer.
+
+**Give webhooks a date.** Asked three times, delivered once. A specific date beats another discussion.
+
+**Treat SSO as the signal it probably is.** Ask directly what's driving it — security review, procurement, or a new team onboarding. The answer reshapes the renewal conversation.
+
+**Close your own exports loop.** It's four days old and yours; arriving with it already done sets the tone for the other eight.
+
+**Say less about NPS and trial conversion** until you have the numbers. Four records reference NPS with no values attached — if you cite it vaguely and they have their own read, you lose ground.
+
+---
+
+**Before the call, in priority order:** (1) Ask Dana Ortiz and Tess Brown what DRI-14442 was about. (2) Get latency status from Leo Grant and Jordan Blake. (3) Pull renewal date and ARR from wherever finance keeps it. (4) Ask Omar Haddad what he knows — he's in three of the last five meetings (DRI-89702, DRI-10836, DRI-67178) and owns the most recent QBR prep notes (NOT-42571, NOT-52051), which makes him the closest thing to continuity on this account, though neither Notion page names Vantage so I can't confirm they're about this customer.
+
+Want me to draft the customer-facing QBR deck outline once you've got the renewal and usage numbers?

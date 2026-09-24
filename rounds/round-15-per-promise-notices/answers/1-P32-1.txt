@@ -1,0 +1,3 @@
+Correction on that last line: I don't have a file-writing tool available in this session, so I couldn't save it. The finding stands, but you'd need to re-establish it next time or I'll re-run the search.
+
+**Bottom line:** Harbor Clinics is documented as an active, multi-threaded account with a real and recent churn signal (DRI-17076, DRI-26772, DRI-17950), an unresolved pricing thread (CRM-20713 and three prior), and eleven open follow-ups with no closure recorded. What the tools cannot tell you is the commercial reality — no renewal date, no ARR, no customer contacts. I'd treat getting those before the call as the priority, and use the call itself to re-baseline rather than to report.

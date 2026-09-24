@@ -1,0 +1,31 @@
+## Short answer: none of your SSO conversations are tracked as promises
+
+I looked for commitments recorded against SSO and there aren't any — yours or anyone's. What exists on SSO is discussion, not a promise:
+
+- `SLA-21939` — you posted an update on SSO questions (2026-05-01)
+- `NOT-29833`, `NOT-58902` — your SSO notes (billing- and sandbox-related)
+- `DRI-18519` — Harbor Clinics, with Ana Petrova
+- `DRI-79562` — Norrland AB, with Priya Shah
+- `CRM-74174` — Evergreen Bank call, next step is audit prep
+
+None of these record a dated deliverable, so there's nothing on SSO to be "affected."
+
+## What is flagged, and why it may be what you're after
+
+Three tracked commitments carry a flag saying a decision I can't see may or may not change them. Two are yours:
+
+| Commitment | Customer | Source | Yours? |
+|---|---|---|---|
+| Advanced analytics (Osprey) in the spring release | Lena Fox, Pinecrest Realty | `SLA-93532` | Yes |
+| Audit log export by Q1 2027 | Lena Fox, Granite Insurance | `SLA-77342` | Yes |
+| SCIM provisioning by Q1 2027 | Kai Berg, Umber Studios | `SLA-12035` | No — Jordan Blake (AE) |
+
+The reason I'm surfacing SCIM: it's the identity-adjacent one, and if "SSO" in your head covers the login/provisioning bundle you discuss with customers, `SLA-12035` is the promise a customer would hear as SSO. It's Jordan's, not yours, so if Umber Studios is your account you'd want to coordinate with Jordan before that one gets reaffirmed.
+
+For comparison, the Offline mode promise (`SLA-24221`, Priya Shah → Meridian Travel) came back clean — no later change found.
+
+## What I'd do
+
+I can't tell you what the pending decisions are or whether they actually change anything — only that something exists behind `SLA-93532`, `SLA-77342`, and `SLA-12035`. Before you reaffirm any of those three to Lena Fox or Kai Berg, check with the product owner that the promise still holds.
+
+Your SSO threads specifically — Harbor Clinics, Norrland AB, Evergreen Bank — need no such check. If you believe you made a dated SSO commitment to one of them, tell me which account and I'll dig into that record; it may have been logged under a different feature name.

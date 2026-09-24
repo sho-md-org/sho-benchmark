@@ -1,0 +1,20 @@
+## Short answer: I can't source that for you, and you should ask the product owner before acting on it
+
+**What I can actually see** doesn't show Advanced analytics being cut:
+
+- **NOT-20876** (Notion, public roadmap H1 2027, dated 2026-06-30) still lists **Advanced analytics: Q2 2027**, alongside EU data residency, SCIM, audit log export, etc.
+- The account records I have access to (**CRM-11536** Tidewater Ports, **CRM-86750** Lumen Labs, **CRM-14909** Orchid Hotels, **CRM-31062** Vantage Telecom, and the Drive analytics docs **DRI-76027 / DRI-56604 / DRI-50317 / DRI-78883**) are customer-side notes, not planning decisions.
+
+So I have no record of a cut, no reasoning, and no decision-maker to attribute it to. I'm not going to invent a rationale or name someone.
+
+**The important caveat:** there is material on Advanced analytics that I don't have access to, and it may or may not affect the roadmap position and your commitment. I can't tell you what it says or whether it changes anything — so please don't read my "no record of a cut" as confirmation that nothing changed. **Go to the product owner for the decision, the reasoning, and the name.** That's the only reliable source here.
+
+## One thing to handle while you're there
+
+You have a live commitment on this feature:
+
+- **SLA-93532** (Slack #cs, 2026-06-28) — you told **Lena Fox at Pinecrest Realty** that Advanced analytics (Osprey) would land in the **spring release** so they could finish their rollout.
+
+Ask the product owner whether that promise still holds **before** you reaffirm it to Lena or repeat the spring-release date in writing. If you're planning to reply to Pinecrest today, that check should come first.
+
+Two of your other open commitments carry the same "verify with the product owner" flag — **audit log export** to Lena Fox / Granite Insurance by Q1 2027 (**SLA-77342**), and Jordan Blake's **SCIM provisioning** promise to Kai Berg / Umber Studios by Q1 2027 (**SLA-12035**). Worth covering all three in one conversation. (Priya's offline mode commitment to Meridian Travel, **SLA-24221**, has no such flag.)

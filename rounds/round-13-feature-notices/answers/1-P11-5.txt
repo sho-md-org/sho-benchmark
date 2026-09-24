@@ -1,0 +1,53 @@
+I researched all five tools. Before the brief, one thing you need to know up front, because it changes how you should use this.
+
+## The source data won't support a real QBR brief
+
+There are 19 Vantage Telecom records — 10 CRM, 9 Drive, zero in Slack, Linear, and Notion. Every one is a one-line stub. A representative example, in full:
+
+> CRM-65747 · "Call with Vantage Telecom. Discussed dashboards. Owner Maya Chen. Next: follow up on exports."
+
+That's the entire record. There is no ARR, no seat count, no renewal date, no contract terms, no health score, no named customer-side contact, and no commitment with a deliverable or date anywhere in the Vantage set.
+
+This is not a limitation of the tools. Other accounts have real substance — CRM-52816 (Northstar Pharma) reads: "Tess Brown (CS) committed that HubSpot sync will be available by before summer. Logged as a renewal condition." That's a commitment with an owner, a deliverable, and renewal linkage. Nothing like it exists for Vantage. Seven other accounts also have dedicated "renewal call notes" records; **Vantage has none.**
+
+So I can't write you "where things stand" in dollars or "open commitments" with terms — inventing them is the one thing that would actually hurt you in the room. What I can do is read the structure of the record trail, which turns out to be genuinely informative.
+
+## What the trail does show
+
+**Follow-through is the story.** Each CRM record logs a "Next:" step. Tracing whether a matching record ever followed:
+
+| Commitment logged | Where | Followed up? |
+|---|---|---|
+| Latency | CRM-24363 (04-12), again CRM-92524 (07-23) | No latency record exists — raised twice, 3 months apart |
+| Webhooks | CRM-23907 (05-14), CRM-74774 (06-17), CRM-15845 (06-22) | Only DRI-57024 (05-28), which *predates* the two June promises |
+| Sandbox | CRM-53521 (05-18) | No Vantage sandbox record |
+| Integrations | CRM-20779 (04-27) | Only DRI-81968 (04-02), which predates it |
+| Reporting | CRM-37016 (07-10) | Only DRI-68417 (06-14), which predates it |
+| **Exports** | **CRM-65747 (09-13) — yours** | Only CRM-23907 (05-14), which predates it |
+| QBR prep | CRM-84868 (07-08) | Yes — DRI-14442 (09-06) |
+
+Of roughly ten logged next-steps, exactly one demonstrably closed. The most recent open one is yours, from 11 days ago.
+
+**A churn conversation happened 18 days ago.** DRI-14442 (2026-09-06), Dana Ortiz and Tess Brown, titled "Churn," covering churn and QBR prep. That is the highest-severity signal in the set and it is directly adjacent to your call.
+
+**Friction clusters late.** Rate limits DRI-89702 (08-05), support queue DRI-10836 (08-18), SSO DRI-67178 (09-11). The Aug–Sep records skew operational and technical, versus the Apr–Jun records which skew feature-exploratory.
+
+**NPS keeps recurring** across four records — CRM-37016, DRI-57024, DRI-77676, DRI-67178 — without any recorded score or outcome.
+
+**Ownership is fragmented.** Seven different CRM owners across ten calls: Leo Grant, Tess Brown, Ana Petrova, Jordan Blake, Priya Shah, Dana Ortiz, and you. Combined with the follow-through gap, the likely mechanism is that commitments were handed between owners and dropped.
+
+## What I'd say on the call
+
+Given a churn discussion 18 days ago and a visible trail of dropped follow-ups, I would not walk in with a standard value-recap QBR. Lead with ownership:
+
+- **Name the gap before they do.** "I've reviewed our engagement since April. We've raised latency twice and webhooks three times without closing either. I own that." Pre-empting this is far stronger than being told.
+- **Close your own loop first.** You committed to exports on 09-13 (CRM-65747) and it's still open. Arrive with it resolved or with a date.
+- **Declare single-threaded ownership.** Seven owners in ten calls is the root cause; committing to be the single point of contact is a concrete, credible fix.
+- **Ask directly about renewal.** No renewal record exists for Vantage while peers have them. You need the date and posture from the customer, on this call.
+- **Get the NPS number.** Four mentions, no recorded score.
+
+## Before the call
+
+Two gaps I'd close with people rather than tools. Ask **Dana Ortiz and Tess Brown** what drove the 09-06 churn conversation (DRI-14442) — that context exists only in their heads and it's the thing most likely to determine how the call goes. And confirm the renewal date and commercial terms from a billing or contract system; the CRM does not have them.
+
+I'd rather hand you an accurate map with holes in it than a polished brief with invented numbers. If there's a billing system, data warehouse, or email archive I haven't been given access to, point me at it and I'll fill in the commercial picture.

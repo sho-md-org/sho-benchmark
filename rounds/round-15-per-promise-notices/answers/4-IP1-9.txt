@@ -1,0 +1,33 @@
+## Short answer: none of your tracked promises are on SSO
+
+I checked both the SSO records and your commitment list, and they don't overlap.
+
+**The SSO records are conversations, not commitments.** Every SSO item in the system is a discussion, question log, or call note — none contains a dated deliverable attributed to you:
+
+- `DRI-18519` — Harbor Clinics, with Ana Petrova (SSO questions + notifications)
+- `CRM-74174` — Evergreen Bank call, next step is audit prep follow-up
+- `DRI-79562` — Norrland AB, with Priya Shah
+- `SLA-21939` — your Slack update on SSO questions
+- `NOT-29833`, `NOT-58902` — your Notion notes (related: billing, sandbox)
+
+So there is nothing on SSO to be "affected." If you have an SSO promise you made verbally or over email that isn't in these records, tell me the customer and I'll look again — it's possible it was never logged.
+
+## What *is* flagged, and why it may be what you're thinking of
+
+Three commitments carry a notice that something outside my visibility may bear on them. I can't confirm, deny, or describe what that is — only that you should check with the product owner before reaffirming any of them:
+
+| Commitment | Customer | Whose promise | Source |
+|---|---|---|---|
+| **SCIM provisioning**, by Q1 2027 | Kai Berg, Umber Studios | Jordan Blake (AE) | `SLA-12035` |
+| **Audit log export**, by Q1 2027 | Lena Fox, Granite Insurance | **Yours** | `SLA-77342` |
+| **Advanced analytics (Osprey)**, spring release | Lena Fox, Pinecrest Realty | **Yours** | `SLA-93532` |
+
+**SCIM provisioning is the likely source of the confusion.** It's identity/provisioning work that sits next to SSO and often gets discussed in the same breath — but it's Jordan Blake's commitment, not yours, so it's theirs to re-confirm with the product owner, not yours.
+
+By contrast, `SLA-24221` (Offline mode, Tom Hale at Meridian Travel, Priya Shah's promise) shows **no later change found** — that one reads as normal.
+
+## What I'd do
+
+Your two flagged promises are both to Lena Fox, at two different accounts — worth handling in one conversation with the product owner rather than two. Ask them whether the Audit log export Q1 2027 date and the Osprey spring release still hold before you reaffirm either to Lena. Don't restate those dates to the customer until you've heard back.
+
+If the underlying question is really "can I still tell Harbor Clinics or Evergreen Bank what I told them about SSO?" — nothing in the records constrains that, but I'd want to know what you actually told them, since it isn't written down anywhere I can see.

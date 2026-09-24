@@ -1,0 +1,55 @@
+I pulled all 20 Aster Health records across the four systems. One thing to flag before the brief itself:
+
+**The source data won't support a real QBR brief.** Every CRM and Drive record for this account is a one-line stub of the form "Discussed X. Owner Y. Next: follow up on Z." There is no ARR figure, renewal date, contract term, health score, named customer-side stakeholder, usage metric, or NPS score anywhere. Slack, Linear, and Notion return **zero** Aster Health results — so there's no ticket or engineering-issue trail either. I can't invent those numbers, so below is what the record genuinely supports, plus what you'll need to source elsewhere.
+
+## Where things stand
+
+**Cadence:** ~20 logged touchpoints, April–September 2026. Activity is steady but thinning — 9 records in April–May, 4 in June–July, 2 in September.
+
+**Two most recent touchpoints, both material:**
+- `DRI-53905` (2026-09-10) — **Pricing**, plus support queue. Dana Ortiz.
+- `DRI-75615` (2026-09-17) — Dashboards and search. Omar Haddad + you.
+
+A pricing conversation two weeks before a QBR usually means the commercial conversation is already live. Go in assuming they raise it.
+
+**Recurring themes,** by volume: NPS (4), exports (3), dashboards (3), sandbox (3), integrations (2), latency (2), and single records on hosting, SSO, audit prep, search, pricing.
+
+**Latency** is worth noting: `CRM-16329` (06-14) and `CRM-68765` (06-22) — two calls eight days apart, different owners (Priya Shah, Leo Grant). That pattern usually indicates an escalation, and the second one logged churn as the follow-up.
+
+## Open commitments
+
+These are next-steps that were logged with no corresponding closing record anywhere:
+
+| Commitment | Logged | Owner | Status |
+|---|---|---|---|
+| Security review | `CRM-26522` (04-13), `CRM-16329` (06-14) | Ana Petrova, Priya Shah | **No record in any system.** Logged twice, ~2 months apart |
+| Hosting follow-up | `CRM-81799` (05-11) | Tess Brown | No subsequent hosting record |
+| Churn follow-up | `CRM-76005` (04-18), `CRM-64767` (05-17), `CRM-68765` (06-22) | Leo Grant, Ana Petrova, Leo Grant | No dedicated record |
+
+Partially closed: audit prep (`CRM-45213` 04-18 → `DRI-48323` 06-13), SSO (`CRM-57156` 04-19 → `DRI-46065` 08-07, ~3.5 months), search (`CRM-62644` 05-10, **your own**, → `DRI-36553` 07-19).
+
+The security review is the one I'd chase hardest. In healthcare it's typically a renewal gate, two different people committed to it, and nothing shows it ever happened.
+
+## Risks
+
+1. **Churn was flagged three times by two owners** (April, May, June) and never resolved in the record. Whatever drove that is likely still live.
+2. **Security review unaddressed** — for a health-sector customer this can block renewal outright.
+3. **Slow commitment turnaround** — 2 to 3.5 months from logged follow-up to the corresponding meeting. If Aster has noticed, responsiveness will come up.
+4. **Pricing raised 09-10**, unresolved in the record, right before the QBR.
+5. **`DRI-36735` is dated 2026-09-28 — in the future.** An NPS/audit-prep session with Omar Haddad and Ana Petrova, and **you're not on the attendee list.** That falls in your "next week" window. Check whether it's your call, a conflict, or a session you should join.
+
+## What to say
+
+**Open by naming the gap, not papering over it.** "I want to use this to close out items that have been open too long" is credible; a clean-progress narrative isn't supportable and they'll know it.
+
+**Come with answers, not questions, on:** the security review (status and a date), latency (what the June issue was and whether it's fixed), and hosting.
+
+**Let them lead on pricing.** They raised it 09-10. Ask what prompted it before you respond.
+
+**Ask directly what drove the churn concern.** Three internal flags, no documented resolution — you need to know if it's live.
+
+## Before the call, you'll need to source
+
+Contract value, renewal date, and term; current NPS (discussed 4x, never recorded); named Aster stakeholders and their roles; support ticket volume; product usage. None of it is in these systems — try your billing/contract system or Sam Lee, Leo Grant, and Ana Petrova, who own the most records.
+
+Want me to draft the agenda and talk track once you've filled in the commercials, or write up the security-review chase to Ana and Priya first?

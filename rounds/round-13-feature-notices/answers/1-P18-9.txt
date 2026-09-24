@@ -1,0 +1,66 @@
+I pulled every Cobalt Retail record across all four systems: 13 CRM records, 10 Drive meeting notes, and zero in Slack, Linear, and Notion (no Cobalt-tagged items in any of those three). Here's the brief — plus an important caveat about what the data does and doesn't support.
+
+## First, a caveat you need before you read the rest
+
+Every Cobalt record in these systems is a one-line stub: a topic, a Brightline owner, and a generic "next: follow up on X." There is **no** ARR, renewal date, contract term, health score, NPS value, ticket volume, usage data, or a single named contact on Cobalt's side anywhere in the tools. So what follows is a real *structural* read — topic threads, commitment trails, and ownership — but you'll need to supply the numbers yourself. I have not invented any.
+
+---
+
+## Where things stand
+
+Twelve months of contact is dominated by six recurring threads. Most recent first:
+
+| Date | Record | Topic | Owner | Stated next step |
+|---|---|---|---|---|
+| 2026-09-26 *(upcoming)* | DRI-72283 | Mobile app + search | Sam Lee, Priya Shah | — |
+| 2026-09-12 | CRM-12380 | Rate limits | Priya Shah | **follow up on churn** |
+| 2026-08-23 | DRI-35074 | Sandbox + hosting | Maya Chen, Sam Lee | — |
+| 2026-08-17 | DRI-82140 | Offline + mobile app | Jordan Blake, Tess Brown | — |
+| 2026-08-11 | DRI-75222 | Billing + audit prep | Ana Petrova, Omar Haddad | — |
+| 2026-08-05 | DRI-95243 | Case study + pricing | Priya Shah, Ana Petrova | — |
+| 2026-08-01 | CRM-35990 | Notifications | Omar Haddad | follow up on pricing |
+| 2026-07-27 | DRI-20022 | Case study + SSO | Ana Petrova, Jordan Blake | — |
+| 2026-07-25 | DRI-33978 | Rate limits + EU customers | Tess Brown, Dana Ortiz | — |
+| 2026-07-23 | CRM-94849 | Reporting | Priya Shah | follow up on billing |
+| 2026-06-23 | CRM-87224 | Pricing | Priya Shah | follow up on audit prep |
+
+Earlier: CRM-98822 (Apr 1, webhooks), CRM-70221 (Apr 20, roadmap, **yours**), CRM-49779 (Apr 27, onboarding), CRM-36268 (May 22, search, **yours**), CRM-24697 (May 26, dashboards), CRM-92187 (Jun 9, NPS), CRM-12111 (Jun 13, SSO), CRM-16603 (Jun 15, onboarding), DRI-41266 (Jun 7, exports), DRI-18657 (Jun 19, onboarding), DRI-58616 (Jun 21, dashboards).
+
+**Two things to note on timing.** DRI-72283 (mobile app + search, Sam Lee and Priya Shah) is dated 2026-09-26 — it hasn't happened yet and lands *before* your call. Get that readout. Same date, SLA-55835 has Omar Haddad posting a QBR-prep update with "NPS next week," though that Slack thread isn't Cobalt-tagged, so I can't confirm it's this account.
+
+## Open commitments
+
+Tracing each "next step" to whether any later record closes it:
+
+- **"Follow up on churn" (CRM-12380, Sep 12)** — open 12 days, nothing after it. Newest commitment on the account and the most consequential.
+- **"Follow up on security review"** — *yours*, stated twice: CRM-70221 (Apr 20) and again CRM-36268 (May 22). No Cobalt security-review record exists in any system. Notion has security reviews (NOT-91415, NOT-72355, others) but none tagged to Cobalt. Five months open, restated once, no evidence of closure.
+- **"Follow up on case study" (CRM-98822, Apr 1)** — case study came up three more times (DRI-58616 Jun 21, DRI-20022 Jul 27, DRI-95243 Aug 5) with no record of approval or publication. Open ~6 months.
+- **"Follow up on latency" (CRM-49779, Apr 27)** — no latency record for Cobalt anywhere. Dropped.
+- **"Follow up on pricing" (CRM-35990, Aug 1)** — an earlier pricing ask (CRM-12111, Jun 13) was answered by CRM-87224 ten days later, but this August one has no successor record. Reopened, still open.
+- **Rate limits** (CRM-24697 May 26, CRM-16603 Jun 15) → picked up in DRI-33978 and CRM-12380. Progressing, not closed.
+- **Billing / audit prep** (CRM-94849, CRM-87224) → addressed in DRI-75222 (Aug 11). Reasonably closed.
+
+## Risks
+
+1. **The churn flag is the headline.** The single most recent CRM touch ends by pointing at churn (CRM-12380), and it sits on the rate-limits thread — the technical issue that's recurred four times since May. Unresolved constraint plus a churn note is not a coincidence.
+2. **Pricing pressure is compounding.** Pricing surfaced Jun 13, Jun 23, Aug 1, and again alongside the case study Aug 5 (CRM-12111, CRM-87224, CRM-35990, DRI-95243). Repeated pricing conversations plus a churn flag is the shape of a renewal negotiation forming, whether or not they've said so.
+3. **Don't lead with the case study.** It's been open since April and asked for four times. If churn is live, pushing advocacy before resolving rate limits and pricing will read as tone-deaf. Park it.
+4. **Your security-review commitment is the personal exposure.** You're the owner on both records that promised it, and there's nothing showing it happened. Their SSO questions (CRM-12111, DRI-20022) suggest it may be blocking something on their side. Assume they remember.
+5. **Ownership is fragmented.** Six-plus Brightline owners across 23 touchpoints; Priya Shah owns five CRM records and is on the upcoming Sep 26 meeting. Priya, not you, is the account's center of gravity right now. Sync before the call or you'll be behind them in the room.
+6. **You cannot walk in on this data.** No renewal date, ARR, NPS score, or customer-side names exist in any system. That's a risk in itself — pull them from wherever they actually live before the call.
+
+## What to say
+
+**Open by naming the rate-limit thread yourself.** It's recurred since May, it touches their EU customers (DRI-33978), and they know it's unresolved. Leading with it buys credibility for everything after. *"Rate limits have come up in every conversation since May, including around your EU customers. I want to start there rather than have you raise it."*
+
+**Then close your own loop.** Own the security review directly — give a date or say plainly that it slipped. Don't let them surface it.
+
+**Then ask the churn question in the open.** Something like: *"I want to be direct — is the value here matching what you're paying? I'd rather have that conversation now than at renewal."* The pricing thread has been running four months without resolution; surfacing it yourself is better than letting it arrive as a renewal ultimatum.
+
+**Bring the mobile/offline work as your forward story** (DRI-82140, DRI-72283). It's the one thread with genuine recent momentum — get Sam and Priya's Sep 26 readout first so you can speak to it concretely.
+
+**Close on onboarding**, which has run since April across four records (CRM-49779, CRM-16603, DRI-18657, NOT-42571) — worth asking whether their team is actually fully ramped, since incomplete adoption is a common driver behind exactly this pricing-plus-churn pattern.
+
+---
+
+Two things worth doing before the call: ask Priya Shah what "follow up on churn" in CRM-12380 was actually about — that one word is carrying most of the risk in this brief and the record doesn't explain it — and get the real commercial data, since none of it is in these systems. Want me to draft the talk track as a one-page doc once you have those?

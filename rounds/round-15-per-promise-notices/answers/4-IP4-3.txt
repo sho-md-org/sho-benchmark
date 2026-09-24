@@ -1,0 +1,21 @@
+## Short answer: the Keystone Energy one is the at-risk promise.
+
+**Keystone Energy — Audit log export with SIEM/Splunk streaming, by Q1 2027** (`DRI-34564`, 2026-08-03)
+This commitment comes back flagged: there's a decision I don't have visibility into that may or may not change it. I can't see what it is or say whether it actually affects your promise. **Before you reaffirm this to Keystone, check with the product owner that it still holds.**
+
+Two other things about this one worth knowing:
+- It wasn't actually your promise. Per `DRI-34564`, Nia Cole reminded the team of the commitment and **Jordan Blake (AE) confirmed** it on the company's behalf. You're carrying it, but Jordan is the one who reaffirmed it — worth looping them in.
+- The scope is wider: not just export, but **streaming into Splunk**. More surface area to slip.
+
+**Cobalt Retail — Audit log export (CSV), by Q1 2027** (`CRM-38600`, 2026-07-24)
+This is genuinely yours — you told Sam Ortiz "you have my word" at the QBR, and they're planning around it. It comes back clean: **no later change found**. Treat it as normal. Narrower scope too (plain CSV export, no streaming), so less to go wrong.
+
+## One extra flag you didn't ask about
+
+You have a **third** audit-log-export promise with the same problem: **Lena Fox at Granite Insurance, Q1 2027** (`SLA-77342`), made by you. It carries the same notice as Keystone's. Same guidance — confirm with the product owner before reaffirming.
+
+(Also yours and flagged, different feature: Advanced analytics for Lena Fox at Pinecrest Realty, `SLA-93532`.)
+
+## Suggested next step
+
+One message to the product owner covering all three flagged items — Keystone (`DRI-34564`), Granite (`SLA-77342`), Pinecrest (`SLA-93532`) — asking whether each still holds. Cobalt doesn't need to be in that conversation. Want me to draft it?

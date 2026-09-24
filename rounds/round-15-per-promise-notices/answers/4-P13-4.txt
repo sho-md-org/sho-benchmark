@@ -1,0 +1,27 @@
+No flags on this one. The SSO commitment is clean to reaffirm:
+
+- **DRI-36664** (2026-07-09) — Tom Hale raised the Q1 2027 SSO date in the sync; Leo Grant confirmed it on the call.
+- **NOT-20876** (2026-06-30) — public roadmap lists "SSO (SAML), SP- and IdP-initiated: Q1 2027."
+- Commitment status: *no later change found* — nothing has superseded or revised it.
+
+## Draft reply
+
+> **Subject:** Re: SSO (SAML) timing
+>
+> Hi Tom,
+>
+> Yes — SSO (SAML) is still targeted for Q1 2027, same as when we confirmed it on our July 9 call. It remains on our published H1 2027 roadmap, covering both SP-initiated and IdP-initiated flows, and nothing has changed on our side since we last spoke.
+>
+> If it's useful for your planning, I'm happy to set up a short session with our product team closer to the new year so your identity/IT folks can walk through the configuration details and we can line up your rollout with the release.
+>
+> I'll flag it to you right away if anything about the timing shifts.
+>
+> Best,
+> Leo
+
+Two notes for the AE before sending:
+
+1. I kept the language as a reaffirmed target rather than a contractual guarantee. That's accurate to what's on record — the Q1 2027 date lives on the public roadmap, not in an SLA. If you want to go firmer than that, it's worth a quick check with the product owner first.
+2. Quarry Mining didn't ask about SCIM provisioning, but it's also Q1 2027 on the roadmap and usually lands in the same IT project as SAML. Your call whether to mention it; I left it out to answer only what they asked.
+
+One unrelated item surfaced in the account context: the **Custom roles** commitment to Ironwood Legal (SLA-46650) carries a flag saying a decision I can't see may have changed it. That doesn't touch this reply, but whoever owns Ironwood should confirm with the product owner before reaffirming that date to them.

@@ -1,0 +1,27 @@
+Context checked — the SSO commitment carries no flag, and it's corroborated in two places, so this one can be confirmed as-is.
+
+**What the records show**
+- `DRI-36664` (2026-07-09) — Quarry Mining sync: Tom Hale raised the Q1 2027 SSO (SAML) date; Leo Grant (AE) confirmed it.
+- `NOT-20876` (2026-06-30) — Public roadmap H1 2027 lists "SSO (SAML), SP- and IdP-initiated: Q1 2027."
+- `CRM-14429` (2026-06-25) — earlier SSO call with Quarry Mining, owner Ana Petrova; no scope or date change recorded.
+- Commitment tracking on this item returns "no later change found," so nothing supersedes the Q1 2027 date.
+
+**Draft reply**
+
+> Subject: Re: SSO (SAML) timing
+>
+> Hi Tom,
+>
+> Yes — SSO (SAML) is still planned for Q1 2027, same as what we confirmed on our July 9 call. It's also on our published H1 2027 roadmap, covering both SP-initiated and IdP-initiated flows.
+>
+> A couple of things that may be useful as you plan on your side:
+>
+> - If it's helpful, I can set up a short session with our product team ahead of release so your IT group can walk through IdP configuration and confirm the flows you need are covered.
+> - SCIM provisioning is also targeted for Q1 2027, in case user provisioning is part of the same rollout for you.
+>
+> I'll flag it right away if anything about the timing shifts. Happy to get time on the calendar whenever it's useful.
+>
+> Best,
+> Leo
+
+**One note for the AE:** the roadmap date is a quarter-level target, not a contractual commitment, and Q1 2027 is still two quarters out. The draft reaffirms it because that's what the record supports — but if you want a lower-risk version, swap "is still planned for" to "is still on track for" and drop nothing else. I'd also suggest a quick confirmation with the product owner before sending if you want the date restated in writing to the customer a second time.

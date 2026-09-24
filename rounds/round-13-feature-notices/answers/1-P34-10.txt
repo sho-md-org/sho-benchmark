@@ -1,0 +1,90 @@
+I pulled every Aster Health record across all five tools. Here's the brief — but read the first section before you use it.
+
+## ⚠️ Data quality caveat (read first)
+
+The Aster Health record set is **22 items, all one-line stubs**: 10 CRM call logs and 12 Drive meeting notes. Slack, Linear, and Notion return **zero** Aster Health results.
+
+No record contains ARR, contract/renewal dates, seat counts, usage or adoption metrics, health score, NPS values, open ticket counts, or SLA data. There is no account plan and no prior QBR deck.
+
+So I can give you an accurate **relationship map and commitment ledger**. I cannot give you "where things stand" in the numbers sense — that data isn't in these systems, and I'm not going to invent it. What you need to source elsewhere is listed at the bottom.
+
+---
+
+## 1. Where things stand
+
+**Last touchpoint:** DRI-75615 (2026-09-17) — Dashboards + search, Omar Haddad and you.
+
+**Recent trajectory (last 7 weeks):**
+| Date | Record | Topic |
+|---|---|---|
+| 2026-08-07 | DRI-46065 | SSO questions + **churn** (Jordan Blake) |
+| 2026-09-10 | DRI-53905 | **Pricing** + support queue (Dana Ortiz) |
+| 2026-09-17 | DRI-75615 | Dashboards + search (Omar Haddad, **you**) |
+| 2026-09-28 | DRI-36735 | NPS + audit prep (Omar Haddad, Ana Petrova) — **scheduled, you are not on it** |
+
+Two things jump out:
+
+- **DRI-36735 is dated 2026-09-28 — that's next week.** It's an NPS/audit-prep session with Omar Haddad and Ana Petrova, and you aren't listed as an attendee. Either this is your call under a different owner, or there's a parallel Aster conversation happening the same week. Worth resolving before you walk in.
+- **A pricing conversation happened 2026-09-10 (DRI-53905)** without you, two weeks before your QBR. Find out what was said. Walking into a QBR blind to a fresh pricing discussion is the single biggest exposure here.
+
+**Recurring themes across the year:** dashboards (4 records), exports (3), integrations (2), sandbox (4), latency (2), NPS (4), search (2), SSO/audit/security (3).
+
+**Coverage is fragmented.** Six different owners across 10 CRM calls — Leo Grant (3), Ana Petrova (3), and one each for you, Sam Lee, Tess Brown, Priya Shah. You own exactly one CRM record (CRM-62644, 2026-05-10). This account has no consistent voice, which is itself a QBR talking point.
+
+## 2. Open commitments
+
+Every CRM record logs a "Next:" step. **None is marked resolved.** I cross-referenced each against later Drive notes to infer status:
+
+| Commitment | Owner | Logged | Inferred status |
+|---|---|---|---|
+| Follow up on **security review** | Ana Petrova | CRM-26522 (4/13) | 🔴 **Open ~5 months** — no security-review record exists |
+| Follow up on **security review** | Priya Shah | CRM-16329 (6/14) | 🔴 **Open ~3 months** — same gap, re-committed and still unaddressed |
+| Follow up on **churn** | Leo Grant | CRM-76005 (4/18) | 🟠 Partially touched in DRI-48323, DRI-48732 |
+| Follow up on **churn** | Ana Petrova | CRM-64767 (5/17) | 🟠 Partially touched in DRI-46065 (8/7) |
+| Follow up on **churn** | Leo Grant | CRM-68765 (6/22) | 🟠 No dedicated follow-up record |
+| Follow up on **hosting** | Tess Brown | CRM-81799 (5/11) | 🔴 **Open** — only hosting mention is DRI-23711, which predates it |
+| Follow up on **NPS** | Sam Lee | CRM-75476 (7/21) | 🟡 Appears scheduled into DRI-36735 (9/28) |
+| Follow up on **audit prep** | Leo Grant | CRM-45213 (4/18) | 🟢 Closed via DRI-48323 (6/13), ~8 wk lag |
+| Follow up on **SSO questions** | Ana Petrova | CRM-57156 (4/19) | 🟢 Closed via DRI-46065 (8/7), ~15 wk lag |
+| Follow up on **search** | **Maya Chen** | CRM-62644 (5/10) | 🟢 Closed via DRI-36553 (7/19), ~10 wk lag |
+
+**The pattern matters more than any single row:** commitments that do close take 8–15 weeks. That's your credibility problem going into this call.
+
+## 3. Risks
+
+1. **The security review has been promised twice and delivered zero times** (CRM-26522 April, CRM-16329 June). In healthcare, this is the one that gets escalated. Assume they raise it; if they don't, raise it yourself before they do.
+2. **"Churn" appears as a follow-up topic three separate times** (CRM-64767, CRM-68765, CRM-76005) and inside two meetings (DRI-48323, DRI-46065). These stubs are topic tags, not a stated assessment — but churn recurring five times across five months is a signal, and no record shows it being resolved.
+3. **Pricing is live and you're not in the loop** (DRI-53905, 9/10, alongside "support queue"). Pricing + support-queue in the same conversation usually means value-for-money pushback.
+4. **Chronic follow-through lag** — 8 to 15 weeks to close routine items. Expect them to have a list.
+5. **No account continuity** — six owners, no account plan, nothing in Slack/Linear/Notion. No engineering tickets exist for any of the latency (CRM-16329, CRM-68765), export, or dashboard topics, meaning product issues raised on calls were likely never filed.
+
+## 4. What to say
+
+**Open with ownership, not metrics.** You can't win a numbers debate you have no numbers for. Lead with the thing they already know:
+
+> "Before we review the quarter — you've raised the security review with us twice, in April and again in June, and we haven't delivered. I own that. Here's the date."
+
+Bring an actual date. That's the whole move.
+
+**Then:**
+- **Consolidate the ledger.** Walk the five genuinely open items (2× security review, hosting, and the churn/retention thread) with a named owner and date for each. Six owners in a year is why things slipped — tell them you're the single point of contact now, if you can commit to that.
+- **Get ahead of pricing.** "I understand pricing came up on the 10th" — don't let them introduce it. Sync with Dana Ortiz first (DRI-53905).
+- **Land the wins honestly.** SSO questions (DRI-46065) and audit prep (DRI-48323) did close. Don't oversell — they took months and Aster knows it.
+- **Convert dashboards/search into a roadmap ask.** It's the most persistent theme (DRI-36553, DRI-75615, CRM-57156, CRM-75476) and the one place the conversation can be forward-looking.
+- **Use NPS as a listening device, not a scorecard.** With DRI-36735 on 9/28, ask what would move their score rather than quoting one.
+
+**Don't** present a health score, cite usage trends, or reference renewal timing. None of it is substantiated in these systems.
+
+## 5. Sourcing gaps — fill before the call
+
+1. **Is DRI-36735 (9/28) your call?** You're not on the invite. Confirm with Omar Haddad or Ana Petrova.
+2. **What happened on pricing?** Ask Dana Ortiz about DRI-53905.
+3. **Contract value and renewal date** — not in CRM. Pull from billing/finance.
+4. **Support ticket volume and open escalations** — "support queue" is referenced in DRI-53905 but no ticket system is connected here.
+5. **Actual NPS score and verbatims** — four NPS records, zero numbers.
+6. **Security review status** — check with Ana Petrova (CRM-26522) and Priya Shah (CRM-16329). This is your highest-priority item.
+7. **Why "churn" keeps appearing** — ask Leo Grant and Jordan Blake directly whether there's a real retention concern behind the tag.
+
+---
+
+Want me to draft the opening two minutes verbatim, or a one-page leave-behind with the commitment table and dates once you've filled in the gaps?

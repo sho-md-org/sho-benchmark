@@ -1,0 +1,25 @@
+## Short answer: I can't confirm it was cut — and the records point the other way.
+
+I searched Notion, Slack, Linear, Drive, and the CRM for any decision to cut, defer, or descope Advanced analytics. **There is no such record.** No decision log, no exec meeting note, no announcement, no owner attached to a cut.
+
+### What the records actually say
+
+**Advanced analytics is still on the plan, for Q2 2027.**
+- `NOT-20876` — "Public roadmap H1 2027" (2026-06-30) lists *"Advanced analytics: Q2 2027."* This is the most recent authoritative roadmap document I could find; nothing supersedes it.
+- Linear returned zero results for every query I tried (analytics, Osprey, roadmap, Rail), so there's no engineering-side signal of cancellation either.
+
+**The only roadmap item that changed recently is a different one.**
+- `SLA-17908` — #general, 2026-09-19: *"Heads up: Sandbox environments (Rail) slip to Q2 2027. Please update any customers expecting them this year."* Sandbox was Q4 2026 in `NOT-20876`, now moving into Q2 2027. This is the one announced change, it names no decision-maker, and it isn't about analytics. If a game of telephone produced "analytics got cut," this is the likeliest source — a Q2 2027 slip landing in the same quarter analytics occupies.
+
+### The real exposure here
+
+While looking, I found two live customer commitments on Advanced analytics that are worth your attention regardless:
+
+- `SLA-93532` (2026-06-28) — you told Lena Fox at Pinecrest Realty Advanced analytics (codename **Osprey**) would land in the spring release so they could finish their rollout. Spring ≈ Q2 2027, so that's consistent with the roadmap — but it's a hard commitment to a customer sequencing work around it.
+- `CRM-86750` (2026-06-27) — Lumen Labs QBR: Tom Hale pushed on Advanced analytics and Priya Shah (AE) said *"you'll have it by mid-2027, you have my word."* Note the record says the customer is planning around it. Q2 2027 ends 30 June, so "mid-2027" has roughly zero buffer.
+
+### What I'd suggest
+
+Before you communicate anything to customers, get a named confirmation from the product owner that Q2 2027 still holds. I couldn't identify an owner for Advanced analytics from these tools — the roadmap doc lists no owners, and "Osprey" appears exactly once across all systems (`SLA-93532`, your own message). The Notion roadmap stubs are owned variously by Ana Petrova, Omar Haddad, and you, but none of them reference analytics.
+
+If someone told you directly that it was cut, ask them for the record — because it isn't in any of these systems, and I'd rather flag that gap than invent reasoning that doesn't exist.

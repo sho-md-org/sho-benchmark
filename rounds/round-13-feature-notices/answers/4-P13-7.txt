@@ -1,0 +1,27 @@
+**Before this goes out:** I can't confirm the Q1 2027 date. The commitment on record (DRI-36664, Leo Grant reconfirmed it to Tom Hale on 2026-07-09) is flagged — there may be a change I don't have visibility into. Check with the SSO product owner and only then send a version with a date in it. The public roadmap (NOT-20876) still lists SSO (SAML), SP- and IdP-initiated, for Q1 2027, but a Notion page isn't confirmation that the commitment still holds.
+
+So the draft below deliberately does **not** reaffirm Q1 2027. It acknowledges the commitment, and buys a short, specific window to come back with a firm answer.
+
+---
+
+**Subject:** Re: SSO (SAML) timing
+
+Hi Tom,
+
+Thanks for following up, and yes — I know SSO (SAML) is a commitment we made to you, and I reconfirmed it when we spoke in July.
+
+Rather than repeat a date from memory, I want to give you an answer I can stand behind. I'm confirming the current delivery plan with our product team this week and will come back to you by **Friday, 2 October** with the status and, if anything has shifted, exactly what that means for you and what we'd do about it.
+
+If it's useful, I can set up a short call with our product lead for SSO so you can ask about scope directly — SP- vs IdP-initiated, and whether SCIM provisioning matters for your rollout.
+
+I know timing on this feeds your own planning, so I won't leave it open-ended.
+
+Best,
+Leo
+
+---
+
+Two notes:
+
+1. If the product owner confirms Q1 2027 still holds, swap the middle paragraph for a direct reaffirmation. If it has slipped, tell Tom in that same reply rather than by a later surprise — he has reconfirmed this twice now, and a second soft answer will read as evasion.
+2. Separate but same pattern: the custom roles commitment to Ironwood Legal (SLA-46650, also Leo's) carries the same flag. Worth checking with the product owner in the same conversation before it comes up on a renewal call.

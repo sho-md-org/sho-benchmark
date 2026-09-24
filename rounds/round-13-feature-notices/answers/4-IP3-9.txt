@@ -1,0 +1,13 @@
+**Short answer: I can't tell you.** There is a decision affecting Advanced analytics that sits outside what I can access, so I can't see who made it, what it was, or when — and I shouldn't speculate.
+
+What I can see:
+
+- **SLA-93532** (2026-06-28, #cs) — your own commitment: you told Lena Fox at Pinecrest Realty that Advanced analytics (Osprey) would land in the spring release so they could finish their rollout.
+- **NOT-31499** (2026-04-16, Notion, "Analytics") — owner listed as **Omar Haddad**. Content is just a stub.
+- **SLA-91143** (2026-07-13, Slack) — Tess Brown posting a generic "update on analytics" with no decision detail.
+
+Neither of the analytics records names a decision-maker or describes any change.
+
+**What I'd do:** ask **Omar Haddad**, the product owner on the analytics doc, two things — (1) who owns the current call on Advanced analytics / Osprey, and (2) whether your spring-release commitment to Pinecrest Realty still holds. I'd hold off on reaffirming the spring-release date to Lena Fox until you have that answer.
+
+Worth knowing: two of your other open promises carry the same "check before reaffirming" flag — **SLA-77342** (Audit log export to Lena Fox / Granite Insurance, Q1 2027, yours) and **SLA-12035** (SCIM provisioning to Kai Berg / Umber Studios, Q1 2027, Jordan Blake's). Same product-owner question applies. Priya Shah's Offline mode commitment to Meridian Travel (**SLA-24221**, Q2) has no later change on record.

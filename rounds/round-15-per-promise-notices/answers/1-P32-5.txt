@@ -1,0 +1,55 @@
+## Headline first
+
+I searched all four systems (CRM, Drive, Slack, Linear, Notion) and pulled ~20 Harbor Clinics records. **I can't write you a real QBR brief from what's in the tools** — every Harbor Clinics record is a one-line stub. There is no ARR, no renewal date, no health score, no ticket status, and no commitment with an owner-plus-deadline anywhere in the account.
+
+A representative example, in full — this is the entire record:
+
+> **CRM-34883** · Hosting (Harbor Clinics), 2026-07-15 — "Call with Harbor Clinics. Discussed hosting. Owner Sam Lee. Next: follow up on SSO questions."
+
+All 20 look like that. Writing "where things stand, risks, and what to say" off these would mean inventing the substance, and you'd find that out in the room. So here's what the data genuinely supports, then the gaps.
+
+## What the records actually establish
+
+**Cadence.** Continuous contact, Apr 25 – Sep 11, 2026. Roughly 20 touchpoints in ~5 months. The account is active, not neglected.
+
+**Topics, by recurrence** — this is the most useful real signal, because topics repeat over months with no record of resolution:
+
+| Theme | Records | Span |
+|---|---|---|
+| Churn (internal) | DRI-17076, DRI-26772, DRI-17950 | Jul 20 → Sep 11 |
+| Pricing | DRI-51027, DRI-40615, DRI-55004 | Apr 23 → Jul 21 |
+| Notifications | CRM-73374, CRM-78984 | May 24 → Jun 15 |
+| Integrations | CRM-97969, CRM-75336 | Apr 25 → Jul 25 |
+| Sandbox | CRM-36695, DRI-18426 | Jun 13 → Aug 20 |
+| SSO questions | DRI-92526, DRI-18519 | Aug 1 → Aug 8 |
+| Dashboards | DRI-60679, CRM-64035 | Jul 5 → Aug 26 |
+
+**The one thing I'd treat as a genuine risk flag:** three internal churn discussions on this account, two of them in the last three weeks before today (DRI-26772 on Sep 6, DRI-17950 on Sep 11 — the Sep 11 one with you and Tess Brown). The frequency is increasing. The records don't say *why*, but someone internally has been circling this account on churn repeatedly and recently. You attended the most recent one, so you likely have that context outside the tools.
+
+**Closest thing to open commitments** — CRM "next step" fields with no recorded closure. Caveat: these are internal follow-up notes, not confirmed customer promises, and nothing in the system marks them done either way:
+
+- CRM-39320 (Aug 26, Priya Shah) → follow up on notifications
+- CRM-64035 (Aug 26, Ana Petrova) → follow up on analytics
+- CRM-75336 (Jul 25, Omar Haddad) → follow up on search
+- CRM-34883 (Jul 15, Sam Lee) → follow up on SSO questions
+- CRM-41255 (Jun 14, Tess Brown) → follow up on latency
+
+**Most-engaged internal names**, if you need to chase people: Omar Haddad, Jordan Blake, Sam Lee, Ana Petrova, Tess Brown, Dana Ortiz, Priya Shah, Leo Grant.
+
+## What's missing, and where to get it
+
+These are the things a QBR brief is actually made of, and none exist in the tools:
+
+1. **Renewal date and contract value.** Nothing, anywhere. This determines whether next week's call is a renewal negotiation or a relationship check-in — and it changes everything about what you say. Get it from the billing/contract system.
+2. **Why "churn" is being discussed.** Ask Tess Brown (your Sep 11 counterpart, DRI-17950) or Leo Grant/Priya Shah (Sep 6, DRI-26772).
+3. **Status of the five open follow-ups above.** Ask each owner directly; the system won't tell you.
+4. **Usage/adoption data and support ticket volume.** DRI-83049 (Jul 14) references a "support queue" discussion but contains no numbers. Linear returned *zero* Harbor Clinics results, so no engineering work is tracked against this account under that name.
+5. **Customer-side stakeholders.** Not a single Harbor Clinics contact is named in any record — all attendees listed are Brightline staff.
+
+One thing I checked and want to flag as *unverified*: there are Notion "Qbr prep" pages (NOT-42571 Sep 15, NOT-52051 Sep 5, owned by Omar Haddad) but they're **not tagged to Harbor Clinics** and are equally contentless. They may be for a different account. Worth one message to Omar before you assume they're yours.
+
+## My recommendation
+
+Don't try to salvage a brief from this. Send two messages today: **Tess Brown** — "what drove the churn conversation on Harbor?" — and **Omar Haddad** — "is your QBR prep doc Harbor, and do you have the account numbers?" Pull the renewal date and ARR from billing yourself. That gets you 80% of a real brief within a day, and you'll have a week's buffer.
+
+Once you have those pieces, send them to me and I'll build the actual brief — talking points included. I've held off on drafting "what you should say" deliberately: with no renewal date, no usage data, and no named customer stakeholder, any talking points I wrote now would be generic filler dressed up as preparation.

@@ -1,0 +1,33 @@
+## Short answer: none of them — because none of the SSO promises on record are yours, and SSO didn't move.
+
+I checked the CRM commitment log, the public roadmap, and the Slack announcements. Two separate things are worth separating here.
+
+### 1. There is no SSO promise attributed to you
+
+Every SSO (SAML) commitment logged in the CRM belongs to someone else:
+
+| Account | Promise | Who made it |
+|---|---|---|
+| Vantage Telecom (`CRM-31062`, 2026-06-08) | "by Q1 2027, including IdP-initiated login from Okta, you have my word" | Priya Shah (AE) |
+| Delta Freight (`CRM-64756`, 2026-06-06) | "by end of Q1, you have my word" | Tess Brown (CS) |
+| Riverton City (`CRM-74447`, 2026-08-18) | SSO (SAML) (Heron) "by early next year" — logged as a renewal condition | Tess Brown (CS) |
+| Umber Studios (`CRM-62434`, 2026-08-17) | "by March, with IdP-initiated sign-in" — renewal condition | Priya Shah (AE) |
+
+You appear on SSO records as an owner of the conversation, not as the source of a commitment — e.g. Evergreen Bank (`CRM-74174`, 2026-08-22), where the next step is audit prep. One adjacent item worth knowing: Ironwood Legal asked about **mobile app** SSO (`CRM-69493`), and the note explicitly records that their *incumbent vendor* promised it and we did not.
+
+### 2. The thing that slipped is Sandbox, not SSO
+
+The only roadmap-change announcement in the window is `SLA-17908` (#general, 2026-09-19): **Sandbox environments (Rail) slip to Q2 2027**, with a request to update customers expecting them this year. SSO's codename is **Heron** (per `CRM-74447`), and the public roadmap `NOT-20876` (2026-06-30) still shows SSO (SAML), SP- and IdP-initiated, at Q1 2027. Nothing in Slack, Notion, or Linear shows a Heron date change or scope cut.
+
+So if the "affected promises" prompt came from the Rail announcement, it doesn't touch SSO at all.
+
+### What *is* actually yours, and where it stands
+
+Your two logged commitments are on other features:
+
+- **Bluewater Logistics** (`CRM-98566`, 2026-05-03) — higher API rate limits, "this autumn, you have my word." **This one is satisfied**: `SLA-26281` (2026-09-20) confirms Crane is live and rate limits are raised for all paid plans. Worth a proactive note to Ruth Kim.
+- **Cobalt Retail** (`CRM-38600`, 2026-07-24) — audit log export (Lark) "by Q1 2027 as a CSV export, you have my word." Still Q1 2027 on the roadmap, so it's on track. One thing to watch: the roadmap line reads "Audit log export incl. SIEM streaming," and you promised specifically CSV — narrower than the roadmap item, so no exposure there, but confirm CSV is in the Q1 cut rather than a fast-follow.
+
+### Suggested next step
+
+If the underlying worry is "who has to make an awkward call," the SSO exposure sits with Tess Brown and Priya Shah — and the sharpest one is Vantage Telecom, where Priya specifically promised IdP-initiated Okta login. The Rail slip, meanwhile, needs someone to reach Meridian Travel (`CRM-64912`, Kai Berg asked about Sandbox — though logged as "no commitment"). Want me to pull the full list of customers expecting Sandbox this year so the right owners can be notified?

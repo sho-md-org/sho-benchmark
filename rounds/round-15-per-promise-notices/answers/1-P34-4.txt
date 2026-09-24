@@ -1,0 +1,60 @@
+I pulled every Aster Health record across all four systems — 10 CRM records, 10 Drive notes, zero in Slack, Linear, and Notion. I need to lead with a problem before the brief itself.
+
+## The honest headline: the source records won't support a real QBR brief
+
+Every record is a one-line stub. There is no substance in any of them. Representative examples, quoted in full:
+
+> CRM-75476 (2026-07-21): "Call with Aster Health. Discussed dashboards. Owner Sam Lee. Next: follow up on NPS."
+
+> DRI-75615 (2026-09-17): "Attendees: Omar Haddad, Maya Chen. Discussed dashboards and search."
+
+That's the entire record. Across all 20, there is **no ARR, no renewal date, no contract terms, no health score, no NPS value, no ticket volume, no named commitment with a due date, and no outcome on anything**. Slack, Linear, and Notion return nothing for Aster Health at all — so there's no engineering backlog or internal thread to triangulate against.
+
+I can't write "where things stand" from this without inventing it. What I can give you is a defensible topic map, the genuinely useful patterns in the metadata, and a structured skeleton with the gaps marked.
+
+## What the records actually support
+
+**Cadence and coverage.** ~20 touchpoints Apr–Sep 2026. Brightline-side names appearing: Maya Chen, Ana Petrova, Leo Grant, Priya Shah, Sam Lee, Tess Brown, Jordan Blake, Dana Ortiz, Omar Haddad. Ownership is scattered across eight-plus people with no visible continuity — no single owner carries a thread start to finish.
+
+**Topic distribution:** dashboards (CRM-75476, CRM-57156, DRI-75615), exports (CRM-76005, CRM-45213, DRI-23711), NPS (CRM-26522, DRI-30445, DRI-36735), sandbox (CRM-62644, CRM-64767), latency (CRM-16329, CRM-68765), integrations (DRI-82652, DRI-48732), search (DRI-70983, DRI-36553), hosting (CRM-81799), pricing (DRI-53905).
+
+**The arc, by quarter:** April–May skews setup — exports, sandbox, hosting, dashboards. June–July shifts to performance and extension — latency, integrations, search. September turns commercial — pricing and support queue.
+
+## Patterns worth your attention (inference, not documented fact)
+
+**1. A compliance thread has been open for five months.** "Security review" is the next step on CRM-26522 (4/13, Ana Petrova) and again on CRM-16329 (6/14, Priya Shah). "Audit prep" is the next step on CRM-45213 (4/18, Leo Grant). "SSO questions" on CRM-57156 (4/19, Ana Petrova). And "audit prep" resurfaces in DRI-36735. Four-plus records, three owners, April through September, and nothing in the records shows it closing. For a healthcare customer this is the thread most likely to be a live, unmet commitment.
+
+**2. "Follow up on churn" appears three times as an internal next step** — CRM-76005 (4/18), CRM-64767 (5/17), CRM-68765 (6/22), Leo Grant and Ana Petrova. That's Brightline-side risk language, not a customer topic. Someone was flagging retention concern repeatedly in Q2.
+
+**3. Pricing entered the conversation two weeks before your QBR.** DRI-53905 (9/10) covers "pricing and support queue" — the only pricing record in the set, and the conjunction with support queue is not a great pairing. The attendee field reads "Dana Ortiz, Dana Ortiz," which is a data error, but you are not on it. **Find out what was said on that call before you walk in.**
+
+**4. Latency twice in eight days in June** (CRM-16329 6/14, CRM-68765 6/22) suggests a performance episode. No record shows resolution.
+
+**5. A dating anomaly:** DRI-36735 is stamped 2026-09-28 — four days from now. Attendees Omar Haddad and Ana Petrova, topic "NPS and audit prep." That may be your call next week already on the calendar, but you aren't listed on it. Worth confirming whether that's your QBR or a separate call.
+
+## What you need before the call
+
+These are the blocking gaps, and none are answerable from the tools:
+
+- Renewal date, ARR, and contract terms
+- Whether the security review / SSO / audit-prep thread ever closed — ask Ana Petrova and Priya Shah
+- What happened on the 9/10 pricing call — ask Dana Ortiz
+- Actual NPS score and support ticket volume/SLA performance
+- Who raised churn in Q2 and why — ask Leo Grant
+- Product adoption data (dashboards, exports, search usage)
+
+## Suggested talk track, once you've filled those gaps
+
+**Open with continuity, not a data dump.** Your account has had eight-plus owners in six months. Name that and fix it: "I'm your single point of contact going forward."
+
+**Lead with the compliance thread.** Go in having closed it or with a dated plan. For a healthcare buyer, an audit/security commitment drifting five months is the credibility risk, and if you don't raise it they will.
+
+**Get ahead of pricing.** Something happened on 9/10. Don't let it surface as an ambush — open the door yourself and ask what's driving it.
+
+**Own the June latency episode.** Even if resolved, saying "we saw degradation in June, here's what we did" buys more trust than silence.
+
+**Anchor on value.** This is where you need the adoption and NPS numbers — the brief is weakest exactly where a QBR needs to be strongest.
+
+---
+
+I'd treat the record quality as the underlying issue: if QBR prep for a healthcare account can't be assembled from the CRM, that's worth raising with whoever owns CS data hygiene. Want me to draft the slide outline with placeholders for the missing figures, or a short list of questions to send Ana, Dana, and Leo?

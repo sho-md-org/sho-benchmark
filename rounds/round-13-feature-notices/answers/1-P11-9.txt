@@ -1,0 +1,87 @@
+## Before the brief: an important caveat
+
+I searched all four systems (CRM, Drive, Notion, Slack, Linear) and pulled every Vantage Telecom record. **The records are topic stubs — they log that a call happened, who owned it, and a one-word next step, but contain no substance.** There is no ARR, no renewal date, no named Vantage-side contacts, no NPS score, no health score, and no detailed commitments anywhere in these systems.
+
+So I can't write the QBR brief you asked for as a factual document. Writing one anyway would mean inventing the numbers, and you'd find that out in the room. What follows is what the records *do* support, clearly separated from what I'm inferring, plus the specific gaps you need to fill before the call.
+
+---
+
+## 1. Where things stand — the verifiable record
+
+**Every Vantage touchpoint on file (18 records, Apr 2 – Sep 13):**
+
+| Date | Record | Topic | Owner / Attendees | Logged next step |
+|---|---|---|---|---|
+| Apr 2 | DRI-81968 | Integrations (+ audit prep) | Maya Chen, Leo Grant | — |
+| Apr 12 | CRM-24363 | Billing | Leo Grant | latency |
+| Apr 27 | CRM-20779 | Dashboards | Tess Brown | integrations |
+| May 6 | DRI-64274 | Trial conversion | — | — |
+| May 14 | CRM-23907 | Exports | Ana Petrova | webhooks |
+| May 18 | CRM-53521 | Analytics | Jordan Blake | sandbox |
+| May 28 | DRI-57024 | Webhooks (+ NPS) | Ana Petrova, Leo Grant | — |
+| Jun 14 | DRI-68417 | Reporting | Ana Petrova, Tess Brown | — |
+| Jun 17 | CRM-74774 | Search | Priya Shah | webhooks |
+| Jun 22 | CRM-15845 | Onboarding | Dana Ortiz | webhooks |
+| Jul 8 | CRM-84868 | Search | Priya Shah | QBR prep |
+| Jul 10 | CRM-37016 | NPS | Tess Brown | reporting |
+| Jul 23 | CRM-92524 | Billing | Jordan Blake | latency |
+| Aug 5 | DRI-89702 | Rate limits (+ hosting) | Maya Chen, Omar Haddad | — |
+| Aug 11 | DRI-77676 | Trial conversion (+ NPS) | Tess Brown, Ana Petrova | — |
+| Aug 18 | DRI-10836 | Support queue | Leo Grant, Omar Haddad | — |
+| Sep 6 | DRI-14442 | **Churn** (+ QBR prep) | Dana Ortiz, Tess Brown | — |
+| Sep 11 | DRI-67178 | SSO questions (+ NPS) | Dana Ortiz, Omar Haddad | — |
+| Sep 13 | CRM-65747 | Dashboards | **Maya Chen** | **follow up on exports** |
+
+**Linear and Slack contain zero Vantage-tagged records.** No engineering tickets exist for any technical ask on this account.
+
+---
+
+## 2. Open commitments
+
+Only one is yours and current:
+
+- **CRM-65747 (Sep 13) — "follow up on exports," owner Maya Chen.** This is your outstanding commitment going into the call. Nothing in the record indicates it's closed.
+
+Unresolved threads by pattern, with no closure record:
+
+- **Webhooks** — logged as the next step three separate times (CRM-23907 May 14, CRM-74774 Jun 17, CRM-15845 Jun 22) with a dedicated meeting in between (DRI-57024 May 28). Something recurred here across three different owners.
+- **Latency** — next step on both billing calls (CRM-24363 Apr 12, CRM-92524 Jul 23). No record titled "latency" exists in any system. This was committed twice and appears never to have been worked.
+- **Exports** — a topic in May (CRM-23907), and back as your next step in September (CRM-65747).
+
+---
+
+## 3. Risks
+
+**Documented:**
+
+- **A meeting titled "Churn" on Sep 6 (DRI-14442)**, attended by Dana Ortiz and Tess Brown, discussed alongside QBR prep. This is the single strongest signal in the file and you should know its content before the call.
+- **Seven-week CRM gap** between Jul 23 (CRM-92524) and Sep 13 (CRM-65747) — the longest silence in the account's history, and it runs right up against the churn discussion.
+- **Ownership churn on our side.** Eight different Brightline owners across ten CRM calls — Leo Grant, Tess Brown, Ana Petrova, Jordan Blake, Priya Shah, Dana Ortiz, Omar Haddad, and you. No consistent relationship owner is visible.
+- **No Linear tickets.** Webhooks, latency, SSO, and rate limits were all raised with the customer; none of it is traceable to engineering work. If Vantage asks for status, there is no status.
+
+**My inference, not in the records:** the Aug 5 rate-limits/hosting session (DRI-89702) and the Sep 11 SSO session (DRI-67178) are the pattern of a security or infrastructure review. Combined with the churn meeting, that could be renewal diligence or evaluation of an alternative. Treat this as a hypothesis to test, not a finding.
+
+---
+
+## 4. What I'd do before drafting "what to say"
+
+The four things you need, none of which exist in these systems:
+
+1. **Ask Dana Ortiz and Tess Brown what the Sep 6 churn conversation (DRI-14442) actually was.** Nothing else matters as much.
+2. **Get the commercials** — ARR, renewal date, seat count — from whoever owns the contract. Not in CRM.
+3. **Get the real status on webhooks and latency** from Engineering, since no tickets exist. Go in knowing whether you can commit to anything.
+4. **Confirm Vantage-side attendees.** No customer contacts are named in any of the 18 records.
+
+## 5. Talk track — a skeleton, not a script
+
+I can't write your talking points responsibly without the above, but this structure holds regardless of what you learn, and the questions are safe to ask because they don't assert anything:
+
+- **Open by owning the gap.** You had a seven-week silence and eight owners in six months. Name it before they do, and say who owns the account going forward.
+- **Close your one open loop.** Come with an actual answer on exports (CRM-65747), not a status update.
+- **Ask directly about the recurring items.** "Webhooks came up in May and again twice in June — where did that land for your team?" Same for latency. If they're still live, say so honestly and give a real date or say you can't yet.
+- **Probe the SSO and rate-limit work.** "You've been digging into SSO and rate limits recently — what's driving that?" This surfaces the diligence-or-evaluation question without accusing anyone.
+- **Ask for their read on the relationship,** which also lets you test whatever the churn conversation contained.
+
+---
+
+Tell me what you learn from Dana and Tess on DRI-14442 and where the commercials live, and I'll turn this into the real brief. If there's another system holding Vantage account data — a separate contract or billing tool — point me at it and I'll re-run the research.

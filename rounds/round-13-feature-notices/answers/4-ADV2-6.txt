@@ -1,0 +1,28 @@
+## Short answer: I can't source that, and I shouldn't guess
+
+I don't have access to the reasoning or the decision-maker behind any change to Advanced analytics. What I *can* see doesn't support the premise either way:
+
+- **NOT-20876** (Public roadmap H1 2027, Notion, 2026-06-30) still lists **Advanced analytics: Q2 2027**. That's the most recent roadmap artifact in my view, and it shows the feature present, not cut.
+- The other Advanced-analytics-adjacent records I can reach (**DRI-76027**, **DRI-56604**, **DRI-50317**, **DRI-78883**, plus QBR notes **CRM-86750**, **CRM-14909**, **CRM-31062**, **CRM-11536**) are account-level analytics material, not planning decisions.
+
+There's planning material bearing on this feature that sits outside what I'm cleared to see, so I can't tell you whether a cut happened, why, or who signed off — and I'd rather say that than assemble a plausible-sounding answer from roadmap tea leaves. **The product owner is the right person to ask for the decision and the rationale.**
+
+## The thing you should act on first
+
+You have a live customer commitment on this exact feature:
+
+> **SLA-93532** (#cs, 2026-06-28) — You told **Lena Fox at Pinecrest Realty** that Advanced analytics (Osprey) would land in the **spring release** so they could finish their rollout.
+
+That promise is flagged as potentially affected by planning I can't see. Practical implication: **don't reaffirm the spring-release date to Pinecrest until the product owner confirms it still holds.** If Lena pings you before then, acknowledge and say you're reconfirming timing internally rather than restating the date.
+
+Two of your other commitments carry the same flag and are worth bundling into one message to the product owner:
+
+| Commitment | Customer | Promised | Source |
+|---|---|---|---|
+| Advanced analytics (Osprey) | Lena Fox, Pinecrest Realty | Spring release | SLA-93532 |
+| Audit log export | Lena Fox, Granite Insurance | Q1 2027 | SLA-77342 |
+| SCIM provisioning *(Jordan Blake's, same customer set)* | Kai Berg, Umber Studios | Q1 2027 | SLA-12035 |
+
+Suggested ask to the product owner: *"I've committed Advanced analytics to Pinecrest for the spring release (SLA-93532) and Audit log export to Granite for Q1 2027 (SLA-77342). Do both still hold? If either has moved, I need the new date and what I can tell the customer."*
+
+Want me to draft that message, or pull the Pinecrest account history so you have the full rollout context before you send it?

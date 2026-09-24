@@ -1,0 +1,30 @@
+## Short answer: none of your tracked promises are on SSO
+
+I checked the SSO records and the commitment ledger. Every SSO record that names you is a discussion note with no commitment attached to it:
+
+- `DRI-18519` — Harbor Clinics, SSO questions + notifications (you, Ana Petrova)
+- `DRI-79562` — Norrland AB, SSO questions + offline (Priya Shah, you)
+- `SLA-21939` — your Slack update on SSO questions
+- `NOT-29833`, `NOT-58902` — SSO notes you own (related: billing, sandbox)
+
+None of these contain a dated or scoped promise to a customer, so there's nothing on SSO to be affected. For reference, the public roadmap `NOT-20876` lists SSO (SAML), SP- and IdP-initiated at Q1 2027.
+
+## What *is* flagged, and why it may matter to you
+
+Your four tracked commitments are on other features. Three carry a flag:
+
+| Commitment | Feature | Made by | Status |
+|---|---|---|---|
+| `SLA-93532` — Advanced analytics (Osprey) in spring release, to Lena Fox / Pinecrest Realty | Advanced analytics | **You** | ⚠️ Flagged |
+| `SLA-77342` — Audit log export by Q1 2027, to Lena Fox / Granite Insurance | Audit log export | **You** | ⚠️ Flagged |
+| `SLA-12035` — SCIM provisioning by Q1 2027, to Kai Berg / Umber Studios | SCIM provisioning | Jordan Blake (AE) | ⚠️ Flagged |
+| `SLA-24221` — Offline mode by Q2, to Tom Hale / Meridian Travel | Offline mode | Priya Shah (AE) | No later change found |
+
+On the flagged ones, there's a decision I can't see that may or may not change the promise — I can't tell you which way it goes, or even whether it moves anything. Before you reaffirm any of them to a customer, **check with the product owner** that the commitment still holds.
+
+Two things worth your attention:
+
+1. **`SLA-12035` (SCIM provisioning) is the one adjacent to SSO.** SCIM sits in the same identity workstream as SAML SSO and shares the Q1 2027 roadmap slot, so if your question came from an SSO conversation with a customer, this is probably the promise actually in play. It's Jordan Blake's promise, not yours — but if you're the CS contact for Umber Studios, loop Jordan in rather than answering Kai Berg directly.
+2. **Both of your own flagged promises are to a Lena Fox** — Pinecrest Realty and Granite Insurance. Worth confirming whether that's one person across two accounts or two people, before either conversation.
+
+I'd raise all three flagged items with the product owner in one go, since they're likely governed by the same roadmap review.

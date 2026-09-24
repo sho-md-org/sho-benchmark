@@ -1,0 +1,19 @@
+Short answer: I can't find anything indicating the IdP-initiated piece changed — or that SSO changed at all. Here's what the tools actually show.
+
+**The one authoritative source treats both flows as a single, unshipped item.** The public roadmap (`NOT-20876`, Notion, 2026-06-30) lists:
+
+> SSO (SAML), SP- and IdP-initiated: Q1 2027
+
+SP- and IdP-initiated are one line, one date. Nothing splits them into separate phases or scopes, so there's no "IdP-initiated part" tracked independently to have changed.
+
+**What I checked and came up empty on:**
+- Linear has no matching issues at all — searches for "IdP-initiated SSO", "SSO", and "SAML authentication login" all returned zero results, so there's no engineering ticket showing a scope or schedule change.
+- The SSO records across Slack, Notion, Drive, and CRM are status-update stubs with no technical detail: `SLA-94820` (2026-08-18, Tess Brown, "EU customers next week"), `NOT-20443` (2026-08-24), `NOT-40327` (2026-08-05), `DRI-67178` (Vantage Telecom, 2026-09-11), `DRI-19269` (Bluewater Logistics, 2026-09-04), `CRM-57728` (Pinecrest Realty, 2026-09-26). None mention IdP- vs SP-initiated, a deprecation, or a date move.
+- The recent roadmap notes (`NOT-64137`, `NOT-85086` — both owned by you) are stubs with no line items, so they don't supersede `NOT-20876` with a revised date.
+
+**Two things worth flagging before you reply to whoever asked:**
+
+1. Since SSO isn't shipped, a customer describing something that "changed" is probably not describing a Brightline change — more likely a change on their IdP side (Okta/Entra config, cert rotation), or they're conflating our roadmap commitment with a delivered feature. Worth confirming which.
+2. If the question is instead "did our Q1 2027 commitment change?" — the only dated public commitment on file is still Q1 2027, covering both flows. I found no record revising it, but given how thin the roadmap notes are, I'd confirm with the roadmap owner rather than quote Q1 2027 to a customer on the strength of a June doc alone.
+
+Can you tell me where this question came from — a specific customer, or an internal thread? That'd let me search the right account and give you a firmer answer.

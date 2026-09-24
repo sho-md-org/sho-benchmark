@@ -1,0 +1,52 @@
+I pulled all 20 Vantage Telecom records across the four systems. Before the brief, one thing you need to know upfront, because it changes how you should use this:
+
+**Every Vantage record is a one-line stub.** No ARR, no renewal date, no NPS score, no sentiment, no decisions, no description of any actual issue. For example, CRM-65747 in full reads: *"Call with Vantage Telecom. Discussed dashboards. Owner Maya Chen. Next: follow up on exports."* That's the whole record. So I can't tell you where things stand on substance — that isn't in the tools, and I'm not going to invent it.
+
+What the metadata *does* support is a real structural read of the account, and it's more useful than it sounds. Here it is.
+
+---
+
+## Where things stand
+
+20 touchpoints, 2026-04-02 through 2026-09-13. Steady cadence, roughly 3/month, no gaps. Last customer contact was CRM-65747 on Sep 13 — 11 days ago.
+
+Recent live threads (last 7 weeks): dashboards (CRM-10757, CRM-65747), SSO (DRI-67178), support queue (DRI-10836), rate limits (DRI-89702), exports (CRM-65747), churn (DRI-14442).
+
+**Your own exposure to this account is thin.** Across six months you appear three times: DRI-81968 (Apr 2, attendee), DRI-89702 (Aug 5, attendee), CRM-65747 (Sep 13, owner). You own exactly one record.
+
+## The thing to chase before anything else
+
+**DRI-14442 — "Churn (Vantage Telecom)," Sep 6, Dana Ortiz and Tess Brown.** An internal meeting about churn *and* QBR prep, three weeks before your call. That is the single most important document for this brief and its body is one sentence. Talk to Dana and Tess before the call. If there's a churn hypothesis on this account, they have it and you don't.
+
+## Open commitments
+
+Five "next steps" that I can't trace to a closing record:
+
+| Commitment | Raised | Owner | Status |
+|---|---|---|---|
+| Latency | CRM-24363 (Apr 12), again CRM-92524 (Jul 23) | Leo Grant, then Jordan Blake | Raised twice, 3 months apart, no latency record exists |
+| Webhooks | CRM-23907 (May 14), CRM-74774 (Jun 17), CRM-15845 (Jun 22) | Ana Petrova, Priya Shah, Dana Ortiz | One meeting DRI-57024 (May 28) — but two of the three asks came *after* it |
+| Sandbox | CRM-53521 (May 18) | Jordan Blake | No Vantage sandbox record anywhere |
+| Exports | CRM-23907 (May 14), reopened CRM-65747 (Sep 13) | Ana Petrova, then you | Four-month round trip, back on your plate |
+| SSO | CRM-10757 (Aug 4) | Jordan Blake | Met Sep 11 (DRI-67178) — this one looks closed |
+
+The latency and webhooks patterns are the concerning ones. A topic that gets re-raised by the customer after someone already "followed up" usually means the follow-up didn't land.
+
+## Risks
+
+**1. Ownership churn — the strongest signal in the data.** Eleven CRM calls, **seven different owners**: Leo Grant, Tess Brown, Ana Petrova, Jordan Blake, Priya Shah, Dana Ortiz, you. Vantage has explained itself to seven people in six months. That alone is a plausible driver behind the repeat asks — each new owner restarts the thread. Expect the customer to feel this even if they don't name it.
+
+**2. No engineering trace.** Slack, Linear, and Notion returned **zero** Vantage results. Webhooks, exports, latency, rate limits, sandbox — technical commitments with no visible ticket behind any of them. Verify this before the call; if it's accurate rather than a tooling gap, any product promise you make will be unbacked.
+
+**3. NPS keeps resurfacing.** Four touchpoints: DRI-57024 (May), CRM-37016 (Jul), DRI-77676 (Aug), DRI-67178 (Sep). A score that gets revisited monthly is usually a score someone is worried about. No number recorded anywhere — get it.
+
+## What to say
+
+I'd shape the call around owning the discontinuity rather than presenting a highlight reel — the account history won't support a highlight reel, and they know their own history better than you do.
+
+- **Open on continuity.** Name it before they do: they've dealt with too many people, you're the owner now, here's how that changes. This converts your weakest fact into your opening credibility.
+- **Close the loop on latency and webhooks explicitly.** Come with status, even if the status is "this dropped and here's the date I'll fix it by." Do not let them raise these a third and fourth time.
+- **Bring the exports answer.** It's your own committed next step from Sep 13 and it's the one item that is unambiguously yours.
+- **Ask for the renewal date and commercial picture** — it's genuinely not in any system I can see, and you shouldn't walk into a QBR without it.
+
+**Fill these gaps before the call:** the Sep 6 churn discussion (Dana, Tess), renewal date and ARR, current NPS, and whether any eng tickets exist. Want me to draft the agenda and talk track once you've got those?

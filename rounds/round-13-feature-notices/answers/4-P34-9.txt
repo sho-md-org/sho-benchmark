@@ -1,0 +1,46 @@
+## Aster Health — QBR brief
+
+**Caveat up front:** the Aster records I can see are one-line activity logs — no renewal date, ARR, NPS score, or ticket volumes. The themes below are solid; the numbers you'll want on a QBR slide aren't in these records, so pull them from the account plan or ask Leo Grant / Ana Petrova before the call.
+
+### Where things stand
+
+Recurring threads across Apr–Sep 2026, by theme:
+
+- **Sandbox** — three touches in ~5 weeks (DRI-86962 4/12, CRM-62644 5/10, CRM-64767 5/17). Heaviest cluster in the account; owners rotated (you, then Ana Petrova).
+- **Exports** — two calls same day, 4/18 (CRM-45213, CRM-76005), both Leo Grant, both handing off to audit prep / churn.
+- **Support queue** — 4/28 (CRM-88906, Sam Lee), 6/14 (CRM-97035, Leo Grant), and resurfaced in the 9/10 pricing discussion (DRI-53905). This is the thread with the longest tail.
+- **Dashboards** — 4/19 (CRM-57156), 7/21 (CRM-75476).
+- **Audit prep** — 6/13 with Dana Ortiz and Jordan Blake (DRI-48323); also the stated next step off both export calls.
+- **Other singles** — hosting 5/11 (CRM-81799, Tess Brown), latency 6/22 (CRM-68765), SSO questions 8/7 (DRI-46065), pricing 9/10 (DRI-53905).
+- **Upcoming:** an NPS session with Omar Haddad and Ana Petrova is on the calendar for 9/28 (DRI-36735) — that lands before or around your call, so the score may be fresh by then.
+
+Main contacts: Omar Haddad and Ana Petrova (recurring), Omar Aziz (API/technical), Dana Ortiz (audit, pricing).
+
+### Open commitments
+
+**One commitment on this account, and it's good news:**
+
+- **Higher API rate limits by October** — promised to Omar Aziz, reconfirmed by Priya Shah at the 6/12 sync (DRI-86231). **Shipped 9/20**: Crane is live, rate limits raised for all paid plans (SLA-26281). Nothing outstanding, no caveats attached. Lead with this.
+
+No other open promises are recorded against Aster Health.
+
+### Risks
+
+1. **Churn keeps appearing as the follow-up.** It's the named next step off CRM-76005, CRM-64767, CRM-68765 (latency), and DRI-46065 (SSO) — four separate threads, spanning April to August. Whatever the underlying concern is, it isn't captured in these logs. Worth understanding before you walk in.
+2. **Support queue is unresolved and now entangled with pricing.** It's been live since April and surfaced again alongside pricing on 9/10. If Aster is unhappy about responsiveness while a pricing conversation is open, that's the combination that turns into a renewal problem.
+3. **Latency (6/22) has no recorded resolution** and fed into a churn follow-up. Confirm it's actually closed — Crane raising rate limits is not the same thing as fixing latency, and conflating them on the call would be a mistake.
+4. **Audit prep may be an unclosed expectation.** Two export calls pointed to it, then a 6/13 working session with Dana Ortiz and Jordan Blake, then nothing. Check whether Aster is waiting on something from us.
+
+### What to say
+
+- **Open with the win:** "The higher API rate limits we committed to by October went live on September 20 — it's out for all paid plans." This is the one thing you can state flatly and confidently.
+- **Get ahead of support:** name the queue issue yourself rather than letting Dana raise it. Come with the actual ticket numbers and a concrete change, not a reassurance.
+- **Ask directly about renewal posture**, given how often churn is the recorded next step. Better to hear it in a QBR than in a notice.
+- **Close the audit-prep loop** with Dana Ortiz — confirm whether anything is still owed from June.
+- **If NPS lands on 9/28**, reference it; if the score is weak, frame the QBR around what you're changing.
+
+### One thing to check before you go in
+
+Two commitments you personally made carry a flag in our system — **advanced analytics** in the spring release (SLA-93532) and **audit log export** by Q1 2027 (SLA-77342). Both are to *other* accounts (Pinecrest Realty and Granite Insurance), so they aren't Aster deliverables and don't belong in this brief. I'm raising them only because Aster has live audit and dashboard threads, and it would be easy to reach for the same language on this call. **Don't restate timing for either feature to Aster** — check with the product owner first, since a decision I can't see may affect them. Same caution applies to SCIM provisioning (Jordan Blake's commitment to Umber Studios, SLA-12035), relevant given Aster's 8/7 SSO questions.
+
+The record trail here is genuinely thin — almost every entry is a single line with no outcome. If you want a QBR deck with numbers in it, the substance will have to come from Leo Grant, Ana Petrova, or the account plan rather than from the CRM.

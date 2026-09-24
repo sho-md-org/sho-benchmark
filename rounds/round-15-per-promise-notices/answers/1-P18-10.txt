@@ -1,0 +1,91 @@
+I've searched all four systems (CRM, Drive, Slack, Linear, Notion). Here's the brief — with an important caveat up front about the source data.
+
+---
+
+# Cobalt Retail — QBR Brief
+**Prepared for:** Maya Chen · **Call:** week of 2026-09-28 · **Prepared:** 2026-09-24
+
+## ⚠️ Read this first: the data is thin
+Every Cobalt Retail record in our systems is a one-line stub. There is **no ARR, renewal date, contract term, health score, NPS value, ticket count, usage data, or named customer-side contact** anywhere in CRM, Drive, Notion, Slack, or Linear.
+
+Also material: **Cobalt Retail appears in only two systems — CRM (10 records) and Drive (10 meeting notes). Zero hits in Slack, Linear, and Notion.** The "Qbr prep" threads in Slack (SLA-55835, SLA-47639) and Notion (NOT-42571, NOT-52051) are generic and never name Cobalt, so I have not attributed them to this account. No Linear issues are linked to Cobalt, which means I cannot tell you the status of any engineering commitment.
+
+What follows is what the record *does* support, clearly separated from what I'm inferring. Pull the commercial numbers from whoever owns the contract before you walk in.
+
+## 1. Where things stand
+
+**Touchpoint timeline (20 logged interactions, 2026-04-01 → 2026-09-26)**
+
+| Period | Activity |
+|---|---|
+| Apr–Jun | Heavy: onboarding (CRM-49779, CRM-16603, DRI-18657), webhooks (CRM-98822), roadmap (CRM-70221), search (CRM-36268), dashboards (CRM-24697, DRI-58616), NPS (CRM-92187), exports (DRI-41266) |
+| Jul–Aug | Shifts to commercial/technical mix: reporting (CRM-94849), rate limits (DRI-33978), case study (DRI-20022, DRI-95243), notifications (CRM-35990), billing & audit prep (DRI-75222), offline (DRI-82140), sandbox (DRI-35074) |
+| Sep | **Near-silent.** One item: a mobile app + search meeting dated 2026-09-26 (DRI-72283) — Sam Lee and Priya Shah, no Maya |
+
+**Two things worth naming:**
+
+- **The last CRM-logged call was 2026-08-01** (CRM-35990). Nearly eight weeks with no logged customer call in CRM. Drive shows internal-looking sessions through August, then a gap.
+- **You personally haven't had a logged touch since 2026-05-22** (CRM-36268). You own only 2 of 10 CRM records (CRM-70221, CRM-36268); Priya Shah owns 4, Omar Haddad 2, Tess Brown 2. Priya, Omar, and Tess have been carrying the relationship. Sync with them before the call so you aren't the least-current person in the room.
+
+**Positive signal:** the account reached case-study conversations (DRI-20022, DRI-95243) in July–August. Customers don't agree to case studies when they're unhappy. Treat that as your strongest available health indicator — but confirm the case study actually shipped, because I find no completion record.
+
+## 2. Open commitments
+
+CRM records carry a "Next:" field — the only commitment-like data we have. I traced each to see whether a follow-up record exists.
+
+**Closed (evidence of follow-through):**
+- CRM-98822 (Apr 1) → case study → done: DRI-20022, DRI-95243
+- CRM-24697 (May 26) and CRM-16603 (Jun 15) → rate limits → done: DRI-33978
+- CRM-92187 (Jun 9) → mobile app → in motion: DRI-82140, DRI-72283
+- CRM-87224 (Jun 23) → audit prep, and CRM-94849 (Jul 23) → billing → both done: DRI-75222
+
+**Open — these are your exposure:**
+
+1. **Security review — committed twice, never closed.** CRM-70221 (Apr 20, **your record**) and again CRM-36268 (May 22, **your record**) both set "follow up on security review." There is no Cobalt security review record in any system. Meanwhile, other accounts have logged security reviews in the same window (Ironwood Legal CRM-52968, Keystone Energy CRM-30791, Kestrel Foods CRM-30354) — so the process exists; Cobalt just didn't get one. **Five months open, owned by you.** Assume the customer remembers.
+2. **Latency follow-up — never revisited.** CRM-49779 (Apr 27, Priya Shah) → "follow up on latency." Latency never appears again for Cobalt. Five months open.
+3. **Pricing follow-up — possibly stale.** CRM-35990 (Aug 1, Omar Haddad) → "follow up on pricing." Pricing was touched Aug 5 (DRI-95243) but that meeting's focus was the case study. Confirm with Omar whether a real pricing conversation happened.
+
+## 3. Risks
+
+**Real, evidenced:**
+- **Unclosed security review compounded by live security-adjacent questions.** SSO questions surfaced 2026-07-27 (DRI-20022) and EU customers came up alongside rate limits 2026-07-25 (DRI-33978). Security review open since April + SSO + EU data questions is the combination that stalls expansions and triggers procurement escalation. **This is your top risk.**
+- **September engagement drop-off**, with the one September meeting (DRI-72283) not including you.
+- **No engineering traceability.** Zero Linear issues tied to Cobalt. If we committed to mobile app, offline, or rate-limit work, nothing in our tracker proves it's being built. Verify before you promise anything on the call.
+
+**Inferred — verify, don't assert:**
+- Recurring themes suggest unresolved product friction: mobile/offline (CRM-92187, DRI-82140, DRI-72283), rate limits (DRI-33978), dashboards/reporting/exports (CRM-24697, DRI-58616, CRM-94849, DRI-41266). Repeated returns to the same topics *can* mean unmet need — or just normal iteration. I can't distinguish from these records.
+- Onboarding logged three times across April–June (CRM-49779, CRM-16603, DRI-18657) may indicate a longer-than-expected ramp.
+
+## 4. What to say
+
+**Open — lead with ownership, not apology:**
+> "Before we look forward, I owe you a status on the security review we discussed in the spring. It hasn't moved, and I want to close that out with a firm date rather than let it sit through another quarter."
+
+Naming it yourself removes their strongest complaint and buys credibility for everything after.
+
+**Then the value narrative:**
+> "Since April we've taken you from onboarding through dashboards, reporting, exports, and webhooks, and into rate limits and mobile — you're using the platform well beyond the initial footprint."
+
+Anchor on the case study: it's the real proof point, assuming Priya confirms it shipped.
+
+**Then ask more than you tell.** You have no usage or NPS data, so don't present a health story you can't defend. Ask:
+- "Where are we on the security review and SSO — is that blocking anything on your side?"
+- "Mobile and offline keep coming up. Is that a gap hurting you today, or exploratory?"
+- "Rate limits came up alongside your EU customers — what's the growth picture there?"
+- "How did the onboarding ramp actually feel? Anything we should fix for your next rollout?"
+
+**Close with commitments you can keep:** a dated security review, a named owner for SSO, and a clear yes/no on mobile/offline roadmap timing — only after checking with engineering.
+
+**Do not** present NPS, adoption metrics, or renewal projections. Nothing in our systems backs them.
+
+## 5. Before the call
+1. **Get the commercial facts** — ARR, renewal date, contract term. Not in any system I can see.
+2. **Ask Priya Shah** — case study status, and the Apr 27 latency follow-up.
+3. **Ask Omar Haddad** — whether the Aug 1 pricing follow-up happened.
+4. **Ask Sam Lee / Priya Shah** — read-out from the 2026-09-26 mobile app meeting (DRI-72283); it lands just before your call.
+5. **Get a real answer on the security review** — this is the one that can cost you the renewal.
+6. **Confirm engineering status** for anything mobile/offline/rate-limit related. No Linear coverage means no verified commitments.
+
+---
+
+One judgment call I'd flag: I treated the generic "Qbr prep" items in Slack and Notion as *not* Cobalt-related, since none name the account. If those threads are in fact about Cobalt, point me at the right ones and I'll fold them in — they'd likely contain the metrics this brief is missing.

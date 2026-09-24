@@ -1,0 +1,36 @@
+## What the records show
+
+**The commitment is real and documented twice.** In the 2026-07-09 sync (`DRI-36664`), Tom Hale reminded the team that Brightline told them SSO (SAML) by Q1 2027, and Leo Grant (AE) confirmed it on the call. So this isn't a customer misremembering — we affirmed it.
+
+**The roadmap still backs it.** The public H1 2027 roadmap (`NOT-20876`, 2026-06-30) lists *"SSO (SAML), SP- and IdP-initiated: Q1 2027"*. It also lists SCIM provisioning at Q1 2027, which usually matters to the same buyer.
+
+**The only announced slip doesn't touch SSO.** `SLA-17908` (2026-09-19) moved Sandbox environments to Q2 2027 and asked AEs to notify affected customers. SSO was not in that notice, and I found no other record moving it.
+
+So the answer to Quarry is **yes**, and you can say so plainly.
+
+---
+
+## Draft reply
+
+> Subject: Re: SSO (SAML) timing
+>
+> Hi Tom,
+>
+> Yes — SSO (SAML) is still planned for Q1 2027, and that's unchanged from what we discussed on our July 9 call.
+>
+> Specifically, what's scoped for Q1 2027 is SAML SSO supporting both SP-initiated and IdP-initiated flows. SCIM provisioning is targeted for the same quarter, which I mention because most teams rolling out SSO want user provisioning landing alongside it — happy to walk through how those two fit together for your setup.
+>
+> One thing I'd rather you hear from me than discover later: we did move Sandbox environments from Q4 2026 to Q2 2027. That's a separate item and doesn't affect the SSO timeline, but if your team was planning to test against a sandbox, let's talk about sequencing.
+>
+> As we get closer, I'd like to get you connected with our product team on the implementation details — your IdP, rollout plan, and any requirements on your side. Would a call in the next couple of weeks be useful?
+>
+> Best,
+> Leo
+
+---
+
+## One thing to verify before sending
+
+I could not find **any Linear ticket** for SAML/SSO — searches for "SAML SSO", "SSO authentication identity provider", and "roadmap Q1 2027" all returned empty. The SSO material in Slack, Notion, and CRM (`SLA-67092`, `NOT-20443`, `CRM-14429`) is all customer-conversation notes, not engineering work.
+
+That absence may just be a gap in what these tools index, but Q1 2027 is roughly one quarter out and I'd want confirmation that the build is actually staffed. Worth a quick check with Maya Chen (roadmap owner, `NOT-85086`) before the reply goes out — the draft above restates a dated commitment to a customer who is already tracking it, and `DRI-67006` indicates churn has been discussed on this account, so a second miss would be expensive.

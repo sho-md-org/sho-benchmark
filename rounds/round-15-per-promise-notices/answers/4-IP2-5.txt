@@ -1,0 +1,23 @@
+I can't answer that from what I can see — and I don't want to imply either way.
+
+**What I can see about SSO:**
+
+- **NOT-20876** (Public roadmap H1 2027, 2026-06-30) still lists "SSO (SAML), SP- and IdP-initiated: Q1 2027" — both halves, no carve-out.
+- Nothing in my access records a change to SSO scope or date. No flag came back on SSO at all, which normally means "treat as normal" — but it is not evidence that IdP-initiated is safe to reaffirm, because I also have no record of a change to *rule out*.
+- The four "Sso questions" notes (**NOT-29159**, **NOT-40327**, **SLA-95210**, **SLA-21939**, **NOT-29833**) are stubs — owners and a "offline next week" line, no substance on scope.
+
+**The SSO promises on record, none of them yours:**
+
+| Record | Account | Who promised | What |
+|---|---|---|---|
+| CRM-62434 | Umber Studios | Priya Shah (AE) | SAML by March, **IdP-initiated** explicitly; renewal condition |
+| CRM-31062 | Vantage Telecom | Priya Shah (AE) | Q1 2027 "including **IdP-initiated** login from Okta, you have my word" |
+| CRM-64756 | Delta Freight | Tess Brown (CS) | end of Q1, "you have my word" |
+| CRM-74447 | Riverton City | Tess Brown (CS) | early next year; renewal condition |
+| DRI-36664 | Quarry Mining | Leo Grant (AE) | Q1 2027, reconfirmed |
+
+Two of those name IdP-initiated specifically, and two are logged renewal conditions — so if IdP-initiated did move, Umber Studios and Vantage Telecom are the exposed accounts. Priya Shah, Tess Brown, and Leo Grant own those conversations, not you.
+
+**Where the actual flags are.** Three of *your* accounts' commitments came back flagged, and none are SSO: Advanced analytics (**SLA-93532**, your promise to Lena Fox at Pinecrest Realty, spring release), SCIM provisioning (**SLA-12035**, Jordan Blake to Kai Berg at Umber Studios, Q1 2027), and Audit log export (**SLA-77342**, your promise to Lena Fox / Granite Insurance, Q1 2027). For those, there's a decision I can't see, and I can't characterize it — check with the product owner before reaffirming any of them.
+
+**Suggested next step:** ask the SSO product owner directly whether the Q1 2027 commitment still covers IdP-initiated, and loop in Priya and Tess since the at-risk promises are theirs. Want me to draft that message?

@@ -1,0 +1,38 @@
+## Harbor Clinics — QBR Brief (call week of Sept 29)
+
+### Where things stand
+Active, broad engagement — 12+ touchpoints since April across multiple workstreams, with no single owner. Recent activity:
+
+| Thread | Latest | Owner |
+|---|---|---|
+| Mobile app | CRM-49374 (Sep 21) | Sam Lee |
+| Offline | CRM-39320 (Aug 26) | Priya Shah |
+| Dashboards | CRM-64035 (Aug 26) | Ana Petrova |
+| Support queue | DRI-20995 (Aug 19) | Leo Grant, Maya |
+| Integrations | CRM-75336 (Jul 25) | Omar Haddad |
+| Onboarding | CRM-48825 (Jul 24) | Priya Shah |
+| Roadmap | CRM-41255 (Jun 14) | Tess Brown |
+| Latency | CRM-94239 (Jun 2) | Maya |
+
+Contacts in play: Ines Park (DRI-80868), Ada Moss (CRM-89966).
+
+### Open commitments to Harbor Clinics
+**Data retention controls, by Q1 2027** — made by Jordan Blake (AE), confirmed to Ines Park at the May 15 sync (DRI-80868). No later change on record, so this is safe to reaffirm as-is. This is the one hard date Harbor is holding us to; Ines raised it herself, so expect her to raise it again.
+
+That is the only dated commitment I can find on this account. Everything else in the record is discussion, not promise.
+
+### Risks to go in prepared for
+1. **EU data residency (CRM-89966).** Ada Moss asked June 9; we said "exploring, no dates." Three months of silence on a compliance question from a healthcare customer is the kind of gap that gets re-asked at a QBR. Have a real answer or a real "still no date" — don't improvise a timeline.
+2. **Audit prep keeps resurfacing and never closing.** CRM-35862 (May) → CRM-48825 (Jul) → DRI-20995 (Aug) all end with "follow up on audit prep" / "follow up on exports." It's been the next step for four months. Worth closing out or explicitly re-scoping on the call.
+3. **No account owner.** Eight different owners across the threads above. Harbor likely experiences this as inconsistency; consider proposing a single point of contact.
+4. **Audit log export is *not* committed to Harbor.** We do have an audit-log-export commitment on the books, but it's to a different account. Given how often "exports" comes up in Harbor's threads, be careful not to let that bleed across — Harbor has no dated promise there.
+
+### What to say
+- **Open with retention:** "Data retention controls are on track for Q1 2027, same as we confirmed in May." Concrete, on the record, and it's what Ines cares about.
+- **On EU data residency:** "Still exploring, no committed date." Repeat the June language rather than upgrading it. If they push, offer to bring Product to a follow-up rather than guessing.
+- **On audit prep/exports:** name the drift yourself before they do — "this has been open a while; here's what closing it looks like."
+- **Propose a single owner** for the account going into next quarter.
+- **Default posture on anything new:** discuss, don't date. Nothing else on this account has a commitment behind it.
+
+### Separate flag — two of your own commitments, other accounts
+Not for this call, but while you're in the region: your **Advanced analytics** promise to Lena Fox at Pinecrest (SLA-93532) and your **Audit log export** promise to Lena Fox at Granite (SLA-77342) both carry a notice that something I can't see may affect them. Check with the product owner before you reaffirm either one to those customers. Same applies to Jordan Blake's SCIM commitment to Umber Studios (SLA-12035) if it comes up.

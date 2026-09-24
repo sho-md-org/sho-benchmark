@@ -1,0 +1,11 @@
+I can't answer that one from what I can see.
+
+**What's visible:**
+- Your commitment to Lena Fox at Pinecrest Realty — Advanced analytics (Osprey) in the spring release, so they can finish their rollout (SLA-93532, 2026-06-28).
+- Two thin Advanced analytics records: a Notion page listing **Omar Haddad** as owner (NOT-31499, 2026-04-16), and a Slack note from Tess Brown about an analytics update (SLA-91143, 2026-07-13). Neither names a decision or a decider.
+
+**The flag:** the system indicates there's a decision touching Advanced analytics that isn't in my access, so I can't tell you who made it, what it was, or whether it changed anything — including whether your spring-release promise still holds.
+
+**Suggested next step:** ask the product owner directly before you reaffirm the timeline to Pinecrest. Omar Haddad is the owner named on the analytics page, so he's the natural person to ask. Something like: *"I told Pinecrest Realty in June that Advanced analytics (Osprey) lands in the spring release — is that still accurate, or has the plan changed?"*
+
+One related heads-up: your Audit log export commitment to Lena Fox at Granite Insurance (Q1 2027, SLA-77342) carries the same flag. Worth folding into the same conversation with the product owner.

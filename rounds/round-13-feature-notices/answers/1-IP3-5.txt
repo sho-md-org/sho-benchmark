@@ -1,0 +1,33 @@
+I searched all four systems (Slack, Notion, Linear, Drive, CRM) and **could not find any record of a decision about "Advanced analytics"** — or of "Advanced analytics" as a named feature, tier, or SKU at all.
+
+## What I searched
+
+- **Slack** — "Advanced analytics", tier/packaging change, decision/approved/rollout. Only generic `Analytics` channel updates: SLA-91143, SLA-60376, SLA-64584, SLA-25394.
+- **Notion** — "Advanced analytics", pricing/packaging decision, decision owner. Only untitled-topic `Analytics` and `Pricing` pages: NOT-75315, NOT-36076, NOT-58715, NOT-31499, NOT-34315.
+- **Linear** — "Advanced analytics" and "analytics" both returned **zero results**.
+- **Drive** — customer-specific meeting notes only: DRI-78883, DRI-76027, DRI-60926.
+- **CRM** — per-account call notes only: CRM-62518, CRM-70722, CRM-29577.
+
+## What's actually in those records
+
+Every record I opened is a one-line stub with an owner and a "next step," not a decision:
+
+| ID | Date | Content |
+|---|---|---|
+| NOT-75315 | 2026-08-08 | "Notes on analytics. Owner **Omar Haddad**. Related: audit prep." |
+| NOT-36076 | 2026-09-01 | "Notes on pricing. Owner **Jordan Blake**. Related: audit prep." |
+| NOT-58715 | 2026-08-24 | "Notes on pricing. Owner **Maya Chen**. Related: exports." |
+| SLA-60376 | 2026-08-12 | "**Ana Petrova**: update on analytics; NPS next week." |
+| CRM-70722 | 2026-09-12 | Riverton City call, "discussed analytics." Owner **Maya Chen**. |
+
+These name *owners of pages*, not deciders of a change. Omar Haddad (analytics notes) and Jordan Blake (pricing notes) are the closest candidates, but **nothing in any record ties either of them to a decision**, and I'd be guessing if I named one. No record contains a decision, an approval, a changelog, or a before/after state for analytics functionality.
+
+## What would help
+
+"Advanced analytics" may be a term used verbally or in a system I don't have access to. To narrow this down:
+
+1. **Where did you encounter the change?** A customer complaint, a release note, a billing change? That tells me which system to dig into.
+2. **What changed?** Moved between plan tiers, became a paid add-on, deprecated, or a feature behavior change? Each points to a different owner.
+3. **Roughly when?** The records I have span 2026-04 through 2026-09-21.
+
+If it's a packaging or pricing move, **Jordan Blake** (NOT-36076, the most recent pricing page, 2026-09-01) is the most sensible person to ask directly. If it's a product/feature change, **Omar Haddad** (NOT-75315). I want to flag clearly that both are inferences from page ownership, not from any decision record.

@@ -1,0 +1,34 @@
+## Short answer: none of your tracked promises are on SSO
+
+I checked your commitment ledger and every SSO record I can see. There is no SSO commitment attributed to you — or to anyone — in the tracked set.
+
+**The SSO records are discussion, not commitment:**
+
+| Record | What it is |
+|---|---|
+| `SLA-21939` (2026-05-01) | Your Slack update on SSO questions; offline follow-up |
+| `DRI-18519` (2026-08-08) | Harbor Clinics — SSO questions + notifications, with Ana Petrova |
+| `DRI-79562` (2026-04-05) | Norrland AB — SSO questions + offline, with Priya Shah |
+| `NOT-29833` / `NOT-58902` | Your Notion notes on SSO questions |
+| `CRM-74174` (2026-08-22) | Evergreen Bank call; next step is audit prep follow-up |
+
+None of these record a dated availability promise, so there's nothing on SSO to be affected.
+
+## What *is* flagged — and it isn't SSO
+
+Since you're likely asking because something prompted a review, here's what actually carries a flag:
+
+**Your own promises (two, both flagged):**
+- **Advanced analytics (Osprey), spring release** — to Lena Fox, Pinecrest Realty (`SLA-93532`)
+- **Audit log export, Q1 2027** — to Lena Fox, Granite Insurance (`SLA-77342`)
+
+For both, a decision I can't see may or may not change the promise. **Check with the product owner before reaffirming either one to the customer.** I can't tell you more than that — I don't have visibility into the decision itself.
+
+**Adjacent to SSO, worth your awareness:**
+- **SCIM provisioning, Q1 2027** — to Kai Berg, Umber Studios (`SLA-12035`), made by Jordan Blake (AE). It's flagged the same way. It's identity/provisioning rather than SSO proper and it isn't your promise, but if an SSO conversation of yours touches provisioning, route that through Jordan and the product owner.
+
+**Not flagged:** Offline mode for Tom Hale, Meridian Travel (`SLA-24221`, Priya Shah) — no later change found.
+
+## Suggested next step
+
+If your question came from a customer conversation where you believe you *did* commit on SSO, that promise isn't captured in the system — tell me the account and I'll look specifically, or it should be logged. Otherwise, the action item is the product-owner check on `SLA-93532` and `SLA-77342` before those go back to Lena Fox.

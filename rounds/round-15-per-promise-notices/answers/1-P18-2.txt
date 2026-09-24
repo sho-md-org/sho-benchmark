@@ -1,0 +1,101 @@
+I've worked through the full Cobalt Retail record set across all five tools. Here's the brief — with one important caveat up front.
+
+# Cobalt Retail — QBR Brief
+**Prepared for Maya Chen · Call week of 2026-09-28**
+
+## ⚠️ Read this first: the data won't support a numbers-driven QBR
+
+I searched CRM, Drive, Slack, Linear, and Notion to saturation. Cobalt Retail has **14 CRM records and 10 Drive notes**, but every one is a one-line stub. There is **no ARR, no renewal date, no contract term, no named customer-side contact, no NPS score, no usage or adoption data, and no support/incident history** anywhere in the workspace. Linear returns zero Cobalt records.
+
+Everything below is what the record trail genuinely supports. I have not invented metrics to fill the gaps — the gaps themselves are the most actionable finding, and there's a pre-call checklist at the end.
+
+---
+
+## 1. Where things stand
+
+**Engagement has cooled sharply since early August.**
+
+| Period | CRM touches | Pattern |
+|---|---|---|
+| Apr–Jun 2026 | 10 | Dense — onboarding, pricing, compliance |
+| Jul–early Aug | 3 | Steady |
+| Aug 5 – Sep 24 | **1** | Near-silent |
+
+After a 5-week gap, the only recent contact is `CRM-12380` (2026-09-12, rate limits, owner Priya Shah). Last Drive note was `DRI-35074` (2026-08-23). The QBR prep call itself was `CRM-12694` back on 2026-08-04.
+
+**The single most important line in the dataset:** `CRM-12380`, the most recent call, lists its next step as **"follow up on churn."** Churn is now an explicit follow-up topic on this account, logged twelve days ago, with no subsequent record of that follow-up happening.
+
+**Account ownership is fragmented.** Across 14 CRM records: Priya Shah owns 6 (de facto lead), Omar Haddad 3, Tess Brown 2, Maya 2, Jordan Blake 1. Maya's two are both from April (`CRM-70221`, `CRM-36268`). Seven different Brightline people appear across the Drive notes. No consistent relationship owner — a real liability walking into a QBR.
+
+**Active workstreams by volume:**
+- **Compliance/security cluster** — audit prep (`CRM-24323`), SSO questions (`CRM-12111`, `DRI-20022`), security review (flagged, never recorded)
+- **Rate limits** — recurring since May (`CRM-24697`, `CRM-16603`, `DRI-33978`, `CRM-12380`); `DRI-33978` ties them to **EU customers**, a possible residency or expansion angle worth probing
+- **Onboarding** — three separate sessions Apr 27 → Jun 19 (`CRM-49779`, `CRM-16603`, `DRI-18657`), suggesting it dragged
+- **Case study** — requested Apr 1 (`CRM-98822`), not worked until late July (`DRI-20022`, `DRI-95243`). Roughly four months to first movement on a marketing ask.
+
+---
+
+## 2. Open commitments
+
+Tracing each "next: follow up on ___" against whether a matching record ever appeared:
+
+**Unclosed — no follow-up record exists anywhere:**
+
+| Commitment | Promised | Age | Owner |
+|---|---|---|---|
+| **Security review** | `CRM-70221` (Apr 20) and again `CRM-36268` (May 22) | **~5 months** | **Maya** — both records are yours |
+| **Latency** | `CRM-49779` (Apr 27) | ~5 months | Priya Shah |
+| **Trial conversion** | `CRM-24323` (Jun 12) | ~3.5 months | Omar Haddad |
+| **Churn** | `CRM-12380` (Sep 12) | 12 days | Priya Shah |
+
+Security review is the exposed one: promised twice, by you, and confirmed absent from both CRM and Drive (searches surface only Summit Gear, Juniper Schools, and Orchid Hotels).
+
+**Partially closed:**
+- **Audit prep** — promised in `CRM-87224` (Jun 23) and again in `CRM-12694` (Aug 4), but the only dedicated call, `CRM-24323`, *predates both*. Touched tangentially in `DRI-75222` (Aug 11). Assume the customer still considers this open.
+- **Pricing** — closed once (`CRM-12111` → `CRM-87224`), re-raised Aug 1 (`CRM-35990`), only glanced at in `DRI-95243`. No pricing outcome recorded.
+
+**Closed:** billing (`CRM-94849` → `DRI-75222`), rate limits, mobile app, case study (slowly).
+
+**Note:** `DRI-72283` is dated **2026-09-26** — a mobile app/search session with Sam Lee and Priya Shah, two days out. Get that readout before your call.
+
+---
+
+## 3. Risks
+
+1. **Churn is on the table.** Flagged as the forward action on the most recent call and not yet actioned. Treat this QBR as a retention conversation, not a routine review.
+2. **You're carrying the oldest open commitment.** The security review has sat unactioned under your name since April. If Cobalt raises it, you own it — decide your answer before the call, don't improvise.
+3. **Compliance track is stalled.** Audit prep, SSO, and security review all trace back to June or earlier with little since. For a retail customer this usually gates expansion or renewal sign-off.
+4. **The silence cuts both ways.** A 5-week gap after a dense spring could mean the customer has disengaged, or is working an internal decision you're not in. You don't currently know which.
+5. **No renewal date on file.** You cannot time this conversation correctly without it, and a QBR held blind to the renewal clock is a real hazard.
+6. **Institutional knowledge is scattered** across seven people with no continuity of ownership.
+7. **Rate limits keep recurring** — five months of touches without resolution reads as an unfixed product constraint, plausibly binding on EU traffic.
+
+---
+
+## 4. What to say
+
+**Open by naming the gap, don't paper over it.** "We've been quieter than I'd like since August, and I want to use this hour on what matters most to you rather than a retrospective."
+
+**Lead with the compliance track — it's your credibility test.** Bring a dated plan for the security review and audit prep. Don't wait to be asked; arriving with it unprompted is the difference between recovering trust and confirming the pattern.
+
+**Go after the churn signal directly, without using the word.** "Where does Brightline sit in your planning for next year — and what would have to be true for that to be an easy call?" Their answer is the real output of this meeting.
+
+**Probe rate limits and EU customers as one topic.** "Are rate limits constraining what you're doing in the EU?" `DRI-33978` links them; if there's an expansion or residency need behind it, that reframes the account from at-risk to growth.
+
+**Fix ownership on the call.** Commit to being the single point of contact, or name who is. Seven owners in six months is visible from their side too.
+
+**Close by scheduling, not summarizing.** Leave with a dated next touch. The pattern on this account is commitments made and not tracked; break it live.
+
+**Don't do this:** quote metrics, NPS, or ROI. You have none on file. Claiming a number Cobalt can contradict from their own dashboards is the fastest way to lose the room.
+
+---
+
+## 5. Pre-call checklist — highest-value 30 minutes
+
+1. **Get the renewal date and ARR** from Finance or the contract system. Nothing else changes your posture more.
+2. **Ask Priya Shah what "follow up on churn" meant** on the Sep 12 call (`CRM-12380`). She owns it and was the most active person on the account. This is the highest-value single conversation available to you.
+3. **Identify the Cobalt-side attendees.** No customer names appear in any record — every name in the trail is Brightline staff.
+4. **Get the `DRI-72283` readout** after Sep 26.
+5. **Decide your security review answer** before the call.
+
+Two related notes: Slack and Notion carry threads on churn, rate limits, and QBR prep (`SLA-93428`, `SLA-12855`, `NOT-42571`, `NOT-52051`), but **none are account-tagged**, so I could not confirm any of them concern Cobalt — I've excluded them from the findings above rather than guess. Separately, `SLA-40138` notes the data team committed to a weekly churn-risk report for CS **starting October**; not Cobalt-specific, but it would have covered exactly the gap you're facing here.

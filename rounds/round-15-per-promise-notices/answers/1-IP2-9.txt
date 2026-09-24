@@ -1,0 +1,33 @@
+## Short answer: no — I can't find any change to SSO, IdP-initiated or otherwise
+
+I searched Slack, Notion, Linear, Drive, and CRM for SSO/SAML/IdP-initiated changes. Nothing indicates the SSO scope or date moved. The premise of the question doesn't hold up against the records.
+
+**SSO is still on the roadmap as originally scoped.** The most recent published roadmap (`NOT-20876`, "Public roadmap H1 2027", dated 2026-06-30) lists:
+
+> SSO (SAML), SP- and IdP-initiated: Q1 2027
+
+Both directions are still in scope, still Q1 2027. Linear returned zero hits for SSO, SAML, SCIM, or Okta, so there's no engineering ticket showing a descope of the IdP-initiated half.
+
+## What did change: Sandbox, not SSO
+
+There's exactly one roadmap slip announced recently, and it isn't SSO:
+
+- `SLA-17908` (#general, 2026-09-19): "Sandbox environments (Rail) slip to Q2 2027. Please update any customers expecting them this year."
+
+Sandbox was the one Q4 2026 item on the roadmap, so it's the only thing with a public date that moved. If the "SSO changed" impression came out of a conversation this past week, this announcement is the most likely source of the crossed wire — worth confirming before you relay anything to a customer.
+
+## The real exposure here
+
+While looking, I found three firm verbal commitments on SSO, two of them specifically naming IdP-initiated. These aren't broken today, but they're tight against a Q1 2027 date and two are unusually hard promises:
+
+| Record | Customer | Commitment |
+|---|---|---|
+| `CRM-62434` (2026-08-17) | Umber Studios | Priya Shah (AE) committed SSO SAML "by March" **with IdP-initiated sign-in** — logged as a **renewal condition** |
+| `CRM-31062` (2026-06-08) | Vantage Telecom | Priya Shah (AE): "you'll have it by Q1 2027, **including IdP-initiated login from Okta**, you have my word" — customer planning around it |
+| `DRI-36664` (2026-07-09) | Quarry Mining | Leo Grant (AE) confirmed SSO SAML by Q1 2027 |
+
+The Umber Studios one is the sharpest: IdP-initiated is written into a renewal condition, and "by March" leaves no buffer inside Q1. Umber also has a separate Q1 2027 SCIM commitment (`SLA-12035`, Jordan Blake to Kai Berg) tied to finishing their rollout — so two identity commitments land on the same customer in the same quarter.
+
+## Suggested next step
+
+Since there's no Linear ticket for SSO at all, the roadmap date has no visible engineering backing I can confirm from here. Rather than answer the customer from the roadmap doc alone, I'd get Product to confirm in writing that IdP-initiated is still in the Q1 2027 cut — that's the specific piece with a renewal riding on it. Want me to draft that question, or pull the full set of Q1 2027 commitments across all accounts so you can see the whole cluster at once?

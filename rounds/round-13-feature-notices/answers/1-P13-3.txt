@@ -1,0 +1,32 @@
+## What the records say
+
+**The promise is real and documented.** At the 2026-07-09 sync (DRI-36664), Tom Hale explicitly reminded Brightline that "SSO (SAML) by Q1 2027" had been committed, and Leo Grant (AE) confirmed it on the call. Quarry isn't misremembering.
+
+**The roadmap still backs it.** The public roadmap for H1 2027 (NOT-20876, dated 2026-06-30) lists "SSO (SAML), SP- and IdP-initiated: Q1 2027." It also has SCIM provisioning and audit log export/SIEM streaming in Q1 2027 — both relevant given their audit prep work (DRI-62153).
+
+**The one known slip does not touch SSO.** A 2026-09-19 #general notice (SLA-17908) announced that Sandbox environments slipped to Q2 2027 and asked AEs to notify affected customers. SSO was not included. That's a useful signal: when dates move here, they get announced, and SSO wasn't in that announcement.
+
+⚠️ **One caveat before you send.** Linear returns *zero* results for SSO, SAML, or single sign-on. I could not find any engineering ticket, epic, or build tracking for this feature. The Q1 2027 date rests on a roadmap doc that is now ~3 months old, plus the AE's verbal confirmation. I can confirm the commitment stands *on paper*; I cannot confirm anything is being built. Given this is a documented commitment to a customer with churn discussions on file (DRI-67006), I'd get a one-line confirmation from Maya Chen (roadmap owner) before this goes out.
+
+## Draft reply
+
+> **Subject: Re: SSO (SAML) timeline**
+>
+> Hi Tom,
+>
+> Yes — SSO (SAML) remains on our roadmap for Q1 2027, covering both SP-initiated and IdP-initiated flows, which I know was the requirement on your side.
+>
+> Two related items land in the same window that are worth flagging given your audit preparation: SCIM provisioning and audit log export with SIEM streaming are both scheduled for Q1 2027 as well. If it's useful, I can walk your team through how those three fit together for your access-review process.
+>
+> As we get closer, I'd like to get Quarry into the early-access group so your team can validate against your IdP before general availability rather than after. I'll confirm the exact scoping and onboarding sequence with our product team and follow up with specifics.
+>
+> Happy to set up a call if it would help to go through this in more detail.
+>
+> Best,
+> Leo
+
+## Why it's worded this way
+
+I confirmed the date, since the roadmap supports it and walking it back unprompted would damage trust on a commitment they already hold you to. But I deliberately avoided "guarantee," "as promised," or contractual language — that's the phrasing that becomes a problem if the date moves later.
+
+The early-access offer does real work: it gives Tom something concrete now, and it creates a natural checkpoint where you can surface a schedule change early instead of at the deadline. If Maya comes back saying the date is soft, that paragraph is the one to revise — and you'd want to tell Tom before Q1, not during it.

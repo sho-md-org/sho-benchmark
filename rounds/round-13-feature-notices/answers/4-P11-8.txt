@@ -1,0 +1,49 @@
+# Vantage Telecom — QBR Brief
+
+**One thing to do before the call:** do not reaffirm the SSO date until you've checked with the product owner. Details in Risks below.
+
+## Where things stand
+
+The account record is thinner than I'd like. The ten Vantage records I can see are mostly one-line meeting stubs with attendees and topics but no substance — no health score, ARR, renewal date, usage data, or open support tickets surfaced anywhere. Treat the below as the themes in play, not a status readout.
+
+Topics raised across the last six months, most recent first:
+
+| Date | Topic | Record | Who |
+|---|---|---|---|
+| 2026-09-11 | SSO questions, NPS | DRI-67178 | Dana Ortiz, Omar Haddad |
+| 2026-09-06 | Churn + QBR prep | DRI-14442 | Dana Ortiz, Tess Brown |
+| 2026-08-11 | Trial conversion, NPS | DRI-77676 | Tess Brown, Ana Petrova |
+| 2026-08-05 | Rate limits, hosting | DRI-89702 | You, Omar Haddad |
+| 2026-07-08 | Search (owner: Priya Shah) | CRM-84868 | — |
+| 2026-06-22 | Pricing (owner: Jordan Blake) | CRM-36270 | — |
+| 2026-06-14 | Reporting, trial conversion | DRI-68417 | Ana Petrova, Tess Brown |
+| 2026-06-08 | QBR — SSO commitment made | CRM-31062 | Ines Park / Priya Shah |
+| 2026-05-28 | Webhooks | DRI-57024 | Ana Petrova, Leo Grant |
+| 2026-04-02 | Integrations, audit prep | DRI-81968 | You, Leo Grant |
+
+Two signals worth your attention: a churn conversation on 2026-09-06 (DRI-14442) and SSO coming back up five days later (DRI-67178). SSO was the headline ask at the last QBR and is still live. Pricing (CRM-36270) and search (CRM-84868) each have open "next: follow up" actions with no visible closure.
+
+## Open commitments
+
+**SSO (SAML) — by Q1 2027.** Made by Priya Shah (AE) to Ines Park at the June QBR (CRM-31062). The exact words: *"you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word."* The record explicitly notes the customer is planning around it. This is the only commitment on record tied to Vantage.
+
+## Risks
+
+**1. The SSO commitment may have moved, and you can't verify it from here.** There is a decision affecting this promise that isn't visible to me, so I can't tell you whether the Q1 2027 date still holds. **Ask the product owner whether the commitment stands before you reaffirm it on the call.** If Ines raises SSO and you haven't got an answer yet, acknowledge the commitment is on record and say you'll come back with a confirmed date — don't restate Q1 2027 or the Okta IdP-initiated detail in the meantime.
+
+**2. Churn risk.** A churn discussion sits in the file from three weeks ago (DRI-14442). Whatever prompted it isn't captured in the note. Worth asking Dana Ortiz or Tess Brown what drove that conversation before you walk in.
+
+**3. The specificity of the promise raises the stakes.** "IdP-initiated login from Okta" is a concrete technical deliverable, not a general roadmap gesture. If the scope has narrowed, that's a harder conversation than a slipped date, and the customer has built a rollout plan on it.
+
+**4. Loose threads.** Pricing and search both have unresolved follow-ups owned by Jordan Blake and Priya Shah. Sync with them so you aren't surprised.
+
+## What to say
+
+- **Open with their agenda, not yours.** Rate limits and hosting (DRI-89702) were your last direct conversation — a natural bridge.
+- **On SSO:** "I know SSO is the one you're planning around. Let me give you a confirmed status rather than a repeat of what you heard in June — I'll have that to you by [date]." This is honest, doesn't reaffirm a date you can't stand behind, and doesn't signal a problem that may not exist.
+- **On churn signals:** ask directly what would make the next quarter a success and what's currently in the way. Better to surface it in the QBR than find out at renewal.
+- **Close the loops:** confirm where pricing and search landed so the customer sees the follow-ups tracked.
+
+## Note on the other commitments
+
+Four other commitments came back with this query, but none are Vantage's — they belong to Pinecrest Realty, Meridian Travel, Umber Studios, and Granite Insurance. Two of them are yours: Advanced analytics (Osprey) to Lena Fox at Pinecrest by the spring release (SLA-93532), and audit log export to Lena Fox at Granite Insurance by Q1 2027 (SLA-77342). **Both carry the same flag as the Vantage SSO commitment** — check with the product owner before you reaffirm either. Out of scope for this brief, but you'll want to handle them.

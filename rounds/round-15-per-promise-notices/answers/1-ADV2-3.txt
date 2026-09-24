@@ -1,0 +1,28 @@
+I looked across Notion, Slack, Linear, Drive, and the CRM, and I can't support the premise of the question.
+
+## Advanced analytics doesn't appear to have been cut
+
+The only authoritative planning document in the system is **NOT-20876 — "Public roadmap H1 2027"** (Notion, dated 2026-06-30). It lists:
+
+> **Advanced analytics: Q2 2027**
+
+That's the most recent version of the roadmap I can find, and Advanced analytics is still on it. There is no document, message, or ticket recording a decision to cut, descope, or defer it — no reasoning, no decision-maker, no date.
+
+## What I checked
+
+- **Notion** — every "Roadmap" page (NOT-85086, NOT-64137, NOT-67486, NOT-58852, and the earlier ones) is a one-line stub ("Notes on roadmap. Owner …"), with no decision content. NOT-20876 is the only substantive roadmap doc.
+- **Slack** — the `Roadmap` and `Analytics` channels (SLA-15166, SLA-89041, SLA-48472, SLA-60376, SLA-91143) contain only status placeholders like "update on roadmap; offline next week."
+- **Linear** — no results at all for "advanced analytics," "analytics," or "2027."
+- **Drive / CRM** — the Analytics and Roadmap call notes (e.g. DRI-57993, DRI-95069, CRM-70722, CRM-62518) record that analytics was discussed but capture no roadmap decisions.
+
+## The one real roadmap change on record
+
+**SLA-17908** (#general, 2026-09-19) — the only concrete change announcement I found:
+
+> "Heads up: Sandbox environments (Rail) slip to Q2 2027. Please update any customers expecting them this year."
+
+That's **Sandbox environments** moving from Q4 2026 → Q2 2027, not Advanced analytics. If the "cut" you heard about came through secondhand, this slip is the most likely thing it got garbled from — both involve Q2 2027.
+
+## Suggested next step
+
+Before you tell a customer anything about Advanced analytics, confirm directly with the roadmap owner. Two caveats worth knowing: NOT-20876 is nearly three months old, and no author is recorded on it, so I can't tell you who owns it from the tools. Ana Petrova, Tess Brown, Leo Grant, and Omar Haddad appear most often on roadmap and analytics threads — one of them is the likely starting point. If a cut was decided verbally or in a tool I don't have access to, it left no trace here.

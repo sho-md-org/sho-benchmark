@@ -1,0 +1,36 @@
+## Cobalt Retail — QBR Brief (call next week)
+
+**One thing to do before the call:** confirm the Audit log export date with the product owner. Details under Risks.
+
+### Where things stand
+Cobalt Retail is an active, multi-thread account with regular contact through August. The record trail is thin on substance — most entries are one-line call logs — so treat the topic list as the reliable part, not the detail.
+
+- **Audit log export** is the dominant thread. Sam Ortiz pushed on it at the last QBR and it recurs as "audit prep" across nearly every touchpoint since June (CRM-24323, CRM-87224, CRM-35990, DRI-75222, SLA-13802). This is the account's priority.
+- **Other active threads:** pricing (CRM-87224, Jun 23), reporting (CRM-94849, Jul 23), notifications (CRM-35990, Aug 1), billing (DRI-75222, Aug 11, with Ana Petrova and Omar Haddad), dashboards (CRM-24697), onboarding (CRM-49779, CRM-16603).
+- **Coverage is spread across owners:** Jordan Blake owns QBR prep (CRM-12694), Omar Haddad owns audit prep and billing, Priya Shah owns pricing and reporting, you own roadmap (CRM-70221). Worth aligning with Jordan before the call so you're not contradicting each other.
+
+### Open commitments
+| Commitment | Made by | To | Due | Source |
+|---|---|---|---|---|
+| Audit log export delivered as a **CSV export** | You, at the last QBR | Sam Ortiz | Q1 2027 | CRM-38600 |
+
+That was worded strongly — *"you have my word"* — and the note records that **the customer is planning around it**. The public roadmap (NOT-20876) currently lists Audit log export including SIEM streaming at Q1 2027, consistent with what you said.
+
+### Risks
+1. **Audit log export timing needs verification before you restate it.** There's a flag on this feature: a decision I don't have visibility into may or may not affect the Q1 2027 commitment. I can't tell you what it is or whether it changes anything. Nothing in the Cobalt records shows a change — but given you made a personal-word commitment on the same feature and the customer is planning around it, check with the product owner for Audit log export (Lark) before you reaffirm the date on the call. Jordan Blake owns the current roadmap note (NOT-77133, dated 2026-09-26) and is a reasonable starting point.
+2. **Scope drift between CSV and SIEM streaming.** You promised Sam a CSV export; the public roadmap bundles SIEM streaming into the same Q1 2027 line. If those decouple, the roadmap line could slip while your actual commitment still holds — or the reverse. Confirm which scope the date attaches to so you're not agreeing to more than intended.
+3. **Fragmented ownership.** Four different Brightline owners have led calls in five months. Sam may have heard slightly different things from each. Expect to reconcile.
+4. **Pricing and billing both open with no recorded resolution** (CRM-87224, DRI-75222). Go in knowing whether anything is unresolved there; a QBR is where that surfaces.
+
+### What to say
+**On audit log export — the answer depends on what the product owner tells you:**
+- *If the date holds:* "Audit log export is on track for Q1 2027 as we discussed — CSV export, as committed. Let's talk about what your team needs to have ready on your side."
+- *If you haven't heard back by the call:* don't re-commit and don't walk it back. Say: "Audit log export is our top priority for your account and it's on the roadmap for Q1 2027. I'm confirming the delivery detail with our product team this week and will come back to you with specifics — I'd rather give you something you can plan against than repeat myself." Then actually follow up in writing within a few days.
+
+**On the rest:**
+- Lead with the audit thread — it's what Sam cares about, and opening there shows you've been tracking it.
+- Name the ownership fragmentation before Sam does: "You've worked with a few people on our side this year. I want to consolidate — here's who owns what going forward."
+- Ask Sam directly what "done" looks like for their audit: format, retention window, who consumes the export. That detail is missing from every record and it protects you on scope.
+- Close pricing and billing explicitly rather than letting them linger as recurring agenda items.
+
+**Avoid:** repeating "you have my word" on any date until the product owner confirms it. One unverified re-commitment on a feature the customer is planning around is the main way this call goes wrong.

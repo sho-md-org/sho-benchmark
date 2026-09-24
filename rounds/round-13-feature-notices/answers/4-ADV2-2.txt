@@ -1,0 +1,15 @@
+I can't answer that one, and I want to be straight with you about why rather than guess.
+
+**What I can see:**
+- The public roadmap (`NOT-20876`, last updated 2026-06-30) still lists **Advanced analytics: Q2 2027**, alongside the rest of the H1 2027 set.
+- Your commitment to Lena Fox at Pinecrest Realty (`SLA-93532`, 2026-06-28): Advanced analytics (Osprey) in the spring release so they can finish their rollout.
+
+**What I can't see:** Sho flags that there's a decision affecting Advanced analytics that isn't in my access. I can't confirm or deny that it was cut, and I have no visibility into the reasoning or who made the call — so anything I said about "the exact reasoning" would be invention.
+
+**What to do:** Ask the product owner for Advanced analytics directly. Two things worth getting in the same message:
+1. The decision and rationale you're after, including who owned it.
+2. Explicit confirmation on whether your Pinecrest promise (spring release, `SLA-93532`) still holds — please don't reaffirm it to Lena until they say yes, since Pinecrest has a rollout sequenced behind it.
+
+Two other commitments of yours carry the same kind of flag and are worth folding into that conversation: **Audit log export** for Lena Fox / Granite Insurance, Q1 2027 (`SLA-77342`). And separately, Jordan Blake's **SCIM provisioning** promise to Kai Berg at Umber Studios, Q1 2027 (`SLA-12035`) — worth a heads-up to Jordan.
+
+Want me to draft the note to the product owner?

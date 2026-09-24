@@ -1,0 +1,32 @@
+## What the records show
+
+**The commitment is real and was reconfirmed.** In the 2026-07-09 sync (`DRI-36664`), Tom Hale raised that Brightline had told them SSO (SAML) by Q1 2027, and Leo Grant (AE) confirmed it on the call. So Quarry Mining's "as you promised" framing is accurate — this isn't a misremembering on their side.
+
+**It's still on the published roadmap.** `NOT-20876` (Public roadmap H1 2027, dated 2026-06-30) lists "SSO (SAML), SP- and IdP-initiated: Q1 2027." SCIM provisioning is also Q1 2027 on the same doc, which matters since it's usually the adjacent ask.
+
+**One gap worth knowing before you send:** Linear returned *zero* results for SSO, SAML, or authentication work. There's no tracked engineering ticket backing the Q1 2027 date. The remaining SSO chatter (`SLA-53734`, `SLA-67092`, `NOT-40327`, `CRM-14429`) is status-update noise with no delivery detail. So I can confirm the *promise* and the *published plan*, but nothing in the tools confirms *build progress*.
+
+I've written the draft to reaffirm without inventing delivery specifics we can't back.
+
+## Draft reply
+
+> Subject: Re: SSO (SAML) timing
+>
+> Hi Tom,
+>
+> Yes — SSO (SAML) is still targeted for Q1 2027, covering both SP-initiated and IdP-initiated flows. That's what we committed to on our July 9 call and it remains on our published H1 2027 roadmap.
+>
+> One thing worth flagging since it usually comes up alongside SSO: SCIM provisioning is also targeted for Q1 2027, so you'd be able to handle automated user provisioning and deprovisioning in the same window rather than staging them separately.
+>
+> As we get closer, I'd like to get your IT team connected with our product team directly — partly so we can confirm your specific IdP and configuration requirements are covered, and partly so you're not relying on roadmap dates relayed through me. Would it be useful to set that up in the next few weeks?
+>
+> Happy to jump on a call in the meantime if it's helpful.
+>
+> Best,
+> Leo
+
+## Before you send
+
+Take five minutes with Maya Chen (roadmap owner, per `NOT-85086` / `NOT-64137`) to confirm Q1 2027 still holds. The absence of any Linear ticket is the one thing that gives me pause — it may just mean the work hasn't been broken down yet, but you'd be re-confirming a date for the second time to a customer who is already tracking it closely, and `DRI-67006` is a churn conversation on this account from August. A second confirmation that later slips is much more expensive than the first.
+
+If Maya can't confirm, swap the opening line to something like: *"SSO (SAML) is still on our H1 2027 roadmap for Q1. I'm getting a firm delivery confirmation from our product team this week and will come back to you with specifics by [date]."* That holds the relationship without putting a date behind something engineering hasn't committed to.

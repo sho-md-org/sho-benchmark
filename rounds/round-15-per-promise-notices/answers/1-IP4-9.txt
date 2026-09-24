@@ -1,0 +1,38 @@
+## Answer: Keystone Energy's is the one at risk.
+
+Both promises are for Q1 2027, and both are nominally backed by the same public-roadmap line. The difference is what each one requires to be *true*.
+
+### The two promises side by side
+
+**Cobalt Retail — `CRM-38600`** (QBR, 2026-07-24)
+Sam Ortiz pushed on Audit log export (codename **Lark**). Your words: *"you'll have it by Q1 2027 as a CSV export, you have my word."* Note says the customer is planning around it.
+
+**Keystone Energy — `DRI-34564`** (sync, 2026-08-03)
+Nia Cole reminded the team that we told them Audit log export by Q1 2027 **with streaming into Splunk**. Jordan Blake (AE) confirmed it on the call.
+
+### What the roadmap actually says
+
+`NOT-20876` (Public roadmap H1 2027, 2026-06-30): *"Audit log export incl. SIEM streaming: Q1 2027."*
+
+On paper both promises are covered. In practice they sit at opposite ends of that line item:
+
+- **Cobalt is promised the floor of the feature.** CSV export is the base capability. Cobalt's promise survives almost any de-scope — if engineering ships a v1 and pushes streaming to a later phase, Cobalt still gets what you personally guaranteed.
+- **Keystone is promised the ceiling.** SIEM streaming is the expensive, bolt-on half of a bundled roadmap item, and it's the part that gets cut first when a date is defended. If Lark de-scopes at all, Keystone's promise breaks and Cobalt's doesn't.
+
+There's also a wording gap on Keystone: the roadmap commits to generic **"SIEM streaming,"** but Keystone was told **"streaming into Splunk"** specifically. A generic SIEM egress path at GA is not the same as a validated Splunk integration, and Keystone is planning against the latter.
+
+### Two more things that push Keystone's risk up
+
+1. **Recent precedent that these dates move.** `SLA-17908` (#general, 2026-09-19): Sandbox environments (Rail) slipped from Q4 2026 to Q2 2027 — a full two quarters, announced with a blanket "please update any customers expecting them this year." Roadmap quarters here are not firm.
+2. **The Keystone commitment is poorly tracked.** Cobalt's lives in CRM (`CRM-38600`), attached to the account. Keystone's lives only in a meeting-notes doc (`DRI-34564`) and was re-confirmed verbally by an AE — it isn't logged against the account anywhere I can find. The Keystone CRM audit-prep records (`CRM-90377`, `CRM-17727`, `CRM-56742`) and QBR prep (`CRM-93344`) don't mention it at all.
+
+### Caveat on confidence
+
+I could not verify Lark's actual build status. Linear returned zero results for every query I tried (`audit log`, `export`, `SIEM streaming Splunk`, `Lark`, `Keystone`, `roadmap`) — there appears to be no engineering ticket data reachable from here. The Slack and Notion "Audit prep" threads (`SLA-37823`, `SLA-13802`, `NOT-45379`, `NOT-91719`) are status-update stubs with no scope detail. So this assessment rests on promise-vs-roadmap scope, not on a confirmed schedule slip. **There is no announcement that Lark has slipped.**
+
+### What I'd do
+
+1. **Get a scope answer on Lark before anything else** — specifically: is SIEM streaming in the Q1 2027 GA, or phase 2? And is Splunk a named target or generic syslog/HEC egress? That single answer decides whether Keystone's promise is fine or needs a reset conversation.
+2. **Loop in Jordan Blake.** They confirmed the Splunk detail on the 2026-08-03 call, so any correction to Keystone should come from both of you.
+3. **Log the Keystone commitment in CRM.** Right now it exists only in meeting notes, which is how promises get missed.
+4. **Cobalt is lower priority but not zero.** Your "you have my word" phrasing is an unhedged personal guarantee on a date you don't control, and `CRM-38600` records that they're planning around it. It's well-covered by scope — the exposure is the date, not the feature.

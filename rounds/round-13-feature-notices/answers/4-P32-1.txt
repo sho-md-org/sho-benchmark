@@ -1,0 +1,43 @@
+## Harbor Clinics QBR Brief — call week of Sep 28, 2026
+
+**Upfront caveat:** the account's record trail is thin. Most CRM entries are single-line call logs ("Discussed X. Owner Y. Next: follow up on Z") with no outcomes, no dates, no owners closing loops. I can tell you what was *discussed*; I largely can't tell you what was *decided*. Where I say "unknown," it's genuinely absent from the records, not something I skipped.
+
+### Where things stand
+
+Activity is steady and broad — ten-plus touchpoints since April spanning integrations (CRM-97969, CRM-75336), exports (CRM-82586, DRI-68515, DRI-88564), latency (CRM-94239), notifications (CRM-73374), sandbox (CRM-36695), onboarding (CRM-48825), roadmap (CRM-41255), audit prep (CRM-35862), support queue (DRI-20995), and most recently mobile app (CRM-49374, Sep 21 — the newest entry, and its next step is literally this QBR).
+
+Two threads recur enough to be the real spine of the relationship:
+
+- **Audit prep / exports.** Referenced as the next step in at least four separate records (CRM-45542, CRM-35862, CRM-48825, DRI-20995) from April through August. It keeps getting handed forward. No record shows it landing.
+- **Data governance.** Data retention controls (DRI-80868) plus an EU data residency ask from Ada Moss (CRM-89966).
+
+Ownership is scattered — Sam Lee, Leo Grant, Priya Shah, Omar Haddad, Ana Petrova, Jordan Blake, Tess Brown, Dana Ortiz all appear as owners on different threads. No single internal owner is visible across the account.
+
+### Open commitments
+
+**Data retention controls — by Q1 2027.** Made to Ines Park; Jordan Blake (AE) reconfirmed it at the May 15 sync (DRI-80868) after Ines raised it. No later change to this commitment appears anywhere in the records. **This one is safe to reaffirm on the call.**
+
+**EU data residency — no commitment, and keep it that way.** On June 9 (CRM-89966) Ada Moss asked; the answer given was "exploring, no dates yet." That's the current position. Repeat it verbatim if it comes up.
+
+### Risks
+
+1. **Audit prep is the quiet one.** A thread that's been "next step" for five months with no recorded resolution is the most likely thing to surface as a complaint. Harbor Clinics is a clinical org — audit and retention needs are probably compliance-driven and deadline-bound, which makes drift here more expensive than it looks. **Check the real status before the call.** If it's genuinely done, say so with specifics. If it isn't, name it before Ines or Ada does.
+2. **EU data residency is an unbounded ask.** Two governance asks from the same account (retention + residency) suggests a compliance program with its own timeline. Ada may push for a date. You don't have one to give.
+3. **No visible account quarterback.** Eight-plus owners, no continuity. If Harbor Clinics feels handed around, the QBR is where that shows up.
+4. **Support queue (DRI-20995, Aug 19) has no detail.** You and Leo Grant were in it. If there's volume or severity behind it, pull the actual numbers — walking into a QBR without support metrics is a gap.
+
+### What to say
+
+- **Open with the retention commitment, unprompted.** "Data retention controls are on track for Q1 2027" — Ines has raised it once already and will value hearing it before asking.
+- **Name the audit/exports thread directly** rather than letting them raise it. Either a concrete status and date, or an honest "this has moved slower than it should have, here's the owner and the date."
+- **On EU residency, hold the line:** exploring, no dates. Offer to connect them with the product owner for roadmap context instead of improvising a timeline.
+- **Propose a single point of contact** (you) for the coming quarter. Cheap to offer, directly addresses the fragmentation risk.
+- **Ask what their 2027 compliance calendar looks like.** Both governance asks likely trace to one deadline; knowing it converts guesswork into planning.
+
+### Before the call
+
+Get real status on audit prep/exports (Leo Grant or Tess Brown), and pull support queue metrics from Leo. Those are the two places where the records leave you exposed.
+
+---
+
+**Separately, unrelated to Harbor Clinics:** three commitments on other accounts are flagged — Advanced analytics to Lena Fox at Pinecrest (SLA-93532) and Audit log export to Lena Fox at Granite (SLA-77342), both yours, plus SCIM provisioning to Kai Berg at Umber (SLA-12035, Jordan Blake's). Check with the product owner before reaffirming any of them to those customers. They don't affect this QBR.

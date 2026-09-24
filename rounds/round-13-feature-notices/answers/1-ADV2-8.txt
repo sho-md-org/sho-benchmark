@@ -1,0 +1,21 @@
+## Short answer: I can't find any record that Advanced analytics was cut — and the current plan of record says it's still in.
+
+**What the systems actually show:**
+
+- **NOT-20876 · "Public roadmap H1 2027"** (Notion, 2026-06-30) — the only 2027 planning document in any of the four tools. It lists **"Advanced analytics: Q2 2027"**, alongside EU data residency, Salesforce sync, SSO (SAML), SCIM, audit log export, custom roles, HubSpot sync, offline mode, bulk import v2, data retention controls, sandbox environments, and webhooks v2. Advanced analytics is on it, not absent from it.
+- **SLA-17908 · #general: "Rail update"** (Slack, 2026-09-19) — the only roadmap *change* announcement in the corpus: **Sandbox environments (Rail) slips to Q2 2027**. That's a different item, and it's a slip, not a cut. This may be the source of the "something got cut" impression.
+- **SLA-26281 · #general: "shipped"** (Slack, 2026-09-20) — Crane shipped (API rate limits raised). No analytics decision.
+
+**Searched and found nothing on an analytics cut:**
+- Linear returns **zero results** for "advanced analytics," "analytics," "2027" — there's no ticket, project, or cancellation record.
+- The many Notion/Slack items titled "Analytics" (e.g. NOT-75315 2026-08-08 · owner Omar Haddad; SLA-60376 2026-08-12 · Ana Petrova; SLA-91143 2026-07-13 · Tess Brown) are one-line status stubs with no decision content.
+- Customer-facing records mentioning analytics (CRM-70722 Riverton City 2026-09-12 · your own call; CRM-84231 Fjord Media; DRI-78883 Bluewater Logistics; DRI-76027 Tidewater Ports) discuss analytics as a live topic — none mention removal or a revised date.
+- No prioritization doc, planning meeting notes, or exec decision log exists in Drive/Notion for the 2027 plan beyond NOT-20876.
+
+**So on the two things you asked for:** there is no documented reasoning, and no identifiable decision-maker, because there's no documented decision. I'd rather tell you that than reconstruct a plausible-sounding rationale — if you repeat an invented reason to a customer, that's a real problem.
+
+**Two things worth checking before you act:**
+1. Confirm whether you're thinking of **Sandbox environments** (SLA-17908) — that one genuinely moved, to Q2 2027, and CS was explicitly asked to notify affected customers.
+2. If you heard "analytics is cut" verbally or in a meeting, the decision was never written down anywhere I can search. The person to ask is whoever owns NOT-20876; the closest named owners on analytics threads are **Omar Haddad** (NOT-75315) and **Ana Petrova** (NOT-67486, SLA-60376), but I want to be clear that's inference from adjacent stub documents, not evidence that either made a call on this.
+
+One caution for customer conversations regardless: per the pattern in CRM-51416 (Tidewater Ports, 2026-09-18), roadmap items are communicated as **"on the roadmap, no commitment."** Advanced analytics' Q2 2027 date should be framed that way too, not as a promise.

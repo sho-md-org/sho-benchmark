@@ -1,0 +1,67 @@
+## Aster Health QBR Brief
+
+**Prepared 2026-09-24 · Source: Sho task context + linked records**
+
+---
+
+### 1. Where things stand
+
+Aster Health has been an active, high-touch account through 2026 — roughly a dozen logged touchpoints since April spanning exports, sandbox, hosting, latency, dashboards, search, NPS, and audit prep. Primary customer contact across meetings is **Omar Haddad**, with **Ana Petrova** and **Dana Ortiz** recurring. On our side the account has passed through several owners (Leo Grant, Priya Shah, Sam Lee, Tess Brown, Jordan Blake, and you), which is itself worth noting.
+
+Recurring themes, by volume of discussion:
+
+| Theme | Records | Recency |
+|---|---|---|
+| NPS | CRM-26522, DRI-30445, DRI-36735 | ongoing → 09-28 |
+| Dashboards | CRM-57156, CRM-75476, DRI-75615 | 09-17 (most recent touch) |
+| Latency | CRM-16329, CRM-68765 | June |
+| Audit prep | CRM-45213, DRI-48323, DRI-36735 | ongoing |
+| Search | DRI-70983, DRI-36553, DRI-75615 | 09-17 |
+| Exports / Sandbox / Hosting | CRM-76005, CRM-45213, DRI-23711, CRM-62644, CRM-64767, DRI-86962, CRM-81799 | Apr–May |
+
+Most recent substantive touch: **DRI-75615 (2026-09-17)** — you and Omar Haddad on dashboards and search. There's also an **NPS + audit prep session on the books for 2026-09-28** (DRI-36735) with Omar Haddad and Ana Petrova — that lands *before* your QBR, so hold the QBR narrative until you have that readout.
+
+### 2. Open commitments
+
+**One commitment on record for this account — and it's delivered.**
+
+- **Higher API rate limits, promised to Omar Aziz by October** — made by Priya Shah (AE), logged in **DRI-86231** (2026-06-12). **Status: shipped.** Crane went live 2026-09-20, raising API rate limits for all paid plans (**SLA-26281**). Delivered ahead of the October deadline.
+
+This is your strongest QBR asset: a commitment made in June, hit early, with no caveats. Lead with it.
+
+### 3. Risks
+
+**Real risks, in priority order:**
+
+1. **Account ownership churn.** Six different Brightline owners appear across 2026 records. DRI-48323 (audit prep) explicitly pairs audit prep with a **churn** discussion, and CRM-68765's next step is "follow up on churn." Whether that's customer churn or internal, it's the loudest signal in the file — go in knowing the answer.
+
+2. **Thin record quality.** Nearly every record is a one-line stub ("Discussed latency. Next: follow up on churn."). There's no logged outcome for latency, hosting, or the security reviews flagged as next steps in CRM-16329 and CRM-26522. **You cannot tell from these records whether those issues were resolved or simply dropped.** Assume the customer remembers better than our CRM does.
+
+3. **Unclosed loops.** Several "next steps" have no visible follow-up record: security review (twice), support queue (CRM-70994), hosting (CRM-81799, which loops to itself). Expect Omar to raise at least one.
+
+4. **Contact-name discrepancy.** The rate-limits commitment names **Omar Aziz** (DRI-86231); all other Aster Health meetings name **Omar Haddad**. Confirm whether these are two people or one mis-keyed record before you address the delivery to the wrong person on the call.
+
+### 4. What to say
+
+**Open with the win:** "We committed in June to raising your API rate limits by October. That shipped on September 20 — it's live on your plan now." Concrete, early, verifiable.
+
+**Then hand them the agenda:** dashboards and search were your last conversation (Sept 17) and are the natural forward-looking segment.
+
+**Ask rather than assert on the stale threads.** For latency, hosting, and the security reviews, our notes stop mid-thread. Don't claim resolution — say "I want to confirm we fully closed out the latency work from June and the security review — is anything still open on your side?" This turns a documentation gap into a diligence signal.
+
+**Address continuity directly.** Given the owner turnover, state plainly who owns the account going forward. If they've felt the churn, naming it first defuses it.
+
+---
+
+### ⚠️ One flag before you go in
+
+Three commitments in your book carry a **notice** that a decision you don't have visibility into may have changed them. **None of them are Aster Health** — but two are yours:
+
+- **Advanced analytics (Osprey), spring release** → Lena Fox, Pinecrest Realty (SLA-93532)
+- **Audit log export, Q1 2027** → Lena Fox, Granite Insurance (SLA-77342)
+
+*(The third is Jordan Blake's SCIM provisioning commitment to Umber Studios, SLA-12035.)*
+
+I can't tell you what changed or whether it did. **Check with the product owner before you reaffirm either of these to Lena Fox.** They're out of scope for this QBR, but the audit-log-export one is adjacent to Aster Health's own audit-prep thread — if Omar asks about audit log export capability generally, describe only what's shipped today and take the roadmap question away with you.
+
+Separately, **Offline mode for Meridian Travel by Q2 (SLA-24221, Priya Shah)** shows "no later change found" — no notice, but Q2 2026 has passed. Not yours and not this call, but someone should look at it.

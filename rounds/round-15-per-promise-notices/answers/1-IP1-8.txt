@@ -1,0 +1,37 @@
+## Short answer: none of them — you don't have any SSO promises on record
+
+I searched CRM, Slack, Notion, and Drive for commitments attributed to you. Every promise I can find under your name is about something else, and every SSO promise on record belongs to someone else.
+
+**Your commitments (complete list I found):**
+
+| Record | Account | What you promised | Status |
+|---|---|---|---|
+| CRM-98566 | Bluewater Logistics | Higher API rate limits, "this autumn" | ✅ Kept — Crane shipped 2026-09-20 (SLA-26281) |
+| SLA-77342 | Granite Insurance | Audit log export by Q1 2027, **incl. SIEM streaming** | On track per roadmap |
+| CRM-38600 | Cobalt Retail | Audit log export (Lark) by Q1 2027, **as CSV export** | On track per roadmap |
+| SLA-93532 | Pinecrest Realty | Advanced analytics (Osprey) "in the spring release" | ⚠️ See below |
+
+**The SSO promises that exist are not yours:**
+
+- CRM-31062 — Vantage Telecom, **Priya Shah (AE)**: "Q1 2027, including IdP-initiated login from Okta, you have my word"
+- CRM-62434 — Umber Studios, **Priya Shah (AE)**: SAML by March with IdP-initiated, logged as a renewal condition
+- CRM-74447 — Riverton City, **Tess Brown (CS)**: SSO/SAML (Heron) early next year, renewal condition
+- CRM-64756 — Delta Freight, **Tess Brown (CS)**: "end of Q1, you have my word"
+- SLA-12035 — Umber Studios, **Jordan Blake (AE)**: SCIM provisioning by Q1 2027
+- CRM-69493 — Ironwood Legal: mobile app SSO was promised by **their incumbent vendor, explicitly not by us**
+
+## And nothing has actually happened to SSO
+
+This is the part worth knowing: there's no SSO slip to react to. The only slip announcement in the system is SLA-17908 (2026-09-19) — **Sandbox environments (Rail) moving to Q2 2027**, not SSO. The public roadmap NOT-20876 still lists "SSO (SAML), SP- and IdP-initiated: Q1 2027," and all four SSO promises above are consistent with that date and scope.
+
+The many "Sso questions" records across all four tools (e.g. CRM-57728, DRI-67178, NOT-20443) are thin templated call stubs with no commitments or status changes in them — they look like recurring customer Q&A, not a problem signal.
+
+## What does deserve your attention
+
+Two things surfaced that are genuinely yours:
+
+1. **Pinecrest Realty (SLA-93532)** — you said Advanced analytics would land "in the spring release," but the roadmap has Advanced analytics at **Q2 2027**. Depending on how Pinecrest read "spring," those may not match, and this is the one commitment of yours where your wording is looser than the roadmap. Worth pinning down.
+
+2. **Your two audit-log promises don't agree with each other.** Granite Insurance was promised **SIEM streaming**; Cobalt Retail was promised **CSV export**. The roadmap says "Audit log export incl. SIEM streaming: Q1 2027," so Granite is covered — but if scope ever gets trimmed to CSV-only, Granite is the exposure. Same feature, same quarter, two different scopes committed.
+
+If you were asking because you'd heard something slipped: it was Sandbox, and you have no sandbox commitments. The colleagues who need to act on SSO-adjacent risk are Priya Shah and Tess Brown, and even they are currently on-schedule.

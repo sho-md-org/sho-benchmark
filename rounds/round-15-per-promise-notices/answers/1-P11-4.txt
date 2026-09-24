@@ -1,0 +1,67 @@
+I pulled everything on Vantage Telecom across CRM, Drive, Notion, Slack, and Linear. Before the brief itself, one thing you need to know up front:
+
+## The source data won't support a real QBR brief
+
+Every Vantage record in the workspace is a one-line stub. Example, in full: `CRM-65747` — *"Call with Vantage Telecom. Discussed dashboards. Owner Maya Chen. Next: follow up on exports."* That's the entire record. All 19 records follow that pattern.
+
+There is **no** ARR or contract value, renewal date, seat/usage data, NPS score, support ticket volume, SLA status, stakeholder map, or any recorded decision or commitment. Slack and Linear returned zero results for Vantage — and zero for generic probes (`customer success`, `bug`, `renewal escalation`), so those systems appear to hold no data at all rather than just no Vantage data. Notion has seven "Qbr prep" docs but none names Vantage; the two recent ones (`NOT-42571`, `NOT-52051`, both owned by Omar Haddad) are equally contentless.
+
+So I'm giving you the verifiable activity trail plus the signals that are genuinely inferable from it, and a clearly marked list of what you have to source yourself. I'm not inventing a health status or a risk register — on an account you're about to walk into, fabricated specifics are worse than blanks.
+
+## Where things stand — verified activity trail
+
+**CRM calls** (10, Apr 12 – Sep 13):
+
+| Date | Topic | Owner | Stated next step |
+|---|---|---|---|
+| 2026-04-12 | Billing (`CRM-24363`) | Leo Grant | latency |
+| 2026-04-27 | Dashboards (`CRM-20779`) | Tess Brown | integrations |
+| 2026-05-14 | Exports (`CRM-23907`) | Ana Petrova | webhooks |
+| 2026-05-18 | Analytics (`CRM-53521`) | Jordan Blake | sandbox |
+| 2026-06-17 | Search (`CRM-74774`) | Priya Shah | webhooks |
+| 2026-06-22 | Onboarding (`CRM-15845`) | Dana Ortiz | webhooks |
+| 2026-07-08 | Search (`CRM-84868`) | Priya Shah | QBR prep |
+| 2026-07-10 | NPS (`CRM-37016`) | Tess Brown | reporting |
+| 2026-07-23 | Billing (`CRM-92524`) | Jordan Blake | latency |
+| 2026-09-13 | Dashboards (`CRM-65747`) | **Maya Chen** | exports |
+
+**Meeting notes** (9): Integrations `DRI-81968` (4/02, you + Leo Grant), Trial conversion `DRI-64274` (5/06), Webhooks `DRI-57024` (5/28), Reporting `DRI-68417` (6/14), Rate limits + hosting `DRI-89702` (8/05, you + Omar Haddad), Trial conversion `DRI-77676` (8/11), Support queue `DRI-10836` (8/18), **Churn** `DRI-14442` (9/06), **SSO questions** `DRI-67178` (9/11).
+
+## Open commitments — four unclosed loops
+
+These are inferable from next-step fields that never produced a matching follow-on record:
+
+1. **Latency — twice promised, never recorded.** `CRM-24363` (4/12) and `CRM-92524` (7/23) both close with "follow up on latency." Three months apart, same topic, and no latency record exists anywhere. Highest-confidence open commitment on the account.
+2. **Webhooks — three pointers, one meeting, wrong order.** `CRM-23907` (5/14), `CRM-74774` (6/17), and `CRM-15845` (6/22) all point to webhooks. The only webhooks meeting is `DRI-57024` on 5/28 — it predates two of the three requests.
+3. **Exports — yours, and open now.** Your own 9/13 call (`CRM-65747`) commits to following up on exports. Exports was last discussed 5/14 (`CRM-23907`), four months earlier.
+4. **Integrations / sandbox / reporting** — single next-step pointers from `CRM-20779`, `CRM-53521`, `CRM-37016` with no confirmable closure.
+
+## Risks
+
+- **A churn conversation happened and its content wasn't captured.** `DRI-14442` (9/06, Dana Ortiz + Tess Brown) is titled "Churn" and explicitly tied to QBR prep. This is the single most important item on the account and the record is one sentence. **Talk to Dana and Tess before the call** — don't walk in without knowing what drove it.
+- **Account continuity is weak.** Seven different owners across ten calls in five months (Grant, Brown, Petrova, Blake, Shah, Ortiz, you). You own exactly one record, dated 9/13. Vantage has likely noticed.
+- **SSO surfaced late (`DRI-67178`, 9/11) and is unresolved.** New auth requirements this close to a QBR usually mean a security review, a procurement gate, or an expansion into a team with stricter IT requirements. Worth knowing which before you're asked.
+- **Repeat themes suggest unresolved problems, not healthy engagement.** Billing twice, dashboards twice, search twice, trial conversion three times (`DRI-64274`, `DRI-68417`, `DRI-77676`), NPS four times. Topics that keep returning are usually topics that didn't get fixed.
+- **Rate limits and hosting** (`DRI-89702`, 8/05) plus **support queue** (`DRI-10836`, 8/18) in consecutive weeks hints at a capacity or reliability thread running under the summer. Unconfirmed.
+
+## What you must source before the call
+
+Not available anywhere in the tools — you'll need these from the account team or billing:
+
+ARR and contract value · renewal date · seat count and usage trend · actual NPS score and respondent detail · open support tickets and SLA performance · the substance of the 9/06 churn discussion · stakeholder and exec-sponsor map · status of each latency/webhooks/exports/SSO item · whether `NOT-42571` or `NOT-52051` are in fact Vantage QBR prep.
+
+## What I'd say on the call
+
+This is an agenda shaped by the topic trail, not a talk track backed by metrics — fill it in once you have the numbers.
+
+Open by **owning the handoff churn** directly rather than waiting for them to raise it: seven owners in five months is visible from their side, and naming it converts your biggest liability into a credibility move. State that you're now the single point of contact.
+
+Then **lead with the open loops instead of a wins slide.** Latency, webhooks, exports, SSO — bring a status and a date for each. On an account where a churn conversation just happened internally, a highlights reel reads as not listening.
+
+**Ask what's behind the SSO questions.** Open-ended, early. The answer tells you whether you're in a security review, a procurement gate, or an expansion.
+
+**Probe the repeat themes** — billing, search, dashboards, trial conversion. Ask whether the earlier conversations actually resolved anything. If trial conversion came up three times, someone on their side has a number they're not hitting.
+
+Close by **confirming renewal timing and stakeholders**, since you currently have neither.
+
+One caveat on the churn item: I can confirm the meeting occurred and was linked to QBR prep, but not what was said or whether Vantage is actually at risk. Treat it as a question to answer before the call, not a conclusion.

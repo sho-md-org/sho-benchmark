@@ -1,0 +1,36 @@
+## Harbor Clinics — QBR Brief (call next week)
+
+### Where things stand
+Active, multi-thread account with steady touchpoints across the year and no recorded escalation or churn signal in what I can see.
+
+| Thread | Latest | Owner |
+|---|---|---|
+| Mobile app | CRM-49374 (2026-09-21) — most recent contact; next step is QBR prep | Sam Lee |
+| Integrations | CRM-75336 (2026-07-25), CRM-97969 (2026-04-25) | Omar Haddad |
+| Onboarding | CRM-48825 (2026-07-24) | Priya Shah |
+| Support queue / audit prep | DRI-20995 (2026-08-19, you + Leo Grant) | Leo Grant |
+| Sandbox | CRM-36695 (2026-06-13) | Jordan Blake |
+| Latency | CRM-94239 (2026-06-02) | You |
+| Notifications | CRM-73374 (2026-05-24) | Ana Petrova |
+| Audit prep | CRM-35862 (2026-05-14) → next: exports | Leo Grant |
+
+Contacts on record: Ines Park, Ada Moss.
+
+### Open commitments
+- **Data retention controls by Q1 2027** — promised by Jordan Blake (AE) to Ines Park; Ines raised it at the 2026-05-15 sync and Jordan reconfirmed (DRI-80868). No later change on record, so this one is safe to restate as-is.
+- **EU data residency** — Ada Moss asked on 2026-06-09; our position was "exploring, no dates" (CRM-89966). That's still the only thing on record. Don't put a timeline on it.
+
+### Risks / watch-items
+- **Audit prep keeps recurring** (CRM-35862 → CRM-48825 → DRI-20995) and the trail points at exports. Before you give Harbor any date on audit log export, check with the product owner — you have an open date commitment on that feature elsewhere that I'd want confirmed before it gets repeated to another account.
+- **EU data residency is an unanswered ask** three months old. If Ada is on the call, expect it back. Best move is to book a product follow-up rather than improvise.
+- **Ownership is spread across six people** (Sam Lee, Omar Haddad, Priya Shah, Leo Grant, Jordan Blake, Ana Petrova). Harbor may perceive that as no single point of contact — worth naming yourself as the thread-owner for the QBR.
+- Churn-risk reporting from the data team starts October (SLA-40138), so you won't have that input for this call.
+
+### What to say
+1. **Open on continuity:** recap the year across mobile, integrations, onboarding, and the latency work you personally drove (CRM-94239).
+2. **Reaffirm data retention controls for Q1 2027** to Ines — this is your strongest concrete deliverable and it's confirmed on our side.
+3. **On EU data residency:** "still exploring, no committed dates — I'll get you a product conversation." Nothing firmer.
+4. **On audit/exports:** acknowledge the ask, commit to a follow-up date rather than a delivery date, pending product confirmation.
+5. **Close by consolidating ownership:** offer a single QBR-to-QBR action list so Harbor isn't tracking six owners.
+
+One flag worth your call: the audit log export item is the only place I'd hold back. Everything else here is clean to present.

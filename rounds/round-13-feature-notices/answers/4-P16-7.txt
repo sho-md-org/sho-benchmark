@@ -1,0 +1,48 @@
+## Keystone Energy — QBR brief
+
+### ⚠️ Read this first
+The one hard commitment on record to Keystone — **audit log export with SIEM/Splunk streaming by Q1 2027** (`DRI-34564`, raised by Nia Cole, confirmed by Jordan Blake) — is flagged: there may be a decision I can't see that affects it. **Check with the product owner before you reaffirm that date on the call.** If you haven't heard back by the call, don't restate Q1 2027 as firm — see the script below.
+
+### Where things stand
+Keystone is an active, high-touch account with steady contact across multiple owners. Thread by theme:
+
+- **Security & audit** — the dominant thread all year: security reviews in April, July (`CRM-25431`, `CRM-64056`, `CRM-30791`), and a long-running audit-prep stream through August (`CRM-90377`, `CRM-17727`, `CRM-56742`, `DRI-85107`, `DRI-48005`, `DRI-84961`). Your last QBR-prep call (`CRM-93344`, Aug 25) closed with "follow up on security review" — still the open loop.
+- **Platform/ops** — rate limits (`CRM-60405`), latency (`CRM-23178`), uptime as recently as Sep 23 (`CRM-19012`, Sam Lee).
+- **Commercial** — pricing discussion logged for Sep 25 (`CRM-78617`, Jordan Blake), with a follow-up on offline. That's dated tomorrow, so loop Jordan before the QBR so you're not surprised by a live pricing conversation.
+- **Adoption** — onboarding (`CRM-15788`, `CRM-86748`), integrations (`DRI-31273`), reporting/analytics (`CRM-71045`, `CRM-71078`).
+
+The records are short call logs, so this is direction-of-travel rather than detail. Nothing indicates an escalation or churn signal.
+
+### Open commitments to Keystone
+| Commitment | Source | Owner | Status |
+|---|---|---|---|
+| Audit log export w/ Splunk streaming, Q1 2027 | `DRI-34564` | Jordan Blake (AE) | ⚠️ Confirm with product owner before reaffirming |
+
+That's the only commitment on file to this account. Two others in your name — advanced analytics by spring release (`SLA-93532`) and audit log export by Q1 2027 (`SLA-77342`) — belong to Pinecrest and Granite, not Keystone, but both carry the same flag. Worth resolving in the same conversation with the product owner.
+
+### Risks
+1. **The audit-log date is your single point of exposure.** Nia Cole brought it up unprompted in August, which means they're tracking it and likely building their compliance plan around it. If it moves, you want to be the one who tells them.
+2. **Owner fragmentation.** Six different internal owners across recent calls (Maya, Omar, Sam, Tess, Priya, Jordan). Keystone may be hearing inconsistent answers — the QBR is a chance to name yourself as the single thread.
+3. **Pricing is live right now** (`CRM-78617`) and you're not the owner. Don't walk into the QBR cold on it.
+4. **Stale open loop** — "follow up on security review" from Aug 25 has been open a month.
+
+### What to say
+
+**Open:** Frame the year around their compliance/audit program — it's been the spine of every conversation since April. That shows you've been listening.
+
+**On audit log export — if the product owner confirms:** restate Q1 2027 with Splunk streaming plainly and move on.
+
+**If you haven't heard back:** acknowledge without re-committing —
+> "Audit log export with SIEM streaming is on the roadmap and I know it's central to your compliance timeline. I'm getting you a current status straight from the product team rather than repeating a date secondhand — you'll have it from me this week."
+
+That's honest, doesn't walk anything back, and buys you the confirmation.
+
+**On ownership:** "You've talked to a lot of us this year. Going forward I'm your single point — anything on security, platform, or roadmap comes through me."
+
+**Ask them:** where their audit/compliance milestone actually lands, and what they need from us by when. That converts a status meeting into a plan.
+
+### Before the call
+- [ ] Ping the product owner on the audit log export commitment (`DRI-34564`) — and while you're there, `SLA-93532` and `SLA-77342`
+- [ ] Sync with Jordan Blake on where pricing landed (`CRM-78617`)
+- [ ] Close the Aug 25 security-review follow-up (`CRM-93344`)
+- [ ] Get uptime/latency numbers from Sam Lee (`CRM-19012`) for a one-slide health summary

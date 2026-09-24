@@ -1,0 +1,29 @@
+**Before this goes out:** there's a flag on the SSO (SAML) commitment to Quarry Mining — something outside my visibility may affect whether the Q1 2027 date still holds. I can't confirm or deny it either way, so the draft below deliberately does **not** reaffirm the date. Please check with the product owner for SSO and then either fill in the confirmation or adjust.
+
+**What's on record:**
+- `DRI-36664` (2026-07-09) — Tom Hale reminded us of the SSO-by-Q1-2027 commitment; you confirmed it on that call. So his "as you promised" is accurate.
+- `NOT-20876` — public H1 2027 roadmap lists SSO (SAML), SP- and IdP-initiated, at Q1 2027.
+- `CRM-14429` (2026-06-25), `DRI-51391` (2026-04-26) — prior SSO discussions, no date changes recorded.
+
+---
+
+**Draft reply**
+
+Subject: Re: SSO (SAML) timing
+
+Hi Tom,
+
+Thanks for following up — and yes, you're remembering our July conversation correctly. SSO (SAML), both SP- and IdP-initiated, is on our published H1 2027 roadmap for Q1 2027, and that's the date I confirmed to you.
+
+Rather than just repeat a date back to you, I want to give you something you can plan your rollout against. I'm confirming the current status directly with our product team this week and will come back to you by [date] with the firm timeline, including where SSO sits in the build sequence and what the early-access window looks like for you.
+
+If it would help, I can also set up a short call with our product lead so your IT team can ask about SAML specifics — IdP compatibility, metadata exchange, and how it interacts with SCIM provisioning — directly.
+
+Best,
+Leo
+
+---
+
+Two things to fill in: the callback date (I'd suggest within 3–5 business days so it doesn't read as a stall), and whether you want to offer the product-lead call — it's a good move if the timeline turns out to need adjusting, since it gives Tom something concrete alongside the news.
+
+If the product owner confirms Q1 2027 is intact, tighten the middle paragraph to a direct "yes, Q1 2027 is confirmed" and drop the callback promise.

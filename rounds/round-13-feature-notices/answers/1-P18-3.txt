@@ -1,0 +1,64 @@
+I pulled every Cobalt Retail record across all four systems — 11 CRM records, 9 Drive meeting notes, and swept Slack, Linear, and Notion. Here's the brief, plus one important caveat about what the source data can and can't support.
+
+## Caveat first
+
+Every Cobalt record is a one-line stub. There is **no ARR figure, renewal date, health score, NPS number, support ticket volume, named customer-side contact, or resolution status anywhere** in CRM or Drive. Slack, Linear, and Notion return nothing for Cobalt at all (the nine "Qbr prep" Slack threads, e.g. SLA-55835, SLA-47639, are generic and not tied to this account).
+
+So I can't tell you how the account is actually doing. What I *can* give you is a defensible map of topics, ownership, and — most usefully — which commitments were never closed out. The risk section below is inference from the record trail, and I've labeled it as such.
+
+---
+
+## Where things stand
+
+Steady engagement, 20 touchpoints from 2026-04-01 (CRM-98822) through 2026-09-26 (DRI-72283) — roughly one every nine days, no gaps. Cadence is healthy.
+
+Topic arc over the six months: onboarding and integration plumbing in spring (webhooks CRM-98822, onboarding CRM-49779/CRM-16603/DRI-18657, exports DRI-41266, search CRM-36268) → reporting and dashboards early summer (CRM-24697, DRI-58616, CRM-94849) → commercial and compliance topics recently (pricing CRM-87224, billing/audit prep DRI-75222, case study DRI-20022/DRI-95243, rate limits CRM-12380). That progression reads like a maturing deployment, which is a good story for you.
+
+**Ownership is diffuse.** Priya Shah owns the most CRM records (5). You own only two — CRM-70221 (roadmap, Apr 20) and CRM-36268 (search, May 22) — both from spring, and both have follow-ups that never closed. Tess Brown and Omar Haddad own two each. Worth knowing before you walk in as the face of the account.
+
+## Open commitments
+
+I traced each CRM record's stated "Next:" against whether that topic ever reappeared.
+
+**Closed:**
+- Rate limits — promised CRM-24697 and CRM-16603, delivered DRI-33978 and CRM-12380 ✓
+- Mobile app — promised CRM-92187, delivered DRI-82140 and DRI-72283 ✓
+- Billing / audit prep — promised CRM-94849 and CRM-87224, delivered DRI-75222 ✓
+- Case study — promised CRM-98822 (Apr 1), delivered DRI-20022 (Jul 27) — closed, but nearly four months later
+
+**Never closed — these are your exposure:**
+- **Security review** — committed twice, both times by you (CRM-70221 on Apr 20, again CRM-36268 on May 22). No Cobalt security review record exists in any system. Open ~5 months.
+- **Latency** — committed CRM-49779 (Apr 27). Never revisited. Open ~5 months.
+- **Churn** — the "Next:" on CRM-12380 (Sep 12), your most recent CRM entry. Not actioned.
+- **SSO questions** — raised DRI-20022 (Jul 27). No follow-up record.
+- **EU customers** — raised DRI-33978 (Jul 25). No follow-up record.
+- **Hosting** — raised DRI-35074 (Aug 23), your meeting with Sam Lee. No follow-up record.
+
+## Risks (inference, not evidence)
+
+1. **The churn flag.** The single most recent CRM entry (CRM-12380, Sep 12, Priya Shah) sets the next step as "follow up on churn." Nothing explains why. Before the call, ask Priya directly what prompted that — it's the one thing in this dataset that could change the shape of your meeting.
+2. **An unanswered security review with your name on it, twice.** If Cobalt's security or procurement team has been waiting since April, that will surface in a QBR, and it's yours to own.
+3. **Three unresolved compliance/infrastructure threads** (SSO, EU customers, hosting) clustered in Jul–Aug. Individually minor; together they look like an account evaluating whether you fit a broader or more regulated deployment. That's either expansion signal or scrutiny signal — worth finding out which.
+4. **Diffuse ownership.** Five different Brightline people led calls. If nobody has the full picture, Cobalt likely feels that.
+5. **Data gap as its own risk.** Going into a QBR with no recorded NPS score, renewal date, or usage numbers is a real problem independent of account health.
+
+## What to say
+
+Fill in the bracketed numbers before you go — I don't have them.
+
+**Open (2 min):** Frame the six-month arc. "We went from onboarding and integrations in the spring to dashboards, reporting, and now rate limits and scale — you've moved from getting set up to running on us." That's true and it's flattering without being hollow.
+
+**Wins:** Rate limits, mobile app, and billing/audit prep were all raised and worked through. The case study (DRI-20022, DRI-95243) is a genuine advocacy signal — if it's still unpublished, ask for it as a soft commitment test.
+
+**Get ahead of the gaps.** Don't let them raise these first. Name the security review yourself, acknowledge it's been open since April, and bring a date. Same for latency, SSO, EU data handling, and hosting — bundle them: "There are four threads from the summer I want to close out. Here's the plan and the owner for each."
+
+**Ask, don't tell:**
+- What's driving the SSO and EU questions — a new region, a new business unit, a procurement requirement?
+- Who else at Cobalt should be in this conversation? (No customer-side names appear anywhere in our records.)
+- What would make the next six months a success for them?
+
+**Close:** One named owner per open item with a date, and propose a single point of contact going forward — ideally you, given five people have been fronting this account.
+
+---
+
+Two things to chase before the call: **(1)** DRI-72283 is dated 2026-09-26, two days from now — a mobile app session with Sam Lee and Priya Shah that you're not listed on. Check whether that's a real scheduled meeting and whether it's actually your QBR. **(2)** Ask Priya Shah what "follow up on churn" in CRM-12380 refers to. If there's a live retention concern, this brief is the wrong shape and you'd want to know today.

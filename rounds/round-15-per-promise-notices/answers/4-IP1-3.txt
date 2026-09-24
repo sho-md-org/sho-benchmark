@@ -1,0 +1,30 @@
+## Short answer: none of your tracked promises are on SSO
+
+I checked every SSO record you appear in, plus your full commitment list. The SSO material is all discussion, not commitment:
+
+| Record | What it is |
+|---|---|
+| DRI-18519 | Harbor Clinics call — SSO questions + notifications (you + Ana Petrova) |
+| DRI-79562 | Norrland AB call — SSO questions + offline (you + Priya Shah) |
+| SLA-21939 | Your Slack update on SSO questions |
+| NOT-29833, NOT-58902 | Your Notion notes on SSO questions |
+| CRM-74174 | Evergreen Bank call, SSO questions, you own it; next step is audit prep |
+
+None of these record a dated availability promise to a customer, so there's nothing on SSO for a change to affect.
+
+## What is flagged, and why it matters to you
+
+Your commitments live in adjacent identity/security territory, and two of **yours** carry a notice — a decision I can't see may or may not change them. I can't confirm, deny, or describe that decision:
+
+- **SLA-77342 — Audit log export** to Lena Fox / Granite Insurance, by Q1 2027. Yours. **Flagged.** Note this is likely what CRM-74174's "follow up on audit prep" with Evergreen Bank touches, so the flag has reach beyond Granite.
+- **SLA-93532 — Advanced analytics (Osprey)** to Lena Fox / Pinecrest Realty, by spring release. Yours. **Flagged.**
+
+One more worth knowing about, though it isn't yours to reaffirm:
+
+- **SLA-12035 — SCIM provisioning** to Kai Berg / Umber Studios, by Q1 2027, made by Jordan Blake (AE). **Flagged.** SCIM is the closest thing to SSO in the commitment set, so if an SSO question is what prompted your ask, this is probably the promise you're actually circling. Route it to Jordan rather than speaking to it yourself.
+
+Unflagged and normal: **SLA-24221 — Offline mode** to Tom Hale / Meridian Travel, by Q2 (Priya Shah's), no later change found.
+
+## Recommended next step
+
+Before you reaffirm SLA-77342 or SLA-93532 to Lena Fox — she's the customer contact on both, so a single call could expose both — check with the product owner that each still holds. Until then, treat SSO itself as an open question you've been discussing, not something you've committed to; that's accurate to the record and leaves you room.

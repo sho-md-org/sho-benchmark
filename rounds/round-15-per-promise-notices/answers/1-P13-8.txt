@@ -1,0 +1,34 @@
+Research complete. Here's what the records show.
+
+## What I found
+
+**The promise is real and documented.** DRI-36664 (Quarry Mining sync, 2026-07-09) records Tom Hale reminding Brightline that "we told them SSO (SAML) by Q1 2027," and Leo Grant (AE) **confirmed it on the call**. So Quarry Mining's "as you promised" is accurate — this isn't a customer misremembering.
+
+**The date still stands.** NOT-20876 (Public roadmap H1 2027, published 2026-06-30) lists "SSO (SAML), SP- and IdP-initiated: Q1 2027." No record anywhere shows it moving.
+
+**The one slip I found is a different item.** SLA-17908 (#general, 2026-09-19) announces that *Sandbox environments* slipped to Q2 2027, with a request to update affected customers. SSO was not part of that announcement. Worth knowing in case Quarry Mining is also expecting sandbox.
+
+**Two caveats before this goes out:** the roadmap doc is ~3 months stale (last updated 2026-06-30, owner Maya Chen), and Linear returned zero results for *every* query I tried — including "EU data residency" and "roadmap Q1 2027" — so that source appears empty rather than telling me SSO is untracked. I have no engineering-level signal on SSO either way. The recent Quarry Mining SSO threads (SLA-53734 2026-09-25, CRM-60566 2026-08-27, NOT-20443 2026-08-24) are all content-free stubs.
+
+**My recommendation:** get a one-line confirmation from Maya Chen before sending. The AE already verbally reconfirmed Q1 2027 once in July; reconfirming a second time in writing on a stale roadmap is how a slip turns into a credibility problem. The draft below is written to be sendable as-is if product confirms.
+
+## Draft reply
+
+> Subject: Re: SSO (SAML) timing
+>
+> Hi Tom,
+>
+> Yes — SSO (SAML) is still targeted for Q1 2027, covering both SP-initiated and IdP-initiated flows. That's unchanged from what we discussed on our July 9 sync and it remains what's on our published H1 2027 roadmap.
+>
+> A couple of things worth flagging proactively:
+>
+> SCIM provisioning is also targeted for Q1 2027. Most teams roll that out alongside SAML, so if that's part of your plan, we should scope both together rather than treating SSO as a standalone.
+>
+> Separately, and unrelated to SSO: our Sandbox environments item has moved from Q4 2026 to Q2 2027. I don't believe you were counting on that, but I'd rather you hear it from me now than discover it later.
+>
+> If it's useful, I can set up a short call with our product team so you can get the implementation detail directly and start planning your IdP configuration on your side. Happy to line that up whenever suits.
+>
+> Best,
+> [AE name]
+
+Two notes on the drafting choices: I kept "targeted for" rather than "guaranteed," since Q1 2027 is a roadmap target and roadmaps move — that phrasing is honest without sounding like backpedaling. And I surfaced the sandbox slip unprompted because SLA-17908 explicitly asked reps to notify affected customers; if Quarry Mining wasn't expecting sandbox, delete that paragraph.

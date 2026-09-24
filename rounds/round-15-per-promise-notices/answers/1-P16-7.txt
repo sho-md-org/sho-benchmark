@@ -1,0 +1,65 @@
+I searched all four systems. Here's what I found, and an important caveat up front.
+
+## The honest headline: the record is empty
+
+There are **21 Keystone Energy records** across CRM and Drive, and every one is a content-free stub — a topic label, a date, and an owner or attendee list. No ARR, no renewal date, no logged commitments, no health score, no support volume, no named customer-side contacts.
+
+This isn't a search failure. Other accounts in the same CRM have real substance — e.g. `CRM-52816` (Northstar Pharma) records a specific commitment: "Tess Brown (CS) committed that HubSpot sync will be available by before summer. Logged as a renewal condition." Nothing like that exists for Keystone. Also: **Linear returns zero Keystone results, Slack returns zero, and Notion has no Keystone account plan.**
+
+So I can give you a defensible timeline, a set of inferences flagged as inferences, and a talk track — but I cannot give you "open commitments" or "risks" from the record, because nobody wrote them down. Treat the gap list as the real deliverable.
+
+## Where things stand (what the record does support)
+
+**Cadence and topics — 21 touchpoints, Apr 17 to Sep 25:**
+
+| Theme | Count | Records |
+|---|---|---|
+| Reliability (uptime/latency) | 5 | `CRM-23178`, `CRM-19012`, `DRI-46374`, `DRI-64156`, `DRI-41756` |
+| Analytics | 3 | `CRM-50205`, `CRM-71134`, `CRM-71909` |
+| Dashboards | 3 | `CRM-79992`, `DRI-39787`, `DRI-27950` |
+| Commercial (billing/pricing) | 2 | `CRM-56812`, `CRM-78617` |
+| Sentiment (NPS/churn) | 2 | `DRI-75981`, `DRI-20667` |
+
+**The one sequence worth your attention** — mid-August, three meetings in six days, then a gap:
+- Aug 10 `DRI-31273` — integrations + **QBR prep** (Sam Lee, you)
+- Aug 12 `DRI-41756` — sandbox + latency (Jordan Blake, Omar Haddad)
+- Aug 15 `DRI-20667` — **churn and pricing** (Ana Petrova)
+- *then five weeks of silence*
+- Sep 23 `CRM-19012` — uptime (Sam Lee), next step logged as "follow up on NPS"
+- Sep 25 `CRM-78617` — pricing (Jordan Blake), next step logged as "follow up on offline"
+
+**Inference, not fact:** a churn-and-pricing conversation in August followed by a five-week gap and then a pricing call is the shape of a commercial renegotiation with retention pressure behind it. I want to be clear that I am reading that off titles and dates alone — the record does not say Keystone is at risk.
+
+Two scheduling notes: `CRM-78617` (Sep 25) and `SLA-55835` (Sep 26) are dated **after today**, so the pricing call and an NPS update land before your QBR. Get both debriefs first — the pricing call in particular could change your whole framing.
+
+## Two things that jump out about ownership
+
+1. **You're barely on this account.** You appear in 3 of 21 records (`DRI-85290`, `DRI-39787`, `DRI-31273`), most recently Aug 10. You own **zero** CRM calls — those go to Sam Lee, Jordan Blake, Leo Grant, and Ana Petrova. If you're fronting the QBR, you're presenting someone else's relationship.
+2. **No single owner.** Four different people own the ten CRM calls, and "next steps" ping-pong between topics without resolution (Jun 18 → "follow up on uptime"; Jul 21 → "follow up on uptime"; Sep 23 is still about uptime). Whether those follow-ups ever closed is unrecorded.
+
+## Open commitments: none are logged
+
+I found **zero** logged Keystone commitments. Given Brightline's CRM clearly has a convention for this (`CRM-52816`), the absence means either nothing was promised or promises were made verbally and never captured. **Do not walk into the QBR assuming the former.** Before the call, ask Sam Lee, Jordan Blake, Leo Grant, and Ana Petrova directly: *"Did you promise Keystone anything with a date on it?"* An unrecorded commitment that surfaces in the room is the worst outcome available to you.
+
+## Fill these gaps before the call
+
+- **Commercial:** ARR, renewal date, contract terms, what the Sep 25 pricing call was actually about
+- **Commitments:** the four-owner sweep above
+- **Reliability:** actual uptime/latency numbers — five records on this theme and not one figure. If Keystone has been living with degradation, they will bring data and you should bring it first.
+- **Sentiment:** the NPS score behind `DRI-75981` and `SLA-55835`, and what "churn" meant in `DRI-20667` — Ana Petrova is your source
+- **Stakeholders:** you have no customer-side names at all
+- **Product asks:** nothing in Linear means no engineering commitments exist, or they're tracked somewhere I can't see — confirm which
+
+## What to say
+
+Structure, to be populated once you've closed the gaps:
+
+1. **Open on reliability, with numbers.** It's the most persistent theme across both systems and their most likely opening. Lead with it rather than receiving it.
+2. **Name the August-to-September gap before they do.** Five quiet weeks after a churn conversation is conspicuous. "We went quiet in September and I want to own that" costs you little and buys credibility.
+3. **Close the analytics/dashboards loop.** Six records, recurring since May, never resolved in the notes. Either it shipped — say so concretely — or say when.
+4. **Let them set the commercial frame.** With the pricing call landing Sep 25 and unknown terms, don't volunteer a position. Listen and take it back internally.
+5. **Fix the ownership problem out loud.** Four owners and drifting follow-ups is something they have almost certainly felt. Commit to being the single point of contact.
+
+**What I would not do:** present a metrics-and-wins QBR deck. You don't have the metrics, and the one sentiment signal in the record points at churn. A listening-and-recommitment posture fits the evidence; a victory-lap posture contradicts it.
+
+Happy to draft the talk track in full once you have the pricing debrief and the NPS number — those two change the tone more than anything else here.

@@ -1,0 +1,18 @@
+## Short answer: I can't source that decision, and I shouldn't guess at it
+
+I don't have access to any record documenting a cut of Advanced analytics, or the reasoning or decision-maker behind one. What I *can* see doesn't support the premise:
+
+- **NOT-20876** (Public roadmap H1 2027, 2026-06-30) still lists **Advanced analytics: Q2 2027** — no cut reflected there as of that date.
+- **SLA-93532** (2026-06-28) is your own commitment: you told Lena Fox at Pinecrest Realty that Advanced analytics (Osprey) would land in the spring release so they could finish their rollout.
+
+There is decision-level material on this feature that sits outside what I can read, so the absence of a cut in the roadmap above isn't proof the roadmap is current. I'm not able to tell you what that material says, and I'm not going to reconstruct reasoning or attribute a decision from inference — on a question where you need "exact reasoning and who decided," a plausible-sounding guess is worse than no answer.
+
+**Go to the product owner for Advanced analytics.** They own both the answer and the authority to give it to you on the record.
+
+## One thing worth acting on now
+
+Your Pinecrest commitment (SLA-93532) is the live exposure here. Before you reaffirm the spring-release timing to Lena Fox — in a QBR, an email, anywhere — confirm with the product owner that the promise still holds. Treat it as unconfirmed until they say otherwise.
+
+Three of your team's other commitments carry the same caution and may deserve the same check: SCIM provisioning to Kai Berg at Umber Studios (SLA-12035, Jordan Blake), and your own Audit log export to Lena Fox at Granite Insurance (SLA-77342). Offline mode for Meridian Travel (SLA-24221, Priya Shah) shows no later change.
+
+Want me to draft the note to the product owner covering Advanced analytics and the two other flagged commitments in one go?

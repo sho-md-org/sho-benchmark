@@ -1,0 +1,68 @@
+I pulled everything Cobalt Retail across CRM, Drive, Slack, Linear, and Notion. One thing to flag before the brief itself:
+
+**The source records are one-line stubs.** Every Cobalt record is a single sentence — topic, owner, and a "next: follow up on X." There is no ARR, renewal date, health score, NPS number, usage data, or named Cobalt-side contact anywhere in these systems. Slack, Linear, and Notion return **zero** Cobalt hits. So what follows is a reconstruction from the topic-and-commitment trail, which is real and useful, but you'll need to source the numbers elsewhere before the call.
+
+---
+
+# Cobalt Retail — QBR Brief
+
+## Where things stand
+
+20 logged touchpoints since April 2026: 10 CRM calls, 10 Drive meeting notes.
+
+**Arc of the relationship:** started technical (webhooks CRM-98822, roadmap CRM-70221, onboarding CRM-49779, search CRM-36268), moved through adoption (dashboards CRM-24697, exports DRI-41266, integrations DRI-18657), hit an NPS/advocacy phase mid-year (NPS CRM-92187, case study DRI-58616 / DRI-20022 / DRI-95243), and the last two months are dominated by **commercial and mobile** themes (pricing CRM-87224 → DRI-95243 → CRM-35990; billing CRM-94849 → DRI-75222; mobile app DRI-82140 → DRI-72283).
+
+**Two things to be aware of going in:**
+
+- **Last CRM entry is 2026-08-01** (CRM-35990). Nearly eight weeks with no logged CRM touchpoint heading into a QBR.
+- **No "Qbr prep (Cobalt Retail)" doc exists.** Roughly ten other accounts have one — Northstar Pharma DRI-28856, Fjord Media DRI-62486, Kestrel Foods DRI-33743, Riverton City DRI-20013, and others. Cobalt is the gap.
+- DRI-72283 ("Mobile app," Sam Lee + Priya Shah) is dated **2026-09-26** — two days from now. Either a scheduled session or a data error; worth confirming with Sam, since it may land right before your call and change what you say on mobile.
+
+## Open commitments
+
+Tracing each CRM "next step" forward to see whether anything closed it:
+
+| Commitment | Promised | Closed by | Status |
+|---|---|---|---|
+| Security review | CRM-70221 (Apr 20), re-promised CRM-36268 (May 22) — **both yours** | nothing | **Open ~5 months** |
+| Latency follow-up | CRM-49779 (Apr 27) | nothing | **Open ~5 months** |
+| SSO questions | raised DRI-20022 (Jul 27) | nothing | **Open, never revisited** |
+| EU customers | raised DRI-33978 (Jul 25) | nothing | **Open, raised once** |
+| Case study | CRM-98822 (Apr 1) | DRI-58616, DRI-20022, DRI-95243 | Discussed 3×, **no published artifact** |
+| Rate limits | CRM-24697, CRM-16603 | DRI-33978 (Jul 25) | Addressed |
+| Audit prep | CRM-87224 (Jun 23) | DRI-75222 (Aug 11) | Addressed |
+| Billing | CRM-94849 (Jul 23) | DRI-75222 (Aug 11) | Addressed |
+| Pricing | CRM-35990 (Aug 1) | DRI-95243 (Aug 5) | Addressed, but recurring |
+
+The security review is the one to walk in owning. You committed to it twice, five months ago, and nothing in any system shows it happening.
+
+## Risks
+
+1. **Security review, twice-promised and unclosed (CRM-70221, CRM-36268).** In a retail account this usually sits upstream of a procurement or compliance gate. If they raise it, you're on the back foot.
+2. **Customer asks have no engineering representation.** Mobile app, offline (DRI-82140), rate limits, SSO, latency — Linear has *nothing* on Cobalt. Any roadmap commitment you make on the call has no ticket behind it.
+3. **Pricing keeps resurfacing** — June (CRM-87224), August (DRI-95243, CRM-35990) — alongside billing and audit prep (DRI-75222). Three commercial conversations in eight weeks usually signals budget scrutiny or a renewal approaching. Confirm the renewal date before you dial.
+4. **No consistent owner.** Ten CRM calls, four owners: Priya Shah (4), Maya Chen (2), Omar Haddad (2), Tess Brown (2). Drive adds Ana Petrova, Sam Lee, Jordan Blake, Dana Ortiz, Leo Grant. The account has no clear throughline, and the customer likely feels it.
+5. **No named Cobalt-side contact in any record.** Every attendee logged is Brightline. You don't have a documented champion, exec sponsor, or economic buyer.
+6. **Case study stalled.** Three working sessions since April with no output — an advocacy commitment you've taken their time on and not delivered.
+
+## What to say
+
+**Lead with the security review.** Don't wait to be asked. "I owe you a security review — I committed to it in April and it hasn't happened. Here's the date." Naming it first converts your weakest point into credibility for everything after.
+
+**Then, in order:**
+
+- **Mobile and offline** — this is where their energy is (DRI-82140, DRI-72283). Check with Sam Lee about the 9/26 session first so you're not contradicting a conversation from two days earlier.
+- **Close the case study loop** — three sessions, no artifact. Either commit to a ship date or retire it honestly. Don't let it drift into a fourth quarter.
+- **Get ahead of pricing** — it's come up three times since June. Ask directly what's driving it rather than letting it surface as a renewal surprise.
+- **Propose a single owner** — yourself. The rotating-cast problem is fixable and naming it reads as accountability, not apology.
+- **Pick up SSO and EU customers** — both raised once (DRI-20022, DRI-33978) and dropped. Asking after them shows you've been listening.
+
+**Don't promise roadmap dates.** Nothing on mobile, offline, or SSO exists in Linear. Commit to bringing them a dated answer instead.
+
+## Before the call — what you need that isn't in these systems
+
+ARR and renewal date · current NPS (CRM-92187 logged the conversation, not the score) · usage/seat trend · named Cobalt contacts and their roles · actual status of the security review.
+
+Worth noting: the data team owes CS a weekly churn-risk report starting October (SLA-40138). That's one week too late to help here.
+
+I'd suggest creating the missing `Qbr prep (Cobalt Retail)` doc to match the pattern on the other accounts — happy to draft it from this if useful.

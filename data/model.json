@@ -1,0 +1,4347 @@
+{
+ "extractor": {
+  "stage1": "reused from site10 (frozen)",
+  "stage2_model": "opus",
+  "S2": "Below are commitments, product decisions and feature dependencies extracted from a company's records. Features may be named by codename or plain name; match them.\nFor EACH commitment:\n- feature: one canonical plain feature name (e.g. \"SSO (SAML)\", \"Audit log export\"), the same string for every commitment on the same feature.\n- current state, using decisions about its feature and about any feature it depends on (a delay or cut of a dependency delays the dependent feature). Order by date; a later 'reverse' restores the earlier plan. A 'rescope' that removes a capability affects only commitments whose scope_details include that capability.\n  States: as_promised | changed | partially_changed | fulfilled.\n- affecting_decisions: the decision records that determine the current state (include the original decision record, not only follow-ups).\n- owner: the PERSON named as the decider in the record that made the change (e.g. \"Decision (Dana Ortiz, PM)\" gives Dana Ortiz; \"Decision (CEO)\" gives CEO). Do NOT use a later follow-up ticket or a channel name. null if no change.\n- owner_record: the record id where that decider is named.\nReturn ONLY JSON: {\"links\":[{\"commitment_record\":..,\"feature\":..,\"current_state\":..,\"affecting_decisions\":[{\"record\":..,\"date\":..,\"effect\":..,\"via_dependency\":true|false}],\"owner\":..,\"owner_record\":..}]} with one entry per commitment."
+ },
+ "commitments": [
+  {
+   "record": "CRM-16328",
+   "promiser": "Leo Grant (AE)",
+   "recipient": "Bluewater Logistics",
+   "what": "Salesforce sync",
+   "scope_details": "Salesforce sync",
+   "by_when": "before their Q2 planning cycle"
+  },
+  {
+   "record": "DRI-80868",
+   "promiser": "Jordan Blake (AE)",
+   "recipient": "Harbor Clinics (Ines Park)",
+   "what": "Data retention controls",
+   "scope_details": "Data retention controls",
+   "by_when": "Q1 2027"
+  },
+  {
+   "record": "DRI-86231",
+   "promiser": "Priya Shah (AE)",
+   "recipient": "Aster Health (Omar Aziz)",
+   "what": "Higher API rate limits",
+   "scope_details": "Higher API rate limits",
+   "by_when": "October"
+  },
+  {
+   "record": "DRI-91134",
+   "promiser": "Company (CS team / Tess Brown, confirmed)",
+   "recipient": "Juniper Schools (Lena Fox)",
+   "what": "Bulk import v2 delivered before customer's migration",
+   "scope_details": "Bulk import v2",
+   "by_when": "before their January migration"
+  },
+  {
+   "record": "CRM-86750",
+   "promiser": "Priya Shah (AE)",
+   "recipient": "Lumen Labs (Tom Hale)",
+   "what": "Advanced analytics",
+   "scope_details": "Advanced analytics",
+   "by_when": "mid-2027"
+  },
+  {
+   "record": "CRM-55898",
+   "promiser": "Jordan Blake (AE)",
+   "recipient": "Meridian Travel (Omar Aziz)",
+   "what": "EU data residency",
+   "scope_details": "EU data residency",
+   "by_when": "early next year"
+  },
+  {
+   "record": "CRM-38600",
+   "promiser": "Maya Chen",
+   "recipient": "Cobalt Retail (Sam Ortiz)",
+   "what": "Audit log export delivery",
+   "scope_details": "CSV export",
+   "by_when": "Q1 2027"
+  },
+  {
+   "record": "DRI-29830",
+   "promiser": "Jordan Blake (AE)",
+   "recipient": "Summit Gear",
+   "what": "SCIM provisioning",
+   "scope_details": "SCIM provisioning",
+   "by_when": "early next year"
+  },
+  {
+   "record": "CRM-26651",
+   "promiser": "Tess Brown",
+   "recipient": "Granite Insurance (Omar Aziz)",
+   "what": "EU data residency availability",
+   "scope_details": "EU data residency",
+   "by_when": "end of Q1 2027"
+  },
+  {
+   "record": "CRM-18094",
+   "promiser": "Tess Brown",
+   "recipient": "Norrland AB",
+   "what": "Bulk import v2 will be available",
+   "scope_details": "Bulk import v2 (Tern)",
+   "by_when": "Q1 2027"
+  },
+  {
+   "record": "DRI-74829",
+   "promiser": "Company (Priya Shah, AE)",
+   "recipient": "Tidewater Ports",
+   "what": "EU data residency",
+   "scope_details": "EU data residency",
+   "by_when": "Q1 2027"
+  },
+  {
+   "record": "CRM-64756",
+   "promiser": "Tess Brown",
+   "recipient": "Delta Freight (Paolo Diaz)",
+   "what": "SSO",
+   "scope_details": "SAML-based SSO",
+   "by_when": "end of Q1"
+  },
+  {
+   "record": "SLA-31161",
+   "promiser": "Priya Shah",
+   "recipient": "Lumen Labs",
+   "what": "Data retention controls",
+   "scope_details": "Data retention controls",
+   "by_when": "early next year"
+  },
+  {
+   "record": "DRI-53113",
+   "promiser": "Company (via CS team)",
+   "recipient": "Kestrel Foods",
+   "what": "Promised sandbox environments would be delivered",
+   "scope_details": "Sandbox environments",
+   "by_when": "Q4 2026"
+  },
+  {
+   "record": "DRI-29590",
+   "promiser": "Priya Shah (AE)",
+   "recipient": "Bluewater Logistics",
+   "what": "Custom roles feature delivery",
+   "scope_details": "Custom roles",
+   "by_when": "Q2 release"
+  },
+  {
+   "record": "SLA-40138",
+   "promiser": "Data team",
+   "recipient": "CS (#cs-leads)",
+   "what": "recurring churn-risk report",
+   "scope_details": "churn-risk report, delivered every Monday",
+   "by_when": "starting October"
+  },
+  {
+   "record": "CRM-98566",
+   "promiser": "Maya Chen",
+   "recipient": "Bluewater Logistics (Ruth Kim)",
+   "what": "Promised higher API rate limits, explicitly affirmed as a firm commitment (\"you have my word\")",
+   "scope_details": "Higher API rate limits",
+   "by_when": "this autumn"
+  },
+  {
+   "record": "CRM-74447",
+   "promiser": "Tess Brown",
+   "recipient": "Ada Moss (Riverton City)",
+   "what": "SSO (SAML) feature availability, committed as a renewal condition",
+   "scope_details": "SSO (SAML) (codename Heron)",
+   "by_when": "early next year"
+  },
+  {
+   "record": "CRM-62434",
+   "promiser": "Priya Shah (AE)",
+   "recipient": "Umber Studios (Ruth Kim)",
+   "what": "SSO (SAML) will be available, with IdP-initiated sign-in",
+   "scope_details": "SSO (SAML), IdP-initiated sign-in",
+   "by_when": "March"
+  },
+  {
+   "record": "DRI-36664",
+   "promiser": "Leo Grant (AE) / company",
+   "recipient": "Quarry Mining (Tom Hale)",
+   "what": "SSO (SAML) availability, as previously promised and reconfirmed",
+   "scope_details": "SSO (SAML)",
+   "by_when": "Q1 2027"
+  },
+  {
+   "record": "CRM-31062",
+   "promiser": "Priya Shah",
+   "recipient": "Ines Park (Vantage Telecom)",
+   "what": "SSO (SAML) support",
+   "scope_details": "SAML SSO including IdP-initiated login from Okta",
+   "by_when": "Q1 2027"
+  },
+  {
+   "record": "CRM-14909",
+   "promiser": "Jordan Blake",
+   "recipient": "Orchid Hotels (Lena Fox)",
+   "what": "Deliver Advanced analytics feature",
+   "scope_details": "Advanced analytics",
+   "by_when": "Q2 2027"
+  },
+  {
+   "record": "DRI-63243",
+   "promiser": "Jordan Blake (AE)",
+   "recipient": "Kai Berg (Pinecrest Realty)",
+   "what": "Audit log export",
+   "scope_details": "CSV download",
+   "by_when": "early next year"
+  },
+  {
+   "record": "DRI-42319",
+   "promiser": "Jordan Blake (AE)",
+   "recipient": "Fjord Media",
+   "what": "Custom roles feature",
+   "scope_details": "Custom roles (Robin)",
+   "by_when": "Q2 2027"
+  },
+  {
+   "record": "CRM-52816",
+   "promiser": "Tess Brown",
+   "recipient": "Northstar Pharma",
+   "what": "HubSpot sync availability",
+   "scope_details": "HubSpot sync",
+   "by_when": "before summer"
+  },
+  {
+   "record": "SLA-93532",
+   "promiser": "Maya Chen (CS)",
+   "recipient": "Lena Fox (Pinecrest Realty)",
+   "what": "Told customer Advanced analytics (Osprey) will be available in the spring release so they can finish their rollout",
+   "scope_details": "Advanced analytics (Osprey)",
+   "by_when": "spring release"
+  },
+  {
+   "record": "SLA-24221",
+   "promiser": "Priya Shah (AE)",
+   "recipient": "Tom Hale (Meridian Travel)",
+   "what": "Offline mode availability to support their rollout",
+   "scope_details": "Offline mode",
+   "by_when": "Q2"
+  },
+  {
+   "record": "DRI-98303",
+   "promiser": "Tess Brown (CS)",
+   "recipient": "Paolo Diaz (Northstar Pharma)",
+   "what": "Sandbox environments",
+   "scope_details": "Sandbox environments",
+   "by_when": "before year end"
+  },
+  {
+   "record": "SLA-12035",
+   "promiser": "Jordan Blake (AE)",
+   "recipient": "Kai Berg (Umber Studios)",
+   "what": "SCIM provisioning availability",
+   "scope_details": "SCIM provisioning",
+   "by_when": "Q1 2027"
+  },
+  {
+   "record": "DRI-34564",
+   "promiser": "Company (confirmed by Jordan Blake, AE)",
+   "recipient": "Keystone Energy",
+   "what": "Audit log export with SIEM streaming",
+   "scope_details": "Audit log export, SIEM/Splunk streaming",
+   "by_when": "Q1 2027"
+  },
+  {
+   "record": "DRI-83071",
+   "promiser": "Company (confirmed by Priya Shah, AE)",
+   "recipient": "Delta Freight",
+   "what": "Offline mode (codename Plover)",
+   "scope_details": "Offline mode (Plover)",
+   "by_when": "spring field season"
+  },
+  {
+   "record": "CRM-70743",
+   "promiser": "Priya Shah (AE)",
+   "recipient": "Kestrel Foods (Ada Moss)",
+   "what": "Salesforce sync availability, logged as a renewal condition",
+   "scope_details": "Salesforce sync",
+   "by_when": "early 2027"
+  },
+  {
+   "record": "SLA-54412",
+   "promiser": "Omar (Platform)",
+   "recipient": "Support (#support-leads)",
+   "what": "delivery of the SLA dashboard",
+   "scope_details": "SLA dashboard",
+   "by_when": "November"
+  },
+  {
+   "record": "DRI-13941",
+   "promiser": "Maya Chen (CS)",
+   "recipient": "Nia Cole (Willow Care)",
+   "what": "HubSpot sync",
+   "scope_details": "HubSpot sync (codename: Martin)",
+   "by_when": "Q2 2027"
+  },
+  {
+   "record": "CRM-25995",
+   "promiser": "Priya Shah (AE)",
+   "recipient": "Ironwood Legal (Paolo Diaz)",
+   "what": "Salesforce sync availability committed as a renewal condition",
+   "scope_details": "Salesforce sync",
+   "by_when": "Q1 2027"
+  },
+  {
+   "record": "SLA-46650",
+   "promiser": "Leo Grant (AE)",
+   "recipient": "Ironwood Legal (Robin)",
+   "what": "Custom roles feature promised as key deal-closing ask",
+   "scope_details": "Custom roles",
+   "by_when": "before their reorg in April"
+  },
+  {
+   "record": "DRI-76161",
+   "promiser": "company (reaffirmed by Maya Chen, CS)",
+   "recipient": "Evergreen Bank",
+   "what": "Offline mode",
+   "scope_details": "Offline mode",
+   "by_when": "Q2 2027"
+  },
+  {
+   "record": "SLA-77342",
+   "promiser": "Maya Chen (CS)",
+   "recipient": "Lena Fox / Granite Insurance",
+   "what": "Audit log export",
+   "scope_details": "SIEM streaming",
+   "by_when": "Q1 2027"
+  },
+  {
+   "record": "DRI-49806",
+   "promiser": "Jordan Blake (AE)",
+   "recipient": "Delta Freight",
+   "what": "EU data residency",
+   "scope_details": "EU data residency (codename Finch)",
+   "by_when": "before their March data audit"
+  },
+  {
+   "record": "CRM-60841",
+   "promiser": "Tess Brown",
+   "recipient": "Umber Studios (Ines Park)",
+   "what": "Webhooks v2 (Kite)",
+   "scope_details": "Webhooks v2",
+   "by_when": "Q1 2027"
+  }
+ ],
+ "decisions": [
+  {
+   "record": "SLA-25439",
+   "date": "2026-09-12",
+   "decided_by": "Sam Lee (eng lead)",
+   "subject": "Lark",
+   "aliases": [
+    "Lark v1",
+    "GANNET-33"
+   ],
+   "what": "Lark v1 ships as CSV export only; SIEM/Splunk streaming deferred to 2028 due to connector licence cost",
+   "effect": "rescope",
+   "new_date": "Q1 2027",
+   "scope_removed": "SIEM/Splunk streaming (deferred to 2028)"
+  },
+  {
+   "record": "LIN-58810",
+   "date": "2026-04-26",
+   "decided_by": null,
+   "subject": "Offline",
+   "aliases": [
+    "offline",
+    "offline mode",
+    "offline support"
+   ],
+   "what": "Offline improvement initiative canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Entire offline feature/initiative"
+  },
+  {
+   "record": "LIN-66045",
+   "date": "2026-05-28",
+   "decided_by": null,
+   "subject": "NPS",
+   "aliases": [
+    "nps",
+    "NPS surveys"
+   ],
+   "what": "NPS improvement initiative canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Entire NPS feature/initiative"
+  },
+  {
+   "record": "LIN-71027",
+   "date": "2026-05-24",
+   "decided_by": null,
+   "subject": "Sandbox",
+   "aliases": [
+    "sandbox",
+    "sandbox environment"
+   ],
+   "what": "Sandbox improvement initiative canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Entire sandbox feature/initiative"
+  },
+  {
+   "record": "LIN-54580",
+   "date": "2026-07-06",
+   "decided_by": null,
+   "subject": "Exports",
+   "aliases": [
+    "exports",
+    "export feature"
+   ],
+   "what": "Exports improvement initiative canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Entire exports feature/initiative"
+  },
+  {
+   "record": "NOT-20876",
+   "date": "2026-06-30",
+   "decided_by": "unspecified",
+   "subject": "EU data residency",
+   "aliases": [
+    "EU data residency"
+   ],
+   "what": "Set EU data residency target",
+   "effect": "set",
+   "new_date": "Q1 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "NOT-20876",
+   "date": "2026-06-30",
+   "decided_by": "unspecified",
+   "subject": "Advanced analytics",
+   "aliases": [
+    "Advanced analytics",
+    "Analytics"
+   ],
+   "what": "Set advanced analytics target",
+   "effect": "set",
+   "new_date": "Q2 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "NOT-20876",
+   "date": "2026-06-30",
+   "decided_by": "unspecified",
+   "subject": "Salesforce sync",
+   "aliases": [
+    "Salesforce sync"
+   ],
+   "what": "Set Salesforce sync target",
+   "effect": "set",
+   "new_date": "Q1 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "NOT-20876",
+   "date": "2026-06-30",
+   "decided_by": "unspecified",
+   "subject": "SSO (SAML)",
+   "aliases": [
+    "SSO",
+    "SAML SSO",
+    "SP-initiated SSO",
+    "IdP-initiated SSO"
+   ],
+   "what": "Set SSO (SAML), SP- and IdP-initiated target",
+   "effect": "set",
+   "new_date": "Q1 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "NOT-20876",
+   "date": "2026-06-30",
+   "decided_by": "unspecified",
+   "subject": "Audit log export incl. SIEM streaming",
+   "aliases": [
+    "Audit log export",
+    "SIEM streaming"
+   ],
+   "what": "Set audit log export incl. SIEM streaming target",
+   "effect": "set",
+   "new_date": "Q1 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "NOT-20876",
+   "date": "2026-06-30",
+   "decided_by": "unspecified",
+   "subject": "Custom roles",
+   "aliases": [
+    "Custom roles"
+   ],
+   "what": "Set custom roles target",
+   "effect": "set",
+   "new_date": "Q2 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "NOT-20876",
+   "date": "2026-06-30",
+   "decided_by": "unspecified",
+   "subject": "HubSpot sync",
+   "aliases": [
+    "HubSpot sync"
+   ],
+   "what": "Set HubSpot sync target",
+   "effect": "set",
+   "new_date": "Q2 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "NOT-20876",
+   "date": "2026-06-30",
+   "decided_by": "unspecified",
+   "subject": "SCIM provisioning",
+   "aliases": [
+    "SCIM provisioning",
+    "SCIM"
+   ],
+   "what": "Set SCIM provisioning target",
+   "effect": "set",
+   "new_date": "Q1 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "NOT-20876",
+   "date": "2026-06-30",
+   "decided_by": "unspecified",
+   "subject": "Offline mode",
+   "aliases": [
+    "Offline mode"
+   ],
+   "what": "Set offline mode target",
+   "effect": "set",
+   "new_date": "Q2 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "NOT-20876",
+   "date": "2026-06-30",
+   "decided_by": "unspecified",
+   "subject": "Bulk import v2",
+   "aliases": [
+    "Bulk import v2",
+    "Bulk import"
+   ],
+   "what": "Set bulk import v2 target",
+   "effect": "set",
+   "new_date": "Q1 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "NOT-20876",
+   "date": "2026-06-30",
+   "decided_by": "unspecified",
+   "subject": "Data retention controls",
+   "aliases": [
+    "Data retention controls"
+   ],
+   "what": "Set data retention controls target",
+   "effect": "set",
+   "new_date": "Q1 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "NOT-20876",
+   "date": "2026-06-30",
+   "decided_by": "unspecified",
+   "subject": "Sandbox environments",
+   "aliases": [
+    "Sandbox environments",
+    "Sandbox"
+   ],
+   "what": "Set sandbox environments target",
+   "effect": "set",
+   "new_date": "Q4 2026",
+   "scope_removed": null
+  },
+  {
+   "record": "NOT-20876",
+   "date": "2026-06-30",
+   "decided_by": "unspecified",
+   "subject": "Webhooks v2",
+   "aliases": [
+    "Webhooks v2",
+    "Webhooks"
+   ],
+   "what": "Set webhooks v2 target",
+   "effect": "set",
+   "new_date": "Q1 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "DRI-29830",
+   "date": "2026-06-19",
+   "decided_by": "Jordan Blake (AE)",
+   "subject": "SCIM provisioning",
+   "aliases": [
+    "SCIM provisioning",
+    "SCIM"
+   ],
+   "what": "Confirmed prior commitment of SCIM provisioning to Summit Gear",
+   "effect": "confirm",
+   "new_date": "early next year",
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-77566",
+   "date": "2026-04-03",
+   "decided_by": "unspecified",
+   "subject": "Analytics",
+   "aliases": [
+    "Improve analytics",
+    "Analytics"
+   ],
+   "what": "Analytics improvement work marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-24408",
+   "date": "2026-09-07",
+   "decided_by": "unspecified",
+   "subject": "Search",
+   "aliases": [
+    "Improve search",
+    "Search"
+   ],
+   "what": "Search improvement work marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-84289",
+   "date": "2026-04-27",
+   "decided_by": null,
+   "subject": "Reporting",
+   "aliases": [
+    "Reporting"
+   ],
+   "what": "Reporting improvement work item canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-57659",
+   "date": "2026-09-17",
+   "decided_by": null,
+   "subject": "Roadmap",
+   "aliases": [
+    "Roadmap"
+   ],
+   "what": "Roadmap improvement work item canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-13342",
+   "date": "2026-06-01",
+   "decided_by": null,
+   "subject": "Audit prep",
+   "aliases": [
+    "Audit prep"
+   ],
+   "what": "Audit prep improvement work item canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-21257",
+   "date": "2026-04-25",
+   "decided_by": null,
+   "subject": "Reporting",
+   "aliases": [
+    "Reporting"
+   ],
+   "what": "Reporting improvement work item marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-93419",
+   "date": "2026-07-05",
+   "decided_by": "",
+   "subject": "EU customers",
+   "aliases": [
+    "EU customers improvement"
+   ],
+   "what": "EU customers improvement initiative canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "EU customers improvements"
+  },
+  {
+   "record": "LIN-43970",
+   "date": "2026-08-07",
+   "decided_by": "",
+   "subject": "Analytics",
+   "aliases": [
+    "Analytics improvement"
+   ],
+   "what": "Analytics improvement marked done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "SLA-35381",
+   "date": "2026-09-08",
+   "decided_by": "",
+   "subject": "Heron page",
+   "aliases": [
+    "Heron marketing page",
+    "Heron marketing page rewrite",
+    "RAIL-03"
+   ],
+   "what": "Heron marketing page rewrite slips to November",
+   "effect": "delay",
+   "new_date": "November",
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-57793",
+   "date": "2026-05-20",
+   "decided_by": "",
+   "subject": "Analytics",
+   "aliases": [
+    "Analytics improvement"
+   ],
+   "what": "Analytics improvement initiative canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Analytics improvements"
+  },
+  {
+   "record": "LIN-72656",
+   "date": "2026-06-20",
+   "decided_by": "",
+   "subject": "Billing",
+   "aliases": [
+    "Billing improvement"
+   ],
+   "what": "Billing improvement marked done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-66875",
+   "date": "2026-04-06",
+   "decided_by": "",
+   "subject": "Notifications",
+   "aliases": [
+    "Notifications improvement"
+   ],
+   "what": "Notifications improvement marked done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "SLA-93341",
+   "date": "2026-09-05",
+   "decided_by": "Dana Ortiz",
+   "subject": "Wren (SCIM)",
+   "aliases": [
+    "Wren",
+    "SCIM",
+    "PETREL-58"
+   ],
+   "what": "Wren (SCIM) delivery pushed to Q4 2027 following identity team reorg",
+   "effect": "delay",
+   "new_date": "Q4 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "SLA-39322",
+   "date": "2026-09-09",
+   "decided_by": "CEO",
+   "subject": "Osprey",
+   "aliases": [
+    "Osprey",
+    "MERLIN-77"
+   ],
+   "what": "Osprey is cut from the 2027 plan to fund the core platform rewrite",
+   "effect": "cut",
+   "new_date": "2028 (revisit)",
+   "scope_removed": "Osprey removed entirely from 2027 plan"
+  },
+  {
+   "record": "LIN-67731",
+   "date": "2026-06-22",
+   "decided_by": "unknown",
+   "subject": "Reporting",
+   "aliases": [
+    "Reporting"
+   ],
+   "what": "Reporting improvement effort canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Reporting improvements"
+  },
+  {
+   "record": "LIN-77821",
+   "date": "2026-08-27",
+   "decided_by": "unknown",
+   "subject": "Integrations",
+   "aliases": [
+    "Integrations"
+   ],
+   "what": "Integrations improvement effort canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Integrations improvements"
+  },
+  {
+   "record": "LIN-80333",
+   "date": "2026-04-20",
+   "decided_by": "unknown",
+   "subject": "EU customers",
+   "aliases": [
+    "EU customers"
+   ],
+   "what": "EU customers improvement effort canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "EU customers improvements"
+  },
+  {
+   "record": "DRI-74829",
+   "date": "2026-07-19",
+   "decided_by": "Priya Shah (AE)",
+   "subject": "EU data residency",
+   "aliases": [
+    "EU data residency"
+   ],
+   "what": "Confirmed prior commitment of EU data residency to Tidewater Ports",
+   "effect": "confirm",
+   "new_date": "Q1 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-61639",
+   "date": "2026-07-01",
+   "decided_by": null,
+   "subject": "SSO questions",
+   "aliases": [
+    "SSO questions",
+    "SSO"
+   ],
+   "what": "SSO questions improvement work canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "SSO questions improvements"
+  },
+  {
+   "record": "LIN-86753",
+   "date": "2026-04-24",
+   "decided_by": null,
+   "subject": "Roadmap",
+   "aliases": [
+    "Roadmap"
+   ],
+   "what": "Roadmap improvement work completed/shipped",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-88192",
+   "date": "2026-05-21",
+   "decided_by": null,
+   "subject": "Reporting",
+   "aliases": [
+    "Reporting"
+   ],
+   "what": "Reporting improvement work canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Reporting improvements"
+  },
+  {
+   "record": "DRI-29590",
+   "date": "2026-08-08",
+   "decided_by": "Priya Shah (AE)",
+   "subject": "Custom roles",
+   "aliases": [
+    "Custom roles"
+   ],
+   "what": "Confirmed prior commitment of Custom roles in Q2 release",
+   "effect": "confirm",
+   "new_date": "Q2 release",
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-68910",
+   "date": "2026-05-16",
+   "decided_by": "unknown",
+   "subject": "Churn",
+   "aliases": [
+    "Churn"
+   ],
+   "what": "Churn feature marked Done",
+   "effect": "shipped",
+   "new_date": "2026-05-16",
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-44315",
+   "date": "2026-06-14",
+   "decided_by": "unknown",
+   "subject": "Churn",
+   "aliases": [
+    "Churn"
+   ],
+   "what": "Churn status reverted from Done back to In progress",
+   "effect": "reverse",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-12294",
+   "date": "2026-09-16",
+   "decided_by": "unknown",
+   "subject": "Rate limits",
+   "aliases": [
+    "Rate limits",
+    "API rate limits"
+   ],
+   "what": "Rate limits feature marked Done",
+   "effect": "shipped",
+   "new_date": "2026-09-16",
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-37618",
+   "date": "2026-09-18",
+   "decided_by": "unknown",
+   "subject": "Permissions UI",
+   "aliases": [
+    "Permissions UI",
+    "Permissions ui"
+   ],
+   "what": "Permissions UI feature canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Permissions UI"
+  },
+  {
+   "record": "LIN-28578",
+   "date": "2026-08-11",
+   "decided_by": "unknown",
+   "subject": "Sandbox",
+   "aliases": [
+    "Sandbox"
+   ],
+   "what": "Sandbox feature canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Sandbox"
+  },
+  {
+   "record": "LIN-57865",
+   "date": "2026-05-28",
+   "decided_by": "unknown",
+   "subject": "Roadmap",
+   "aliases": [
+    "Roadmap"
+   ],
+   "what": "Roadmap feature marked Done",
+   "effect": "shipped",
+   "new_date": "2026-05-28",
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-25847",
+   "date": "2026-04-14",
+   "decided_by": null,
+   "subject": "Notifications",
+   "aliases": [
+    "notifications"
+   ],
+   "what": "Notifications marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-53427",
+   "date": "2026-05-22",
+   "decided_by": null,
+   "subject": "Sandbox",
+   "aliases": [
+    "sandbox"
+   ],
+   "what": "Sandbox marked Canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Sandbox"
+  },
+  {
+   "record": "LIN-96766",
+   "date": "2026-09-21",
+   "decided_by": null,
+   "subject": "Webhooks",
+   "aliases": [
+    "webhooks"
+   ],
+   "what": "Webhooks marked Canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Webhooks"
+  },
+  {
+   "record": "LIN-51366",
+   "date": "2026-07-18",
+   "decided_by": null,
+   "subject": "SSO questions",
+   "aliases": [
+    "sso questions",
+    "sso"
+   ],
+   "what": "SSO questions marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-63855",
+   "date": "2026-07-09",
+   "decided_by": "unknown",
+   "subject": "Search",
+   "aliases": [
+    "Search"
+   ],
+   "what": "Search improvement ticket canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Search"
+  },
+  {
+   "record": "LIN-19852",
+   "date": "2026-06-09",
+   "decided_by": "unknown",
+   "subject": "Billing",
+   "aliases": [
+    "Billing"
+   ],
+   "what": "Billing improvement ticket canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Billing"
+  },
+  {
+   "record": "LIN-95982",
+   "date": "2026-09-23",
+   "decided_by": "unknown",
+   "subject": "Roadmap",
+   "aliases": [
+    "Roadmap"
+   ],
+   "what": "Roadmap improvement ticket marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-37246",
+   "date": "2026-07-27",
+   "decided_by": "unknown",
+   "subject": "Search",
+   "aliases": [
+    "Search"
+   ],
+   "what": "Search improvement ticket marked Done, reversing earlier cancellation",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "DRI-36664",
+   "date": "2026-07-09",
+   "decided_by": "Leo Grant (AE)",
+   "subject": "SSO (SAML)",
+   "aliases": [
+    "SSO",
+    "SAML",
+    "SSO SAML"
+   ],
+   "what": "Confirmed prior commitment of SSO (SAML) by Q1 2027 for Quarry Mining",
+   "effect": "confirm",
+   "new_date": "Q1 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-41342",
+   "date": "2026-04-02",
+   "decided_by": null,
+   "subject": "Reporting",
+   "aliases": [
+    "Reporting"
+   ],
+   "what": "Improve reporting",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-36495",
+   "date": "2026-08-17",
+   "decided_by": null,
+   "subject": "Sandbox",
+   "aliases": [
+    "Sandbox"
+   ],
+   "what": "Improve sandbox",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-12632",
+   "date": "2026-07-12",
+   "decided_by": null,
+   "subject": "SSO questions",
+   "aliases": [
+    "Sso questions",
+    "SSO questions"
+   ],
+   "what": "Improve SSO questions",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-45420",
+   "date": "2026-09-09",
+   "decided_by": null,
+   "subject": "QBR prep",
+   "aliases": [
+    "Qbr prep",
+    "QBR prep"
+   ],
+   "what": "Improve QBR prep",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-38306",
+   "date": "2026-07-19",
+   "decided_by": null,
+   "subject": "Support queue",
+   "aliases": [
+    "Support queue"
+   ],
+   "what": "Improve support queue",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-62396",
+   "date": "2026-07-04",
+   "decided_by": null,
+   "subject": "Offline",
+   "aliases": [
+    "Offline"
+   ],
+   "what": "Improve offline",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-65731",
+   "date": "2026-09-26",
+   "decided_by": null,
+   "subject": "Search",
+   "aliases": [
+    "Search"
+   ],
+   "what": "Improve search",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-17249",
+   "date": "2026-04-07",
+   "decided_by": null,
+   "subject": "Security review",
+   "aliases": [
+    "Security review"
+   ],
+   "what": "Security review work item canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-50857",
+   "date": "2026-04-24",
+   "decided_by": null,
+   "subject": "Offline",
+   "aliases": [
+    "Offline",
+    "Offline mode"
+   ],
+   "what": "Offline work item canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-70963",
+   "date": "2026-07-07",
+   "decided_by": null,
+   "subject": "Offline",
+   "aliases": [
+    "Offline",
+    "Offline mode"
+   ],
+   "what": "Offline work item marked done, reversing prior cancellation (LIN-50857)",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-59626",
+   "date": "2026-07-12",
+   "decided_by": null,
+   "subject": "Analytics",
+   "aliases": [
+    "Analytics"
+   ],
+   "what": "Analytics work item canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Analytics feature work"
+  },
+  {
+   "record": "LIN-21502",
+   "date": "2026-05-12",
+   "decided_by": null,
+   "subject": "Uptime",
+   "aliases": [
+    "Uptime"
+   ],
+   "what": "Uptime work item canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Uptime feature work"
+  },
+  {
+   "record": "LIN-10376",
+   "date": "2026-06-21",
+   "decided_by": null,
+   "subject": "Rate limits",
+   "aliases": [
+    "Rate limits",
+    "rate limiting"
+   ],
+   "what": "Rate limits work item marked done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-46674",
+   "date": "2026-09-17",
+   "decided_by": null,
+   "subject": "Case study",
+   "aliases": [
+    "Case study"
+   ],
+   "what": "Case study work item marked done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-56067",
+   "date": "2026-06-08",
+   "decided_by": null,
+   "subject": "SSO questions",
+   "aliases": [
+    "Sso questions",
+    "SSO"
+   ],
+   "what": "SSO questions work item marked done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-65074",
+   "date": "2026-05-08",
+   "decided_by": null,
+   "subject": "Latency",
+   "aliases": [
+    "Latency"
+   ],
+   "what": "Latency work item marked done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-59226",
+   "date": "2026-04-18",
+   "decided_by": "",
+   "subject": "Onboarding",
+   "aliases": [
+    "Onboarding"
+   ],
+   "what": "Onboarding improvement work marked Done",
+   "effect": "shipped",
+   "new_date": "2026-04-18",
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-27394",
+   "date": "2026-07-04",
+   "decided_by": "",
+   "subject": "Latency",
+   "aliases": [
+    "Latency"
+   ],
+   "what": "Latency improvement work marked Done",
+   "effect": "shipped",
+   "new_date": "2026-07-04",
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-54442",
+   "date": "2026-09-05",
+   "decided_by": "",
+   "subject": "Churn",
+   "aliases": [
+    "Churn"
+   ],
+   "what": "Churn improvement initiative marked Canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "entire churn improvement initiative"
+  },
+  {
+   "record": "LIN-45692",
+   "date": "2026-09-23",
+   "decided_by": "",
+   "subject": "Audit prep",
+   "aliases": [
+    "Audit prep"
+   ],
+   "what": "Audit prep improvement initiative marked Canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "entire audit prep initiative"
+  },
+  {
+   "record": "SLA-61338",
+   "date": "2026-09-18",
+   "decided_by": "Dana Ortiz",
+   "subject": "Plover",
+   "aliases": [
+    "Plover",
+    "SKUA-62"
+   ],
+   "what": "Reversed the 20 Aug pause on Plover; feature is back on for Q2 2027 as originally planned",
+   "effect": "reverse",
+   "new_date": "Q2 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "SLA-23864",
+   "date": "2026-09-03",
+   "decided_by": "Dana Ortiz (PM)",
+   "subject": "Finch",
+   "aliases": [
+    "Finch",
+    "KESTREL-41"
+   ],
+   "what": "Finch launch delayed because the Frankfurt region hosting contract fell through and a new hosting partner is needed",
+   "effect": "delay",
+   "new_date": "Q3 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-58327",
+   "date": "2026-05-28",
+   "decided_by": null,
+   "subject": "Webhooks",
+   "aliases": [
+    "Webhooks"
+   ],
+   "what": "Webhooks project status set to Canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Webhooks"
+  },
+  {
+   "record": "LIN-52893",
+   "date": "2026-09-02",
+   "decided_by": null,
+   "subject": "Support queue",
+   "aliases": [
+    "Support queue"
+   ],
+   "what": "Support queue project status set to Canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Support queue"
+  },
+  {
+   "record": "SLA-36661",
+   "date": "2026-09-11",
+   "decided_by": "Sam Lee",
+   "subject": "Admin SSO",
+   "aliases": [
+    "Admin SSO",
+    "internal SSO for ops admin console",
+    "COOT-88"
+   ],
+   "what": "Internal SSO for the ops admin console is cut; staff will continue using VPN plus 2FA instead",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Internal SSO for ops admin console (customer-facing product unaffected)"
+  },
+  {
+   "record": "LIN-56816",
+   "date": "2026-09-16",
+   "decided_by": "#prod-replan",
+   "subject": "Salesforce sync",
+   "aliases": [
+    "Swift"
+   ],
+   "what": "Salesforce sync status updated per replan",
+   "effect": "delay",
+   "new_date": "Q4 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-12387",
+   "date": "2026-04-08",
+   "decided_by": null,
+   "subject": "EU customers",
+   "aliases": [],
+   "what": "EU customers improvements marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-61213",
+   "date": "2026-06-26",
+   "decided_by": null,
+   "subject": "Roadmap",
+   "aliases": [],
+   "what": "Roadmap improvements marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-63080",
+   "date": "2026-04-15",
+   "decided_by": null,
+   "subject": "Webhooks",
+   "aliases": [],
+   "what": "Webhooks improvements marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "SLA-16775",
+   "date": "2026-09-16",
+   "decided_by": "Dana Ortiz",
+   "subject": "Tern",
+   "aliases": [],
+   "what": "Tern restored to Q1 2027 after contractors approved; prior 25 Aug slip to be disregarded",
+   "effect": "reverse",
+   "new_date": "Q1 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-65059",
+   "date": "2026-09-16",
+   "decided_by": "unspecified (per #prod-replan)",
+   "subject": "EU data residency",
+   "aliases": [
+    "Finch",
+    "Finch: EU data residency",
+    "EU data residency"
+   ],
+   "what": "EU data residency delivery date pushed out as part of product replan",
+   "effect": "delay",
+   "new_date": "Q3 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-33430",
+   "date": "2026-06-23",
+   "decided_by": null,
+   "subject": "Uptime",
+   "aliases": [
+    "Uptime"
+   ],
+   "what": "Uptime improvement work canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Uptime improvements"
+  },
+  {
+   "record": "LIN-13063",
+   "date": "2026-06-07",
+   "decided_by": null,
+   "subject": "Latency",
+   "aliases": [
+    "Latency"
+   ],
+   "what": "Latency improvement work marked done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-70984",
+   "date": "2026-07-04",
+   "decided_by": null,
+   "subject": "Churn",
+   "aliases": [
+    "Churn"
+   ],
+   "what": "Churn improvement work canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Churn improvements"
+  },
+  {
+   "record": "LIN-51120",
+   "date": "2026-08-28",
+   "decided_by": null,
+   "subject": "Permissions UI",
+   "aliases": [
+    "Permissions UI"
+   ],
+   "what": "Permissions UI improvement work marked done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-90494",
+   "date": "2026-06-08",
+   "decided_by": null,
+   "subject": "Onboarding",
+   "aliases": [
+    "Onboarding"
+   ],
+   "what": "Onboarding improvement work canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Onboarding improvements"
+  },
+  {
+   "record": "LIN-31641",
+   "date": "2026-06-10",
+   "decided_by": null,
+   "subject": "Latency",
+   "aliases": [
+    "Latency"
+   ],
+   "what": "Latency improvement work marked done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-43313",
+   "date": "2026-04-07",
+   "decided_by": null,
+   "subject": "Analytics",
+   "aliases": [
+    "Analytics"
+   ],
+   "what": "Analytics improvement work canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Analytics"
+  },
+  {
+   "record": "LIN-72928",
+   "date": "2026-07-14",
+   "decided_by": null,
+   "subject": "Webhooks",
+   "aliases": [
+    "Webhooks"
+   ],
+   "what": "Webhooks improvement marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-37305",
+   "date": "2026-08-27",
+   "decided_by": null,
+   "subject": "Dashboards",
+   "aliases": [
+    "Dashboards"
+   ],
+   "what": "Dashboards improvement work canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Dashboards"
+  },
+  {
+   "record": "LIN-87579",
+   "date": "2026-04-15",
+   "decided_by": null,
+   "subject": "Integrations",
+   "aliases": [
+    "Integrations"
+   ],
+   "what": "Integrations improvement work canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Integrations"
+  },
+  {
+   "record": "LIN-99087",
+   "date": "2026-04-14",
+   "decided_by": null,
+   "subject": "Support queue",
+   "aliases": [
+    "Support queue"
+   ],
+   "what": "Support queue improvement work canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Support queue"
+  },
+  {
+   "record": "LIN-32117",
+   "date": "2026-05-04",
+   "decided_by": null,
+   "subject": "Support queue",
+   "aliases": [
+    "Support queue"
+   ],
+   "what": "Support queue improvement work canceled (second cancellation entry)",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Support queue"
+  },
+  {
+   "record": "LIN-58688",
+   "date": "2026-09-10",
+   "decided_by": null,
+   "subject": "Exports",
+   "aliases": [
+    "Exports"
+   ],
+   "what": "Exports improvement work canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Exports"
+  },
+  {
+   "record": "LIN-33167",
+   "date": "2026-04-27",
+   "decided_by": null,
+   "subject": "Webhooks",
+   "aliases": [
+    "Webhooks"
+   ],
+   "what": "Webhooks improvement work marked done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-77647",
+   "date": "2026-04-23",
+   "decided_by": null,
+   "subject": "Case study",
+   "aliases": [
+    "Case study"
+   ],
+   "what": "Case study improvement work marked done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-78562",
+   "date": "2026-09-16",
+   "decided_by": null,
+   "subject": "SSO (SAML)",
+   "aliases": [
+    "Heron",
+    "SHRIKE-09L"
+   ],
+   "what": "IdP-initiated login removed from v1 scope",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "IdP-initiated login"
+  },
+  {
+   "record": "LIN-36762",
+   "date": "2026-09-16",
+   "decided_by": null,
+   "subject": "Webhooks",
+   "aliases": [
+    "Webhooks"
+   ],
+   "what": "Webhooks improvement effort canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-11849",
+   "date": "2026-09-16",
+   "decided_by": "#eng-arch",
+   "subject": "Webhooks v2",
+   "aliases": [
+    "Kite",
+    "Webhooks v2",
+    "Webhooks"
+   ],
+   "what": "Status update on Kite (Webhooks v2) moved to Q4 2027",
+   "effect": "set",
+   "new_date": "Q4 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-29570",
+   "date": "2026-09-07",
+   "decided_by": null,
+   "subject": "Webhooks",
+   "aliases": [
+    "Webhooks"
+   ],
+   "what": "Webhooks improvement effort canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-28965",
+   "date": "2026-05-19",
+   "decided_by": null,
+   "subject": "Notifications",
+   "aliases": [
+    "Notifications"
+   ],
+   "what": "Notifications improvement effort canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-68163",
+   "date": "2026-04-08",
+   "decided_by": null,
+   "subject": "Notifications",
+   "aliases": [
+    "Notifications"
+   ],
+   "what": "Notifications improvement marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-77929",
+   "date": "2026-09-20",
+   "decided_by": null,
+   "subject": "Reporting",
+   "aliases": [
+    "Reporting"
+   ],
+   "what": "Reporting improvement work marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-18358",
+   "date": "2026-08-06",
+   "decided_by": null,
+   "subject": "Rate limits",
+   "aliases": [
+    "Rate limits"
+   ],
+   "what": "Rate limits improvement work canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Rate limits improvements"
+  },
+  {
+   "record": "LIN-94881",
+   "date": "2026-09-27",
+   "decided_by": null,
+   "subject": "Churn",
+   "aliases": [
+    "Churn"
+   ],
+   "what": "Churn improvement work marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-44511",
+   "date": "2026-04-22",
+   "decided_by": null,
+   "subject": "Webhooks",
+   "aliases": [
+    "Webhooks"
+   ],
+   "what": "Webhooks improvement work marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-11995",
+   "date": "2026-06-16",
+   "decided_by": null,
+   "subject": "Analytics",
+   "aliases": [
+    "Analytics"
+   ],
+   "what": "Analytics improvement work marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "DRI-42319",
+   "date": "2026-08-26",
+   "decided_by": "Jordan Blake (AE)",
+   "subject": "Custom roles",
+   "aliases": [
+    "Robin"
+   ],
+   "what": "Reconfirmed prior commitment of Custom roles to Fjord Media",
+   "effect": "confirm",
+   "new_date": "Q2 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-36868",
+   "date": "2026-04-10",
+   "decided_by": null,
+   "subject": "Dashboards",
+   "aliases": [],
+   "what": "Dashboards marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-44230",
+   "date": "2026-06-25",
+   "decided_by": null,
+   "subject": "Audit prep",
+   "aliases": [],
+   "what": "Audit prep canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Audit prep"
+  },
+  {
+   "record": "LIN-43646",
+   "date": "2026-08-27",
+   "decided_by": null,
+   "subject": "NPS",
+   "aliases": [],
+   "what": "NPS canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "NPS"
+  },
+  {
+   "record": "LIN-72401",
+   "date": "2026-07-25",
+   "decided_by": null,
+   "subject": "Integrations",
+   "aliases": [],
+   "what": "Integrations marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-47632",
+   "date": "2026-05-22",
+   "decided_by": null,
+   "subject": "Offline",
+   "aliases": [
+    "Offline",
+    "offline mode"
+   ],
+   "what": "Offline marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-74825",
+   "date": "2026-06-27",
+   "decided_by": null,
+   "subject": "Pricing",
+   "aliases": [
+    "Pricing"
+   ],
+   "what": "Pricing initiative marked Canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Pricing"
+  },
+  {
+   "record": "LIN-55506",
+   "date": "2026-08-18",
+   "decided_by": null,
+   "subject": "Churn",
+   "aliases": [
+    "Churn"
+   ],
+   "what": "Churn initiative marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-94654",
+   "date": "2026-06-05",
+   "decided_by": null,
+   "subject": "Notifications",
+   "aliases": [
+    "Notifications"
+   ],
+   "what": "Notifications marked Canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Notifications"
+  },
+  {
+   "record": "LIN-13299",
+   "date": "2026-07-14",
+   "decided_by": null,
+   "subject": "Webhooks",
+   "aliases": [
+    "Webhooks"
+   ],
+   "what": "Webhooks marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-90914",
+   "date": "2026-08-03",
+   "decided_by": null,
+   "subject": "Support queue",
+   "aliases": [
+    "support queue"
+   ],
+   "what": "Support queue improvement marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-40960",
+   "date": "2026-07-08",
+   "decided_by": null,
+   "subject": "Sandbox",
+   "aliases": [
+    "sandbox"
+   ],
+   "what": "Sandbox improvement marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-26630",
+   "date": "2026-09-07",
+   "decided_by": null,
+   "subject": "QBR prep",
+   "aliases": [
+    "qbr prep"
+   ],
+   "what": "QBR prep improvement marked Canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "QBR prep improvement"
+  },
+  {
+   "record": "LIN-55676",
+   "date": "2026-09-04",
+   "decided_by": null,
+   "subject": "Security review",
+   "aliases": [
+    "security review"
+   ],
+   "what": "Security review improvement marked Canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Security review improvement"
+  },
+  {
+   "record": "LIN-43906",
+   "date": "2026-05-01",
+   "decided_by": null,
+   "subject": "Offline",
+   "aliases": [
+    "Offline"
+   ],
+   "what": "Offline improvement work was canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Offline feature improvements canceled entirely"
+  },
+  {
+   "record": "LIN-23321",
+   "date": "2026-04-03",
+   "decided_by": null,
+   "subject": "Exports",
+   "aliases": [
+    "Exports"
+   ],
+   "what": "Exports improvement work marked done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-12898",
+   "date": "2026-06-14",
+   "decided_by": null,
+   "subject": "NPS",
+   "aliases": [
+    "NPS",
+    "Nps"
+   ],
+   "what": "NPS improvement work was canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "NPS feature improvements canceled entirely"
+  },
+  {
+   "record": "LIN-28587",
+   "date": "2026-05-12",
+   "decided_by": null,
+   "subject": "Mobile app",
+   "aliases": [
+    "Mobile app"
+   ],
+   "what": "Mobile app improvement work was canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Mobile app feature improvements canceled entirely"
+  },
+  {
+   "record": "LIN-86514",
+   "date": "2026-08-25",
+   "decided_by": null,
+   "subject": "Analytics",
+   "aliases": [
+    "Analytics"
+   ],
+   "what": "Analytics improvement work was canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Analytics feature improvements canceled entirely"
+  },
+  {
+   "record": "SLA-26281",
+   "date": "2026-09-20",
+   "decided_by": null,
+   "subject": "Rate limits",
+   "aliases": [
+    "Crane",
+    "Rate limits",
+    "API rate limits"
+   ],
+   "what": "API rate limits raised for all paid plans; announced as live in #general",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-12576",
+   "date": "2026-07-01",
+   "decided_by": null,
+   "subject": "Onboarding",
+   "aliases": [
+    "Improve onboarding"
+   ],
+   "what": "Onboarding improvement ticket marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-77928",
+   "date": "2026-04-21",
+   "decided_by": null,
+   "subject": "Mobile app",
+   "aliases": [
+    "Improve mobile app"
+   ],
+   "what": "Mobile app improvement ticket canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Improve mobile app"
+  },
+  {
+   "record": "LIN-96652",
+   "date": "2026-06-07",
+   "decided_by": null,
+   "subject": "Support queue",
+   "aliases": [
+    "Improve support queue"
+   ],
+   "what": "Support queue improvement ticket canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Improve support queue"
+  },
+  {
+   "record": "LIN-14999",
+   "date": "2026-07-03",
+   "decided_by": null,
+   "subject": "Support queue",
+   "aliases": [
+    "Improve support queue"
+   ],
+   "what": "Support queue improvement ticket canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Improve support queue"
+  },
+  {
+   "record": "LIN-54938",
+   "date": "2026-08-18",
+   "decided_by": null,
+   "subject": "Churn",
+   "aliases": [
+    "Improve churn"
+   ],
+   "what": "Churn improvement ticket canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Improve churn"
+  },
+  {
+   "record": "SLA-78055",
+   "date": "2026-09-15",
+   "decided_by": "Sam Lee",
+   "subject": "Kite",
+   "aliases": [
+    "webhooks v2",
+    "AUK-20"
+   ],
+   "what": "Kite (webhooks v2) slips to Q4 2027 because the event bus migration comes first",
+   "effect": "delay",
+   "new_date": "Q4 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-61444",
+   "date": "2026-07-11",
+   "decided_by": null,
+   "subject": "Roadmap",
+   "aliases": [
+    "Roadmap improvement"
+   ],
+   "what": "Roadmap improvement initiative marked Canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-17421",
+   "date": "2026-06-05",
+   "decided_by": null,
+   "subject": "Audit prep",
+   "aliases": [
+    "Audit prep improvement"
+   ],
+   "what": "Audit prep improvement marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-62387",
+   "date": "2026-04-18",
+   "decided_by": null,
+   "subject": "Integrations",
+   "aliases": [
+    "Integrations improvement"
+   ],
+   "what": "Integrations improvement marked Canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-94174",
+   "date": "2026-05-01",
+   "decided_by": null,
+   "subject": "Mobile app",
+   "aliases": [
+    "Mobile app improvement"
+   ],
+   "what": "Mobile app improvement marked Canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-70570",
+   "date": "2026-05-06",
+   "decided_by": null,
+   "subject": "Mobile app",
+   "aliases": [
+    "Mobile app improvement"
+   ],
+   "what": "Mobile app improvement again marked Canceled, confirming the prior cancellation (LIN-94174) from five days earlier",
+   "effect": "confirm",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-56285",
+   "date": "2026-08-11",
+   "decided_by": null,
+   "subject": "Audit prep",
+   "aliases": [
+    "Audit prep improvement"
+   ],
+   "what": "Audit prep improvement marked Canceled, reversing the earlier shipped status (LIN-17421, 2026-06-05)",
+   "effect": "reverse",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-71493",
+   "date": "2026-09-22",
+   "decided_by": null,
+   "subject": "Latency",
+   "aliases": [
+    "Latency improvement"
+   ],
+   "what": "Latency improvement marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-97298",
+   "date": "2026-07-20",
+   "decided_by": null,
+   "subject": "Nps",
+   "aliases": [
+    "NPS improvement"
+   ],
+   "what": "NPS improvement marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-64170",
+   "date": "2026-05-26",
+   "decided_by": null,
+   "subject": "Uptime",
+   "aliases": [
+    "Uptime improvement"
+   ],
+   "what": "Uptime improvement marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-62491",
+   "date": "2026-08-13",
+   "decided_by": null,
+   "subject": "Onboarding",
+   "aliases": [
+    "Onboarding improvement"
+   ],
+   "what": "Onboarding improvement marked Canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-38693",
+   "date": "2026-04-06",
+   "decided_by": null,
+   "subject": "Rate limits",
+   "aliases": [
+    "Rate limits improvement"
+   ],
+   "what": "Rate limits improvement marked Canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-91705",
+   "date": "2026-05-18",
+   "decided_by": null,
+   "subject": "SSO questions",
+   "aliases": [
+    "SSO"
+   ],
+   "what": "SSO questions ticket canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-79553",
+   "date": "2026-07-10",
+   "decided_by": null,
+   "subject": "Churn",
+   "aliases": [
+    "Churn initiative"
+   ],
+   "what": "Churn improvement ticket canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-11504",
+   "date": "2026-06-06",
+   "decided_by": null,
+   "subject": "NPS",
+   "aliases": [
+    "NPS improvement"
+   ],
+   "what": "NPS improvement marked done/shipped",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-89718",
+   "date": "2026-07-11",
+   "decided_by": null,
+   "subject": "Hosting",
+   "aliases": [
+    "Hosting improvements"
+   ],
+   "what": "Hosting improvement marked done/shipped",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-23305",
+   "date": "2026-07-20",
+   "decided_by": null,
+   "subject": "Hosting",
+   "aliases": [
+    "Hosting improvements"
+   ],
+   "what": "Hosting improvement marked done/shipped",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-85823",
+   "date": "2026-08-24",
+   "decided_by": null,
+   "subject": "Case study",
+   "aliases": [
+    "Case study"
+   ],
+   "what": "Case study work marked done/shipped",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-64895",
+   "date": "2026-07-21",
+   "decided_by": null,
+   "subject": "Trial conversion",
+   "aliases": [
+    "Trial conversion"
+   ],
+   "what": "Trial conversion improvement work marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-98597",
+   "date": "2026-05-11",
+   "decided_by": null,
+   "subject": "Roadmap",
+   "aliases": [
+    "Roadmap"
+   ],
+   "what": "Roadmap improvement work marked Canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Roadmap improvements"
+  },
+  {
+   "record": "LIN-33660",
+   "date": "2026-05-21",
+   "decided_by": null,
+   "subject": "Notifications",
+   "aliases": [
+    "Notifications"
+   ],
+   "what": "Notifications improvement work marked Canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Notifications improvements"
+  },
+  {
+   "record": "LIN-47899",
+   "date": "2026-04-24",
+   "decided_by": null,
+   "subject": "EU customers",
+   "aliases": [
+    "EU customers"
+   ],
+   "what": "EU customers improvement work marked Canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "EU customers improvements"
+  },
+  {
+   "record": "LIN-36677",
+   "date": "2026-08-28",
+   "decided_by": null,
+   "subject": "Webhooks",
+   "aliases": [
+    "Webhooks"
+   ],
+   "what": "Webhooks improvement work marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-21478",
+   "date": "2026-04-21",
+   "decided_by": "Unknown",
+   "subject": "Offline",
+   "aliases": [
+    "Offline mode"
+   ],
+   "what": "Offline feature canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Offline mode"
+  },
+  {
+   "record": "LIN-10814",
+   "date": "2026-06-25",
+   "decided_by": "Unknown",
+   "subject": "Exports",
+   "aliases": [
+    "Exports",
+    "CSV export"
+   ],
+   "what": "Exports feature canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Exports"
+  },
+  {
+   "record": "LIN-16081",
+   "date": "2026-06-06",
+   "decided_by": "Unknown",
+   "subject": "Churn",
+   "aliases": [
+    "Churn"
+   ],
+   "what": "Churn (improvement initiative) canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Churn"
+  },
+  {
+   "record": "LIN-90181",
+   "date": "2026-08-06",
+   "decided_by": "Unknown",
+   "subject": "Roadmap",
+   "aliases": [
+    "Roadmap"
+   ],
+   "what": "Roadmap (initiative) canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Roadmap"
+  },
+  {
+   "record": "LIN-99257",
+   "date": "2026-08-07",
+   "decided_by": "Unknown",
+   "subject": "EU customers",
+   "aliases": [
+    "EU customers"
+   ],
+   "what": "EU customers feature marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "DRI-98303",
+   "date": "2026-05-14",
+   "decided_by": "Tess Brown (CS)",
+   "subject": "Sandbox environments",
+   "aliases": [
+    "Sandbox environments"
+   ],
+   "what": "Confirmed prior commitment of Sandbox environments to Northstar Pharma",
+   "effect": "confirm",
+   "new_date": "before year end",
+   "scope_removed": null
+  },
+  {
+   "record": "SLA-69343",
+   "date": "2026-08-28",
+   "decided_by": "Dana Ortiz",
+   "subject": "Swift",
+   "aliases": [
+    "Swift",
+    "HOBBY-12"
+   ],
+   "what": "Swift ship date slips to Q4 2027 because Salesforce changed their bulk API terms, requiring rework.",
+   "effect": "delay",
+   "new_date": "Q4 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-17947",
+   "date": "2026-07-04",
+   "decided_by": "unknown",
+   "subject": "Billing",
+   "aliases": [
+    "Billing"
+   ],
+   "what": "Billing improvement work item canceled.",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Billing improvements"
+  },
+  {
+   "record": "LIN-59309",
+   "date": "2026-07-24",
+   "decided_by": "unknown",
+   "subject": "Analytics",
+   "aliases": [
+    "Analytics"
+   ],
+   "what": "Analytics improvement work item canceled.",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Analytics improvements"
+  },
+  {
+   "record": "LIN-59371",
+   "date": "2026-09-04",
+   "decided_by": "unknown",
+   "subject": "Analytics",
+   "aliases": [
+    "Analytics"
+   ],
+   "what": "Analytics improvement work item moved back to in-progress after previously being canceled.",
+   "effect": "reverse",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-65377",
+   "date": "2026-09-25",
+   "decided_by": "unknown",
+   "subject": "Onboarding",
+   "aliases": [
+    "Onboarding"
+   ],
+   "what": "Onboarding improvement work item marked done.",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-80065",
+   "date": "2026-05-08",
+   "decided_by": null,
+   "subject": "Support queue",
+   "aliases": [
+    "support queue"
+   ],
+   "what": "Support queue improvement work was canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-89547",
+   "date": "2026-06-27",
+   "decided_by": null,
+   "subject": "Permissions UI",
+   "aliases": [
+    "permissions ui"
+   ],
+   "what": "Permissions UI improvement marked done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-85968",
+   "date": "2026-08-16",
+   "decided_by": null,
+   "subject": "EU customers",
+   "aliases": [
+    "eu customers"
+   ],
+   "what": "EU customers improvement marked done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-36459",
+   "date": "2026-08-23",
+   "decided_by": null,
+   "subject": "Reporting",
+   "aliases": [
+    "reporting"
+   ],
+   "what": "Reporting improvement marked done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "SLA-70067",
+   "date": "2026-09-10",
+   "decided_by": "Dana Ortiz",
+   "subject": "Heron",
+   "aliases": [
+    "Heron",
+    "SHRIKE-09"
+   ],
+   "what": "Heron still ships Q1 2027 but SP-initiated only; IdP-initiated login dropped from v1 for security review",
+   "effect": "rescope",
+   "new_date": "Q1 2027 (SP-initiated); IdP-initiated login earliest Q3 2027",
+   "scope_removed": "IdP-initiated login"
+  },
+  {
+   "record": "LIN-25717",
+   "date": "2026-05-01",
+   "decided_by": null,
+   "subject": "Analytics",
+   "aliases": [
+    "Analytics"
+   ],
+   "what": "Analytics improvement marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-32560",
+   "date": "2026-05-05",
+   "decided_by": null,
+   "subject": "Rate limits",
+   "aliases": [
+    "Rate limits"
+   ],
+   "what": "Rate limits improvement marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-26271",
+   "date": "2026-06-13",
+   "decided_by": null,
+   "subject": "Webhooks",
+   "aliases": [
+    "Webhooks"
+   ],
+   "what": "Webhooks improvement marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-38908",
+   "date": "2026-08-21",
+   "decided_by": "unknown",
+   "subject": "Churn",
+   "aliases": [
+    "Churn"
+   ],
+   "what": "Churn improvement work marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-20195",
+   "date": "2026-05-15",
+   "decided_by": "unknown",
+   "subject": "Sandbox",
+   "aliases": [
+    "Sandbox"
+   ],
+   "what": "Sandbox improvement work canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Sandbox improvements"
+  },
+  {
+   "record": "LIN-68621",
+   "date": "2026-07-15",
+   "decided_by": "unknown",
+   "subject": "Notifications",
+   "aliases": [
+    "Notifications"
+   ],
+   "what": "Notifications improvement work marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-22712",
+   "date": "2026-08-28",
+   "decided_by": "unknown",
+   "subject": "Analytics",
+   "aliases": [
+    "Analytics"
+   ],
+   "what": "Analytics improvement work marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-19850",
+   "date": "2026-09-16",
+   "decided_by": "unknown",
+   "subject": "SCIM provisioning",
+   "aliases": [
+    "Wren",
+    "PETREL-58L"
+   ],
+   "what": "Status updated per #prod-replan",
+   "effect": "delay",
+   "new_date": "Q4 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-40655",
+   "date": "2026-05-10",
+   "decided_by": "unknown",
+   "subject": "Security review",
+   "aliases": [
+    "Security review"
+   ],
+   "what": "Security review improvement work marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-39052",
+   "date": "2026-07-08",
+   "decided_by": "unknown",
+   "subject": "Integrations",
+   "aliases": [
+    "Integrations"
+   ],
+   "what": "Integrations improvement work canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Integrations improvements"
+  },
+  {
+   "record": "LIN-31993",
+   "date": "2026-08-07",
+   "decided_by": "unknown",
+   "subject": "Uptime",
+   "aliases": [
+    "Uptime"
+   ],
+   "what": "Uptime improvement work marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-69793",
+   "date": "2026-08-07",
+   "decided_by": null,
+   "subject": "Billing",
+   "aliases": [
+    "Billing"
+   ],
+   "what": "Billing improvement initiative canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-25622",
+   "date": "2026-04-18",
+   "decided_by": null,
+   "subject": "Trial conversion",
+   "aliases": [
+    "Trial conversion"
+   ],
+   "what": "Trial conversion improvement initiative canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-47935",
+   "date": "2026-06-05",
+   "decided_by": null,
+   "subject": "Dashboards",
+   "aliases": [
+    "Dashboards"
+   ],
+   "what": "Dashboards improvement initiative canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-88728",
+   "date": "2026-08-13",
+   "decided_by": null,
+   "subject": "Reporting",
+   "aliases": [
+    "Reporting"
+   ],
+   "what": "Reporting marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-21458",
+   "date": "2026-05-03",
+   "decided_by": null,
+   "subject": "Webhooks",
+   "aliases": [
+    "Webhooks"
+   ],
+   "what": "Webhooks marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-27469",
+   "date": "2026-07-23",
+   "decided_by": null,
+   "subject": "QBR prep",
+   "aliases": [
+    "Qbr prep"
+   ],
+   "what": "QBR prep marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-17257",
+   "date": "2026-04-03",
+   "decided_by": null,
+   "subject": "Hosting",
+   "aliases": [
+    "Hosting"
+   ],
+   "what": "Hosting work item Canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Hosting"
+  },
+  {
+   "record": "LIN-72470",
+   "date": "2026-06-22",
+   "decided_by": null,
+   "subject": "Churn",
+   "aliases": [
+    "Churn"
+   ],
+   "what": "Churn work item Canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Churn"
+  },
+  {
+   "record": "LIN-42550",
+   "date": "2026-07-05",
+   "decided_by": null,
+   "subject": "Analytics",
+   "aliases": [
+    "Analytics"
+   ],
+   "what": "Analytics work item Canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Analytics"
+  },
+  {
+   "record": "LIN-58116",
+   "date": "2026-06-14",
+   "decided_by": null,
+   "subject": "Reporting",
+   "aliases": [
+    "Reporting"
+   ],
+   "what": "Reporting work item Canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Reporting"
+  },
+  {
+   "record": "SLA-78100",
+   "date": "2026-08-25",
+   "decided_by": "Dana Ortiz",
+   "subject": "Tern",
+   "aliases": [
+    "Tern",
+    "NODDY-14"
+   ],
+   "what": "Tern slips to Q3 2027",
+   "effect": "delay",
+   "new_date": "Q3 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "DRI-13941",
+   "date": "2026-05-24",
+   "decided_by": "Maya Chen (CS)",
+   "subject": "HubSpot sync",
+   "aliases": [
+    "HubSpot sync",
+    "Martin"
+   ],
+   "what": "Reconfirmed prior commitment to Willow Care that HubSpot sync would ship by Q2 2027",
+   "effect": "confirm",
+   "new_date": "Q2 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-21611",
+   "date": "2026-08-20",
+   "decided_by": null,
+   "subject": "Rate limits",
+   "aliases": [
+    "rate limits"
+   ],
+   "what": "Rate limits marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-15920",
+   "date": "2026-09-10",
+   "decided_by": null,
+   "subject": "Uptime",
+   "aliases": [
+    "uptime"
+   ],
+   "what": "Uptime marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-45784",
+   "date": "2026-04-02",
+   "decided_by": null,
+   "subject": "Integrations",
+   "aliases": [
+    "integrations"
+   ],
+   "what": "Integrations marked Canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Integrations feature"
+  },
+  {
+   "record": "LIN-75635",
+   "date": "2026-06-22",
+   "decided_by": null,
+   "subject": "Billing",
+   "aliases": [
+    "Billing"
+   ],
+   "what": "Billing improvement marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-24423",
+   "date": "2026-08-11",
+   "decided_by": null,
+   "subject": "Webhooks",
+   "aliases": [
+    "Webhooks"
+   ],
+   "what": "Webhooks improvement canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Webhooks improvement"
+  },
+  {
+   "record": "LIN-80988",
+   "date": "2026-09-10",
+   "decided_by": null,
+   "subject": "Billing",
+   "aliases": [
+    "Billing"
+   ],
+   "what": "Billing improvement marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-87569",
+   "date": "2026-04-12",
+   "decided_by": null,
+   "subject": "Pricing",
+   "aliases": [
+    "Pricing"
+   ],
+   "what": "Pricing improvement marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-39757",
+   "date": "2026-08-23",
+   "decided_by": null,
+   "subject": "Churn",
+   "aliases": [
+    "Churn"
+   ],
+   "what": "Churn improvement canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Churn improvement"
+  },
+  {
+   "record": "LIN-93229",
+   "date": "2026-06-15",
+   "decided_by": null,
+   "subject": "Security review",
+   "aliases": [
+    "Security review"
+   ],
+   "what": "Security review improvement canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Security review improvement"
+  },
+  {
+   "record": "LIN-83541",
+   "date": "2026-06-27",
+   "decided_by": null,
+   "subject": "Uptime",
+   "aliases": [
+    "Uptime"
+   ],
+   "what": "Uptime improvement marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-65330",
+   "date": "2026-04-11",
+   "decided_by": null,
+   "subject": "Permissions UI",
+   "aliases": [
+    "Permissions ui",
+    "Permissions UI"
+   ],
+   "what": "Permissions UI improvement marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-98924",
+   "date": "2026-09-16",
+   "decided_by": null,
+   "subject": "Audit log export",
+   "aliases": [
+    "Lark",
+    "Audit log export"
+   ],
+   "what": "SIEM streaming removed from v1 scope",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "SIEM streaming"
+  },
+  {
+   "record": "SLA-17908",
+   "date": "2026-09-19",
+   "decided_by": null,
+   "subject": "Sandbox environments",
+   "aliases": [
+    "Rail",
+    "Sandbox environments",
+    "Sandbox"
+   ],
+   "what": "Sandbox environments slip to Q2 2027",
+   "effect": "delay",
+   "new_date": "Q2 2027",
+   "scope_removed": null
+  },
+  {
+   "record": "DRI-49806",
+   "date": "2026-07-21",
+   "decided_by": "Jordan Blake",
+   "subject": "EU data residency",
+   "aliases": [
+    "Finch"
+   ],
+   "what": "Confirmed prior commitment of EU data residency to Delta Freight ahead of their data audit",
+   "effect": "confirm",
+   "new_date": "March (Delta Freight data audit)",
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-77060",
+   "date": "2026-04-20",
+   "decided_by": "unknown",
+   "subject": "SSO questions",
+   "aliases": [
+    "Improve SSO questions"
+   ],
+   "what": "SSO questions initiative canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "SSO questions improvement"
+  },
+  {
+   "record": "LIN-56222",
+   "date": "2026-09-12",
+   "decided_by": "unknown",
+   "subject": "Offline",
+   "aliases": [
+    "Improve offline"
+   ],
+   "what": "Offline improvement initiative canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Offline improvement"
+  },
+  {
+   "record": "LIN-31272",
+   "date": "2026-07-20",
+   "decided_by": "unknown",
+   "subject": "Hosting",
+   "aliases": [
+    "Improve hosting"
+   ],
+   "what": "Hosting improvement marked done/shipped",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-52661",
+   "date": "2026-06-27",
+   "decided_by": "unknown",
+   "subject": "Pricing",
+   "aliases": [
+    "Improve pricing"
+   ],
+   "what": "Pricing improvement marked done/shipped",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-91448",
+   "date": "2026-09-01",
+   "decided_by": null,
+   "subject": "Roadmap",
+   "aliases": [
+    "Roadmap"
+   ],
+   "what": "Roadmap improvement initiative canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-82791",
+   "date": "2026-09-19",
+   "decided_by": null,
+   "subject": "Integrations",
+   "aliases": [
+    "Integrations"
+   ],
+   "what": "Integrations improvement initiative canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-88042",
+   "date": "2026-07-07",
+   "decided_by": null,
+   "subject": "Sandbox",
+   "aliases": [
+    "Sandbox"
+   ],
+   "what": "Sandbox improvement initiative canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-49297",
+   "date": "2026-09-15",
+   "decided_by": null,
+   "subject": "Onboarding",
+   "aliases": [
+    "Onboarding"
+   ],
+   "what": "Onboarding improvement initiative canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-50949",
+   "date": "2026-04-02",
+   "decided_by": null,
+   "subject": "Trial conversion",
+   "aliases": [
+    "Trial conversion"
+   ],
+   "what": "Trial conversion improvement initiative canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-41804",
+   "date": "2026-05-11",
+   "decided_by": null,
+   "subject": "Exports",
+   "aliases": [
+    "Exports"
+   ],
+   "what": "Exports improvement shipped",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-43626",
+   "date": "2026-04-26",
+   "decided_by": null,
+   "subject": "Support queue",
+   "aliases": [
+    "Support queue"
+   ],
+   "what": "Support queue improvement shipped",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-80582",
+   "date": "2026-09-20",
+   "decided_by": null,
+   "subject": "Webhooks",
+   "aliases": [
+    "Webhooks"
+   ],
+   "what": "Webhooks improvement shipped",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-56020",
+   "date": "2026-05-01",
+   "decided_by": null,
+   "subject": "Reporting",
+   "aliases": [
+    "Reporting"
+   ],
+   "what": "Reporting feature marked Done",
+   "effect": "shipped",
+   "new_date": null,
+   "scope_removed": null
+  },
+  {
+   "record": "LIN-67693",
+   "date": "2026-04-17",
+   "decided_by": null,
+   "subject": "Exports",
+   "aliases": [
+    "Exports"
+   ],
+   "what": "Exports feature work canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Exports"
+  },
+  {
+   "record": "LIN-76699",
+   "date": "2026-04-06",
+   "decided_by": null,
+   "subject": "Case study",
+   "aliases": [
+    "Case study"
+   ],
+   "what": "Case study work canceled",
+   "effect": "cut",
+   "new_date": null,
+   "scope_removed": "Case study"
+  },
+  {
+   "record": "SLA-62109",
+   "date": "2026-08-20",
+   "decided_by": "Dana Ortiz",
+   "subject": "Plover",
+   "aliases": [
+    "Plover",
+    "mobile app project"
+   ],
+   "what": "Plover paused and the mobile team reassigned off it",
+   "effect": "delay",
+   "new_date": null,
+   "scope_removed": null
+  }
+ ],
+ "dependencies": [
+  {
+   "record": "NOT-63445",
+   "feature": "HubSpot sync (Martin)",
+   "depends_on": "Webhooks v2 (Kite)"
+  },
+  {
+   "record": "SLA-23864",
+   "feature": "Finch",
+   "depends_on": "hosting partner (Frankfurt region contract/new hosting partner)"
+  },
+  {
+   "record": "NOT-20481",
+   "feature": "Mobile app SSO (Heron-M)",
+   "depends_on": "Heron SSO service"
+  },
+  {
+   "record": "SLA-78055",
+   "feature": "Kite (webhooks v2)",
+   "depends_on": "event bus migration"
+  },
+  {
+   "record": "NOT-46286",
+   "feature": "Custom roles (Robin)",
+   "depends_on": "SCIM group sync (Wren)"
+  }
+ ],
+ "links": [
+  {
+   "commitment_record": "CRM-16328",
+   "feature": "Salesforce sync",
+   "current_state": "changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-69343",
+     "date": "2026-08-28",
+     "effect": "delay",
+     "via_dependency": false
+    },
+    {
+     "record": "LIN-56816",
+     "date": "2026-09-16",
+     "effect": "delay",
+     "via_dependency": false
+    }
+   ],
+   "owner": "Dana Ortiz",
+   "owner_record": "SLA-69343"
+  },
+  {
+   "commitment_record": "DRI-80868",
+   "feature": "Data retention controls",
+   "current_state": "as_promised",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    }
+   ],
+   "owner": null,
+   "owner_record": null
+  },
+  {
+   "commitment_record": "DRI-86231",
+   "feature": "Higher API rate limits",
+   "current_state": "fulfilled",
+   "affecting_decisions": [
+    {
+     "record": "SLA-26281",
+     "date": "2026-09-20",
+     "effect": "shipped",
+     "via_dependency": false
+    }
+   ],
+   "owner": null,
+   "owner_record": null
+  },
+  {
+   "commitment_record": "DRI-91134",
+   "feature": "Bulk import v2",
+   "current_state": "as_promised",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-78100",
+     "date": "2026-08-25",
+     "effect": "delay",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-16775",
+     "date": "2026-09-16",
+     "effect": "reverse",
+     "via_dependency": false
+    }
+   ],
+   "owner": null,
+   "owner_record": null
+  },
+  {
+   "commitment_record": "CRM-86750",
+   "feature": "Advanced analytics",
+   "current_state": "changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-39322",
+     "date": "2026-09-09",
+     "effect": "cut",
+     "via_dependency": false
+    }
+   ],
+   "owner": "CEO",
+   "owner_record": "SLA-39322"
+  },
+  {
+   "commitment_record": "CRM-55898",
+   "feature": "EU data residency",
+   "current_state": "changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-23864",
+     "date": "2026-09-03",
+     "effect": "delay",
+     "via_dependency": false
+    },
+    {
+     "record": "LIN-65059",
+     "date": "2026-09-16",
+     "effect": "delay",
+     "via_dependency": false
+    }
+   ],
+   "owner": "Dana Ortiz",
+   "owner_record": "SLA-23864"
+  },
+  {
+   "commitment_record": "CRM-38600",
+   "feature": "Audit log export",
+   "current_state": "as_promised",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    }
+   ],
+   "owner": null,
+   "owner_record": null
+  },
+  {
+   "commitment_record": "DRI-29830",
+   "feature": "SCIM provisioning",
+   "current_state": "changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "DRI-29830",
+     "date": "2026-06-19",
+     "effect": "confirm",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-93341",
+     "date": "2026-09-05",
+     "effect": "delay",
+     "via_dependency": false
+    },
+    {
+     "record": "LIN-19850",
+     "date": "2026-09-16",
+     "effect": "delay",
+     "via_dependency": false
+    }
+   ],
+   "owner": "Dana Ortiz",
+   "owner_record": "SLA-93341"
+  },
+  {
+   "commitment_record": "CRM-26651",
+   "feature": "EU data residency",
+   "current_state": "changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-23864",
+     "date": "2026-09-03",
+     "effect": "delay",
+     "via_dependency": false
+    },
+    {
+     "record": "LIN-65059",
+     "date": "2026-09-16",
+     "effect": "delay",
+     "via_dependency": false
+    }
+   ],
+   "owner": "Dana Ortiz",
+   "owner_record": "SLA-23864"
+  },
+  {
+   "commitment_record": "CRM-18094",
+   "feature": "Bulk import v2",
+   "current_state": "as_promised",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-78100",
+     "date": "2026-08-25",
+     "effect": "delay",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-16775",
+     "date": "2026-09-16",
+     "effect": "reverse",
+     "via_dependency": false
+    }
+   ],
+   "owner": null,
+   "owner_record": null
+  },
+  {
+   "commitment_record": "DRI-74829",
+   "feature": "EU data residency",
+   "current_state": "changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "DRI-74829",
+     "date": "2026-07-19",
+     "effect": "confirm",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-23864",
+     "date": "2026-09-03",
+     "effect": "delay",
+     "via_dependency": false
+    },
+    {
+     "record": "LIN-65059",
+     "date": "2026-09-16",
+     "effect": "delay",
+     "via_dependency": false
+    }
+   ],
+   "owner": "Dana Ortiz",
+   "owner_record": "SLA-23864"
+  },
+  {
+   "commitment_record": "CRM-64756",
+   "feature": "SSO (SAML)",
+   "current_state": "as_promised",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    }
+   ],
+   "owner": null,
+   "owner_record": null
+  },
+  {
+   "commitment_record": "SLA-31161",
+   "feature": "Data retention controls",
+   "current_state": "as_promised",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    }
+   ],
+   "owner": null,
+   "owner_record": null
+  },
+  {
+   "commitment_record": "DRI-53113",
+   "feature": "Sandbox environments",
+   "current_state": "changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-17908",
+     "date": "2026-09-19",
+     "effect": "delay",
+     "via_dependency": false
+    }
+   ],
+   "owner": null,
+   "owner_record": null
+  },
+  {
+   "commitment_record": "DRI-29590",
+   "feature": "Custom roles",
+   "current_state": "changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "DRI-29590",
+     "date": "2026-08-08",
+     "effect": "confirm",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-93341",
+     "date": "2026-09-05",
+     "effect": "delay",
+     "via_dependency": true
+    },
+    {
+     "record": "LIN-19850",
+     "date": "2026-09-16",
+     "effect": "delay",
+     "via_dependency": true
+    }
+   ],
+   "owner": "Dana Ortiz",
+   "owner_record": "SLA-93341"
+  },
+  {
+   "commitment_record": "SLA-40138",
+   "feature": "Churn-risk report",
+   "current_state": "as_promised",
+   "affecting_decisions": [],
+   "owner": null,
+   "owner_record": null
+  },
+  {
+   "commitment_record": "CRM-98566",
+   "feature": "Higher API rate limits",
+   "current_state": "fulfilled",
+   "affecting_decisions": [
+    {
+     "record": "SLA-26281",
+     "date": "2026-09-20",
+     "effect": "shipped",
+     "via_dependency": false
+    }
+   ],
+   "owner": null,
+   "owner_record": null
+  },
+  {
+   "commitment_record": "CRM-74447",
+   "feature": "SSO (SAML)",
+   "current_state": "as_promised",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    }
+   ],
+   "owner": null,
+   "owner_record": null
+  },
+  {
+   "commitment_record": "CRM-62434",
+   "feature": "SSO (SAML)",
+   "current_state": "partially_changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-70067",
+     "date": "2026-09-10",
+     "effect": "rescope",
+     "via_dependency": false
+    },
+    {
+     "record": "LIN-78562",
+     "date": "2026-09-16",
+     "effect": "cut",
+     "via_dependency": false
+    }
+   ],
+   "owner": "Dana Ortiz",
+   "owner_record": "SLA-70067"
+  },
+  {
+   "commitment_record": "DRI-36664",
+   "feature": "SSO (SAML)",
+   "current_state": "as_promised",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "DRI-36664",
+     "date": "2026-07-09",
+     "effect": "confirm",
+     "via_dependency": false
+    }
+   ],
+   "owner": null,
+   "owner_record": null
+  },
+  {
+   "commitment_record": "CRM-31062",
+   "feature": "SSO (SAML)",
+   "current_state": "partially_changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-70067",
+     "date": "2026-09-10",
+     "effect": "rescope",
+     "via_dependency": false
+    },
+    {
+     "record": "LIN-78562",
+     "date": "2026-09-16",
+     "effect": "cut",
+     "via_dependency": false
+    }
+   ],
+   "owner": "Dana Ortiz",
+   "owner_record": "SLA-70067"
+  },
+  {
+   "commitment_record": "CRM-14909",
+   "feature": "Advanced analytics",
+   "current_state": "changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-39322",
+     "date": "2026-09-09",
+     "effect": "cut",
+     "via_dependency": false
+    }
+   ],
+   "owner": "CEO",
+   "owner_record": "SLA-39322"
+  },
+  {
+   "commitment_record": "DRI-63243",
+   "feature": "Audit log export",
+   "current_state": "as_promised",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    }
+   ],
+   "owner": null,
+   "owner_record": null
+  },
+  {
+   "commitment_record": "DRI-42319",
+   "feature": "Custom roles",
+   "current_state": "changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "DRI-42319",
+     "date": "2026-08-26",
+     "effect": "confirm",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-93341",
+     "date": "2026-09-05",
+     "effect": "delay",
+     "via_dependency": true
+    },
+    {
+     "record": "LIN-19850",
+     "date": "2026-09-16",
+     "effect": "delay",
+     "via_dependency": true
+    }
+   ],
+   "owner": "Dana Ortiz",
+   "owner_record": "SLA-93341"
+  },
+  {
+   "commitment_record": "CRM-52816",
+   "feature": "HubSpot sync",
+   "current_state": "changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-78055",
+     "date": "2026-09-15",
+     "effect": "delay",
+     "via_dependency": true
+    },
+    {
+     "record": "LIN-11849",
+     "date": "2026-09-16",
+     "effect": "set",
+     "via_dependency": true
+    }
+   ],
+   "owner": "Sam Lee",
+   "owner_record": "SLA-78055"
+  },
+  {
+   "commitment_record": "SLA-93532",
+   "feature": "Advanced analytics",
+   "current_state": "changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-39322",
+     "date": "2026-09-09",
+     "effect": "cut",
+     "via_dependency": false
+    }
+   ],
+   "owner": "CEO",
+   "owner_record": "SLA-39322"
+  },
+  {
+   "commitment_record": "SLA-24221",
+   "feature": "Offline mode",
+   "current_state": "as_promised",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-62109",
+     "date": "2026-08-20",
+     "effect": "delay",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-61338",
+     "date": "2026-09-18",
+     "effect": "reverse",
+     "via_dependency": false
+    }
+   ],
+   "owner": null,
+   "owner_record": null
+  },
+  {
+   "commitment_record": "DRI-98303",
+   "feature": "Sandbox environments",
+   "current_state": "changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "DRI-98303",
+     "date": "2026-05-14",
+     "effect": "confirm",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-17908",
+     "date": "2026-09-19",
+     "effect": "delay",
+     "via_dependency": false
+    }
+   ],
+   "owner": null,
+   "owner_record": null
+  },
+  {
+   "commitment_record": "SLA-12035",
+   "feature": "SCIM provisioning",
+   "current_state": "changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-93341",
+     "date": "2026-09-05",
+     "effect": "delay",
+     "via_dependency": false
+    },
+    {
+     "record": "LIN-19850",
+     "date": "2026-09-16",
+     "effect": "delay",
+     "via_dependency": false
+    }
+   ],
+   "owner": "Dana Ortiz",
+   "owner_record": "SLA-93341"
+  },
+  {
+   "commitment_record": "DRI-34564",
+   "feature": "Audit log export",
+   "current_state": "partially_changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-25439",
+     "date": "2026-09-12",
+     "effect": "rescope",
+     "via_dependency": false
+    },
+    {
+     "record": "LIN-98924",
+     "date": "2026-09-16",
+     "effect": "cut",
+     "via_dependency": false
+    }
+   ],
+   "owner": "Sam Lee",
+   "owner_record": "SLA-25439"
+  },
+  {
+   "commitment_record": "DRI-83071",
+   "feature": "Offline mode",
+   "current_state": "as_promised",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-62109",
+     "date": "2026-08-20",
+     "effect": "delay",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-61338",
+     "date": "2026-09-18",
+     "effect": "reverse",
+     "via_dependency": false
+    }
+   ],
+   "owner": null,
+   "owner_record": null
+  },
+  {
+   "commitment_record": "CRM-70743",
+   "feature": "Salesforce sync",
+   "current_state": "changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-69343",
+     "date": "2026-08-28",
+     "effect": "delay",
+     "via_dependency": false
+    },
+    {
+     "record": "LIN-56816",
+     "date": "2026-09-16",
+     "effect": "delay",
+     "via_dependency": false
+    }
+   ],
+   "owner": "Dana Ortiz",
+   "owner_record": "SLA-69343"
+  },
+  {
+   "commitment_record": "SLA-54412",
+   "feature": "SLA dashboard",
+   "current_state": "as_promised",
+   "affecting_decisions": [],
+   "owner": null,
+   "owner_record": null
+  },
+  {
+   "commitment_record": "DRI-13941",
+   "feature": "HubSpot sync",
+   "current_state": "changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "DRI-13941",
+     "date": "2026-05-24",
+     "effect": "confirm",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-78055",
+     "date": "2026-09-15",
+     "effect": "delay",
+     "via_dependency": true
+    },
+    {
+     "record": "LIN-11849",
+     "date": "2026-09-16",
+     "effect": "set",
+     "via_dependency": true
+    }
+   ],
+   "owner": "Sam Lee",
+   "owner_record": "SLA-78055"
+  },
+  {
+   "commitment_record": "CRM-25995",
+   "feature": "Salesforce sync",
+   "current_state": "changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-69343",
+     "date": "2026-08-28",
+     "effect": "delay",
+     "via_dependency": false
+    },
+    {
+     "record": "LIN-56816",
+     "date": "2026-09-16",
+     "effect": "delay",
+     "via_dependency": false
+    }
+   ],
+   "owner": "Dana Ortiz",
+   "owner_record": "SLA-69343"
+  },
+  {
+   "commitment_record": "SLA-46650",
+   "feature": "Custom roles",
+   "current_state": "changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-93341",
+     "date": "2026-09-05",
+     "effect": "delay",
+     "via_dependency": true
+    },
+    {
+     "record": "LIN-19850",
+     "date": "2026-09-16",
+     "effect": "delay",
+     "via_dependency": true
+    }
+   ],
+   "owner": "Dana Ortiz",
+   "owner_record": "SLA-93341"
+  },
+  {
+   "commitment_record": "DRI-76161",
+   "feature": "Offline mode",
+   "current_state": "as_promised",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-62109",
+     "date": "2026-08-20",
+     "effect": "delay",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-61338",
+     "date": "2026-09-18",
+     "effect": "reverse",
+     "via_dependency": false
+    }
+   ],
+   "owner": null,
+   "owner_record": null
+  },
+  {
+   "commitment_record": "SLA-77342",
+   "feature": "Audit log export",
+   "current_state": "changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-25439",
+     "date": "2026-09-12",
+     "effect": "rescope",
+     "via_dependency": false
+    },
+    {
+     "record": "LIN-98924",
+     "date": "2026-09-16",
+     "effect": "cut",
+     "via_dependency": false
+    }
+   ],
+   "owner": "Sam Lee",
+   "owner_record": "SLA-25439"
+  },
+  {
+   "commitment_record": "DRI-49806",
+   "feature": "EU data residency",
+   "current_state": "changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "DRI-49806",
+     "date": "2026-07-21",
+     "effect": "confirm",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-23864",
+     "date": "2026-09-03",
+     "effect": "delay",
+     "via_dependency": false
+    },
+    {
+     "record": "LIN-65059",
+     "date": "2026-09-16",
+     "effect": "delay",
+     "via_dependency": false
+    }
+   ],
+   "owner": "Dana Ortiz",
+   "owner_record": "SLA-23864"
+  },
+  {
+   "commitment_record": "CRM-60841",
+   "feature": "Webhooks v2",
+   "current_state": "changed",
+   "affecting_decisions": [
+    {
+     "record": "NOT-20876",
+     "date": "2026-06-30",
+     "effect": "set",
+     "via_dependency": false
+    },
+    {
+     "record": "SLA-78055",
+     "date": "2026-09-15",
+     "effect": "delay",
+     "via_dependency": false
+    },
+    {
+     "record": "LIN-11849",
+     "date": "2026-09-16",
+     "effect": "set",
+     "via_dependency": false
+    }
+   ],
+   "owner": "Sam Lee",
+   "owner_record": "SLA-78055"
+  }
+ ],
+ "log": []
+}

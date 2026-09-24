@@ -1,0 +1,44 @@
+## Cobalt Retail — QBR Brief
+
+**One flag before anything else:** don't re-promise the audit log export date on this call until you've checked with the product owner. Details in Risks below.
+
+### Where things stand
+Coverage is broad but thin — the account touchpoints in the last six months are routine check-ins, no escalations, no churn signals in what I can see:
+
+| Date | Topic | Owner | Record |
+|---|---|---|---|
+| 2026-08-11 | Billing + audit prep (Ana Petrova, Omar Haddad) | — | DRI-75222 |
+| 2026-08-04 | QBR prep | Jordan Blake | CRM-12694 |
+| 2026-08-01 | Notifications | Omar Haddad | CRM-35990 |
+| 2026-07-24 | QBR — audit log export pushed by Sam Ortiz | Maya Chen | CRM-38600 |
+| 2026-07-23 | Reporting | Priya Shah | CRM-94849 |
+| 2026-06-23 | Pricing | Priya Shah | CRM-87224 |
+| 2026-06-15 | Onboarding | Omar Haddad | CRM-16603 |
+| 2026-06-12 | Audit prep | Omar Haddad | CRM-24323 |
+| 2026-05-26 | Dashboards | Tess Brown | CRM-24697 |
+| 2026-04-27 | Onboarding | Priya Shah | CRM-49779 |
+| 2026-04-20 | Roadmap | Maya Chen | CRM-70221 |
+
+Notable pattern: **audit prep recurs across four separate threads** (CRM-24323, CRM-87224, CRM-12694, DRI-75222) alongside the export commitment. This is clearly the account's dominant theme, and Sam Ortiz is the driver.
+
+### Open commitments
+- **Audit log export (Lark), CSV format, by Q1 2027** — made by you to Sam Ortiz at the 2026-07-24 QBR (CRM-38600). Your exact words on record: *"you'll have it by Q1 2027 as a CSV export, you have my word."* The note says the customer is planning around it. This is the only hard, dated commitment to Cobalt in the record.
+
+No other open commitments to this account surfaced.
+
+### Risks
+1. **The audit log export date may not be safe to reaffirm.** Your Cobalt commitment itself shows no recorded change, but there's an unresolved question attached to the audit log export feature that sits outside what I can see (it surfaced on a parallel commitment for the same feature, SLA-77342). I can't tell you whether it affects Cobalt's date or not. **Confirm with the product owner before the call.** If you repeat "you have my word, Q1 2027" and it has moved, you're re-committing personally to a date on a feature with an open question — with a customer who is actively planning around it.
+2. **Commitment concentration.** One dated promise, personally worded, on the account's most-discussed topic. If it slips, it defines the QBR.
+3. **Ownership churn.** Five different owners across eleven touchpoints (Blake, Haddad, Shah, Brown, you). Sam may perceive no single point of accountability — worth pre-empting.
+
+### What to say
+**On audit log export — pick a lane before the call:**
+- *If the product owner confirms Q1 2027 holds:* "Audit log export is on track for Q1 2027 as CSV, as I committed in July. Let's talk about what your team needs on the ingest side so you're ready day one."
+- *If they confirm it has changed, or you can't reach them in time:* don't restate the date. "I want to give you a precise update on audit log export rather than repeat a date — I'm confirming timing on my side and will come back to you with specifics by [date]." Then actually close that loop within a few days. Vagueness is only acceptable if it's short-lived.
+
+**On the rest of the QBR:**
+- Consolidate the audit theme: pull CRM-24323, CRM-87224, CRM-12694 and DRI-75222 into one narrative — "here's everything we're doing to get you audit-ready" — rather than four disconnected check-ins.
+- Name yourself as the single owner for Cobalt to counter the ownership churn.
+- Ask Sam directly what their audit deadline is. Your Q1 2027 promise was made to a date you set; if their real deadline is earlier or later, that changes how much the risk above actually matters.
+
+**Action for you today:** one message to the audit log export product owner asking whether Q1 2027 CSV delivery for Cobalt still holds. That single answer determines which version of your main talking point you use.

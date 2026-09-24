@@ -1,0 +1,53 @@
+# Cobalt Retail — QBR Brief
+
+**Primary contact:** Sam Ortiz · **Account team:** Maya Chen (CS), Jordan Blake, Priya Shah, Omar Haddad, Tess Brown
+
+---
+
+## ⚠️ Read this before you build your deck
+
+Your audit log export commitment to Sam Ortiz (`CRM-38600`) is flagged: **a decision I can't see may have changed it.** I can't tell you whether it did, and neither can the public roadmap I can see.
+
+**Do not reaffirm the Q1 2027 date on this call until you've confirmed with the product owner for Audit log export.** That's the single highest-value thing you can do before next week — everything else in this brief is lower stakes.
+
+---
+
+## Where things stand
+
+Engagement is steady and broad. Since April you've run calls across roadmap (`CRM-70221`), search (`CRM-36268`), webhooks (`CRM-98822`), dashboards (`CRM-24697`), NPS (`CRM-92187`), onboarding (`CRM-49779`, `CRM-16603`), reporting (`CRM-94849`), notifications (`CRM-35990`), and pricing (`CRM-87224`). No escalations or renewal-risk records surfaced.
+
+The dominant thread is **audit**. It recurs as the "next step" across `CRM-12694` (QBR prep, Aug 4), `CRM-87224` (pricing, Jun 23), and `DRI-75222` (billing, Aug 11), and has its own workstream in `CRM-24323` (Jun 12). Audit readiness is what this account cares about — treat it as the spine of the QBR, not one agenda item among ten.
+
+## Open commitments
+
+| Commitment | Source | Status |
+|---|---|---|
+| Audit log export (Lark), CSV, by Q1 2027 — to Sam Ortiz | `CRM-38600` | ⚠️ **Verify with product owner before reaffirming** |
+
+Your exact words on 2026-07-24 were *"you'll have it by Q1 2027 as a CSV export, you have my word,"* and the record notes the customer is planning around it. That phrasing raises the cost if the date has moved — worth knowing before you're in the room.
+
+The public roadmap I can see (`NOT-20876`, dated 2026-06-30) lists Audit log export incl. SIEM streaming at Q1 2027. It predates your commitment and I can't confirm it's current — don't use it as your verification. There's a newer roadmap record (`NOT-77133`, 2026-09-26, owner Jordan Blake, related to audit prep) whose contents I can't read; Jordan is on this account and is a good person to check with alongside the product owner.
+
+## Risks
+
+1. **Audit log export date integrity.** Unverified, personally promised, and the customer is planning around it. If it has slipped, finding out mid-call is the bad outcome.
+2. **Ownership churn.** Five different owners across ten touchpoints in six months. Sam may be experiencing Brightline as a rotating cast — worth naming who owns what going forward.
+3. **Thin follow-through trail.** Nearly every record ends in "follow up on X" with no closing record. The audit prep thread (`CRM-24323`, June) and billing discussion (`DRI-75222`, August) have no visible resolution. Expect Sam to ask about open items you don't have written answers for.
+
+## What to say
+
+**On audit log export** — pending your check with the product owner:
+
+- *If the date holds:* reaffirm it plainly, and add value by confirming the delivery shape (CSV, plus whether SIEM streaming is in scope — the roadmap pairs them, your commitment specified CSV only). Sam should leave knowing exactly what lands.
+- *If the date moved:* lead with it. Don't let it come up in Q&A. Name the new date, own that you gave your word on the old one, and bring a concrete bridge for their audit timeline.
+- *If you can't reach the product owner before the call:* say you're confirming the delivery details and will come back within a set number of days. Do not restate "Q1 2027, you have my word."
+
+**On the rest of the QBR:**
+
+- Frame the whole session around their audit readiness — it's the through-line in their own records and it'll land better than a feature tour.
+- Name a single point of contact going forward. Five owners in six months is the kind of thing customers notice but don't raise.
+- Close the loop on the June audit prep thread (`CRM-24323`) and the August billing conversation (`DRI-75222`) before the call so you're not improvising.
+
+---
+
+**One action before next week:** ask the Audit log export product owner whether the Q1 2027 CSV commitment still holds. Loop in Jordan Blake, who owns the current roadmap record.

@@ -1,0 +1,43 @@
+I researched across CRM, Slack, Notion, Drive, and Linear. The short answer is that the premise doesn't hold up, in two independent ways.
+
+## 1. None of the SSO promises are yours
+
+The commitment ledger (QBR notes + renewal call notes, where promises are recorded with an explicit speaker) contains five SSO commitments. **None are attributed to you:**
+
+| Record | Account | Who promised | What |
+|---|---|---|---|
+| CRM-64756 (2026-06-06) | Delta Freight | **Tess Brown (CS)** | "by end of Q1, you have my word" |
+| CRM-31062 (2026-06-08) | Vantage Telecom | **Priya Shah (AE)** | "Q1 2027, including IdP-initiated login from Okta" |
+| CRM-62434 (2026-08-17) | Umber Studios | **Priya Shah (AE)** | "by March, with IdP-initiated" — *renewal condition* |
+| CRM-74447 (2026-08-18) | Riverton City | **Tess Brown (CS)** | SSO (SAML) (Heron) "by early next year" — *renewal condition* |
+| DRI-36664 (2026-07-09) | Quarry Mining | **Leo Grant (AE)** | confirmed "SSO (SAML) by Q1 2027" |
+
+Your two personal commitments in that ledger are both on other features:
+- **CRM-98566** (Bluewater Logistics, 2026-05-03) — Higher API rate limits, *"you'll have it this autumn, you have my word."*
+- **CRM-38600** (Cobalt Retail, 2026-07-24) — Audit log export (Lark), *"by Q1 2027 as a CSV export, you have my word."*
+
+The many "Sso questions" records with your name nearby (e.g. NOT-20443, SLA-94820, DRI-67178) are discussion threads, not commitments.
+
+## 2. Nothing has changed on SSO anyway
+
+SSO (SAML), SP- and IdP-initiated is still **Q1 2027** on the public roadmap (NOT-20876, 2026-06-30). I found no slip, scope cut, or deprecation for Heron anywhere — Slack, Notion, Linear, and Drive all come back empty on that.
+
+The only slip announcement in the corpus is **SLA-17908** (#general, 2026-09-19): **Sandbox environments (Rail) slip from Q4 2026 to Q2 2027** — "please update any customers expecting them this year." That's Sandbox, not SSO. If that message is what prompted your question, the feature named in it is a different one.
+
+## What this means for you
+
+**Your API rate limits promise is satisfied.** SLA-26281 (2026-09-20): "Crane is live: API rate limits raised for all paid plans." That lands within the autumn window you gave Bluewater Logistics — worth a confirming note to Ruth Kim.
+
+**Your audit log promise is on track and deliberately narrower than the roadmap.** You committed CSV export by Q1 2027; the roadmap line is "Audit log export incl. SIEM streaming: Q1 2027." You under-promised, which is the safe direction.
+
+**You have no Sandbox exposure.** The two Sandbox conversations I found were carefully hedged — CRM-64912 (Meridian Travel, "on the roadmap, no commitment") and CRM-15486 (Cobalt Retail, "their incumbent vendor promised Sandbox environments; we did not").
+
+## One thing worth raising, even though it isn't yours
+
+Two SSO commitments are logged as **renewal conditions**, meaning a miss has contractual weight:
+- **Umber Studios** (CRM-62434) — Priya Shah promised *"by March,"* which reads tighter than a Q1 2027 close on March 31, and explicitly includes **IdP-initiated** sign-in.
+- **Riverton City** (CRM-74447) — Tess Brown promised "early next year," consistent with the roadmap but with no slack in it.
+
+Vantage Telecom (CRM-31062) also has a specific technical promise: IdP-initiated login *from Okta*. The roadmap covers IdP-initiated generically but says nothing about Okta specifically. If SSO ever does slip, these three are the sharp edges — and they belong to Tess and Priya, so the useful move is flagging them rather than absorbing them.
+
+**Caveat on coverage:** search returns the top 10 matches per query, so I can't prove a negative exhaustively. But across roughly a dozen differently-worded queries on all five systems, no SSO commitment traced back to you and no SSO timeline change surfaced. If you're thinking of a specific conversation, tell me the account and I'll pull that record directly.

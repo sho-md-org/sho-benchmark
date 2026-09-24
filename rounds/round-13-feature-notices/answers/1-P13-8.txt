@@ -1,0 +1,31 @@
+## What the records show
+
+**The promise is real and documented.** At the 2026-07-09 sync (`DRI-36664`), Tom Hale raised that Brightline had told Quarry Mining SSO (SAML) by Q1 2027, and AE Leo Grant confirmed it on the call. So this isn't a customer misremembering.
+
+**It matches the published roadmap.** `NOT-20876` (Public roadmap H1 2027, dated 2026-06-30) lists *"SSO (SAML), SP- and IdP-initiated: Q1 2027"* — and also SCIM provisioning at Q1 2027, which usually matters to the same buyer.
+
+**One gap you should know about before sending.** There is no Linear issue for SAML/SSO — searches for "SSO", "SAML", and "single sign-on / authentication / identity provider" all returned zero tickets. Every other SSO-titled record (`SLA-53734`, `NOT-20443`, `DRI-51391`, etc.) is customer-conversation noise, not engineering work. Nothing indicates the date has *slipped*; what's missing is positive evidence that scoped work exists. I've drafted the reply to reaffirm the published commitment without inventing delivery specifics we can't back up — I'd suggest a quick confirmation with Maya Chen (roadmap owner, per `NOT-64137`) before it goes out.
+
+## Draft reply
+
+> **Subject: Re: SSO (SAML) timing**
+>
+> Hi Tom,
+>
+> Yes — SSO (SAML) remains on our published H1 2027 roadmap for Q1 2027, covering both SP-initiated and IdP-initiated flows. That's the same commitment we discussed on our July 9 call, and nothing has changed on our side since.
+>
+> Two things worth flagging as you plan:
+>
+> - **SCIM provisioning** is also targeted for Q1 2027. If you're planning to automate user lifecycle alongside SSO, it's worth scoping the two together rather than sequentially.
+> - I'd like to get your IT team in front of ours for a technical scoping call — confirming your IdP (Okta, Entra, other), your preferred flow, and any attribute-mapping requirements now means we can validate fit against the build rather than discovering constraints at rollout.
+>
+> Would a 30-minute session in the next two weeks work? I'll bring someone from the product side so you're getting timing straight from the team that owns it.
+>
+> Best,
+> Leo
+
+## Why it's worded this way
+
+I kept it to what the records support: reaffirming the roadmap target, not adding a specific delivery week, beta date, or contractual language. Given there's no tracked engineering ticket, the scoping call does real work here — it creates a legitimate checkpoint where Quarry Mining hears timing from the product owner, so you're not the single point of exposure if the date moves.
+
+If you'd rather I soften the reaffirmation to "on track per our published roadmap" pending your check with Maya, or add contractual/SLA language, say the word and I'll revise.

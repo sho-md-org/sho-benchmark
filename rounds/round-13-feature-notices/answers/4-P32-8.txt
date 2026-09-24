@@ -1,0 +1,33 @@
+## Harbor Clinics — QBR brief (call week of Sep 29, 2026)
+
+### Where things stand
+Activity is steady and broad across the account — 20+ touchpoints since April spanning onboarding (CRM-48825, Jul 24), integrations (CRM-75336, Jul 25), dashboards (CRM-64035, Aug 26), offline (CRM-39320, Aug 26), and most recently the mobile app (CRM-49374, Sep 21). Ownership is spread across Sam Lee, Leo Grant, Priya Shah, Tess Brown, Omar Haddad and Ana Petrova, with you on latency (CRM-94239) and the support queue (DRI-20995).
+
+The record itself is thin on outcomes — most entries log the topic and a next step, not a resolution. Worth knowing going in: **you won't be able to claim measurable progress from the CRM alone.** If you want adoption or ticket-volume numbers in the deck, those need to come from product/support data before the call.
+
+### Open commitments
+| Commitment | Owner | Due | Status |
+|---|---|---|---|
+| Data retention controls | Jordan Blake (AE) | Q1 2027 | Confirmed to Ines Park; no later change found — **safe to reaffirm** |
+
+That's the only tracked promise to Harbor. Ines Park raised it on the May 15 sync and Jordan confirmed it then (DRI-80868). Nothing since has altered it, so you can restate the Q1 2027 date on the call.
+
+### Risks
+1. **Churn is an internal theme, repeatedly.** Three separate internal discussions in under two months — Jul 20 (DRI-17076, churn + analytics), Sep 6 (DRI-26772, churn + sandbox), Sep 11 (DRI-17950, churn + dashboards, with you and Tess Brown). Different pairs of people, different angles, same word. Treat this as the real subtext of the QBR.
+2. **EU data residency is an unanswered ask.** Ada Moss asked on Jun 9; the response was "exploring, no dates yet" (CRM-89966). Three and a half months later there's still nothing in the record. If Ada is on the call, expect this back — and there's no new answer to give.
+3. **Fragmented ownership.** Six-plus internal owners across topics may read to Harbor as no single point of accountability.
+
+### What to say
+- **Lead with the retention controls win.** "Data retention controls are on track for Q1 2027" — it's confirmed and unchanged, and it's the concrete commitment they're tracking.
+- **Raise EU data residency before they do.** Don't repeat "we're exploring." Either get a status from product beforehand, or say plainly that you're chasing a date and will come back by a specific day. Reusing June's non-answer is what turns a request into a grievance.
+- **Open a renewal conversation deliberately.** Given the churn pattern, ask what would make the next year obviously worth it to them, rather than presenting activity volume as health.
+- **Name one owner.** Offer yourself or Leo Grant as the single escalation point across the topic sprawl.
+
+### Before the call
+- Get a product-owner read on EU data residency (CRM-89966).
+- Pull adoption/support-volume numbers — the CRM has topics, not outcomes.
+- Ask Leo or Tess what's driving the churn discussions; three conversations you weren't all in suggests context you don't have.
+
+---
+
+One side note, unrelated to Harbor: two of your own commitments on other accounts — advanced analytics to Lena Fox at Pinecrest (SLA-93532) and audit log export to Lena Fox at Granite (SLA-77342) — are flagged as possibly affected by a decision I can't see. Check with the product owner before reaffirming either. Not a Harbor issue, but don't let them sit.

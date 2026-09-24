@@ -1,0 +1,25 @@
+## Answer: Keystone's is the one at risk
+
+Both promises name the same date (Q1 2027) and that date matches the published roadmap. The difference is **scope**, and that's where Keystone is exposed.
+
+**The two promises side by side**
+
+| | Cobalt Retail | Keystone Energy |
+|---|---|---|
+| Record | `CRM-38600` (QBR, 2026-07-24) | `DRI-34564` (sync, 2026-08-03) |
+| Promised to | Sam Ortiz | Nia Cole |
+| Wording | "you'll have it by Q1 2027 as a **CSV export**, you have my word" | "**Audit log export by Q1 2027 with streaming into Splunk**" |
+| Who said it | Maya Chen (CS) | Jordan Blake (AE) confirmed |
+| Roadmap backing (`NOT-20876`) | Covered — CSV export is a subset of the committed item | Partially covered — roadmap says "Audit log export incl. **SIEM streaming**," not Splunk specifically |
+
+**Why Keystone is the riskier one**
+
+1. **Named-vendor scope creep.** The roadmap commits to generic SIEM streaming (`NOT-20876`). Keystone was told *Splunk*. Nothing in the tools confirms a Splunk-specific connector is in scope — that's an unbacked delta, and "streaming" is the hardest part of the feature to land on time. Cobalt's CSV export is the narrowest, most deliverable slice of the same item, so a partial delivery still satisfies Cobalt while failing Keystone.
+2. **The customer is actively counting on it.** Nia Cole raised it unprompted ("reminded us that we told them"), and Jordan Blake reconfirmed it in the room — so it's now double-committed with no documented scope caveat. Sam Lee's 2026-09-23 note says only "exports next week" (`SLA-37823`), which doesn't reach streaming.
+
+**Two things you should know before you act**
+
+- **The Keystone promise isn't on record as yours.** `DRI-34564` attributes it to Jordan Blake (AE); you weren't an attendee. Your *own* second audit-export promise in the record is **Granite Insurance** — you told Lena Fox "Q1 2027 including SIEM streaming so they can finish their rollout" (`SLA-77342`, 2026-05-26). That one carries the same Splunk-class streaming exposure as Keystone and has a rollout deadline attached to it. If you're auditing your personal commitments, Granite belongs on the list.
+- **Neither promise is traceable to engineering.** I searched Linear for audit / export / Splunk / SIEM / Q1 2027 and found **zero** tickets. The only thing backing either date is the public roadmap page. That's a shared risk under both promises, and it's worth confirming with the roadmap owner (Jordan Blake, `NOT-77133`) before you reassure anyone.
+
+**Suggested next step:** get written confirmation of whether Splunk streaming specifically is in the Q1 2027 cut. If it isn't, re-baseline Keystone to "export at Q1 2027, streaming to follow" now — nine months out, while it's still a scope correction rather than a missed commitment. Cobalt needs no action beyond keeping CSV in the first release.

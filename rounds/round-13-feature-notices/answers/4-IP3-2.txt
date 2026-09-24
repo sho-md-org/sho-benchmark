@@ -1,0 +1,17 @@
+I can't answer that one from what's available to me.
+
+**What I can see**
+
+- **SLA-93532** (2026-06-28, #cs): you told Lena Fox at Pinecrest Realty that Advanced analytics (Osprey) would land in the spring release so they could finish their rollout.
+- **NOT-31499** (2026-04-16, Notion): analytics notes, owner **Omar Haddad**.
+- **SLA-91143** (2026-07-13, Slack): Tess Brown posting a general analytics update — no decision, no owner named.
+
+**What I can't see**
+
+There's material bearing on Advanced analytics that's outside my access, so I can't tell you who decided what, or whether anything was decided at all. I'd be guessing, and on a commitment you've already made to a customer that's the wrong thing to guess about.
+
+**Suggested next step**
+
+Ask **Omar Haddad**, the product owner on NOT-31499 — both who made the call and whether your spring-release commitment to Pinecrest still holds. Worth doing before you reaffirm anything to Lena Fox.
+
+Two other open commitments carry the same flag, if you want to batch the conversation: **SCIM provisioning** for Umber Studios (SLA-12035, Jordan Blake) and **Audit log export** for Granite Insurance (SLA-77342, yours). Offline mode for Meridian Travel (SLA-24221, Priya Shah) is clear — no later change found.

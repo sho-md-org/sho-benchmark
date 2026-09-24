@@ -1,0 +1,28 @@
+## What the records show
+
+**The commitment is real and documented.** Quarry Mining isn't misremembering:
+
+- **DRI-36664** (2026-07-09, Quarry Mining sync) — Tom Hale explicitly reminded us we'd told them SSO (SAML) by Q1 2027, and **Leo Grant (AE) confirmed it on the call**. So this has been affirmed to them at least twice.
+- **NOT-20876** (2026-06-30, Public roadmap H1 2027) — lists **"SSO (SAML), SP- and IdP-initiated: Q1 2027."** This is the current published roadmap and still stands. SCIM provisioning is also Q1 2027, which is worth surfacing since it usually travels with SAML.
+- **SLA-17908** (2026-09-19, #general) — the one item that *has* slipped is **Sandbox environments → Q2 2027**, with an instruction to notify affected customers. SSO was not in that notice, which is a useful negative signal: slips do get announced here, and SSO wasn't one.
+
+⚠️ **One flag before you send:** Linear returned zero results for *every* query I ran (including control queries like "EU data residency"), so that source is empty or unavailable to me. I can confirm the **published roadmap commitment** is unchanged, but I could **not** verify engineering-level build status — no ticket, no sprint, no delivery confidence. The draft below therefore reconfirms the roadmap without inventing a GA date or a beta. I'd suggest a quick check with Maya Chen (roadmap owner) before it goes out, so the AE isn't confirming a third time on my word alone.
+
+## Draft reply
+
+> **Subject:** Re: SSO (SAML) timing
+>
+> Hi Tom,
+>
+> Yes — SSO (SAML) remains on our roadmap for **Q1 2027**, covering both **SP-initiated and IdP-initiated** flows. That's unchanged from what we discussed in July, and it's what's on our published H1 2027 roadmap.
+>
+> One thing worth flagging as a positive: **SCIM provisioning is also targeted for Q1 2027**, so if you're planning to automate user lifecycle alongside SSO, those should land in the same window. Happy to walk your team through how we'd sequence them.
+>
+> As we get closer, I'd like to get you into the rollout early rather than at GA. Would it be useful to set up a short session with our product team in the new year to cover your IdP specifics (Okta/Entra/other), attribute mapping, and what a pilot on your side would look like? That way your identity team can plan against real implementation detail rather than a date on a roadmap.
+>
+> Let me know and I'll get it scheduled.
+>
+> Best,
+> Leo
+
+**Note on wording:** I deliberately kept it to "remains on our roadmap for Q1 2027" rather than echoing "as you promised." It reconfirms the date without escalating the language into a contractual guarantee — and it leaves room to manage a slip later without having doubled down on stronger phrasing than the roadmap actually supports.

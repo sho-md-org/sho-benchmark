@@ -1,0 +1,68 @@
+I pulled every Cobalt Retail record across all five tools (21 records: 11 CRM, 10 Drive; Slack and Linear returned nothing for Cobalt — or for any generic query, so those systems appear to hold no data for this account).
+
+**One important caveat up front:** every record is a one-line stub. Not a single one contains ARR, renewal date, contract terms, seat counts, health score, NPS value, or the substance of a discussion. So I can't give you "where things stand" in the numbers sense — that data isn't in these systems. What I *can* give you is a reliable map of what's been discussed, by whom, and — most usefully — which stated follow-ups never happened. That analysis is below and it surfaced two things worth your attention.
+
+---
+
+# Cobalt Retail — QBR Brief
+**Call: week of 2026-09-28 · Prepared 2026-09-24**
+
+## 1. Where things stand
+
+**Cadence is healthy.** 21 logged touchpoints Apr 1 – Sep 26, roughly 3–4/month, with no gaps. This is an actively managed account, not a neglected one.
+
+**Account team** (by CRM ownership): Priya Shah is the primary — owns 5 of 11 CRM calls including the most recent (`CRM-12380`). Omar Haddad owns 3 (`CRM-35990`, `CRM-16603`, plus recent QBR prep). You own 2 (`CRM-70221`, `CRM-36268`). Tess Brown owns 2 (`CRM-24697`, `CRM-92187`). Also appearing in meetings: Sam Lee, Ana Petrova, Jordan Blake, Dana Ortiz, Leo Grant.
+
+**Arc of the relationship:**
+- **Apr–Jun — deployment.** Onboarding (`CRM-49779`, `CRM-16603`, `DRI-18657`), webhooks (`CRM-98822`), search (`CRM-36268`), dashboards (`CRM-24697`, `DRI-58616`), exports (`DRI-41266`), roadmap (`CRM-70221`). Standard implementation shape.
+- **Jun–Aug — expansion and advocacy.** NPS (`CRM-92187`), pricing (`CRM-87224`), reporting (`CRM-94849`), notifications (`CRM-35990`), and notably **two case study sessions** (`DRI-20022` 07-27, `DRI-95243` 08-05). A customer who sits for two case study meetings is a reference candidate — that's your strongest positive signal in the file.
+- **Aug–Sep — scale and infrastructure.** Rate limits (`DRI-33978`, `CRM-12380`), billing/audit prep (`DRI-75222`), sandbox/hosting (`DRI-35074`), offline/mobile (`DRI-82140`).
+
+**Heads up:** `DRI-72283` ("Mobile app," Sam Lee + Priya Shah) is dated **2026-09-26** — two days from now, before your call. That meeting hasn't happened yet. Sync with Priya afterward so you're not briefing stale.
+
+## 2. Open commitments
+
+Each CRM entry logs a "next step." I traced every one against later records to see whether it actually happened. Eight closed. **Four never did:**
+
+| Commitment | Logged | Owner | Status |
+|---|---|---|---|
+| **Follow up on churn** | `CRM-12380`, 09-12 | Priya Shah | **Open 12 days.** No churn record exists anywhere. |
+| **Security review** | `CRM-70221` 04-20 **and** `CRM-36268` 05-22 | **You** | **Open ~5 months.** Raised twice, never closed. |
+| Follow up on latency | `CRM-49779`, 04-27 | Priya Shah | Open ~5 months. No latency record exists. |
+| SSO questions | `DRI-20022`, 07-27 | Ana Petrova / Jordan Blake | Raised, never revisited. |
+
+Closed, for reference: case study (`CRM-98822`→`DRI-20022`), rate limits (`CRM-24697`, `CRM-16603`→`DRI-33978`, `CRM-12380`), mobile app (`CRM-92187`→`DRI-82140`), audit prep (`CRM-87224`→`DRI-75222`), billing (`CRM-94849`→`DRI-75222`), pricing (`CRM-35990`→`DRI-95243`).
+
+## 3. Risks
+
+**Risk 1 — the churn flag (highest priority).** The most recent CRM touch (`CRM-12380`, 09-12, Priya) has next step "follow up on churn." That word appears exactly once in the entire account history and nothing has happened since. I can't tell you *why* it was written — the record doesn't say, and no supporting note exists. **Talk to Priya before the call.** If there's a real retention signal here, it changes the entire posture of your QBR and you do not want to learn about it live.
+
+**Risk 2 — an unclosed security/compliance cluster.** Five separate threads, never resolved, that all point the same direction: security review (`CRM-70221`, `CRM-36268`), SSO (`DRI-20022`), EU customers (`DRI-33978`), hosting (`DRI-35074`). Customers asking about SSO, data residency, and hosting are usually either scaling up or being pushed by their own procurement/infosec. Either way this is a blocker waiting to surface — and two of these are commitments *you* personally made.
+
+**Risk 3 — recurring friction on scale and onboarding.** Rate limits came up three times (`CRM-24697`, `DRI-33978`, `CRM-12380`), onboarding three times across four months (`CRM-49779`, `CRM-16603`, `DRI-18657`). Repeat topics usually mean unresolved topics. Note that rate limits and churn appear in the *same* record — worth probing whether they're connected.
+
+**Risk 4 — no renewal data.** There is no renewal date, contract value, or commercial term anywhere in these systems. You should not walk into a QBR without knowing the renewal timeline; pull it from wherever Brightline actually keeps contracts.
+
+## 4. What to say
+
+**Open with the win.** Two case study sessions and an NPS conversation — lead with partnership, and use it: *"You've been generous with the case study work. Where are we on getting that published, and can we talk about what a reference relationship looks like?"*
+
+**Then close your own loops first.** You owe them a security review from April. Name it: *"I owe you a security review — I've had that open since April and I want to close it. Let's also get SSO and the EU data residency questions answered in the same pass."* Owning the lapse yourself buys credibility for everything that follows.
+
+**Probe the scaling story.** *"Rate limits have come up three times now, and you've been asking about hosting and the sandbox. Tell me what's driving that — are you scaling volume, or is this a new deployment?"* This is likely where either expansion revenue or the churn risk lives.
+
+**Confirm the infrastructure work landed.** Billing/audit prep (`DRI-75222`) and mobile/offline (`DRI-82140`) both had recent working sessions. Verify they're done rather than assuming.
+
+**On churn — do not raise it cold.** Get the story from Priya first. If it's real, ask open-ended (*"How are you feeling about the partnership heading into next year?"*) and listen. If it was a routine health-check note, drop it.
+
+## 5. Before the call
+
+1. **Ask Priya Shah what "follow up on churn" in `CRM-12380` meant.** Highest-value 5 minutes of your prep.
+2. **Get the renewal date and ARR** from the contract system.
+3. **Debrief Priya/Sam after the 09-26 mobile app meeting** (`DRI-72283`).
+4. **Get a security review scheduled** — bring a date, not an apology.
+5. **Check `NOT-42571` (09-15) and `NOT-52051` (09-05) with Omar.** Both are recent "QBR prep" notes he owns, tagged *onboarding* and *hosting* — matching live Cobalt threads. They aren't labeled Cobalt, so I can't confirm they're for this account, but given Omar's on the team and the timing, ask him.
+
+---
+
+Two notes on limits: the four "open" commitments are inferred from absence of a later record, so if follow-ups happened over email or in an untracked call, they'd look open here. And the positive read on the case study work is an inference from meeting frequency — no record states Cobalt agreed to be a reference.

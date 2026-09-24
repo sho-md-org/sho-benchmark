@@ -1,0 +1,49 @@
+I pulled every Keystone Energy record across all four systems — 20 in CRM and Drive, zero in Slack, Linear, and Notion. I need to lead with a problem before the brief itself.
+
+## The records won't support a QBR brief
+
+Every Keystone record is a one-line stub. Representative, in full:
+
+> **CRM-19012** (2026-09-23): "Call with Keystone Energy. Discussed uptime. Owner Sam Lee. Next: follow up on NPS."
+> **DRI-20667** (2026-08-15): "Attendees: Ana Petrova, Ana Petrova. Discussed churn and pricing."
+
+That is the entire content. Across all 20 records there is **no ARR, no renewal date, no contract terms, no health score, no NPS value, no uptime figures, no customer-side names, and no commitment with an owner and a due date.** "Discussed churn" tells you a churn conversation happened; it does not tell you what was said or concluded.
+
+I won't write "where things stand, risks, and what to say" from that, because every substantive sentence would be invented. Below is what the record genuinely supports.
+
+## What the metadata does establish
+
+**A topic shift consistent with renewal risk.** April–July is product-operational: notifications, latency, reporting, analytics, dashboards, onboarding. From mid-August the mix changes to churn (DRI-20667, 8/15), uptime (CRM-19012, 9/23), and pricing (CRM-78617, 9/25). That sequence is worth your attention — though note it's an inference from titles, not from anything stated in the notes.
+
+**Recurring themes by volume:** uptime (4 records), analytics (4), dashboards (3), latency (3). Uptime recurs from April straight through to the most recent CRM entry, and CRM-19012's next step is NPS follow-up.
+
+**A pricing call tomorrow, 2026-09-25 — not yours.** CRM-78617 is owned by Jordan Blake and is dated one day out. A pricing conversation landing immediately before your QBR is the single most actionable thing I found. Its next step is "follow up on offline."
+
+**Three follow-up threads with no downstream record.** CRM notes carry a "Next:" field; I traced each one forward:
+
+| Source | Date | Committed follow-up | Status |
+|---|---|---|---|
+| CRM-71045 | 05-02 | webhooks | No webhooks record exists in any system |
+| CRM-79992 | 05-24 | hosting | No hosting record exists |
+| CRM-56812 | 07-12 | search | No search record after this date |
+| CRM-19012 | 09-23 | NPS | Pending, 1 day old |
+
+The other five "Next:" items each have a matching later record. These four are the closest thing to "open commitments" available — but they're internal next-steps, not promises to the customer, and I can't tell which were actually made to Keystone.
+
+**Account continuity is fragmented.** CRM ownership rotates across Leo Grant (4), Sam Lee (2), Ana Petrova (2), and Jordan Blake (2), with no consistent owner. You appear only in Drive notes (DRI-85290, DRI-39787, DRI-31273) and never as a CRM owner. DRI-31273 (08-10, with Sam Lee) is explicitly tagged "QBR prep" — it's the only prior prep artifact and it contains one sentence.
+
+**A ~5.5-week activity gap** runs from 08-15 to 09-23, the stretch immediately preceding this QBR.
+
+Two records list duplicated attendees (DRI-85290: "Maya Chen, Maya Chen"; DRI-20667: "Ana Petrova, Ana Petrova"), which suggests the note-capture pipeline is dropping data rather than these being genuinely thin meetings.
+
+## To actually build the brief
+
+The fastest path is people, not systems:
+
+1. **Talk to Jordan Blake today**, ahead of the 09-25 pricing call (CRM-78617). If pricing is live, it likely drives the QBR.
+2. **Ask Ana Petrova what DRI-20667 was** — it's the only churn-tagged record and it's unreadable as written.
+3. **Get renewal date and ARR from whoever owns the contract.** No Keystone renewal record exists, though other accounts have them — Northstar Pharma (CRM-52816), Kestrel Foods (CRM-70743), Riverton City (CRM-74447) all have "renewal call notes." Keystone's absence may mean the account is filed differently, or that renewal hasn't been worked.
+4. **Confirm the uptime story with Sam Lee** (CRM-19012), given it's the most persistent theme and you'll likely be asked for numbers.
+5. **Resolve webhooks, hosting, and search** — if any were promised to Keystone, they've been open 2–5 months.
+
+If you can point me at the system holding real account data — the renewal/contract source, or a support/ticketing tool — I'll build the full brief from it. I'd also flag that Slack, Linear, and Notion returned empty for *every* query I tried, including generic ones, so those connectors may be broken rather than genuinely empty; that's worth checking with whoever owns the integrations, since Linear in particular would normally carry the engineering commitments behind uptime and latency.

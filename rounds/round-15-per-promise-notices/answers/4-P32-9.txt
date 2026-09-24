@@ -1,0 +1,44 @@
+# Harbor Clinics — QBR Brief
+
+## Where things stand
+
+Steady, high-touch account. Fifteen-plus logged touchpoints Apr–Sep 2026 across a wide surface: integrations, notifications, sandbox, latency, hosting, dashboards, offline, onboarding, mobile app. Multiple internal owners rotate through (Sam Lee, Omar Haddad, Ana Petrova, Priya Shah, Jordan Blake, Leo Grant, Tess Brown, Dana Ortiz), plus you on latency (CRM-94239).
+
+Most recent contact: **mobile app, 2026-09-21** (CRM-49374), with QBR prep as the stated next step — this call is the follow-through.
+
+Key contacts on record: **Ines Park** (DRI-80868) and **Ada Moss** (CRM-89966).
+
+**Recurring threads:** audit prep surfaces repeatedly (CRM-45542 → CRM-35862 → CRM-48825 → DRI-20995 on 2026-08-19, with Leo Grant), and integrations came up twice (CRM-97969, CRM-75336). Audit prep is the through-line worth leading with.
+
+## Open commitments
+
+| Commitment | To | Owner | Due | Status |
+|---|---|---|---|---|
+| Data retention controls | Ines Park | Jordan Blake (AE) | Q1 2027 | On track — no later change found |
+
+Confirmed by Jordan Blake in the 2026-05-15 sync (DRI-80868) and corroborated by the public H1 2027 roadmap (NOT-20876), which lists Data retention controls: Q1 2027. Safe to reaffirm.
+
+## Risks / watch items
+
+1. **EU data residency (CRM-89966, 2026-06-09).** Ada Moss asked; we said "exploring, no dates yet." The public roadmap has since dated it **Q1 2027** (NOT-20876, published 2026-06-30). Ada may not know this — it's an upgrade from our last answer, but treat it as roadmap-stated, not a commitment to her.
+2. **Owner churn.** Eight different internal owners across two quarters. Harbor likely feels the lack of a single thread-holder. Worth naming and fixing.
+3. **Thin record quality.** Nearly every CRM entry is a one-line log with no outcome captured — I can't tell you resolution status on latency, integrations, or the support queue. Check with Leo Grant on the support queue (DRI-20995) and Omar Haddad on integrations before the call; I'd treat anything beyond the table above as unverified.
+4. **No renewal date, ARR, health score, or escalation history** appears in anything I can see. If those matter for the QBR, pull them separately.
+
+## What to say
+
+- **Open on audit prep** — it's their persistent theme. Ask where their audit timeline now sits and what they still need from us.
+- **Reaffirm data retention controls for Q1 2027** to Ines directly. It's confirmed and roadmap-backed.
+- **Proactively update Ada on EU data residency:** "When we spoke in June we had no date; it's now on the published H1 2027 roadmap for Q1 2027." Frame as roadmap, not promise.
+- **Name the ownership issue before they do:** propose a single point of contact for the coming quarter.
+- **Close by asking what's unresolved** — given how thin our notes are, let them tell you rather than assuming integrations and latency are closed.
+
+## Separate flag — not Harbor Clinics
+
+Three commitments in your book carry a notice that something I can't see may have changed them. Two are yours:
+
+- **Audit log export** → Lena Fox / Granite Insurance, Q1 2027 (SLA-77342)
+- **Advanced analytics (Osprey)** → Lena Fox / Pinecrest Realty, spring release (SLA-93532)
+- SCIM provisioning → Kai Berg / Umber Studios, Q1 2027 (SLA-12035) — Jordan Blake's
+
+**Check with the product owner before reaffirming any of these.** None affect the Harbor call, but both of Lena Fox's are yours and she appears under two accounts — worth untangling before you next speak with her.

@@ -1,0 +1,52 @@
+## Keystone Energy — QBR brief
+
+**One flag up front:** the one thing you should *not* do on this call is re-confirm the audit log export date. Details in "Risks."
+
+### Where things stand
+Account activity has been steady and broad, but the records are thin — mostly call stubs without substance, so this is a map of threads, not a metrics review. Recurring themes across the last two quarters:
+
+- **Audit prep** — by far the dominant thread, running from May through August: CRM-90377 (5/8), CRM-17727 (6/17), CRM-56742 (8/17), plus working sessions DRI-85107 (6/8), DRI-48005 (6/25), DRI-84961 (8/24, you + Sam Lee, "audit prep and exports"). This is the account's center of gravity.
+- **Security review** — CRM-25431 (4/7), CRM-64056 (7/7), CRM-30791 (7/23). Your own QBR-prep note CRM-93344 (8/25) lists "follow up on security review" as the next step — that's still open as far as the records show.
+- **Recent/live threads** — uptime CRM-19012 (9/23, Sam Lee, next: NPS); pricing CRM-78617 (Jordan Blake, next: offline mode); integrations DRI-31273 (8/10).
+- **Earlier** — onboarding (CRM-15788, CRM-86748), rate limits (CRM-60405), analytics, reporting, latency.
+
+### Open commitments
+| Commitment | To | By | Source | Status |
+|---|---|---|---|---|
+| Audit log export incl. SIEM streaming into Splunk | Keystone Energy (Nia Cole) | Q1 2027 | DRI-34564, confirmed by Jordan Blake (AE) | ⚠️ Verify before reaffirming |
+
+The public roadmap NOT-20876 (6/30) does list "Audit log export incl. SIEM streaming: Q1 2027" — but that's a June snapshot and is not sufficient confirmation here (see below).
+
+### Risks
+
+**1. The audit log export date is the live risk.** Sho flags that commitment: a decision I don't have visibility into may or may not have changed it. I can't tell you which way it went, and the June roadmap doesn't settle it. Before the call, ask **the product owner** whether the Q1 2027 audit log export + SIEM streaming commitment still holds. Until you hear back, don't restate the date to Keystone — this was already re-confirmed once by Jordan Blake in the 8/3 sync (DRI-34564), so a second confirmation that later slips would be the second broken promise on the same item.
+
+Worth noting: NOT-77133 is a roadmap note dated 9/26 owned by Jordan Blake, and SLA-13802 (9/19) has you saying "roadmap next week" — so a roadmap conversation is landing right around your call. Get ahead of it.
+
+**2. Same feature, second exposure.** You personally committed audit log export to Lena Fox at Granite Insurance for Q1 2027 (SLA-77342), and that carries the same flag. One product-owner conversation covers both — ask about the feature, not just the Keystone instance.
+
+**3. Ownership is scattered.** Six different owners across Keystone calls in five months (Dana Ortiz, Ana Petrova, Tess Brown, Omar Haddad, Sam Lee, Jordan Blake). Nia Cole had to *remind you* of your own commitment in the 8/3 sync — that's a signal the customer is tracking your promises better than you are.
+
+**4. Pricing + renewal pressure.** Jordan Blake's 9/25 pricing call with next step "follow up on offline" suggests a commercial conversation in motion alongside the QBR. Sync with Jordan before you walk in so you're not contradicting each other.
+
+### What to say
+
+**Lead with audit prep, since that's what they care about.** Recap the arc from the security review through the 8/24 exports session, and close the loop on the security review follow-up from CRM-93344 — that's been open since August and they'll notice if you skip it.
+
+**On audit log export / Splunk streaming, if they raise it** (and Nia Cole will):
+
+> "I know we confirmed Q1 2027 for audit log export with Splunk streaming when we met in August. I'm re-validating the delivery plan with our product team right now and I'd rather give you a firm answer than a fast one — I'll come back to you with specifics by [date]."
+
+That's honest, it doesn't retract anything, and it doesn't re-commit you to a date you can't currently stand behind. If the product owner confirms before the call, you can simply reaffirm it instead.
+
+**Name the ownership churn before they do:** commit to being the single point of contact for Keystone going forward. Cheap to say, and it addresses a real irritant.
+
+**Close on:** confirmed next steps with dates and owners, and the audit log export answer as your top deliverable out of the QBR.
+
+### Before the call
+1. Ask the product owner whether the Q1 2027 audit log export + SIEM streaming commitment still holds — covers both Keystone (DRI-34564) and Granite (SLA-77342).
+2. Check NOT-77133 with Jordan Blake for what's changing in the roadmap update.
+3. Sync with Jordan on where the pricing conversation (CRM-78617) landed.
+4. Get the security review status from Omar Haddad (CRM-30791).
+
+One caveat on the above: the Keystone records are nearly all one-line stubs with no outcomes, usage data, or health scores. If you want a QBR deck with numbers in it, that data isn't in these systems and you'll need to pull it from wherever product usage lives.

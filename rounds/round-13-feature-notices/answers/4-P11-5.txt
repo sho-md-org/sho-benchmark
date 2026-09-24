@@ -1,0 +1,52 @@
+## Vantage Telecom — QBR Brief
+
+**⚠️ Read this first:** The SSO (SAML) commitment to Vantage has a flag on it — a decision I can't see may have changed it. **Do not reaffirm the Q1 2027 SSO date on this call** until you've checked with the product owner. That's the single highest-stakes item in the brief, and it's the one Ines Park is most likely to raise.
+
+### Where things stand
+
+Cadence is healthy — roughly monthly touchpoints across the last six months, with coverage spread over CS, AE, and support. Account ownership is genuinely split, which is worth knowing before you walk in:
+
+| Date | Topic | Owner | Record |
+|---|---|---|---|
+| 2026-09-13 | Dashboards | Maya Chen | CRM-65747 |
+| 2026-09-06 | Churn / QBR prep (Dana Ortiz, Tess Brown) | — | DRI-14442 |
+| 2026-07-10 | NPS | Tess Brown | CRM-37016 |
+| 2026-07-08 | Search | Priya Shah | CRM-84868 |
+| 2026-06-22 | Pricing | Jordan Blake | CRM-36270 |
+| 2026-06-17 | Search | Priya Shah | CRM-74774 |
+| 2026-06-08 | QBR notes — SSO escalation | Priya Shah | CRM-31062 |
+| 2026-05-14 | Exports | Ana Petrova | CRM-23907 |
+| 2026-04-27 | Dashboards | Tess Brown | CRM-20779 |
+| 2026-04-12 | Billing | Leo Grant | CRM-24363 |
+| 2026-04-02 | Integrations / audit prep | Maya Chen, Leo Grant | DRI-81968 |
+
+Recurring threads: **search** (twice in three weeks, Priya owning), **dashboards → exports** (your own open follow-up from CRM-65747), and **audit prep** running from April (DRI-81968) through the June pricing call (CRM-36270).
+
+### Open commitments
+
+**SSO (SAML) — Q1 2027.** Made by Priya Shah at the June QBR (CRM-31062). Ines Park pushed hard; Priya's words were "you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word." The note explicitly says **the customer is planning around it**. This is flagged — status unconfirmed. Two specifics to be careful about: the *date* and the *IdP-initiated Okta login* scope. Both were promised; neither should be restated until you've confirmed.
+
+**Your open follow-up: exports.** CRM-65747 (Sept 13) lists exports as your next step off the dashboards call. Exports were last substantively discussed in May under Ana Petrova (CRM-23907), which trailed off into webhooks. Close the loop or expect it raised.
+
+### Risks
+
+1. **SSO is the account's load-bearing commitment.** A customer planning a rollout around a dated, personally-vouched promise is the classic churn trigger. The Sept 6 churn/QBR-prep session (DRI-14442) suggests someone internally is already thinking about retention here.
+2. **Ownership fragmentation.** Eleven touchpoints, six different owners. Nobody holds the full thread, which is how commitments like Priya's get made without CS visibility.
+3. **Stale follow-ups.** Exports (May), webhooks (raised twice, May and June, never picked up), audit prep (April/June). Each is a small credibility leak.
+
+### What to say
+
+**On SSO, if Ines raises it (assume they will):**
+> "I know SSO is the piece you're building your rollout around, and I want to give you a precise answer rather than a fast one. Let me confirm the current state with our product team and come back to you this week with something firm."
+
+Do not repeat "Q1 2027," do not repeat the Okta IdP-initiated detail, and don't hint that anything has changed — you don't actually know that it has. Just don't re-vouch for it. Then get a same-day answer from the product owner so your follow-up is real.
+
+**On dashboards/exports:** lead with this. It's yours, it's recent, and delivering it demonstrates the account is being held.
+
+**On ownership:** offer to be the single point of contact. Given six owners across six months, this lands as a genuine improvement rather than a process nicety.
+
+**Before the call:** ask the product owner whether the SSO commitment still holds — ideally with the Okta scope detail, not just the date.
+
+### Separately — two of your own commitments are flagged
+
+Not Vantage, so out of scope for this call, but same caution applies: Advanced analytics (Osprey) to Lena Fox at Pinecrest Realty, spring release (SLA-93532), and Audit log export to Lena Fox at Granite Insurance, Q1 2027 (SLA-77342). Both carry the same notice. Worth batching into one conversation with the product owner alongside the SSO question.

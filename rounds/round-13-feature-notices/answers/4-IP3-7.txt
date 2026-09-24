@@ -1,0 +1,15 @@
+I can't answer that from what I can see — and there's a caveat worth flagging.
+
+**What's visible to me on Advanced analytics:**
+
+- **SLA-93532** (2026-06-28) — your own commitment: you told Lena Fox at Pinecrest Realty that Advanced analytics (Osprey) would land in the spring release so they could finish their rollout.
+- **NOT-31499** (2026-04-16) — a Notion page "Analytics," owner **Omar Haddad**. Notes only, no decision recorded.
+- **SLA-91143** (2026-07-13) — Tess Brown posting a generic "update on analytics" in Slack. No decision, no attribution.
+
+None of these names a decision-maker or a change.
+
+**The caveat:** my access to company records flags that there is material bearing on Advanced analytics that I can't read. I can't tell you whether it changes anything about your Pinecrest commitment, and I shouldn't speculate about its contents either way.
+
+**What I'd suggest:** go to the product owner for Advanced analytics — Omar Haddad is the owner listed on NOT-31499, so he's the right first stop. Ask him directly whether the spring-release commitment to Pinecrest still holds before you reaffirm it to Lena Fox.
+
+Two related items carry the same flag, in case you want to batch the conversation: your Audit log export commitment to Lena Fox / Granite Insurance (SLA-77342, Q1 2027) and Jordan Blake's SCIM provisioning commitment to Kai Berg / Umber Studios (SLA-12035, Q1 2027). Priya Shah's Offline mode commitment to Meridian Travel (SLA-24221) is clean — no later change found.

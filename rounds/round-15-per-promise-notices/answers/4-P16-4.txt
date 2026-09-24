@@ -1,0 +1,63 @@
+## Keystone Energy — QBR Brief
+
+**One flag up front:** the audit log export commitment needs a check before you reaffirm it on the call. Details in "Open commitments" below.
+
+---
+
+### Where things stand
+
+The account is active and broad — 20+ touchpoints since April across security review, audit prep, onboarding, integrations, uptime, pricing, latency, and rate limits. A caveat on this brief: most CRM entries are one-line call logs with no substance recorded (e.g. CRM-19012 "Discussed uptime", CRM-30791 "Discussed security review"), so the themes below come from the *pattern* of topics, not from documented detail.
+
+**Dominant thread — audit/compliance.** Audit prep is the single most recurring topic: CRM-90377 (5/8), CRM-17727 (6/17), CRM-56742 (8/17), plus drive notes DRI-85107 (6/8), DRI-48005 (6/25), DRI-84961 (8/24, you and Sam Lee, "audit prep and exports"). This is what the account cares about most and should anchor the QBR.
+
+**Security review** ran as its own track: CRM-25431 (4/7), CRM-64056 (7/7), CRM-30791 (7/23). Your last QBR-prep call (CRM-93344, 8/25) closed with "follow up on security review" — that's still the open next step on your own record.
+
+**Recent activity (last two weeks):** uptime (CRM-19012, 9/23) and pricing with Jordan Blake (CRM-78617, 9/25), which flags offline mode as the next follow-up. Pricing discussion this close to a QBR usually means commercial terms are live — sync with Jordan before the call.
+
+---
+
+### Open commitments
+
+**1. Audit log export with SIEM streaming — Q1 2027 ⚠️ confirm before reaffirming**
+Source: DRI-34564 (8/3 sync). Nia Cole raised it, Jordan Blake confirmed the Q1 2027 date and Splunk streaming on the company's behalf. The public roadmap as of 6/30 (NOT-20876) lists "Audit log export incl. SIEM streaming: Q1 2027."
+
+There's a decision I don't have visibility into that may bear on this commitment. **Ask the product owner whether the Q1 2027 date still holds before you restate it to Keystone.** Don't take the 6/30 public roadmap as current confirmation — it predates the flag. Two supporting signals that make this worth doing now rather than after the call: NOT-77133 is a roadmap note dated 9/26 owned by Jordan Blake and tagged to audit prep, and your own Slack update SLA-13802 (9/19) says "roadmap next week." Whatever the current state is, it lands right before your QBR.
+
+This is the highest-stakes item on the call. It's a company-level commitment, it's tied to the account's top recurring theme, and Nia Cole is tracking it closely enough to raise it unprompted.
+
+**2. Offline mode — Q2 2027**
+Flagged as next follow-up from the 9/25 pricing call (CRM-78617). The roadmap (NOT-20876) shows Q2 2027; no later change found against the related commitment. Safe to discuss as roadmap, but confirm whether Keystone has been given any date beyond the public roadmap.
+
+**3. Security review follow-up**
+Open action from CRM-93344 (8/25). No record shows it closed. Get status from Omar Haddad, who owned the last two security review calls (CRM-64056, CRM-30791), before the QBR.
+
+---
+
+### Risks
+
+- **Reaffirming a date you can't currently verify.** The main risk on this call. If you restate Q1 2027 for audit log export and it has moved, you compound a company-level promise with a CS-level one in front of the customer. Check first; if you can't get an answer in time, use the holding language below.
+- **Commitment made by someone else.** Jordan Blake confirmed the audit log date, not you. Make sure you and Jordan tell the same story — especially given the 9/25 pricing conversation.
+- **Thin written record.** If Keystone references a prior agreement you have no detail on, you won't have backup. Worth asking Sam Lee (DRI-84961, DRI-31273) and Omar Haddad (DRI-48005) what was actually discussed on exports and audit prep before you walk in.
+- **Unclosed security review.** Open since at least 8/25 on a compliance-sensitive account.
+
+---
+
+### What to say
+
+**Open:** frame the year around their compliance program. "Audit readiness has been the through-line for us since spring — let's spend the bulk of this on where that stands and what's left."
+
+**On audit log export — if you've confirmed with the product owner:** state the date plainly and give them the SIEM/Splunk detail, since that specificity is what Nia is tracking.
+
+**If you haven't confirmed in time, don't reaffirm the date.** Use: *"Audit log export with SIEM streaming is a commitment we've made to you and it's on the roadmap. I'm getting you a current, confirmed date rather than repeating one from a roadmap snapshot — I'll have that to you by [date]."* That protects credibility without signalling that anything has changed. Then follow up in writing.
+
+**On offline mode:** treat as roadmap (Q2 2027), not commitment, unless Jordan has told them otherwise.
+
+**On security review:** come with a status, not a question. Get it from Omar first.
+
+**Close:** confirm who on Keystone's side owns the audit workstream — Nia Cole is the one raising commitments, so she should be on the distribution for whatever you send after.
+
+---
+
+**Before the call:** (1) ask the product owner whether the Q1 2027 audit log export date holds — this gates your main talking point; (2) get security review status from Omar Haddad; (3) 10 minutes with Jordan Blake on where pricing landed on 9/25.
+
+Separately, two commitments in your own name carry the same flag and aren't Keystone: advanced analytics to Lena Fox at Pinecrest (SLA-93532) and audit log export to Granite Insurance (SLA-77342). Same rule applies — check with the product owner before you reaffirm either.

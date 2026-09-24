@@ -1,0 +1,85 @@
+I pulled every Cobalt Retail record across all five tools. One thing to flag up front, because it shapes what follows:
+
+**The source records are topic stubs, not substantive notes.** All 21 Cobalt records are one-liners of the form "Discussed X. Owner Y. Next: follow up on Z." There is no ARR, renewal date, usage/adoption data, NPS score value, support volume, health score, or a single named Cobalt-side contact anywhere in the system. Slack and Linear return **zero** Cobalt records.
+
+So I can't write you a factual "here's the state of the account" section — the facts aren't recorded. What I can give you is a reliable **touchpoint history, an open-loop analysis, and the gaps you need to fill before the call.** That's below, with recommendations clearly separated from record.
+
+---
+
+## 1. Where things stand (what the record actually supports)
+
+**Engagement history: 11 CRM calls, 10 meeting notes, Apr 1 – Sep 26.**
+
+| Date | ID | Topic | Owner/Attendees |
+|---|---|---|---|
+| 04-01 | CRM-98822 | Webhooks | Priya Shah |
+| 04-20 | CRM-70221 | Roadmap | Maya Chen |
+| 04-27 | CRM-49779 | Onboarding | Priya Shah |
+| 05-22 | CRM-36268 | Search | Maya Chen |
+| 05-26 | CRM-24697 | Dashboards | Tess Brown |
+| 06-07 | DRI-41266 | Exports, webhooks | Leo Grant, Ana Petrova |
+| 06-09 | CRM-92187 | NPS | Tess Brown |
+| 06-15 | CRM-16603 | Onboarding | Omar Haddad |
+| 06-19 | DRI-18657 | Onboarding, integrations | Priya Shah, Sam Lee |
+| 06-21 | DRI-58616 | Dashboards, case study | Dana Ortiz, Omar Haddad |
+| 06-23 | CRM-87224 | Pricing | Priya Shah |
+| 07-23 | CRM-94849 | Reporting | Priya Shah |
+| 07-25 | DRI-33978 | Rate limits, EU customers | Tess Brown, Dana Ortiz |
+| 07-27 | DRI-20022 | Case study, SSO questions | Ana Petrova, Jordan Blake |
+| 08-01 | CRM-35990 | Notifications | Omar Haddad |
+| 08-05 | DRI-95243 | Case study, pricing | Priya Shah, Ana Petrova |
+| 08-11 | DRI-75222 | Billing, audit prep | Ana Petrova, Omar Haddad |
+| 08-17 | DRI-82140 | Offline, mobile app | Jordan Blake, Tess Brown |
+| 08-23 | DRI-35074 | Sandbox, hosting | Maya Chen, Sam Lee |
+| 09-12 | CRM-12380 | Rate limits | Priya Shah |
+| 09-26 | DRI-72283 | Mobile app, search | Sam Lee, Priya Shah |
+
+Three patterns are real and worth your attention:
+
+- **Cadence dropped off in September.** Apr–Aug ran ~2 CRM calls and ~2 meetings a month. Since Aug 23 there's been one CRM call (CRM-12380) in five weeks.
+- **Priya Shah is the account's center of gravity** — owner on 5 of 11 CRM calls including the most recent. Your own last logged touch is DRI-35074 (Aug 23); before that, May 22 (CRM-36268). Brief Priya before the call.
+- **Two records are dated after today** (DRI-72283 and SLA-55835, both 2026-09-26). Either these are scheduled-not-yet-happened, or the dates are wrong. Check DRI-72283 — a mobile app/search session two days out may well be the pre-QBR meeting.
+
+## 2. Open commitments
+
+Tracing each "Next: follow up on ___" against whether a matching later record exists:
+
+**Closed** — rate limits (CRM-24697, CRM-16603 → DRI-33978, CRM-12380); mobile app (CRM-92187 → DRI-82140, DRI-72283); case study (CRM-98822 → DRI-58616, DRI-20022, DRI-95243); audit prep and billing (CRM-87224, CRM-94849 → DRI-75222).
+
+**Open — no follow-up record exists:**
+
+1. **Security review** — committed twice, CRM-70221 (Apr 20) and CRM-36268 (May 22). Both were **your** calls. Nothing on security review anywhere in five months. This is the oldest open loop and it's yours.
+2. **Churn follow-up** — CRM-12380 (Sep 12), Priya Shah. *The single most recent CRM action on this account is a churn follow-up, and nothing has been logged since.* Do not walk into the QBR without asking Priya what prompted this.
+3. **Latency** — CRM-49779 (Apr 27), Priya Shah. Never revisited.
+4. **Pricing** — CRM-35990 (Aug 1), Omar Haddad, "next: follow up on pricing." Last pricing touch is DRI-95243 (Aug 5), which was primarily a case study discussion. Likely still open.
+5. **SSO questions** — raised DRI-20022 (Jul 27), never revisited.
+6. **EU customers** — raised DRI-33978 (Jul 25), never revisited. Pairs with the unaddressed security review.
+7. **Sandbox / hosting** — DRI-35074 (Aug 23), your meeting, no follow-up logged.
+
+## 3. Risks
+
+- **The churn signal (CRM-12380) is unexplained and unworked.** Highest-priority item before the call.
+- **Zero Linear issues exist for this account.** Rate limits, offline, mobile app, SSO, and exports were all discussed with the customer, and none of it appears as tracked engineering work. If you commit to a date on any of these in the QBR, you'd be committing without visible engineering backing. Verify before you promise anything.
+- **A compliance-shaped cluster is sitting untouched**: security review (open since April) + EU customers + SSO + audit prep. These usually travel together and usually belong to a procurement or renewal gate. Nothing shows who owns it.
+- **Rate limits recur** across May, June, July, and September (CRM-24697, CRM-16603, DRI-33978, CRM-12380) — four touches over five months. Recurring-topic patterns like this normally mean the underlying issue isn't resolved, and the September instance sits immediately adjacent to the churn note.
+- **Account knowledge is fragmented across nine people** with no consolidated owner record, and your own direct contact has been light since May.
+- **No renewal date is recorded.** You may be walking into a QBR inside a renewal window without knowing it.
+
+## 4. What I can't tell you — fill these before the call
+
+Ask Priya Shah and Omar Haddad (the two most active owners) for: what triggered the churn follow-up; renewal date and contract value; the actual NPS score from CRM-92187; Cobalt-side stakeholders and exec sponsor; and whether the security review ever happened outside the CRM. Also confirm whether DRI-72283 on Sep 26 is a real scheduled session.
+
+## 5. What to say — suggested structure
+
+*This is my recommendation, not something drawn from the records.*
+
+- **Open by acknowledging the September gap** rather than letting them raise it. You've had a light touch for five weeks; name it and reset cadence.
+- **Lead with delivered work** — the case study collaboration (three sessions, Jun–Aug) and the billing/audit prep work (DRI-75222) are your clearest evidence of follow-through. Use them first.
+- **Take the security review head-on.** It's been open since April on your own commitment. Bring a named owner and a date. Attempting to skip past it is the biggest credibility risk in the room, especially if EU customers and SSO are live for them.
+- **Treat rate limits as a standing issue, not a new topic.** Four touches in five months means they've raised it repeatedly. Acknowledge the pattern explicitly and say what changes.
+- **Do not give dates on mobile app, offline, or SSO** until you've confirmed engineering ownership — there are no Linear tickets behind any of it.
+- **Close by asking directly about renewal and satisfaction.** Given CRM-12380, you need their read in their words, not inferred from the CRM.
+
+---
+
+Given the state of the records, the highest-value thing you can do today is a 20-minute call with Priya Shah — most of the gaps above are probably in their head, not in the system.

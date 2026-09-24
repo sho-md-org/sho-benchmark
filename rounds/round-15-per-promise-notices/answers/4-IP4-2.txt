@@ -1,0 +1,18 @@
+## Short answer: Keystone Energy's is the one at risk. Cobalt Retail's looks normal.
+
+**Keystone Energy — flagged** (`DRI-34564`, 2026-08-03)
+- Promise: Audit log export **with streaming into Splunk**, by Q1 2027. Nia Cole raised it in the sync; Jordan Blake (AE) confirmed on the company's behalf.
+- Sho attaches a notice to this commitment: a decision I don't have visibility into may or may not change it. I can't see what that decision is, so I can't tell you whether the date still holds.
+- **Action:** check with the product owner for Audit log export before you reaffirm Q1 2027 to Keystone — don't restate the date in writing to Nia or Omar Haddad until you have that.
+
+**Cobalt Retail — no flag** (`CRM-38600`, 2026-07-24)
+- Promise: Audit log export as a **CSV export**, by Q1 2027, to Sam Ortiz — your words, "you have my word," and they're planning around it.
+- No later change found against it. Treat it as standing.
+
+## Two things worth noting
+
+1. **The Keystone promise isn't strictly yours.** The record of it is Jordan Blake confirming a company-level commitment, not one you made. Jordan should be in the loop on whatever comes back from the product owner, since he's the one who reconfirmed the date.
+
+2. **You have a third audit-export promise, and it also carries a notice** — Lena Fox at Granite Insurance, Q1 2027, made by you (`SLA-77342`). If you're auditing your exposure on this feature, that one needs the same product-owner check as Keystone. Same question, so ask once and cover both.
+
+The scope difference is also real independent of any flag: Cobalt was promised CSV, Keystone was promised CSV *plus* SIEM streaming. The public roadmap (`NOT-20876`) lists "Audit log export incl. SIEM streaming: Q1 2027," so both were consistent with the roadmap as of 2026-06-30 — the broader Keystone scope just gives it more surface area to slip on.

@@ -1,0 +1,48 @@
+# Cobalt Retail — QBR Brief
+
+**Call: week of 2026-09-29 · Primary contact: Sam Ortiz · Account team: Maya Chen (CS), Jordan Blake, Priya Shah, Omar Haddad, Tess Brown**
+
+## ⚠️ Read this first
+**Do not reaffirm the Q1 2027 audit log export date to Sam without checking with the product owner.** There's a signal that something outside my visibility may bear on the audit log export commitment. I can't tell you what it is or whether it actually changes your date — only that you should confirm with the product owner before you repeat the promise on the call. This matters because your commitment was unusually strong (below).
+
+## Where things stand
+Engagement has been steady and broad across the year — roughly monthly touchpoints spanning onboarding (CRM-49779, CRM-16603), roadmap (CRM-70221), search (CRM-36268), dashboards (CRM-24697), NPS (CRM-92187), webhooks (CRM-98822), reporting (CRM-94849), notifications (CRM-35990), pricing (CRM-87224), and billing (DRI-75222). Ownership rotates a lot; no single thread dominates.
+
+The recurring theme is **audit readiness**. It's the stated next step on three separate calls (CRM-12694, CRM-87224, DRI-75222) and had its own dedicated session (CRM-24323, owner Omar Haddad). That's the customer's center of gravity going into this QBR.
+
+Caveat: the CRM entries are one-line summaries with no health score, renewal date, ARR, or usage data attached. I can't give you a defensible "state of the account" number — if you need one for the deck, pull it from the account record directly.
+
+## Open commitments
+| Commitment | Made by | When | Source | Status |
+|---|---|---|---|---|
+| Audit log export as a CSV export, by Q1 2027 | Maya Chen | Q1 2027 | CRM-38600 | ⚠️ Verify with product owner before reaffirming |
+
+From CRM-38600 (2026-07-24): Sam pushed on audit log export (Lark), and you said *"you'll have it by Q1 2027 as a CSV export, you have my word."* The note explicitly records that **Cobalt is planning around it**. That's the one hard promise on this account.
+
+No other outstanding Cobalt commitments appear in the records I can see.
+
+## Risks
+1. **Audit log export is a single point of failure for this relationship.** It's a personal "you have my word," the customer is building plans on it, and audit prep is the account's dominant theme. If the date moves, it lands harder here than a normal slip would.
+2. **Scope creep on "audit log export."** You promised Cobalt a **CSV export**. The public roadmap (NOT-20876) lists "Audit log export incl. SIEM streaming" for Q1 2027, and a separate customer was told the Q1 2027 delivery includes SIEM streaming. If Sam has seen the roadmap, he may be expecting SIEM streaming too. Know which scope you're defending before the call.
+3. **Roadmap doc is stale relative to your question.** NOT-20876 is dated 2026-06-30. Don't treat it as current confirmation of the Q1 2027 date.
+4. **Fragmented ownership.** Five different owners across ten touchpoints, and CRM-12694 (the QBR prep call itself) lists Jordan Blake as owner. Worth confirming who's actually driving this QBR so Sam doesn't get mixed messages.
+
+## What to say
+**Open with audit readiness.** It's what they care about — lead with it rather than a feature tour. "Audit prep has come up on nearly every call this quarter; I want to spend most of today there."
+
+**On audit log export — do this after you've talked to the product owner:**
+- If the product owner confirms Q1 2027 holds → reaffirm plainly, and use the moment to pin down scope: *"Q1 2027, CSV export — let's confirm that's what your audit workflow actually needs, or whether you're counting on streaming."*
+- If the product owner says it's changed or is uncertain → **do not repeat the Q1 2027 date on the call.** Say you're reconfirming the delivery plan internally and will come back with a firm answer by a specific date. Giving Sam a soft re-promise now is worse than a short delay; he'll plan around whatever you say.
+- Either way, don't say "you have my word" again until it's confirmed.
+
+**Close by consolidating ownership.** Offer Sam one named point of contact for audit-related follow-through — it addresses the fragmentation risk and reads as an upgrade in service, not an admission of a problem.
+
+## Before the call
+- [ ] Ask the product owner whether the audit log export commitment to Cobalt still holds (**blocking** — shapes the main talking point)
+- [ ] Confirm the scope you're defending: CSV export vs. SIEM streaming
+- [ ] Pull renewal date, ARR, and usage/health from the account record — not in the notes I can see
+- [ ] Confirm with Jordan Blake who's leading the QBR
+
+---
+
+**Side note, unrelated to Cobalt:** you have a second commitment carrying the same kind of flag — advanced analytics (Osprey) to Lena Fox at Pinecrest Realty for the spring release (SLA-93532). Same guidance: check with the product owner before reaffirming. Worth handling in the same conversation.

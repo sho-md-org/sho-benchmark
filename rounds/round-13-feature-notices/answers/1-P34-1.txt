@@ -1,0 +1,65 @@
+## First, the honest headline
+
+Every Aster Health record in CRM, Drive, Slack, and Notion is a one-line stub. No numbers, no named commitments with owners and due dates, no contract or renewal data, no NPS scores, no ticket detail. Example, verbatim and in full:
+
+> **CRM-75476** (2026-07-21): "Call with Aster Health. Discussed dashboards. Owner Sam Lee. Next: follow up on NPS."
+
+> **DRI-53905** (2026-09-10): "Attendees: Dana Ortiz, Dana Ortiz. Discussed pricing and support queue."
+
+That's the entire record. Linear has zero Aster Health items; Slack and Notion have no account-tagged content at all — their "QBR prep" and "Security review" threads (e.g. SLA-55835, NOT-42571) are generic and never name the account.
+
+So I can't write you a real QBR brief — any "where things stand" with substance would be me inventing it. What I can give you is an accurate map of the account's *activity* plus the specific gaps you need to close before the call.
+
+## What the records actually support
+
+**Cadence and coverage.** 10 CRM calls and 11 Drive notes, 2026-04-12 through 2026-09-28. Note two things: the last CRM-logged call is **CRM-75476, 2026-07-21** — a two-month logging gap — while Drive notes continue through September. And **DRI-36735 is dated 2026-09-28**, in the future: an NPS/audit-prep session with Omar Haddad and Ana Petrova, likely landing right around your call.
+
+**Recurring themes,** by volume across both systems:
+- Integrations — DRI-82652 (04-28), DRI-48732 (06-12), DRI-64776 (08-20). Most persistent thread of the year.
+- Dashboards — CRM-57156, CRM-75476, DRI-75615 (09-17, with you and Omar Haddad)
+- Exports — CRM-45213, CRM-76005, DRI-23711
+- Sandbox — CRM-62644 (yours), CRM-64767, DRI-86962
+- Latency — CRM-16329 (06-14), CRM-68765 (06-22)
+- NPS, Search, Hosting, Pricing — one to three touches each
+
+**Threads that open but never close.** CRM "next steps" that never get a follow-up record of their own:
+- **churn** — flagged three times (CRM-76005, CRM-64767, CRM-68765, spanning April to June). Never resolved anywhere in the data.
+- **security review** — CRM-26522, CRM-16329. Slack shows this topic running hot org-wide through September (SLA-73527, SLA-98080, SLA-63169) but nothing ties it to Aster.
+- **audit prep** — CRM-45213, and again in the upcoming DRI-36735
+- **SSO questions** — CRM-57156, unresolved since April
+
+**Two signals worth your attention.** DRI-64776 (08-20) pairs integrations with **EU customers**, and the security-review/audit-prep follow-ups cluster around it — that shape suggests a data-residency or compliance thread. And DRI-53905 (09-10) is the only **pricing** touch, listing Dana Ortiz twice as attendee, which reads as an internal discussion rather than a customer one.
+
+**Ownership is fragmented.** Eight different owners across ten CRM records: Ana Petrova (3), Leo Grant (3), Maya Chen (1 — CRM-62644), Tess Brown, Priya Shah, Sam Lee. Latency alone was raised twice in June under two different owners. Omar Haddad appears most often on the Drive side and is your likely primary contact.
+
+## What you must source elsewhere before the call
+
+None of this exists in the tools:
+
+1. **Renewal date, ARR, seat count, contract terms** — billing or the CRM account object, not these activity records
+2. **Actual NPS score and trend** — three NPS touches, zero scores recorded
+3. **Open commitments with owner and date** — this is the real gap. "Next: follow up on churn" is not a commitment. Ask Ana Petrova and Leo Grant directly; between them they own six of the ten CRM records.
+4. **Support ticket volume and SLA performance** — "support queue" appears in DRI-53905 and SLA-47639 with no data behind it
+5. **Status of the latency issue** — raised twice in June, silent since
+6. **Whether the EU/compliance thread is a live customer requirement** — ask Priya Shah, who appears on both DRI-64776 and SLA-52380
+7. **Product commitments on integrations and dashboards** — Linear is empty for this account, so either the work isn't ticketed or it's filed under names that don't reference Aster
+
+## Talk track
+
+The structure below is sound; the brackets are what you fill in from the sources above. I'd rather hand you a skeleton than a confident-sounding brief built on nothing.
+
+**Open — acknowledge the arc.** "Since April we've worked through sandbox setup, exports, dashboards, and integrations." That's accurate and defensible from the records.
+
+**Where we've delivered.** [Needs the actual outcomes — the records confirm topics were discussed, never what was resolved.]
+
+**Open items.** Lead with integrations — it's the thread that recurs most across the whole period (DRI-82652 → DRI-48732 → DRI-64776), which usually means either sustained investment or sustained friction. Find out which before you walk in.
+
+**Compliance and security.** If EU data residency is live for them, raise it proactively. Pair it with the unresolved SSO question from CRM-57156, which has been open since April and is an easy credibility win if you close it.
+
+**Commercial.** Given DRI-53905, expect pricing to surface. Go in knowing your renewal date and position.
+
+**Close.** Commit to specific owners and dates — and log them properly. The churn flag recurring three times with no resolution is exactly the failure mode to avoid repeating.
+
+## One recommendation
+
+The three unresolved churn flags are the most significant thing in this data. Not because the records prove risk — they contain no evidence either way — but because someone logged that concern three times over two months and nothing in any system shows it was ever addressed. Before the QBR, ask Leo Grant and Ana Petrova what prompted those flags. If there's a real retention concern, you want to know now rather than discover it on the call.

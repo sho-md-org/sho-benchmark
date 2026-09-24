@@ -1,0 +1,41 @@
+## Aster Health — QBR Brief
+
+**Heads-up on sourcing:** the Aster record trail is thin. The CRM entries are one-line call logs with no ARR, renewal date, NPS score, or support metrics attached. Everything below is what the records actually support — I'd get the numbers from the account dashboard before you present.
+
+### Where things stand
+
+Recurring themes across the last six months of calls, roughly in order of frequency:
+
+- **Sandbox** — three touches in April–May (DRI-86962, CRM-62644, CRM-64767). You owned one of them; Ana Petrova owned the follow-up.
+- **Exports** — two calls on the same day, 2026-04-18, both owned by Leo Grant (CRM-45213, CRM-76005).
+- **Latency** — two calls in June (CRM-16329, CRM-68765), owners Priya Shah and Leo Grant.
+- **Dashboards** — April and July (CRM-57156, CRM-75476).
+- **Audit prep** — June 13 working session with Dana Ortiz and Jordan Blake (DRI-48323).
+- **NPS** — April (CRM-26522) plus a session on the calendar for **2026-09-28** with Omar Haddad and Ana Petrova (DRI-36735), which lands right before your call. Worth waiting for that read-out before you fix your health narrative.
+
+Main contacts in the records: Omar Aziz, Omar Haddad, Ana Petrova, Dana Ortiz.
+
+### Open commitments
+
+**Higher API rate limits — delivered.** Priya Shah confirmed "by October" to Omar Aziz at the June 12 sync (DRI-86231), after Omar raised it himself. Crane went live 2026-09-20 with rate limits raised for all paid plans (SLA-26281). This is your one clean win — lead with it, and confirm Omar's team has actually seen the new ceiling in production.
+
+That's the only commitment on record tied to Aster Health. Nothing else outstanding to them that I can find.
+
+### Risks
+
+1. **Churn signals in the follow-up chain.** Four separate calls list "follow up on churn" as the next step (CRM-64767, CRM-76005, CRM-68765, and the audit prep session DRI-48323). Nothing in the records tells me whether any of those follow-ups happened or what came of them. That's the biggest gap to close before the call.
+2. **Latency and exports never visibly resolved.** Both were discussed repeatedly with no closing record. Assume Omar's team will raise at least one of them.
+3. **Owner churn on our side.** Six different Brightline owners across these threads (you, Leo Grant, Ana Petrova, Priya Shah, Sam Lee, Tess Brown). A QBR is where that fragmentation gets noticed.
+4. **Audit log export — do not put a date on it.** Aster has an active audit-prep thread, so this may well come up. There's a pending decision on that feature I can't see, which may or may not affect the timeline you've previously given elsewhere. **Check with the product owner before you state or reaffirm any date for audit log export on this call.** Same applies to advanced analytics if it surfaces.
+
+### What to say
+
+- **Open with the rate limits.** "We said October, it shipped September 20." Concrete, on time, and it was their ask.
+- **Name the ownership churn before they do,** and tell them you're the single point of contact going forward. Cheap credibility.
+- **Ask directly about latency and exports** rather than waiting — "these came up several times in Q2, where do they stand for you now?" Gets the real health read.
+- **Use the Sept 28 NPS session as your input,** and reference it on the call so they see the loop closing.
+- **On anything audit-related: listen, don't commit.** "Let me confirm the timeline and come back to you this week."
+
+### Side note, not for this call
+
+Three of your team's commitments on *other* accounts have pending decisions that may affect them — advanced analytics for Lena Fox at Pinecrest Realty (SLA-93532, yours), SCIM provisioning for Kai Berg at Umber Studios (SLA-12035, Jordan Blake's), and audit log export for Lena Fox at Granite Insurance (SLA-77342, yours). Two of those are your promises. Worth checking with the product owner before your next touch with either customer.

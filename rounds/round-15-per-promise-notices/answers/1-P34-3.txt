@@ -1,0 +1,63 @@
+I pulled every Aster Health record across all four tools — 10 CRM records, 10 Drive notes, zero in Slack and Linear. Here's the brief, but lead finding first.
+
+## The problem: there's no substance in the record
+
+Every Aster Health record is a metadata stub. A representative example, in full:
+
+> **CRM-75476** (2026-07-21): "Call with Aster Health. Discussed dashboards. Owner Sam Lee. Next: follow up on NPS."
+
+That's the entire record. All 20 follow this pattern. **Nothing in any tool contains ARR, contract value, renewal date, seat count, usage data, NPS score, support ticket volume, named commitments with due dates, or who the Aster-side executive sponsor is.** Slack and Linear returned nothing for Aster and also nothing for generic probes ("customer," "renewal," "bug"), so those connectors appear unindexed rather than merely Aster-free.
+
+I can't write you a real QBR brief from this, and I'd be inventing the most important parts if I tried. What follows is everything the data genuinely supports, plus what you need to go get.
+
+## Where things stand (what the record supports)
+
+Twenty touchpoints, 2026-04-12 through 2026-09-17, clustering into eight themes:
+
+| Theme | Records | Span |
+|---|---|---|
+| Integrations | DRI-82652, DRI-48732, DRI-64776 | Apr 28 → Aug 20 |
+| Dashboards | CRM-57156, CRM-75476, DRI-75615 | Apr 19 → **Sep 17** |
+| NPS | CRM-26522, DRI-30445, DRI-36735 | Apr 13 → **Sep 28** |
+| Sandbox | DRI-86962, CRM-62644, CRM-64767 | Apr 12 → May 17 |
+| Exports | CRM-45213, CRM-76005, DRI-23711 | Apr 18 → Apr 28 |
+| Latency | CRM-16329, CRM-68765 | Jun 14 → Jun 22 |
+| Search | DRI-70983, DRI-36553 | May 11 → Jul 19 |
+| Pricing | DRI-53905 | **Sep 10** |
+| Hosting | CRM-81799 | May 11 |
+
+Your two most recent touchpoints: **DRI-53905** (pricing, Sep 10, Dana Ortiz) and **DRI-75615** (dashboards, Sep 17 — you were on that one with Omar Haddad). **DRI-36735** is dated Sep 28, i.e. in the future — a scheduled NPS/audit-prep session that may land before or after your call.
+
+One caveat on people: the notes list attendees without marking which side they're on, so I can't tell you which of Omar Haddad, Ana Petrova, Dana Ortiz, Priya Shah, Jordan Blake, Leo Grant, Tess Brown, Sam Lee are Brightline and which are Aster. Omar Haddad appears most often (4 notes).
+
+## Open commitments
+
+These are the CRM "Next:" fields. No record carries a status flag, so I have no evidence any were closed — treat "open" as unverified, not established:
+
+- **Follow up on churn** — flagged three separate times: CRM-76005 (Apr 18, Leo Grant), CRM-64767 (May 17, Ana Petrova), CRM-68765 (Jun 22, Leo Grant)
+- **Follow up on security review** — CRM-26522 (Apr 13, Ana Petrova), CRM-16329 (Jun 14, Priya Shah)
+- **Follow up on SSO questions** — CRM-57156 (Apr 19, Ana Petrova)
+- **Follow up on audit prep** — CRM-45213 (Apr 18, Leo Grant)
+- **Follow up on NPS** — CRM-75476 (Jul 21, Sam Lee)
+- **Follow up on hosting** — CRM-81799 (May 11, Tess Brown)
+- **Follow up on search** — CRM-62644 (May 10, **you**)
+
+## Risks
+
+1. **Churn was flagged three times across April–June by two different owners.** This is the strongest signal in the dataset, and nothing explains what drove it or whether it was resolved. Find out before the call.
+2. **An unresolved compliance thread.** Security review, SSO, and audit prep recur April–June with no closure recorded — predictable friction for a healthcare customer, and a common renewal blocker.
+3. **Pricing came up Sep 10, two weeks before your QBR.** Likely live on their agenda. Note that DRI-53905 lists attendees as "Dana Ortiz, Dana Ortiz" — no customer-side attendee captured, so I can't tell whether Aster was even in that conversation.
+4. **Latency raised twice in nine days** (Jun 14, Jun 22) — a performance complaint cluster with no recorded resolution.
+5. **The data gap is itself the risk.** Walking into a QBR without renewal date, ARR, adoption numbers, or NPS score means you can't anchor the conversation on value delivered, and you'll be reacting to whatever they raise.
+
+## What I'd do before the call
+
+I'd rather give you three real questions than a fabricated talk track:
+
+- **Ask Leo Grant and Ana Petrova directly what the churn flags were about.** They own all three. This is the highest-value hour you can spend.
+- **Get the commercial basics from whoever owns the account in the billing/contract system** — renewal date, ARR, seats, adoption trend. None of it is in these tools.
+- **Ask Dana Ortiz what happened on Sep 10** and whether Aster initiated the pricing discussion.
+- **Confirm the status of the security review / SSO / audit-prep thread** with Priya Shah — if it's still open six months on, expect it raised at the QBR.
+- **Check whether the Sep 28 NPS session (DRI-36735) lands before your call** — if so, you'll have a fresh score to open with.
+
+Once you have the churn context and the commercial numbers, send them over and I'll build the actual brief and talk track. Separately, the state of these records is worth raising with whoever owns CRM hygiene — a healthcare account with three churn flags and no narrative anywhere is a gap that will bite on other accounts too.

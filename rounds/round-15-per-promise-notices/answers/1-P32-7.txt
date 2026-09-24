@@ -1,0 +1,74 @@
+I researched all four systems and fetched every Harbor Clinics record. Important caveat up front, because it changes how you should use this brief:
+
+**Every Harbor Clinics record in CRM and Drive is a one-line metadata stub** — topic, date, attendees/owner, and a "next: follow up on X" pointer. None contain discussion content, numbers, commitments with dates, contract terms, or health scores. Slack and Linear return zero Harbor results on any query. So I can give you a reliable **map of what was discussed, when, and by whom**, but I cannot reconstruct *what was actually said or promised*. I've flagged below exactly where you need to fill gaps before the call.
+
+---
+
+# Harbor Clinics — QBR Prep Brief
+
+## 1. Where things stand
+
+21 touchpoints logged across ~5 months (2026-04-23 → 2026-09-11). Account is actively engaged and broadly staffed — 10 Brightline people appear across the records, with no single consistent owner.
+
+**Topic timeline:**
+
+| Period | Dominant themes | Records |
+|---|---|---|
+| Apr–May | Pricing, integrations, notifications | DRI-51027, CRM-97969, DRI-40615, CRM-73374 |
+| Jun | Latency, sandbox, roadmap, notifications, reporting | CRM-94239, CRM-36695, CRM-41255, CRM-78984, DRI-67100 |
+| Jul | Dashboards, hosting, pricing, integrations, **churn** | DRI-60679, CRM-34883, DRI-17076, DRI-55004, CRM-75336 |
+| Aug | Exports, sandbox, offline, dashboards | DRI-88564, DRI-18426, CRM-39320, CRM-64035 |
+| Sep | **Churn ×3**, mobile app | DRI-26772, DRI-35782, DRI-17950 |
+
+**The signal that matters:** the conversation shifted from feature/pricing topics into churn. Four of the last five Drive docs touch churn (DRI-17076 Jul 20, DRI-26772 Sep 6, DRI-35782 Sep 8, DRI-17950 Sep 11). The most recent record on the account is a churn discussion you were in (DRI-17950, with Tess Brown, 2026-09-11) — two weeks ago.
+
+## 2. Open commitments
+
+These are the "next step" pointers logged in CRM. **None have a visible closure record**, and none carry a due date — so treat them as *unverified open*, not confirmed outstanding:
+
+| Committed follow-up | Owner | Logged | Source |
+|---|---|---|---|
+| Webhooks | Omar Haddad | 2026-04-25 | CRM-97969 |
+| Analytics | Ana Petrova | 2026-05-24 | CRM-73374 |
+| Reporting | **Maya Chen (you)** | 2026-06-02 | CRM-94239 |
+| Onboarding | Jordan Blake | 2026-06-13 | CRM-36695 |
+| Latency | Tess Brown | 2026-06-14 | CRM-41255 |
+| Permissions UI | Dana Ortiz | 2026-06-15 | CRM-78984 |
+| SSO questions | Sam Lee | 2026-07-15 | CRM-34883 |
+| Search | Omar Haddad | 2026-07-25 | CRM-75336 |
+| Notifications | Priya Shah | 2026-08-26 | CRM-39320 |
+| Analytics | Ana Petrova | 2026-08-26 | CRM-64035 |
+
+Note the oldest four are 3–5 months old. Your own reporting follow-up (CRM-94239) is the one to resolve before you walk in.
+
+## 3. Risks
+
+1. **Churn is live, not hypothetical.** Three dedicated churn discussions in 37 days (DRI-26772, DRI-35782, DRI-17950), with churn also attached to the mobile app conversation. This should be the QBR's center of gravity.
+2. **Recurring unresolved themes.** Notifications (×3), pricing (×3), dashboards (×3), integrations (×2), sandbox (×3) keep reappearing across months — a pattern consistent with issues being discussed but not closed.
+3. **No account continuity.** Ten different Brightline names across 21 records, and the QBR prep docs in Notion (NOT-42571, NOT-52051) are owned by Omar Haddad and aren't Harbor-tagged. Harbor may be experiencing this as "we keep re-explaining ourselves."
+4. **Pricing + churn co-occurring** (DRI-55004, DRI-40615, DRI-51027) — raises the possibility of a commercial renegotiation rather than a pure product-satisfaction issue.
+5. **Documentation risk to you personally.** With no substantive notes anywhere, you're walking in without a record of what was promised. If Harbor cites a commitment, you have no way to verify it.
+
+## 4. What to say
+
+I'd deliberately **not** run a standard "look how well it's going" QBR. The churn pattern says the room already knows there's a problem, and a metrics-victory-lap will land badly.
+
+**Suggested arc:**
+
+- **Open by naming it.** "We've had several conversations recently about whether this is working for you. I want to use this hour on that, not on slides."
+- **Take ownership of the continuity problem.** You've had ten people touch this account. Offer a single named owner going forward — ideally you.
+- **Close the loop on the aging follow-ups** (webhooks, analytics, permissions UI, SSO, search). Come with real status on each. Volunteering "here's what we owed you and didn't deliver" buys more credibility than anything else on this list.
+- **Separate product from commercial.** Ask directly whether the concern is capability (dashboards, notifications, offline, mobile, exports) or price/value. Pricing keeps recurring alongside churn and you need to know which conversation you're in.
+- **Leave with a written, dated remediation plan.** The root failure on this account is that nothing gets recorded or closed.
+
+## What you need to source before the call
+
+I can't get these from the tools — they aren't recorded anywhere:
+
+- Contract value, renewal date, term
+- Usage/adoption and license utilization
+- Support ticket volume and any open escalations
+- Named exec sponsor and champion at Harbor
+- **What actually happened in DRI-17950** — your 2026-09-11 churn conversation with Tess Brown. Tess is the fastest path to real context; she appears in four Harbor records including that one.
+
+Want me to draft the talk track or a one-page leave-behind once you've filled in the renewal and usage numbers?

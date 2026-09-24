@@ -1,0 +1,90 @@
+I pulled all 20 Keystone Energy records across CRM, Drive, and Notion (Slack and Linear return nothing for this account). One thing to flag before the brief: **every record is a one-line stub** — "Call with Keystone Energy. Discussed uptime. Owner Sam Lee. Next: follow up on NPS." There is no ARR, renewal date, customer-side contact, health metric, or commitment status anywhere in the tools. So I can't fabricate "where things stand" in the numeric sense. What I *can* give you is real and useful: the activity map, a follow-up-chain audit that surfaces genuinely dropped threads, and the risk signals. Then a scaffold with the gaps marked, so you know exactly what to gather.
+
+---
+
+# Keystone Energy — QBR Brief
+**Prepared for:** Maya Chen | **Call:** week of 2026-09-28 | **Sources:** 12 CRM, 11 Drive, 0 Slack/Linear
+
+## 1. Where things stand
+
+**Engagement is steady but fragmented.** 12 logged calls and 11 internal meetings since 2026-04-17 — roughly weekly-to-biweekly contact, no gaps longer than ~5 weeks. That's a healthy cadence.
+
+The problem is ownership. Across 12 CRM calls the owner rotates constantly:
+
+| Owner | Calls |
+|---|---|
+| Leo Grant | 4 — CRM-23178, CRM-71134, CRM-71909, CRM-56812, CRM-88738 |
+| Sam Lee | 2 — CRM-86748, CRM-19012 |
+| Jordan Blake | 2 — CRM-71045, CRM-78617 |
+| Ana Petrova | 2 — CRM-79992, CRM-50205 |
+| Omar Haddad | 1 — CRM-56742 |
+
+You personally appear in only 4 of 11 internal meetings (DRI-31273, DRI-85290, DRI-39787, DRI-48005). **Assume the customer has told their story to five different people.** Opening the QBR by demonstrating continuity is worth more here than any slide.
+
+**Recurring themes by volume:** analytics (3), uptime (3), dashboards (3), latency (2), sandbox (2), audit prep (2), pricing (3). Analytics/dashboards/uptime is the product center of gravity; pricing is the commercial thread.
+
+**Note:** CRM-78617 (Pricing, Jordan Blake) is dated **2026-09-25 — tomorrow**. That call hasn't happened. It lands before your QBR, so sync with Jordan Blake after it; a pricing conversation held 3 days before a QBR will set the tone whether you reference it or not.
+
+## 2. Open commitments
+
+I traced every "Next: follow up on X" against whether a later record actually covers that topic. Four threads never closed:
+
+| Committed | Source | Owner | Topic | Age |
+|---|---|---|---|---|
+| 2026-05-02 | CRM-71045 | Jordan Blake | **webhooks** | ~5 months |
+| 2026-07-12 | CRM-56812 | Leo Grant | **search** | ~2.5 months |
+| 2026-08-17 | CRM-56742 | Omar Haddad | **webhooks** (again) | ~5 weeks |
+| 2026-08-24 | CRM-88738 | Leo Grant | **rate limits** | ~1 month |
+| 2026-09-23 | CRM-19012 | Sam Lee | NPS | 1 day — fresh, not yet a miss |
+
+**Webhooks is the one to worry about.** It was committed on 2026-05-02, dropped, re-committed independently on 2026-08-17 after an audit-prep call, and dropped again. A customer who raises the same integration need twice across two different owners and gets silence twice has a legitimate grievance. Go in expecting it.
+
+Closed commitments, for contrast, often ran slow: CRM-79992 promised a hosting follow-up on 2026-05-24; it landed 2026-08-24 (CRM-88738) — three months.
+
+## 3. Risks
+
+**Churn language is on the record.** DRI-20667 (2026-08-15, Ana Petrova) is the only document that names churn, and it pairs it directly with pricing. That is the single most important record in this account.
+
+**Pricing pressure is a sustained thread, not an incident.** It surfaces three times across three months: DRI-48005 (2026-06-25, audit prep + pricing, with you and Omar Haddad), DRI-20667 (2026-08-15, churn + pricing), CRM-78617 (2026-09-25, dedicated pricing call). Trending toward a renewal negotiation.
+
+**Audit prep appeared twice** (DRI-48005 Jun 25, CRM-56742 Aug 17) and both times adjacent to something else — pricing, then webhooks. If Keystone is under a compliance or audit cycle, that's leverage on their side and a delivery obligation on yours.
+
+**Reliability topics never fully resolve.** Uptime recurs across five months (DRI-60948 Apr → DRI-64156 Jul → CRM-19012 Sep 23), as does latency (CRM-23178 Apr, DRI-46374 May, DRI-41756 Aug). Persistent recurrence usually means unresolved, not merely discussed.
+
+**Compounding risk:** churn + pricing + a five-month dropped integration request + rotating ownership. Any one is manageable. Together they are a soft renewal.
+
+## 4. What to say
+
+**Open — own the fragmentation before they raise it.**
+> "You've worked with several people on our side this year. I'm your continuity from here, and I've read the whole history — so let me start by telling you what I know we owe you."
+
+**Lead with the webhooks miss.** Naming it first is the highest-trust move available, and it costs you nothing they don't already know.
+> "Webhooks came up in May and again in August during audit prep, and we didn't close it either time. That's on us. Here's the owner and the date." → *Bring a real name and date. Do not go in without one.*
+
+**Then search and rate limits**, briefly, with the same structure — owner, date. Three specific closures beat one general apology.
+
+**On reliability, come with data, not reassurance.** Uptime and latency have recurred for five months. Bring actual numbers for the period; if they're good, the recurrence was perception and you fix that with a dashboard. If they're not, say so and show the remediation plan.
+
+**On pricing — listen, don't negotiate.** Jordan Blake owns the live pricing conversation as of tomorrow. Your job in the QBR is to surface the *why* behind the pressure (budget cycle? audit-driven scrutiny? value gap?) and route it, not to counter-offer in the room.
+> "I know pricing is an active conversation with Jordan. I'd rather understand what's driving it on your end than talk numbers today."
+
+**Close by asking the churn question directly.** It's in your own notes from 2026-08-15; don't let it stay implicit.
+> "Where does Brightline sit for you going into next year — and what would have to be true for that to be an easy decision?"
+
+## 5. Gaps you must fill before the call
+
+The tools cannot answer these. Get them from the systems of record or the owners named:
+
+1. **Renewal date and ARR** — absent everywhere. Non-negotiable for a QBR.
+2. **Customer-side contacts** — not one Keystone-side name appears in 20 records. You don't currently know who's in the room.
+3. **Actual uptime/latency numbers** for the period.
+4. **The NPS score** — DRI-75981 and CRM-19012 both reference NPS; neither records a value. Ask Leo Grant or Dana Ortiz.
+5. **Status of webhooks, search, rate limits** — are these in a backlog anywhere? Linear returns nothing for Keystone, which may mean the requests were never filed as work.
+6. **What DRI-20667 actually said about churn** — read the real doc or ask Ana Petrova. One line of substance here changes the whole brief.
+7. **Outcome of tomorrow's pricing call** (CRM-78617) — from Jordan Blake.
+
+---
+
+Two notes on data quality: DRI-85290 lists attendees as "Maya Chen, Maya Chen" and DRI-20667 as "Ana Petrova, Ana Petrova" — duplicated entries, so those attendee lists are likely incomplete. And the absence of any Slack or Linear footprint for a top account is itself odd; if this account is discussed in a channel that isn't indexed here, that's where the real detail lives.
+
+Want me to turn §4 into a one-page talk track you can hold during the call, or draft the pre-QBR questions to Leo Grant, Ana Petrova, and Jordan Blake?

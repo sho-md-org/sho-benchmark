@@ -1,0 +1,59 @@
+I pulled the Vantage Telecom record set. One thing to flag up front before the content:
+
+> **Do not reaffirm the SSO (SAML) date on this call without checking first.** The commitment on record (CRM-31062) carries a system notice that a decision I don't have visibility into may or may not have changed it. I can't tell you what that decision is or whether it changed anything. Ask the product owner whether the Q1 2027 SSO promise still holds before you repeat it to Ines.
+
+---
+
+# Vantage Telecom — QBR Brief
+**Call: week of 2026-09-28 · Owner: Maya Chen**
+
+## Where things stand
+
+Steady, multi-thread engagement across the quarter, but the topic mix has drifted toward risk:
+
+| Date | Topic | Owner | Record |
+|---|---|---|---|
+| 2026-09-19 | SSO questions | Priya Shah | CRM-57082 |
+| 2026-09-13 | Dashboards | Maya Chen | CRM-65747 |
+| 2026-09-06 | Churn / QBR prep (internal) | Dana Ortiz, Tess Brown | DRI-14442 |
+| 2026-07-10 | NPS | Tess Brown | CRM-37016 |
+| 2026-07-08 | Search | Priya Shah | CRM-84868 |
+| 2026-06-22 | Pricing | Jordan Blake | CRM-36270 |
+| 2026-06-08 | QBR — SSO commitment made | Priya Shah | CRM-31062 |
+
+The account touches five different Brightline owners (you, Priya, Jordan, Tess, Leo, Ana). Nobody is consistently carrying the relationship.
+
+## Open commitments
+
+**SSO (SAML), by Q1 2027 — to Ines Park.** Made by Priya Shah at the June QBR (CRM-31062), in strong terms: *"you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word."* The note records that the customer is planning around it. This is the single most load-bearing promise on the account, and it's the one I'm telling you not to restate until the product owner confirms. The public roadmap as of 2026-06-30 (NOT-20876) listed SSA (SAML), SP- and IdP-initiated, at Q1 2027 — but that document predates the flag, so treat it as history, not as confirmation.
+
+No other open commitments to Vantage appear in the records I can see.
+
+## Risks
+
+1. **SSO date exposure.** A named AE gave a personal-word guarantee with a specific IdP capability attached, and the customer is sequencing their own work against it. If anything has moved, the blast radius is larger than a normal slip. Resolve this before the call, not on it.
+2. **Churn is already an internal topic.** DRI-14442 (2026-09-06) is Dana and Tess discussing churn alongside QBR prep. The account is being staffed as at-risk internally. Worth knowing what prompted that before you walk in — the record itself is thin.
+3. **SSO questions re-opened 2026-09-19** (CRM-57082), three months after the commitment, with the next step logged as "follow up on roadmap." Ines is checking the work. She will likely ask directly.
+4. **Pricing surfaced in June** (CRM-36270, Jordan Blake) and hasn't visibly closed. Pricing + churn discussion + a shaky roadmap promise is an unhappy combination going into a renewal conversation.
+5. **Ownership fragmentation** — see table above. Increases the odds Ines has heard slightly different things from different people.
+
+## What to say
+
+**On SSO — if it comes up before you've heard from the product owner:**
+> "I know SSO is the thing you're planning around, and I don't want to give you a date in a QBR that I haven't personally reconfirmed this week. Let me come back to you with a written answer within two business days."
+
+That is a defensible thing to say and it buys you the check. What you should *not* do is repeat the Q1 2027 date or the Okta IdP-initiated detail as a reassurance.
+
+**If the product owner confirms the date holds:** restate it plainly, and put it in writing after the call so there's one version of the truth across the five owners on this account.
+
+**On the relationship:** propose a single named point of contact — you — with a standing monthly check-in. It directly addresses the fragmentation and it's a concrete thing to offer a churn-risk account.
+
+**On value:** lead with the dashboards work (CRM-65747) and get concrete about what Vantage is actually getting from it. Ask Ines what would make the next quarter a success in her words, and log the answer.
+
+**Ask, don't assert:** "What's changed on your side since June?" The NPS and churn signals mean you want her framing of the account before you give her yours.
+
+---
+
+**Before the call:** ping the product owner on SSO (SAML). That's the one blocking item.
+
+Separately — two commitments *you* made carry the same notice: Advanced analytics to Lena Fox at Pinecrest (SLA-93532) and audit log export to Lena Fox at Granite Insurance (SLA-77342). Not Vantage, so out of scope here, but you'll want the same check with the product owner before those come up.

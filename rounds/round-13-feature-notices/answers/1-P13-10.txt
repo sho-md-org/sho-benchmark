@@ -1,0 +1,34 @@
+## What the records show
+
+**The promise is real and documented.** DRI-36664 (Quarry Mining sync, 2026-07-09): Tom Hale explicitly reminded us we'd told them SSO (SAML) by Q1 2027, and Leo Grant (AE) confirmed it on that call. So this isn't a customer misremembering.
+
+**The date still holds.** NOT-20876 (Public roadmap H1 2027, 2026-06-30) lists "SSO (SAML), SP- and IdP-initiated: Q1 2027" — unchanged, and it's the SP/IdP-initiated scope they'd expect.
+
+**The only announced slip doesn't touch SSO.** SLA-17908 (#general, 2026-09-19) moved Sandbox environments from Q4 2026 to Q2 2027 and asked us to notify affected customers. SSO was not in that notice.
+
+You can confirm. Draft below.
+
+---
+
+**Subject: Re: SSO (SAML) timing**
+
+Hi Tom,
+
+Yes — SSO (SAML) is still planned for Q1 2027, covering both SP-initiated and IdP-initiated flows. That's unchanged from what we discussed on our July 9 sync and it remains on our published H1 2027 roadmap.
+
+Two adjacent items on the same Q1 2027 timeline that may matter for your rollout: SCIM provisioning, and audit log export including SIEM streaming. Given the audit preparation work you and Jordan have been scoping, it may be worth sequencing those together — happy to walk through how they fit with your identity provider.
+
+If it would help, I can set up a call with our product team closer to the new year to cover configuration specifics and get you into any early access we run.
+
+Best,
+Leo
+
+---
+
+## Two flags before you send
+
+1. **No engineering tickets surfaced.** Linear returned zero results for SSO, SAML, authentication, and identity provider (and zero for Quarry Mining generally). That may just mean the auth team's work isn't in the Linear workspace I can reach — it is *not* evidence of a slip — but since you'd be re-confirming a date a second time to a customer who is already tracking it, I'd get a yes from Maya Chen (roadmap owner, NOT-64137/NOT-85086) first. A second confirmation that then slips is much more damaging than the first.
+
+2. **I kept the email free of specifics we can't back.** No launch date within the quarter, no beta commitment, no feature detail beyond the SP/IdP-initiated scope that's actually written in NOT-20876. The early-access line is deliberately soft ("any early access we run") — tighten it only if you know one is planned.
+
+One thing I did not find and could not rule out: whether Q1 2027 appears in a Quarry contract or order form as a contractual commitment rather than a roadmap statement. Nothing in CRM surfaced it, but I'd check the paper if there's a renewal in play — CRM-67006 shows a churn conversation on 2026-08-25, which raises the stakes on this answer.

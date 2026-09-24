@@ -1,0 +1,89 @@
+## Bottom line first
+
+I pulled every Aster Health record in the connected systems — 10 CRM entries, 10 Drive notes (Apr 12–Sep 28, 2026), plus the Notion QBR prep pages. Slack and Linear returned nothing for this account at all.
+
+**The records are all one-line stubs.** Every CRM entry follows the identical template: "Call with Aster Health. Discussed [topic]. Owner [name]. Next: follow up on [topic]." Every Drive note is "Attendees: [two names]. Discussed [topic] and [topic]." There is no ARR, no renewal date, no health score, no NPS number, no ticket volume, no commitment with a due date, and no stated risk anywhere in the data.
+
+So I can't write you a QBR brief that says where things stand — the systems don't record it. What I *can* give you is a real read of the **pattern** across those 20 touchpoints, which turns out to be genuinely informative, plus a precise list of what you have to source yourself. Treat the pattern section as inference from metadata, not as fact you can quote to the customer.
+
+---
+
+## What the pattern actually shows
+
+**1. Your CRM-logged call cadence stopped two months ago.**
+CRM entries run Apr 13 → Jul 21 (CRM-26522 through CRM-75476), then nothing. The last two months are Drive notes only (DRI-64776 Aug 20, DRI-53905 Sep 10, DRI-75615 Sep 17). Going into a QBR with no logged call since July 21 is the single thing I'd want you to notice — either engagement genuinely thinned, or logging discipline lapsed. You'll know which.
+
+**2. The topic arc shifted from enablement to commercial + compliance.**
+- *Apr–May:* sandbox, exports, dashboards, integrations (CRM-62644, CRM-76005, CRM-57156, DRI-82652) — onboarding-shaped
+- *Jun:* latency, twice in eight days (CRM-16329 Jun 14, CRM-68765 Jun 22) — performance pressure
+- *Sep:* pricing + support queue (DRI-53905), audit prep (DRI-36735)
+
+An account that moves from "how do we use this" to "what does it cost and can it pass an audit" is an account making a renewal decision.
+
+**3. "Churn" shows up three times as a follow-up thread.**
+CRM-76005 (Apr 18), CRM-64767 (May 17), and CRM-68765 (Jun 22) all end with "Next: follow up on churn." The third one hangs off a *latency* call. That's the closest thing to a documented risk signal in the dataset, and it recurs over two months. I'd treat it as real until you can rule it out.
+
+**4. A compliance thread is live right now.**
+Security review appears twice (CRM-26522 Apr 13, CRM-16329 Jun 14), audit prep twice (CRM-45213 Apr 18, DRI-36735 Sep 28). Combined with "EU customers" on the Aug 20 integrations note (DRI-64776) and an unresolved hosting thread (CRM-81799 May 11, which loops back on itself — "Discussed hosting… Next: follow up on hosting"), this reads like a data-residency or certification requirement that has never closed.
+
+**5. One record is dated after today.**
+DRI-36735 is stamped 2026-09-28 — four days out, covering NPS and audit prep, with Omar Haddad and Ana Petrova. Either that session is scheduled and may land *before* your call, or the date is wrong. Worth checking, because NPS + audit prep is exactly the material you'd want in hand.
+
+**6. Omar Haddad is the center of gravity; you are not.**
+Omar appears in five records and owns the recent Notion QBR prep pages (NOT-42571 Sep 15, NOT-52051 Sep 5). You appear in three across six months (CRM-62644 May 10, DRI-36553 Jul 19, DRI-75615 Sep 17). Talk to Omar before the call — he holds the context the systems don't.
+
+One caveat on those Notion pages: NOT-42571, NOT-52051, NOT-44127 and the others are titled just "Qbr prep" with no account tag. I can't confirm they're Aster Health. Don't build on them without checking.
+
+---
+
+## Open commitments
+
+Ten CRM records each end with an explicit "next step," and **not one has a corresponding closure record.** I can't tell you whether these were done, dropped, or handled off-system:
+
+| Record | Date | Owner | Stated next step |
+|---|---|---|---|
+| CRM-26522 | Apr 13 | Ana Petrova | Security review |
+| CRM-76005 | Apr 18 | Leo Grant | Churn |
+| CRM-45213 | Apr 18 | Leo Grant | Audit prep |
+| CRM-57156 | Apr 19 | Ana Petrova | SSO questions |
+| CRM-62644 | May 10 | **Maya Chen** | Search |
+| CRM-81799 | May 11 | Tess Brown | Hosting |
+| CRM-64767 | May 17 | Ana Petrova | Churn |
+| CRM-16329 | Jun 14 | Priya Shah | Security review |
+| CRM-68765 | Jun 22 | Leo Grant | Churn |
+| CRM-75476 | Jul 21 | Sam Lee | NPS |
+
+The SSO item (CRM-57156, Apr 19) has sat five months with no follow-up record and fits the same security/audit cluster. Your own open item is CRM-62644.
+
+---
+
+## What you must source before the call
+
+These are QBR table stakes and none exist in the connected tools:
+
+- **Contract value and renewal date** — nothing in CRM. Without the renewal date you can't calibrate the pricing conversation from Sep 10.
+- **The actual NPS score** — discussed in four records (CRM-26522, CRM-75476, DRI-30445, DRI-36735), number recorded in none.
+- **Support ticket volume and SLA performance** — "support queue" is referenced once (DRI-53905) with no data.
+- **Product usage/adoption** — nothing at all.
+- **What the Sep 10 pricing conversation actually was** — renewal quote? expansion? discount request? This is probably the most consequential unknown.
+- **Named exec sponsor on Aster's side** — the records don't distinguish Brightline staff from customer contacts.
+
+---
+
+## What I'd suggest you say
+
+I'd rather not script talking points off metadata — you'd be asserting things to a customer that no record supports. But the structure the data points to:
+
+**Open by asking, not telling.** Given the two-month CRM gap, go in with "how has the last quarter actually felt for you" rather than a confident health narrative you can't back.
+
+**Lead with the compliance thread.** It's the most durable unresolved item — security review, audit prep, SSO, EU hosting, spanning April to this month. Naming it unprompted shows you've tracked it. Come with a concrete owner and date, since the record shows it's cycled without closing.
+
+**Address latency directly.** Two calls eight days apart in June, and the recurring churn follow-ups attach to it. If it was fixed, say so with evidence. If it wasn't, don't let them raise it first.
+
+**Let them steer the pricing discussion.** Something opened on Sep 10 and you don't have its content. Find out from Omar or Dana Ortiz beforehand; if you can't, ask open-ended rather than guessing at their position.
+
+**Close the ten open items explicitly.** Walking a customer through commitments you've closed is the strongest QBR move available, and it's exactly what the table above lets you prepare — once you've verified status with the owners.
+
+---
+
+Want me to draft the slide structure once you've filled in the renewal date, NPS, and the Sep 10 pricing context? With those three, the rest of this becomes a real brief. I'd also flag that the stub-quality logging on this account is worth raising with whoever owns CRM hygiene — a six-month history that can't answer "what did we commit to" is a problem beyond this one call.

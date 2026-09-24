@@ -1,0 +1,42 @@
+## Cobalt Retail — QBR Brief
+
+### Where things stand
+- **Account cadence has been steady but cooling.** Ten logged touchpoints Apr–Aug 2026 covering onboarding (CRM-49779, CRM-16603), webhooks (CRM-98822), roadmap (CRM-70221), search (CRM-36268), dashboards (CRM-24697), NPS (CRM-92187), pricing (CRM-87224), reporting (CRM-94849), notifications (CRM-35990). Last contact was QBR prep on 2026-08-04 (CRM-12694) — roughly seven weeks of quiet going into this call. Expect Sam to have accumulated questions.
+- **Ownership is spread across the team.** Jordan Blake owns QBR prep (CRM-12694), Priya Shah has carried pricing/reporting, Omar Haddad notifications/onboarding, Tess Brown dashboards/NPS. Worth syncing with Jordan before the call so you're not contradicting a thread you didn't see.
+- **Audit log export is the account's center of gravity.** Sam Ortiz pushed on it at the last QBR and you committed to CSV export by Q1 2027 (CRM-38600). The record notes the customer is planning around it — it's load-bearing for them, not a nice-to-have.
+
+### Open commitments
+| Commitment | Source | Status |
+|---|---|---|
+| Audit log export (CSV) to Sam Ortiz, by Q1 2027 | CRM-38600 | ⚠️ **Verify before reaffirming** |
+
+The public H1 2027 roadmap (NOT-20876, dated 2026-06-30) still lists Audit log export incl. SIEM streaming for Q1 2027.
+
+### ⚠️ Risk — read this before the call
+**There is a decision I can't see that may or may not affect the audit log export commitment.** I can't tell you what it is or whether it changes anything. What this means practically:
+
+- **Do not reaffirm the Q1 2027 date to Sam until you've checked with the product owner.** The roadmap page I can see is from June; your commitment is from July 24; something later exists that I don't have visibility into.
+- Ask the product owner directly: "Does the Q1 2027 audit log export commitment to Cobalt Retail still hold?" Get that before next week.
+- You gave Sam an unusually strong form of assurance — "you have my word" (CRM-38600). If the date has moved, this needs a deliberate, early, human conversation, not a slide correction mid-QBR.
+
+Two of your other commitments carry the same flag — Advanced analytics to Lena Fox at Pinecrest (SLA-93532) and audit log export to Granite Insurance (SLA-77342). If you're checking with the product owner anyway, cover all three in one pass.
+
+### What to say
+
+**Open with value, not roadmap.** Recap the year: onboarding completed, webhooks, dashboards, search and reporting all touched. Ask for their read on adoption — you have NPS history (CRM-92187) but nothing recent.
+
+**On audit log export — two scripts depending on what the product owner tells you:**
+
+*If the commitment holds:* "Audit log export is on track for Q1 2027 as we discussed. Here's what the delivery looks like and what I need from your side to be ready." Then confirm scope explicitly — you promised CSV export; the roadmap entry also mentions SIEM streaming. Make sure Sam knows which he's getting, because that gap is its own future escalation.
+
+*If anything has changed:* Don't deliver it in the QBR as a surprise. Call Sam beforehand, own it directly, and come to the QBR with a mitigation — interim export path, timeline, or written commitment. A date slip Sam hears about in advance is a manageable conversation; one he hears in a group setting after "you have my word" is a trust event.
+
+**Ask what they're planning around.** CRM-38600 says they're building plans on this feature. Find out exactly what depends on it and by when — that tells you how much runway you actually have.
+
+**Close on next steps.** Pending items across the account point at audit prep, pricing, and billing follow-ups (CRM-87224, CRM-94849, CRM-12694). Confirm who owns each.
+
+### Before next week
+1. Ask the product owner whether the Cobalt audit log export commitment still holds — **this is the blocker**; everything else in the brief is stable.
+2. Confirm CSV vs. SIEM streaming scope.
+3. Sync with Jordan Blake (CRM-12694) on the audit prep follow-up.
+4. Pull current usage/NPS — nothing fresher than June is available to me.

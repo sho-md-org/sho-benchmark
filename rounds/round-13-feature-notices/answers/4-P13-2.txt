@@ -1,0 +1,28 @@
+## Before you send: one flag
+
+The SSO (SAML) commitment to Quarry Mining (Tom Hale, by Q1 2027) carries a notice in our system: there may be a decision affecting this promise that isn't visible to me. **Don't reaffirm the Q1 2027 date until the product owner confirms it still holds.** The public roadmap (NOT-20876, 2026-06-30) does still list SSO (SAML), SP- and IdP-initiated, for Q1 2027 — but that's not sufficient to re-commit on, given the notice.
+
+Trail for context:
+- **DRI-36664** (2026-07-09) — Tom Hale reminded us of the Q1 2027 SSO promise; Leo Grant (AE) confirmed it on the call. That's what Tom is holding us to.
+- **CRM-14429** (2026-06-25) — earlier SSO questions call, owner Ana Petrova — likely your first stop for the product-side answer.
+
+So the draft below acknowledges the commitment and commits to a firm answer on a date, without restating Q1 2027.
+
+## Draft reply
+
+> Subject: Re: SSO (SAML) timing
+>
+> Hi Tom,
+>
+> Thanks for following up, and it's a fair question to put to us directly — you have our commitment on SSO (SAML) from our July sync, and I'm not going to give you a hand-wavy answer on it.
+>
+> Rather than repeat a date back to you off the top of my head, I want to confirm the current delivery plan with our product team first. I'm asking them today and will come back to you with a clear answer — including scope (SP- and IdP-initiated) and timing — by [date, suggest end of this week].
+>
+> If the timeline has moved at all, you'll hear it from me straight away, along with what we'd do about it. And if it's on track, I'll get you something in writing you can take to your security team.
+>
+> Talk soon,
+> Leo
+
+Two notes on the draft: I left the callback date as a placeholder — pick one you can actually hit, since the whole value of this reply is that the follow-up lands. And I'd avoid softening "if the timeline has moved" further; if the date has slipped, that sentence is what keeps this from becoming a trust problem later.
+
+Want me to draft the internal ask to the product owner (Ana Petrova per CRM-14429) as well?

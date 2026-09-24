@@ -1,0 +1,55 @@
+I've pulled every Vantage Telecom record across all four systems (17 records), plus the adjacent channels. Here's the brief — with one important caveat up front.
+
+## Caveat: the account record is thin
+
+Every Vantage Telecom record in CRM, Drive, Notion, and Slack is a **metadata stub** — topic, attendees, and a "next: follow up on X" pointer. None contains ARR, renewal date, seat count, NPS score, ticket volumes, or named customer-side contacts. I want to flag this rather than paper over it, because the gaps are exactly the numbers a QBR opens with.
+
+Notably, this workspace *does* log hard commitments — but only in `<Account>: renewal call notes` records (e.g. CRM-52816, Northstar Pharma, where Tess Brown's HubSpot-sync promise is explicitly "logged as a renewal condition"). **Vantage Telecom has no such record.** So there are no formally tracked commitments to report, which is itself a finding.
+
+What the corpus *does* support is a structural read of the account, and that read is not reassuring.
+
+---
+
+## Where things stand
+
+Ten CRM calls and nine meeting docs, April → September 2026. Latest touchpoint: **CRM-65747** (Sep 13, dashboards, owner Maya Chen).
+
+**Recurring themes, by frequency:**
+- **Billing** — CRM-24363 (Apr 12), CRM-92524 (Jul 23)
+- **Dashboards** — CRM-20779 (Apr 27), CRM-65747 (Sep 13)
+- **Search** — CRM-74774 (Jun 17), CRM-84868 (Jul 8)
+- **Trial conversion** — DRI-64274 (May 6), DRI-77676 (Aug 11)
+- **NPS** — CRM-37016 (Jul 10), plus raised in DRI-57024 and DRI-67178
+
+Topics recur at 2–3 month intervals rather than closing. That's the dominant pattern.
+
+## Open commitments (inferred from follow-up pointers, not formally logged)
+
+- **Webhooks** — the single most-repeated unclosed thread. Named as the next step three separate times: CRM-23907 (May 14), CRM-74774 (Jun 17), CRM-15845 (Jun 22). The only webhooks session on record, DRI-57024, predates two of those three asks (May 28).
+- **Latency** — named as next step off *both* billing calls, CRM-24363 (Apr) and CRM-92524 (Jul). Asked in April, still the follow-up in July.
+- **Exports** — the open item from your most recent call, CRM-65747 (Sep 13). Exports were last actually discussed in CRM-23907, back in May. The thread has looped.
+- **Integrations** (CRM-20779), **sandbox** (CRM-53521), **reporting** (CRM-37016) — each named once, no subsequent Vantage record closing them.
+
+## Risks
+
+1. **Explicit churn signal.** DRI-14442 (Sep 6) is titled "Churn (Vantage Telecom)" and covers churn *and* QBR prep together — Dana Ortiz and Tess Brown. This is the most direct risk marker in the account and it's three weeks old.
+2. **Account ownership has rotated constantly.** Seven different owners across ten CRM calls: Leo Grant, Tess Brown, Ana Petrova, Jordan Blake, Priya Shah, Dana Ortiz, and you. You own only the most recent one. No single person has carried continuity, which plausibly explains why webhooks and latency kept being re-raised rather than closed.
+3. **Live SSO thread landing on top of the QBR.** DRI-67178 (Sep 11) covered SSO questions, and SLA-93428 (yesterday, Sep 25) has Jordan Blake flagging "SSO questions next week" — the same week as your call. Sync with Jordan before you walk in.
+4. **No churn-risk data will exist in time.** SLA-40138 (Aug 20): the data team's weekly churn-risk report to CS starts in *October*. You won't have quantitative backup for the QBR.
+5. **NPS discussed three times, score recorded nowhere.** If Vantage asks where they sit, you currently can't answer from the record.
+
+## What to say
+
+Given the thin record, I'd steer toward a **commitment-closing QBR** rather than a metrics-and-wins QBR — you don't have the numbers for the latter, and the follow-up pattern means Vantage likely feels unheard.
+
+- **Lead by naming the pattern before they do.** Webhooks and latency have been open since spring across multiple owners. Acknowledging that directly is far stronger than being walked into it.
+- **Bring dates, not status.** For webhooks, latency, and exports, come with owners and target dates. These are the items with the longest unanswered history.
+- **Address continuity explicitly.** Seven owners in six months is something they have felt. Confirm you are the ongoing owner.
+- **Come prepared on SSO** — it's live this week and may dominate the agenda regardless of your plan.
+- **Ask for their NPS drivers verbally** — you have no score to present, so turn it into a listening item.
+
+## Before the call, you'll need to source elsewhere
+
+ARR and renewal date · current NPS · open ticket count and SLA status · customer-side stakeholder names and attendees · true delivery status of webhooks, latency, and exports (nothing in Linear — it returned zero Vantage results, so engineering status isn't visible in these tools at all).
+
+I'd suggest a quick pre-read with **Dana Ortiz and Tess Brown** (DRI-14442) on the churn conversation, and **Jordan Blake** on SSO — those three hold context that never made it into the written record.

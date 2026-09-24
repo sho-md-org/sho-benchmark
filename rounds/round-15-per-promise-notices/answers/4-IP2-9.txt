@@ -1,0 +1,19 @@
+I checked, and I can't confirm the premise — nothing I can see says SSO changed at all, IdP-initiated or otherwise.
+
+**What the records actually show:**
+
+- The public roadmap (NOT-20876, 2026-06-30) still lists **"SSO (SAML), SP- and IdP-initiated: Q1 2027"** — both flavors, same date.
+- None of the SSO commitments on file carry a change flag. They are:
+  - CRM-31062 — Vantage Telecom, Priya Shah: Q1 2027 "including IdP-initiated login from Okta"
+  - CRM-62434 — Umber Studios, Priya Shah: by March, "with IdP-initiated sign-in"
+  - CRM-74447 — Riverton City, Tess Brown: early next year (renewal condition)
+  - DRI-36664 — Quarry Mining, Leo Grant: Q1 2027, confirmed
+- You don't personally have an SSO commitment on record — the four above belong to Priya, Tess, and Leo.
+
+**Two caveats worth stating plainly:**
+
+1. My not seeing a change isn't proof there wasn't one. If you heard this secondhand, the product owner for SSO is the right person to confirm, and I'd do that before you repeat either "it changed" or "it didn't" to a customer — especially Riverton City and Umber Studios, where SSO is a logged renewal condition.
+
+2. **Three of your commitments do have open flags** that may be what you're thinking of: Advanced analytics for Pinecrest Realty (SLA-93532, yours), Audit log export for Granite Insurance (SLA-77342, yours), and SCIM provisioning for Umber Studios (SLA-12035, Jordan Blake's). Each is marked as possibly affected by a decision I can't see, and each says to check with the product owner before reaffirming. SCIM is an adjacent identity feature to SSO and also involves Umber Studios — easy to conflate with an SSO change.
+
+So: I'd ask the product owner a single question covering both — "did anything move on SSO, and do my analytics/audit-log dates still hold?" Want me to draft that message?

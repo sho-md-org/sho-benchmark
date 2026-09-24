@@ -1,0 +1,65 @@
+## Cobalt Retail — QBR Brief
+
+**One flag up front:** the single most important thing on this account — your Q1 2027 audit log export promise — is flagged in Sho. A decision I can't see may or may not have changed it. **Do not reaffirm the date on the call until you've checked with the product owner.** Details below.
+
+---
+
+### Where things stand
+
+Cobalt Retail is an active, multi-threaded account with steady contact but no single clear owner — ownership rotates across records (Jordan Blake, Omar Haddad, Priya Shah, Tess Brown, you). Recent thread, most recent first:
+
+| Date | Record | Topic | Listed owner |
+|---|---|---|---|
+| 2026-08-11 | DRI-75222 | Billing + audit prep (Ana Petrova, Omar Haddad) | — |
+| 2026-08-04 | CRM-12694 | QBR prep | Jordan Blake |
+| 2026-08-01 | CRM-35990 | Notifications | Omar Haddad |
+| 2026-07-24 | CRM-38600 | **QBR notes — audit log export commitment** | Maya Chen |
+| 2026-07-23 | CRM-94849 | Reporting | Priya Shah |
+| 2026-06-23 | CRM-87224 | Pricing | Priya Shah |
+| 2026-06-15 | CRM-16603 | Onboarding | Omar Haddad |
+| 2026-06-12 | CRM-24323 | Audit prep | Omar Haddad |
+| 2026-05-26 | CRM-24697 | Dashboards | Tess Brown |
+| 2026-04-27 | CRM-49779 | Onboarding | Priya Shah |
+| 2026-04-20 | CRM-70221 | Roadmap | Maya Chen |
+
+Audit prep is the recurring spine — it shows up as the "next step" out of QBR prep (CRM-12694) and pricing (CRM-87224), and again in the August billing meeting (DRI-75222). That's your real agenda, whatever the deck says.
+
+### Open commitments
+
+**1. Audit log export (Lark) — CSV export, by Q1 2027.** Source: CRM-38600, 2026-07-24. Sam Ortiz pushed; you said *"you'll have it by Q1 2027 as a CSV export, you have my word."* The record notes the customer is planning around it.
+
+- **Status: flagged.** Sho reports a decision I don't have visibility into that may or may not affect this. I can't tell you which way it went, and I'm not going to guess.
+- **Action before the call:** ask the product owner whether the Q1 2027 CSV export commitment still holds. That's the one blocking item on this brief.
+- The public roadmap I can see (NOT-20876, dated 2026-06-30) lists audit log export incl. SIEM streaming at Q1 2027 — but that's nearly three months old and predates whatever the flagged decision is. **Don't use it as confirmation on the call.**
+
+**2. Recurring "audit prep" workstream.** Tracked across CRM-24323, DRI-75222, NOT-21020 (owner Dana Ortiz), SLA-12553, SLA-13802. Your own 2026-09-19 Slack note (SLA-13802) says "roadmap next week" — that's now. No dated deliverable or named owner on the Cobalt side that I can find; worth pinning down.
+
+### Risks
+
+- **Reaffirmation risk (high).** You gave a personal word on a date that's now under a decision you haven't seen. If Sam opens with "we're still good for Q1, right?" and you say yes, you may be re-committing to something that's moved. This is the one that can damage trust.
+- **Customer is planning around the date (high impact).** CRM-38600 says so explicitly. Any slip isn't just a roadmap change for them — it hits their audit timeline.
+- **No clear account owner (medium).** Five different owners across eleven records. Sam may be getting inconsistent answers depending on who he talks to.
+- **Audit prep has no dated deliverable (medium).** It keeps getting handed forward as a "next step" without resolving. Five months of records, no closure.
+- **Pricing and billing both open and unresolved** (CRM-87224, DRI-75222). Neither has a recorded outcome — expect Sam to raise one.
+
+### What to say
+
+**On audit log export — if the product owner confirms before the call:** reaffirm plainly, give the format (CSV) and the quarter, and offer a written follow-up so Sam has something to plan against.
+
+**If you haven't heard back, or the answer is "it changed":** don't improvise a new date. Something like —
+
+> "I know audit log export is the thing you're planning around, and I want to give you an accurate answer rather than a fast one. I'm confirming the delivery detail with our product team this week and I'll come back to you in writing by [date] — including the export format and what you can start building against now."
+
+That's honest, doesn't walk back your word, and doesn't create a second commitment you'd have to manage.
+
+**On audit prep:** propose closing it out — name one owner on each side and one dated deliverable. It's been open since April across at least five records.
+
+**On ownership:** offer yourself or Jordan Blake as the single point of contact. Cheap to give, and it addresses a problem Sam has probably noticed.
+
+**Ask Sam:** what their audit timeline actually is. If their deadline is inside Q1 2027, the margin matters a lot more than the quarter label.
+
+---
+
+**Before the call:** one message to the product owner — *"Does Maya's Q1 2027 CSV audit log export commitment to Cobalt Retail (CRM-38600) still hold?"* Everything else in this brief you can walk into cold.
+
+Two other flagged commitments of yours sit outside this account but carry the same notice — advanced analytics for Lena Fox at Pinecrest Realty (SLA-93532) and audit log export for Lena Fox at Granite Insurance (SLA-77342). Not for this QBR, but the same "check with the product owner" applies. Want me to draft the message to product covering all three?

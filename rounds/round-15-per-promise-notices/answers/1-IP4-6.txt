@@ -1,0 +1,33 @@
+## Short answer: Keystone Energy is the one at risk — and it isn't actually your promise.
+
+### The two commitments side by side
+
+| | **Keystone Energy** | **Cobalt Retail** |
+|---|---|---|
+| Record | `DRI-34564` (2026-08-03) | `CRM-38600` (2026-07-24) |
+| Who committed | Nia Cole raised it; **Jordan Blake (AE) confirmed** | **You**, verbatim: *"you'll have it by Q1 2027 as a CSV export, you have my word"* |
+| Scope promised | Audit log export **with streaming into Splunk** | Audit log export **as CSV** |
+| Date promised | Q1 2027 | Q1 2027 |
+| Customer posture | Reminded us of it unprompted | "Planning around it" |
+
+### Why the dates aren't the differentiator
+
+The public roadmap (`NOT-20876`, 2026-06-30) lists *"Audit log export incl. SIEM streaming: Q1 2027."* Both promises match the published date, so neither is late on paper. The exposure is in **scope**, not timing.
+
+### Why Keystone carries the risk
+
+Cobalt's promise is CSV — the simplest, first-to-ship slice of that roadmap line. Keystone's promise is the SIEM-streaming half, which is the part of a bundled roadmap item that typically gets descoped to a phase 2 when the quarter tightens. If the roadmap item ships partially, Cobalt is satisfied and Keystone is not. Keystone also has an explicit Splunk dependency ("streaming into Splunk"), so a CSV-only launch doesn't partially satisfy them — it misses entirely.
+
+**Caveat on my confidence:** I could not find engineering corroboration either way. Linear returned zero results for `audit`, `export`, `streaming`, and `SIEM` — there's no ticket backing this roadmap line that I can see. The audit-prep notes in Notion and Drive (`NOT-21020`, `NOT-45379`, `DRI-84961`) are stubs with no scope detail. So this is a structural risk assessment, not a report of a known slip. The absence of any Linear ticket for a Q1 2027 commitment is itself worth a question to the product team.
+
+### Two corrections to the framing of your question
+
+1. **The Keystone promise isn't yours.** Per `DRI-34564`, Jordan Blake (AE) confirmed it. You may still own the cleanup, but the escalation path runs through Jordan.
+
+2. **You have a third, closer-matching exposure you didn't mention.** In `SLA-77342` (2026-05-26) you told Lena Fox at Granite Insurance you'd have audit log export by Q1 2027 **including SIEM streaming, "so they can finish their rollout."** That is your own promise, it carries the risky SIEM scope *and* a stated customer dependency. If you're triaging SIEM-streaming exposure, Granite belongs on the list above Keystone.
+
+Side note: Lena Fox appears at both Granite Insurance (`SLA-77342`) and Keystone Energy (`CRM-53313`). Worth confirming whether that's one person who moved or two records — it would change who has heard what from you.
+
+### Suggested next step
+
+Get a written answer from product on one question: *does the Q1 2027 audit log export include SIEM streaming at GA, or is streaming phase 2?* That single answer resolves Cobalt (safe either way), Keystone, and Granite at once.

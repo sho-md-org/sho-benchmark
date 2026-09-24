@@ -1,0 +1,82 @@
+I've pulled everything the four systems hold on Harbor Clinics. Before the brief, one thing that materially affects it:
+
+**The source records are stubs.** All 10 CRM entries and 10 Drive docs are one-line summaries — topic, attendees, owner, and a "next" pointer. There is no contract value, renewal date, seat count, health score, named customer-side contact, or support ticket anywhere. Slack, Linear, and Notion return **zero** results for this account. So I can give you a reliable *activity and commitment* picture, but the commercial facts a QBR normally opens with aren't in these tools and you'll need to source them elsewhere.
+
+---
+
+# Harbor Clinics — QBR Prep
+**Call: week of 2026-09-29 · Prepared 2026-09-24**
+
+## Where things stand
+
+Coverage is continuous from April through September — 20 recorded touchpoints, no dormancy. But the account is **fragmented across eight owners** with no consistent thread:
+
+| Owner | Touchpoints |
+|---|---|
+| Omar Haddad | CRM-97969, CRM-75336 |
+| Ana Petrova | CRM-73374, CRM-64035 |
+| Dana Ortiz | CRM-78984, DRI-88564 |
+| Jordan Blake | CRM-36695 (+5 as attendee) |
+| Maya Chen | CRM-94239 |
+| Tess Brown | CRM-41255 |
+| Sam Lee | CRM-34883 |
+| Priya Shah | CRM-39320 |
+
+**You have owned one recorded touchpoint since April** (CRM-94239, latency, 2026-06-02), and appear as an attendee on two others (DRI-55004 on 7/21, DRI-17950 on 9/11). Whoever the customer thinks owns this relationship, the record doesn't show it's you.
+
+**Recency gap:** last CRM call was 2026-08-26 (CRM-39320, CRM-64035) — about four weeks ago. Last internal doc was 2026-09-11 (DRI-17950). Expect the customer to have accumulated items you haven't heard.
+
+**Topic arc:** Apr–Jun was commercial and foundational (pricing ×3, integrations, hosting, roadmap, sandbox). Jul–Sep shifted to data-out and reliability (dashboards, exports, reporting, offline, latency). That's a normal maturation curve — they're past "can we deploy it" and into "can we get value out of it."
+
+## Open commitments
+
+Each CRM record logs a "next" item. Cross-referencing those against whether a matching topic ever recurs, these appear **unclosed** — no subsequent record touches them:
+
+| Commitment | Owner | Logged | Source |
+|---|---|---|---|
+| Follow up on **webhooks** | Omar Haddad | 2026-04-25 | CRM-97969 |
+| Follow up on **onboarding** | Jordan Blake | 2026-06-13 | CRM-36695 |
+| Follow up on **permissions UI** | Dana Ortiz | 2026-06-15 | CRM-78984 |
+| Follow up on **SSO questions** | Sam Lee | 2026-07-15 | CRM-34883 |
+| Follow up on **search** | Omar Haddad | 2026-07-25 | CRM-75336 |
+| Follow up on **notifications** | Priya Shah | 2026-08-26 | CRM-39320 |
+| Follow up on **analytics** | Ana Petrova | 2026-08-26 | CRM-64035 |
+
+Appear **closed** (a later record covers the topic): reporting (CRM-94239 → DRI-67100), latency (CRM-41255 → DRI-55004), analytics from May (CRM-73374 → DRI-17076).
+
+Caveat: this is inferred from topic labels, not from any explicit resolution field. Confirm the five oldest with their owners before you commit to a status on the call — **webhooks has been open five months**, and SSO plus permissions UI are the kind of items that quietly block an enterprise expansion.
+
+## Risks
+
+**1. Three internal "Churn" docs, two of them this month.** DRI-17076 (7/20, Leo Grant + Jordan Blake, "churn and analytics"), DRI-26772 (9/6, Leo Grant + Priya Shah, "churn and sandbox"), DRI-17950 (9/11, you + Tess Brown, "churn and dashboards"). The cadence is accelerating.
+
+I want to be precise here: these titles are genuinely ambiguous. "Churn and analytics" could be internal retention-risk review, or it could be Harbor asking for churn-analytics *functionality* — they're a clinic network, patient attrition is a metric they'd plausibly want to chart. Nothing in the records disambiguates it. **Find out which before the call** — it changes your entire posture, and you were in the most recent one, so you likely already know.
+
+**2. Owner fragmentation.** Eight people, no continuity. Customers read this as "nobody owns us." It also explains the stale follow-ups — handoffs drop things.
+
+**3. Pricing discussed three times, then dropped.** DRI-51027 (4/23), DRI-40615 (5/18), DRI-55004 (7/21), then silence for two months. Unresolved pricing tension that goes quiet is a common precursor to a hard renewal conversation.
+
+**4. Recurring reliability themes.** Latency appears twice (CRM-94239, DRI-55004) and offline three times (CRM-39320, DRI-88564, DRI-60679). Repeat topics usually mean unresolved topics.
+
+## What to say
+
+**Open by taking ownership.** "I want to be your single point of contact going forward." It directly addresses the fragmentation, and it costs you nothing if they hadn't noticed.
+
+**Lead with the value arc, not the activity count.** They've moved from deployment questions to reporting and exports — that's a customer getting embedded. Name it as progress.
+
+**Clear the backlog out loud.** Bring the seven open items with owners and dates. Volunteering a stale list you're actively closing builds more credibility than hoping they forget. Prioritize SSO and permissions UI — those read as security/compliance blockers for a clinic network.
+
+**Reopen pricing deliberately.** "We talked commercials in the spring and then it went quiet — where did that land for you?" Better you raise it than have it surface at renewal.
+
+**On churn:** if it's a product request, position it as a roadmap win. If it's internal risk, do not raise the word — instead ask open questions about what's not working and let them tell you.
+
+## Before the call — fill these gaps
+
+The tools can't give you these; pull them from billing, the contract, or your own notes:
+- Contract value, renewal date, seat/license utilization
+- Named customer-side stakeholders (**no Harbor Clinics contact appears anywhere in these records**)
+- Support ticket volume and any open escalations
+- Product usage trend — the thing that should anchor a QBR and is entirely absent here
+- The actual substance of DRI-17950, the 9/11 churn discussion you attended
+
+One data-quality note: DRI-88564 lists "Dana Ortiz, Dana Ortiz" as attendees, so the second participant on that exports call is unrecorded.

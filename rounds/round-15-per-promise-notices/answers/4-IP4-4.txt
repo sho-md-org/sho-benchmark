@@ -1,0 +1,22 @@
+**The Keystone Energy promise is the one at risk. Cobalt Retail's looks normal.**
+
+## Side by side
+
+| | **Keystone Energy** | **Cobalt Retail** |
+|---|---|---|
+| Source | `DRI-34564` (2026-08-03) | `CRM-38600` (2026-07-24) |
+| Promise | Audit log export **incl. streaming into Splunk**, by Q1 2027 | Audit log export **as a CSV export**, by Q1 2027 |
+| Who promised | Company-level; Nia Cole raised it, **Jordan Blake (AE)** confirmed | **You**, to Sam Ortiz — "you have my word" |
+| Status in Sho | ⚠️ Flagged — a decision you can't see may or may not change this promise | No later change found |
+
+## What to do
+
+**Keystone (`DRI-34564`):** Don't reaffirm the Q1 2027 date to Keystone until you've asked the product owner whether the promise still holds. The flag doesn't tell you the promise is broken — only that something outside your visibility bears on it. Note also that this one isn't strictly yours: Jordan Blake confirmed it, so loop them in rather than carrying it alone.
+
+**Cobalt (`CRM-38600`):** Treat as normal. It's a narrower promise — plain CSV export, no SIEM/Splunk streaming — which is also why it's less exposed. Public roadmap `NOT-20876` still lists "Audit log export incl. SIEM streaming: Q1 2027".
+
+## One thing you didn't ask about
+
+You have a **third** audit-export promise, and it's genuinely yours: `SLA-77342` (2026-05-26) — you told Lena Fox at Granite Insurance audit log export by Q1 2027 **including SIEM streaming**, so they can finish their rollout. It carries the same flag as Keystone. Since it matches Keystone's scope, one conversation with the product owner should cover both.
+
+Separately, your Pinecrest Realty advanced-analytics promise (`SLA-93532`) is also flagged — different feature, same "ask the product owner before reaffirming" caveat.

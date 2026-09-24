@@ -1,0 +1,75 @@
+## Bottom line first
+
+I can't write the brief you asked for from these systems, and I want to be straight about why rather than hand you something that reads authoritative and isn't.
+
+I pulled **all 20 Aster Health records** — 10 CRM, 10 Drive. Slack, Linear, and Notion returned **zero** results for Aster Health. Every one of the 20 is a one-line stub. Representative, in full:
+
+> `CRM-75476` — "Call with Aster Health. Discussed dashboards. Owner Sam Lee. Next: follow up on NPS."
+> `DRI-75615` — "Attendees: Omar Haddad, Maya Chen. Discussed dashboards and search."
+
+That's the entire record. There is no contract value, renewal date, NPS score, incident detail, commitment with a due date, or stakeholder map anywhere in the account. "Where things stand," "open commitments," and "what I should say" can't be sourced from topic labels — I'd be inventing the substance, which is the one thing you can't afford to walk into a QBR with.
+
+Here's what the record genuinely supports.
+
+## The activity timeline (real, and useful on its own)
+
+| Date | Record | Topic | Owner / Attendees | Logged "next" |
+|---|---|---|---|---|
+| 04-12 | `DRI-86962` | Sandbox + QBR prep | Ana Petrova, Dana Ortiz | — |
+| 04-13 | `CRM-26522` | NPS | Ana Petrova | security review |
+| 04-18 | `CRM-45213` | Exports | Leo Grant | audit prep |
+| 04-18 | `CRM-76005` | Exports | Leo Grant | churn |
+| 04-19 | `CRM-57156` | Dashboards | Ana Petrova | SSO questions |
+| 04-28 | `DRI-23711` | Exports + hosting | Ana Petrova, Leo Grant | — |
+| 04-28 | `DRI-82652` | Integrations + notifications | Leo Grant, Omar Haddad | — |
+| 05-06 | `DRI-16514` | Security review | Jordan Blake | — |
+| 05-10 | `CRM-62644` | Sandbox | **Maya Chen** | search |
+| 05-11 | `CRM-81799` | Hosting | Tess Brown | hosting |
+| 05-11 | `DRI-70983` | QBR prep + search | Omar Haddad, Ana Petrova | — |
+| 05-17 | `CRM-64767` | Sandbox | Ana Petrova | churn |
+| 06-12 | `DRI-48732` | Integrations + notifications | Jordan Blake, Priya Shah | — |
+| 06-13 | `DRI-48323` | Audit prep + churn | Dana Ortiz, Jordan Blake | — |
+| 06-14 | `CRM-16329` | Latency | Priya Shah | security review |
+| 06-22 | `CRM-68765` | Latency | Leo Grant | churn |
+| 07-05 | `DRI-30445` | NPS + integrations | Omar Haddad, Dana Ortiz | — |
+| 07-19 | `DRI-36553` | Search + roadmap | Jordan Blake, **Maya Chen** | — |
+| 07-21 | `CRM-75476` | Dashboards | Sam Lee | NPS |
+| 09-10 | `DRI-53905` | Pricing + support queue | Dana Ortiz | — |
+| 09-17 | `DRI-75615` | Dashboards + search | Omar Haddad, **Maya Chen** | — |
+
+**Two things in this table are worth your attention regardless of the missing detail:**
+
+1. **CRM logging stopped on 07-21.** Two months of activity since then — including a *pricing* conversation (`DRI-53905`, 09-10) — exists only as meeting notes, never logged to CRM. If anyone else preps from CRM, they're two months stale and blind to the pricing discussion.
+2. **You're light on this account.** You appear in 3 of 21 touchpoints (`CRM-62644`, `DRI-36553`, `DRI-75615`). Ana Petrova, Leo Grant, Jordan Blake, and Dana Ortiz carry most of the history. They are your fastest path to the real content.
+
+## Heads up: there's a meeting already on the calendar for 09-28
+
+`DRI-36735` is dated **2026-09-28** — four days out — on **NPS and audit prep**, with Omar Haddad and Ana Petrova. Future-dated entries appear elsewhere in Drive too (`DRI-90443`, Norrland AB, 09-25), so these notes include scheduled meetings. Check whether that *is* your call or runs separately — if separate, you may be double-touching Omar Haddad days apart.
+
+## Signals — read these as "probe this," not as findings
+
+I want to be careful here, because the tempting move is to convert topic labels into risk language. These are keyword frequencies, not evidence:
+
+- **"Churn" is the logged follow-up on three CRM calls** (`CRM-76005`, `CRM-64767`, `CRM-68765`) and the subject of one Drive note (`DRI-48323`). Notably, two of those follow exports and latency conversations. That's a pattern worth asking about — but nothing in any record states the account is actually at risk.
+- **Security/audit recurs across the full window** — `CRM-26522`, `DRI-16514`, `CRM-16329`, `DRI-48323`, and the upcoming 09-28. Healthcare customer; likely a live compliance workstream, not a one-off.
+- **Latency appears twice in eight days in June** (`CRM-16329`, `CRM-68765`), owned by different people. Possibly one escalation handled by two owners.
+- **Dashboards, exports, sandbox, search, and integrations each recur 2–3 times** across six months. Recurrence without a closure note is ambiguous — either sustained expansion interest or unresolved friction.
+
+## What to fill in before the call, and where
+
+The four things a QBR brief needs, none of which exist in these tools:
+
+| Gap | Best source |
+|---|---|
+| ARR, renewal date, contract terms | Billing/finance system, or Dana Ortiz — they ran the 09-10 pricing conversation |
+| Actual NPS score + verbatims | NPS tooling; Omar Haddad has the 09-28 session |
+| Real status of latency / exports / dashboards | Support ticket system — Linear has nothing on this account |
+| What was actually promised | Ana Petrova and Leo Grant (spring), Jordan Blake (security/audit), Dana Ortiz (pricing) |
+
+## How I'd suggest proceeding
+
+Fastest path: **message Ana Petrova, Leo Grant, and Dana Ortiz today** with the specific asks above. The institutional memory is in people, not the CRM, and you have a week.
+
+Say the word and I'll draft those three messages, or build the brief into a full QBR deck structure with these fields as blanks so you can drop numbers in as they come back. I'd rather do that than fill the blanks with plausible-sounding narrative.
+
+One thing worth fixing separately: an account with a pricing conversation and recurring churn follow-ups shouldn't have an empty CRM since July.

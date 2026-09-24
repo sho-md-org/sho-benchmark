@@ -1,0 +1,17 @@
+I can't answer that one from what I have access to — and I want to be precise about why, because the gap matters for how you handle Pinecrest.
+
+**What I can see:**
+
+- **NOT-20876** (Public roadmap H1 2027, last dated 2026-06-30) still lists **Advanced analytics: Q2 2027**. No cut, no change, as of that document.
+- **SLA-93532** (2026-06-28) records your commitment to Lena Fox at Pinecrest Realty: Advanced analytics (Osprey) in the spring release so they can finish their rollout.
+- The remaining records surfaced (**CRM-11536**, **CRM-86750**, **CRM-14909**, **CRM-31062**, **DRI-76027**, **DRI-56604**, **DRI-50317**, **DRI-78883**) are account-side analytics notes and QBRs — customer demand signal, not planning decisions.
+
+**What I can't see:** Sho flags that a decision outside my access may bear on your Advanced analytics commitment. I can't tell you whether it's a cut, a slip, a rescope, or nothing at all — I have no visibility into its content, rationale, or who signed off. So I can't give you the exact reasoning or the decider, and I'd be making it up if I inferred one from the roadmap doc alone.
+
+Worth noting: your question assumes the feature was cut. I can't confirm that premise either way. If you heard it secondhand, the source of that rumor is worth tracing separately.
+
+**Recommendation:** Go to the **product owner for Advanced analytics** and ask two things — (1) does your spring-release commitment to Lena Fox still hold, and (2) what's the reasoning and decision record you can share with a customer. Don't reaffirm the spring date to Pinecrest until you have that answer in hand.
+
+Two of your other open commitments carry the same flag and are worth batching into that conversation: **Audit log export** for Lena Fox / Granite Insurance, Q1 2027 (**SLA-77342**, yours), and **SCIM provisioning** for Kai Berg at Umber Studios, Q1 2027 (**SLA-12035**, Jordan Blake's). **Offline mode** for Meridian Travel (**SLA-24221**, Priya Shah) is clean — no later change found.
+
+Want me to draft the note to the product owner covering all three?

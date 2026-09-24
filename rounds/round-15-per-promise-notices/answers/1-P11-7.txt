@@ -1,0 +1,55 @@
+## The honest headline first
+
+I read all 19 Vantage Telecom records in CRM and Drive, plus Notion. **I can't write the brief you asked for from this data, and I don't want you to walk into the call thinking I did.**
+
+Every record is a one-line stub. Here is CRM-65747, your most recent touchpoint, in full:
+
+> Call with Vantage Telecom. Discussed dashboards. Owner Maya Chen. Next: follow up on exports.
+
+That's the whole record. There is no ARR, no renewal date, no contract terms, no health score, no named commitment with a date, no stakeholder titles, no support ticket volume, no NPS number — anywhere in the system. Slack and Linear return **zero** Vantage results, and Notion has no Vantage page at all.
+
+So "where things stand, open commitments, risks" cannot be sourced. Writing those sections would mean inventing them, and invented numbers in a QBR are the kind of thing that blows up in the room when the customer corrects you. What follows is what the records *do* support.
+
+## What's actually documented: 19 touchpoints, Apr 2 – Sep 13
+
+| Date | Topic | Owner / Attendees | Stated next step | ID |
+|---|---|---|---|---|
+| Apr 2 | Integrations, audit prep | Maya Chen, Leo Grant | — | DRI-81968 |
+| Apr 12 | Billing | Leo Grant | latency | CRM-24363 |
+| Apr 27 | Dashboards | Tess Brown | integrations | CRM-20779 |
+| May 6 | Trial conversion, offline | Dana Ortiz | — | DRI-64274 |
+| May 14 | Exports | Ana Petrova | **webhooks** | CRM-23907 |
+| May 18 | Analytics | Jordan Blake | sandbox | CRM-53521 |
+| May 28 | Webhooks, NPS | Ana Petrova, Leo Grant | — | DRI-57024 |
+| Jun 14 | Reporting | Ana Petrova, Tess Brown | — | DRI-68417 |
+| Jun 17 | Search | Priya Shah | **webhooks** | CRM-74774 |
+| Jun 22 | Onboarding | Dana Ortiz | **webhooks** | CRM-15845 |
+| Jul 8 | Search | Priya Shah | QBR prep | CRM-84868 |
+| Jul 10 | NPS | Tess Brown | reporting | CRM-37016 |
+| Jul 23 | Billing | Jordan Blake | latency | CRM-92524 |
+| Aug 5 | Rate limits, hosting | Maya Chen, Omar Haddad | — | DRI-89702 |
+| Aug 11 | Trial conversion, NPS | Tess Brown, Ana Petrova | — | DRI-77676 |
+| Aug 18 | Support queue | Leo Grant, Omar Haddad | — | DRI-10836 |
+| Sep 6 | **Churn**, QBR prep | Dana Ortiz, Tess Brown | — | DRI-14442 |
+| Sep 11 | SSO questions, NPS | Dana Ortiz, Omar Haddad | — | DRI-67178 |
+| Sep 13 | Dashboards | Maya Chen | exports | CRM-65747 |
+
+## Four patterns the metadata genuinely supports
+
+**1. A churn conversation happened on Sep 6, explicitly tied to QBR prep.** DRI-14442 is titled "Churn (Vantage Telecom)" — Dana Ortiz and Tess Brown, no detail. This is the single most important thing in the file and you weren't on it. Talk to Dana and Tess before the call. If there's a retention concern, that changes the entire shape of your QBR.
+
+**2. "Follow up on webhooks" was logged three separate times and never closed** — May 14 (CRM-23907), Jun 17 (CRM-74774), Jun 22 (CRM-15845), by three different owners. A webhooks meeting happened May 28 (DRI-57024) between the first two. Same story on billing: "follow up on latency" logged Apr 12 (CRM-24363) and again Jul 23 (CRM-92524), three months apart, unresolved both times. Assume the customer remembers these even though the CRM doesn't.
+
+**3. Eight different owners across ten CRM calls.** Leo Grant, Tess Brown, Ana Petrova, Jordan Blake, Priya Shah, Dana Ortiz, you. You appear as owner only on Sep 13 and one April meeting. If you're newly on this account, the customer has likely explained the same things to five people — worth acknowledging directly rather than letting them discover it.
+
+**4. SSO questions surfaced Sep 11, late and unresolved.** Paired with "audit prep" back on Apr 2 (DRI-81968) and the hosting/rate-limits thread (DRI-89702), this reads like a security or procurement review. Those tend to gate renewals. Confirm before the call.
+
+## What I'd do before next week
+
+- **Dana Ortiz and Tess Brown** — what was the Sep 6 churn discussion? Highest priority.
+- **Omar Haddad** — he's in three recent Vantage meetings (SSO, rate limits, support queue) and owns two undated "Qbr prep" Notion docs (NOT-42571, NOT-52051) that aren't linked to any account. Ask if either is Vantage.
+- **Your billing/finance system** — ARR, renewal date, seat count, invoice history. None of it is in CRM.
+- **Support tooling** — DRI-10836 discussed the support queue on Aug 18 but recorded no ticket data.
+- **Priya Shah** — the Jul 8 record (CRM-84868) says "follow up on QBR prep," so someone may have started this already.
+
+I can draft the full brief the moment you have the churn context and the commercial numbers — the scaffold above is ready to fill. I'd also flag that this account's record-keeping is thin enough to be a risk in itself; if you want, I can write up what a usable Vantage record should capture going forward.

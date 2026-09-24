@@ -1,0 +1,45 @@
+## Vantage Telecom — QBR Brief (call week of 2026-09-29)
+
+### ⚠️ Read this first
+The **SSO (SAML) commitment is not safe to reaffirm on the call.** Priya Shah (AE) told Ines Park at the June QBR: *"you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word"* — and Vantage is planning their rollout around it (CRM-31062).
+
+There is a flag on this commitment indicating something outside my visibility may bear on it. I can't confirm, deny, or characterize what that is. **Before the call, ask the SSO product owner whether the Q1 2027 date and the IdP-initiated-login scope still hold.** Don't restate the date to Ines until you have that answer.
+
+### Where things stand
+Account is active and well-covered across CS and AE (Maya, Priya Shah, Jordan Blake, Ana Petrova, Tess Brown). Recent thread of contact:
+
+| Date | Topic | Record |
+|---|---|---|
+| 2026-09-13 | Dashboards (your call; next step: exports) | CRM-65747 |
+| 2026-09-11 | SSO questions + NPS (Dana Ortiz, Omar Haddad) | DRI-67178 |
+| 2026-09-06 | **Churn** + QBR prep (Dana Ortiz, Tess Brown) | DRI-14442 |
+| 2026-08-11 | Trial conversion + NPS | DRI-77676 |
+| 2026-08-05 | Rate limits + hosting (you, Omar Haddad) | DRI-89702 |
+| 2026-07-23 | Billing (next: latency) | CRM-92524 |
+| 2026-07-08 | Search (next: QBR prep) | CRM-84868 |
+| 2026-06-22 | Pricing (next: audit prep) | CRM-36270 |
+
+Recurring themes across the year: SSO, reporting/dashboards/exports, billing and pricing, search, webhooks/integrations, rate limits.
+
+### Open commitments
+- **SSO (SAML), by Q1 2027, incl. Okta IdP-initiated login** — Priya Shah to Ines Park (CRM-31062). Status: **verify with product owner before reaffirming.** This is the only outstanding feature commitment I can find tied to Vantage.
+
+### Risks
+1. **SSO expectation gap.** Ines is planning around a dated, explicitly-worded promise, and SSO questions came up again as recently as 2026-09-11 (DRI-67178). If the date or the Okta IdP-initiated scope moves, this is the single largest trust risk on the account — and it lands in a QBR, in front of the person who was promised it.
+2. **Churn is already on the internal agenda.** A 2026-09-06 session paired churn with QBR prep (DRI-14442), and NPS keeps recurring (DRI-67178, DRI-77676, CRM-37016). Treat this QBR as a retention conversation, not a status update.
+3. **Commercial friction.** Pricing (CRM-36270) and two billing threads (CRM-24363, CRM-92524) suggest unresolved cost sensitivity — expect it to surface.
+4. **Loose threads.** Several "next steps" appear unclosed: exports (from CRM-65747), latency (from CRM-92524), audit prep (from CRM-36270). Worth confirming these landed before you're asked.
+
+### What to say
+- **On SSO:** *"I know SSO is the one you're tracking most closely. I'm getting you a precise, current status from our product team ahead of this call rather than repeating a date secondhand."* Then deliver whatever the product owner confirms. If you don't have the answer by the call, commit to a specific follow-up date instead of restating Q1 2027.
+- **Open with value, not agenda:** dashboards, reporting and search work over the last two quarters — ask Ines which of those is actually moving the needle for her team.
+- **Name the churn risk indirectly:** ask what would make Vantage's renewal an easy internal decision, and what's currently making it hard. Better to hear it now than at renewal.
+- **On pricing/billing:** acknowledge it's come up repeatedly and offer to bring Jordan Blake into a dedicated follow-up rather than improvising numbers in the QBR.
+- **Close loops:** come with status on exports, latency, and audit prep so the meeting shows follow-through.
+
+### Before the call
+1. Ask the SSO product owner whether the Q1 2027 / Okta IdP-initiated commitment still holds. **Blocking item.**
+2. Confirm exports, latency, and audit prep follow-ups are closed.
+3. Sync with Dana Ortiz and Tess Brown on what came out of the 2026-09-06 churn discussion (DRI-14442) — they have context I don't.
+
+One caveat: most of the Vantage records are one-line summaries without substance, so this brief reflects topic coverage and the one explicitly documented promise. If there's a renewal date or ARR figure you need in the deck, it isn't in what I can see — pull it from the account record directly.

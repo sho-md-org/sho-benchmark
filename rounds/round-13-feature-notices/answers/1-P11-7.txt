@@ -1,0 +1,82 @@
+I searched CRM, Drive, Slack, Linear, and Notion. Here's the brief — but one caveat shapes everything below, so it goes first.
+
+## Read this first
+
+**Every Vantage Telecom record in our systems is a one-line stub.** No contract value, renewal date, seat count, usage trend, health score, NPS number, support ticket volume, or named customer contacts exist anywhere I can reach. There are no Linear issues and no Slack messages tagged to this account at all.
+
+I can give you a reliable *map of the relationship* — who talked to whom, about what, and what got promised. I cannot give you the numbers a QBR normally leads with. I've flagged what to source manually at the bottom. I'd rather tell you that than hand you a confident-looking deck built on invention.
+
+## Where things stand
+
+Ten logged calls and nine meeting notes, 2026-04-02 through 2026-09-13:
+
+| Date | Topic | Owner / Attendees | Source |
+|---|---|---|---|
+| Apr 2 | Integrations, audit prep | Maya Chen, Leo Grant | DRI-81968 |
+| Apr 12 | Billing | Leo Grant | CRM-24363 |
+| Apr 27 | Dashboards | Tess Brown | CRM-20779 |
+| May 6 | Trial conversion, offline | Dana Ortiz | DRI-64274 |
+| May 14 | Exports | Ana Petrova | CRM-23907 |
+| May 18 | Analytics | Jordan Blake | CRM-53521 |
+| May 28 | Webhooks, NPS | Ana Petrova, Leo Grant | DRI-57024 |
+| Jun 14 | Reporting, trial conversion | Ana Petrova, Tess Brown | DRI-68417 |
+| Jun 17 | Search | Priya Shah | CRM-74774 |
+| Jun 22 | Onboarding | Dana Ortiz | CRM-15845 |
+| Jul 8 | Search | Priya Shah | CRM-84868 |
+| Jul 10 | NPS | Tess Brown | CRM-37016 |
+| Jul 23 | Billing | Jordan Blake | CRM-92524 |
+| Aug 5 | Rate limits, hosting | Maya Chen, Omar Haddad | DRI-89702 |
+| Aug 11 | Trial conversion, NPS | Tess Brown, Ana Petrova | DRI-77676 |
+| Aug 18 | Support queue | Leo Grant, Omar Haddad | DRI-10836 |
+| Sep 6 | **Churn + QBR prep** | Dana Ortiz, Tess Brown | DRI-14442 |
+| Sep 11 | SSO questions, NPS | Dana Ortiz, Omar Haddad | DRI-67178 |
+| Sep 13 | Dashboards | **Maya Chen** | CRM-65747 |
+
+Two things jump out of this shape. There's a **seven-week gap in logged calls** between Jul 23 (CRM-92524) and Sep 13 (CRM-65747) — the longest silence in the relationship. And on **Sep 6, two colleagues met to discuss this account under the heading "Churn"** (DRI-14442) — a meeting you weren't in.
+
+## Open commitments
+
+The CRM "next step" field is the only commitment trail that exists. Read in sequence, it shows loops that keep reopening:
+
+- **Exports** — discussed May 14 (CRM-23907); your own most recent call on Sep 13 closes with "follow up on exports" (CRM-65747). Four months later, same item.
+- **Webhooks** — promised as the next step three separate times: May 14, Jun 17, Jun 22 (CRM-23907, CRM-74774, CRM-15845). Only one webhooks conversation was ever held, May 28 (DRI-57024).
+- **Latency** — promised after both billing calls, Apr 12 and Jul 23 (CRM-24363, CRM-92524). No latency record exists anywhere in Drive, Linear, or CRM.
+- **Sandbox** — promised May 18 (CRM-53521). No Vantage-tagged sandbox record follows.
+- **Reporting** — promised Jul 10 (CRM-37016); a reporting discussion happened Jun 14, *before* the promise (DRI-68417).
+- **SSO** — newest live thread, opened Sep 11 (DRI-67178) and still moving in the churn channel as of Sep 25 (SLA-93428).
+
+**This is your single biggest exposure.** Three of these six are items the customer has now heard us promise more than once.
+
+## Risks
+
+**1. Account ownership has rotated seven times in six months.** Leo Grant → Tess Brown → Ana Petrova → Jordan Blake → Priya Shah → Dana Ortiz → you, across ten calls. That almost certainly explains the dropped follow-ups, and the customer has felt it even if they haven't said so.
+
+**2. The account is being discussed internally in churn terms** (DRI-14442, Sep 6). You don't currently have the content of that conversation. Walking into a QBR without knowing what Dana and Tess concluded is the riskiest thing on this list.
+
+**3. Unresolved technical asks cluster around data access** — exports, webhooks, reporting, analytics, dashboards, search. That's a coherent pattern, not scattered noise: Vantage appears to be struggling to get their data *out* of Brightline. Expect this to be the real agenda under whatever the stated agenda is.
+
+**4. Billing came up twice** (Apr, Jul), both times routing to latency. Possible performance-versus-price tension.
+
+**5. You are thin on this account.** You appear in only three of nineteen records (DRI-81968 Apr 2, DRI-89702 Aug 5, CRM-65747 Sep 13). The customer's history is mostly with people who are no longer on it.
+
+## What to say
+
+**Open by naming the discontinuity — don't let them raise it first.** Something like: *"You've had a lot of different people from our side this year. I've picked up the account and I've gone back through everything. Here's what I see we still owe you."* Then list exports, webhooks, and latency unprompted. Pre-empting this converts your weakest point into a credibility win; if they raise it first, you spend the meeting on defense.
+
+**Bring dates, not intentions.** Given these items have been promised repeatedly, "we'll follow up" is now a liability. Come with a committed owner and date for exports, webhooks, and latency, or say plainly that you're scoping them and will have dates by a specific day.
+
+**Make data access the spine of the agenda.** Reflect the pattern back: *"Most of what we've discussed this year comes back to getting your data out of Brightline — exports, webhooks, reporting, dashboards. I want to treat that as one problem rather than six tickets."* This will land as genuine listening.
+
+**Let SSO be the forward-looking item.** It's the freshest thread and the one with momentum — useful for ending on progress rather than remediation.
+
+**Listen for renewal signals and say nothing about commercials.** You don't have the renewal date or contract value. Don't improvise on price or term.
+
+## Chase these before the call
+
+1. **Talk to Dana Ortiz and Tess Brown about the Sep 6 churn discussion (DRI-14442).** Highest priority — do this first.
+2. **Pull renewal date, ARR, and seat/usage data from billing or finance.** Not in any system I can see.
+3. **Get the real status of exports, webhooks, and latency from engineering** so you can commit to dates.
+4. **Get actual NPS scores.** NPS is discussed in four records (CRM-37016, DRI-57024, DRI-77676, DRI-67178) and the number appears in none.
+5. **Confirm the customer-side attendee list.** No Vantage contacts are named anywhere.
+
+One item worth knowing for timing: the data team committed to a weekly churn-risk report for CS starting in October (SLA-40138). That won't be available for this call, but it may be worth asking whether an early cut exists for this account.

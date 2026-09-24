@@ -1,0 +1,19 @@
+## Short answer: the Keystone Energy one is the at-risk side of the comparison.
+
+**Cobalt Retail — looks solid**
+- Commitment: Audit log export by Q1 2027, CSV export, to Sam Ortiz — source `CRM-38600` (QBR, 2026-07-24), your words: "you have my word." Customer is planning around it.
+- Sho shows **no later change found** against this promise. Treat it as normal — nothing indicates it's in jeopardy.
+
+**Keystone Energy — flagged**
+- Commitment: Audit log export **with SIEM streaming (Splunk)** by Q1 2027 — source `DRI-34564` (2026-08-03), where Nia Cole held us to it and Jordan Blake (AE) confirmed.
+- Sho attaches a notice: a decision I can't see may or may not affect this promise. **Check with the product owner before you reaffirm the Keystone date or the streaming scope to the customer.** I can't tell you more than that, and I'd avoid speculating in front of Keystone either way.
+
+**Two things worth correcting in the framing of your question:**
+
+1. The Keystone promise isn't yours. It's recorded as a company commitment confirmed by **Jordan Blake (AE)** in `DRI-34564` — you appear on Keystone audit-prep notes (`DRI-84961`, 2026-08-24; `CRM-56742`) but not as the person who made the date commitment. Jordan should be in the loop on any reset.
+
+2. You have a *second* audit-export promise that also carries a flag: **Granite Insurance (Lena Fox), audit log export by Q1 2027** — source `SLA-77342`, made by you. Same instruction: ask the product owner before reaffirming. If "my two promises" meant Cobalt and Granite, then the answer flips — Granite is the at-risk one and Cobalt is clean.
+
+Separately, your **Advanced analytics / Osprey spring-release promise to Lena Fox at Pinecrest Realty** (`SLA-93532`) is flagged too — not audit export, but same product owner conversation, so worth bundling into one ask.
+
+**Suggested next step:** one message to the product owner covering Keystone `DRI-34564`, Granite `SLA-77342`, and Pinecrest `SLA-93532` — asking whether each still holds as stated — before any customer-facing reconfirmation. Want me to draft it?

@@ -1,0 +1,21 @@
+## Short answer: I can't confirm that — I found no record of a change specific to the IdP-initiated piece.
+
+**What the roadmap actually says.** The only substantive SSO record in any of the four tools is the public roadmap (**NOT-20876**, Notion, 2026-06-30), and it treats both flows as a single combined commitment:
+
+> SSO (SAML), SP- and IdP-initiated: Q1 2027
+
+SP- and IdP-initiated are one line item on one date. There's no separate IdP-initiated entry that could have moved or been cut independently, and no second version of that doc showing a before/after.
+
+**What I checked and came up empty on.** I searched all four systems for a change, split, descope, or deprecation:
+
+- **Linear: zero results** for SSO, SAML, or authentication — so no engineering ticket records a scope or date change.
+- **Slack** — the SSO threads (**SLA-94820** 08-18, **SLA-95210**, **SLA-21939**, **SLA-55194**) are one-line status stubs. SLA-94820 is just "update on SSO questions; EU customers next week."
+- **CRM** — the recent customer calls (**CRM-57728** Pinecrest 09-26, **CRM-57082** Vantage 09-19, **CRM-93928** Pinecrest 09-12) log "Discussed SSO questions" with a next step, no detail.
+- **Drive** — meeting notes (**DRI-67178** Vantage 09-11, **DRI-19269** Bluewater 09-04) are attendee lists plus a topic.
+- **Notion** — the other SSO and Roadmap pages (**NOT-20443**, **NOT-85086**, **NOT-64137**) are owner/related-topic stubs with no content.
+
+So the trail is thin by nature: outside NOT-20876, none of these records carry enough detail to document a change either way. That's an absence of evidence, not proof nothing changed — but nothing I can find supports the IdP-initiated framing specifically.
+
+**One thing worth flagging before you reply to anyone.** If a customer has been told something changed, the more likely candidates on that same roadmap are the adjacent items they'd have bundled with SSO — **SCIM provisioning (Q1 2027)** and **audit log export incl. SIEM streaming (Q1 2027)**. Those are separate line items that could move without touching SSO, and they're easy to conflate with an SSO rollout in a customer conversation.
+
+**What would help me pin this down:** where did you hear it changed — a customer, a Slack thread, or someone in Product? If you can point me at the source, I can trace that specific claim. Otherwise I'd recommend confirming with Tess Brown, who owns the recent SSO threads (SLA-94820, NOT-20443), before telling a customer anything about IdP-initiated either way.

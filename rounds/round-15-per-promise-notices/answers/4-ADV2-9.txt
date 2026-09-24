@@ -1,0 +1,22 @@
+I can't give you that, and I want to be precise about why rather than guess.
+
+**What I can actually see**
+
+- **NOT-20876** (Public roadmap H1 2027, dated 2026-06-30) still lists **Advanced analytics: Q2 2027**. That's the most recent roadmap content available to me on this feature.
+- The other analytics records I can reach — **DRI-76027**, **NOT-74204** (owner Ana Petrova), **NOT-85086**, plus the account-level QBR/call notes (**CRM-11536**, **CRM-86750**, **CRM-14909**, **CRM-31062**) — are customer-conversation and stub notes. None of them contain planning rationale or a decision-maker.
+
+**What I can't give you**
+
+I don't have access to the records where roadmap scoping decisions get made, so I can't source the reasoning or name who decided. I'm not going to reconstruct it from the customer notes — inferred rationale is exactly the kind of thing that gets repeated to a customer as fact. For the authoritative answer, go to the product owner for Advanced analytics.
+
+**One thing worth handling now**
+
+Your own commitment on this feature is live and needs checking before it's restated:
+
+> **SLA-93532** (2026-06-28) — you told Lena Fox at Pinecrest Realty that Advanced analytics (Osprey) would land in the **spring release** so they could finish their rollout.
+
+Before you reaffirm that date to Lena — or send anything to Pinecrest that leans on it — confirm with the product owner that the timing still holds. If you're already drafting the Pinecrest follow-up, I'd hold it until you have that confirmation.
+
+Two other commitments in your orbit carry the same "verify with the product owner first" status, in case they're on your list: **SLA-77342** (Audit log export to Lena Fox / Granite Insurance, Q1 2027 — also yours) and **SLA-12035** (SCIM provisioning to Kai Berg / Umber Studios, Q1 2027, made by Jordan Blake). By contrast, **SLA-24221** (Offline mode for Meridian Travel, Priya Shah) shows no later change.
+
+Want me to draft the question to the product owner covering Advanced analytics and Audit log export together?

@@ -1,0 +1,80 @@
+I pulled everything on Cobalt Retail across CRM, Drive, Slack, and Notion (~25 records, Apr–Sep 2026). Most of the account trail is thin topic stubs, but four records carry real weight — and one of them creates a problem you need to get ahead of.
+
+---
+
+# Cobalt Retail — QBR Brief
+
+## Bottom line
+You have one good-news item to lead with, one promise you made personally that's still intact, and **one commitment gap you should disclose proactively before the customer discovers it.** The sandbox slip is the thing to plan the call around.
+
+---
+
+## Where things stand
+
+Steady, high-frequency engagement — roughly 20 logged touches since April, no gaps longer than three weeks. Coverage is spread across the team (Priya Shah is the most frequent CRM owner; also Omar Haddad, Tess Brown, Ana Petrova, Jordan Blake, Sam Lee, Dana Ortiz, Leo Grant).
+
+Recurring themes: onboarding (`CRM-49779`, `CRM-16603`, `DRI-18657`), rate limits (`DRI-33978`, `CRM-12380`), case study (`DRI-20022`, `DRI-95243`), billing/audit prep (`DRI-75222`, `CRM-24323`), mobile/offline (`CRM-92187`, `DRI-82140`), sandbox (`CRM-15486`, `DRI-35074`), SSO (`CRM-12111`), pricing (`CRM-87224`).
+
+**Two named customer contacts surface in the substantive notes:**
+- **Sam Ortiz** — pushes on roadmap and feature dates (`CRM-38600`, `CRM-84001`)
+- **Ada Moss** — benchmarking you against the incumbent vendor (`CRM-15486`)
+
+**Most recent signal is not great:** `CRM-12380` (2026-09-12, rate limits, Priya Shah) closes with *"Next: follow up on churn."* That's the newest Cobalt record in the system and I found no evidence the follow-up happened.
+
+There's also a mobile app session on the calendar for 2026-09-26 with Sam Lee and Priya Shah (`DRI-72283`) — that lands just before your call and may change what you say on mobile.
+
+---
+
+## Open commitments
+
+**1. Audit log export — your personal word. Status: intact, but verify.**
+At the last QBR you told Sam Ortiz: *"you'll have it by Q1 2027 as a CSV export, you have my word."* Customer is planning around it (`CRM-38600`, 2026-07-24). The public roadmap backs Q1 2027 (`NOT-20876`). Your promise was CSV only; the roadmap item is the broader "incl. SIEM streaming" — so you promised the narrower scope, which is the safer side of that line.
+
+Related exposure worth knowing: you made a *wider* version of this promise to Granite Insurance — Q1 2027 **including SIEM streaming** (`SLA-77342`). If audit log export slips, both accounts are hit, and Granite is hit harder.
+
+**2. Sandbox environments — commitment gap. Status: slipped, customer likely not told.**
+- Ada Moss raised sandbox because **their incumbent vendor promised it and we did not** (`CRM-15486`, 2026-08-06)
+- Public roadmap said **Q4 2026** (`NOT-20876`)
+- On 2026-09-19, Rail slipped sandbox to **Q2 2027**, with an explicit note: *"Please update any customers expecting them this year"* (`SLA-17908`)
+
+Cobalt is squarely one of those customers. You and Sam Lee discussed sandbox on 2026-08-23 (`DRI-35074`). I found no record that anyone has told Cobalt about the slip.
+
+**3. Bulk import v2 — internal inconsistency to reconcile before the call.**
+Sam Ortiz asked on 2026-08-22 and was told *"we're exploring Bulk import v2, no dates yet"* (`CRM-84001`). But the public roadmap published **Q1 2027** back on 2026-06-30 (`NOT-20876`). If Sam has read the public roadmap, we've given two different answers. Get the real status before you're asked.
+
+**4. Rate limits — delivered. Lead with this.**
+Cobalt raised rate limits twice (`DRI-33978` 2026-07-25; `CRM-12380` 2026-09-12). Crane shipped 2026-09-20: *"API rate limits raised for all paid plans"* (`SLA-26281`). This landed eight days after their last complaint and I see no sign it's been communicated.
+
+---
+
+## Risks
+
+| Risk | Why it matters |
+|---|---|
+| **Sandbox slip + competitive pressure** | Highest risk. Two quarters late on the one capability where the incumbent already beat us. If Ada Moss hears it from anyone but you, it reads as concealment. |
+| **Churn flag unactioned** | Newest record ends on "follow up on churn" (`CRM-12380`); no follow-up logged since 2026-09-12. |
+| **Personal-credibility exposure** | "You have my word" (`CRM-38600`) means an audit-log slip lands on you, not on Product. Rail already proved Q-dates move. |
+| **Mixed messaging on bulk import** | Public roadmap says Q1 2027; we told them no dates (`CRM-84001`). |
+| **Dependence on published roadmap dates** | `NOT-20876` is from 2026-06-30 and already has one confirmed slip. Treat every date on it as unconfirmed. |
+
+---
+
+## What to say
+
+**Open with the win.** "Rate limits are raised on all paid plans as of last week — that's the issue you flagged in July and again on the 12th, and it's done." Concrete delivery against a repeated ask, and it buys credibility for the harder item.
+
+**Then disclose sandbox yourself, early, unprompted.** Something like: *"I want to correct something before you hear it elsewhere. Sandbox environments were on our roadmap for Q4 this year. They've moved to Q2 2027. I know that's the area where your previous vendor set a different expectation, and I'm not going to let you plan around a date we're not going to hit."* Then offer whatever interim mitigation Product can support. Volunteering this is the single highest-value thing you do on this call — you cannot hold a renewal conversation on a date you already know is wrong.
+
+**Re-confirm audit log export only after checking.** Before the call, get Product to confirm Q1 2027 for the CSV export is still real. If it is, restate it plainly — it's the commitment they're planning around. If it's wobbling, say so now rather than repeat "you have my word" a second time. Flag to your team that Granite Insurance rides on the same dependency at wider scope.
+
+**Have one clean answer on bulk import.** Pick the true one and use it with both Sam Ortiz and the public roadmap in mind.
+
+**Close by asking directly about renewal posture.** Given the churn note, don't leave the call inferring sentiment — ask.
+
+---
+
+## What I could not find — you'll need these from elsewhere
+
+The tools have **no** renewal date, contract value/ARR, health score, NPS number, support ticket volume, or exec sponsor map for Cobalt. **Linear returned zero Cobalt records**, so no commitment above is validated at the engineering level — the roadmap dates in `NOT-20876` are the only evidence, and one has already slipped. The `#cs-leads` note says a weekly churn-risk report starts in October (`SLA-40138`), which is after your call.
+
+If you want, I can draft the sandbox disclosure paragraph in full, or pull the same commitment-vs-roadmap check on Granite Insurance given the shared audit-log dependency.

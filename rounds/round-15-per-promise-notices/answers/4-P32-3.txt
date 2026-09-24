@@ -1,0 +1,53 @@
+# Harbor Clinics — QBR Brief
+
+**Prepared 2026-09-24 · Contacts on record: Ines Park, Ada Moss · Account team: Jordan Blake (AE), Maya Chen (CS)**
+
+## 1. Where things stand
+
+Steady, high-touch account — roughly a dozen logged touchpoints across Apr–Sep 2026, spread over several owners. Recent activity clusters around three themes:
+
+| Theme | Records | Latest |
+|---|---|---|
+| Compliance / audit readiness | CRM-35862 (audit prep), DRI-20995 (support queue + audit prep) | 2026-08-19 |
+| Platform & integrations | CRM-97969, CRM-75336 (integrations), CRM-34883 (hosting), CRM-94239 (latency) | 2026-07-25 |
+| Product surface expansion | CRM-49374 (mobile app), CRM-64035 (dashboards), CRM-39320 (offline), CRM-73374 / CRM-78984 (notifications) | 2026-09-21 |
+
+The most recent touch is CRM-49374 (2026-09-21, mobile app, owner Sam Lee), whose stated next step is *follow up on QBR prep* — so this call is the expected continuation.
+
+One caveat worth your awareness: the CRM notes on this account are thin (one-line summaries, no outcomes or dates). I can tell you what was discussed and by whom, but not what was resolved. Anything below framed as "status" is derived from topic recurrence, not from a stated status field.
+
+## 2. Open commitments
+
+**Data retention controls — by Q1 2027** (DRI-80868, 2026-05-15)
+Ines Park raised it at the 15 May sync and Jordan Blake confirmed it. No later record changes or retracts this. This is the one firm dated promise on the account and should be treated as live.
+
+That is the only commitment attached to Harbor Clinics. The other commitments in our system belong to different accounts (Pinecrest, Meridian, Umber, Granite) and shouldn't be referenced on this call.
+
+## 3. Risks
+
+1. **EU data residency is an open ask with no answer** (CRM-89966, 2026-06-09). Ada Moss asked; the recorded response was "exploring, no dates yet." It's been ~3.5 months with nothing logged since. For a clinical customer this is likely a procurement/compliance gate, not idle curiosity — expect it to resurface at the QBR. Don't invent a date.
+2. **Audit prep keeps recurring without closing.** It appears as the "next step" in CRM-45542 (Apr) and CRM-48825 (Jul), as its own call in CRM-35862 (May), and again in DRI-20995 (Aug). Four appearances over five months suggests it isn't finished. Worth confirming before the call.
+3. **Owner fragmentation.** Eight different internal owners across twelve records (Sam Lee, Leo Grant, Priya Shah, Omar Haddad, Ana Petrova, Jordan Blake, Tess Brown, Dana Ortiz). Follow-up threads hand off between people and several trail off. Customer-visible symptom: repeated questions.
+4. **Data retention and EU residency are adjacent.** If Harbor reads the Q1 2027 retention commitment as covering residency, there's a mismatch between what was promised and what was asked. Separate them explicitly.
+
+## 4. What to say
+
+**Open with continuity, not a product tour.** Acknowledge that audit prep and integrations have been recurring threads and that you're there to close them out.
+
+**On data retention controls:** you can reaffirm Q1 2027 directly. It's confirmed by the AE and nothing supersedes it.
+
+**On EU data residency:** say honestly that it's under exploration with no committed date, and offer a concrete follow-up — a named owner and a date by which you'll come back with an answer. Do not imply the Q1 2027 retention date covers residency.
+
+**On audit prep:** come with a status, not a question. Before the call, get the actual state from Leo Grant (owner of CRM-35862, and in DRI-20995 with you). Walking in without it is the main avoidable risk here.
+
+**Propose a single account owner going forward.** Offering one name as the thread for open items addresses the fragmentation without making the customer name the problem.
+
+**Ask for their 2027 priorities.** Mobile app, dashboards, and offline all came up recently (CRM-49374, CRM-64035, CRM-39320) with no evident prioritization. Let them rank — it turns a status review into a planning conversation.
+
+## Before the call
+
+- Confirm audit-prep status with Leo Grant (CRM-35862, DRI-20995).
+- Get the current EU data residency position from the product owner so you have something concrete for Ada Moss (CRM-89966).
+- Confirm with Jordan Blake that Q1 2027 data retention is still on track engineering-side (DRI-80868) — the commitment is unchanged on paper, but it was made four months ago.
+
+One flag on method: I built the themes and risks above from one-line CRM summaries. Before you present any of it as account status, sanity-check the audit-prep and integrations threads with their owners — I can show the discussion trail, but the records don't record outcomes.

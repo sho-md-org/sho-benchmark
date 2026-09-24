@@ -1,0 +1,1 @@
+One note: I tried to save a memory about Brightline's account records being stub-only (useful for future QBR prep), but I don't have file-write access in this session — so nothing was persisted.

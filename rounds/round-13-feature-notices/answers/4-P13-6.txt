@@ -1,0 +1,22 @@
+## One flag before you send
+
+Sho shows the Q1 2027 SSO commitment to Tom Hale (made by Leo Grant on **DRI-36664**, 2026-07-09, reconfirming an earlier promise; it also matches the public roadmap in **NOT-20876**) — but it carries a notice that something I can't see may affect that date. So **the draft below deliberately does not re-confirm Q1 2027.** Please check with the product owner whether the commitment still holds, then either send as-is or let me tighten it to a firm reaffirmation.
+
+## Draft reply
+
+> Subject: Re: SSO (SAML) timing
+>
+> Hi Tom,
+>
+> Thanks for checking in, and good to hear from you.
+>
+> SSO (SAML), SP- and IdP-initiated, is on our published H1 2027 roadmap for Q1 2027, and that's the date we discussed when we met in July. Before I give you a firm yes, I want to confirm the current status directly with our product team rather than repeat a date secondhand — you're planning around this, and I'd rather be accurate than fast.
+>
+> I'll come back to you by [date] with a confirmed answer on timing. If anything has shifted, I'll tell you plainly and we'll talk through what it means for your rollout plan.
+>
+> Also happy to set up a short call with our product lead if it would help you plan the identity-provider side on your end.
+>
+> Best,
+> Leo
+
+**Notes for you:** fill in a concrete date for the follow-up (2–3 business days reads as credible). If product confirms Q1 2027 stands, replace the middle paragraph with a direct "Yes — SSO (SAML), SP- and IdP-initiated, is confirmed for Q1 2027." For the product-owner ping: **CRM-14429** lists Ana Petrova as owner on the Quarry Mining SSO thread, which is a reasonable starting point if you don't already know who owns the feature.

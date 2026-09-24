@@ -1,0 +1,94 @@
+I searched all four systems. Here's an important caveat before the brief: **every Cobalt Retail record is a one-line stub.** There is no ARR, renewal date, health score, support ticket, or named customer-side contact anywhere in CRM, Drive, Notion, Slack, or Linear. Slack and Linear return zero Cobalt results entirely.
+
+So I've built the brief from what the records genuinely support — a topic timeline, thread-by-thread commitment tracking, and the gaps those reveal. I've marked inference as inference. Don't present the numbers-free sections as verified account data.
+
+---
+
+# Cobalt Retail — QBR Brief
+**Prepared for:** Maya Chen · **Call:** week of 2026-09-28 · **Sources:** 10 CRM records, 10 Drive meeting notes, 8 Notion docs
+
+## 1. Where things stand
+
+**Engagement is steady but has drifted away from you.** 10 logged calls between 2026-04-01 and 2026-08-01, plus 10 meetings running through late September.
+
+Account ownership in CRM rotates across four people — Priya Shah (4: `CRM-98822`, `CRM-49779`, `CRM-87224`, `CRM-94849`), Maya Chen (2), Tess Brown (2: `CRM-24697`, `CRM-92187`), Omar Haddad (2: `CRM-16603`, `CRM-35990`). Priya is the de facto center of gravity.
+
+Two things stand out:
+
+- **Your last owned CRM record is 2026-05-22** (`CRM-36268`, search). Four months. You appear in exactly one meeting since — `DRI-35074` (2026-08-23, sandbox/hosting, with Sam Lee).
+- **CRM logging stopped on 2026-08-01** (`CRM-35990`). Nearly eight weeks of no logged calls, while Drive shows meetings continuing (`DRI-95243` 08-05, `DRI-75222` 08-11, `DRI-82140` 08-17, `DRI-35074` 08-23). Work is happening off the CRM record.
+
+**The arc of the relationship**, by theme:
+
+| Phase | Themes | Records |
+|---|---|---|
+| Apr–Jun: implementation | onboarding, webhooks, exports, integrations, dashboards, search | `CRM-98822`, `CRM-70221`, `CRM-49779`, `CRM-16603`, `CRM-36268`, `CRM-24697`, `DRI-41266`, `DRI-18657`, `DRI-58616` |
+| Jun–Jul: scale & limits | rate limits (×3), EU customers, NPS | `CRM-24697`, `CRM-16603`, `DRI-33978`, `CRM-92187` |
+| Jul–Aug: commercial | pricing, billing, audit prep, case study | `CRM-87224`, `CRM-94849`, `CRM-35990`, `DRI-75222`, `DRI-20022`, `DRI-95243` |
+| Aug–Sep: expansion | mobile app, offline, sandbox, hosting | `DRI-82140`, `DRI-35074`, `DRI-72283` |
+
+That progression — onboarding → scale → commercial → new surface areas — is a healthy-looking shape. Use it.
+
+**One item to check:** `DRI-72283` is dated **2026-09-26**, two days out. Sam Lee and Priya Shah, on mobile app and search. That's either a pre-QBR prep session or a meeting you should be in. Worth asking Priya.
+
+## 2. Open commitments
+
+Every CRM record ends with a "next" item. I traced each forward to see whether anything closed it.
+
+**Closed or actively progressing:**
+
+| Commitment | Origin | Traced to |
+|---|---|---|
+| Rate limits | `CRM-24697` (05-26), `CRM-16603` (06-15) | `DRI-33978` (07-25, + EU customers) |
+| Audit prep | `CRM-87224` (06-23) | `DRI-75222` (08-11) |
+| Billing | `CRM-94849` (07-23) | `DRI-75222` (08-11) |
+| Mobile app | `CRM-92187` (06-09) | `DRI-82140` (08-17), `DRI-72283` (09-26) |
+| Case study | `CRM-98822` (04-01) | `DRI-58616` (06-21), `DRI-20022` (07-27), `DRI-95243` (08-05) — discussed three times, no published asset in Drive |
+
+**Open with no recorded follow-through — these are your exposure:**
+
+| Commitment | Origin | Age | Note |
+|---|---|---|---|
+| **Security review** | `CRM-70221` (04-20, your record), restated `CRM-36268` (05-22, your record) | ~5 months | Raised twice, both times by you. Zero follow-up in any system. |
+| **Latency** | `CRM-49779` (04-27, Priya) | ~5 months | Never mentioned again. |
+| **SSO questions** | `DRI-20022` (07-27) | ~2 months | Surfaced in a case study meeting, never resolved. |
+| **Pricing follow-up** | `CRM-35990` (08-01, Omar) | ~8 weeks | Most recent logged commitment. Pricing appears again at `DRI-95243` (08-05) but nothing after. |
+
+The security review is the one I'd lead your own prep with. It's yours, it's the oldest, it was raised twice, and security items don't go quiet because they're resolved — they go quiet because nobody picked them up.
+
+**Possibly relevant, unattributed:** seven Notion "QBR prep" docs (`NOT-42571` 09-15, `NOT-52051` 09-05, `NOT-44127`, `NOT-44808`, `NOT-38605`, `NOT-32484`, `NOT-92225`) and `NOT-19494` (sandbox, dated today, owner Jordan Blake, related to QBR prep). **None name Cobalt Retail.** Three relate to "onboarding" and one to "hosting," which matches Cobalt threads — but that's a thematic guess, not attribution. The two most recent are Omar's; `NOT-19494` is Jordan's. Ask them directly rather than assuming these are your deck.
+
+## 3. Risks
+
+Inferred from record patterns. None of these is stated as a risk in any record.
+
+1. **You have no documented account health.** No ARR, renewal date, contract terms, usage, or health score exists in any system. `CRM-92187` logs an NPS conversation (06-09) with no score. If anyone asks "how's Cobalt doing?" you currently cannot answer from the record.
+2. **No customer-side contact is named anywhere.** Across 20 call and meeting records, every name is Brightline. You do not have a documented champion, economic buyer, or exec sponsor. For a QBR that's the most serious gap on this page.
+3. **Four-owner rotation with no continuity.** Four CRM owners in four months and eight Brightline names across meetings. The four dropped threads all sit at handoff boundaries — the two security-review mentions are both yours, and you've been out of the CRM since May.
+4. **Commercial signals are unresolved.** Pricing, billing, and audit prep all cluster in Jun–Aug, and the pricing thread is the newest open item. Pricing conversations that stop without a logged outcome usually mean a negotiation, a budget question, or a procurement cycle you can't see.
+5. **The case study is a three-meeting ask with nothing shipped.** `DRI-58616`, `DRI-20022`, `DRI-95243`. Either it's stalled on their legal/PR, or someone on your side owes a draft. Going into a QBR with an unfulfilled marketing ask is a soft spot.
+6. **Eight weeks of CRM silence before a QBR.** The narrative you can reconstruct ends 2026-08-01. Anything since lives in people's heads.
+
+## 4. What to say
+
+**Open with the arc, not the metrics.** You don't have metrics. You do have a credible story: "Since April we've moved from onboarding and integrations, through scaling and rate limits as you brought EU customers on, into billing and audit readiness — and we're now looking at mobile and offline." That's real, it's sourced, and it positions Brightline as having grown with them.
+
+**Lead the forward-looking half with mobile/offline and sandbox.** It's the live thread (`DRI-82140`, `DRI-35074`, `DRI-72283`) and it's the expansion conversation.
+
+**Get ahead of the four open items — name them before they do.** Especially security review and SSO. Saying "I owe you a security review from the spring and I want to put a date on it" converts a liability into credibility. Bring a date, not an apology.
+
+**Ask the pricing question directly.** "Where did the pricing conversation from early August land for you?" You need to know whether that silence is procurement, budget, or just drift.
+
+**Ask for the case study with a specific, small next step** — one 30-minute interview, a named person, a date. Three discussions without an artifact means the ask is too big or unowned.
+
+**Close by fixing the relationship gap.** Propose a named primary contact on each side and a standing cadence. You can frame this as service quality; it also solves your continuity problem.
+
+## Before the call — do these
+
+1. **Get the customer-side names from Priya Shah.** She owns 4 of 10 CRM records and appears in `DRI-18657`, `DRI-95243`, `DRI-72283`. Walking into a QBR without the stakeholder map is the single biggest risk here.
+2. **Pull ARR, renewal date, and contract terms from wherever they actually live** — not the CRM, they aren't there.
+3. **Ask Omar Haddad where pricing landed** (`CRM-35990`) and **Jordan Blake whether `NOT-19494` / the QBR prep docs are Cobalt's.**
+4. **Check `DRI-72283` (09-26)** — find out whether you should be in it.
+5. **Chase the security review** (`CRM-70221`, `CRM-36268`) so you arrive with a date.
+
+Want me to draft the talk track as speaking notes, or write up the open-commitments list as a tracked follow-up doc?

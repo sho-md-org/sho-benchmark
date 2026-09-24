@@ -1,0 +1,27 @@
+## Verdict: Keystone Energy's is the one at risk. Cobalt Retail's is safe.
+
+Both were promised the same thing on paper — "Audit log export by Q1 2027" — but the scope differs, and that's where the exposure is.
+
+**The two promises**
+
+| | Keystone Energy | Cobalt Retail |
+|---|---|---|
+| Record | `DRI-34564` (2026-08-03) | `CRM-38600` (2026-07-24) |
+| Promise | Audit log export by Q1 2027 **with streaming into Splunk** | Audit log export by Q1 2027 **as a CSV export** |
+| Who committed | Nia Cole (Keystone) "reminded us" of it; **Jordan Blake (AE) confirmed** — you weren't in the room | **You**, directly: "you have my word" |
+| Customer state | Treated as settled/confirmed | "Customer is planning around it" |
+
+**Why Keystone is the riskier one**
+
+1. **Scope.** The public roadmap (`NOT-20876`, 2026-06-30) lists "Audit log export incl. SIEM streaming: Q1 2027." Cobalt only needs the base CSV capability — the floor of that line item. Keystone needs the SIEM-streaming half, plus specifically Splunk, which the roadmap never names. If anything gets descoped to hit Q1, the streaming layer goes first and Cobalt is unaffected.
+2. **Provenance.** Cobalt's commitment is yours, in writing, in the CRM. Keystone's reached the customer secondhand and was ratified by the AE off a customer's recollection — there's no CS-side record of the original promise or its exact terms. You're carrying a commitment you can't verify the wording of.
+3. **No engineering corroboration.** Searches of Linear for the audit export work (audit, export, "Lark") return nothing. The Q1 2027 date rests on the public roadmap alone, with no visible ticket or status to confirm it. That hurts the Splunk-specific promise more than the CSV one.
+
+**What is *not* a risk signal:** there's no slip notice for the audit export. The one slip announced recently is Sandbox environments / "Rail" → Q2 2027 (`SLA-17908`, 2026-09-19), and shipped items get their own #general posts (`SLA-26281`). Nothing comparable exists for the audit export, so Q1 2027 is currently intact. The Keystone "audit prep" records (`CRM-56742`, `CRM-17727`, `CRM-90377`, `DRI-84961`) are all routine and contain no scope or date detail.
+
+**Two things to flag beyond what you asked**
+
+- You have a **third** audit-export promise with the same exposure as Keystone's, and this one *is* yours: `SLA-77342` (2026-05-26), where you told Lena Fox at Granite Insurance they'd have audit log export by Q1 2027 "including SIEM streaming so they can finish their rollout." A rollout dependency makes that at least as sharp as Keystone's. Worth handling in the same pass.
+- Lena Fox also appears on a Keystone call about HubSpot sync (`CRM-53313`, 2026-09-21) — where you correctly promised nothing. Note HubSpot sync is Q2 2027 on the roadmap, so keep it that way.
+
+**Suggested next step:** get a written scope confirmation from engineering on whether Q1 2027 includes SIEM streaming and whether Splunk is a named target. That single answer resolves Keystone and Granite at once and leaves Cobalt untouched.

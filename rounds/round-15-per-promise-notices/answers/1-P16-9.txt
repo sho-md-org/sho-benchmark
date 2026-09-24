@@ -1,0 +1,82 @@
+## Keystone Energy — QBR Brief
+
+**Prepared 2026-09-24 for your call the week of Sep 28.** One caveat up front: almost every Keystone record in CRM/Drive is a one-line stub (topic + owner + "next: follow up on X") with no outcomes, numbers, or decisions. There is **no ARR, renewal date, NPS score, uptime figure, or health score anywhere in the tools** — so this brief is built on what the activity trail actually supports, and I've marked inference as inference.
+
+---
+
+### 1. The one hard commitment on record
+
+**DRI-34564** (2026-08-03, "Keystone Energy sync") is the only substantive note in the account:
+
+> Nia Cole reminded us that we told them **Audit log export by Q1 2027 with streaming into Splunk**. Jordan Blake (AE) confirmed.
+
+Two things matter here:
+- "**Reminded us**" — this was a pre-existing promise the customer had to restate. They are tracking it more carefully than we are.
+- Jordan **confirmed** it on the spot, so it's now twice-committed.
+
+**Status: broadly backed by roadmap, with one gap.** The public roadmap (**NOT-20876**, 2026-06-30) lists "Audit log export incl. SIEM streaming: **Q1 2027**" — the date holds. But the roadmap says *SIEM streaming* generically; we committed to **Splunk specifically**. Nothing in Linear, Notion, or Slack confirms a Splunk connector exists or is scoped — Linear returns zero results for Keystone, audit log export, or SIEM. **Confirm Splunk specifically with Jordan/product before the call.** Do not reconfirm it live until you have.
+
+### 2. The sharpest risk: audit timing collision
+
+Audit is by far Keystone's densest theme — **nine records** in six months: CRM-90377 (05-08), DRI-85107 (06-08), CRM-17727 (06-17), DRI-48005 (06-25), CRM-56742 (08-17), DRI-84961 (08-24, "audit prep and exports"), plus security reviews CRM-25431 (04-07), CRM-64056 (07-07), CRM-30791 (07-23).
+
+And it's live *right now*: **SLA-37823** (2026-09-23) — Sam Lee: "update on audit prep; **exports next week**."
+
+So: they are prepping an audit and chasing exports this month, but the capability we committed to isn't due until **Q1 2027**. If their audit deadline lands before Q1 2027, that's a collision — and it's the most likely source of an escalation. **I could not find their audit date anywhere. That's your #1 question to answer before or during the call.**
+
+### 3. Where things stand — what they keep asking for
+
+Their recurring asks map almost entirely to *next year*:
+
+| Their ask (evidence) | Roadmap date (NOT-20876) |
+|---|---|
+| Sandbox environments (DRI-41756, 08-12) | **Q4 2026** ← nearest win |
+| Audit log export + Splunk (DRI-34564) | Q1 2027 |
+| Webhooks v2 (CRM-71045 05-02; CRM-56742 08-17) | Q1 2027 |
+| Advanced analytics (CRM-50205, CRM-71078, CRM-71134, CRM-71909 — 4×) | Q2 2027 |
+| Offline mode (DRI-27387; CRM-64056; CRM-78617) | Q2 2027 |
+
+**Sandbox (Q4 2026) is your only near-term deliverable — lead with it.**
+
+Reliability is a persistent undercurrent across the whole period: latency (CRM-23178 04-24, DRI-46374 05-23, DRI-41756 08-12) and uptime (DRI-60948 04-17, DRI-64156 07-12, CRM-19012 09-23) — still open as of last week.
+
+### 4. Open commitments not closed out
+
+Every CRM note ends in a "next: follow up," and several have no matching later record:
+
+- **Webhooks** — raised twice (CRM-71045 05-02, CRM-56742 08-17), never closed. Oldest open thread.
+- **Rate limits** — CRM-88738 (08-24), no follow-up.
+- **Search** — CRM-56812 (07-12), no follow-up.
+- **Security review** — **your own** next step from QBR prep (CRM-93344, 08-25); latest security review is 07-23, so this is outstanding on you.
+- **Support queue** — CRM-25431 (04-07), never revisited.
+- **NPS** — CRM-19012 (09-23) next step, still pending.
+
+### 5. Risks
+
+1. **Audit timing vs. Q1 2027** (above) — highest.
+2. **Commercial pressure.** Churn appears twice, both paired with money: DRI-75981 (NPS + churn, 07-21) and DRI-20667 (churn + pricing, 08-15). Then a pricing call, CRM-78617, **dated tomorrow (09-25), owner Jordan Blake**. *Inference, not fact:* NPS/churn → churn/pricing → pricing call reads like a renewal or discount conversation forming. **Sync with Jordan after tomorrow's call — you should not walk into the QBR blind to what was said.**
+3. **No account continuity.** Eight different owners in six months (Leo Grant, Jordan Blake, Ana Petrova, Sam Lee, Omar Haddad, Tess Brown, Dana Ortiz, you). Nobody holds the thread — which is plausibly why Nia had to remind *us* of our own commitment.
+4. **Documentation gap.** The account file can't support a data-driven QBR. You cannot credibly present adoption, uptime, or NPS trends — the numbers don't exist.
+
+### 6. What to say
+
+**Open by closing the loop they opened.** Lead with the audit log export commitment before Nia raises it a third time: *"I want to start with the audit log export and Splunk streaming — you flagged it in August, and I want to confirm where it sits and make sure the timing works against your audit."* Retaking that thread is the single highest-value move; they've been carrying it.
+
+**Then ask, don't tell:** *"When is your audit deadline?"* Everything else depends on the answer. If it lands before Q1 2027, shift the call to interim mitigation — manual exports, a scoped early access — and take it away as an action, not a promise.
+
+**Give them the near-term win:** Sandbox environments, Q4 2026.
+
+**Be straight about the rest.** Webhooks, analytics, and offline are Q1–Q2 2027. Say so plainly; don't compress the dates to make the meeting feel better. Nia is tracking our commitments — a second slipped date would cost more than the disappointment.
+
+**Name the continuity problem and fix it:** offer yourself as the single point of contact. It's a concrete, free thing to give, and it addresses a real gap.
+
+**Avoid:** quoting any adoption/uptime/NPS figure (none are sourced), and reconfirming Splunk specifically until product verifies it.
+
+### 7. Confirm before the call
+
+1. Keystone's **audit deadline** — not in any tool.
+2. **Splunk** connector scope — roadmap says "SIEM," we promised Splunk.
+3. **Jordan's readout from tomorrow's pricing call** (CRM-78617).
+4. **Renewal date and ARR** — genuinely absent; pull from whatever system holds contracts, as it's not in CRM here.
+
+One note: unlike peer accounts, Keystone has **no renewal call notes record** (Northstar CRM-52816, Kestrel CRM-70743, and five others do). Worth checking whether that's a logging gap or a real one.

@@ -1,0 +1,97 @@
+I pulled all 20 Harbor Clinics records (10 CRM, 10 Drive), plus checked Slack, Linear, and Notion. Here's the brief — with an important caveat up front.
+
+## ⚠️ Read this first: the source data won't support a real QBR brief
+
+Every Harbor record in the system is a one-line stub. A representative example, in full:
+
+> **CRM-64035** · Dashboards (Harbor Clinics), 2026-08-26 — "Call with Harbor Clinics. Discussed dashboards. Owner Ana Petrova. Next: follow up on analytics."
+
+That's the entire record. There are no dollar figures, no renewal date, no usage or adoption metrics, no health score, no Harbor-side stakeholder names, and no outcomes — only topic labels. Harbor has **zero** presence in Slack and Linear, and the Notion "Qbr prep" notes (NOT-42571, NOT-52051) are generic and not tied to Harbor.
+
+So I can tell you **what has been discussed and when**, which is genuinely useful signal. I can't tell you what was decided, promised, or what account is at stake. I've flagged the gaps you'll need to fill from your own memory or from Salesforce/billing before the call.
+
+---
+
+## Where things stand
+
+**Cadence:** ~20 touchpoints between 2026-04-25 and 2026-09-11. Steady engagement, no gaps — the relationship is active, not drifting.
+
+**What Harbor keeps coming back to** (recurrence is the signal here):
+
+| Theme | Times | Records |
+|---|---|---|
+| **Churn** | 3 | DRI-17076 (Jul 20), DRI-26772 (Sep 6), DRI-17950 (Sep 11) |
+| **Pricing** | 3 | DRI-51027 (Apr 23), DRI-40615 (May 18), DRI-55004 (Jul 21) |
+| Sandbox | 2 | CRM-36695 (Jun 13), DRI-18426 (Aug 20) |
+| Integrations | 2 | CRM-97969 (Apr 25), CRM-75336 (Jul 25) |
+| Notifications | 2 | CRM-73374 (May 24), CRM-78984 (Jun 15) |
+| Dashboards | 2 | DRI-60679 (Jul 5), CRM-64035 (Aug 26) |
+
+Singles: Latency (CRM-94239), Roadmap (CRM-41255), Hosting (CRM-34883), Offline (CRM-39320), Exports (DRI-88564), Reporting (DRI-67100).
+
+**The headline: the two most recent Harbor conversations on record are both about churn.** DRI-26772 (Sep 6) and DRI-17950 (Sep 11) — and you were in the Sep 11 one with Tess Brown. Churn discussion started Jul 20 and has accelerated. Whatever is going on, it is the live thread going into this call.
+
+---
+
+## Open commitments
+
+All 10 CRM records end with a "Next:" line, and **nothing in the system records any of them being closed.** Treat this as "no evidence of closure" rather than confirmed-open — but the oldest are 4–5 months stale.
+
+| Date | Owner | Commitment | Record |
+|---|---|---|---|
+| Apr 25 | Omar Haddad | Follow up on webhooks | CRM-97969 |
+| May 24 | Ana Petrova | Follow up on analytics | CRM-73374 |
+| **Jun 2** | **Maya Chen** | **Follow up on reporting** | **CRM-94239** |
+| Jun 13 | Jordan Blake | Follow up on onboarding | CRM-36695 |
+| Jun 14 | Tess Brown | Follow up on latency | CRM-41255 |
+| Jun 15 | Dana Ortiz | Follow up on permissions UI | CRM-78984 |
+| Jul 15 | Sam Lee | Follow up on SSO questions | CRM-34883 |
+| Jul 25 | Omar Haddad | Follow up on search | CRM-75336 |
+| Aug 26 | Priya Shah | Follow up on notifications | CRM-39320 |
+| Aug 26 | Ana Petrova | Follow up on analytics | CRM-64035 |
+
+One is yours: **reporting, from Jun 2 (CRM-94239)** — nearly four months old. Verify before the call.
+
+---
+
+## Risks
+
+1. **Churn is an active, accelerating thread.** Three docs, two in the three weeks before today. This is the call's center of gravity.
+2. **The analytics follow-up looks dropped.** Ana Petrova committed to it on May 24 (CRM-73374) and again on Aug 26 (CRM-64035) — the same promise, three months apart. If Harbor noticed, it's a credibility problem, and it sits right alongside the churn thread.
+3. **Ten follow-ups with no recorded closure**, several 4–5 months old.
+4. **No single-threaded ownership.** Nine different owners across ten CRM records. You own one. Harbor likely experiences Brightline as fragmented — and that's a churn driver in its own right.
+5. **Persistent pricing sensitivity.** Three pricing conversations Apr–Jul, spanning billing (DRI-40615) and latency (DRI-55004) — value-for-money questions, not just rate questions.
+6. **Zero Linear/Slack footprint.** Either Harbor's technical issues aren't being filed as engineering work, or escalations are happening off-system. Both are bad for a QBR where you'll be asked "when is X fixed?"
+
+---
+
+## What you should say
+
+I'd resist walking in with polished talking points built on this data — the records don't tell you what was actually promised, and asserting specifics you can't back up is the fastest way to lose the room on a churn-risk account. Go in with **questions and ownership** instead.
+
+**Open by naming the churn thread directly.** It's been discussed three times; pretending the QBR is routine will read as tone-deaf. Something like: *"We've had a few conversations recently about whether this is working for you. I want to use today to get that on the table properly rather than talk around it."*
+
+**Close the loop on your own commitment first.** Reporting, from Jun 2. Leading with your own overdue item buys credibility for the rest.
+
+**Get ahead of analytics.** It was promised in May and again in August. If it still hasn't landed, say so before they do, and give a date.
+
+**Offer single-threaded ownership.** Nine owners in five months is the structural fix you can credibly put on the table, and it's within your gift as CS.
+
+**Come with a consolidated commitment list.** Walking in with all ten items, each with an owner and a date, converts the biggest liability into the strongest demonstration of control.
+
+**Expect pricing to come up**, likely framed as value-for-money given the latency and performance history.
+
+---
+
+## Fill these gaps before the call
+
+Not in any system I can reach — you'll need Salesforce, billing, or your own notes:
+
+- **ARR / contract value and renewal date** — determines whether this is a save motion or a growth conversation
+- **Product usage and adoption trend** — the single most important QBR input, entirely absent
+- **Health score and current NPS** — DRI-67100 shows NPS was *discussed* on Jun 26, but records no number
+- **Harbor-side stakeholders** — every name in these records looks Brightline-side; you have no map of who's in the room
+- **Support ticket volume and open escalations**
+- **What actually triggered the churn conversations** — the three churn docs name the topic and nothing else
+
+If you can get me the churn-thread context or export usage data, I can turn this into a real brief with defensible numbers. As it stands, the honest deliverable is the topic map, the commitment list, and the questions above.

@@ -1,0 +1,36 @@
+## I can't write this brief from what's in the tools — here's why, and what I'd do
+
+I pulled all 20 Keystone Energy records across CRM and Drive (Apr–Sep 2026), plus Slack, Linear, and Notion. **Every Keystone record is a contentless stub.** They follow a template — topic, owner, "next: follow up on [topic]" — with no substance behind them.
+
+Representative examples, verbatim and complete:
+
+- `CRM-19012` (2026-09-23): "Call with Keystone Energy. Discussed uptime. Owner Sam Lee. Next: follow up on NPS."
+- `DRI-20667` (2026-08-15): "Attendees: Ana Petrova, Ana Petrova. Discussed churn and pricing."
+- `DRI-31273` (2026-08-10): "Attendees: Sam Lee, Maya Chen. Discussed integrations and QBR prep."
+
+Compare a real record from another account, `CRM-52816` (Northstar Pharma): *"Call with Nia Cole. Tess Brown (CS) committed that HubSpot sync will be available by before summer. Logged as a renewal condition."* That has a customer contact, a named commitment, an owner, and a renewal linkage. Keystone has none of that in any of its 20 records.
+
+Three of your four asks — **open commitments, risks, and what to say** — have zero supporting evidence. I'm not going to generate them, because a QBR brief with invented commitments is worse than no brief: you'd repeat them to the customer.
+
+## What the records do legitimately support
+
+- **Cadence is healthy.** ~20 touchpoints over six months, consistent through September. This is not a neglected account.
+- **Recurring topic clusters.** Uptime (3×), analytics (4×), latency, sandbox, pricing, dashboards, offline, integrations. Reliability and analytics dominate the log — a reasonable hypothesis about what matters to them, but the records never say whether these were complaints, requests, or status updates.
+- **Internally staffed, broadly.** Sam Lee, Jordan Blake, Leo Grant, Dana Ortiz, Ana Petrova, Omar Haddad, and you.
+- **Two flags worth your attention:**
+  - **Churn appears twice, paired with pricing (`DRI-20667`, 8/15) and NPS (`DRI-75981`, 7/21).** Churn discussions don't usually happen for no reason. The records don't say what prompted them.
+  - **No renewal call notes record exists for Keystone.** Seven other accounts have one (Northstar `CRM-52816`, Kestrel `CRM-70743`, Ironwood `CRM-25995`, Riverton `CRM-74447`, Norrland `CRM-18094`, Granite `CRM-26651`, Umber `CRM-62434`). Keystone's absence means I also have no renewal date, ARR, or contract terms.
+
+Also worth a look: `CRM-78617` is dated **2026-09-25** — tomorrow. Either that's a scheduled pricing call you'd want on your radar before the QBR, or the record is misdated.
+
+## What I'd need to actually write this
+
+Fastest path is three questions to the people with the context in their heads, not in the system:
+
+1. **Sam Lee and Jordan Blake** — they own the most recent touchpoints (uptime 9/23, pricing 9/25). What's actually open?
+2. **Ana Petrova** — owns the churn/pricing conversation. What triggered it?
+3. **Renewal date, ARR, and customer-side contacts** — these don't exist anywhere I can reach. Likely in a billing or contracts system I don't have access to.
+
+If you can get me even rough answers, or point me at another system, I'll turn the brief around quickly. I can also draft the QBR **structure** now — agenda, the reliability/analytics narrative arc, and the questions you should ask them — so it's ready to populate the moment you have the facts. Say the word and I'll build that.
+
+One caveat on the topic clusters: "discussed uptime" three times could mean they're frustrated about outages or that you're proactively reporting good numbers. I'd verify before building a QBR narrative around reliability.

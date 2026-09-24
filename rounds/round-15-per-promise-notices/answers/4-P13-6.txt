@@ -1,0 +1,22 @@
+**Context check:** The SSO (SAML) commitment to Quarry Mining is clean — the commitment record carries no notice, and the latest public roadmap (`NOT-20876`, 2026-06-30) still lists "SSO (SAML), SP- and IdP-initiated: Q1 2027." The promise trail is `DRI-36664` (2026-07-09), where Tom Hale raised the Q1 2027 date and Leo Grant confirmed it. So this is a straightforward reaffirm.
+
+One unrelated flag, noted only so it isn't stumbled into: the **Custom roles** commitment (Ironwood Legal, `SLA-46650`) does have a notice and shouldn't be reaffirmed without checking with the product owner. It's a different account and feature, so it doesn't touch this reply — just don't volunteer custom-roles timing to Quarry Mining either, since the public roadmap has it at Q2 2027.
+
+---
+
+**Draft reply:**
+
+> Subject: Re: SSO (SAML) timing
+>
+> Hi Tom,
+>
+> Yes — SSO (SAML) is still on track for Q1 2027, exactly as we confirmed on our July 9 sync. It's on our published H1 2027 roadmap with both SP-initiated and IdP-initiated flows in scope, so no change from what you heard from us.
+>
+> A couple of things you may find useful for planning: SCIM provisioning and audit log export (including SIEM streaming) are also targeted for Q1 2027, which tends to matter for teams standing up SSO at the same time.
+>
+> As we get closer, I'd like to get Quarry Mining into the early-access group so your IT team can test against your IdP before general availability. Happy to set up a short call with our product team to walk through the rollout plan and your specific configuration — just let me know what works.
+>
+> Best,
+> Leo Grant
+
+Two notes on the draft: I kept it to a firm confirmation without adding a contractual guarantee, and the early-access offer is phrased as an intention rather than a commitment — worth having the AE confirm that's feasible before sending, since it isn't something we've promised anywhere in the record.

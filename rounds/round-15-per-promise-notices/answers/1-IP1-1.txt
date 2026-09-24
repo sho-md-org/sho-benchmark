@@ -1,0 +1,40 @@
+## Short answer: I can't find any SSO promises of yours that are affected — and I want to flag why, because the premise doesn't hold up in the records.
+
+**Two separate problems with the question:**
+
+### 1. There's no SSO slip to be affected by
+I searched all four systems for an SSO schedule change, descope, or commitment change. The only roadmap change in the corpus is `SLA-17908` (#general, 2026-09-19):
+
+> "Sandbox environments (Rail) slip to Q2 2027. Please update any customers expecting them this year."
+
+That's **Sandbox, not SSO**. Linear returns zero results for both `SSO` and `SAML/SCIM/authentication` — there's no engineering ticket showing SSO moving at all. If you're reacting to the Rail announcement, it doesn't touch SSO.
+
+### 2. No SSO commitment in the records is attributable to you
+There are ~40 "Sso questions" records, but every one is a one-line stub with no commitment content — no promised dates, no deliverables, no "we told them X by Y." And the named owner/attendee is never you:
+
+| Record | Account | Owner/Attendees |
+|---|---|---|
+| `CRM-57728` | Pinecrest Realty | Ana Petrova |
+| `CRM-93928` | Pinecrest Realty | Jordan Blake |
+| `CRM-57082` | Vantage Telecom | Priya Shah |
+| `DRI-67178` | Vantage Telecom | Dana Ortiz, Omar Haddad |
+| `DRI-19269` | Bluewater Logistics | Omar Haddad, Dana Ortiz |
+| `DRI-76928` | Delta Freight | Dana Ortiz, Tess Brown |
+| `NOT-20443` / `NOT-40327` / `NOT-29159` | — | Tess Brown / Leo Grant / Jordan Blake |
+
+"Maya Chen" appears exactly **once** across all four tools: `SLA-15166` (2026-08-26), and it's about roadmap generally, not SSO.
+
+So I'd be inventing things if I handed you a list of "your affected SSO promises." Either those promises live somewhere I can't see (email, a call you made personally), or the concern is misdirected.
+
+---
+
+### What I think you actually want to look at
+
+The Rail slip is a real exposure, just on **sandbox**. One record sits at the intersection and is the closest thing to a genuine hit:
+
+- **`DRI-19269` — Bluewater Logistics, 2026-09-04** — discussed "SSO questions **and sandbox**." If an SSO conversation there got bundled with a sandbox timeline, that's the account where a promise could plausibly be affected.
+- `SLA-21860` (Ana Petrova, 2026-07-22) similarly threads sandbox and SSO together.
+
+Accounts with open sandbox records that the Q2 2027 slip *does* hit: Aster Health (`CRM-62644`, `CRM-64767`), Northstar Pharma (`CRM-71897`), Delta Freight (`CRM-26498`), Harbor Clinics (`CRM-36695`), Granite Insurance (`CRM-78439`), Kestrel Foods (`CRM-89988`), Juniper Schools (`CRM-42826`).
+
+**Worth confirming before I go further:** did you mean sandbox rather than SSO? If so I'll pull the full commitment picture on those accounts. If you really did make SSO promises, tell me to which accounts and roughly when — they aren't in these systems, so I'd need the pointer.

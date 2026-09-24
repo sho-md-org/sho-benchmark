@@ -1,0 +1,24 @@
+**Before you send:** there's a flag on this commitment. Internal records show the Q1 2027 SSO (SAML) date was promised to Tom Hale and reconfirmed by Leo Grant on 2026-07-09 (DRI-36664), and it's still listed as Q1 2027 on the public roadmap (NOT-20876) — but Sho flags that a decision I don't have visibility into may have changed it. So I can't have you re-promise the date until the product owner confirms it still holds. (Ana Petrova is listed as owner on the Quarry Mining SSO call, CRM-14429 — worth checking she's the right PM.)
+
+The draft below acknowledges the commitment on record without re-committing to the date.
+
+---
+
+**Subject: Re: SSO (SAML) timing**
+
+Hi Tom,
+
+Thanks for checking in — and yes, I've got our conversation on record: we discussed SSO (SAML) for Q1 2027 when we met in July, and that's still what's published on our H1 2027 roadmap.
+
+Before I give you a firm re-confirmation, I want to verify the date directly with our product owner for SSO rather than just repeat what's on the roadmap. You're making planning decisions on this, and you deserve a confirmed answer rather than a reassuring one.
+
+I'm chasing that today and will come back to you by [date] with a definitive answer on timing — including what the scope looks like (SP- and IdP-initiated) and whether SCIM provisioning lands alongside it, since I know that mattered for your rollout.
+
+Apologies for the extra step; I'd rather be accurate than fast here.
+
+Best,
+Leo
+
+---
+
+Two notes on the draft: fill in a specific date you can hold to (2–3 business days is credible), and if the product owner confirms Q1 2027 is intact, you can collapse this into a simple "yes, confirmed" reply instead of sending the holding note. If the date has moved, don't send this version — you'll want to lead with the new date and what you're doing about it.

@@ -1,0 +1,52 @@
+## Keystone Energy — QBR Brief
+*Prepared 2026-09-24 for your call next week*
+
+### ⚠️ Read this before you build the deck
+
+The one hard commitment on this account — **audit log export with SIEM/Splunk streaming by Q1 2027** (`DRI-34564`) — is flagged in Sho. There may be a decision affecting it that isn't visible to me, so I can't tell you whether the Q1 2027 date still holds.
+
+**Action:** ping the product owner for audit log export and get a yes/no before the call. Do not reaffirm the Q1 2027 date or the Splunk streaming scope to Nia Cole until you have that answer. This is the single highest-value prep item on the list — it's the commitment most likely to come up and the one where being wrong is most expensive.
+
+### Where things stand
+
+Engagement is steady and broad — roughly a dozen touchpoints since April across onboarding, security review, integrations, rate limits, analytics, and uptime. Most recent contact was **2026-09-23** on uptime (`CRM-19012`, owner Sam Lee, next step: NPS follow-up).
+
+Dominant theme all year is **audit/compliance readiness**. Six separate "audit prep" records between May and August (`CRM-90377`, `CRM-17727`, `CRM-56742`, `DRI-85107`, `DRI-48005`, `DRI-84961`), plus three security review calls (`CRM-25431` Apr, `CRM-64056` Jul, `CRM-30791` Jul). Your own QBR prep call on 2026-08-25 (`CRM-93344`) closed with "follow up on security review" — that thread is still open.
+
+Onboarding (`CRM-15788`, `CRM-86748`) and integrations (`DRI-31273`) appear settled; no escalations or churn signals in anything I can see.
+
+### Open commitments
+
+| Commitment | Made by | Due | Status |
+|---|---|---|---|
+| Audit log export w/ SIEM streaming into Splunk | Company, confirmed by Jordan Blake (AE) | Q1 2027 | ⚠️ Flagged — verify with product owner |
+
+That's the only commitment on record tied to Keystone. The other four in Sho belong to different accounts.
+
+### Risks
+
+1. **The audit log export date is the account's center of gravity.** Nia Cole raised it unprompted on 2026-08-03 and Jordan confirmed on the spot. A year of audit-prep calls says their compliance timeline depends on it. If that date has moved, it needs a deliberate, prepared conversation — not an ad-lib in the QBR.
+2. **Ownership is scattered.** Records name seven different owners (Sam Lee, Omar Haddad, Tess Brown, Dana Ortiz, Ana Petrova, Priya Shah, you). Nothing is broken, but Keystone likely experiences this as inconsistent. Worth naming yourself as the single thread.
+3. **Open follow-ups with no visible closure:** security review (from your 8/25 call), webhooks (`CRM-56742`), notifications (`CRM-90377`, `CRM-30791`), support queue (`CRM-17727`), NPS (`CRM-19012`). Chase these before the QBR so the recap isn't a list of loose ends.
+
+### What to say
+
+**Open with the compliance story.** It's their priority and your strongest narrative — a year of sustained audit and security work, onboarding complete, integrations live, uptime stable.
+
+**On audit log export — two scripts, pick after you hear from the product owner:**
+- *If confirmed:* "Audit log export with Splunk streaming is on track for Q1 2027, as Jordan confirmed in August."
+- *If not yet confirmed:* "I want to give you a precise update on audit log export rather than a rough one — I'm confirming the delivery detail with our product team and will come back to you this week." Then actually come back.
+
+**Do not** let the Q1 2027 date get restated casually in a slide or a passing remark. If Nia raises it and you don't have an answer yet, take it as an action item.
+
+**Close on continuity:** name yourself as their single point of contact, and bring a closed-out list of the outstanding follow-ups above.
+
+### Before the call
+- [ ] Product owner: does audit log export w/ SIEM streaming still hold for Q1 2027? *(blocking)*
+- [ ] Close the security review thread from `CRM-93344`
+- [ ] Status on webhooks, notifications, support queue, NPS
+- [ ] Confirm attendees — Nia Cole is the commitment-holder; loop in Jordan Blake since he made the confirmation
+
+---
+
+Two unrelated notes: your own commitments on **advanced analytics to Lena Fox / Pinecrest Realty** (`SLA-93532`) and **audit log export to Lena Fox / Granite Insurance** (`SLA-77342`) carry the same flag. Not Keystone, but since you're already talking to the audit log export product owner, worth covering both in one message.

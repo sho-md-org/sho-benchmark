@@ -1,0 +1,23 @@
+## Short answer: I can't confirm it was cut — no record shows that decision
+
+I searched Notion, Slack, Drive, Linear, and the CRM for a decision to drop Advanced analytics from 2027, and there isn't one. Rather than guess at reasoning or name a decision-maker, here's what the records actually say.
+
+**Advanced analytics is still on the plan.** The only authoritative roadmap document, **NOT-20876 "Public roadmap H1 2027"** (Notion, dated 2026-06-30), lists:
+
+> Advanced analytics: Q2 2027
+
+No later document supersedes it. There is no change log, planning doc, or decision memo describing a cut, a descope, or a reprioritization of Advanced analytics.
+
+**The one roadmap change actually on record is a different feature.** **SLA-17908** (`#general: Rail update`, Slack, 2026-09-19):
+
+> Heads up: Sandbox environments (Rail) slip to Q2 2027. Please update any customers expecting them this year.
+
+Sandbox environments was Q4 2026 on NOT-20876 and has slipped to Q2 2027 — the same quarter Advanced analytics sits in. That's my best guess at the source of the confusion, but note it's a *slip*, not a cut, and it's a different feature.
+
+**What I checked and came up empty on:**
+- Linear: zero results for "advanced analytics" or "analytics dashboards" — no tickets, no closed-as-won't-do issues (**LIN: no matches**)
+- Notion roadmap notes **NOT-85086** (2026-09-25, owner Maya Chen), **NOT-64137** (2026-09-26, owner Maya Chen), **NOT-67486** (2026-08-14, owner Ana Petrova) — all stub entries with no decision content
+- Slack analytics threads **SLA-91143**, **SLA-60376**, **SLA-64584**, **SLA-25394** — status pings only, no prioritization discussion
+- Customer-facing analytics conversations **DRI-76027** (Tidewater Ports), **CRM-78539** (Lumen Labs), **DRI-78883** (Bluewater Logistics) — demand signals, no roadmap decisions
+
+**Before you tell a customer anything:** the safe statement today is that Advanced analytics remains Q2 2027 per the published roadmap. If you heard about the cut from a specific person or meeting, send me that pointer and I'll trace it — it's possible the decision lives somewhere my search can't reach (a DM, an exec deck, a verbal call). If instead the customer conversation was about **Sandbox environments**, that one does need a proactive heads-up per SLA-17908.

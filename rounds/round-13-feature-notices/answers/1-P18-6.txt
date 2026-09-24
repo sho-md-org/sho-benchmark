@@ -1,0 +1,77 @@
+I've worked through every Cobalt Retail record across all five systems. Here's the brief, plus an important caveat about what the data does and doesn't support.
+
+---
+
+# Cobalt Retail — QBR Brief
+**Call:** week of Sept 28–Oct 2, 2026 · **Prepared:** Sept 24, 2026
+
+## Bottom line
+
+One thing on this call matters more than the rest: **you need to walk back the sandbox timeline.** You personally discussed sandbox with Cobalt on Aug 23 (DRI-35074). On Sept 19, engineering announced sandbox environments (Rail) slip to **Q2 2027**, with an explicit instruction to "update any customers expecting them this year" (SLA-17908). That correction has not been made to Cobalt in any record I can find. If they hear it first from someone else, you lose control of the narrative.
+
+Second: **a security review you raised twice has no evidence of closure** (CRM-70221, CRM-36268). Both were your records. Expect them to ask.
+
+## Where things stand
+
+Engagement is steady and broad — 10 CRM calls and 10 meetings since April, roughly every 2–3 weeks, no gaps. Topic coverage is wide: onboarding, reporting, pricing, billing, dashboards, search, NPS, webhooks, exports, rate limits, mobile app, sandbox.
+
+Account touch is spread across the team rather than concentrated on you — Priya Shah (4 CRM calls), Omar Haddad (2), Tess Brown (2), you (2). Recent activity skews toward commercial and operational topics: billing and audit prep (DRI-75222, Aug 11), case study and pricing (DRI-95243, Aug 5), offline and mobile (DRI-82140, Aug 17).
+
+**Note a scheduling dependency:** a mobile app and search meeting with Sam Lee and Priya Shah is on the books for **Sept 26** (DRI-72283) — two days out, before your QBR. Get that readout before you walk in; mobile has been a live thread since June (CRM-92187, DRI-82140).
+
+## Open commitments
+
+Each CRM call logs a "next step." Tracing them against later records:
+
+| Commitment | Raised | Owner | Status |
+|---|---|---|---|
+| Security review | Apr 20, May 22 (CRM-70221, CRM-36268) | Maya | **No follow-up found — stale ~4 months** |
+| Latency follow-up | Apr 27 (CRM-49779) | Priya | **No Cobalt-tagged follow-up found** |
+| Case study | Apr 1 (CRM-98822) | Priya | Progressed — DRI-20022, DRI-95243 |
+| Rate limits | May 26, Jun 15 (CRM-24697, CRM-16603) | Tess / Omar | Progressed — DRI-33978 |
+| Mobile app | Jun 9 (CRM-92187) | Tess | Active — DRI-82140, DRI-72283 (Sept 26) |
+| Audit prep / billing | Jun 23, Jul 23 (CRM-87224, CRM-94849) | Priya | Progressed — DRI-75222 |
+| Pricing | Aug 1 (CRM-35990) | Omar | Discussed — DRI-95243 |
+
+The two flagged rows are the exposure. Security review is yours, and it's the one a retail customer is most likely to escalate.
+
+Also unresolved in the record: **SSO questions**, raised twice (DRI-20022, SLA-21860) with no documented answer.
+
+## Risks
+
+1. **Sandbox credibility gap (highest).** Commitment discussed Aug 23; slip announced Sept 19; customer not yet told. Every week this sits, the correction costs more.
+2. **Stale security review.** Raised twice by you, dropped. For a retail account, security posture questions tend to resurface at renewal, not conveniently.
+3. **Case study ask is a lever you've spent.** Two sessions on it (DRI-20022, DRI-95243), and it's been open since April. If you're about to deliver bad news on sandbox, do not also push the case study on this call — you'll look like you're collecting while not delivering.
+4. **No single-threaded owner.** Four different people ran calls. Fine operationally, but it means no one holds the full commitment list — which is likely how security review and latency slipped.
+
+## What to say
+
+**Open — earn the room (2 min).** Steady cadence, broad adoption across reporting, dashboards, billing, mobile. Position the quarter as expanding footprint.
+
+**Lead with the sandbox correction. Do not bury it.**
+> "Before we get into the review, I want to correct something I told you in August. Sandbox environments have moved to Q2 2027. I know that's not what you planned against, and I'd rather you hear it from me with a workaround than find out later. Here's what I'd suggest we do in the interim…"
+
+Go to them first, before the wins. It converts a credibility hit into a trust deposit — and it's the difference between a correction and a discovery.
+
+**Close the open loops yourself.** Name the security review as overdue and give a date. Don't wait to be asked:
+> "I owe you a security review — I raised it in April and again in May and it didn't get done. That's on me. I'll have it scheduled by [date]."
+
+**Then the wins:** billing and audit prep progressed, rate limits addressed, case study collaboration, mobile work active with a session on Sept 26.
+
+**Ask for one thing, not three.** Given the sandbox news, make it the lightest ask — most likely the mobile/search roadmap alignment coming out of the Sept 26 session. Park the case study for next quarter.
+
+---
+
+## What I could not find — read this before you use the brief
+
+The underlying records are **one-line topic stubs**. They log that a call happened and the subject, but not what was decided. That limits this brief in ways you should know:
+
+- **No commercial data exists in these systems** — no ARR, renewal date, contract terms, or seat counts. A QBR without commercials is incomplete; source these from your billing or finance system.
+- **No named customer contacts.** Every attendee listed is a Brightline employee.
+- **No health or NPS score.** NPS was discussed Jun 9 (CRM-92187) but no value is recorded.
+- **No support tickets.** Linear returned zero results for Cobalt across three separate queries — either the account has no engineering escalations, or that work isn't tracked there. Worth confirming which, because "no tickets" and "no visibility" are very different stories.
+- **No Slack or Notion record mentions Cobalt by name.** The sandbox connection I drew is an inference: a company-wide slip announcement (SLA-17908) against a Cobalt sandbox discussion (DRI-35074). It is well-grounded but not explicitly linked in any system — **verify with engineering that Rail is in fact what Cobalt was promised** before you deliver the correction on the call.
+
+Two items are worth a quick look tomorrow: NOT-85086 (roadmap, Sept 25, your record) and NOT-64137 (roadmap, Sept 26) may carry the roadmap positioning this brief lacks.
+
+Want me to draft the sandbox correction talk track in full, or pull the wider roadmap notes to firm up the forward-looking section?

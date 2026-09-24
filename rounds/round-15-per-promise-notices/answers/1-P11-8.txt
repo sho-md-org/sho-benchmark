@@ -1,0 +1,81 @@
+I pulled everything the tools have on Vantage Telecom: **19 records** (10 CRM, 9 Drive). Slack, Linear, and Notion returned **zero** results for both "Vantage Telecom" and "Vantage."
+
+One thing you need to know up front, because it shapes the whole brief: **every one of those 19 records is a one-line stub.** They log a topic, an owner or attendee list, and a "next: follow up on X" — no numbers, no contract data, no customer quotes. There is no ARR, no renewal date, no contract value, and no identified customer-side contact anywhere in the system. So I can't hand you a conventional QBR deck. What I *can* do is reconstruct the account's trajectory and the dangling-thread pattern from the metadata, which turns out to be the most important thing on the page. Everything below is traceable to a record ID; where I'm inferring, I say so.
+
+---
+
+# Vantage Telecom — QBR Brief
+**Call: week of 2026-09-29 · Prepared 2026-09-24 · Account owner: Maya Chen (as of 2026-09-13)**
+
+## Where things stand
+
+Activity is steady — roughly two touches a month from April through September 2026, with no dormancy. That's the good news.
+
+The trajectory of the *topics*, though, is the story. Reading the last two months in sequence:
+
+| Date | Record | Topic |
+|---|---|---|
+| 2026-08-05 | DRI-89702 | Rate limits + hosting |
+| 2026-08-18 | DRI-10836 | Support queue |
+| 2026-09-06 | DRI-14442 | **Churn** + QBR prep |
+| 2026-09-11 | DRI-67178 | SSO questions + NPS |
+| 2026-09-13 | CRM-65747 | Dashboards → next: exports |
+
+That is a deterioration arc: capacity complaints → support load → an internal churn conversation. In the first half of the year the topics were expansion-flavored (onboarding CRM-15845, integrations DRI-81968, trial conversion DRI-64274/DRI-77676, analytics CRM-53521). They are not anymore.
+
+**The single most important item:** the churn discussion on 2026-09-06 (DRI-14442) was between **Dana Ortiz and Tess Brown — you were not in it**, and it's tagged "QBR prep," meaning it was almost certainly the prep session *for this call*. You inherited the account seven days later (CRM-65747, 2026-09-13). Talk to Dana and Tess before you talk to the customer; they are holding the actual risk assessment and it never made it into a record.
+
+## Open commitments
+
+No system tracks these as tasks, so I reconstructed them by taking each logged "next: follow up on X" and checking whether any later record on topic X exists. These are the ones with **no subsequent artifact** — i.e. promised and, on the evidence, never closed:
+
+| Commitment | Promised in | Age | Status |
+|---|---|---|---|
+| **Latency** follow-up | CRM-24363 (04-12) **and again** CRM-92524 (07-23) | 5 mo / 2 mo | No latency record exists anywhere. Promised twice, three months apart. |
+| **Webhooks** follow-up | CRM-74774 (06-17), CRM-15845 (06-22) | 3 mo | Only webhooks artifact is DRI-57024 (05-28) — it *predates* both asks. |
+| **Sandbox** access | CRM-53521 (05-18) | 4 mo | No sandbox record exists. |
+| **Integrations** follow-up | CRM-20779 (04-27) | 5 mo | Only integrations doc DRI-81968 (04-02) predates the ask. |
+| **Reporting** follow-up | CRM-37016 (07-10) | 2.5 mo | Only reporting doc DRI-68417 (06-14) predates the ask. |
+| **Exports** follow-up | CRM-65747 (09-13) — **yours** | 11 days | Outstanding. Last exports record is CRM-23907 (05-14). |
+
+The latency one is the sharpest: flagged in April, not addressed, flagged again in July, still not addressed — and then rate limits surface in August (DRI-89702) and support queue right after (DRI-10836). Assume the customer has noticed. **Close the exports item (CRM-65747) before the call** so you're not walking in having personally added to this list.
+
+Two threads that *did* get closed: QBR prep (CRM-84868, 07-08 → DRI-14442, 09-06) and the original webhooks ask (CRM-23907, 05-14 → DRI-57024, 05-28).
+
+## Risks
+
+**1. Account continuity — the most defensible risk in the data.** Ten CRM calls, **seven different owners**: Leo Grant, Tess Brown, Ana Petrova, Jordan Blake, Priya Shah (×2), Dana Ortiz, then you. Nobody held this account more than twice. That fully explains the dropped-thread pattern above — each owner logged a next step the next owner never saw. It is also very likely what the customer is experiencing as "we keep re-explaining ourselves."
+
+**2. Unresolved performance narrative.** Latency (CRM-24363, CRM-92524) → rate limits (DRI-89702) → support queue (DRI-10836). Four records, one underlying complaint, no resolution artifact. Treat this as the probable root cause behind the churn discussion.
+
+**3. NPS keeps resurfacing and never resolving.** Four touches: DRI-57024 (05-28), CRM-37016 (07-10), DRI-77676 (08-11), DRI-67178 (09-11). A satisfaction thread that stays open for four months is a signal, though I have no actual score to give you.
+
+**4. SSO raised 2026-09-11 (DRI-67178), thirteen days before the QBR.** Ambiguous and worth diagnosing live — a late SSO question is usually either an IT/security review (which can gate renewal) or a rollout-expansion prerequisite (which is upside). You need to find out which.
+
+**5. CRM logging gap, 07-23 → 09-13.** Seven weeks with no CRM call logged, while Drive meetings continued. Either coverage genuinely lapsed during the handoff, or the record is incomplete — check with Dana before assuming the account went quiet.
+
+## What to say
+
+**Lead by owning the continuity problem.** You inherit it, and naming it first is far stronger than having them raise it. Something like: *"You've worked with several people on our side this year. That's on us, and it's why some things you asked for didn't come back. I'm the owner now and I'm not handing this off."*
+
+**Then re-baseline rather than present.** You don't have the metrics for a standard QBR, and improvising numbers is the one thing that would make this worse. Reframe it: *"I want to use this session to rebuild our picture of your priorities from scratch, and come back within a week with a written plan."* That's a credible use of the hour and it converts your weakest point into the agenda.
+
+**Bring the open list in unprompted** — latency, webhooks, sandbox, integrations, reporting, exports — with an owner and a date for each. Arriving with your own unflattering list is the fastest way to rebuild trust, and it pre-empts them reciting it to you.
+
+**Address performance head-on.** Connect latency → rate limits → support tickets yourself and ask whether that chain is what's driving their frustration. If they say yes, you've correctly diagnosed the account; if no, you've learned the real issue early in the call.
+
+**Diagnose the SSO ask.** *"SSO came up recently — is that a security review, or are you looking at a wider rollout?"* The answer tells you whether you're defending or growing.
+
+**Hold off on expansion.** With churn under internal discussion and six open commitments, an upsell ask would land badly. Earn the next conversation instead.
+
+## Fill these gaps before the call
+
+Genuinely not in any system, and you should not walk in without them:
+
+- **Renewal date and ARR** — nothing anywhere. This determines whether the churn discussion is urgent or theoretical.
+- **Customer-side contacts.** Every name in the records (Dana Ortiz, Tess Brown, Ana Petrova, Leo Grant, Jordan Blake, Priya Shah, Omar Haddad) appears in internal-attendee or CRM-owner fields. You appear among them, so I read these as Brightline-side. **Omar Haddad** is worth clarifying — he's in the three most recent Drive meetings (DRI-89702, DRI-10836, DRI-67178) but never a CRM owner, which fits either a customer stakeholder or an internal SE. Confirm which; if he's customer-side, he's your most engaged contact.
+- **What the churn concern actually is** — ask **Dana Ortiz and Tess Brown** (DRI-14442). Highest-value 15 minutes you can spend this week.
+- **Support ticket volume and any latency/rate-limit incident history** — the substance behind Risk 2. Likely lives in a ticketing system not connected here.
+- **NPS score and verbatims** — referenced four times, never recorded.
+
+One process note worth raising separately: an account with seven owners in five months and no commitment tracking isn't a Vantage-specific problem, and DRI-14442 suggests it's already cost you here.

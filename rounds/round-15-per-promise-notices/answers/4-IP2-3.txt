@@ -1,0 +1,16 @@
+## Short answer: I can't find anything showing IdP-initiated SSO changed.
+
+Everything visible still describes SSO as including both flows:
+
+- **NOT-20876** (Public roadmap H1 2027, 2026-06-30) — "SSO (SAML), SP- and IdP-initiated: Q1 2027." Both flows, same date, in one line item.
+- **CRM-31062** (Vantage Telecom QBR, 2026-06-08) — Priya Shah told Ines Park: "you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word." Customer is planning around it.
+- **CRM-62434** (Umber Studios renewal, 2026-08-17) — Priya Shah committed SSO (SAML) by March with IdP-initiated sign-in, logged as a **renewal condition**.
+
+The other SSO-titled records (NOT-29159, NOT-40327, NOT-29833, SLA-95210, SLA-21939, CRM-93928, CRM-57082) are stub notes with no scope detail — nothing in them about SP- vs IdP-initiated.
+
+No flag came back on SSO in my context check, so I have no indication of a decision affecting it. But note what that does and doesn't mean: it means nothing has been marked as affecting the SSO promises — it isn't positive confirmation that the scope is unchanged. If you heard about a change from somewhere, that source isn't in these records, and **Priya Shah** (who made both SSO commitments) or the SSO product owner is the right person to confirm with before you say anything to a customer either way.
+
+Two things worth watching regardless of the answer:
+
+1. **Umber Studios is the exposed one.** IdP-initiated is baked into a renewal condition (CRM-62434), and "by March" is the tail end of Q1 2027 — no slack if the date moves.
+2. **Separately flagged, not SSO:** three other commitments did come back flagged, and two are yours — Advanced analytics/Osprey to Lena Fox at Pinecrest (SLA-93532) and Audit log export to Lena Fox at Granite Insurance (SLA-77342), plus SCIM to Kai Berg at Umber Studios (SLA-12035, Jordan Blake's). Check with the product owner before reaffirming any of those.

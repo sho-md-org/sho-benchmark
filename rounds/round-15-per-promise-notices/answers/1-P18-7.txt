@@ -1,0 +1,3 @@
+One correction to my note above: I don't have file-writing tools available in this session, so I couldn't actually save that memory. The finding still holds — Cobalt records are stub-level, and Slack, Notion, and Linear have no Cobalt-tagged data — but you or I will need to re-establish that next time.
+
+The brief itself is based on all 22 records that exist (verified: repeated searches return the same set, so nothing is hiding below the top-10 cutoff). The two things I'd do today are ping Priya Shah about the churn note in CRM-12380 and get the 09-26 mobile app readout before your call.

@@ -1,0 +1,70 @@
+I pulled every Harbor Clinics record in CRM, Drive, Slack, Linear, and Notion — 21 records total (10 CRM, 11 Drive; Slack/Linear/Notion returned nothing for this account). Here's the brief, but I need to lead with a caveat that changes how you should use it.
+
+## The honest headline
+
+**Every Harbor Clinics record in these systems is a one-line stub.** Not redacted — genuinely that thin. Representative examples in full:
+
+> `CRM-64035` (2026-08-26): "Call with Harbor Clinics. Discussed dashboards. Owner Ana Petrova. Next: follow up on analytics."
+> `DRI-17950` (2026-09-11): "Attendees: Maya Chen, Tess Brown. Discussed churn and dashboards."
+
+There is **no contract value, renewal date, seat count, usage data, support ticket history, NPS number, or a single customer-side name** anywhere in the 21 records. Every "attendee" listed is Brightline-internal.
+
+So I can't write you the "where things stand" section a QBR needs — the systems don't contain it. What I *can* give you is a real structural read of the account, which turns out to be useful on its own.
+
+## What the record does support
+
+**Activity timeline:** 21 touches from 2026-04-23 to 2026-09-11. **Last recorded activity was 13 days ago.**
+
+**Recurring threads, by frequency:**
+
+| Thread | Count | Dates |
+|---|---|---|
+| Pricing / billing | 6 | Apr 23, May 18, Jun 22, Jul 21, Aug 20 |
+| Churn | 3 | Jul 20, Sep 6, Sep 11 |
+| Notifications | 3 | May 24, Jun 15, Aug 26 |
+| Dashboards / analytics | 4 | Jul 5, Aug 26 |
+| Sandbox | 3 | Jun 13, Aug 20, Sep 6 |
+| Offline | 3 | Jul 5, Aug 7, Aug 26 |
+
+**The one signal worth your attention:** three internal meetings titled "Churn (Harbor Clinics)" — `DRI-17076` (Jul 20), `DRI-26772` (Sep 6), `DRI-17950` (Sep 11). Two of them in a single week, immediately before this QBR. Leo Grant is in two of the three despite owning no CRM record on the account.
+
+**But read that carefully before you panic.** Each churn doc pairs the topic with a *product* topic — "churn and analytics," "churn and sandbox," "churn and dashboards." That's equally consistent with Harbor Clinics being a clinic network using Brightline to *track their own patient churn* as it is with internal account-risk meetings. I can't disambiguate from the records. You were in the Sept 11 one (`DRI-17950`) — you'll know in five seconds which it is, and it determines the entire tone of your call.
+
+## Open commitments
+
+CRM `Next:` fields are the only trackable commitments, and **none carry a due date or a closure status.** Tracing each forward to see if any later record picks up the thread:
+
+| Commitment | From | Owner | Downstream record? |
+|---|---|---|---|
+| Follow up on webhooks | `CRM-97969` (Apr 25) | Omar Haddad | **None found** |
+| Follow up on permissions UI | `CRM-78984` (Jun 15) | Dana Ortiz | **None found** |
+| Follow up on onboarding | `CRM-36695` (Jun 13) | Jordan Blake | **None found** |
+| Follow up on SSO questions | `CRM-34883` (Jul 15) | Sam Lee | **None found** |
+| Follow up on search | `CRM-75336` (Jul 25) | Omar Haddad | **None found** |
+| Follow up on notifications | `CRM-39320` (Aug 26) | Priya Shah | **None found** |
+| Follow up on analytics | `CRM-64035` (Aug 26) | Ana Petrova | **None found** |
+| Follow up on reporting | `CRM-94239` (Jun 2) | Maya Chen | `DRI-67100` (Jun 26) — likely closed |
+
+Eight open commitments, seven with no evidence of follow-through. **Absence of a record isn't absence of action** — these may all be done and simply unlogged. But you should assume Harbor Clinics remembers at least some of them, and the oldest (webhooks) has been open five months.
+
+The SSO one is worth a direct check: it came out of hosting (`CRM-34883`), and there was a security review a few weeks earlier (`DRI-60473`, Jun 22). Unresolved SSO after a security review is the kind of thing that surfaces in a QBR as a blocker.
+
+## Risks
+
+1. **Commercial pressure is the most persistent theme on the account** — pricing or billing in 6 records spanning April to August (`DRI-51027`, `DRI-40615`, `DRI-60473`, `DRI-55004`, `DRI-18426`). Five months of recurring price conversation usually means an unresolved commercial question, and you were in the most recent one (`DRI-55004`, Jul 21).
+2. **Seven unclosed commitments across six different owners.** No single person can speak to all of them on your call.
+3. **13 days of recorded silence** going into a QBR.
+4. **Ownership is fragmented** — nine different Brightline owners across ten CRM records, with no consistent account lead.
+
+## What I'd say you should *not* do
+
+I'm deliberately not drafting your talking points. Anything I wrote would be inferred from topic labels, and "what I should say" built on that foundation is exactly the kind of thing that falls apart when the customer responds. Get the four items below first — it's maybe 30 minutes of work — and the talking points will write themselves.
+
+**Before the call:**
+
+1. **Confirm what "churn" means here** (you were in `DRI-17950`). Everything else depends on this.
+2. **Get the commercial facts** — contract value, renewal date, what the pricing thread was actually about. Jordan Blake was in three of the pricing conversations and is your best single source.
+3. **Sync with Leo Grant** — in two of three churn discussions, owns nothing in CRM. The likeliest holder of context that never got written down.
+4. **Status-check the seven open commitments** with Omar Haddad, Dana Ortiz, Sam Lee, Jordan Blake, Priya Shah, and Ana Petrova. Walking into a QBR and getting surprised by your own team's unfinished follow-ups is the avoidable failure here.
+
+One process note: if Harbor Clinics is a significant account, the state of its records is itself a problem worth raising with whoever owns CRM hygiene. A QBR brief should be assemblable from the systems, and right now it isn't.

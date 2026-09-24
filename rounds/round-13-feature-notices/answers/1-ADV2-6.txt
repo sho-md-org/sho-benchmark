@@ -1,0 +1,34 @@
+## Short answer: I can't find any evidence it was cut — and the roadmap of record still has it.
+
+I searched Notion, Slack, Linear, Drive, and the CRM for a decision to cut, defer, or descope Advanced analytics. There is no such record. The only authoritative roadmap document I found says the opposite:
+
+**NOT-20876 · "Public roadmap H1 2027"** (Notion, dated 2026-06-30) lists:
+> `Advanced analytics: Q2 2027`
+
+It sits alongside EU data residency (Q1), Salesforce sync (Q1), SSO/SAML (Q1), Custom roles (Q2), HubSpot sync (Q2), Offline mode (Q2), and others. Advanced analytics is on the plan, not off it.
+
+### What I checked and what I found
+
+| Source | Query | Result |
+|---|---|---|
+| Notion | "Advanced analytics 2027 plan", "roadmap planning prioritization decision", "internal roadmap H2 2027 cut scope" | Only NOT-20876 has real content. The other roadmap pages (NOT-64137, NOT-85086, NOT-67486, NOT-58852, NOT-15543, NOT-72642) are one-line stubs — e.g. NOT-85086: *"Notes on roadmap. Owner Maya Chen."* No decision content. |
+| Slack | "Advanced analytics cut roadmap", "deprioritized 2027", "pushed to 2028 descoped" | Status-update stubs only — SLA-15166 (you, 2026-08-26): *"update on roadmap; offline next week."* SLA-60376, SLA-91143 similar. No prioritization thread. |
+| Linear | "advanced analytics", "analytics", "roadmap 2027" | **Zero results.** No ticket, no epic, no cancellation. |
+| Drive | "2027 planning advanced analytics", "roadmap review planning meeting" | All customer-meeting notes (DRI-76027 Tidewater Ports, DRI-57993 Northstar Pharma, etc.), one line each. No internal planning meeting. |
+| CRM | "advanced analytics" | Customer call records only (CRM-70722 Riverton City, owner you, 2026-09-12; CRM-62518 Bluewater Logistics). No roadmap decision. |
+
+### What this means
+
+I'm not able to give you "the exact reasoning and who decided," because as far as these systems show, **no one decided that.** I'd rather tell you that than assemble a plausible-sounding rationale from stub documents — if you relayed invented reasoning to a customer, that would be worse than saying "let me confirm."
+
+Three possibilities worth separating:
+
+1. **The change is real but happened outside these tools** — a planning call, a deck, an email thread, or a system I don't have access to. Likely if you heard it verbally.
+2. **You're thinking of a different item.** NOT-20876 is titled *H1* 2027 but includes Q2 and even Q4 2026 entries, so it's loosely maintained. Something adjacent — Custom roles, Offline mode — may be what moved.
+3. **Confusion with a scope change rather than a cut** — e.g. Advanced analytics shipping thinner than promised.
+
+### Suggested next step
+
+The fastest resolution is to ask the roadmap owners directly. Based on who owns roadmap records: **Ana Petrova** (NOT-67486), **Leo Grant** (NOT-58852), and **Omar Haddad** (NOT-75315, analytics). Worth asking: *"Is Advanced analytics still Q2 2027 per NOT-20876, or has that changed somewhere I can't see?"*
+
+One flag, since you're in CS: if you have customers expecting Advanced analytics, **don't communicate a cut based on this**. The document of record still commits to Q2 2027, and a retraction you later have to reverse is costly. If you tell me which account prompted this, I'll pull their full history and check what they were actually promised.

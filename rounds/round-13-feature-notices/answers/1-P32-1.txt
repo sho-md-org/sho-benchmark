@@ -1,0 +1,55 @@
+I pulled every Harbor Clinics record across all five tools. Before the brief, one important caveat that shapes everything below.
+
+## Evidence quality problem
+
+All 20 Harbor Clinics records (10 CRM, 10 Drive) are one-line stubs — topic, attendees, and a next-step label. No ARR, no renewal date, no customer contact names, no health score, no ticket status, no resolution detail. Slack, Linear, and Notion return **nothing** for Harbor Clinics at all.
+
+So I can't tell you what was actually *said* on any call. What I can do is read the pattern across 5 months of activity, which turns out to be informative on its own. Treat the inferences below as flagged inferences, not facts.
+
+## Where things stand
+
+**The churn signal is real and accelerating.** Three internal docs titled "Churn (Harbor Clinics)": DRI-17076 (Jul 20), DRI-26772 (Sep 6), DRI-17950 (Sep 11). The gap went from 48 days to 5 days. DRI-17950 is the single most recent Harbor Clinics record in any system, and you're on it with Tess Brown.
+
+**Customer contact has gone quiet.** The last actual customer call is CRM-39320 / CRM-64035, both 2026-08-26 — 29 days ago. Every record since is internal, and all of it is churn discussion. Internal alarm is rising while nobody has talked to the account in a month. That combination is the thing I'd worry about most.
+
+**Ownership is fragmented.** Ten customer calls, eight different owners (Omar Haddad ×2, Ana Petrova ×2, then Jordan Blake, Sam Lee, Dana Ortiz, Tess Brown, Priya Shah, and you once on CRM-94239). You own 1 of 10 touchpoints. This almost certainly explains the dropped follow-ups below.
+
+## Open commitments
+
+Six logged "Next:" commitments where the named topic **never appears again in any later record** — no evidence anyone closed them:
+
+| Logged | Commitment | Owner | Age |
+|---|---|---|---|
+| CRM-97969 (Apr 25) | Follow up on webhooks | Omar Haddad | 152 days |
+| CRM-36695 (Jun 13) | Follow up on onboarding | Jordan Blake | 103 days |
+| CRM-78984 (Jun 15) | Follow up on permissions UI | Dana Ortiz | 101 days |
+| CRM-34883 (Jul 15) | Follow up on SSO questions | Sam Lee | 71 days |
+| CRM-75336 (Jul 25) | Follow up on search | Omar Haddad | 61 days |
+| CRM-39320 (Aug 26) | Follow up on notifications | Priya Shah | 29 days |
+
+Two that *were* picked up: reporting (CRM-94239 → DRI-67100) and latency (CRM-41255 → DRI-55004).
+
+**Analytics is the standout.** Requested as a next step three separate times — CRM-73374 (May 24), DRI-17076 (Jul 20), CRM-64035 (Aug 26) — across three different owners. Something the customer keeps asking for that keeps not landing.
+
+## Risks
+
+1. **Unacknowledged churn risk** — three internal docs, zero evidence of a customer-facing retention conversation.
+2. **Recurring unresolved themes** — notifications (May 24, Jun 15, Aug 26), sandbox (Jun 13, Aug 20, Sep 6), offline (Jul 5, Aug 7, Aug 26), dashboards (Jul 5, Aug 26, Sep 11). Four topics that keep resurfacing over months.
+3. **Pricing went cold** — three pricing discussions (Apr 23, May 18, Jul 21), then nothing for two months. Unresolved commercial friction is a common precursor to the churn pattern above.
+4. **No renewal date on file** — you may be closer to a decision point than anyone realizes.
+
+## What to say
+
+Given you can't see what was actually discussed, I'd go in asking rather than asserting. Safe ground:
+
+- **Open with the gap, don't hide it.** "We've had a lot of hands on your account and I want to own the follow-ups that slipped." Naming it beats letting them raise it.
+- **Bring a closed list, not a status list.** Before the call, get real answers on SSO, permissions UI, search, webhooks, onboarding, and notifications. Walking in with six stale commitments and no answers is the worst version of this meeting.
+- **Lead with analytics.** They've asked three times. Come with a date or an honest "not on the roadmap."
+- **Probe the recurring four** — notifications, sandbox, offline, dashboards — as "are these still hurting, or did you work around them?" The answer tells you whether you have a product problem or a disengagement problem.
+- **Ask directly about renewal timing and stakeholders.** It's not in any system, and you need it.
+
+## Before the call
+
+Two things I'd chase that the tools can't give you: the **renewal date and ARR** (not in CRM), and **what's actually in the three churn docs** — ask Tess Brown and Leo Grant, who are on all three. DRI-17950 has your name on it, so you may already know; if so, that's the real center of this brief and everything above is context around it.
+
+I'd also flag to whoever owns CRM hygiene that this account has no substantive notes on 20 touchpoints. That's why this brief is thinner than it should be.

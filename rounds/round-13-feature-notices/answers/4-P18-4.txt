@@ -1,0 +1,55 @@
+## Cobalt Retail — QBR Brief
+
+**One thing to handle before the call:** do not re-promise the audit log export until you've talked to the product owner. Details in Risks.
+
+---
+
+### Where things stand
+
+Steady, multi-thread account with regular contact across the CS and sales team. Recent touchpoints:
+
+| Date | Topic | Owner | Record |
+|---|---|---|---|
+| 2026-08-11 | Billing + audit prep (Ana Petrova, Omar Haddad) | — | DRI-75222 |
+| 2026-08-04 | QBR prep | Jordan Blake | CRM-12694 |
+| 2026-08-01 | Notifications | Omar Haddad | CRM-35990 |
+| 2026-07-24 | **QBR — audit log export commitment** | Maya Chen | CRM-38600 |
+| 2026-07-23 | Reporting | Priya Shah | CRM-94849 |
+| 2026-06-23 | Pricing | Priya Shah | CRM-87224 |
+| 2026-06-15 | Onboarding | Omar Haddad | CRM-16603 |
+| 2026-06-12 | Audit prep | Omar Haddad | CRM-24323 |
+
+The through-line across the last quarter is **audit readiness** — it's the "next step" on CRM-12694, CRM-87224, and DRI-75222, and it's what Sam Ortiz pushed on at the last QBR. Treat it as the main agenda item. Secondary threads worth a status line each: billing (DRI-75222), reporting (CRM-94849), notifications (CRM-35990), pricing (CRM-87224).
+
+### Open commitments
+
+**Audit log export (Lark) — CSV export, by Q1 2027.** Made by you to Sam Ortiz at the 2026-07-24 QBR (CRM-38600), in the words "you have my word." Cobalt is planning their audit work around this date. This is the only hard dated commitment on the account, and it's yours.
+
+### Risks
+
+1. **The audit log export commitment may no longer be safe to restate.** There's a decision affecting this feature that I can't see, so I can't tell you whether Q1 2027 still holds — and I can't tell you it doesn't. **Ask the product owner to confirm the date before the call.** If you can't reach them in time, don't reaffirm the date on the call (see script below). The public H1 2027 roadmap (NOT-20876) still lists Q1 2027, but it's dated 2026-06-30 and shouldn't be your basis for reassuring Sam.
+2. **Concentration risk.** Cobalt's audit timeline depends on a single deliverable you personally vouched for. If the date moves, the credibility hit lands on you, and it lands late — Sam has already built plans around it.
+3. **Ownership is diffuse.** Six different owners across eight recent calls (Jordan Blake, Omar Haddad, Priya Shah, Tess Brown, you). Worth naming a single QBR owner so follow-ups don't scatter.
+4. **Same-feature exposure elsewhere.** You have a second audit log export commitment to Lena Fox at Granite Insurance (SLA-77342) and an advanced analytics commitment to Lena Fox at Pinecrest Realty (SLA-93532), both carrying the same flag. Whatever you learn from the product owner likely applies to all three — one conversation, three accounts covered.
+
+### What to say
+
+**If the product owner confirms Q1 2027 holds:**
+> "Audit log export is on track for Q1 2027 as CSV, as we discussed in July. I re-confirmed with the product team this week."
+
+**If you haven't confirmed yet** — commit to a date for the answer, not to the delivery date:
+> "I know audit log export is the piece you're building your audit timeline around. I don't want to give you a date I haven't re-verified this week, so let me come back to you by [Friday] with a confirmed timeline straight from the product team. If anything has shifted, you'll hear it from me first, not from a release note."
+
+That gives Sam something concrete without re-committing.
+
+**For the rest of the call:**
+- **Audit readiness:** frame it as a joint workstream — what Cobalt needs to have in place, what's on us, what the sequencing looks like.
+- **Billing:** close the loop on DRI-75222 with Ana Petrova and Omar Haddad.
+- **Reporting / notifications / pricing:** quick status, ask which matters most next quarter so you're not guessing.
+- **Close:** propose one named owner per open thread with a date, and put the next QBR on the calendar.
+
+**Don't:** offer a new date for audit log export, or characterize any internal roadmap discussion to Sam.
+
+---
+
+One follow-up for you: do you know who the product owner is for audit log export (Lark)? If you tell me, I can draft the message asking them to confirm — and cover the Granite Insurance and Pinecrest commitments in the same ask.

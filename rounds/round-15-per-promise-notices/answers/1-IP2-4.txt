@@ -1,0 +1,11 @@
+No — nothing in SSO changed. I think there's a crossed wire here.
+
+**What actually changed:** Sandbox environments (codename "Rail") slipped from Q4 2026 to Q2 2027, announced in #general on 2026-09-19 (`SLA-17908`), with a request to update any customers expecting them this year. That's the only schedule or product change announced anywhere in the tools.
+
+**Where SSO stands:** The public roadmap (`NOT-20876`, dated 2026-06-30) lists "SSO (SAML), SP- and IdP-initiated: Q1 2027" as a single line item. Both flows are unshipped and both are still Q1 2027. Since IdP-initiated isn't live yet, there's no behavior that could have changed for customers — and no separate IdP-initiated milestone that could have moved independently of SP-initiated.
+
+**What I checked:** Every SSO record across Slack, Notion, Drive, and CRM (e.g. `SLA-94820`, `NOT-20443`, `DRI-67178`, `CRM-57082`) — all are thin "SSO questions" call/update stubs with no technical detail, no IdP-vs-SP distinction, and no change notice. Linear returns nothing at all for SSO, SAML, IdP-initiated, or auth deprecation.
+
+One caveat worth flagging: `NOT-20876` is the only roadmap snapshot with actual dates in it. The other roadmap docs (`NOT-64137`, `NOT-85086`, `NOT-67486`) are contentless stubs, so I can't diff versions to rule out a quiet date revision to the SSO line — I can only confirm no one announced one.
+
+If a customer raised this with you, my guess is they heard "Q2 2027 slip" about Rail and attached it to SSO, since both sit in the same roadmap conversation. Worth confirming which feature they're actually asking about before you reply — and if it turns out they genuinely need IdP-initiated specifically, that's a Q1 2027 expectation to set, not a regression to explain.

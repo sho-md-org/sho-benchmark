@@ -1,0 +1,39 @@
+## Harbor Clinics — QBR Brief
+
+**Primary contact on record:** Ines Park. 13 account records reviewed (Apr–Sep 2026). One caveat up front: the CRM notes are all one-line entries with no ARR, renewal date, health score, or ticket detail, so the commercial section of your QBR is something you'll need to fill in from elsewhere — I couldn't find it.
+
+### Where things stand
+
+Activity is steady and broad rather than deep. Threads touched this year: integrations (CRM-97969, CRM-75336), notifications (CRM-73374, CRM-78984), latency (CRM-94239), sandbox (CRM-36695), roadmap (CRM-41255), hosting/SSO (CRM-34883), onboarding (CRM-48825), offline (CRM-39320), dashboards (CRM-64035), and most recently mobile app (CRM-49374, Sep 21). Support queue was reviewed with Leo Grant on Aug 19 (DRI-20995).
+
+The two most recent substantive calls — offline and dashboards, both Aug 26 — plus mobile app on Sep 21 suggest their current focus is field/clinic-side usage, not the back-office items.
+
+### Open commitments
+
+**Data retention controls — Q1 2027.** Made by Jordan Blake (AE) to Ines Park; Ines raised it in the May 15 sync and Jordan confirmed it on the spot (DRI-80868). No later change to this commitment. The public roadmap independently lists Data retention controls for Q1 2027 (NOT-20876), so the date is consistent and safe to restate.
+
+That is the only commitment of record to Harbor Clinics. Nothing else in the account has a promised date attached.
+
+### Risks
+
+**Audit prep is an unclosed loop — this is the real risk.** It appears as the open next step on Apr 8 (CRM-45542), was the subject of the May 14 call (CRM-35862), was the next step again after onboarding on Jul 24 (CRM-48825), and was discussed again on Aug 19 (DRI-20995). Four touchpoints over four months with no recorded resolution. If Harbor has an audit deadline, they are likely to raise it, and we will look like we've been circling. Find out where this actually landed before the call.
+
+**No single owner.** Nine different Brightline owners appear across 13 records (Sam Lee, Leo Grant, Priya Shah, Omar Haddad, Ana Petrova, Jordan Blake, Tess Brown, Dana Ortiz, you). The follow-ups also loop — QBR prep points to audit prep, mobile app points back to QBR prep. That pattern explains the unclosed audit thread.
+
+**Roadmap timing gap on their recent interests.** Their two newest topics land later than the retention commitment: Offline mode is Q2 2027 and Advanced analytics is Q2 2027 (NOT-20876). If anyone has implied these arrive alongside retention controls in Q1, that will surface in the QBR. Sandbox environments (Q4 2026) is the one near-term item you can offer.
+
+### What to say
+
+1. **Lead with the one firm thing.** "Data retention controls remain on track for Q1 2027" — corroborated by the public roadmap, so you can say it plainly.
+2. **Get ahead of audit prep rather than waiting for it.** Name it yourself: "I want to close out audit prep today." Bring the actual status; if you don't have it, ask Leo Grant before the call.
+3. **Offer a named owner.** The most valuable deliverable you can put on the table is a single point of contact for the retention/audit workstream through Q1. That directly addresses what the record shows going wrong.
+4. **Sandbox as the near-term win** (Q4 2026) if you need something positive with a close date.
+5. **Hold the line on offline and analytics.** Both are Q2 2027. Describe them as later-2027 and don't narrow to a date in the room.
+
+### Before the call
+
+- Pull the audit prep status from Leo Grant (DRI-20995 is the last touch).
+- Get renewal date and ARR — not in these records.
+- Confirm with Jordan Blake that nothing has shifted on retention since May.
+
+One flag on your own commitments to **other** accounts, since they're adjacent to this material and you may be tempted to reuse the framing: your Advanced analytics promise to Lena Fox at Pinecrest (SLA-93532) and your Audit log export promise to Lena Fox at Granite Insurance (SLA-77342) each carry a notice that a decision I can't see may affect them. Check with the product owner before reaffirming either of those to their accounts. Neither is a Harbor Clinics commitment, and neither should appear in this QBR.

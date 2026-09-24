@@ -1,0 +1,43 @@
+## Vantage Telecom — QBR brief
+
+**One thing to handle before the call:** the SSO (SAML) commitment needs a check with the product owner. Details below.
+
+### Where things stand
+Account activity over the last six months is steady but the records are thin — mostly one-line call logs, so this is a skeleton you'll need to fill from your own recollection:
+
+| Date | Record | Topic | Owner | Stated next step |
+|---|---|---|---|---|
+| 2026-09-13 | CRM-65747 | Dashboards | Maya Chen | Follow up on exports |
+| 2026-09-06 | DRI-14442 | Churn / QBR prep | Dana Ortiz, Tess Brown | — |
+| 2026-07-10 | CRM-37016 | NPS | Tess Brown | Follow up on reporting |
+| 2026-07-08 | CRM-84868 | Search | Priya Shah | Follow up on QBR prep |
+| 2026-06-22 | CRM-36270 | Pricing | Jordan Blake | Follow up on audit prep |
+| 2026-06-17 | CRM-74774 | Search | Priya Shah | Follow up on webhooks |
+| 2026-06-08 | CRM-31062 | QBR notes — SSO ask | Priya Shah | — |
+| 2026-05-14 | CRM-23907 | Exports | Ana Petrova | Follow up on webhooks |
+| 2026-04-27 | CRM-20779 | Dashboards | Tess Brown | Follow up on integrations |
+| 2026-04-12 | CRM-24363 | Billing | Leo Grant | Follow up on latency |
+| 2026-04-02 | DRI-81968 | Integrations / audit prep | Maya Chen, Leo Grant | — |
+
+Recurring threads: exports/webhooks (open since May, still the stated next step in September), dashboards, and audit prep.
+
+### Open commitments
+**SSO (SAML) — Q1 2027, made to Ines Park.** At the June QBR (CRM-31062), Ines pushed on SSO and Priya Shah committed: *"you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word."* The note says the customer is planning around it.
+
+There's a flag on this one: a decision I don't have visibility into may or may not affect that promise. I can't tell you what it is or whether it changes anything. **Before you reaffirm the Q1 2027 date or the Okta IdP-initiated detail on the call, confirm with the product owner that it still holds.** If you can't reach them in time, don't restate the date live — say you'll come back with a confirmed timeline within a few days.
+
+### Risks
+1. **SSO is the commercial risk.** It's a named-exec ask, a verbal "you have my word," with a specific feature detail attached, and the customer is building plans on it. If the date has moved, the QBR is the wrong place to discover that.
+2. **Churn discussion happened without you.** DRI-14442 (Sept 6) covers churn and QBR prep between Dana Ortiz and Tess Brown; the record has no content beyond that. Worth 10 minutes with Dana before the call so you're not walking in less informed than the room.
+3. **Exports/webhooks has stalled.** It's been the "next step" since May and was still the follow-up out of the September dashboards call. Expect to be asked; have a real answer or an owner and date.
+4. **Ownership is scattered** — six different internal owners across eleven touchpoints. If Vantage feels handed around, the QBR is where that surfaces.
+
+### What to say
+- **Open with their agenda, not yours.** Ask Ines what's changed on their side since June, especially on the SSO rollout plan — it tells you how exposed the date is before you have to speak to it.
+- **On SSO:** if the product owner confirms, restate it cleanly with the Okta detail. If unconfirmed, use: *"I want to give you a date I can stand behind, so I'm confirming the current plan internally and coming back to you this week with specifics."* Then actually do it.
+- **On exports/webhooks:** acknowledge it's been open too long, name an owner and a date. Don't let it be a "next: follow up" line for the fourth quarter running.
+- **On continuity:** offer a single point of contact (you) for the coming quarter. Cheap to say, addresses the scatter risk.
+- **Close by asking what would make the next quarter a success for them** — gives you the renewal signal without raising churn directly.
+
+### Separate note
+Two of your own commitments on other accounts carry the same "check with the product owner" flag: Advanced analytics (Osprey) to Lena Fox at Pinecrest Realty for the spring release (SLA-93532), and Audit log export to Lena Fox at Granite Insurance for Q1 2027 (SLA-77342). Not part of this QBR, but worth clearing with the product owner in the same conversation.

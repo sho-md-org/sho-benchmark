@@ -1,0 +1,71 @@
+I searched CRM, Drive, Notion, and Slack. Here's an important caveat up front, then the brief.
+
+**The source records are metadata-only.** All 19 Vantage Telecom records are one-line stubs — a topic, an owner, and a "next: follow up on X." None contain ARR, renewal date, contract terms, health score, ticket counts, named customer stakeholders, or the substance of any commitment. Slack and Linear return nothing for Vantage at all. So I can't write the factual core of a QBR brief from the tools, and I'm not going to invent numbers. What follows is (1) what the record genuinely supports, including some real patterns visible in the metadata, and (2) the gaps you must fill before the call.
+
+---
+
+# Vantage Telecom — QBR Brief
+
+## Where things stand
+
+19 touchpoints between 2026-04-02 and 2026-09-13 (10 CRM calls, 9 meeting notes). Steady cadence through July, then a thin patch: after CRM-92524 (Jul 23) the next logged customer call is CRM-65747 (Sep 13) — roughly seven weeks. August activity (DRI-89702, DRI-77676, DRI-10836) is logged as meeting notes with Brightline attendees only, so I can't tell from the record whether the customer was in those rooms.
+
+Most recent contact: **CRM-65747, 2026-09-13** — dashboards, your call, next step "follow up on exports."
+
+Topic history: billing, dashboards, exports, analytics, search, onboarding, NPS, integrations, reporting, webhooks, rate limits, trial conversion, support queue, SSO.
+
+**Two patterns worth your attention, both visible in the metadata:**
+
+- **Ownership is fragmented.** Eight different owners/attendees across 19 records — Leo Grant, Tess Brown, Ana Petrova, Jordan Blake, Priya Shah, Dana Ortiz, Omar Haddad, and you. You appear on only two (DRI-89702, Aug 5; CRM-65747, Sep 13). If the customer perceives this the way the record reads, "who owns us" is a fair question for them to ask.
+- **Follow-ups don't close.** The "next step" trail loops rather than resolves. Billing was discussed Apr 12 (CRM-24363) and Jul 23 (CRM-92524) — both times the next step was "follow up on latency," three months apart. Dashboards came up Apr 27 (CRM-20779) and again Sep 13 (CRM-65747), 4.5 months apart. Webhooks is named as the follow-up on three separate records (CRM-23907, CRM-15845, CRM-74774) and appears as its own session once (DRI-57024, May 28). CRM-84868 (Jul 8) lists its next step as "QBR prep."
+
+## Open commitments
+
+Genuinely open per the record, though none has documented scope or a due date:
+
+| Commitment | Source | Opened | Status in record |
+|---|---|---|---|
+| Follow up on **exports** | CRM-65747 | Sep 13 | Open — yours. Exports last substantively discussed May 14 (CRM-23907) |
+| Follow up on **latency** (billing) | CRM-24363, CRM-92524 | Apr 12, restated Jul 23 | No closure logged |
+| Follow up on **webhooks** | CRM-23907, CRM-15845, CRM-74774 | May–Jun | No closure logged |
+| **Dashboards** | CRM-20779 → CRM-65747 | Apr 27 | Recurring; unresolved after ~5 months |
+| **SSO questions** | DRI-67178 | Sep 11 | Raised 2 days before last call; no outcome logged |
+
+Treat this table as a checklist to verify, not as fact — the records show the thread was opened, not what was promised.
+
+## Risks
+
+1. **A churn conversation happened internally on 2026-09-06** — DRI-14442, Dana Ortiz and Tess Brown, "discussed churn and QBR prep." This is the single most important item in the file and it has no detail attached. **Talk to Dana and Tess before the call.** Do not walk in without knowing what prompted it.
+2. **Unresolved-issue accumulation.** Billing/latency and webhooks recurring over 3–5 months without logged closure is the classic pattern behind a renewal surprise.
+3. **Relationship continuity.** Eight owners, and you're new to the account in the record. Expect to have to re-establish credibility.
+4. **Contact gap.** ~7 weeks with no logged customer call before Sep 13.
+5. **NPS is unknown.** Discussed Jul 10 (CRM-37016) and referenced in DRI-67178 and DRI-77676, but no score is recorded anywhere.
+
+## What to say
+
+Structure, with the substance left for you to fill once you have the numbers:
+
+- **Open by naming the fragmentation, don't paper over it.** "You've talked to a lot of different people at Brightline this year. I'm your point of contact going forward." This converts your weakest fact into a credibility move, and it preempts the complaint.
+- **Lead with the stale threads before they do.** Billing/latency and webhooks. Arrive with actual status on each — that's the prep task, not the talking point.
+- **Close the exports loop you personally opened on Sep 13** (CRM-65747). It's the one commitment with your name on it.
+- **Ask about SSO.** It surfaced Sep 11, it's recent, and recent asks are usually live asks.
+- **Probe the churn signal indirectly.** Ask what's changed on their side this year — org, budget, priorities — rather than surfacing an internal note.
+- **Leave with dated owners.** Every item gets a name and a date; the record's core failure is that nothing ever did.
+
+## Before the call — gaps you must fill
+
+The tools don't hold these. Pull them from your systems or from the account team:
+
+1. **What drove the Sep 6 churn discussion** (Dana Ortiz, Tess Brown — DRI-14442). Highest priority.
+2. Renewal date, ARR, contract terms, expansion status.
+3. Current support ticket backlog and any open escalations.
+4. Actual NPS score and respondent detail.
+5. Product usage/adoption trend — the thing a QBR is actually built on.
+6. Customer-side stakeholders: names, roles, who the economic buyer is. No customer contact is named in any of the 19 records.
+7. Real status on latency, webhooks, dashboards, exports, SSO — from engineering/support, not the CRM.
+
+**Records cited:** CRM-24363, CRM-20779, CRM-23907, CRM-53521, CRM-74774, CRM-15845, CRM-84868, CRM-37016, CRM-92524, CRM-65747; DRI-81968, DRI-64274, DRI-57024, DRI-68417, DRI-89702, DRI-77676, DRI-10836, DRI-14442, DRI-67178. Notion QBR-prep docs (NOT-42571, NOT-52051) are generic and not Vantage-specific. Slack and Linear: no Vantage results.
+
+---
+
+The honest summary: this account has an active churn signal, five unresolved threads, and no documented owner — and the CRM won't tell you why. Item 1 in the gap list is the call to make today.

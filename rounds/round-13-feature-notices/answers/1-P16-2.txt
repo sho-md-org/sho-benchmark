@@ -1,0 +1,55 @@
+I researched Keystone Energy across CRM, Drive, Slack, Linear, and Notion (~25 records). Here's the brief — but I need to lead with a caveat that changes how you should use it.
+
+## The honest headline: the record is nearly empty
+
+Almost every Keystone record is a templated stub with no content. Representative examples, quoted in full:
+
+- **CRM-19012** (2026-09-23): "Call with Keystone Energy. Discussed uptime. Owner Sam Lee. Next: follow up on NPS."
+- **DRI-20667** (2026-08-15): "Attendees: Ana Petrova, Ana Petrova. Discussed churn and pricing."
+
+That's the entire record. No numbers, no customer quotes, no outcomes. This isn't a limitation of the tools — **CRM-52816** (Northstar Pharma) contains a real, specific commitment, so the system does hold substance when someone writes it down. For Keystone, nobody did.
+
+**I can't tell you "where things stand" from this data, and I'd be fabricating if I tried.** Below is what's genuinely grounded, then what you must source yourself.
+
+## The one hard commitment — this is your QBR
+
+**DRI-34564** (2026-08-03), Jordan Blake (AE) + Nia Cole:
+> "Nia Cole reminded us that we told them Audit log export by Q1 2027 with streaming into Splunk. Jordan Blake (AE) confirmed."
+
+Two things matter here:
+
+1. **"Reminded us"** — the customer was re-raising a commitment they felt was at risk of being forgotten. That's a tell.
+2. **It checks out.** The public roadmap (**NOT-20876**) lists "Audit log export incl. SIEM streaming: Q1 2027." You can stand behind this.
+
+One nuance to verify before you commit on the call: the roadmap says *SIEM streaming* generically; Jordan confirmed *Splunk specifically*. Usually the same thing — but confirm Splunk is a validated target, not an inferred one. That gap is exactly where a QBR promise turns into an escalation.
+
+## Risks
+
+**Pricing and churn are being discussed in the same breath.** DRI-20667 (2026-08-15) pairs "churn and pricing." Pricing recurs in **CRM-78617**, dated **2026-09-25 — tomorrow**, owner Jordan Blake. A pricing conversation is landing days before your QBR. Sync with Jordan before you walk in, or you risk contradicting him.
+
+**No renewal call notes exist for Keystone.** Seven other accounts have them (Northstar CRM-52816, Kestrel CRM-70743, Riverton CRM-74447, and four more). Keystone has none. Either the renewal motion hasn't started or it's undocumented — both worth knowing before a QBR.
+
+**Ownership is scattered.** Across nine months: Sam Lee, Jordan Blake, Leo Grant, Ana Petrova, Omar Haddad. No consistent owner. For the customer this reads as "we keep re-explaining ourselves."
+
+**Zero footprint in Slack and Linear.** No Keystone results at all. So there's no engineering ticket backing the audit-log commitment that I can find — it lives in a meeting note and a public roadmap line, nothing more.
+
+**One flag, not a conclusion:** Nia Cole appears as the contact in *both* the Keystone sync (DRI-34564) and the Northstar Pharma renewal note (CRM-52816). Could be a data-entry error or someone who changed companies. Verify who you're actually talking to.
+
+## What to say
+
+**Safe to say:**
+- Audit log export with SIEM streaming is on the public H1 2027 roadmap for Q1 2027 — consistent with what Jordan confirmed in August.
+- Sandbox environments land Q4 2026 (NOT-20876) — near-term, and sandbox came up repeatedly (DRI-41756, DRI-27950).
+
+**Do not say** anything quantitative about uptime, latency, NPS, or adoption. Those topics appear constantly in titles but **not one record contains a number.** If you cite a figure, you're inventing it.
+
+**Best move:** open by asking Nia to restate their top priorities. Given the thin record, listening outperforms presenting — and it closes your gap without advertising it.
+
+## Before the call
+
+1. Ask Jordan Blake what happened on the 2026-09-25 pricing call.
+2. Confirm with engineering that audit log export is on track and that **Splunk** specifically is supported.
+3. Pull real uptime/NPS numbers from the source systems — they are not in the CRM.
+4. Find out whether a Keystone renewal date and motion exist anywhere.
+
+The underlying problem is that this account has been logged, not documented. Worth fixing before the next QBR regardless of how this one goes — I can draft a note-taking template if useful, or save the data-quality finding to memory so it resurfaces next time you touch this account.

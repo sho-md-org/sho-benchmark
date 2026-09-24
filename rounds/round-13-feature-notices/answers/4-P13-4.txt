@@ -1,0 +1,27 @@
+**Before this goes out:** Sho flags the SSO (SAML) commitment to Quarry Mining (DRI-36664 — Leo Grant reconfirmed Q1 2027 to Tom Hale on 2026-07-09) as something I can't reaffirm on my own. There's a decision outside my visibility that may or may not bear on that date, so the AE needs a yes/no from the product owner before any date is restated to the customer. Roadmap ownership points to Maya Chen (NOT-85086); the last public roadmap still lists SSO SAML, SP- and IdP-initiated, at Q1 2027 (NOT-20876, 2026-06-30), but that's a June artifact and not a substitute for confirmation.
+
+So the draft below deliberately does **not** restate Q1 2027 as a commitment. It's a same-day acknowledgment that buys the ~24 hours needed to check.
+
+---
+
+**Subject: Re: SSO (SAML) timing**
+
+Hi Tom,
+
+Thanks for checking in, and good to hear from you.
+
+SSO (SAML) is on our roadmap for your renewal period, and it's a priority item for your account — that hasn't changed. Before I give you a date you can plan your rollout around, I want to confirm the current delivery timing directly with our product team rather than repeat what I told you in July without re-checking. I've asked them today and will come back to you by end of day Friday with a firm answer, including SP- and IdP-initiated support and how it sequences with SCIM provisioning if that matters for your identity project.
+
+If you have a hard internal deadline on your side — a security review, an IdP migration, an audit date — tell me what it is and I'll make sure the product team has it in front of them.
+
+Best,
+Leo
+
+---
+
+**Internal note for Leo:** Ask the product owner one direct question: *does Q1 2027 for SSO (SAML) to Quarry Mining still hold?*
+
+- **If yes** — reply with the date explicitly and reference the commitment from the 2026-07-09 sync (DRI-36664).
+- **If no** — don't send a date in email. Get the revised timing and the reason, then call Tom before writing anything down; he has this in his notes as a firm commitment, so a written slip with no context will land badly.
+
+Two related items carry the same flag and are worth clearing in the same conversation: Custom roles to Ironwood Legal (SLA-46650), and the public roadmap has Custom roles at Q2 2027 (NOT-20876), which already sits later than what Robin was told.

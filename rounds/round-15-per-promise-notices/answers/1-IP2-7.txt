@@ -1,0 +1,19 @@
+I searched Slack, Notion, Linear, Drive, and the CRM, and I can't confirm the premise of your question. I found no record that anything about SSO changed — IdP-initiated or otherwise.
+
+**What's actually there:** a large volume of records all titled "Sso questions," but every one is a one-line stub with no technical content:
+
+- CRM-57728 (Pinecrest Realty, 2026-09-26), CRM-57082 (Vantage Telecom, 2026-09-19), CRM-93928 (Pinecrest Realty, 2026-09-12) — "Discussed SSO questions," next step is unrelated (reporting, roadmap)
+- DRI-67178 (Vantage Telecom, 2026-09-11), DRI-76928 (Delta Freight, 2026-09-08), DRI-19269 (Bluewater Logistics, 2026-09-04), DRI-18519 (Harbor Clinics, 2026-08-08 — your own call with Ana Petrova)
+- NOT-20443 (2026-08-24, owner Tess Brown), NOT-40327, NOT-29159, NOT-55918, NOT-84082
+- SLA-94820 (2026-08-18, Tess Brown): "update on SSO questions; EU customers next week" — the closest thing to a status update, but it says nothing about what the update was
+
+**Two things worth flagging:**
+
+1. The terms "IdP-initiated," "SP-initiated," "SAML," "ACS URL," "metadata," and "certificate" return **zero** results across every system. Searches for deprecations, breaking changes, and auth release notes also came back empty.
+2. Linear has **no SSO tickets at all** — not one. If a real change had shipped to the login flow, I'd expect engineering to have a ticket. Its absence is meaningful evidence against a change having happened.
+
+**My read:** "IdP-initiated" isn't language that appears anywhere in Brightline's records. It most likely came from a customer describing their own symptom, not from an internal change announcement. The records document that SSO is a recurring *topic* of customer conversation — not that Brightline changed anything.
+
+**Suggested next step:** rather than search further here, ask the customer what specifically broke and when, then take it to Tess Brown, who owns the most recent SSO thread (SLA-94820, NOT-20443). If a change did ship, it wasn't written down anywhere I can reach — which is itself worth raising.
+
+One caveat: these records are uniformly low-detail, so it's possible substance lives in a system I don't have access to, or in someone's direct messages. I can only tell you what these five tools contain.

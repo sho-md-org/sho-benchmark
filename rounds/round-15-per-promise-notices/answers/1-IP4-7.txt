@@ -1,0 +1,30 @@
+**Cobalt Retail is the one at risk. Keystone's is aligned with the roadmap.**
+
+## The two promises
+
+| | Keystone Energy | Cobalt Retail |
+|---|---|---|
+| Record | `DRI-34564` (2026-08-03) | `CRM-38600` (2026-07-24) |
+| Who said it | Nia Cole recalled "we told them"; **Jordan Blake (AE) confirmed** — not you | **You**, to Sam Ortiz: "you'll have it by Q1 2027 as a CSV export, you have my word" |
+| Scope promised | Audit log export + streaming into Splunk | Audit log export **as a CSV export** |
+| Date promised | Q1 2027 | Q1 2027 |
+
+## Against the roadmap
+
+`NOT-20876` (Public roadmap H1 2027, 2026-06-30) lists: **"Audit log export incl. SIEM streaming: Q1 2027."**
+
+- **Keystone: matches on both axes.** Splunk is a SIEM, so "export + Splunk streaming by Q1 2027" is exactly the committed line item. Nothing extra was promised.
+- **Cobalt: matches the date, but not the scope.** The roadmap commits to export with SIEM *streaming* — it says nothing about a CSV file format. Your promise pins a specific deliverable format that the roadmap doesn't back. If the feature ships as streaming plus a JSON/API export, the roadmap lands on time and your promise still breaks. That's the risk, and it's invisible if you only diff the dates.
+
+Two things sharpen it: the wording was an unhedged personal guarantee ("you have my word"), and the note records that the customer **is planning around it**.
+
+## Caveat on both
+
+There is **no Linear ticket for audit log export at all** — searches for audit, export, SIEM, Splunk, and logs all returned empty. So the Q1 2027 date has no engineering artifact behind it in either case; the only evidence it's real is a public roadmap page from June. That's a shared exposure, and it means I can't confirm the CSV format question either way — only that nothing commits to it.
+
+## What I'd do
+
+1. Get the format question answered by whoever owns the feature — does the Q1 2027 scope include a CSV export, or streaming plus a structured export only? This is the single fact that decides whether Cobalt's promise holds.
+2. If CSV isn't in scope, re-set with Sam Ortiz now, while there are ~two quarters of runway, rather than in Q1.
+3. Confirm an engineering ticket exists for the roadmap line. If it doesn't, both promises are resting on a page, not a plan.
+4. Keystone is Jordan Blake's commitment by the record, not yours — worth confirming that ownership so the Splunk-streaming piece doesn't fall between you.

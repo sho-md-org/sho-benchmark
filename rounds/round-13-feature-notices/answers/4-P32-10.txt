@@ -1,0 +1,32 @@
+## Harbor Clinics QBR Brief — call week of Sep 28, 2026
+
+### Where things stand
+Activity is steady and broad, but thin on substance in the record — most touchpoints are routine call logs with a rolling "next: follow up on X" that rarely closes:
+
+- **Most recent contact:** mobile app discussion, 2026-09-21, owner Sam Lee, next step "follow up on QBR prep" (CRM-49374) — that's this call.
+- **Recurring threads:** integrations (CRM-97969 Apr 25, CRM-75336 Jul 25, both Omar Haddad), audit prep (CRM-35862 May 14 → DRI-20995 Aug 19), onboarding (CRM-48825 Jul 24), offline and dashboards (CRM-39320, CRM-64035, both Aug 26).
+- **Other open topics:** notifications (CRM-73374), sandbox (CRM-36695), latency (CRM-94239, your own), roadmap (CRM-41255).
+- **Last QBR prep record:** CRM-45542 (Apr 8, owner Sam Lee).
+
+Owners are scattered across Sam Lee, Leo Grant, Omar Haddad, Ana Petrova, Priya Shah, Jordan Blake, and Tess Brown. No single thread shows a documented close.
+
+### Open commitments
+- **Data retention controls — by Q1 2027.** Ines Park raised it at the May 15 sync and Jordan Blake (AE) confirmed on the call (DRI-80868). No later change to this commitment in the record, so it's safe to reaffirm as stated.
+
+That is the only formal dated commitment on this account. Everything else is a follow-up, not a promise.
+
+### Risks
+1. **Audit prep keeps recycling.** It appears May 14 (CRM-35862, "next: follow up on exports"), again as the next step from onboarding in July (CRM-48825), and again in the Aug 19 support-queue meeting with you and Leo Grant (DRI-20995) — four months without a recorded close. Expect Harbor to ask.
+2. **EU data residency is an unanswered ask.** Ada Moss raised it Jun 9; the recorded position is "exploring, no dates yet" (CRM-89966). Three months later there's still nothing. This is the most likely question to put you on the spot, especially paired with data retention — both are compliance-driven.
+3. **No single owner.** Seven different owners across a dozen touchpoints, with follow-ups that chain sideways (integrations → webhooks → search) rather than resolving. Harbor may perceive drift.
+4. **Thin QBR substance.** There's no usage, health-score, or renewal data in what I can see — you may want to pull that separately before the call.
+
+### What to say
+- **Open with the one firm thing.** "Data retention controls remain on track for Q1 2027" — reaffirm it directly; it's confirmed and unchanged (DRI-80868).
+- **Get ahead of audit prep.** Don't wait for Ines to raise it. Name the specific open item (exports) and give a date, or say plainly you'll come back with one this week. Coordinate with Leo Grant beforehand.
+- **Be straight on EU data residency.** The only supportable line is that it's still under exploration with no committed date. Don't soften that into an implied timeline — it's the kind of thing Ada will hold you to. Offer a date by which you'll have a real answer instead.
+- **Propose a single owner and a consolidated tracker** for the open threads. It costs you nothing and directly addresses the drift risk.
+- **Come with a question, not just a report:** ask what's driving the retention and residency requirements (likely an external audit or regulator). Knowing the deadline behind the ask changes how you prioritize.
+
+### One item outside this brief
+Two of your own commitments on *other* accounts are flagged as needing confirmation before you restate them: **advanced analytics** to Lena Fox at Pinecrest Realty (SLA-93532) and **audit log export** to Lena Fox at Granite Insurance (SLA-77342). Check with the product owner on each before reaffirming — not relevant to Harbor, but worth clearing while you're in QBR mode.

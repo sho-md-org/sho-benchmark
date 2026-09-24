@@ -1,0 +1,72 @@
+I've pulled all 26 Cobalt Retail records across the systems. One important thing to flag before the brief itself.
+
+## Data caveat — read this first
+
+Every Cobalt Retail record in CRM and Drive is a **one-line stub**. There is no account record with ARR, renewal date, seat count, health score, NPS value, named customer-side contacts, or any documented risk. Slack and Linear return **zero** Cobalt mentions (searched "Cobalt", "Cobalt Retail", and topic terms).
+
+So I can give you a reliable **timeline and commitment-tracking** brief. I cannot give you the commercial numbers a QBR normally opens with — those aren't in any system, and I'm not going to invent them. What to do about that is in the last section.
+
+---
+
+# Cobalt Retail — QBR Brief
+
+## Where things stand
+
+26 touchpoints Apr 1 – Sep 26, 2026. Steady cadence, no gaps longer than ~3 weeks. Topics cluster into four threads:
+
+| Thread | Records |
+|---|---|
+| Platform limits / performance | Rate limits (`CRM-12380`, `DRI-33978`), latency (`CRM-49779`), search (`CRM-36268`) |
+| Onboarding / integrations | `CRM-49779`, `CRM-16603`, `DRI-18657`, webhooks `CRM-98822`, exports `DRI-41266` |
+| Commercial | Pricing `CRM-87224`, billing `CRM-94849` / `DRI-75222`, audit prep `DRI-75222` |
+| Advocacy | Case study `DRI-20022`, `DRI-95243` |
+
+**Two signals worth your attention:**
+
+1. **The most recent CRM entry flags churn.** `CRM-12380` (Sep 12, rate limits, owner Priya Shah) logs the next step as *"follow up on churn."* That is the single most recent and most serious note on the account, and nothing has been logged against it in the 12 days since.
+
+2. **You are barely on this account.** You own exactly two of eleven CRM records, both from the spring (`CRM-70221` Apr 20, `CRM-36268` May 22). Priya Shah owns four and holds the most recent. Omar Haddad owns the QBR prep docs (`NOT-42571`, `NOT-52051`). You'll want to sync with Priya before the call — she has context you don't.
+
+## Open commitments
+
+Tracing each logged "next step" against whether a matching record actually appeared afterward:
+
+**Still open:**
+
+- **Security review — dropped, and it's yours.** You logged "follow up on security review" twice (`CRM-70221` Apr 20, `CRM-36268` May 22). There is no Cobalt security review record anywhere. For contrast, ten other accounts have one on file (`CRM-52968`, `CRM-30354`, `CRM-17769`, `CRM-80369`, others). This is five months overdue and traceable to you. Expect it to come up.
+- **Churn follow-up** — `CRM-12380`, Sep 12, unactioned.
+- **Pricing follow-up** — `CRM-35990` (Aug 1) points to pricing; no pricing record exists after `CRM-87224` (Jun 23).
+- **SSO questions** — raised in `DRI-20022` (Jul 27); no follow-up record.
+
+**Closed, but slowly:**
+
+- Case study: committed Apr 1 (`CRM-98822`), delivered Jul 27 / Aug 5 — ~4 month lag.
+- Mobile app: committed Jun 9 (`CRM-92187`), first meeting `DRI-72283` — ~3.5 month lag.
+- Rate limits and audit prep both closed on a normal cycle.
+
+⚠️ `DRI-72283` (mobile app) is dated **2026-09-26 — two days in the future.** Treat it as scheduled, not held. If your call is after the 26th, that meeting is a live input you should get notes from first.
+
+## Risks
+
+- **Churn flag is unworked.** Twelve days open on the account's most recent and most serious note.
+- **Security review is the credibility risk.** A five-month-old, twice-logged, never-delivered commitment on a security item — with peer accounts all serviced — is the thing most likely to put you on the back foot.
+- **Follow-through pattern.** Four of eleven logged next steps have no downstream record; two more closed only after 3–4 months. If Cobalt has been tracking their asks, the pattern is visible from their side too.
+- **Account knowledge is fragmented** across Priya, Omar, Tess and you, with no consolidated account record anywhere.
+
+## What to say
+
+**Lead with the security review.** Don't wait to be asked. "I owe you a security review — I flagged it in April and it didn't get scheduled. Here's the date." Naming it first converts your weakest point into a credibility deposit.
+
+**Then close the open loops explicitly:** pricing, SSO, and the mobile app discussion. Give each a named owner and a date rather than a status.
+
+**Ask, don't assert, on health.** Since no NPS value, usage data, or renewal date exists on file, avoid any "we're seeing strong adoption" framing — you have nothing behind it. Use the QBR to *collect*: how are the rate limits landing, did the audit prep clear, what's the offline/mobile priority for next quarter.
+
+**Handle churn as listening, not rebuttal.** Someone logged a churn concern on Sep 12. Get Priya's read before the call. In the room, open space for it rather than pre-defending.
+
+## Before the call — three things
+
+1. **Ask Priya Shah what "follow up on churn" in `CRM-12380` refers to.** This is the highest-value fifteen minutes you can spend, and it's unrecoverable from the tools.
+2. **Get renewal date, ARR, seats, and NPS from billing/finance.** Not in CRM, Drive, Notion, Slack, or Linear — I checked all five.
+3. **Get notes from `DRI-72283`** if that Sep 26 mobile app meeting happens before your call.
+
+Send me Priya's readout and the commercial numbers and I'll build the full QBR deck with the substance filled in.

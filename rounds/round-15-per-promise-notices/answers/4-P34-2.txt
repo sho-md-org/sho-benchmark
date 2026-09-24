@@ -1,0 +1,51 @@
+## Aster Health — QBR Brief
+
+**Caveat up front:** the record trail for this account is unusually thin. Most CRM and Drive entries are topic headers with a next-step pointer and no substance (e.g. `CRM-97035`: "Discussed support queue. Next: follow up on dashboards."). I have no ARR, seat count, usage, NPS score, or ticket volume in anything I can see. Everything below is drawn from what's there; the gaps are real gaps, not things I skipped.
+
+### Where things stand
+
+The one concrete, verifiable win is your headline:
+
+- **Higher API rate limits — delivered.** Omar Aziz raised this in the June sync and Priya Shah (AE) confirmed the October commitment (`DRI-86231`). Crane shipped 2026-09-20, raising limits for all paid plans (`SLA-26281`). This landed **ahead of the promised date** and carries no caveats — say it plainly.
+
+Recurring themes across the year, by thread:
+
+| Thread | Records | Read |
+|---|---|---|
+| Dashboards | `CRM-57156` (Apr), `CRM-75476` (Jul), `DRI-75615` (Sep 17) | Live and still active — most recent touch on the account |
+| Search | `DRI-70983` (May), `DRI-36553` (Jul), `DRI-75615` (Sep) | Persistent, discussed alongside roadmap |
+| Support queue | `CRM-88906` (Apr), `CRM-97035` (Jun), `DRI-53905` (Sep 10) | Recurs over five months, now next to pricing |
+| Exports | `CRM-45213`, `CRM-76005`, `DRI-23711` (all Apr) | Clustered in April, then silent |
+| Sandbox | `DRI-86962` (Apr), `CRM-62644`, `CRM-64767` (May) | Went quiet after May |
+| NPS | `DRI-30445` (Jul), `DRI-36735` (dated Sep 28) | `DRI-36735` is dated four days out — a scheduled session, not history |
+| Audit prep | `CRM-45213` → `DRI-48323` (Jun), `DRI-36735` | Compliance workstream, still open |
+
+### Open commitments
+
+**Aster Health has exactly one tracked commitment, and it's closed.** No outstanding promises to this account appear anywhere I can see. Don't walk into the room expecting to defend a backlog — but also don't invent forward-looking commitments to fill the space.
+
+Separately, and *not* for this call: three commitments elsewhere in your book are flagged as possibly affected by a decision I can't see — Advanced analytics to Pinecrest Realty (`SLA-93532`) and Audit log export to Granite Insurance (`SLA-77342`), both **yours**, plus SCIM provisioning to Umber Studios (`SLA-12035`, Jordan Blake). Check with the product owner before you reaffirm any of those to anyone. Raising it here because audit and analytics topics are live with Aster too, and it would be easy to carry a stale roadmap line across accounts.
+
+### Risks
+
+1. **Churn is the recurring next-step, from three unrelated directions.** Latency (`CRM-68765`), SSO questions (`DRI-46065`), and audit prep (`DRI-48323`) all route to churn follow-up. Three separate entry points converging on the same concern is the strongest signal in this data. Nothing records what came of any of them.
+2. **Pricing has entered the conversation** (`DRI-53905`, Sep 10) — and it's paired with support queue, not expansion. Pricing pressure discussed next to a service complaint is the combination to prepare for.
+3. **Owner churn on our side.** Leo Grant, Sam Lee, Dana Ortiz, Jordan Blake, Priya Shah, and you all appear as owners or attendees across six months. The customer has likely explained the same things repeatedly.
+4. **Dropped threads.** Exports and sandbox both stop after a burst of activity with no resolution recorded. Assume they're unresolved until Omar says otherwise.
+5. **Contact identity is inconsistent.** `DRI-86231` names **Omar Aziz**; the Drive notes consistently name **Omar Haddad**. Either two people or a data error — confirm before the call so you don't credit the rate-limit ask to the wrong person.
+
+### What to say
+
+**Open with the win, specifically.** "You asked for higher API rate limits by October. They went live September 20th, across all paid plans." A dated, delivered commitment is your strongest asset and the only thing here you can state without hedging.
+
+**Then ask, don't present.** With this little recorded substance, a polished status deck will expose how little we retained. Use the QBR to rebuild the picture: where did exports and sandbox land? Is the support queue still a problem? What's driving the pricing question?
+
+**Name the handoffs before they do.** Acknowledging six months of rotating owners costs you little and buys credibility for the rest.
+
+**Go into audit prep and SSO deliberately.** Both are open and both were tagged with churn concern. These are the likeliest places a renewal risk is hiding.
+
+**Commit to nothing on the roadmap.** No dates on analytics, audit log export, or SCIM until you've cleared them with the product owner — the flags above are exactly that hazard. "Let me confirm and come back to you this week" is the right answer in the room.
+
+**Close on the compliance calendar.** Audit prep recurs from June through the session dated Sep 28; owning that timeline is concrete value you can offer without a roadmap promise.
+
+Want me to turn this into a slide outline or a one-page agenda you can send Omar ahead of the call?

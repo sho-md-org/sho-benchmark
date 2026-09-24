@@ -1,0 +1,22 @@
+## Short answer: I can't find any change to Advanced analytics — so there's no decision-maker to name.
+
+I searched Slack, Notion, Linear, Drive, and the CRM for a change, re-tier, deprecation, or date move on Advanced analytics. Nothing turned up.
+
+**What the records actually say about Advanced analytics:** exactly one substantive mention — the public roadmap, `NOT-20876` (Notion, 2026-06-30), lists **Advanced analytics: Q2 2027**. That date is unchanged in every version I can see, and the entry has no decision or owner attached to it.
+
+The many other "Analytics" records across tools (e.g. `SLA-91143`, `SLA-60376`, `NOT-75315`, `CRM-70722`, `CRM-62518`) are routine status pings and customer call notes — "update on analytics," "discussed analytics." None describes a change to the feature, and none records a decision.
+
+**A likely source of the confusion.** There *was* a recent roadmap change announced, but it wasn't Advanced analytics:
+
+> `SLA-17908` (#general, 2026-09-19): "Heads up: Sandbox environments (Rail) slip to Q2 2027. Please update any customers expecting them this year."
+
+Sandbox environments moved from Q4 2026 to **Q2 2027** — which lands on the same quarter Advanced analytics has always been in. If someone mentioned "Q2 2027" in passing, the two items are easy to conflate. Worth noting: even for that change, the Slack post names no decider. It's an unattributed heads-up, so I couldn't tell you who made that call either.
+
+**Two things to be careful about before you act on this:**
+
+- If a customer has been told Advanced analytics changed, that appears to be inaccurate — it's still Q2 2027 per `NOT-20876`.
+- If the change you heard about is real, it was decided somewhere these tools don't capture (a meeting, email, or exec channel). I'd suggest asking whoever raised it where they heard it.
+
+One caveat on my confidence: the search results skew heavily toward short, templated records, so a decision could exist in a system I can't reach. What I can say firmly is that nothing in Slack, Notion, Linear, Drive, or the CRM documents a change to Advanced analytics or attributes one to anyone.
+
+Want me to dig into the Sandbox/Rail slip instead and try to trace who owned that decision?

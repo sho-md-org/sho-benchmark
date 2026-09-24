@@ -1,0 +1,49 @@
+## Vantage Telecom — QBR brief
+
+**⚠️ Read this first: do not reaffirm the SSO date on the call.**
+
+The one hard commitment on this account is flagged in Sho. Priya Shah (AE) told Ines Park at the June QBR: *"you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word"* (CRM-31062). Sho reports that a decision exists which I can't see and which may or may not change that promise — I can't tell you what it is or whether the date still holds.
+
+**Action before the call:** ask the SSO product owner (and loop in Priya, since it was their word) whether Q1 2027 including IdP-initiated Okta still stands. Until you have that answer, do not repeat the date to Ines. Note that NOT-20876 (public roadmap H1 2027, dated 2026-06-30) still lists "SSO (SAML), SP- and IdP-initiated: Q1 2027" — that's a June document and is not confirmation that the commitment is current.
+
+---
+
+### Where things stand
+
+Coverage is broad but the records are thin — mostly one-line call logs, no health score, ARR, or renewal date in anything I can see.
+
+- **SSO is the live thread and it's accelerating.** Three touches in the last two weeks: DRI-67178 (2026-09-11, Dana Ortiz + Omar Haddad, SSO questions + NPS) and CRM-57082 (2026-09-19, owner Priya Shah, next step "follow up on roadmap"). Ines was described in June as "planning around it."
+- **Churn is being discussed internally.** DRI-14442 (2026-09-06, Dana Ortiz + Tess Brown) is explicitly churn + QBR prep. That's the most recent internal-only signal and it predates the QBR by three weeks.
+- **Recent working topics:** dashboards (CRM-65747, 2026-09-13, you own it, next step exports), rate limits and hosting (DRI-89702, 2026-08-05, you + Omar Haddad), support queue (DRI-10836, 2026-08-18), trial conversion (DRI-77676, 2026-08-11).
+- **Earlier in the year:** pricing (CRM-36270), billing (CRM-24363, CRM-92524), search (CRM-74774, CRM-84868), reporting (CRM-68417), webhooks (DRI-57024), integrations + audit prep (DRI-81968), onboarding (CRM-15845), NPS (CRM-37016).
+
+Stakeholders on their side: Ines Park (pushing SSO), Omar Haddad (technical — rate limits, support queue, SSO). Internally: Priya Shah (AE, owns the SSO relationship and the promise), Tess Brown and Dana Ortiz (churn/NPS), Jordan Blake (pricing).
+
+### Open commitments
+
+| Commitment | Owner | Due | Status |
+|---|---|---|---|
+| SSO (SAML) incl. IdP-initiated Okta login, to Ines Park | Priya Shah (CRM-31062) | Q1 2027 | **Flagged — verify with product owner before restating** |
+
+No other commitments to Vantage Telecom appear in what I can see. Separately, two of your own commitments on *other* accounts carry the same kind of flag and are worth clearing while you're at it: Advanced analytics/Osprey to Lena Fox at Pinecrest (SLA-93532, spring release) and Audit log export to Lena Fox at Granite Insurance (SLA-77342, Q1 2027).
+
+### Risks
+
+1. **SSO date risk.** A promise made with unusual emphasis, to a customer explicitly planning around it, that Sho has flagged. If the date has moved, discovering it on the call — or worse, reaffirming it and retracting later — is the bad outcome. Resolve before Tuesday.
+2. **Churn signal.** DRI-14442 exists and you weren't in it. Ask Dana or Tess what prompted it before you walk in; the QBR framing should match whatever they're seeing.
+3. **Renewal timing unknown.** Nothing I can see records ARR or renewal date. If the renewal is near, the SSO question is a renewal question, not a roadmap question.
+4. **Thin record quality.** Every Vantage record is a one-line summary. Anything substantive from those calls lives in people's heads — budget an extra prep conversation with Priya and Omar.
+
+### What to say
+
+**On SSO — if the product owner confirms the date holds:** restate it plainly, including IdP-initiated Okta, and offer a written implementation timeline so Ines can finish planning around it.
+
+**If the date has moved or you haven't heard back:** don't improvise a new date and don't repeat the old one. Say something like — *"SSO is the top item on my list and I know you're planning around it. I'm getting you a confirmed timeline directly from the product owner rather than a secondhand answer, and I'll have it to you in writing by [date]."* Then actually send it. Ines will take a short wait better than a date that slips twice.
+
+**On the rest of the agenda:**
+- Open with value delivered this year — onboarding through to dashboards and reporting now in production use.
+- Close the loop on dashboards → exports; that's your own open next step from CRM-65747.
+- Ask Omar directly about rate limits and support queue volume (DRI-89702, DRI-10836) — if the support queue is driving the churn conversation, you want it surfaced by you, not by them.
+- Ask Ines what "success by the next QBR" looks like, and get it in writing.
+
+**Don't:** give a roadmap date for anything else from NOT-20876 either. It's a June document; treat every date in it as needing confirmation before it goes to a customer.

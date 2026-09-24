@@ -1,0 +1,23 @@
+## Short answer: no one, on the record
+
+I can't attribute the change to a person, because there is no decision record for Advanced analytics anywhere in Slack, Notion, Linear, CRM, or Drive. Here is everything that exists on it:
+
+**1. Your commitment to the customer** — `SLA-93532` (Slack, 2026-06-28)
+> Maya Chen (CS): told Lena Fox at Pinecrest Realty we'd have Advanced analytics (Osprey) in the spring release so they can finish their rollout
+
+**2. The published roadmap** — `NOT-20876` "Public roadmap H1 2027" (Notion, 2026-06-30)
+> Advanced analytics: **Q2 2027**
+
+That page lists no owner, no author, and no revision history. There is no earlier roadmap version in Notion that shows a different date for Advanced analytics, so there's nothing to diff a "change" against.
+
+**Also worth checking your premise:** Q2 2027 is April–June — i.e. spring 2027. The roadmap date and what you told Lena Fox may actually agree, and what looks like a change may not be one. Before you chase down a decision-maker, it's worth confirming which release you and Lena Fox each understood "the spring release" to mean.
+
+**What I searched and found nothing in:**
+- Linear: zero results for "Osprey", "analytics", or scope/deferral terms — no ticket for this feature at all
+- "Osprey" appears exactly once company-wide, in your own message `SLA-93532`
+- The Analytics, Pricing, and Roadmap threads in Slack/Notion (e.g. `SLA-91143`, `SLA-60376`, `NOT-75315`, `NOT-15543`, `SLA-48472`) are one-line status stubs — "update on analytics; NPS next week" — with no substance on scope or dates
+- Pinecrest-specific records: `CRM-29577` (Analytics, 2026-06-14, owner Dana Ortiz), `CRM-82753` (Roadmap, 2026-07-28, owner you) — both generic call logs with no Advanced analytics detail
+
+**Who to ask.** Since `NOT-20876` is unattributed, the nearest owners of adjacent roadmap pages are **Jordan Blake** (`NOT-15543`, 2026-07-27) and **Priya Shah** (`NOT-72642`, 2026-06-17). Neither page mentions Advanced analytics, so treat those as leads, not answers.
+
+The real exposure here isn't the missing name: you have a verbal commitment to a named customer contact backed only by an unowned line on a public roadmap page, with no Linear ticket behind it. I'd get a written owner and date before Pinecrest plans their rollout around it.

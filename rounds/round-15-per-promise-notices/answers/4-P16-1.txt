@@ -1,0 +1,44 @@
+## Keystone Energy — QBR Brief
+
+**⚠️ Read this first:** The headline commitment for this account — **audit log export with SIEM/Splunk streaming by Q1 2027** (DRI-34564) — carries a flag. There may be a change to that promise that isn't visible to me. **Do not reaffirm the Q1 2027 date on the call until you've checked with the product owner.** The public roadmap (NOT-20876) still shows Q1 2027, but that's a published artifact, not confirmation that the commitment still holds.
+
+### Where things stand
+
+Keystone is an active, high-touch account — roughly a dozen logged touchpoints since April across multiple owners (you, Jordan Blake, Omar Haddad, Sam Lee, Tess Brown, Priya Shah).
+
+The dominant thread all year is **security/audit readiness**: audit prep appears repeatedly from May through August (CRM-90377, CRM-17727, CRM-56742, DRI-85107, DRI-48005, DRI-84961), alongside three security review calls (CRM-25431, CRM-64056, CRM-30791). Your own QBR prep call (CRM-93344, 2026-08-25) closed with "follow up on security review" as the next step — that's still the open loop going into this QBR.
+
+Secondary threads: integrations (DRI-31273, with Sam Lee), onboarding (CRM-15788, CRM-86748), and platform health — rate limits (CRM-60405), latency (CRM-23178), uptime (CRM-19012, 2026-09-23, most recent record). Pricing is also live (CRM-78617, Jordan Blake). Your Slack note SLA-13802 (2026-09-19) flags roadmap as the topic for this week.
+
+### Open commitments
+
+| Commitment | Source | Made by | Status |
+|---|---|---|---|
+| Audit log export incl. SIEM streaming into Splunk, by Q1 2027 | DRI-34564 | Company, confirmed by Jordan Blake (AE) to Nia Cole | ⚠️ Flagged — confirm with product owner before restating |
+
+That's the only commitment on record made *to* Keystone. Note that the account's whole audit-prep workstream leans on it, which is what makes the flag material rather than procedural.
+
+**Also yours, other accounts** (not for this call, but both flagged the same way — worth clearing in the same product conversation): advanced analytics by spring release to Lena Fox / Pinecrest Realty (SLA-93532), and audit log export by Q1 2027 to Lena Fox / Granite Insurance (SLA-77342).
+
+### Risks
+
+1. **Audit log export date exposure.** Nia Cole raised this unprompted on 2026-08-03 and Jordan confirmed it in the room. They are building their audit program around it. If anything has shifted, this QBR is where it surfaces — and you don't want to find out by reaffirming first.
+2. **Ownership churn.** Nine different internal owners across the logged calls. Follow-ups chain from one topic to the next without visible closure, so "next: follow up on X" items may be open that neither side is tracking.
+3. **No closure on the security review.** It's been the trailing action since at least April and again after your August QBR prep. Expect them to ask for a status.
+4. **Platform-health drumbeat.** Rate limits → latency → uptime recur across the year. Individually minor, collectively a reliability narrative they may raise.
+5. **Pricing is in play** (CRM-78617) alongside a flagged roadmap commitment. Avoid letting a date question become a commercial concession.
+
+### What to say
+
+**Before the call — do this first:** ask the product owner whether the Q1 2027 audit log export + SIEM streaming commitment still holds. That single answer determines your script.
+
+**On the call:**
+
+- **Open on the audit/security workstream** — it's their priority and the through-line of the year. Lead with what's closed, not what's pending.
+- **On audit log export:** if the product owner has confirmed, restate Q1 2027 plainly. If you haven't heard back or the answer is uncertain, say: *"Audit log export with SIEM streaming is on our published roadmap for Q1 2027. I want to give you a confirmed delivery view rather than repeat a date from memory — let me come back to you with that this week."* Then actually come back. Don't improvise a new date, and don't lean on the public roadmap as a promise.
+- **Close the security review loop** — bring a status or a named owner and date, since it's been the open item since April.
+- **Get ahead of platform health** — acknowledge the rate-limit/latency/uptime thread proactively with current numbers; it's better volunteered than extracted.
+- **Keep pricing separate from roadmap.** If they link the two, note that Jordan owns the commercial conversation and take it offline.
+- **Ask for their 2027 audit timeline** — knowing their internal deadline tells you how much slack exists if the export date does move.
+
+One gap worth noting: the records I can see are mostly one-line call logs with no substantive detail, and there's no renewal date, contract value, or health score in what's available to me. If you want ARR and renewal timing in the brief, point me at where that lives.

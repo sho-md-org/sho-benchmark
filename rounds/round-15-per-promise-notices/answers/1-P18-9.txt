@@ -1,0 +1,100 @@
+## Cobalt Retail — QBR Brief
+
+**Prepared 2026-09-24 · 20 records reviewed (11 CRM, 10 Drive, Slack scanned)**
+
+### ⚠️ Read this first: evidence quality
+
+Every Cobalt Retail record in CRM and Drive is a one-line stub — topic, owner, and a "next step," with no content behind it. There are **no** ARR figures, renewal dates, health scores, usage metrics, ticket counts, or named customer-side contacts anywhere in the tools. Linear and Notion return nothing for this account at all.
+
+So this brief gives you the **relationship timeline and the commitment ledger**, which the data genuinely supports. It cannot give you the numbers slide. I've flagged what you need to source yourself at the bottom rather than inventing plausible figures.
+
+---
+
+### Where things stand
+
+Steady, high-frequency engagement: 11 logged customer calls across ~6 months (2026-04-01 → 2026-09-12), plus 9 internal working sessions. That cadence is healthy — this is not a quiet account.
+
+Coverage is spread across five owners, which is worth noting: Priya Shah (5 calls), Tess Brown and Omar Haddad (2 each), you (2 — `CRM-70221`, `CRM-36268`). You haven't personally been on a Cobalt call since **2026-05-22** (`CRM-36268`), four months ago. If they expect you as the relationship lead, that gap may come up.
+
+**Recurring themes**, by touch count: onboarding (3), rate limits (3), case study (3), pricing (3), dashboards (2), mobile app (2), billing/audit (2).
+
+**Two items are dated after today** — treat as upcoming, not history:
+- `DRI-72283` — Mobile app session, 2026-09-26, Sam Lee + Priya Shah
+- `SLA-55835` — Omar Haddad: "update on QBR prep; NPS next week"
+
+---
+
+### Open commitments
+
+I traced each CRM "next step" forward to see whether a later record picked it up.
+
+**Closed / picked up:**
+
+| Commitment | From | Landed in |
+|---|---|---|
+| Case study | `CRM-98822` (04-01, Priya) | `DRI-20022`, `DRI-95243` |
+| Rate limits | `CRM-24697` (05-26), `CRM-16603` (06-15) | `DRI-33978`, `CRM-12380` |
+| Mobile app | `CRM-92187` (06-09, Tess) | `DRI-82140`, `DRI-72283` |
+| Audit prep | `CRM-87224` (06-23, Priya) | `DRI-75222` |
+| Billing | `CRM-94849` (07-23, Priya) | `DRI-75222` |
+
+**Still open — no follow-up record exists:**
+
+1. **Security review — yours, twice, still open 5 months.** Committed in `CRM-70221` (04-20) and again in `CRM-36268` (05-22). Both owned by you. No security-review record exists in any tool. This is the most exposed item on the list.
+2. **Latency** — `CRM-49779` (04-27, Priya). Never revisited. 5 months.
+3. **Churn follow-up** — `CRM-12380` (09-12, Priya). See risks.
+4. **Pricing** — `CRM-35990` (08-01, Omar). Pricing surfaced 4 days later in `DRI-95243`, but that was an internal session, not a customer conversation. Treat as unclosed with the customer.
+
+---
+
+### Risks
+
+**1. The most recent call flags churn.** `CRM-12380` (2026-09-12, rate limits, Priya Shah) closes with "follow up on churn." That is the newest record on the account and nothing has followed it. Whatever prompted that note is unresolved going into your QBR. **Talk to Priya before the call** — this single line is the highest-signal item in the dataset and you don't want to hear it first from the customer.
+
+**2. Rate limits are a chronic, unresolved thread.** Three touches across five months (`CRM-24697` 05-26 → `DRI-33978` 07-25 → `CRM-12380` 09-12), ending with a churn flag. This looks like a technical constraint they keep raising without getting a resolution.
+
+**3. An unclosed compliance/security cluster.** *Inference, not stated:* separate records touch security review (`CRM-70221`, `CRM-36268`), SSO questions (`DRI-20022`), EU customers (`DRI-33978`), hosting (`DRI-35074`), and audit prep (`DRI-75222`). Individually minor; together they read like a security/compliance evaluation that never got a closing artifact. If they're prepping an internal audit or expanding into EU, your two open security-review commitments are blocking.
+
+**4. Onboarding recurred three times** (`CRM-49779` 04-27, `CRM-16603` 06-15, `DRI-18657` 06-19). Revisiting onboarding two and a half months in usually means a rollout stalled or a second team started from scratch. Worth confirming adoption actually landed.
+
+**5. Coverage fragmentation.** Five owners, no single thread-holder. It's the likeliest reason four commitments quietly lapsed.
+
+---
+
+### What to say
+
+**Open by closing your own loops — don't wait to be asked.**
+> "Before we look forward: I owe you a security review from the spring and we owe you a clear answer on latency. Here's where each stands, and here's the date I'm committing to."
+
+Bring real dates. Two lapsed commitments that are *yours* is the credibility risk in this meeting.
+
+**Lead the middle with rate limits.**
+> "Rate limits have come up in three conversations since May. I don't want a fourth. Walk me through what you're hitting — I want to leave today with either a configuration change or an engineering commitment."
+
+Framing it as *you* raising it converts the account's biggest irritant into evidence you're tracking them.
+
+**Address churn obliquely, not head-on.**
+Don't say "I heard you might churn." Instead open the space:
+> "Honest question — what would make you reconsider Brightline over the next year? I'd rather know now than at renewal."
+
+**Trade on the case study.** Three sessions have gone into it (`DRI-20022`, `DRI-95243`, `DRI-58616`). Either land it as a concrete ask, or — better given the open items — offer to hold it until their blockers clear. Declining to cash in the reference while you still owe them things reads as good faith.
+
+**Close with named ownership.** Every lapse traces to diffuse ownership. End with: one owner, one date, per item.
+
+---
+
+### Before the call — you'll need to source these
+
+The tools don't hold them:
+
+- ARR, renewal date, contract terms *(nothing in CRM)*
+- **Priya Shah, re: the churn note in `CRM-12380`** — highest priority
+- Current NPS — Omar says results land this week (`SLA-55835`); last discussed 2026-06-09 (`CRM-92187`)
+- Product usage / adoption trend
+- Open support tickets and SLA breaches
+- Customer-side attendees and exec sponsor *(no contact names in any record)*
+- Outcome of the 09-26 mobile app session (`DRI-72283`) — it happens before your call
+
+One caveat: the Slack "QBR prep" threads (`SLA-55835`, `SLA-47639`, `SLA-40675`, and six others) name no account, so I can't confirm they're about Cobalt Retail. I haven't treated them as Cobalt evidence beyond the NPS timing note.
+
+Want me to draft the agenda and talk track as a document you can bring into the call?

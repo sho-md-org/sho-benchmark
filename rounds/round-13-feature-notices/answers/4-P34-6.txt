@@ -1,0 +1,51 @@
+## Aster Health — QBR brief
+
+**Caveat up front:** the records for this account are mostly one-line call logs — no ARR, renewal date, usage, or ticket-volume data is available in what I can see. The themes below are solid; the quantitative section of your QBR you'll need to pull from elsewhere.
+
+### Where things stand
+
+Recurring threads across the last six months:
+
+| Theme | Records |
+|---|---|
+| Sandbox | CRM-62644 (5/10), CRM-64767 (5/17), DRI-86962 (4/12) |
+| Audit prep | DRI-48323 (6/13), CRM-45213 follow-up, DRI-36735 |
+| Latency | CRM-16329 (6/14), CRM-68765 (6/22) |
+| Dashboards | CRM-57156 (4/19), CRM-75476 (7/21) |
+| Exports / hosting | CRM-45213, CRM-76005 (4/18), CRM-81799 (5/11) |
+| NPS | CRM-26522 (4/13), DRI-36735 (9/28) |
+
+Ownership is scattered — Ana Petrova, Leo Grant, Priya Shah, Sam Lee, Tess Brown, and you all own open threads. Worth consolidating before the call so you're not surprised by a "your colleague told us…".
+
+Note DRI-36735 (NPS + audit prep) is dated **2026-09-28** — that's next week, not history. Check whether it lands before or after your QBR; if before, its outcome should feed the brief.
+
+### Open commitments
+
+**Higher API rate limits — by October, to Omar Aziz.** Made by Priya Shah at the 6/12 sync (DRI-86231). **Shipped 2026-09-20** — Crane is live, rate limits raised for all paid plans (SLA-26281). This is your clean win; lead with it, and confirm Omar's team is actually seeing the new ceiling.
+
+That is the only commitment on record tied to Aster Health. Nothing else is outstanding to them that I can see.
+
+### Risks
+
+1. **Churn is an explicit follow-up on three separate records** — CRM-64767 (5/17), CRM-68765 (6/22), and DRI-48323 (6/13, with Dana Ortiz and Jordan Blake). Churn coming up in an audit-prep conversation is the one I'd take most seriously. Find out what drove it before you walk in.
+2. **Latency, twice in eight days** in June (CRM-16329, CRM-68765) with no recorded resolution. Assume they'll raise it; have current numbers ready.
+3. **Audit prep keeps resurfacing** from April through next week without closing out. Likely a compliance deadline on their side that you should name explicitly.
+4. **Fragmented ownership** across six internal people — a coherent single-owner story would help.
+
+### What to say
+
+- Open on rate limits: promised by October, delivered 9/20, ahead of commitment.
+- Ask directly what's behind the churn signal rather than waiting for it to surface.
+- On latency: bring data, own it, give a specific next step.
+- On audit prep: ask what their deadline is and what they need from Brightline to hit it — turn a recurring thread into a closed action.
+
+**One thing to avoid:** don't give Aster a forward-looking date on **audit log export**. There's a flag on that feature indicating a change I can't see may affect committed timelines. Check with the product owner before you commit to anything there.
+
+### Separately — two of your own commitments need attention
+
+Not Aster, but both are yours and both are flagged:
+
+- **Advanced analytics (Osprey) → Lena Fox, Pinecrest Realty, spring release** (SLA-93532)
+- **Audit log export → Lena Fox / Granite Insurance, Q1 2027** (SLA-77342)
+
+Both carry notices that a decision I can't see may affect whether the promise still holds. Confirm with the product owner before you reaffirm either to the customer. Worth doing this week, since Pinecrest is finishing a rollout on the strength of that date.

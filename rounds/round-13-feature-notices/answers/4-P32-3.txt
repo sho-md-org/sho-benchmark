@@ -1,0 +1,41 @@
+# Harbor Clinics — QBR Brief
+
+**Prepared 2026-09-24 · Account contacts seen in records: Ines Park, Ada Moss**
+
+## Where things stand
+Steady, high-touch engagement all year — roughly monthly touchpoints across a wide surface area, with no escalation or churn signal in any record I can see.
+
+| Theme | Last touch | Owner |
+|---|---|---|
+| Mobile app | 2026-09-21 (CRM-49374) | Sam Lee |
+| Support queue | 2026-08-19 (DRI-20995) | Leo Grant / Maya |
+| Exports | 2026-08-07 (DRI-88564) | Dana Ortiz |
+| Integrations / webhooks | 2026-07-25 (CRM-75336) | Omar Haddad |
+| Onboarding | 2026-07-24 (CRM-48825) | Priya Shah |
+| Sandbox | 2026-06-13 (CRM-36695) | Jordan Blake |
+| Latency | 2026-06-02 (CRM-94239) | Maya |
+| Audit prep | 2026-05-14 (CRM-35862) | Leo Grant |
+
+Recurring threads that never fully closed in the record trail: **audit prep** (the "next step" on three separate calls — CRM-45542, CRM-48825, DRI-20995) and **exports** (CRM-82586, DRI-68515, DRI-88564). Those are the two the customer keeps returning to.
+
+## Open commitments
+**Data retention controls — by Q1 2027.** Committed by Jordan Blake (AE); Ines Park raised it at the 2026-05-15 sync and Jordan confirmed it there (DRI-80868). No later change to that promise in anything I can see, and the public roadmap (NOT-20876, 2026-06-30) still shows Q1 2027. **Safe to reaffirm as-is.**
+
+That's the only tracked commitment to this account.
+
+## Risks / watch items
+1. **EU data residency expectation gap.** On 2026-06-09 Ada Moss asked and we told them "exploring, no dates yet" (CRM-89966). Two weeks later the public roadmap listed EU data residency for Q1 2027 (NOT-20876). Harbor may arrive with the roadmap date in hand while our last direct word to them was "no dates." Decide before the call whether you're giving them Q1 2027 — confirm with the product owner first rather than improvising live.
+2. **Audit prep keeps resurfacing** without a visible resolution. If they're driving toward a compliance audit, the retention-controls and export timelines are load-bearing for them, not nice-to-haves.
+3. **Ownership sprawl.** Eight different owners across ten touchpoints. Harbor has no single consistent voice from us; worth naming yourself as the through-line at the QBR.
+4. **Churn-risk reporting starts in October** (SLA-40138) — you won't have that data for this call.
+
+## What to say
+- **Open with continuity, not features:** monthly engagement all year across mobile, integrations, exports, and support queue; propose yourself as single point of contact going forward.
+- **Lead the commitment proactively:** "Data retention controls remain on track for Q1 2027" — you can say this plainly; it's confirmed and unchanged.
+- **On EU data residency, don't freelance.** Either come with a cleared answer or say "it's on our published H1 2027 roadmap; let me come back to you this week with a firm commitment date." Getting this wrong twice with Ada is the main unforced-error risk.
+- **Close the audit-prep loop explicitly.** Ask what their audit timeline is and work backward — it's the thread most likely to turn into an escalation if it drifts again.
+- **Ask for:** their 2027 rollout plan, whether mobile is expanding to more sites, and a case-study conversation (flagged back in CRM-82586 and never picked up).
+
+---
+
+One thing outside Harbor but worth your attention before you're on any customer call this week: two of **your own** commitments on other accounts — Advanced analytics to Lena Fox at Pinecrest (SLA-93532) and Audit log export to Lena Fox / Granite (SLA-77342) — are flagged as possibly affected by a decision I don't have visibility into. Check with the product owner before reaffirming either of those to anyone. Harbor's retention-controls commitment carries no such flag.

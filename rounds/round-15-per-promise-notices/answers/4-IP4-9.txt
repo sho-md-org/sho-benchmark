@@ -1,0 +1,19 @@
+# Audit-export promises: Keystone vs. Cobalt
+
+**Keystone Energy is the one at risk.** Cobalt Retail's looks normal.
+
+### Keystone Energy — flagged, don't reaffirm yet
+- **Promise:** Audit log export *with SIEM streaming into Splunk*, by Q1 2027 (`DRI-34564`, 2026-08-03 — Nia Cole raised it, Jordan Blake confirmed on the company's behalf).
+- **Status:** Sho flags this one. There's a decision I can't see that may or may not change the promise — I can't tell you what it is or whether it actually affects Keystone. **Before you reaffirm the date or the Splunk streaming to Keystone, check with the product owner that it still holds.**
+- Extra exposure regardless: this promise is broader than a plain export. It commits to SIEM streaming, which is a separate capability from the CSV export you promised Cobalt. Worth confirming scope, not just timing.
+- Recent touchpoints (`DRI-84961` 2026-08-24, `CRM-56742` 2026-08-17) discuss audit prep and exports but don't record any change to the commitment.
+
+### Cobalt Retail — no flag
+- **Promise:** Audit log export as a **CSV export**, by Q1 2027, to Sam Ortiz — your own words at the QBR: "you have my word" (`CRM-38600`, 2026-07-24). Customer is planning around it.
+- **Status:** No later change found, no notice. Treat as normal.
+
+### What I'd do
+1. Ask the product owner whether the Keystone Q1 2027 + Splunk streaming commitment still stands, before any customer-facing reaffirmation.
+2. Cobalt needs no action beyond normal tracking — though note the two accounts were promised different things (CSV vs. streaming), so don't let a single "audit export" status update stand in for both.
+
+One related item for the same feature also carries a notice: your Granite Insurance audit-log-export promise to Lena Fox (`SLA-77342`, Q1 2027). Same guidance applies there.

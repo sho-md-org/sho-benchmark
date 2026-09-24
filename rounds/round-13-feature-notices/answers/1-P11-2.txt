@@ -1,0 +1,95 @@
+I pulled the full Vantage Telecom footprint across all five systems. Here's the brief — but I need to lead with an important caveat about the source data.
+
+## ⚠️ Read this first
+
+**The records exist, but they're substance-free.** I found and opened all 19 Vantage Telecom records. Every one is a one-line stub: a topic, attendees or an owner, and a generic "next: follow up on X." Not a single record contains ARR, seat count, renewal date, contract terms, a named commitment with a due date, an SLA breach, a support ticket, or a health score.
+
+Coverage by system:
+- **CRM:** 10 records (all stubs)
+- **Drive:** 9 meeting notes (all stubs)
+- **Linear:** 0 records — no engineering work is tracked against this account
+- **Notion:** 0 Vantage-specific pages (generic "Qbr prep" pages exist but name other topics)
+- **Slack:** 0 Vantage-tagged messages
+
+So I can give you an accurate **engagement map and risk read**, and I've drafted talking points. I **cannot** give you the commercial facts a QBR needs, and I'm not going to invent them. The "what you must source elsewhere" list at the end is the real action item.
+
+---
+
+## Where things stand
+
+**19 touchpoints, April 2 – September 13, 2026.** Steady cadence, roughly 3/month, no gaps. The account is active and engaged — that's a genuine positive.
+
+Most recent three, in order:
+- **CRM-65747** (Sep 13) — Dashboards. **Owner: you.** Next step: follow up on exports. *This is the newest record in the account and the open item sits with you.*
+- **DRI-67178** (Sep 11) — SSO questions. Dana Ortiz, Omar Haddad.
+- **DRI-14442** (Sep 6) — **"Discussed churn and QBR prep."** Dana Ortiz, Tess Brown.
+
+**Your own exposure is thin.** You appear in only 2 of 19 records — DRI-81968 (Apr 2, integrations) and DRI-89702 (Aug 5, rate limits) — plus CRM-65747 as owner. You're walking into this call without much first-hand history, so budget time to re-establish the relationship.
+
+**Recurring themes across the period:** dashboards (CRM-20779, CRM-65747), billing (CRM-24363, CRM-92524), search (CRM-74774, CRM-84868), trial conversion (DRI-64274, DRI-77676), webhooks, NPS, reporting, exports, rate limits, SSO, support queue, onboarding, integrations, analytics.
+
+## Open commitments
+
+Every CRM record logs a "next step." **None has a visible closure record.** These are your open loops, oldest first:
+
+| Logged | Record | Owner | Committed follow-up | Status |
+|---|---|---|---|---|
+| Apr 12 | CRM-24363 | Leo Grant | Latency | No closure record |
+| Apr 27 | CRM-20779 | Tess Brown | Integrations | Possibly DRI-81968, but that predates it |
+| May 14 | CRM-23907 | Ana Petrova | Webhooks | DRI-57024 (May 28) may cover |
+| May 18 | CRM-53521 | Jordan Blake | Sandbox | No Vantage sandbox record |
+| Jun 17 | CRM-74774 | Priya Shah | Webhooks | No closure record |
+| Jun 22 | CRM-15845 | Dana Ortiz | Webhooks | No closure record |
+| Jul 08 | CRM-84868 | Priya Shah | QBR prep | → DRI-14442 (Sep 6) |
+| Jul 10 | CRM-37016 | Tess Brown | Reporting | DRI-68417 predates it (Jun 14) |
+| Jul 23 | CRM-92524 | Jordan Blake | Latency | No closure record |
+| Sep 13 | CRM-65747 | **Maya Chen** | **Exports** | **Open — yours, 11 days old** |
+
+**Webhooks was flagged three separate times** (May, June, June) by three different owners. **Latency was flagged twice** (April, July), both by billing conversations, and there is no latency record anywhere in the account. These two look genuinely dropped.
+
+## Risks
+
+1. **Churn is explicitly on the table.** DRI-14442 (Sep 6) pairs "churn" with "QBR prep" in the same conversation. That is the strongest signal in the dataset and it is three weeks old. Find out from Dana Ortiz or Tess Brown what prompted it *before* the call.
+
+2. **Severe account-ownership churn on our side.** Ten CRM calls, **seven different owners** (Leo Grant, Tess Brown, Ana Petrova, Jordan Blake, Priya Shah, Dana Ortiz, you). No one held the account for more than two consecutive touchpoints. This plausibly explains the dropped webhooks/latency threads, and the customer has likely felt it.
+
+3. **Unresolved technical threads with no engineering backing.** Zero Linear issues exist for Vantage. Whatever was promised on webhooks, latency, exports, and SSO has no visible engineering commitment behind it. If they ask for a status, you currently have nothing to point to.
+
+4. **SSO surfaced late and is unresolved** (DRI-67178, Sep 11). SSO requests in B2B telecom frequently gate expansion or security review — treat as higher stakes than a stub implies.
+
+5. **Your own exports follow-up is overdue** (CRM-65747, Sep 13). Close it before the QBR, not during.
+
+6. **The account record itself is a risk.** If this is how Vantage is documented, no one at Brightline can currently answer "how is this account doing" from the tools.
+
+*Org-level context, not Vantage-tagged:* SLA-40138 (Aug 20) notes the data team committed to a weekly churn-risk report for CS starting October — that's after your call, so don't count on it. SLA-93428 (Sep 25) and SLA-59527 (Aug 26) are general churn threads mentioning SSO and reporting follow-ups; I could not confirm these reference Vantage.
+
+## What to say
+
+**Open by owning the handoffs.** Don't pretend continuity you don't have. Something like: *"You've worked with a few people on our side this year. I'm your point of contact going forward, and I want to start by closing the loops that are still open."* This converts your weakest fact into a credibility move.
+
+**Lead with the dropped items, by name, before they raise them.** Webhooks, latency, exports. Arriving with the list unprompted is far stronger than being caught by it.
+
+**Ask directly about churn.** *"When we talked in early September, retention came up. I'd rather hear straight from you what's driving that than guess."* You know it's live — don't let the QBR end without surfacing it.
+
+**Treat SSO as a priority item, not a footnote.** Ask what's gating it and by when.
+
+**Commit to a single-threaded owner and a written follow-up.** The pattern says the fix they need most is one accountable person and items that get tracked. Offer both.
+
+**Do not present metrics.** There are none in the system. If you show a slide of numbers you sourced ad hoc, you risk being wrong in the room.
+
+---
+
+## What you must source before the call
+
+I could not find these anywhere, and a QBR is weak without them:
+
+- **Renewal date and contract value** — check billing/finance; not in CRM
+- **Usage, adoption, seat data** — not in any system
+- **NPS score** — discussed three times (CRM-37016, DRI-57024, DRI-77676) but the number is recorded nowhere
+- **Support ticket volume and SLA performance** — DRI-10836 discusses the support queue with no data; check the helpdesk directly
+- **Stakeholder map** — no customer-side names appear in any record
+- **The churn context** — ask Dana Ortiz and Tess Brown (DRI-14442) directly
+
+Fastest path: 15 minutes each with **Dana Ortiz** (churn + SSO, most recent substantive contact) and **Priya Shah** (owned the QBR-prep handoff, CRM-84868). They hold what the records don't.
+
+I can draft the QBR deck or a follow-up email to those two if you'd like — say the word.

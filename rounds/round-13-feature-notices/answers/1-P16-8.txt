@@ -1,0 +1,92 @@
+I searched all four systems (CRM, Drive, Notion, Slack, Linear). Here's the brief — with one important caveat up front that shapes everything below.
+
+## Read this first: the record is thin
+
+Every Keystone Energy record I found is a one-line stub. There are ~20 of them, and they log *that* a topic was discussed, never *what was said, agreed, or numbered*. Representative, in full:
+
+- `CRM-19012` (2026-09-23): "Call with Keystone Energy. Discussed uptime. Owner Sam Lee. Next: follow up on NPS."
+- `DRI-20667` (2026-08-15): "Attendees: Ana Petrova, Ana Petrova. Discussed churn and pricing."
+
+For contrast, other accounts do have substance. `CRM-52816` (Northstar Pharma) reads: "Tess Brown (CS) committed that HubSpot sync will be available by before summer. Logged as a renewal condition." **Keystone has no equivalent record anywhere** — no renewal call notes, no contract or ARR data, no QBR prep doc, no Notion page, nothing in Slack or Linear.
+
+So I can give you the *shape* of the account with confidence, but I can't give you NPS scores, uptime figures, renewal date, or contract value — they aren't in the systems. I've flagged below what you'll need to source elsewhere rather than guessing at it.
+
+## Where things stand
+
+**Engagement is active and recent.** Records run 2026-04-17 (`DRI-60948`) through 2026-09-25 (`CRM-78617`), with no gaps longer than a few weeks.
+
+**Recurring themes, by weight:**
+- *Reliability* — uptime (`CRM-19012`, `DRI-64156`), latency (`CRM-23178`, `DRI-46374`)
+- *Analytics/reporting* — three analytics records (`CRM-71909`, `CRM-71134`, `CRM-50205`), dashboards (`CRM-79992`, `DRI-39787`), reporting (`CRM-71045`)
+- *Commercial* — pricing (`CRM-78617`), billing (`CRM-56812`), churn (`DRI-20667`), NPS (`DRI-75981`)
+- *Product gaps* — sandbox (`DRI-41756`, `DRI-27950`), offline (`DRI-27387`), notifications (`DRI-60948`), integrations (`DRI-31273`)
+
+**⚠️ There's a pricing call on the books for tomorrow, 2026-09-25** — `CRM-78617`, owner Jordan Blake. That lands *before* your QBR. Sync with Jordan before you walk in; that conversation could change your footing.
+
+**Account coverage is fragmented.** Seven different owners appear across the records: Sam Lee, Jordan Blake, Leo Grant, Dana Ortiz, Ana Petrova, Omar Haddad, and you. No consistent thread. Your one prior QBR-prep touchpoint is `DRI-31273` (2026-08-10, you + Sam Lee, "integrations and QBR prep").
+
+## Open commitments
+
+Honest answer: **no commitment to Keystone is recorded anywhere.** No promised dates, no renewal conditions, no deliverables. That does *not* mean none were made — it means the CRM doesn't capture them. Don't assume you're clean here; check with Sam Lee, Jordan Blake, and Leo Grant before the call.
+
+What I can trace are **"next step" items logged with no closing record**:
+
+| Logged | Record | Committed follow-up | Status |
+|---|---|---|---|
+| 2026-05-02 | `CRM-71045` | Webhooks | **Open ~5 months.** No webhooks record exists for this account at all. |
+| 2026-07-12 | `CRM-56812` | Search | **Open ~2 months.** No search record exists. |
+| 2026-09-23 | `CRM-19012` | NPS | **Open.** Last NPS touch was `DRI-75981`, 2026-07-21. |
+| 2026-09-25 | `CRM-78617` | Offline | **Open.** Last offline touch was `DRI-27387`, 2026-04-20 — five months cold. |
+
+The webhooks and search items are the ones that would sting if Keystone raises them. Both were promised and neither has any trace of follow-through.
+
+## Risks
+
+1. **Churn is an explicitly logged topic — twice, both times next to commercial pressure.** `DRI-75981` (2026-07-21) pairs churn with NPS; `DRI-20667` (2026-08-15) pairs churn with pricing. Churn discussed alongside pricing is the classic renewal-pressure pattern. I can't tell you the severity because the notes are empty, but two flags in four weeks is not noise.
+
+2. **An active pricing thread runs straight into your QBR.** `DRI-20667` (Aug 15) → `CRM-78617` (Sep 25). Expect a commercial ask.
+
+3. **Unclosed follow-ups.** See the table. Four, two of them stale.
+
+4. **Persistent reliability complaints.** Uptime and latency recur from April through September (`CRM-23178`, `DRI-46374`, `DRI-64156`, `CRM-19012`). A September uptime call means this is not resolved.
+
+5. **You are walking in under-informed, and that's the top risk.** You have no renewal date, no ARR, no NPS score, and no commitment history. If Keystone arrives with specifics, you'll be on the back foot.
+
+## What to say
+
+**Before the call (highest value use of your time):**
+- Debrief Jordan Blake on tomorrow's pricing call (`CRM-78617`) — non-negotiable.
+- Ask Sam Lee and Leo Grant directly: *what have we promised Keystone that isn't written down?*
+- Pull renewal date, ARR, and the actual NPS score from whoever owns that data. Get real uptime numbers from the reliability side.
+
+**On the call — open by getting on the front foot:**
+
+> "Before I walk through our view, I want to check my understanding of your priorities this quarter — I'd rather spend our time on what's actually pressing for you than on a deck."
+
+This is genuine discovery, and it protects you from asserting things the records don't support.
+
+**On reliability — get ahead of it, don't wait:**
+
+> "Uptime and latency have come up consistently since the spring, including our conversation last week. I want to address that directly rather than have you raise it."
+
+Bring real numbers or acknowledge you're still gathering them. Do not improvise figures.
+
+**On the open follow-ups — own them plainly:**
+
+> "We owe you follow-up on webhooks and on search that's been sitting too long. I'm taking those back with dates."
+
+Naming a lapse before the customer does buys real credibility, and you have four to choose from.
+
+**On pricing and churn — let them lead:**
+
+Don't introduce churn. If pricing comes up, reference the Aug 15 discussion and ask what's changed rather than defending a position you don't have the context to defend.
+
+**Close by fixing the coverage problem:**
+
+> "You've had a lot of different people from our side this year. I want to be your consistent point of contact going forward."
+
+Seven owners across six months is a legitimate customer complaint, and offering to fix it is a strong, concrete close.
+
+---
+
+One recommendation beyond the brief: the logging discipline on this account is the root cause of everything above. After the QBR, writing a real account summary — commitments with dates and owners — would make the next QBR a genuinely different exercise. Happy to draft that template if useful.

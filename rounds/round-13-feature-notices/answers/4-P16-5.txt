@@ -1,0 +1,53 @@
+## Keystone Energy — QBR Brief
+
+**⚠️ Read this first:** The headline commitment to this account — **Audit log export with SIEM/Splunk streaming by Q1 2027** (`DRI-34564`, raised by Nia Cole, confirmed by Jordan Blake, AE) — is flagged in Sho. There's a decision I can't see that may or may not have changed it. **Do not reaffirm the Q1 2027 date on the call until you've checked with the product owner.** This is the single most important pre-call action, and it's the thing Keystone is most likely to ask about.
+
+---
+
+### Where things stand
+
+Keystone is an active, engaged account with steady touchpoints across the year. The through-line since spring is **security/compliance readiness** — "audit prep" is the most recurring theme by a wide margin:
+
+- `CRM-90377` (May 8), `CRM-17727` (Jun 17), `DRI-85107` (Jun 8), `DRI-48005` (Jun 25), `CRM-56742` (Aug 17), `DRI-84961` (Aug 24, you + Sam Lee, covering audit prep *and exports*)
+- QBR prep already underway: `CRM-93344` (Aug 25, you own it; next step logged as "follow up on security review") and `DRI-31273` (Aug 10, integrations + QBR prep with Sam Lee)
+
+Recent activity outside the security track:
+- **Uptime** — `CRM-19012` (Sep 23, Sam Lee)
+- **Pricing** — `CRM-78617` (Sep 25, Jordan Blake) — note this is dated tomorrow; likely a scheduled call. Worth syncing with Jordan before your QBR so pricing and QBR messaging don't collide.
+- **Billing** `CRM-56812`, **Analytics** `CRM-71909` / `CRM-71134` / `CRM-50205`, **Rate limits** `CRM-60405`, **Onboarding** `CRM-15788` / `CRM-86748`
+
+### Open commitments to this account
+
+| Commitment | Source | Owner | Status |
+|---|---|---|---|
+| Audit log export + Splunk/SIEM streaming, Q1 2027 | `DRI-34564` | Company, confirmed by Jordan Blake (AE) | **Flagged — verify with product owner before reaffirming** |
+
+No other commitments in Sho are attributed to Keystone Energy. (Sho surfaced several of your and others' commitments on *other* accounts — Osprey analytics, offline mode, SCIM, an audit-log-export promise to Granite Insurance — those aren't Keystone's and shouldn't enter this conversation.)
+
+### Risks
+
+1. **The audit log export date is the account's load-bearing commitment.** It sits underneath a year of audit-prep work — if Keystone is sequencing their compliance audit around Q1 2027, a slip is a material problem, not a roadmap footnote. Unverified date + high customer salience = your top risk.
+2. **Multiple owners, no single narrative.** Touchpoints are spread across Sam Lee, Jordan Blake, Omar Haddad, Leo Grant, Tess Brown, Priya Shah, Dana Ortiz, Ana Petrova. Keystone may have heard slightly different things from different people. Expect them to quote someone back to you.
+3. **Pricing conversation running in parallel** (`CRM-78617`, Jordan Blake). A QBR that reads as "all good" while a pricing discussion is live can undercut the commercial conversation, or vice versa.
+4. **Thin detail in the record.** Most entries are one-line summaries with no outcomes captured. You'll be walking in without documented resolution on rate limits, uptime, or the webhooks follow-up from `CRM-56742`. Worth a quick ask to Sam Lee and Omar Haddad before the call.
+
+### What to say
+
+**On audit log export — until the product owner confirms:**
+> "Audit log export with SIEM streaming is on the roadmap and it's the commitment we're tracking most closely for you. I'm confirming the delivery detail with our product team this week and I'll come back to you with specifics rather than give you a date I haven't re-verified."
+
+That's honest, it doesn't retract anything, and it doesn't commit you to a date that may have moved. If they press for Q1 2027 specifically, acknowledge the commitment exists in the record without re-confirming the timing.
+
+**On the year:** lead with continuity of the security/compliance workstream — you've run audit prep with them roughly monthly since May and it's clearly their priority. Frame the QBR around closing out their audit readiness.
+
+**On uptime and rate limits:** come with numbers. Both were raised (`CRM-19012`, `CRM-60405`) and neither has a documented resolution — go in with the actual data rather than letting them raise it first.
+
+**Close on:** their Q1 2027 audit timeline and what they need from Brightline to hit it. That surfaces any dependency on the export feature early, while you still have room to manage it.
+
+### Before the call
+1. **Ask the product owner whether the Q1 2027 audit log export commitment still holds** (`DRI-34564`). Blocking item.
+2. Sync with Jordan Blake on the Sep 25 pricing call (`CRM-78617`).
+3. Get resolution status on webhooks from Omar Haddad (`CRM-56742`) and uptime from Sam Lee (`CRM-19012`).
+4. Pull the security review follow-up you logged in `CRM-93344`.
+
+I can draft the QBR deck or the product-owner email once you've got the export answer.

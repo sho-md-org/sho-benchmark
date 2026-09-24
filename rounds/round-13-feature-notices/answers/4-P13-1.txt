@@ -1,0 +1,25 @@
+**Before this goes out:** Sho flags a decision affecting the SSO (SAML) commitment that I can't see. I can't confirm, deny, or describe it — and I shouldn't reaffirm the Q1 2027 date until the product owner for SSO says the promise still holds. So the draft below acknowledges Tom without re-committing to the date.
+
+**What's on record**
+- `DRI-36664` (2026-07-09) — Tom Hale reminded us of SSO (SAML) by Q1 2027; Leo Grant confirmed it on the call. So yes, we did promise it, twice.
+- `NOT-20876` (2026-06-30) — public H1 2027 roadmap still lists SSO (SAML), SP- and IdP-initiated, at Q1 2027.
+- `CRM-14429` (2026-06-25) — earlier SSO questions call, owner Ana Petrova.
+
+**Draft reply (holding — safe to send today)**
+
+> Subject: Re: SSO (SAML) timing
+>
+> Hi Tom,
+>
+> Thanks for checking in, and for being direct about it.
+>
+> You're right about what we told you — I confirmed Q1 2027 for SSO (SAML) when we spoke on July 9, and that's on our record too. I don't want to just re-state a date back to you without making sure it's current, so I'm getting a fresh confirmation from our product owner for SSO this week.
+>
+> I'll come back to you by [date] either way — with a confirmation or with whatever has changed. If it would help, I'm happy to get you on a short call with the product team directly so you can ask about SP- vs IdP-initiated flows and rollout sequencing firsthand.
+>
+> Best,
+> Leo
+
+**Next step for Leo:** ask the SSO product owner whether the Q1 2027 commitment to Quarry Mining still holds, then either send the confirmation or handle the change with them. Ana Petrova is the owner listed on `CRM-14429`, which is a reasonable starting point if the SSO product owner isn't otherwise obvious.
+
+Two notes on the draft: fill in a specific callback date rather than leaving it open — a vague "soon" after a direct question tends to read as evasion. And don't cite the public roadmap (`NOT-20876`) as reassurance in the meantime; it's a public page, not a confirmation for this account, and pointing at it would function as a soft reaffirmation of the date.

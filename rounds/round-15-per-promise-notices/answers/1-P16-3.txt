@@ -1,0 +1,47 @@
+I pulled every Keystone Energy record across all four systems (21 total: 10 CRM, 11 Drive; Slack and Linear return zero). Here's the situation, and I want to lead with the problem rather than bury it.
+
+## The core issue: these records can't support the brief you asked for
+
+Every Keystone record is a one-line topic stub. Representative examples, quoted in full:
+
+> **CRM-19012** (2026-09-23): "Call with Keystone Energy. Discussed uptime. Owner Sam Lee. Next: follow up on NPS."
+> **DRI-20667** (2026-08-15): "Attendees: Ana Petrova, Ana Petrova. Discussed churn and pricing."
+
+That's the entire content. Across all 21 records there is **no** ARR, renewal date, contract terms, named customer-side contact, health score, support ticket, or a single commitment with an owner and a due date.
+
+This isn't a limitation of the tools generally — comparable accounts have real content. Northstar Pharma's renewal notes (**CRM-52816**) read: *"Tess Brown (CS) committed that HubSpot sync will be available by before summer. Logged as a renewal condition."* That's a trackable commitment. Keystone has nothing in that form.
+
+Two structural absences worth noting:
+- **No renewal call notes exist for Keystone.** Seven other accounts have them (CRM-52816, CRM-70743, CRM-74447, CRM-62434, CRM-18094, CRM-26651, CRM-25995).
+- **No QBR prep doc exists for Keystone.** Nine other accounts have one (DRI-28856, DRI-62486, DRI-33743, DRI-20013, DRI-70983, DRI-56153, DRI-47988, DRI-29121, DRI-63499).
+
+So on your three substantive asks: **open commitments — none are recorded anywhere**, and I won't invent them. **Risks** — I can offer inference from topic patterns, flagged as such, but nothing documented. **What to say** — I can't ground this in evidence, and a confident-sounding brief built on these stubs would be fabrication that fails you live on the call.
+
+## What the records do legitimately support
+
+**Time-sensitive: there's a pricing call dated tomorrow.** CRM-78617 is dated 2026-09-25 — "Discussed pricing. Owner Jordan Blake. Next: follow up on offline." Either it's on the calendar before your QBR, or it's a data-entry error. Worth resolving today; if it's real, it's your best source of fresh input.
+
+**Engagement is steady but fragmented.** Ten CRM touches Apr 24 → Sep 25, roughly every 2–4 weeks. But there's a **five-week gap between Aug 15 and Sep 23** — the longest of the period, immediately before your QBR.
+
+**No consistent account owner.** CRM ownership rotates across five people: Leo Grant (CRM-23178, CRM-71134, CRM-56812, CRM-71909), Ana Petrova (CRM-50205, CRM-79992), Jordan Blake (CRM-71045, CRM-78617), Sam Lee (CRM-86748, CRM-19012). That churn is the most plausible explanation for why nothing substantive got written down, and it's a real finding in itself.
+
+**Recurring themes, by frequency:**
+- *Analytics* — 3 CRM calls (CRM-50205, CRM-71134, CRM-71909)
+- *Uptime/latency* — CRM-23178, CRM-19012, DRI-46374, DRI-64156, DRI-60948; also the "next step" on CRM-86748 and CRM-71909
+- *Dashboards* — CRM-79992, DRI-39787, DRI-27950
+- *Sandbox* — DRI-41756, DRI-27950
+
+**One inference, labeled as inference:** *churn* appears in two Drive titles (DRI-75981 paired with NPS, Jul 21; DRI-20667 paired with pricing, Aug 15), and the next logged CRM activity is a pricing call. Churn → pricing → pricing call is a coherent retention-pressure narrative. It is also entirely a reading of six words of metadata. Treat it as a hypothesis to test, not a finding.
+
+**You have context nobody wrote down.** You personally attended DRI-85290 (roadmap, May 28), DRI-39787 (dashboards, Jul 7), and DRI-31273 (integrations, Aug 10 — with Sam Lee, explicitly tagged "QBR prep"). Your recollection of those three is probably worth more than the entire record set.
+
+## What I'd do with the time before the call
+
+1. **Resolve CRM-78617's date today.** Tomorrow's pricing call changes your prep materially.
+2. **Ask Jordan Blake and Sam Lee directly** — Jordan owns the pricing thread, Sam owns the most recent uptime touch and the Aug 10 QBR-prep session. Two conversations would likely recover more than these 21 records contain.
+3. **Ask Ana Petrova about the churn discussions** (DRI-75981, DRI-20667). If retention risk is real, that's your QBR, and you need it confirmed before you're in the room.
+4. **Get renewal date and ARR from the account record** — not in anything I can search.
+
+I can draft the full brief — standing/commitments/risks/talk track — as soon as you have the renewal date, the pricing-call outcome, and whatever Jordan and Sam tell you. I'd rather build it on four real inputs than dress up twenty-one stubs.
+
+One thing worth fixing regardless of next week: Keystone is missing the renewal-notes and QBR-prep records that every comparable account has. Starting a QBR prep doc now would mean next quarter's version of this doesn't start from zero.
