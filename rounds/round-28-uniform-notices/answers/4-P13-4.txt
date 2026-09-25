@@ -1,0 +1,25 @@
+Checked the account context and records — the SSO commitment to Quarry Mining is clean: no pending change flagged, and it's still on the public roadmap. Details below the draft.
+
+## Draft reply
+
+**Subject:** Re: SSO (SAML) timing
+
+Hi Tom,
+
+Yes — SSO (SAML) is still on track for Q1 2027, exactly as we discussed on our July 9 sync. Nothing has changed on our side since then.
+
+For specifics, the scope we have planned covers both SP-initiated and IdP-initiated SAML, so it should fit however your IdP is configured. SCIM provisioning is also targeted for Q1 2027, which is usually the other half of what teams want alongside SSO — happy to talk through whether that's in scope for your rollout.
+
+If it would help your planning, I can set up a short call with our product team closer to the new year so you can see the implementation and start mapping out your side of the configuration.
+
+Thanks for checking in,
+Leo
+
+## What backs this up
+
+- **DRI-36664** (2026-07-09, Quarry Mining sync) — Tom Hale reminded us of the SSO (SAML) by Q1 2027 commitment; Leo Grant confirmed it. This is the promise he's referring to.
+- **NOT-20876** (2026-06-30, Public roadmap H1 2027) — lists "SSO (SAML), SP- and IdP-initiated: Q1 2027," consistent with what was promised. SCIM provisioning is also Q1 2027 there, which is where that suggestion comes from.
+- The commitment tracker shows **no later change** to the Quarry Mining SSO date and no flag against it, so reaffirming the date is appropriate.
+- **CRM-14429** (2026-06-25) logs an earlier SSO conversation with Quarry Mining (owner Ana Petrova) but has no date detail, so I didn't draw on it.
+
+One unrelated note, since it touches your accounts: there *is* a flag on the **custom roles** commitment to Ironwood Legal (Robin, source SLA-46650) — check with the product owner before reaffirming that one to them. It has no bearing on Quarry Mining's SSO date.

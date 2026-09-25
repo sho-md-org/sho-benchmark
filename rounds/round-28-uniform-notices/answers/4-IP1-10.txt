@@ -1,0 +1,28 @@
+## Short answer: none — you don't have a tracked SSO promise
+
+I checked your commitments and every SSO record I can see. There's no promise on SSO attributed to you.
+
+**The SSO records are discussion, not commitments.** All of them are notes/calls with no deliverable or date attached:
+
+- `SLA-21939` — "update on SSO questions; offline next week" (2026-05-01)
+- `NOT-29833`, `NOT-58902` — SSO notes, owner you (Apr 2026)
+- `DRI-18519` — Harbor Clinics, you + Ana Petrova (2026-08-08)
+- `DRI-79562` — Norrland AB, Priya Shah + you (2026-04-05)
+- `CRM-74174` — Evergreen Bank call, owner you, next step "follow up on audit prep" (2026-08-22)
+
+## The closest adjacent thing, which isn't yours
+
+**SCIM provisioning** to Kai Berg (Umber Studios), by Q1 2027 — `SLA-12035`. Identity-adjacent, so it may be what prompted the question, but it was made by **Jordan Blake (AE)**, not you. It carries a flag: a decision I can't see may affect it. If a customer is treating it as part of an SSO story, route it to Jordan and the product owner rather than reaffirming it yourself.
+
+## Two of your actual commitments are flagged — worth knowing since you're auditing
+
+Neither is SSO, but both are marked as potentially affected by a decision I don't have visibility into:
+
+- **Advanced analytics (Osprey)** → Lena Fox, Pinecrest Realty, by spring release — `SLA-93532`
+- **Audit log export** → Lena Fox, Granite Insurance, by Q1 2027 — `SLA-77342`
+
+I can't tell you what changed or whether it actually affects them. **Check with the product owner before you reaffirm either one to the customer.** The audit log export one is worth prioritizing — Evergreen Bank's SSO follow-up in `CRM-74174` is "audit prep," so if that conversation drifts toward audit log export, you'd be reaffirming a flagged promise.
+
+For contrast, **Offline mode** → Tom Hale (Meridian Travel), by Q2 — `SLA-24221` — is Priya's and shows no later change, so it's clean.
+
+**Bottom line:** if someone told you an SSO promise of yours is at risk, the premise doesn't hold up against these records — no such promise exists. Ask them which commitment they mean; they may be thinking of SCIM (`SLA-12035`, Jordan's) or of your audit log export.

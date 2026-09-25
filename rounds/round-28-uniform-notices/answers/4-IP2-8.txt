@@ -1,0 +1,17 @@
+**Short answer: I can't find anything showing SSO changed — IdP-initiated or otherwise.**
+
+What the records actually show:
+
+- **The public roadmap (NOT-20876, 2026-06-30)** still lists it as one undivided line item: *"SSO (SAML), SP- and IdP-initiated: Q1 2027."* There's no split between the SP- and IdP-initiated halves, and no later roadmap record revises it.
+- **The SSO records are all content-free stubs** — CRM-93928 (Pinecrest, 9/12), CRM-57082 (Vantage Telecom, 9/19), NOT-29159, NOT-40327, SLA-95210, SLA-21939. Every one is a placeholder ("Discussed SSO questions. Next: follow up on roadmap") with no detail on scope or dates.
+- **There's no SSO commitment in your tracked set at all**, and nothing flagged against SSO.
+
+So if someone told you "the IdP-initiated part changed," that didn't come from anything I can see. Worth asking them for the source before you repeat it to a customer.
+
+**One thing to separate out:** the nearby identity-area item, **SCIM provisioning** (SLA-12035 — Jordan Blake to Kai Berg at Umber Studios, Q1 2027), is flagged — I can't confirm whether that promise still holds, so check with the product owner before reaffirming it. Easy to conflate with SSO since both are identity, but they're distinct roadmap lines.
+
+Two of your own promises carry the same flag and are worth batching into that conversation:
+- **Advanced analytics** to Lena Fox / Pinecrest Realty, spring release (SLA-93532) — note the public roadmap says Q2 2027
+- **Audit log export** to Lena Fox / Granite Insurance, Q1 2027 (SLA-77342)
+
+Want me to draft the question to the product owner covering all three?

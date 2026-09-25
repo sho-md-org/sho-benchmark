@@ -1,0 +1,21 @@
+Confirmed — this one is clean to reaffirm. The Q1 2027 SSO commitment to Tom Hale is on record (DRI-36664, reconfirmed by Leo Grant on 2026-07-09), it matches the public roadmap (NOT-20876: "SSO (SAML), SP- and IdP-initiated: Q1 2027"), and no later change to that commitment exists.
+
+**Draft reply for the AE:**
+
+> Subject: Re: SSO (SAML) timeline
+>
+> Hi Tom,
+>
+> Yes — SSO (SAML) is still planned for Q1 2027, same as what we confirmed in our July 9 sync. It's on our published H1 2027 roadmap for that quarter, covering both SP-initiated and IdP-initiated flows.
+>
+> Two related items on the same Q1 2027 track that may matter for your rollout: SCIM provisioning and audit log export (including SIEM streaming).
+>
+> Happy to set up a short call with our product team ahead of launch so your identity folks can plan the integration and we can get you into early testing. Just let me know what works.
+>
+> Best,
+> Leo
+
+Two notes before you send:
+
+- I kept it to "planned for Q1 2027" rather than a hard guarantee. If you want to be firmer given the prior commitment, say so and I'll tighten the wording.
+- Unrelated to this thread, but flagging since it's yours: the **custom roles** promise to Ironwood Legal (Robin, SLA-46650) shouldn't be reaffirmed until you check with the product owner on whether it still holds. Note the public roadmap lists custom roles as Q2 2027, which is already later than the "before their April reorg" date in that commitment.

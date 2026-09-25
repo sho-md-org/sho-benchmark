@@ -1,0 +1,25 @@
+## Answer: I can't rank them on risk — and there's a framing correction first
+
+**Both audit-export commitments carry the same flag in Sho: an unseen decision may or may not change them.** I'm directed not to confirm, deny, or describe that decision, and to check with the product owner before either is reaffirmed. So on the risk question specifically, I can't tell you one is safer than the other — the deciding information isn't visible to me for either.
+
+### Correction on ownership
+Only one of those two is yours:
+
+| | Cobalt Retail | Keystone Energy |
+|---|---|---|
+| Source | **CRM-38600** (QBR, 2026-07-24) | **DRI-34564** (sync, 2026-08-03) |
+| Made by | **Maya Chen (you)** | **Company**, confirmed by Jordan Blake (AE) |
+| Counterpart | Sam Ortiz | Nia Cole |
+| Scope | Q1 2027, **CSV export** | Q1 2027, **with streaming into Splunk** |
+| Language | "you have my word" | Jordan confirmed a prior company statement |
+
+Your *second* audit-export promise is **Granite Insurance** — SLA-77342 (2026-05-26), to Lena Fox, Q1 2027 **including SIEM streaming**. That one is also flagged. If you were thinking of Keystone as yours, the person to loop in there is Jordan Blake.
+
+### What the visible records do show
+- **Scope differs materially.** Cobalt is the narrowest ask (CSV only). Keystone and Granite both include SIEM/Splunk streaming — more surface area, more to go wrong, independent of the flagged decision.
+- **Your Cobalt language is the most exposed personally.** "You have my word," with the customer planning around it (CRM-38600).
+- **Public roadmap NOT-20876** lists "Audit log export incl. SIEM streaming: Q1 2027," so all three are consistent with what's published today.
+- Supporting Keystone records (DRI-84961, CRM-56742, DRI-48005, DRI-85107) are thin process notes — "discussed audit prep and exports," follow up on webhooks — no delivery signal either way.
+
+### Recommended next step
+Before your roadmap update next week (**SLA-13802**), ask the **product owner for audit log export** one question covering all three: *do the Q1 2027 dates still hold, and does that include SIEM streaming?* Hold off on reaffirming to Sam Ortiz or Lena Fox until you have that answer — and flag Keystone to Jordan Blake so he asks for his own.

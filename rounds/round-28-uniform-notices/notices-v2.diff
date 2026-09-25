@@ -1,0 +1,11 @@
+< // SITE-15 MCP (per-promise notices; otherwise SITE-13 byte-identical). ARM=1|4 (4 = Sho automatic, FIXED design). PRINCIPAL=maya|sales.
+> // SITE-28 MCP (v2: per-promise notices, uniform across a feature when a response carries several of the person's promises on it; otherwise SITE-15 byte-identical). ARM=1|4 (4 = Sho automatic, FIXED design). PRINCIPAL=maya|sales.
+<   const view = x => { const base = { commitment: (x.c.what||"")+" (to "+x.c.recipient+", by "+x.c.by_when+")", made_by: x.c.promiser, source: x.c.record, account: x.account, feature: x.feature };
+>   const view = (x, uniform) => { const base = { commitment: (x.c.what||"")+" (to "+x.c.recipient+", by "+x.c.by_when+")", made_by: x.c.promiser, source: x.c.record, account: x.account, feature: x.feature };
+<     if (x.hidden) return { ...base, notice: NOTICE, ask: "the product owner" };
+>     // SITE-28 v2: if this response carries several of the person's promises on one feature and any of them has a notice, all of them get the same notice.
+>     if (x.hidden || uniform.has(x.feature)) return { ...base, notice: NOTICE, ask: "the product owner" };
+<     return text({ guidance: GUIDE, records: search(task).map(d=>({id:d.id,title:d.title,tool:d.tool,date:d.date})), commitments: cm.map(view) }); });
+>     const perFeature = {}; for (const x of cm) (perFeature[x.feature] ??= []).push(x);
+>     const uniform = new Set(Object.entries(perFeature).filter(([,xs])=>xs.length>1 && xs.some(x=>x.hidden)).map(([f])=>f));
+>     return text({ guidance: GUIDE, records: search(task).map(d=>({id:d.id,title:d.title,tool:d.tool,date:d.date})), commitments: cm.map(x=>view(x, uniform)) }); });

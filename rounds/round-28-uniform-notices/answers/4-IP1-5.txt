@@ -1,0 +1,29 @@
+## Short answer: none of your tracked promises are actually on SSO
+
+I found no commitment by you on SSO itself. Your SSO records are all discussion/question threads, not promises:
+
+- **SLA-21939** (2026-05-01) — you posted an update on SSO questions
+- **DRI-18519** (Harbor Clinics, 2026-08-08), **DRI-79562** (Norrland AB, 2026-04-05) — meetings where SSO was discussed
+- **NOT-29833**, **NOT-58902** — SSO notes you own
+- **CRM-74174** (Evergreen Bank, 2026-08-22) — your SSO call; next step logged as "follow up on audit prep"
+
+None of these record a dated commitment to a customer. SSO (SAML, SP- and IdP-initiated) sits on the public roadmap at Q1 2027 (**NOT-20876**), so that's the line you've presumably been quoting.
+
+## What *is* flagged, and is adjacent enough to matter
+
+Two of your actual commitments carry a notice that a change I can't see may affect them — and both tend to come up inside the same security/identity conversation as SSO:
+
+| Commitment | Source | Customer | Status |
+|---|---|---|---|
+| Audit log export, Q1 2027 | **SLA-77342** | Lena Fox / Granite Insurance | ⚠️ Flagged — check with the product owner before reaffirming |
+| Advanced analytics (Osprey) in the spring release | **SLA-93532** | Lena Fox / Pinecrest Realty | ⚠️ Flagged — check with the product owner before reaffirming |
+
+Audit log export is the one to watch: it's the same Q1 2027 security cohort as SSO on the roadmap, and your Evergreen Bank SSO call points at audit prep. If you've been describing SSO and audit log export together to an account, the audit-log half of that message is not safe to repeat right now.
+
+One more for awareness, though it isn't yours: **SCIM provisioning** for Kai Berg (Umber Studios), Q1 2027 — **SLA-12035**, made by Jordan Blake (AE) — is also flagged. SCIM is the closest thing to SSO in the identity family, so if a customer of yours heard "SSO and SCIM together," loop Jordan in.
+
+For contrast, **offline mode** (Tom Hale / Meridian Travel, **SLA-24221**, Priya Shah) has no later change found.
+
+## Suggested next step
+
+Before you reaffirm Q1 2027 SSO timing to anyone, ask the product owner whether **audit log export** still holds — the two travel together in customer messaging, and I can't see what changed. I'd avoid re-sending any dated commitment on the flagged items until you hear back. Want me to draft that note to the product owner?

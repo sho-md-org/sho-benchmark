@@ -1,0 +1,42 @@
+## Cobalt Retail — QBR brief
+
+**⚠️ Read this first:** Your Q1 2027 audit log export promise to Sam Ortiz (`CRM-38600`) is flagged. There's a decision I don't have visibility into that may or may not affect it. **Check with the product owner before you reaffirm that date on the call.** Everything else below is clean.
+
+### Where things stand
+Account coverage is spread across Jordan Blake, Priya Shah, Omar Haddad, and you. Activity over the last six months has been steady but the records are thin — mostly one-line call logs with no outcomes attached:
+
+- Onboarding (`CRM-49779`, Apr 27; `CRM-16603`, Jun 15)
+- Roadmap — your call (`CRM-70221`, Apr 20)
+- Dashboards (`CRM-24697`, May 26), Reporting (`CRM-94849`, Jul 23), Notifications (`CRM-35990`, Aug 1)
+- Pricing (`CRM-87224`, Jun 23), Billing (`DRI-75222`, Aug 11 — Ana Petrova, Omar Haddad)
+- Audit prep (`CRM-24323`, Jun 12) and QBR prep (`CRM-12694`, Aug 4, owner Jordan Blake)
+
+The through-line: **audit prep keeps recurring as the next step** across at least four separate threads (`CRM-12694`, `CRM-87224`, `DRI-75222`, `CRM-24323`). That's the account's live priority, and it's what makes the audit log export commitment load-bearing.
+
+### Open commitments
+| Commitment | To | Due | Source | Status |
+|---|---|---|---|---|
+| Audit log export, CSV | Sam Ortiz | Q1 2027 | `CRM-38600` | ⚠️ Verify before reaffirming |
+
+That's the only recorded commitment to this account. You made it on 2026-07-24 in strong terms — *"you have my word"* — and the note says Sam is planning around it.
+
+For context, the public roadmap as of 2026-06-30 (`NOT-20876`) lists audit log export incl. SIEM streaming at Q1 2027. Don't lean on that as confirmation; it predates whatever the flag refers to.
+
+### Risks
+1. **Exposure on the audit log export.** Personal-word framing, a named stakeholder planning around it, and a possible change you should confirm before speaking to it. This is the main risk going in.
+2. **Scope gap.** You promised a CSV export; the roadmap entry bundles SIEM streaming. Worth confirming which Sam actually needs — if it's SIEM, that's a bigger ask than what you committed to.
+3. **Ownership churn.** Four different owners across recent touchpoints, and QBR prep sits with Jordan Blake, not you. Sync before the call so you're not contradicting a commitment someone else made.
+4. **Thin record trail.** No health score, renewal date, or open escalations in what I can see. If the QBR needs usage or renewal numbers, that's a gap to fill separately.
+
+### What to say
+**Before the call:** Ask the product owner whether the Q1 2027 audit log export commitment still holds. Ping Jordan Blake for anything from QBR prep that isn't in `CRM-12694`.
+
+**On the call:**
+- Open on audit readiness — it's what they keep coming back to, and leading there shows you've been listening.
+- On audit log export: **if the product owner confirms**, restate Q1 2027 plainly and pin down CSV vs. SIEM streaming. **If they don't confirm or you can't reach them**, acknowledge it's their top priority and that you're getting them a firm date, then commit to a specific follow-up day. Don't re-promise Q1 2027 in the room on the strength of the old note.
+- Close the loops on billing (`DRI-75222`) and pricing (`CRM-87224`) — both trail off without resolution.
+- Ask what "good" looks like for their audit so you know whether a CSV export actually gets them there.
+
+**Don't:** repeat "you have my word" on any date you haven't re-verified this week.
+
+**Side note, not for this call:** two of your other commitments carry the same flag — audit log export to Lena Fox at Granite Insurance (`SLA-77342`) and advanced analytics to Lena Fox at Pinecrest Realty (`SLA-93532`). Same conversation with the product owner probably covers all three.

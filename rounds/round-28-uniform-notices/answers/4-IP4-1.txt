@@ -1,0 +1,35 @@
+## Short answer
+
+I can't tell you which one is at risk — and the honest reason matters more than a guess.
+
+Both audit-export commitments carry the **same flag** in Sho: a decision I don't have visibility into may or may not change each of them. Neither is marked as safe, and neither is marked as broken. So there's no basis in what I can see for ranking one above the other. Anyone telling you "Cobalt's fine, worry about Keystone" (or vice versa) would be inventing the distinction.
+
+**For both, the answer is the same: check with the product owner before you reaffirm either one to the customer.**
+
+## Two corrections to the framing
+
+**1. The Keystone promise isn't yours.** Per `DRI-34564` (2026-08-03 sync), Nia Cole reminded the team that *the company* had told Keystone audit log export by Q1 2027 with Splunk streaming, and **Jordan Blake (AE) confirmed it**. You're not the promiser of record there — Jordan is. That changes who should be driving the conversation with the product owner and who should go back to Keystone if anything shifts.
+
+**2. You have a third audit-export promise, not two.** `SLA-77342` (2026-05-26): you told Lena Fox at **Granite Insurance** they'd have audit log export by Q1 2027 *including SIEM streaming*, so they could finish their rollout. It carries the same flag. If you're auditing your exposure, it belongs on the list.
+
+## What the visible records do differentiate
+
+| | Cobalt Retail (`CRM-38600`) | Keystone Energy (`DRI-34564`) |
+|---|---|---|
+| Promised by | **Maya Chen (you)** | Company, confirmed by Jordan Blake (AE) |
+| Contact | Sam Ortiz | Nia Cole |
+| Date | 2026-07-24 QBR | 2026-08-03 sync |
+| Scope | **CSV export only** | Export **+ streaming into Splunk** |
+| Wording | "you have my word" — personal, unhedged | Restated by customer, confirmed by AE |
+| Customer dependency | "planning around it" | Not stated in the record |
+
+Two things worth noting, independent of the hidden decision:
+
+- **Keystone's scope is strictly larger.** Export plus SIEM streaming is more surface area than a CSV, so it has more ways to slip. The public roadmap `NOT-20876` (2026-06-30) does list "Audit log export incl. SIEM streaming: Q1 2027," so both promises were consistent with the roadmap when made.
+- **Your Cobalt exposure is more personal.** "You have my word" on a specific format (CSV) to a customer who is planning around it is the hardest kind of commitment to walk back gracefully — that's a reputational risk to you regardless of how the product decision lands.
+
+## Suggested next step
+
+Take all three to the product owner in one ask, since they're the same feature and the same Q1 2027 date: Cobalt (CSV), Granite (export + SIEM), Keystone (export + Splunk — loop in Jordan Blake). Ask specifically whether the Q1 2027 date and the SIEM-streaming component both still hold, since Cobalt only needs the CSV and could survive a streaming slip that would break the other two.
+
+Note `SLA-13802` — you flagged on 2026-09-19 that a roadmap update was due "next week," which is now. That review is the natural place to get the answer. I'd hold off on reconfirming any of the three to customers until after it.

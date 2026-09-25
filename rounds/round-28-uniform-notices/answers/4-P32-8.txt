@@ -1,0 +1,38 @@
+## Harbor Clinics — QBR brief
+
+**Contacts seen in the record:** Ines Park, Ada Moss. Brightline side is spread across Sam Lee, Leo Grant, Priya Shah, Jordan Blake, Tess Brown, Ana Petrova, Omar Haddad and you.
+
+### Where things stand
+Activity is steady and broad rather than concentrated on one fire. Since April the account has touched QBR prep (CRM-45542), audit prep (CRM-35862), pricing (DRI-40615), onboarding (CRM-48825), integrations (CRM-75336), sandbox (DRI-18426), support queue (DRI-20995), dashboards (CRM-64035), offline (CRM-39320), and most recently the mobile app on 2026-09-21 (CRM-49374), whose stated next step is exactly this QBR prep.
+
+Two threads recur enough to be the spine of the call:
+- **Audit/compliance.** Audit prep shows up repeatedly as the follow-up item (CRM-35862 → exports; CRM-48825 and DRI-20995 both point back to audit prep). This is what Harbor cares about.
+- **Churn/retention discussion internally.** Three internal churn conversations in the last quarter — 2026-07-20 (DRI-17076), 2026-09-06 (DRI-26772), 2026-09-11 (DRI-17950, you and Tess Brown). The notes don't say whether Harbor is at risk or whether churn was the product topic being discussed, so I'd treat this as unresolved rather than as a red flag.
+
+Fair warning: most of these records are one-line stubs with no outcomes recorded. The narrative above is inferred from topic sequence, not from substantive notes.
+
+### Open commitments to Harbor Clinics
+| Commitment | Owner | Due | Status |
+|---|---|---|---|
+| Data retention controls | Jordan Blake (AE) | Q1 2027 | Safe to reaffirm |
+
+This is the one hard promise on the account. Ines Park raised it at the 2026-05-15 sync and Jordan confirmed it (DRI-80868). No later change to it appears anywhere in the record, so you can restate the Q1 2027 date on the call.
+
+### Risks
+1. **EU data residency is the live exposure.** On 2026-06-09 Ada Moss asked about it and we said we're exploring it with no dates (CRM-89966). That's still the position. For a clinical/healthcare customer this question tends to come back harder at a QBR, and the gap between "exploring" and the firm Q1 2027 retention date invites Harbor to assume they're the same programme. They are not.
+2. **No single owner.** Seven different Brightline names own Harbor threads across six months. Harbor may experience this as being handed around, and nobody appears to hold the compliance story end to end.
+3. **Audit prep keeps being the next step and never the last step.** It's been the trailing action item since May without a visible close.
+4. **Churn discussed internally three times without a recorded conclusion.** Worth resolving your own view before the call so you aren't surprised by a renewal question.
+
+### What to say
+- **Lead with retention controls.** "Data retention controls are on track for Q1 2027 — that's the commitment Jordan confirmed with Ines in May and it stands."
+- **On EU data residency, hold the line exactly where it is.** "We're actively exploring it; I don't have dates to give you yet, and I'd rather not give you one I can't stand behind." Do not let it get bundled into the Q1 2027 date.
+- **Close out audit prep.** Come with a concrete status on exports rather than another "we'll follow up" — this has been the open loop since May.
+- **Offer a single point of contact.** Proposing yourself as the owner for the compliance track directly addresses the fragmentation, and costs nothing.
+- **Ask, don't assert, on health.** Use the QBR to get Harbor's own read on adoption (mobile, dashboards, offline all came up recently but with no recorded outcome).
+
+### Before the call
+Get a real status on data retention controls from engineering — you'll be restating a Q1 2027 date to the customer and the record only shows it was confirmed in May.
+
+### Separately — not Harbor, but yours
+Two commitments you personally made carry a flag that something may have changed: **Advanced analytics (Osprey) by the spring release** to Lena Fox at Pinecrest Realty (SLA-93532), and **audit log export by Q1 2027** to Lena Fox at Granite Insurance (SLA-77342). Check with the product owner before you reaffirm either one to those customers. Neither affects the Harbor conversation. (A third, SCIM provisioning for Umber Studios, SLA-12035, is Jordan Blake's and carries the same flag.)

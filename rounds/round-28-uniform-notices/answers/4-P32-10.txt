@@ -1,0 +1,44 @@
+## Harbor Clinics — QBR brief (call week of Sep 28, 2026)
+
+### Where things stand
+Activity is steady but spread across many owners, with no single narrative thread in the records:
+
+| Date | Topic | Owner | Record |
+|---|---|---|---|
+| 2026-09-21 | Mobile app | Sam Lee | CRM-49374 |
+| 2026-08-19 | Support queue + audit prep | Leo Grant, you | DRI-20995 |
+| 2026-07-25 | Integrations | Omar Haddad | CRM-75336 |
+| 2026-07-24 | Onboarding | Priya Shah | CRM-48825 |
+| 2026-06-13 | Sandbox | Jordan Blake | CRM-36695 |
+| 2026-06-09 | EU data residency ask (Ada Moss) | — | CRM-89966 |
+| 2026-06-02 | Latency | you | CRM-94239 |
+| 2026-05-24 | Notifications | Ana Petrova | CRM-73374 |
+| 2026-05-15 | Retention commitment confirmed | Jordan Blake | DRI-80868 |
+| 2026-05-14 | Audit prep | Leo Grant | CRM-35862 |
+| 2026-04-25 | Integrations | Omar Haddad | CRM-97969 |
+| 2026-04-08 | QBR prep | Sam Lee | CRM-45542 |
+
+**Audit prep is the recurring theme** — it shows up as the follow-up item in Apr (CRM-45542), May (CRM-35862), Jul (CRM-48825) and again in Aug (DRI-20995). That's five months of it staying open. Treat it as the spine of the QBR.
+
+Contacts on record: **Ines Park** (raised retention) and **Ada Moss** (raised EU residency).
+
+### Open commitments
+- **Data retention controls by Q1 2027** — made to Ines Park, confirmed by Jordan Blake (AE) on 2026-05-15 (DRI-80868). No later change on record, so this stands as normal. Ines raised it as a reminder, meaning she's tracking it — expect her to ask.
+
+That's the only formal commitment to Harbor in the records.
+
+### Risks
+1. **Audit prep has been open since April** with no recorded resolution and the owner shifting (Sam Lee → Leo Grant → Priya Shah). If Harbor's audit has a hard date, this is your biggest exposure and you don't currently have a status to give them.
+2. **EU data residency is an unanswered ask.** Ada Moss raised it 2026-06-09; the position on record is "exploring, no dates yet" (CRM-89966) and nothing has moved in ~3.5 months. Do not offer a timeline.
+3. **Fragmented ownership** — seven different owners across twelve touchpoints. Harbor may perceive they're re-explaining themselves.
+4. **Thin data.** The records contain no renewal date, contract value, usage/health metrics, or open ticket counts. Pull those from your own systems before the call; I can't confirm them here.
+
+### What to say
+- **Open by closing the loop on audit prep.** "Here's where audit prep landed and who owns it from here" — get a status from Leo Grant before the call.
+- **Reaffirm retention proactively, to Ines:** data retention controls remain on track for Q1 2027. Saying it before she asks converts a watch-item into a credibility win.
+- **On EU data residency, be straight with Ada:** it's under exploration, no committed dates. Offer a concrete alternative — a date by which you'll come back with a real answer — rather than a soft "soon."
+- **Name a single point of contact** for Harbor going forward. Given you're already on the latency and support-queue threads, that's most naturally you.
+- **Ask, don't just report:** what does Harbor need from the mobile app work (most recent topic, Sep 21), and what's their audit deadline?
+
+### Two things outside this brief
+Two commitments of yours on other accounts — advanced analytics for Pinecrest Realty (SLA-93532) and audit log export for Granite Insurance (SLA-77342) — are flagged as possibly affected by decisions I can't see. Neither touches Harbor, so they don't affect this call, but check with the product owner before you reaffirm either of those elsewhere.

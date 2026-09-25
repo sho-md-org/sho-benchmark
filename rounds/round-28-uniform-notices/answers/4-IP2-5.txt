@@ -1,0 +1,17 @@
+**No — nothing I can see shows a change to either half of SSO.**
+
+What the records say:
+
+- **NOT-20876** (Public roadmap H1 2027, dated 2026-06-30) lists it as a single line item: *"SSO (SAML), SP- and IdP-initiated: Q1 2027."* SP- and IdP-initiated aren't split into separate dates or separate deliverables there.
+- The SSO records I can reach (NOT-20443, NOT-40327, NOT-29159, NOT-55918, SLA-95210, etc.) are thin Q&A/notes threads with various owners — none of them describes a scope or date change, and none singles out IdP-initiated.
+- No open commitment on SSO is attributed to you or your team in what I can see, and nothing on SSO is flagged.
+
+So I can't confirm the premise: there's no record in my view of an SSO change at all, let alone one narrowed to the IdP-initiated part.
+
+**One thing worth separating out.** Three commitments that *are* in your scope carry a flag saying a decision I can't see may affect them — please check with the product owner before reaffirming any of these to a customer:
+
+- **Advanced analytics (Osprey)** — your promise to Lena Fox (Pinecrest Realty), spring release (SLA-93532)
+- **Audit log export** — your promise to Lena Fox / Granite Insurance, Q1 2027 (SLA-77342)
+- **SCIM provisioning** — Jordan Blake's promise to Kai Berg (Umber Studios), Q1 2027 (SLA-12035)
+
+SCIM and audit log export both sit next to SSO on the identity/security roadmap and share the Q1 2027 date, so if the "something changed" you heard came through a roadmap or security-features conversation, one of those is a likelier source than SSO itself. Worth confirming which feature the original message was actually about before you reply to the customer.

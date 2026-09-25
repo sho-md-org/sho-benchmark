@@ -1,0 +1,23 @@
+## Short answer: I can't rank them — both carry the same flag
+
+Both audit-export promises came back with the same notice: a decision I don't have visibility into may or may not have changed each of them. That notice is attached to Keystone's commitment (`DRI-34564`) *and* to Cobalt Retail's (`CRM-38600`), so there's no basis for me to say one is safer than the other. Anything I told you about which is "the risky one" would be me guessing at something I can't see.
+
+**What you need to do:** ask the product owner whether each promise still holds — before you reaffirm either one to Sam Ortiz or to Keystone. Don't treat the Q1 2027 date as confirmed with a customer until you've heard back.
+
+## Two things worth correcting in the framing
+
+**1. The Keystone promise isn't yours.** Per `DRI-34564` (2026-08-03), Nia Cole raised that "we told them" audit log export by Q1 2027 with Splunk streaming, and **Jordan Blake (AE)** confirmed it. It's logged as a company commitment confirmed by Jordan, not by you.
+
+Your *second* audit-export promise is **Granite Insurance** — `SLA-77342` (2026-05-26), where you told Lena Fox audit log export by Q1 2027 **including SIEM streaming** so they could finish their rollout. That one also carries the same notice. So you actually have two of your own on this feature (Cobalt, Granite), and Jordan owns the Keystone one. Loop him in rather than carrying it yourself.
+
+**2. The scope you promised differs, and that part is visible.**
+
+| Promise | Scope committed | Source |
+|---|---|---|
+| Cobalt Retail (Sam Ortiz) | "CSV export, you have my word" — no streaming | `CRM-38600` |
+| Keystone Energy | Export **+ streaming into Splunk** | `DRI-34564` |
+| Granite Insurance (Lena Fox) | Export **+ SIEM streaming** | `SLA-77342` |
+
+The public roadmap (`NOT-20876`) lists "Audit log export incl. SIEM streaming: Q1 2027" — so Keystone and Granite match the published line, and Cobalt is a narrower ask. That's a scope observation only; it does not tell you which delivery date is intact, and you shouldn't read it as reassurance about either date.
+
+One flag on the Cobalt record: "you have my word" is an unusually hard personal guarantee, and `CRM-38600` notes the customer is planning around it. If the product owner comes back with any change, that's the conversation that will be hardest to walk back — worth checking that one first.

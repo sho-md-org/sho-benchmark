@@ -1,0 +1,43 @@
+## Cobalt Retail — QBR Brief (call week of Sep 28, 2026)
+
+### Where things stand
+Steady, high-touch account with near-continuous engagement across Apr–Aug 2026. Recurring themes, in order of how often they come up:
+
+- **Audit / compliance prep** — the dominant thread: CRM-24323 (Jun 12), CRM-87224 (Jun 23), DRI-75222 (Aug 11, billing + audit prep), CRM-12694 (Aug 4, QBR prep → next step "follow up on audit prep").
+- **Commercial** — pricing (CRM-87224, owner Priya Shah), billing (DRI-75222, with Ana Petrova and Omar Haddad).
+- **Product/adoption** — reporting (CRM-94849), notifications (CRM-35990), dashboards (CRM-24697), search (CRM-36268), webhooks (CRM-98822), onboarding (CRM-49779, CRM-16603), roadmap (CRM-70221), NPS (CRM-92187).
+
+Coverage is split across Omar Haddad, Priya Shah, Jordan Blake (QBR owner per CRM-12694), Tess Brown, and you. Worth naming one owner for the audit-compliance thread going into the QBR — right now it hops between people.
+
+### Open commitments
+| Commitment | Source | Made by | Due | Status |
+|---|---|---|---|---|
+| Audit log export (Lark), delivered as CSV export, to Sam Ortiz | CRM-38600 (Jul 24) | You | Q1 2027 | **Needs verification before you restate it** |
+
+Your exact words in CRM-38600 were *"you'll have it by Q1 2027 as a CSV export, you have my word"* — and the note records that Cobalt is planning around it. Sam Ortiz pushed on this; it will almost certainly come up again next week.
+
+⚠️ **Before the call, confirm with the audit log export product owner that the Q1 2027 CSV commitment still holds.** I can't verify the current delivery status from what I can see, so I'm not in a position to tell you it's safe to reaffirm. The public roadmap (NOT-20876, Jun 30) does list "Audit log export incl. SIEM streaming: Q1 2027," but that page is nearly three months old and is not a substitute for a direct check with the owner.
+
+Related exposure on the same feature, outside this account: you made an equivalent Q1 2027 audit log export commitment to Lena Fox at Granite Insurance (SLA-77342). One answer from the product owner covers both — ask once, and you de-risk two accounts. (Separately, your Advanced analytics "spring release" promise to Lena Fox at Pinecrest Realty, SLA-93532, also needs the same check — the roadmap shows Advanced analytics at Q2 2027, which doesn't obviously line up with "spring release.")
+
+### Risks
+1. **Personal-credibility risk on audit log export.** You gave a word-of-honor commitment with a specific format and date, and the customer is building plans on it. If the date or scope has moved and you reaffirm it cold, the fallout lands on you. This is the single highest-stakes item on the call.
+2. **Scope creep in the roadmap line.** Your promise was a **CSV export**; the public roadmap entry bundles **SIEM streaming**. If Cobalt has read the roadmap, they may expect streaming too. Be deliberate about which you're committing to.
+3. **Fragmented ownership.** Audit prep has been discussed with at least four different internal owners over four months, and the last three follow-up chains all pointed back at audit prep without visible closure. Reads as drift to a customer who cares about it.
+4. **Commercial conversation is live.** Pricing (CRM-87224) and billing (DRI-75222) are both open; an unresolved compliance commitment weakens your position in those talks.
+
+### What to say
+**Open with what's working:** consistent cadence, broad product engagement (reporting, dashboards, notifications, onboarding all covered), NPS touchpoint done.
+
+**On audit log export — pick your line after you've talked to the product owner:**
+- *If it's confirmed:* "Q1 2027, CSV export, as I committed in July — here's the milestone we'll hit before then." Give them a checkpoint date, not just the end date.
+- *If it's moved or uncertain:* don't improvise on the call. Say "I want to give you a precise answer rather than a fast one — I'm confirming the delivery detail internally and will come back to you with dates this week," then follow up in writing. Raise it yourself rather than waiting for Sam to ask; you get credit for transparency instead of being caught out.
+- Either way, **clarify CSV vs. SIEM streaming** so expectations match what was actually promised.
+
+**On ownership:** name a single accountable owner for the compliance workstream and say so out loud. It's a cheap, visible fix to the drift.
+
+**On commercial:** close the loop on the pricing and billing threads (CRM-87224, DRI-75222) — ideally after the audit item is settled, not before.
+
+**Ask them:** what their audit timeline actually is. Everything above is calibrated to their deadline, and I don't see it recorded anywhere.
+
+One note on limits: the Cobalt records I can see are mostly one-line call summaries — topic, owner, next step — with no dollar figures, renewal date, contract terms, or support/incident history. If you want the QBR to cover commercial performance or SLA health, that data will need to come from elsewhere. The substance I could verify is concentrated in CRM-38600.

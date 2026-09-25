@@ -1,0 +1,56 @@
+P13 (unaffected_sales): 3 commitments
+                      Data retention controls s15=no later change found  v2=no later change found
+   Quarry Mining      SSO (SAML) s15=no later change found  v2=no later change found
+                      Custom roles s15=NOTICE                 v2=NOTICE
+P18 (unaffected): 5 commitments
+   Cobalt Retail      Audit log export s15=no later change found  v2=NOTICE  <- changed
+                      Advanced analytics s15=NOTICE                 v2=NOTICE
+                      Offline mode s15=no later change found  v2=no later change found
+                      SCIM provisioning s15=NOTICE                 v2=NOTICE
+                      Audit log export s15=NOTICE                 v2=NOTICE
+P32 (unaffected): 5 commitments
+   Harbor Clinics     Data retention controls s15=no later change found  v2=no later change found
+                      Advanced analytics s15=NOTICE                 v2=NOTICE
+                      Offline mode s15=no later change found  v2=no later change found
+                      SCIM provisioning s15=NOTICE                 v2=NOTICE
+                      Audit log export s15=NOTICE                 v2=NOTICE
+P34 (fulfilled): 5 commitments
+   Aster Health       Higher API rate limits s15=shipped                v2=shipped
+                      Advanced analytics s15=NOTICE                 v2=NOTICE
+                      Offline mode s15=no later change found  v2=no later change found
+                      SCIM provisioning s15=NOTICE                 v2=NOTICE
+                      Audit log export s15=NOTICE                 v2=NOTICE
+P11 (partial): 5 commitments
+   Vantage Telecom    SSO (SAML) s15=NOTICE                 v2=NOTICE
+                      Advanced analytics s15=NOTICE                 v2=NOTICE
+                      Offline mode s15=no later change found  v2=no later change found
+                      SCIM provisioning s15=NOTICE                 v2=NOTICE
+                      Audit log export s15=NOTICE                 v2=NOTICE
+P16 (partial): 5 commitments
+                      Advanced analytics s15=NOTICE                 v2=NOTICE
+                      Offline mode s15=no later change found  v2=no later change found
+                      SCIM provisioning s15=NOTICE                 v2=NOTICE
+   Keystone Energy    Audit log export s15=NOTICE                 v2=NOTICE
+                      Audit log export s15=NOTICE                 v2=NOTICE
+IP1 (probe): 4 commitments
+                      Advanced analytics s15=NOTICE                 v2=NOTICE
+                      Offline mode s15=no later change found  v2=no later change found
+                      SCIM provisioning s15=NOTICE                 v2=NOTICE
+                      Audit log export s15=NOTICE                 v2=NOTICE
+IP2 (probe): 4 commitments
+                      Advanced analytics s15=NOTICE                 v2=NOTICE
+                      Offline mode s15=no later change found  v2=no later change found
+                      SCIM provisioning s15=NOTICE                 v2=NOTICE
+                      Audit log export s15=NOTICE                 v2=NOTICE
+IP4 (probe): 6 commitments
+   Cobalt Retail      Audit log export s15=no later change found  v2=NOTICE  <- changed
+                      Advanced analytics s15=NOTICE                 v2=NOTICE
+                      Offline mode s15=no later change found  v2=no later change found
+                      SCIM provisioning s15=NOTICE                 v2=NOTICE
+   Keystone Energy    Audit log export s15=NOTICE                 v2=NOTICE
+                      Audit log export s15=NOTICE                 v2=NOTICE
+ADV2 (adversarial): 4 commitments
+                      Advanced analytics s15=NOTICE                 v2=NOTICE
+                      Offline mode s15=no later change found  v2=no later change found
+                      SCIM provisioning s15=NOTICE                 v2=NOTICE
+                      Audit log export s15=NOTICE                 v2=NOTICE
