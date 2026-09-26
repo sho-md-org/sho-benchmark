@@ -1,0 +1,45 @@
+## Cobalt Retail — QBR Brief
+
+**⚠️ Read this first:** Your audit log export commitment to Sam Ortiz is flagged in Sho. There may be a change affecting it that I can't see. **Do not reaffirm the Q1 2027 date on the call until you've checked with the product owner.** That's the single highest-stakes item in this QBR — you gave your word on it, in writing, and Sam is planning around it.
+
+---
+
+### Where things stand
+
+Cobalt is an active, multi-threaded account. Sam Ortiz is your economic/product-pressure contact; Sam Lee and Dana Ortiz appear on working sessions. Internally the account is spread across Jordan Blake, Priya Shah, Omar Haddad, and Tess Brown, with you on roadmap and sandbox.
+
+Recent activity by theme:
+- **Audit/compliance** — the dominant thread. Recurring through CRM-24323 (Jun 12), CRM-87224 (Jun 23), CRM-12694 (Aug 4), DRI-75222 (Aug 11). Nearly every call chains a "follow up on audit prep" next step, which means it's driving their calendar, not just ours.
+- **Commercial** — pricing (CRM-87224, Jun 23) and billing (DRI-75222, Aug 11, with Ana Petrova and Omar Haddad).
+- **Product/adoption** — onboarding (CRM-49779, CRM-16603, DRI-18657), dashboards (CRM-24697, DRI-58616), reporting (CRM-94849), notifications (CRM-35990), sandbox/hosting (DRI-35074, Aug 23 — your call with Sam Lee).
+- **Newest ask** — Bulk import v2, raised by Sam Ortiz on Aug 22 (CRM-84001). We told them we're exploring it, **no dates**.
+
+### Open commitments
+
+| Commitment | Made by | Due | Status |
+|---|---|---|---|
+| Audit log export, delivered as CSV | You (CRM-38600, Jul 24) | Q1 2027 | **Flagged — verify before reaffirming** |
+| Bulk import v2 | Us (CRM-84001, Aug 22) | None given | Exploratory only — keep it that way |
+
+### Risks
+
+1. **The audit log export promise is the account's load-bearing commitment.** Your exact words in CRM-38600 were "you'll have it by Q1 2027 as a CSV export, you have my word," and the note records that the customer is planning around it. If anything has shifted, walking that back mid-QBR without warning is far worse than a pre-briefed, managed conversation. Get the product owner's read this week.
+2. **Scope creep on Bulk import v2.** Sam raised it a month ago and will likely press for a date at the QBR. There is nothing in the record supporting one.
+3. **Ownership is diffuse.** Four different internal owners across recent calls, and next-steps loop back on themselves (audit prep → trial conversion → audit prep). Sam may perceive drift even if work is happening.
+4. **Heads-up, separate from this call:** you have a second audit log export commitment to Lena Fox at Granite Insurance (SLA-77342, also Q1 2027) that carries the same flag. Same conversation with the product owner should cover both.
+
+### What to say
+
+**On audit log export — only after you've confirmed with the product owner.** If it's confirmed, reaffirm plainly: "CSV export, Q1 2027, as committed." If you haven't confirmed by call time, don't restate the date. Use: *"Audit log export is the top item on our side and I'm tracking it closely. I want to give you a precise delivery update rather than a rough one — let me come back to you this week with the current state from the product team."* That buys time without creating a new promise or signaling alarm.
+
+**On Bulk import v2:** *"It's on our radar and we're exploring it. I don't have dates for you today, and I'd rather not give you one I can't stand behind. What would the rollout look like on your side if it landed — who'd use it, and what's the trigger?"* Turns the pressure into discovery and sets up a real business case.
+
+**On audit prep generally:** name it as the through-line. *"Audit readiness has been the connective thread across our last four conversations. I'd like to lock one owner and one timeline on our side so it stops bouncing."* Proposing single-threaded ownership directly addresses risk #3.
+
+**On commercial:** pricing and billing have both come up (CRM-87224, DRI-75222). Go in knowing where those landed before the call — I don't have the substance of either in the record, and Ana Petrova and Omar Haddad will.
+
+**Open with value, not status:** lead with dashboards, reporting, and sandbox progress before the compliance conversation, so the QBR doesn't become a one-topic meeting.
+
+---
+
+**Before the call:** (1) product owner on audit log export — covers both Cobalt and Granite; (2) Omar/Ana on where billing and pricing landed; (3) decide who owns audit prep end-to-end so you can name that person to Sam.

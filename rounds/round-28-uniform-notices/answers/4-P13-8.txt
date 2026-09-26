@@ -1,0 +1,25 @@
+**Checked and clear to reaffirm.** The SSO (SAML) Q1 2027 commitment to Quarry Mining (Tom Hale) is confirmed in `DRI-36664` (Leo Grant confirmed it on 2026-07-09 when Tom raised it), it matches the public roadmap `NOT-20876` ("SSO (SAML), SP- and IdP-initiated: Q1 2027"), and there's no later change to it. `CRM-14429` is an earlier SSO call with Ana Petrova but adds nothing that contradicts it.
+
+Draft reply:
+
+---
+
+**Subject:** Re: SSO (SAML) timeline
+
+Hi Tom,
+
+Yes — SSO (SAML) is still planned for Q1 2027, same as when we spoke in July. It's on our published H1 2027 roadmap, covering both SP-initiated and IdP-initiated flows.
+
+Nothing has changed on our side since we last confirmed it. As we get closer, I'll get you in touch with the product team ahead of general availability so your team can review the setup against your IdP and plan the rollout rather than starting from scratch on day one.
+
+If it would help, I'm happy to set up a short call with our product lead this quarter so you can get the configuration details directly and ask anything about your specific environment.
+
+Best,
+Leo
+
+---
+
+Two notes for the AE before sending:
+
+- I kept it to what's actually committed — the Q1 2027 date and the SP/IdP-initiated scope. I didn't name a specific release date or promise early access, since neither is backed by anything in our records.
+- Unrelated to this email: the **custom roles** commitment to Ironwood Legal (Robin, tied to their April reorg) is flagged — check with the product owner before reaffirming that one to the customer. It doesn't affect the Quarry Mining reply.

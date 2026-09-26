@@ -1,0 +1,50 @@
+## Vantage Telecom — QBR Brief
+
+**One thing to handle before the call: do not re-confirm the SSO date.** Details in Risks below.
+
+---
+
+### Where things stand
+
+Steady, high-touch account — roughly monthly contact across five Brightline owners (you, Jordan Blake, Priya Shah, Leo Grant, Ana Petrova, Tess Brown). Threads over the last two quarters:
+
+| Theme | Latest | Record |
+|---|---|---|
+| SSO (SAML) | Customer questions, Priya owner, next step "roadmap" | CRM-57082 (9/19), DRI-67178 (9/11) |
+| Dashboards | Recurring since April; your call, next step exports | CRM-65747 (9/13), CRM-10757, CRM-20779 |
+| Billing | Twice, both next-stepped to latency | CRM-92524 (7/23), CRM-24363 |
+| Exports / integrations | Open follow-ups on webhooks, audit prep | CRM-23907, DRI-81968 |
+| Pricing | Jordan owner, next step audit prep | CRM-36270 |
+| NPS | Tess owner, next step reporting | CRM-37016 |
+
+### Open commitments to Vantage
+
+- **SSO (SAML), by Q1 2027, incl. IdP-initiated login from Okta** — promised by Priya Shah to Ines Park at the June QBR (CRM-31062). Sho flags this one. The customer is planning their rollout around it.
+
+### Risks
+
+1. **The SSO promise may no longer be current.** Sho's notice on CRM-31062 says a decision I can't see may or may not affect it — I can't tell you which, and I'm not able to describe that decision. **Action: ask the SSO product owner whether the Q1 2027 date and the Okta IdP-initiated scope still hold, before the call.** If you don't have an answer by then, don't restate the date on the call.
+2. **Churn is on someone's radar.** DRI-14442 (9/6, Dana Ortiz + Tess Brown) is literally "Churn (Vantage Telecom)" tied to QBR prep. Ask Dana what prompted it — you don't want to walk in unaware of an internal churn view.
+3. **Ownership sprawl.** Six different owners across twelve months, with next-steps that dead-end (billing → latency, twice; exports → webhooks). Ines may raise "who owns us."
+4. **Unclosed threads:** exports, webhooks, latency, audit prep, NPS reporting. Confirm status with the owners or don't raise them.
+
+### What to say
+
+**Open:** recap the year's value — dashboards adoption, NPS engagement, integrations work. Name yourself as single point of contact to defuse the ownership issue.
+
+**On SSO, if Ines raises it (they will):**
+> "SSO is the top item on our side and I know you're planning your rollout around it. I'm getting you a written status directly from the product team rather than a hallway answer — you'll have it from me by [date]."
+
+This keeps faith without re-committing to a date you can't currently stand behind. Don't repeat "Q1 2027, you have my word" until the product owner confirms it.
+
+**Close:** propose a written follow-up within 48 hours covering SSO status, exports/webhooks, and the billing-latency thread, each with a named owner and date.
+
+---
+
+### Also flagged — your other accounts
+
+Two commitments you personally made carry the same notice and are unrelated to this QBR, but are worth the same check with their product owners:
+- **Advanced analytics (Osprey), spring release** → Lena Fox, Pinecrest Realty (SLA-93532)
+- **Audit log export, Q1 2027** → Lena Fox, Granite Insurance (SLA-77342)
+
+Want me to draft the pre-call note to the SSO product owner and the Dana Ortiz churn question?

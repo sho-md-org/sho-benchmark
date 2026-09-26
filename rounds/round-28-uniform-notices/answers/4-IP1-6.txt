@@ -1,0 +1,29 @@
+## Short answer: none of your SSO promises are tracked as affected — because you don't have any tracked SSO commitments
+
+I checked your SSO records and the commitment register. The SSO material under your name is all discussion, not promises:
+
+- **CRM-74174** — Evergreen Bank SSO call, owner you; next step was audit prep
+- **DRI-18519** — Harbor Clinics, SSO + notifications (you, Ana Petrova)
+- **DRI-79562** — Norrland AB, SSO + offline (Priya Shah, you)
+- **SLA-21939**, **NOT-29833**, **NOT-58902** — SSO notes/updates, you as owner
+
+None of these record a dated availability commitment to a customer, so there's nothing on SSO for a roadmap change to break. Other SSO conversations in the account base belong to Jordan Blake (**CRM-93928**, Pinecrest Realty) and Priya Shah (**CRM-57082**, Vantage Telecom), not you.
+
+## What is flagged, and why it's adjacent rather than SSO
+
+Two things are worth your attention because people often file them under "SSO":
+
+1. **SCIM provisioning — Umber Studios, by Q1 2027 (SLA-12035).** This is the closest thing to an SSO promise in the register: identity/provisioning, sold to Kai Berg to let them finish their rollout. It carries a flag that a change I can't see may or may not affect it. **But it isn't your promise — Jordan Blake (AE) made it.** If your Evergreen Bank or Harbor Clinics conversations leaned on SCIM, route it through Jordan and the product owner.
+2. **Your own two flagged promises are on other features:**
+   - **Advanced analytics (Osprey), spring release** → Lena Fox, Pinecrest Realty (**SLA-93532**)
+   - **Audit log export, Q1 2027** → Lena Fox, Granite Insurance (**SLA-77342**)
+
+Both carry the same flag. Audit log export is the one most likely to surface in an SSO/security conversation — it's the follow-up on your Evergreen Bank call (**CRM-74174**, audit prep), so an SSO thread can easily drift into it.
+
+For comparison, Offline mode (**SLA-24221**, Priya Shah → Meridian Travel) has no flag — no later change found.
+
+## Recommended next step
+
+Before you reaffirm either **SLA-93532** or **SLA-77342** to Lena Fox in writing or on a call, check with the product owner that the promise still holds. I can't tell you whether it does. Same for SCIM if it comes up — but via Jordan, since it's their commitment.
+
+If you have an SSO date you gave a customer verbally that isn't in these records, tell me the account and I'll check whether anything touches it.

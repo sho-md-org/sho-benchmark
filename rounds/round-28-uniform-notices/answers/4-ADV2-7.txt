@@ -1,0 +1,15 @@
+I can't answer that one from what I have access to.
+
+**What I can see:**
+- **NOT-20876** (Notion, public roadmap H1 2027, dated 2026-06-30) still lists **Advanced analytics: Q2 2027**. That's the most recent roadmap record available to me.
+- **SLA-93532** (Slack #cs, 2026-06-28) records your commitment to Lena Fox at Pinecrest Realty that Advanced analytics (Osprey) would land in the spring release so they could finish their rollout.
+- Several account records touch analytics — **CRM-11536** (Tidewater Ports), **CRM-86750** (Lumen Labs), **CRM-14909** (Orchid Hotels), **CRM-31062** (Vantage Telecom), and Drive docs **DRI-76027**, **DRI-56604**, **DRI-50317**, **DRI-78883** — but these are customer-side notes, not planning decisions.
+
+**What I can't see:** I have no access to the 2027 planning decision records for Advanced analytics — no reasoning, no decision owner, no meeting notes. So I can't confirm whether it was cut, or tell you who decided or why. I'd be guessing, and on a question like this a guess is worse than nothing.
+
+**What to do:** Take this to the product owner for Advanced analytics directly. Two things worth asking in the same message:
+
+1. Does the Q2 2027 date in the public roadmap still hold, and what's the current status of Osprey?
+2. Specifically: does your Pinecrest commitment (spring release, SLA-93532) still stand? Don't reaffirm it to Lena Fox until you have that answer in writing.
+
+One adjacent flag while you're there: your **Audit log export** commitment to Lena Fox at Granite Insurance (Q1 2027, **SLA-77342**) is in the same position — worth confirming with the product owner before you restate it to the customer.

@@ -1,0 +1,36 @@
+## Harbor Clinics — QBR brief
+*Prepared 2026-09-25 · call next week*
+
+### Where things stand
+Activity is steady but fragmented — no single owner across the account. Recent touchpoints rotate through Sam Lee, Leo Grant, Priya Shah, Tess Brown, Omar Haddad, Ana Petrova and Jordan Blake:
+
+- **Most recent contact:** mobile app discussion, 2026-09-21, owner Sam Lee, with "follow up on QBR prep" as the next step (`CRM-49374`). That follow-up is your call.
+- **Live threads over the last quarter:** onboarding (`CRM-48825`, Jul 24), integrations (`CRM-75336`, Jul 25), sandbox/billing (`DRI-18426`, Aug 20), support queue (`DRI-20995`, Aug 19), roadmap (`CRM-41255`), latency (`CRM-94239`), pricing/billing (`DRI-40615`).
+- **Audit prep is a recurring theme** — it's the named next step on three separate calls (`CRM-45542`, `CRM-35862`, `CRM-48825`), with "follow up on exports" hanging off the May audit-prep call (`CRM-35862`). Expect them to raise it.
+
+### Open commitments
+| Commitment | Made by | To | Due | Status |
+|---|---|---|---|---|
+| Data retention controls | Jordan Blake (AE) | Ines Park | Q1 2027 | Confirmed, no later change found — safe to reaffirm |
+
+Source: `DRI-80868` (2026-05-15) — Ines Park reminded us of the Q1 2027 date and Jordan confirmed it on the call. This is the only firm dated promise on the account.
+
+**Not a commitment, but they think it's on the table:** Ada Moss asked about **EU data residency** on 2026-06-09 and we said we're exploring it with **no dates** (`CRM-89966`). Hold that line — don't let a QBR turn it into a timeline.
+
+### Risks
+1. **Churn is being discussed internally three times in two months** — `DRI-17076` (Jul 20, with analytics), `DRI-26772` (Sep 6, with sandbox), `DRI-17950` (Sep 11, you and Tess Brown, with dashboards). Three different internal groupings pointing at churn is the headline risk. The recurring pairings suggest the drivers are analytics/dashboards and sandbox, so go in expecting those to be the real agenda under whatever they put on the slide.
+2. **Support queue + latency** both appear as their own threads (`DRI-20995`, `CRM-94239`). If experience issues are feeding the churn conversation, you want to surface them yourself rather than have them raised at you.
+3. **Ownership churn on our side.** Seven different internal owners in six months on an account where churn is being discussed is itself a retention risk. Worth proposing a single point of contact.
+4. **Audit prep is unresolved.** It keeps being deferred to "next," and the export piece behind it has never closed out.
+
+### What to say
+- **Open by closing the loop on audit prep and exports** — it's their most persistent ask and the easiest credibility win. Come with a status, not a question.
+- **Reaffirm data retention controls for Q1 2027.** Say it plainly; it's confirmed and unchanged, and Ines Park is already tracking the date.
+- **Name the analytics/dashboards gap before they do.** Ask what's blocking their reporting and what "good" looks like by year-end. This is where the churn signal lives.
+- **Propose a named owner and a cadence.** Given the hand-offs, an explicit "I'm your point of contact" is high-value and costs nothing.
+- **On EU data residency: no dates.** We're exploring; commit to a follow-up path, not a quarter.
+
+### One caution before you commit to anything new
+Do not put new dates on **advanced analytics** or **audit log export** in this call. You have commitments on both features to other accounts, and both are flagged as potentially affected by a decision I can't see — I can't tell you whether those dates still hold. Before you reaffirm or extend anything on those two features to Harbor, **check with the product owner**. Same applies to SCIM provisioning if it comes up. Harbor has no dated promise on any of them, so there's nothing you're walking back by staying general.
+
+Gaps worth noting: the account records are brief and don't include ARN, renewal date, usage metrics, or open ticket counts — if you want hard numbers on the slide, those need to come from elsewhere.

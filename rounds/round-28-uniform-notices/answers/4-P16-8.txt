@@ -1,0 +1,50 @@
+## Keystone Energy — QBR brief
+
+**One thing to handle before the call:** your headline commitment to this account is flagged. Don't reaffirm the audit log export date on the call until you've checked with the product owner.
+
+### Where things stand
+
+Keystone is an active, high-touch account — 20+ logged touchpoints since April across at least eight owners (you, Jordan Blake, Sam Lee, Omar Haddad, Priya Shah, Leo Grant, Tess Brown, Dana Ortiz, Ana Petrova). The dominant thread all year is **audit/compliance prep**: CRM-90377 (May 8), CRM-17727 (Jun 17), DRI-85107 (Jun 8), DRI-48005 (Jun 25), CRM-56742 (Aug 17), DRI-84961 (Aug 24). That's their center of gravity, not a side topic.
+
+Recent activity is still live and spread across commercial and technical topics: pricing with Jordan Blake as of today (CRM-78617), uptime with Sam Lee two days ago (CRM-19012), integrations (DRI-31273), billing (CRM-56812), analytics (CRM-71909), rate limits (CRM-60405), onboarding (CRM-15788).
+
+Your own QBR prep call (CRM-93344, Aug 25) left one next step: **follow up on security review** — still the open item going into this QBR.
+
+Caveat: the CRM entries are one-line summaries. There's no usage data, health score, ARR, or renewal date in what I can see, so treat the "where things stand" narrative as directional and pull the numbers from your dashboard before you build slides.
+
+### Open commitments
+
+**1. Audit log export with SIEM streaming into Splunk — by Q1 2027. ⚠️ Flagged.**
+Source: DRI-34564 (Aug 3 sync). Nia Cole raised it; Jordan Blake confirmed it on the company's behalf. This is a company-level commitment to Keystone, not an individual's aside.
+
+There's a decision in play that I can't see, and it may or may not affect this promise. **Ask the product owner whether the Q1 2027 date still holds before you restate it to Nia.** Do this before the call, not on it — Nia has already had this confirmed once, so a wobble in the room would land badly.
+
+**2. Related, and worth knowing about:** you personally committed audit log export to Lena Fox at Granite Insurance, also by Q1 2027 (SLA-77342), and that one is flagged the same way. Same product owner conversation can cover both. Your Osprey advanced-analytics commitment to Lena Fox at Pinecrest Realty (SLA-93532) is also flagged. None of these are Keystone's business, but it means one check-in resolves three of your exposures.
+
+### Risks
+
+- **Date exposure on the flagged commitment.** Keystone's entire year has been compliance prep, so audit log export is almost certainly load-bearing for an internal deadline of theirs. If the date moves, the QBR is the wrong venue to discover it.
+- **Ownership sprawl.** Nine-plus people have owned Keystone calls in five months. Nia Cole having to remind *us* of our own commitment (DRI-34564) is a symptom — they're tracking our promises better than we are. Expect them to arrive with a list.
+- **Dangling threads with no closure recorded.** Security review (CRM-93344), webhooks (CRM-56742), offline (CRM-78617), NPS (CRM-19012). Each is someone's "next step" with no follow-up record. Assume Keystone remembers at least some of them.
+- **Pricing conversation is active today** (CRM-78617, Jordan Blake). Sync with Jordan before the QBR so commercial and delivery messages don't diverge in front of the customer.
+
+### What to say
+
+**Open with their agenda, not ours.** "Compliance has driven most of our work together this year — let's start there." It signals you know what matters to them.
+
+**On audit log export — script depends on your product-owner answer:**
+- *If the date holds:* reconfirm plainly. "Audit log export with Splunk streaming, Q1 2027, as Jordan confirmed in August."
+- *If you haven't gotten an answer yet:* do not improvise a date. "I want to give you a precise delivery picture on audit log export rather than a rough one — I'm closing that out with the product team and will have it to you in writing by [date]." Then actually send it. A one-week written follow-up is recoverable; a reaffirmed date that slips is not.
+
+**On the fragmented ownership:** get ahead of it. Offer a single written commitments tracker for the account — every open promise, owner, and date, refreshed at each QBR. It turns your weakest point into a visible improvement and stops Nia from having to be our memory.
+
+**Close the danglers:** come with a status line on security review, webhooks, offline, and NPS, even if the status is "not started, here's when." Unanswered threads are what erode trust between QBRs.
+
+**Ask, don't just report:** what's Keystone's own compliance deadline, and does Q1 2027 clear it with room to spare? Their answer tells you how much risk the flagged commitment actually carries.
+
+### Your pre-call checklist
+
+1. Product owner: does the Q1 2027 audit log export date for Keystone still hold? (Cover SLA-77342 and SLA-93532 in the same conversation.)
+2. Jordan Blake: where did today's pricing call land (CRM-78617)?
+3. Pull actual usage, health, and renewal data — the CRM notes don't have it.
+4. Get status on security review, webhooks, offline, NPS.

@@ -1,0 +1,22 @@
+I can't answer that one from what I have access to — and I want to be precise about why rather than guess.
+
+## What I can see
+
+- **NOT-20876** (Public roadmap H1 2027, 2026-06-30) still lists **Advanced analytics: Q2 2027**. That's the most recent planning document available to me, and it shows the feature *on* the plan, not cut.
+- Nothing in my accessible records contains a decision to cut Advanced analytics, reasoning for one, or a named decision-maker.
+
+## Why I'm not going to speculate
+
+My view of company records is partial, so "I don't see a cut" isn't the same as "there was no cut." I can't verify whether the 2027 plan for Advanced analytics has changed since that June roadmap, which means I can't give you exact reasoning or attribute a decision to anyone. Anything I offered there would be invention, and this is exactly the kind of thing that gets repeated to a customer.
+
+**The product owner for Advanced analytics is who to ask.** They can tell you the current status, the rationale, and who signed off.
+
+## One thing you should know before you talk to them
+
+You have an open commitment on this feature:
+
+- **SLA-93532** (2026-06-28): you told **Lena Fox at Pinecrest Realty** that Advanced analytics (Osprey) would ship in the **spring release** so they could finish their rollout.
+
+I'd treat that promise as unconfirmed until the product owner verifies it. Don't reaffirm the spring-release date to Lena — or let the rollout plan proceed on it — until you've checked. Worth folding into the same conversation: "Is Advanced analytics still on for Q2 2027, and does my spring-release commitment to Pinecrest still hold?"
+
+For context, two other commitments in your orbit are in the same "check with the product owner before reaffirming" state — **SLA-12035** (SCIM provisioning, Kai Berg / Umber Studios, Q1 2027, made by Jordan Blake) and **SLA-77342** (Audit log export, Lena Fox / Granite Insurance, Q1 2027, yours). If you're already scheduling time with product, it may be efficient to cover all three.

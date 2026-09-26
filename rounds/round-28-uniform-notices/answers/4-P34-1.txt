@@ -1,0 +1,68 @@
+## Aster Health — QBR Brief
+
+**Up front on sourcing:** the Aster records in the system are mostly one-line call/meeting stubs (topic + owner + next step), not substantive notes. I can tell you reliably *what* has been recurring and *what's committed*; the *detail* behind most threads isn't written down anywhere I can see. Where that matters, I've flagged it.
+
+---
+
+### 1. Where things stand
+
+**The one thing that's unambiguously good:** Higher API rate limits — promised to Omar Aziz by October by Priya Shah (AE) (DRI-86231, 2026-06-12) — **shipped on 2026-09-20** (SLA-26281, "Crane is live: API rate limits raised for all paid plans"). You are ahead of the commitment date. Lead with this.
+
+**Recurring threads across the year** (frequency is the signal, since the notes themselves are thin):
+
+| Thread | Records | Read |
+|---|---|---|
+| Support queue | CRM-88906 (Apr), CRM-97035 (Jun), DRI-53905 (Sep) | Longest-running open topic; still surfacing alongside pricing in September |
+| Sandbox | DRI-86962 (Apr), CRM-62644 (May), CRM-64767 (May) | Cluster in spring, then goes quiet — either resolved or dropped |
+| Audit prep | CRM-45213 (Apr), DRI-48323 (Jun), DRI-36735 (Sep) | Persistent compliance workstream; likely their internal driver |
+| Exports | CRM-45213, CRM-76005 (both Apr 18) | Feeds the audit thread |
+| Dashboards / search | CRM-88906, CRM-97035, DRI-75615 (Sep 17, you + Omar Haddad) | Your most recent touch — freshest in their mind |
+| Latency | CRM-68765 (Jun) | Single mention, next step was churn |
+| SSO | DRI-46065 (Aug) | Jordan Blake, next step churn |
+
+**Contacts:** Omar Haddad is your most frequent counterpart (5 records). Omar Aziz is the one holding the API commitment. Ana Petrova and Dana Ortiz appear repeatedly on their side. Internally this account has been touched by Leo Grant, Sam Lee, Tess Brown, Jordan Blake, Priya Shah, Dana Ortiz and you — that's a lot of hands, which is itself a continuity risk.
+
+---
+
+### 2. Open commitments
+
+**To Aster Health: one, and it's satisfied.** Higher API rate limits — delivered (DRI-86231 → SLA-26281).
+
+I found **no other outstanding promise made to Aster Health** in the records available to me. That's worth saying plainly: if Omar Aziz or Omar Haddad raises something you don't recognize on the call, it isn't captured in the system — don't improvise a commitment in the room.
+
+---
+
+### 3. Risks
+
+1. **Churn is the recurring next-step on this account.** Five separate records close with "follow up on churn" (CRM-64767, CRM-76005, CRM-68765, DRI-48323, DRI-46065), spanning April through August and touching sandbox, exports, latency, audit and SSO. No single record explains why. This is the most important thing in the brief and the thing I can't give you the substance of — **worth 10 minutes with Leo Grant and Jordan Blake before the call**, since they own most of those threads.
+2. **Pricing entered the conversation on 2026-09-10** (DRI-53905), paired with support queue. Pricing + unresolved support + a churn drumbeat is a renewal-pressure pattern. Go in expecting a commercial question.
+3. **Support queue is unresolved after five months** (Apr → Sep). Expect this to be their opening complaint.
+4. **Audit prep is live and compliance-driven** (DRI-36735, Sep). If their audit has a deadline, it outranks everything else on their side.
+5. **There's an NPS session dated 2026-09-28** (DRI-36735) — that's *after* today and possibly before or near your call. Check whether the score lands first; walking into a QBR blind to a fresh NPS is avoidable.
+
+---
+
+### 4. What to say
+
+**Open with the win.** "The API rate limit increase you were promised by October went live on the 20th — it's on all paid plans, so you should already be seeing the headroom." Then ask Omar Aziz directly whether it actually unblocked what it was meant to unblock. A shipped feature that didn't solve the problem is worse than a late one.
+
+**Then go straight at the support queue** rather than waiting for them to raise it. Acknowledge it's been open since April, and bring a specific owner and date, not a reassurance.
+
+**Ask about the audit.** "Where are you in the audit, and what do you need from us to close it out?" This positions you as useful on their actual priority and will surface the exports/audit-log needs concretely.
+
+**On pricing: listen, don't negotiate.** It came up two weeks ago without you in the room (DRI-53905, Dana Ortiz). Find out what's driving it before responding — and loop Dana in.
+
+**Do not make new forward-looking feature promises on this call.** Given the churn signals and how many people have touched this account, anything you commit to should be checked with the product owner first.
+
+---
+
+### Separate — your own flagged commitments (not Aster, don't raise them here)
+
+Three commitments in your book carry a flag that a decision I can't see may have changed them. Two are yours:
+
+- **Advanced analytics (Osprey) by spring release** → Lena Fox, Pinecrest Realty (SLA-93532)
+- **Audit log export by Q1 2027** → Lena Fox, Granite Insurance (SLA-77342)
+
+I can't tell you whether those still hold. **Check with the product owner before reaffirming either to the customer.** The third, SCIM provisioning for Umber Studios (SLA-12035), is Jordan Blake's and carries the same flag.
+
+Note the overlap: audit log export is flagged for Granite, and audit/exports is an active Aster thread. If Aster asks about audit log export specifically, that's another reason not to commit to a date in the room.

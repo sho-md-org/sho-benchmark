@@ -1,0 +1,43 @@
+## Keystone Energy — QBR brief
+
+**⚠️ Read this first.** The one hard commitment on this account — audit log export with SIEM/Splunk streaming by Q1 2027 (`DRI-34564`) — is flagged in Sho: a decision I don't have visibility into may have changed it. **Do not reaffirm the Q1 2027 date on the call until you've checked with the product owner.** The public roadmap (`NOT-20876`, dated 2026-06-30) does still list "Audit log export incl. SIEM streaming: Q1 2027", but given the flag, treat that as stale rather than as confirmation.
+
+### Where things stand
+Coverage is broad but thin. Across ~18 touchpoints since April, Keystone records are one-line topic logs with no stated outcomes, so I can't give you a defensible health/ARR/renewal picture from Sho:
+
+- **Dominant theme: audit prep.** Six months of recurring calls and docs (`CRM-90377` May 8 → `CRM-17727` Jun 17 → `CRM-56742` Aug 17; docs `DRI-85107`, `DRI-48005`, `DRI-84961` Aug 24 with Sam Lee on "audit prep and exports"). This is the account's center of gravity and it ties directly to the audit log export commitment.
+- **Most recent activity:** pricing call yesterday, owner Jordan Blake, next step "offline" (`CRM-78617`, Sep 25); uptime call Sep 23, owner Sam Lee (`CRM-19012`).
+- **Your last QBR prep call** was Aug 25, with next step "follow up on security review" (`CRM-93344`) — I see no record that this closed. Likely your biggest unanswered item.
+- **Other threads touched:** integrations (`DRI-31273`), rate limits (`CRM-60405`), onboarding (`CRM-15788`, `CRM-86748`), analytics, billing, latency, reporting, dashboards.
+- **Ownership is fragmented** — Dana Ortiz, Ana Petrova, Omar Haddad, Leo Grant, Tess Brown, Priya Shah, Sam Lee, Jordan Blake have each owned a Keystone call this year. Keystone may well be feeling that.
+
+### Open commitments
+| Commitment | Source | Status |
+|---|---|---|
+| Audit log export w/ SIEM (Splunk) streaming, Q1 2027 — confirmed to Nia Cole by Jordan Blake, Aug 3 | `DRI-34564` | **Flagged — verify with product owner before reaffirming** |
+| Security review follow-up from Aug 25 QBR prep | `CRM-93344` | No closure recorded |
+| "Offline" follow-up from yesterday's pricing call | `CRM-78617` | Open, owner Jordan Blake |
+| Webhooks follow-up from Aug 17 | `CRM-56742` | No closure recorded |
+
+Separately, two of your *other* accounts' commitments carry the same flag: advanced analytics to Lena Fox / Pinecrest by spring release (`SLA-93532`) and audit log export to Lena Fox / Granite by Q1 2027 (`SLA-77342`). Same rule applies — check with the product owner before you reaffirm either.
+
+### Risks
+1. **The audit log export date is your single point of failure.** Keystone raised it themselves and an AE confirmed it verbally. If it has moved, they've been building an audit program around a date that may not hold — and you'd be the one who let it ride through a QBR unchallenged.
+2. **Keystone is anchored on the Splunk streaming piece specifically**, not just export. If scope narrows, that's a broken promise even if a date holds.
+3. **Pricing is live and unresolved** (`CRM-78617`, yesterday) and may collide with commitment uncertainty in the same conversation.
+4. **No owner continuity.** Eight different internal owners across a year invites "does anyone here know our account?"
+5. **No renewal date, ARR, or sentiment data in Sho** — if you need those for the QBR, pull them from the system of record before the call.
+
+### What to say
+**Before the call (today/tomorrow):**
+- Ask the product owner directly: *does Q1 2027 for audit log export with SIEM streaming still hold for Keystone, and is Splunk streaming still in scope?* Get it in writing. Everything below depends on the answer.
+- Close the loop with Sam Lee on the Aug 24 exports discussion (`DRI-84961`) and with Jordan Blake on the security review and pricing threads.
+
+**On the call:**
+- **Lead with audit readiness** — it's what they care about. Recap the six-month arc and what's actually been delivered.
+- **On the Q1 2027 date:** if product confirms, restate it plainly with the Splunk streaming scope named. If product has *not* confirmed by call time, say: *"I want to give you a confirmed date rather than repeat one — I'm getting written confirmation on audit log export and SIEM streaming and will come back to you by [date]."* Commit to a specific date. Don't repeat Q1 2027 as reassurance, and don't hint at internal changes you can't describe.
+- **Name the ownership churn before they do** and state who their single point of contact is going forward.
+- **Ask, don't just report:** what does their audit timeline actually require, and by when do they need the export capability in hand? That tells you how much damage any date change would do.
+- **Keep pricing in a separate conversation** from the commitment discussion.
+
+The honest gap: this brief tells you the *shape* of the account, not its health. If you need renewal risk quantified for the QBR, that data isn't in Sho and I'd flag it as a prep item.

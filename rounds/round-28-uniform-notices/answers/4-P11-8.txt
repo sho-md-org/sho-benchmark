@@ -1,0 +1,43 @@
+## Vantage Telecom — QBR brief
+
+**One flag up front:** the SSO (SAML) commitment is the centerpiece of this account, and Sho flags that a decision I don't have visibility into may affect it. **Do not reaffirm an SSO date on this call until you've confirmed with the product owner.** The public roadmap (NOT-20876, 2026-06-30) still lists SSO Q1 2027, but that document predates whatever the flag refers to, so it isn't safe confirmation.
+
+### Where things stand
+Steady, high-touch engagement — roughly monthly contact across Apr–Sep 2026, but ownership is scattered across you, Priya Shah, Jordan Blake, Tess Brown, Leo Grant, Dana Ortiz, and Ana Petrova. Recent threads:
+
+- **Dashboards** — most recent touch (CRM-65747, 2026-09-13), yours; open next step is exports
+- **Churn** — internal prep session with Dana Ortiz and Tess Brown (DRI-14442, 2026-09-06), explicitly tied to this QBR. Worth asking them what prompted it before the call.
+- **Billing** (CRM-92524, CRM-24363), **Search** (CRM-84868, CRM-74774), **NPS** (CRM-37016), **Pricing** (CRM-36270), **Onboarding** (CRM-15845), **Analytics** (CRM-53521), **Exports** (CRM-23907), **Integrations** (DRI-81968)
+
+The notes are thin — mostly topic + next step, no substance. Several "next steps" (webhooks, latency, audit prep, sandbox) recur across calls without visible closure, which suggests follow-ups are being logged but not resolved.
+
+### Open commitments
+| Commitment | Made by | To | Due | Status |
+|---|---|---|---|---|
+| SSO (SAML), incl. IdP-initiated login from Okta | Priya Shah (AE) | Ines Park | Q1 2027 | ⚠️ Confirm with product owner before restating |
+
+Source: CRM-31062 (2026-06-08). The exact wording was *"you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word,"* and the note records that **the customer is planning around it**. That's an unusually hard promise with a named IdP attached — if anything has moved, Ines will have built a rollout plan on it.
+
+The other commitments Sho surfaced are yours or your colleagues' but belong to different accounts (Pinecrest Realty, Meridian Travel, Umber Studios, Granite Insurance) — not Vantage. Nothing to raise here.
+
+### Risks
+1. **SSO exposure** — a verbal "you have my word" from the AE, a specific IdP requirement, and customer planning dependency. Highest-consequence item on the call.
+2. **Churn signal** — an internal churn discussion three weeks ago that you weren't in. Find out what drove it.
+3. **Account fragmentation** — seven different owners across nine months. Ines may perceive inconsistency.
+4. **Unclosed follow-ups** — webhooks, latency, and audit prep keep reappearing as "next steps." Expect Ines to ask.
+
+### What to say
+
+**Before the call (do these first):**
+- Ask the product owner whether the SSO Q1 2027 commitment, including Okta IdP-initiated login, still holds. Do this before the call, not after Ines asks.
+- Ask Dana and Tess what the 2026-09-06 churn conversation surfaced.
+- Chase the exports follow-up from your 09-13 dashboards call so you arrive with it closed.
+
+**On the call:**
+- **Open with ownership.** Name yourself as the single point of contact going forward. This costs nothing and addresses the fragmentation directly.
+- **On SSO — only if confirmed:** restate it precisely as Priya did, including IdP-initiated Okta login, and offer a rollout-planning checkpoint. **If not confirmed, or if the product owner says it's changed:** say you're validating delivery timing with the product team and will come back with a firm answer by a specific date. Don't improvise a new date on the call, and don't repeat the Q1 2027 date as reassurance in the meantime.
+- **Ask about their rollout plan** — what they've sequenced behind SSO. You need to know the blast radius regardless of which way the answer goes.
+- **Close the loose threads:** exports, webhooks, latency, audit prep. Bring status on each or a named owner and date.
+- **Don't raise churn.** Use what you learn from Dana and Tess to listen for it.
+
+The whole call hinges on the SSO answer. If you can only do one thing before next week, get the product owner on record.

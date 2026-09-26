@@ -1,5 +1,5 @@
 // sho benchmark test server. ARM=1 (ordinary agent: per-tool search/fetch with the person's own access)
-// or ARM=4 (agent with sho). PRINCIPAL=maya|sales. SCOPE=feature (round 13) | promise (round 15).
+// or ARM=4 (agent with sho). PRINCIPAL=maya|sales. SCOPE=feature (round 13) | promise (round 15) | promise-v2 (round 28).
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
@@ -30,10 +30,12 @@ if (ARM === "1") {
     const hidden = l.current_state && !["as_promised","fulfilled"].includes(l.current_state) && decs.some(r=>!can(allById[r]));
     return { c, l, feature: l.feature || "unknown", account: acctOf(c.record), hidden, decs }; });
   const noticeFeatures = new Set(mine.filter(x=>x.hidden).map(x=>x.feature));
-  const view = x => { const base = { commitment: (x.c.what||"")+" (to "+x.c.recipient+", by "+x.c.by_when+")", made_by: x.c.promiser, source: x.c.record, account: x.account, feature: x.feature };
+  const view = (x, uniform = new Set()) => { const base = { commitment: (x.c.what||"")+" (to "+x.c.recipient+", by "+x.c.by_when+")", made_by: x.c.promiser, source: x.c.record, account: x.account, feature: x.feature };
     // Round 13 (SCOPE=feature): a notice on every promise on an affected feature.
     // Round 15 (SCOPE=promise): a notice only on the promise the hidden decision touches.
-    if (SCOPE === "feature" ? noticeFeatures.has(x.feature) : x.hidden) return { ...base, notice: NOTICE, ask: "the product owner" };
+    // Round 28 (SCOPE=promise-v2): as round 15, but when one response carries several of the person's
+    // promises on the same feature and any of them has a notice, all of them get the same notice.
+    if (SCOPE === "feature" ? noticeFeatures.has(x.feature) : (x.hidden || uniform.has(x.feature))) return { ...base, notice: NOTICE, ask: "the product owner" };
     const s = x.l.current_state || "as_promised";
     if (s === "as_promised") return { ...base, status: "no later change found" };
     if (s === "fulfilled") return { ...base, status: "shipped", see: x.decs.filter(r=>can(allById[r])) };
@@ -44,7 +46,9 @@ if (ARM === "1") {
     const tl = task.toLowerCase();
     let cm = mine.filter(x=>tl.includes(x.account.toLowerCase()));
     if (!cm.length) { const f = feats.filter(f=>tok(f).filter(w=>w.length>2&&w!=="sso"||w==="sso").some(w=>tl.includes(w))); cm = mine.filter(x=>f.includes(x.feature)); }
-    return text({ guidance: GUIDE, records: search(task).map(d=>({id:d.id,title:d.title,tool:d.tool,date:d.date})), commitments: cm.map(view) }); });
+    const perFeature = {}; for (const x of cm) (perFeature[x.feature] ??= []).push(x);
+    const uniform = SCOPE === "promise-v2" ? new Set(Object.entries(perFeature).filter(([,xs])=>xs.length>1 && xs.some(x=>x.hidden)).map(([f])=>f)) : new Set();
+    return text({ guidance: GUIDE, records: search(task).map(d=>({id:d.id,title:d.title,tool:d.tool,date:d.date})), commitments: cm.map(x=>view(x, uniform)) }); });
   server.registerTool("read_record",{description:"Read a record you have access to.",inputSchema:{id:z.string()}},async({id})=>text(fmt(byId[id])));
   server.registerTool("search_records",{description:"Search records you have access to. Top 10.",inputSchema:{query:z.string()}},async({query})=>text(search(query).map(d=>({id:d.id,title:d.title,date:d.date}))));
 }

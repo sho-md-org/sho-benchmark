@@ -1,0 +1,38 @@
+## Vantage Telecom — QBR Brief (call week of Sept 28, 2026)
+
+### ⚠️ Read this first: do not reaffirm the SSO date on the call
+
+At the June QBR, Priya Shah (AE) told Ines Park: *"you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word."* Vantage is planning around it (**CRM-31062**).
+
+There is a flag on this commitment: a decision I don't have visibility into may or may not have changed it. I can't tell you what that decision is or whether it affects the date — and neither should you guess on the call. **Before the QBR, ask the product owner whether the Q1 2027 SSO (SAML) commitment, including Okta IdP-initiated login, still holds.** If you don't get an answer in time, don't restate the date; say you're confirming scope and timing and will come back with a written update.
+
+This matters more than usual because SSO is the thread running through the whole account — it's the "next step" on the August dashboards call (**CRM-10757**) and the subject of two separate September touches (**DRI-67178** on 9/11, **CRM-57082** on 9/19). Ines is clearly still pushing. An unhedged repeat of "Q1 2027, you have my word" is the single highest-risk thing you could say.
+
+### Where things stand
+
+Steady, broad engagement across multiple owners over the last six months — pricing (**CRM-36270**, Jordan Blake), billing (**CRM-24363**, Leo Grant), exports (**CRM-23907**, Ana Petrova), search (**CRM-84868** / **CRM-74774**, Priya Shah), integrations and audit prep (**DRI-81968**, you and Leo Grant), NPS (**CRM-37016**, Tess Brown), and a recurring dashboards thread you own most recently (**CRM-65747**, 9/13, next step: exports).
+
+Caveat: the records themselves are one-line summaries. They tell you *what* was discussed and *who* owns it, not outcomes or sentiment. If you need substance on any thread — especially NPS scores or the pricing conversation — get it from the owner directly before the call, not from the CRM.
+
+### Risks
+
+1. **SSO expectation gap** — the flagged commitment above. Highest exposure.
+2. **Churn is being discussed internally.** Dana Ortiz and Tess Brown held a churn + QBR-prep session on 9/6 (**DRI-14442**). You weren't in it. Sync with Dana and Tess before the call so you're not walking in with a different read on renewal risk than the rest of the team.
+3. **Fragmented ownership.** Seven-plus named owners across a dozen touchpoints. Ines is likely getting inconsistent answers, which compounds risk #1.
+4. **Open loops with no visible closure:** exports (from 9/13), webhooks (from 5/14), latency (from 4/12), reporting (from 7/10), audit prep (from 6/22). Each is the logged "next step" of a call with no follow-up record. Assume Ines remembers at least some of them.
+
+### What to say
+
+- **Open with the roadmap thread, not the numbers.** Ines' last three interactions were all SSO. Acknowledge it first: *"I know SSO has been the main topic since June. I'm getting you a confirmed written update on scope and timing this week."* That's a real commitment you can keep, and it buys you the room to not quote a date.
+- **Close the loops visibly.** Walk the open items (exports, webhooks, latency, reporting, audit prep) with a named owner and a date for each. Volume of contact isn't the same as progress, and the record suggests Vantage may be feeling that.
+- **Consolidate the relationship.** Offer a single point of contact for roadmap questions — you. It directly addresses the mixed-messages risk.
+- **Don't raise churn.** It's an internal conversation; treat the QBR as a listening opportunity for renewal signals and report back to Dana and Tess.
+
+### Separately — two of your own commitments are flagged
+
+Not Vantage, so leave them out of this call, but they carry the same notice and you should chase the product owner on them in the same conversation:
+
+- **Advanced analytics (Osprey), spring release** — to Lena Fox, Pinecrest Realty (**SLA-93532**)
+- **Audit log export, Q1 2027** — to Lena Fox, Granite Insurance (**SLA-77342**)
+
+Same rule applies: confirm with the product owner before you reaffirm either one to the customer.

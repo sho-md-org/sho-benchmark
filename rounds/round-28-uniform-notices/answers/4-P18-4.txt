@@ -1,0 +1,47 @@
+## Cobalt Retail QBR Brief — call week of Sep 28, 2026
+
+### ⚠️ Do this before the call
+Your Q1 2027 audit log export promise to Sam Ortiz carries a flag: **there may be a change affecting it that I can't see.** Ask the product owner whether that commitment still holds before you reaffirm the date on the call. Do not restate "you have my word, Q1 2027" until you've heard back — that's the single highest-risk moment in this meeting.
+
+### Where things stand
+Relationship looks steady and broad — a year of regular touchpoints across the account's whole surface area, no escalations or churn signals in the record:
+
+| Date | Topic | Owner |
+|---|---|---|
+| 2026-08-11 | Billing + audit prep (Ana Petrova, Omar Haddad) | DRI-75222 |
+| 2026-08-04 | QBR prep | CRM-12694 (Jordan Blake) |
+| 2026-08-01 | Notifications | CRM-35990 (Omar Haddad) |
+| 2026-07-24 | **QBR — audit log export commitment** | CRM-38600 (you) |
+| 2026-07-23 | Reporting | CRM-94849 (Priya Shah) |
+| 2026-06-23 | Pricing | CRM-87224 (Priya Shah) |
+| 2026-06-15 / 04-27 | Onboarding | CRM-16603, CRM-49779 |
+| 2026-06-12 | Audit prep | CRM-24323 (Omar Haddad) |
+| 2026-06-09 | NPS | CRM-92187 (Tess Brown) |
+| 2026-05-26 | Dashboards | CRM-24697 (Tess Brown) |
+| 2026-05-22 | Search | CRM-36268 (you) |
+| 2026-04-20 | Roadmap | CRM-70221 (you) |
+| 2026-04-01 | Webhooks | CRM-98822 (Priya Shah) |
+
+Audit prep is the persistent thread — it recurs as the "next step" from pricing (CRM-87224), QBR prep (CRM-12694), and the June call (CRM-24323), and again in the August billing meeting (DRI-75222). That's what Sam actually cares about; the export is the deliverable underneath it.
+
+### Open commitments
+1. **Audit log export (Lark), CSV, by Q1 2027** — made by you to Sam Ortiz at the July QBR (CRM-38600). Cobalt is *planning around it*. Flagged; verify with the product owner first.
+2. **Audit log export to Granite Insurance, Q1 2027** (SLA-77342) — different account, same feature, also yours, also flagged. Worth resolving both in one conversation with the product owner.
+
+For reference, the public roadmap as of 2026-06-30 (NOT-20876) lists audit log export incl. SIEM streaming at Q1 2027 — but that's a June snapshot and doesn't clear the flag.
+
+### Risks
+- **Commitment exposure.** A personal, unhedged promise ("you have my word") to a customer building plans around it. If the date moves, the credibility hit is on you specifically, not on Brightline generally.
+- **Scope gap.** You promised *CSV export*; the roadmap line is *export incl. SIEM streaming*. Confirm Sam's audit workflow accepts CSV, or you may land the roadmap item and still miss his requirement.
+- **Fragmented ownership.** Five different owners across twelve touchpoints (Jordan Blake on QBR prep, Omar Haddad on audit prep, Priya Shah on pricing/reporting). Sam may get inconsistent answers between calls.
+- **Thin substance in the record.** Most notes are one-liners with no outcomes, so I can't tell you usage health, renewal date, or NPS score. Pull those from the account owner before the call if you want a real business-results section.
+
+### What to say
+- **Open on audit prep**, not on a feature list — it's the throughline he's raised in five separate conversations. "Audit readiness has been the consistent theme all year; I want to close it out."
+- **On the export, if the product owner hasn't confirmed:** don't reaffirm and don't hedge vaguely either. Say you're reconfirming the delivery plan internally this week and will come back with a written date. Then actually do it — a one-week delay costs far less than a second promise that slips.
+- **On the export, if the product owner confirms:** restate Q1 2027 and pin the format explicitly — CSV first, SIEM streaming as a follow-on — so there's no ambiguity later.
+- **Ask about the CSV-vs-SIEM fit** regardless: "Walk me through how your auditors consume this — does a CSV drop satisfy them, or do you need it streaming into a SIEM?"
+- **Name a single owner** for the audit workstream going forward, and say who it is.
+- **Close with the billing thread** from the August meeting with Ana Petrova (DRI-75222) — surface anything unresolved there now rather than letting it collide with renewal.
+
+Want me to draft the product-owner message covering both the Cobalt and Granite audit log export commitments?

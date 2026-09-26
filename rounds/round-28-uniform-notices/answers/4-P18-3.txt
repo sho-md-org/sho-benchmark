@@ -1,0 +1,60 @@
+## Cobalt Retail — QBR Brief
+
+**Headline:** One thing needs resolving *before* your call: do not re-confirm the Q1 2027 audit log export date until you've checked with the product owner. Details below.
+
+---
+
+### Where things stand
+
+Cobalt Retail is an active, multi-thread account with four Brightline people touching it (you, Jordan Blake, Priya Shah, Omar Haddad). Activity over the last quarter:
+
+| Date | Thread | Record |
+|---|---|---|
+| Jun 7 | Exports / webhooks — Leo Grant, Ana Petrova | DRI-41266 |
+| Jun 12 | Audit prep — owner Omar Haddad | CRM-24323 |
+| Jun 19 | Onboarding / integrations — Priya Shah, Sam Lee | DRI-18657 |
+| Jun 21 | Dashboards / case study — Dana Ortiz, Omar Haddad | DRI-58616 |
+| Jun 23 | Pricing — owner Priya Shah | CRM-87224 |
+| Jul 24 | QBR notes — audit log export commitment | CRM-38600 |
+| Aug 4 | QBR prep — owner Jordan Blake | CRM-12694 |
+| Aug 11 | Billing / audit prep — Ana Petrova, Omar Haddad | DRI-75222 |
+| Aug 17 | Offline / mobile app — Jordan Blake, Tess Brown | DRI-82140 |
+| Aug 23 | Sandbox / hosting — you, Sam Lee | DRI-35074 |
+| Sep 26 | Mobile app / search — Sam Lee, Priya Shah | DRI-72283 |
+
+Two signals worth reading: **audit prep is the recurring spine of this account** — it's the "next step" on three separate threads (CRM-24323, CRM-87224, CRM-12694) and resurfaces in the Aug 11 billing conversation. And there's a **dashboards/case study** thread (DRI-58616) that's been dormant since June — a possible upside ask if the QBR goes well.
+
+### Open commitments
+
+**1. Audit log export (Lark) — CSV, by Q1 2027.** Made by you to Sam Ortiz at the July QBR (CRM-38600). Your words: *"you'll have it by Q1 2027 as a CSV export, you have my word."* The record notes the customer is planning around it.
+
+> ⚠️ **Flag:** There's a decision I don't have visibility into that may or may not affect this commitment. I can't tell you what it is or whether it changes anything. **Ask the product owner whether the Q1 2027 CSV date still holds before you reaffirm it on the call.** This is the single highest-value prep item.
+
+For context on your own exposure: you made a parallel audit log export commitment to Lena Fox at Granite Insurance, also Q1 2027 (SLA-77342), carrying the same flag. Worth resolving both in one conversation with the product owner.
+
+### Risks
+
+- **Reaffirmation risk (high).** Sam pushed on this feature once and you gave a personal guarantee. He will almost certainly ask again. If you repeat the date and it later moves, the damage is to your credibility specifically, not Brightline's generally.
+- **Account fragmentation (medium).** Four owners, no single thread showing a consolidated account plan. Sam may have heard different things from different people — particularly on pricing (Priya) and billing (Ana/Omar).
+- **Thin records (medium).** Most entries are one-line summaries with no outcomes or decisions captured. You're walking in without documented resolution on billing, pricing, or sandbox/hosting. Sync with Jordan and Omar beforehand.
+- **Sep 26 mobile app session (DRI-72283)** lands tomorrow — pull whatever comes out of it before the call.
+
+### What to say
+
+**On audit log export — the safe formulation, pending product owner confirmation:**
+> "I know audit log export is what you're planning your rollout around. I'm coming back to you with a confirmed status rather than repeating a date from memory — let me close that out this week."
+
+This keeps faith with Sam without re-committing. If the product owner confirms the date holds, say it plainly and warmly: *"Q1 2027, CSV, as promised — that's still where we are."*
+
+**On the account generally:**
+> "Audit readiness has been the connective tissue across everything this quarter — exports, billing, onboarding. I want to use this QBR to put one plan against it rather than four conversations."
+
+That reframes the fragmentation as your initiative rather than a gap they discovered.
+
+**Upside ask, if the tone is right:** revive the case study thread from DRI-58616.
+
+### Before the call
+
+1. Ask the product owner whether the Q1 2027 audit log export commitment still holds (covers Cobalt/CRM-38600 and Granite/SLA-77342).
+2. Get outcomes from Jordan (CRM-12694) and Omar (DRI-75222) — billing and audit prep status.
+3. Pick up notes from tomorrow's mobile app session (DRI-72283).

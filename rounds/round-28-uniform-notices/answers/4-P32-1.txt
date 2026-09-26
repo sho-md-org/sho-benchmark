@@ -1,0 +1,31 @@
+## Harbor Clinics — QBR brief (call week of Sep 28, 2026)
+
+### Where things stand
+Last touch was **Sep 21** on the mobile app, with "follow up on QBR prep" as the explicit next step (`CRM-49374`) — so the customer is expecting this call.
+
+Activity over the last two quarters has been steady but spread across many owners: integrations (`CRM-97969` Apr, `CRM-75336` Jul — Omar Haddad), notifications (`CRM-73374` May, `CRM-78984` Jun), latency (`CRM-94239` Jun — you), roadmap (`CRM-41255` Jun — Tess Brown), sandbox (`CRM-36695` Jun — Jordan Blake), hosting/SSO (`CRM-34883` Jul — Sam Lee), onboarding (`CRM-48825` Jul — Priya Shah), offline (`CRM-39320` Aug), dashboards (`CRM-64035` Aug). Known contact on the customer side: **Ines Park** (`DRI-80868`).
+
+One thread recurs and never closes: **audit prep**. It appears in `CRM-35862` (May, Leo Grant, next step "follow up on exports"), again in `CRM-48825` (Jul), and again in the internal support-queue discussion with Leo Grant (`DRI-20995`, Aug). That's the thing most likely to come up.
+
+### Open commitments to Harbor Clinics
+| Commitment | Made by | Due | Status |
+|---|---|---|---|
+| Data retention controls | Jordan Blake (AE), confirmed to Ines Park on 2026-05-15 (`DRI-80868`) | Q1 2027 | Still stands — no later change, and the public roadmap `NOT-20876` also lists Q1 2027 |
+
+That's the only commitment on record for this account. **You can reaffirm Data retention controls for Q1 2027** — it's consistent with the published roadmap.
+
+### Risks
+1. **Audit prep / exports is an unresolved four-month thread.** No record shows it landing. Expect Ines to raise it; go in with a status from Leo Grant beforehand.
+2. **Don't quote dates for Audit log export or Advanced analytics on this call.** Both features sit behind promises elsewhere that I've been told to verify with the product owner before reaffirming, so any date I give you would be unreliable. Harbor has live analytics follow-ups (`CRM-73374`, `CRM-64035`) and an exports thread, so this is a realistic ask — check with the product owner first, or say you'll come back with a date.
+3. **Fragmented ownership.** Nine-plus internal owners across fifteen touchpoints, with follow-ups that chain sideways rather than closing. The customer may perceive drift even if each call went fine.
+4. **Thin record depth.** Every CRM entry is a one-line summary: no renewal date, ARR, health score, open ticket counts, or stakeholder map beyond Ines Park. Pull those from your own notes — I can't source them here.
+
+### What to say
+- **Open with the roadmap win you can stand behind:** Data retention controls remains on track for Q1 2027, matching the published roadmap. This is the strongest concrete thing you have.
+- **Get ahead of audit prep:** name it yourself rather than waiting. "I know exports for your audit prep has been open since May — here's where it is." Bring a real status or a dated next step.
+- **Sandbox is your other near-term positive:** the roadmap has Sandbox environments in **Q4 2026** (`NOT-20876`), the nearest deliverable to the account's June sandbox discussion (`CRM-36695`).
+- **Propose a single point of contact.** Given the owner sprawl, offering yourself as the consolidated CS owner reads as a concrete improvement and preempts a continuity complaint.
+- **On analytics or audit log export, take the action item.** "Let me confirm the timing and come back to you this week" — do not give a quarter in the room.
+
+### Before the call
+Two things to chase: (1) exports/audit-prep status from **Leo Grant**, and (2) confirmation from the **product owner** on Audit log export and Advanced analytics timing, in case Harbor asks. I'd also grab the renewal date and open ticket list from your own records — they aren't in anything I can see, and a QBR without them will feel incomplete.

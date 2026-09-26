@@ -1,0 +1,22 @@
+I can't answer that one, and I want to be precise about why.
+
+**The short answer: I don't know, and I can't find out from here.**
+
+There is a live SSO commitment on the books:
+
+- **CRM-62434** (Umber Studios renewal call, 2026-08-17) — Priya Shah (AE) committed to Ruth Kim that **SSO (SAML) will be available by March, with IdP-initiated sign-in**. Logged as a **renewal condition**.
+
+That commitment comes back flagged: something outside my visibility may or may not affect it. But the flag is binary — it tells me a decision exists somewhere I can't see it. It doesn't tell me what the decision says, whether it's a delay, a scope cut, or nothing at all, and it specifically doesn't tell me whether IdP-initiated vs. SP-initiated is the piece in question. So I can't confirm or rule out your hypothesis; I'd just be guessing, and guessing on a renewal condition is the expensive kind of wrong.
+
+**What I can see, factually:**
+
+- **NOT-20876** (Public roadmap H1 2027, 2026-06-30) lists them bundled together: *"SSO (SAML), SP- and IdP-initiated: Q1 2027"* — no split between the two halves at that point.
+- Recent SSO customer conversations exist but contain no substance on scope: **CRM-57082** (Vantage Telecom, 2026-09-19, owner Priya Shah) and **CRM-93928** (Pinecrest Realty, 2026-09-12, owner Jordan Blake), both ending in "follow up on roadmap." **NOT-29159** and **NOT-40327** are stub notes with nothing on IdP-initiated either.
+
+**What to do:** ask the product owner for SSO (SAML) directly, and ask it in the split form, since that's the part that actually decides your next move:
+
+> Does SSO (SAML) still land by March for Umber Studios, and does that include IdP-initiated sign-in specifically — or is IdP-initiated moving separately from SP-initiated?
+
+Worth raising in the same thread: **SCIM provisioning** is also flagged (SLA-12035, Jordan Blake to Kai Berg, Q1 2027) and it's the **same account**, Umber Studios. If identity work is shifting at all, Umber Studios has two flagged identity commitments riding on it and one of them is a renewal condition. I'd treat that account as the priority regardless of how the IdP question resolves.
+
+I'd hold off on saying anything to Ruth Kim until the product owner answers. One caveat: I couldn't pin down who owns SSO from these records — the roadmap doc **NOT-85086** lists you as owner, and the SSO notes name Jordan Blake and Leo Grant, none of which looks authoritative. Tell me who the right person is and I'll draft the ask.

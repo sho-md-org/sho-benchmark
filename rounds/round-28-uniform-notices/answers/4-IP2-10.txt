@@ -1,0 +1,17 @@
+I can't answer that one — and I want to be precise about why rather than guess.
+
+**On SSO specifically:** I have no visibility into any change to SSO, IdP-initiated or otherwise. There's no SSO commitment in your commitment list at all, and nothing flagged against it. The only thing I can see is the public roadmap (NOT-20876, 2026-06-30), which still lists "SSO (SAML), SP- and IdP-initiated: Q1 2027" as a single line item — no split between the two flows.
+
+The other SSO records are all empty stubs with no substance: NOT-40327 (owner Leo Grant), NOT-29159 (owner Jordan Blake), SLA-95210, SLA-21939 (yours, 2026-05-01 — "offline next week").
+
+I also want to flag that I can't confirm *or* rule out an SSO change by elimination. My view is filtered, so "I don't see it" isn't the same as "it didn't happen." If someone told you SSO changed, the person who'd know is the SSO product owner.
+
+**Separately, three of your account commitments do carry flags** that say a decision I can't see may affect them. I'd check each with the product owner before reaffirming to the customer:
+
+- **Advanced analytics (Osprey)** — your promise to Lena Fox (Pinecrest Realty), spring release (SLA-93532)
+- **Audit log export** — your promise to Lena Fox / Granite Insurance, Q1 2027 (SLA-77342)
+- **SCIM provisioning** — Jordan Blake's promise to Kai Berg (Umber Studios), Q1 2027 (SLA-12035)
+
+For contrast, **Offline mode** (Priya Shah → Tom Hale, Meridian Travel, Q2 — SLA-24221) shows no later change, so that one's normal.
+
+Want me to pull the customer-facing context on any of those three, so you're ready when the product owner comes back to you?

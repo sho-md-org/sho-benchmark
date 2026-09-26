@@ -1,0 +1,16 @@
+I checked, and I can't find anything showing that the IdP-initiated piece changed.
+
+**What the records actually say about SSO:**
+
+- **NOT-20876** (public roadmap H1 2027, dated 2026-06-30) still lists *"SSO (SAML), SP- and IdP-initiated: Q1 2027"* — both flows, together, no split.
+- **CRM-31062** (Vantage Telecom QBR, 2026-06-08) — Priya Shah told Ines Park "you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word."
+- **CRM-62434** (Umber Studios renewal, 2026-08-17) — Priya Shah committed SSO (SAML) by March *with IdP-initiated sign-in*, logged as a renewal condition.
+- **CRM-74447**, **DRI-36664** (Quarry Mining, 2026-07-09) — SSO by Q1 2027, confirmed by Leo Grant.
+
+None of these SSO commitments came back flagged. The three "Sso questions" records (NOT-29159, NOT-40327, SLA-95210, SLA-21939) are content-free stubs — owner names and a "related" tag, nothing substantive — so if a change was discussed, it isn't written down anywhere I can reach.
+
+**One thing worth raising:** the commitment that *is* flagged in this space is **SCIM provisioning** (SLA-12035, Jordan Blake to Kai Berg at Umber Studios, Q1 2027). SCIM is the identity feature adjacent to SSO, and it's the same account where Priya made the March SSO promise — so it's plausible that's the "something changed" you're thinking of, with the two getting conflated. I can't tell you what that flag is about, and you shouldn't reaffirm the SCIM date to Umber Studios until you've checked with the product owner.
+
+Two of your own commitments carry the same flag, separately: Advanced analytics to Lena Fox at Pinecrest Realty (SLA-93532) and audit log export to Granite Insurance (SLA-77342).
+
+**Suggested next step:** ask the product owner one question covering all of it — "did anything move on SSO, specifically IdP-initiated, and does the SCIM Q1 2027 date still hold?" That gets you a clean answer on the SSO premise and clears the flagged item at the same time. I'd hold off on telling Umber Studios anything about either feature until that comes back, given the SSO promise there is a logged renewal condition.

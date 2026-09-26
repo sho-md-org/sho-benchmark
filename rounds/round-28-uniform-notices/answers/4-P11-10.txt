@@ -1,0 +1,49 @@
+## Vantage Telecom — QBR Brief
+
+⚠️ **One thing to resolve before the call:** the SSO (SAML) commitment is flagged. Details in "Open commitments" below — please read that before you promise anything on SSO.
+
+### Where things stand
+
+The account is active and engaged, with steady touchpoints across the quarter. Threads in the record:
+
+- **SSO (SAML)** — the dominant theme. Raised by Ines Park at the June QBR (`CRM-31062`), still live as of a customer call on 2026-09-19 owned by Priya Shah (`CRM-57082`, next step: follow up on roadmap) and an internal discussion on 2026-09-11 (`DRI-67178`).
+- **Dashboards / reporting** — recurring across the year: `CRM-20779` (Apr), `CRM-10757` (Aug), `CRM-65747` (Sep 13, your call; next step is following up on exports). This is the most persistent product conversation after SSO.
+- **Exports** (`CRM-23907`), **search** (`CRM-74774`, `CRM-84868`), **analytics** (`CRM-53521`), **integrations + audit prep** (`DRI-81968`, your meeting with Leo Grant).
+- **Commercial/ops** — pricing on 2026-06-22 owned by Jordan Blake, next step audit prep (`CRM-36270`); billing in Apr and Jul (`CRM-24363`, `CRM-92524`); onboarding (`CRM-15845`); NPS in Jul (`CRM-37016`).
+- **Churn discussion** — an internal Vantage Telecom churn/QBR-prep conversation on 2026-09-06 between Dana Ortiz and Tess Brown (`DRI-14442`). Worth a word with Dana or Tess before you go in; the record itself doesn't say what drove it.
+
+A caveat on sourcing: most of these CRM entries are one-line call logs with an owner and a next step, no substance. The only record with real content is the June QBR note. Treat the thread list as a map of topics, not as a status report.
+
+### Open commitments
+
+**SSO (SAML) — to Ines Park, by Q1 2027, made by Priya Shah (AE).** Source: `CRM-31062`. The exact wording was: *"you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word."* The note also records that the customer is planning around it.
+
+This one carries a flag: a decision I don't have visibility into may or may not have changed this promise. I can't tell you which way it went, and I won't guess. **Ask the product owner whether the Q1 2027 date and the Okta IdP-initiated login scope still hold before you reaffirm either in the QBR.** Given Ines is planning a rollout around it and was pushing hard in June, this is the single highest-value thing you can do before the call.
+
+No other open commitments to Vantage Telecom appear in what I can see. The other commitments in the system (offline mode, advanced analytics, SCIM, audit log export) belong to other accounts and aren't relevant here.
+
+### Risks
+
+1. **SSO expectation risk.** A named exec has a verbal "you have my word" with a specific date and a specific technical scope, and their rollout depends on it. If the date has moved and you reaffirm it in the QBR, you compound the problem. If you can't reach the product owner in time, say you'll confirm the timeline in writing after the call — don't restate the date live.
+2. **Internal churn signal.** `DRI-14442` (2026-09-06) suggests someone internally views this account as at risk. You should know why before walking in.
+3. **Unclosed loops.** Several call logs end in a "next: follow up on X" that has no visible follow-up — exports (from your own 2026-09-13 dashboards call), webhooks (twice), latency, roadmap. Some of these are probably done and just unlogged, but if Ines starts listing things nobody came back on, you want to have checked first.
+4. **Ownership sprawl.** Priya Shah, Jordan Blake, Dana Ortiz, Tess Brown, Ana Petrova and you all own threads on this account. The customer may be getting inconsistent answers, especially on SSO timing.
+
+### What to say
+
+**Open with the year in review, not the roadmap.** Dashboards, exports, search, analytics, integrations — frame the breadth of adoption since April as the story of a deepening deployment.
+
+**On SSO, be substantive without being a calendar.** Something like: *"I know SSO is the thing you're planning around, and I want to give you a precise answer rather than a rough one. Let me confirm the current delivery detail with our product team and come back to you in writing this week."* If the product owner confirms the commitment beforehand, then restate it fully and confidently, including the Okta IdP-initiated login scope, because that specificity is what Ines is holding you to.
+
+**Ask about the rollout plan directly.** *"Walk me through your rollout sequence and where SSO sits in it."* This gets you the real dependency shape, and it's the information you need to escalate internally if the date has slipped.
+
+**Close the small loops out loud.** Bring answers on exports (your own open item from 2026-09-13) and webhooks. Clearing visible small commitments is what buys credibility on the large uncertain one.
+
+**Don't raise churn.** Use `DRI-14442` as background for your own read of the room, not as a topic.
+
+### Before the call — two things
+
+1. Ask the product owner whether Priya's Q1 2027 SSO commitment, including Okta IdP-initiated login, still stands as stated in `CRM-31062`.
+2. Ask Dana Ortiz or Tess Brown what prompted the 2026-09-06 churn conversation (`DRI-14442`).
+
+Want me to draft the QBR deck or the follow-up email once you have the SSO answer?

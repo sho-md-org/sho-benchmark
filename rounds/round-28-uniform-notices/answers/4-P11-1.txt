@@ -1,0 +1,61 @@
+# Vantage Telecom — QBR Brief
+*Prepared 2026-09-25 · Call next week*
+
+## ⚠️ Read this first: one commitment you should not re-confirm on the call
+
+**SSO (SAML), promised by Q1 2027 to Ines Park** — Priya Shah (AE) told Ines at the June QBR: *"you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word."* Ines is planning her rollout around it (`CRM-31062`).
+
+Sho flags that a decision I don't have visibility into may or may not affect this promise. I can't tell you what it is or whether the date still holds. **Before the call, ask the product owner whether the Q1 2027 SSO commitment — including IdP-initiated Okta login — still stands.** Ines will almost certainly raise it, since she raised it last time and is the one pushing.
+
+If you haven't heard back by call time, don't restate the date. Safe framing: *"SSO is actively in planning and I want to give you a precise status rather than a rough one — let me come back to you with a confirmed date this week."* Then actually come back within the week; a vague answer to a customer who already has "you have my word" on record is worse than a short delay.
+
+## Where things stand
+
+Coverage is broad but shallow — most of the record is one-line call logs with no outcomes recorded, so treat the narrative below as thin:
+
+| Date | Topic | Owner | Record |
+|---|---|---|---|
+| 2026-09-13 | Dashboards → next: exports | Maya Chen | `CRM-65747` |
+| 2026-09-06 | **Churn discussion + QBR prep** (Dana Ortiz, Tess Brown) | — | `DRI-14442` |
+| 2026-07-23 | Billing → next: latency | Jordan Blake | `CRM-92524` |
+| 2026-07-10 | NPS → next: reporting | Tess Brown | `CRM-37016` |
+| 2026-07-08 | Search → next: QBR prep | Priya Shah | `CRM-84868` |
+| 2026-06-22 | Pricing → next: audit prep | Jordan Blake | `CRM-36270` |
+| 2026-06-22 | Onboarding → next: webhooks | Dana Ortiz | `CRM-15845` |
+| 2026-06-17 | Search → next: webhooks | Priya Shah | `CRM-74774` |
+| 2026-06-08 | **QBR — SSO commitment made** | Priya Shah | `CRM-31062` |
+| 2026-05-18 | Analytics → next: sandbox | Jordan Blake | `CRM-53521` |
+| 2026-05-14 | Exports → next: webhooks | Ana Petrova | `CRM-23907` |
+| 2026-04-27 | Dashboards → next: integrations | Tess Brown | `CRM-20779` |
+| 2026-04-12 | Billing → next: latency | Leo Grant | `CRM-24363` |
+| 2026-04-02 | Integrations + audit prep (Maya, Leo Grant) | — | `DRI-81968` |
+
+**Live threads:** dashboards/exports (yours, most recent), search, webhooks (recurring next-step across three calls), billing/latency, pricing, and audit prep.
+
+## Risks
+
+1. **SSO expectation gap** — the highest-exposure item. A verbal "you have my word" from an AE, a customer building a rollout plan around it, and an unresolved question mark on the date. Resolve before the call, not during it.
+2. **Internal churn conversation is live** (`DRI-14442`, Sept 6, Dana Ortiz + Tess Brown). Someone has flagged this account. The record doesn't say why, so **ask Dana or Tess what drove it before you walk in** — you don't want the customer to surface a concern your own team already documented.
+3. **Webhooks keeps recurring as a "next step" and never as an outcome** across `CRM-23907`, `CRM-74774`, `CRM-15845` (May–June). Either it quietly resolved and nobody logged it, or it's been dropped for four months. Worth closing the loop.
+4. **Five different owners across ten touchpoints** (Priya, Jordan, Tess, Dana, Leo, Ana). Vantage may be experiencing Brightline as fragmented. You're the most recent owner — worth asserting a single point of contact.
+5. **Pricing + audit prep** came up in June (`CRM-36270`) with no recorded resolution. If a renewal or procurement cycle is approaching, this is where it bites.
+
+## What to say
+
+**Open with ownership.** "I'm your single point of contact going forward" — directly addresses the five-owner fragmentation.
+
+**Lead with dashboards/exports**, your most recent and most concrete thread (`CRM-65747`). It's the one area where you can show continuity.
+
+**Let Ines raise SSO; don't volunteer a date.** If she raises it and you have the product owner's confirmation, restate it precisely. If you don't have confirmation, use the holding language above and commit to a date-certain follow-up.
+
+**Ask, don't present, on the churn signals.** Open questions that surface whatever prompted the Sept 6 discussion: *"What's working least well right now?"* / *"Who on your team isn't getting value yet?"* Better they tell you than you guess.
+
+**Close the webhooks loop explicitly** — either confirm it shipped or own that it slipped.
+
+**Come with a written follow-up list.** Given how thin the call records are, a documented set of owners and dates is itself a credibility move with this account.
+
+## One note outside this brief
+
+Sho surfaced two other commitments in *your* name — advanced analytics/Osprey to Lena Fox at Pinecrest (`SLA-93532`) and audit log export to Lena Fox at Granite Insurance (`SLA-77342`) — both carrying the same "check with the product owner" flag. Not Vantage, so not in this brief, but they're yours and they're exposed. Worth batching into the same product-owner conversation.
+
+**Your one pre-call action: get the product owner's answer on SSO.** Everything else here you can walk in with as-is.

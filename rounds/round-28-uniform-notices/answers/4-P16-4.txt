@@ -1,0 +1,49 @@
+## Keystone Energy — QBR Brief
+
+**One flag up front, before the substance:** the audit log export commitment has a notice on it in Sho — something I can't see may have changed that promise. Do **not** reaffirm the date or the Splunk detail on the call until you've checked with the product owner. That's the single most important prep item.
+
+---
+
+### Where things stand
+
+Account activity is steady and broad — no fire drills in the record, but no closed loops either. The thread running through the whole year is **audit/security readiness**:
+
+- **Audit prep** dominates the history: CRM-90377 (May 8), CRM-17727 (Jun 17), DRI-48005 (Jun 25), CRM-56742 (Aug 17), DRI-84961 (Aug 24, you + Sam Lee, "audit prep and exports").
+- **Security review** ran across Q2–Q3: CRM-25431 (Apr 7), CRM-64056 (Jul 7), CRM-30791 (Jul 23). Your own QBR prep call (CRM-93344, Aug 25) lists "follow up on security review" as the next step — as far as the records show, that follow-up hasn't landed.
+- **Most recent touches:** pricing on Sep 25 with Jordan Blake (CRM-78617, next step: offline) and uptime on Sep 23 with Sam Lee (CRM-19012, next step: NPS). Pricing coming up days before a QBR is worth knowing who raised it.
+- Other threads: integrations (DRI-31273, Aug 10), rate limits (CRM-60405, Jun 4), onboarding (CRM-15788, Jun 10).
+
+Caveat: these CRM entries are one-line summaries. They tell you *what was discussed* and *who owns the follow-up*, not outcomes. If you need substance on the security review or the pricing conversation, ask Omar Haddad and Jordan Blake directly before the call.
+
+### Open commitments
+
+| Commitment | Source | Status |
+|---|---|---|
+| Audit log export with SIEM streaming into Splunk, by Q1 2027 | DRI-34564 | ⚠️ Notice — verify with product owner before reaffirming |
+
+This came from the Aug 3 sync (DRI-34564): Nia Cole reminded the team of the promise and Jordan Blake confirmed it on the spot. So Keystone believes it's firm, and they have an AE confirmation to point to. That's the exposure.
+
+The other commitments Sho surfaced (advanced analytics/Osprey, offline mode, SCIM) belong to Pinecrest, Meridian, and Umber — not Keystone. I've left them out. Worth noting separately that your Osprey commitment to Lena Fox carries the same kind of notice, if you want to chase that on its own track.
+
+### Risks
+
+1. **Audit log export is the whole ballgame.** Every other thread — audit prep, security review, exports — feeds into it. If that date moves and Keystone hears it cold at a QBR after an AE confirmed it six weeks ago, that's a trust problem, not a roadmap problem.
+2. **The security-review follow-up from your own Aug 25 prep call appears open.** Expect them to ask. Have an answer or an owner and a date.
+3. **Pricing surfaced Sep 25.** Unclear from the record whether that's renewal-driven. Sync with Jordan Blake before the call so pricing and roadmap don't get discussed in conflicting directions.
+4. **Ownership is scattered** — Omar Haddad, Tess Brown, Sam Lee, Jordan Blake, Priya Shah, Ana Petrova, Dana Ortiz have all owned Keystone follow-ups this year. Nobody has a full picture, which is likely why several "next steps" have no visible resolution.
+
+### What to say
+
+**Before the call (do these first):**
+- Ask the product owner whether the audit log export commitment still holds as stated. Everything below depends on the answer.
+- Get the security-review status from Omar Haddad.
+- Align with Jordan Blake on pricing.
+
+**On the call:**
+
+- **Open on the audit/security workstream** — it's what they care about and it's where a year of engagement has gone. Recap: security review Q2–Q3, audit prep throughout, exports discussed in August.
+- **On audit log export, if you haven't heard back from the product owner:** don't restate the date. Use something like — *"Audit log export with SIEM streaming is the anchor commitment on our side. I want to give you a precise status rather than a repeat of what you already have, so let me come back to you this week with the engineering view."* That's honest, gives you a concrete deliverable, and doesn't create a second confirmation you might have to walk back.
+- **If it's confirmed intact:** reaffirm plainly — Q1 2027, streaming into Splunk — and offer a milestone view so they can plan their own audit calendar around it.
+- **Close by naming a single owner** for the Keystone relationship through renewal. Given how spread the follow-ups have been, that's a credible and welcome thing to offer.
+
+**Don't** speculate on the call about roadmap changes or why a date might move. If Nia Cole presses, the honest line is that you're confirming the engineering status and will follow up with specifics — not a hint that something's shifted.
