@@ -53,3 +53,7 @@ You need the `claude` CLI, signed in. Runs cost model usage. Expect small run-to
 - The 40 scale-test promises were written from templates, so they're easier to find than real ones.
 - AI models graded the answers, not people. A second model and a human leak review check them.
 - It is not a customer result.
+
+## Licence
+
+MIT. See [LICENSE](LICENSE).
