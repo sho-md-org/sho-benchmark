@@ -1,0 +1,23 @@
+## The comparison doesn't resolve the way you're asking
+
+Both audit-export promises carry the **same flag**, with identical wording: a decision I can't see may or may not change the promise, and I should check with the product owner before reaffirming. So I can't tell you one is at risk and the other is safe — from where I sit they're indistinguishable on risk. Neither is cleared.
+
+**Cobalt Retail** — `CRM-38600` (QBR, 2026-07-24)
+Sam Ortiz pushed; you said "you'll have it by Q1 2027 as a CSV export, you have my word." Scope is **CSV export only**. Note the record says the customer is planning around it, and you gave a personal guarantee — that's the weakest position to walk back from if the promise moves.
+
+**Keystone Energy** — `DRI-34564` (sync, 2026-08-03)
+Nia Cole reminded the team of audit log export by Q1 2027 **with streaming into Splunk**; Jordan Blake (AE) confirmed. Scope is materially larger — export *plus* SIEM streaming. Worth flagging: this one isn't logged as yours. It's recorded as a company commitment confirmed by Jordan Blake, so Jordan should be in any conversation about it.
+
+## Two corrections to the framing
+
+Your "two" promises aren't Cobalt and Keystone. Keystone's is attributed to Jordan Blake / the company. **Your** second audit-export promise is **Granite Insurance** — `SLA-77342` (2026-05-26), to Lena Fox, Q1 2027 including SIEM streaming, so they can finish their rollout. It carries the same flag. You also have a separate flagged promise to Lena Fox at Pinecrest Realty on Advanced analytics (`SLA-93532`), which suggests you're tracking Lena across two accounts — worth confirming that's intentional and not a mixed-up contact record.
+
+So: three flagged audit-export promises all landing on Q1 2027 (Cobalt, Keystone, Granite), two of which you own directly.
+
+## What to do
+
+Take one question to the **product owner**, covering all three at once since they share a feature and a date: does Q1 2027 still hold for audit log export, and does it include SIEM streaming or CSV only? The scope split matters — a CSV-only outcome satisfies Cobalt but breaks Keystone and Granite.
+
+Until you have that answer, don't reaffirm any of the three dates to the customers. If Sam Ortiz or Nia Cole presses meanwhile, confirm you're re-checking the timeline rather than restating Q1 2027. I'd also loop Jordan Blake in on Keystone before anything goes to Nia Cole.
+
+I can draft the note to the product owner, or the holding replies to Sam and Nia, if useful.

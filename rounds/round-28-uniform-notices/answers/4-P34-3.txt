@@ -1,0 +1,44 @@
+## Aster Health — QBR Brief
+*Prepared 2026-09-25 for Maya Chen*
+
+### Where things stand
+
+The account has been active and steady through the year, but the record trail is thin — most entries are one-line call logs without outcomes. Recurring themes across the last six months:
+
+| Theme | Records | Last touch |
+|---|---|---|
+| Exports | CRM-45213, CRM-76005 | Apr 18 (owner: Leo Grant) |
+| Sandbox | DRI-86962, CRM-62644, CRM-64767 | May 17 (owner: Ana Petrova) |
+| Hosting | CRM-81799 | May 11 (owner: Tess Brown) |
+| Latency | CRM-16329, CRM-68765 | Jun 22 (owner: Leo Grant) |
+| Dashboards | CRM-57156, CRM-75476 | Jul 21 (owner: Sam Lee) |
+| Audit prep | DRI-48323 | Jun 13 |
+| NPS | CRM-26522, DRI-36735 | DRI-36735 is dated Sep 28 — upcoming, not yet held |
+
+Your own last logged touch is CRM-70994 (Jun 3, QBR prep, next step: "follow up on support queue") and CRM-62644 (May 10, sandbox). Worth checking whether the support-queue follow-up ever closed — nothing in the record shows it did.
+
+### Open commitments
+
+**Higher API rate limits — by October, promised to Omar Aziz.** Made by Priya Shah (AE), reconfirmed by her at the Jun 12 sync (DRI-86231). **This one is shipped** — Crane went live Sep 20 and raised API rate limits for all paid plans (SLA-26281). No caveats on it; you can state it plainly as delivered ahead of the deadline.
+
+That is the only commitment on record tied to Aster Health. Nothing else in the commitment register points at this account.
+
+### Risks
+
+1. **Ownership is scattered.** Six different people own Aster calls (you, Leo Grant, Ana Petrova, Tess Brown, Sam Lee, Priya Shah). No single thread-holder means the customer may be repeating themselves.
+2. **Churn keeps appearing as the next step** — CRM-76005, CRM-64767, CRM-68765 and DRI-48323 all point to churn or audit-prep follow-ups. Four separate flags over five months is a signal, even if none of the notes elaborate.
+3. **Latency and dashboards are the freshest unresolved threads** (Jun–Jul) with no recorded resolution. Assume they'll come up.
+4. **Audit prep (DRI-48323, Jun 13) has no visible closure.** If they're mid-audit, this is the highest-stakes open item.
+
+### What to say
+
+- **Lead with the win.** "The higher API rate limits we committed to for October are live as of September 20 — they shipped ahead of schedule and apply across all paid plans." This is your strongest opener and it's fully backed.
+- **Ask, don't assert, on audit prep and latency.** You don't have resolution on either; treat them as open questions to the customer rather than claiming progress.
+- **Propose a single point of contact.** Offering to consolidate ownership under you addresses the fragmentation risk and reads as an upgrade, not an apology.
+- **Use the Sep 28 NPS session (DRI-36735) as a forward hook** — it's scheduled just after your call.
+
+### One flag outside this account
+
+Two commitments you personally made elsewhere — Advanced analytics for Lena Fox at Pinecrest Realty (SLA-93532) and Audit log export for Lena Fox / Granite Insurance (SLA-77342) — are marked in Sho as possibly affected by a decision I can't see. Neither belongs in the Aster QBR, but before you reaffirm either to Lena, check with the product owner that those promises still hold.
+
+**Before the call:** confirm with Priya Shah whether Omar Aziz has been told the rate-limit work shipped, and close the loop on your Jun 3 support-queue item so it doesn't surface as a surprise.

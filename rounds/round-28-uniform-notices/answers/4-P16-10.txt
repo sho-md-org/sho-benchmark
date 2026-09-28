@@ -1,0 +1,47 @@
+## Keystone Energy QBR Brief — call week of Sep 28, 2026
+
+### Where things stand
+Keystone has been a heavy-touch account all year, with the through-line being **audit/security readiness**. Records show a near-continuous audit-prep thread from May through late August:
+
+- `CRM-90377` (May 8) → notifications follow-up, owner Dana Ortiz
+- `CRM-60405` (Jun 4) rate limits → next step: audit prep
+- `CRM-15788` (Jun 10) onboarding → next step: audit prep
+- `CRM-17727` (Jun 17) audit prep, owner Ana Petrova → support queue follow-up
+- `DRI-48005` (Jun 25) audit prep + pricing (you + Omar Haddad)
+- `DRI-31273` (Aug 10) integrations + QBR prep (you + Sam Lee)
+- `CRM-56742` (Aug 17) audit prep, owner Omar Haddad → webhooks follow-up
+- `DRI-84961` (Aug 24) audit prep and exports (you + Sam Lee)
+- `CRM-93344` (Aug 25) QBR prep, you owning → **next step: follow up on security review**
+
+Two things stand out. First, account ownership has rotated a lot (Dana Ortiz → Ana Petrova → Omar Haddad → you), which is a plausible reason the same topic keeps resurfacing. Second, the **security review follow-up from `CRM-93344` appears to be still open** — nothing after Aug 25 shows it closed. Close that loop before the call if you can.
+
+### Open commitments to Keystone
+**Audit log export with SIEM streaming (Splunk), by Q1 2027** — `DRI-34564` (Aug 3 sync). Nia Cole raised it; Jordan Blake (AE) confirmed it on the call. This is a company-level commitment, not just an AE aside, and Nia is clearly tracking it.
+
+⚠️ **Do not reaffirm this date on the call until you've checked.** Sho flags that a decision I can't see may affect this commitment. `NOT-20876` (the public roadmap, dated Jun 30) does list "Audit log export incl. SIEM streaming: Q1 2027" — but that's nearly three months old and predates whatever the flag refers to. **Ask the product owner whether the Q1 2027 date still holds before you say it to Keystone.** Jordan Blake owns a newer roadmap note (`NOT-77133`, Sep 26) and confirmed the original commitment, so he's your first stop, alongside the audit-log-export product owner.
+
+### Risks
+1. **Commitment risk on audit log export** — the single biggest one. Keystone has it in writing from an AE, it's tied to their audit timeline, and its status may have moved. If the date has slipped, this QBR is where they'll expect to hear it, and hearing it late is much worse than hearing it now.
+2. **Unclosed security review** — the explicit next step from your last QBR-prep call, with no recorded resolution.
+3. **Loose threads with no visible closure**: webhooks (`CRM-56742`), notifications (`CRM-90377`), support queue (`CRM-17727`), rate limits (`CRM-60405`). Any of these could resurface as a complaint. Worth a quick check with Omar and Sam Lee.
+4. **Continuity fatigue** — four owners in five months on an account running a compliance project. Expect some "we've explained this before" friction.
+
+### What to say
+**Open with the audit narrative, not a feature list.** Frame the year as: they came to us with an audit deadline, and everything — exports, integrations, rate limits, webhooks — has been in service of that. That's the story they'll recognize.
+
+**Say on the call:**
+- "Audit log export with SIEM streaming into Splunk is on our roadmap and we know it's committed to you for Q1 2027. I'm reconfirming the exact timing with our product team and will come back to you in writing this week." *(This honors the commitment without you personally re-guaranteeing a date that may have moved.)*
+- Status on the security review — bring an actual answer, or a named owner and date.
+- Acknowledge the ownership churn directly and state that you're the continuous point of contact now. Cheap to say, and it buys real credibility.
+
+**Don't say:** a hard "yes, Q1 2027 is confirmed" on audit log export until product answers you. And don't speculate to Keystone about internal roadmap deliberations.
+
+**Ask them:** what their audit milestone dates actually are. If their deadline is before Q1 2027, that's a live problem worth surfacing now rather than at the next QBR.
+
+### Before the call — your to-do
+1. Ask the product owner (and Jordan Blake) whether audit log export / SIEM streaming Q1 2027 still holds.
+2. Get the security review status from `CRM-93344`.
+3. Check webhooks/notifications/support-queue threads with Omar Haddad and Sam Lee.
+
+### Side note, not for the Keystone call
+Sho surfaced two of **your own** commitments to other accounts carrying the same kind of flag: advanced analytics to Lena Fox at Pinecrest Realty by the spring release (`SLA-93532`), and audit log export to Lena Fox at Granite Insurance by Q1 2027 (`SLA-77342`). Both need the same check with the product owner before you reaffirm them. Since you're already having that conversation for Keystone, ask about all three at once.

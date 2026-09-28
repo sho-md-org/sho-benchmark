@@ -1,0 +1,48 @@
+## Aster Health — QBR Brief
+
+One caveat up front: the Aster Health records in Sho are almost all one-line stubs (topic + owner + "next: follow up on X"). There's no ARR, renewal date, NPS score, or ticket detail in them. So the themes below are solid, but the numbers you'll want for a QBR deck aren't in the system — you'll need to pull those from billing/Zendesk yourself.
+
+### Where things stand
+
+**The one hard win: API rate limits shipped.** Priya Shah committed to Omar Aziz that higher API rate limits would land by October (`DRI-86231`, 2026-06-12). Crane went live 2026-09-20 — rate limits raised for all paid plans (`SLA-26281`). You're ahead of the promise date, and this was a topic Aster raised repeatedly (`CRM-28889` 07-05, `DRI-69821` 04-24). **Lead with this.**
+
+**Recurring threads across the last six months:**
+- **Sandbox** — three touches (`DRI-86962` 04-12, `CRM-62644` 05-10, `CRM-64767` 05-17), two of which you owned. Longest-running open thread.
+- **Exports** — two same-day calls, both Leo Grant (`CRM-45213`, `CRM-76005`, 04-18).
+- **Dashboards** — `CRM-57156` (04-19), `CRM-75476` (07-21, Sam Lee).
+- **Audit prep** — `DRI-48323` (06-13), resurfaced in the NPS discussion (`DRI-36735`).
+- **Latency** — `CRM-68765` (06-22, Leo Grant). Most recent technical complaint on file.
+- **SSO** — `DRI-46065` (08-07).
+- **Hosting** — `CRM-81799` (05-11, Tess Brown).
+
+### Risks
+
+1. **"Churn" is the follow-up note on five separate records** — `CRM-64767`, `CRM-76005`, `CRM-68765`, `DRI-48323`, `DRI-46065`, spanning May through August. Whatever the underlying concern is, it isn't written down anywhere I can see, but five independent flags across five different owners is the loudest signal in this account. Find out what's behind it before the call.
+2. **Ownership is scattered.** Seven different internal owners in six months (you, Leo Grant, Sam Lee, Ana Petrova, Tess Brown, Priya Shah, Jordan Blake). Aster likely feels the handoffs.
+3. **Sandbox and exports both went quiet** after spring with no resolution recorded. If either was blocking a rollout, it's an unaddressed ask heading into the QBR.
+4. **NPS + audit prep session on 2026-09-28** (`DRI-36735`) — that's before or around your call. Get the output of that meeting first; it may reset the whole agenda.
+
+### Open commitments
+
+| Commitment | To | Owner | Status |
+|---|---|---|---|
+| Higher API rate limits by October | Omar Aziz | Priya Shah (AE) | **Shipped** 09-20 (`SLA-26281`) |
+
+That's the only tracked Aster Health commitment. Sandbox, exports, dashboards, and latency appear as discussion topics only — no dated promise attached to any of them, so don't treat them as deliverables you owe unless you remember otherwise.
+
+### What to say
+
+- **Open with the rate limit win.** Named commitment, delivered before the October deadline. Ask Omar Aziz directly whether the new ceiling actually unblocks their volume — a shipped feature that doesn't solve the real problem is worse than an open one.
+- **Name the handoff problem before they do.** Seven owners in six months is visible from their side. Offer a single point of contact (you) for the next quarter.
+- **Ask open questions on sandbox, exports, dashboards, latency** rather than reporting status — you don't have status, and guessing will cost you credibility. "Where did we leave sandbox for you?" is the right framing.
+- **Probe the churn signal indirectly.** Don't say "we've flagged you as a churn risk." Ask what would make the next renewal an easy internal decision for them.
+- **Don't commit to anything new on the call** until you've checked with product. Nothing in the Aster record blocks you, but see below.
+
+### Two flags on your own commitments (other accounts)
+
+Sho flagged two promises **you** made, on accounts other than Aster:
+
+- **Advanced analytics in the spring release** → Lena Fox, Pinecrest Realty (`SLA-93532`)
+- **Audit log export by Q1 2027** → Lena Fox, Granite Insurance (`SLA-77342`)
+
+For both, Sho says a decision it can't show me may or may not have changed the promise. I can't tell you what that decision is or whether it affects you. **Check with the product owner before you reaffirm either one to the customer.** Neither touches Aster Health, so they don't change this brief — but audit log export is adjacent to Aster's audit prep thread, so be careful not to imply a date for Aster if audit logging comes up.

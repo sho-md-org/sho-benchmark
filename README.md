@@ -14,9 +14,9 @@ Everything here runs on **Brightline**, a fictional B2B software company. Every 
 | `data/model.json` | sho's promise model, extracted once from the raw records and then frozen |
 | `generate/` | The scripts that generated the company and extracted the model |
 | `server/mcp.mjs` | The test server. Arm 1 is an ordinary agent that searches tools with the person's own access. Arm 4 is an agent that also asks sho |
-| `run.sh` | Runs one agent run. `SCOPE=feature` gives round 13, `SCOPE=promise` gives round 15 |
+| `run.sh` | Runs one agent run. `SCOPE=feature` gives round 13, `SCOPE=promise` gives round 15, `SCOPE=promise-v2` gives round 28 |
 | `grade.py`, `summarize.py` | Blind AI grading against written criteria, and the summary table |
-| `rounds/` | Two recorded rounds: the pre-registration and its hash, results, leak review, judge outputs and every agent answer |
+| `rounds/` | Three recorded rounds: the pre-registration and its hash, results, leak review, judge outputs and every agent answer |
 
 ## How a round works
 
@@ -33,6 +33,9 @@ Everything here runs on **Brightline**, a fictional B2B software company. Every 
 |---|---|---|---|---|
 | 13 | Notice on every promise on an affected feature | 6 of 40, **fail** | 20 of 20, pass | none, pass |
 | 15 | Notice only on the promise that changed | 1 of 40, pass | 20 of 20, pass | comparison probe 10 of 10 vs 6 of 10, **fail**, not shipped |
+| 28 | As round 15, but when one answer carries several of the person's promises on a feature and one has a notice, all of them get it | 0 of 40, pass (1 of 40 counting one audit disagreement) | 16 of 20, pass | none; comparison probe 0 of 10 vs 6 of 10, pass |
+
+Round 28 reuses round 15's 100 ordinary-agent runs (same model, data, questions and harness), as its pre-registration states. The server file it hashed at run time used machine-local paths, so it isn't published as is: `SCOPE=promise-v2` in `server/mcp.mjs` is the portable equivalent and returns byte-identical output. Its data files are byte-identical to `data/` (their hashes are in its pre-registration).
 
 Earlier rounds (10 and 11) produced the scale figures quoted on sho.md: 40 promises in 3,000 records, and 56 of 60 safe with sho vs 3 of 60 without. Round numbers are our internal names for each run of the benchmark. They appear inside the pre-registrations, which are published byte-identical so their hashes still verify.
 
@@ -40,7 +43,7 @@ Earlier rounds (10 and 11) produced the scale figures quoted on sho.md: 40 promi
 
 ```bash
 npm install                                        # @modelcontextprotocol/sdk and zod
-SCOPE=promise ./run.sh 4 P13 1                     # one run: arm 4, cell P13, run 1
+SCOPE=promise-v2 ./run.sh 4 P13 1                  # one run: arm 4, cell P13, run 1 (round 28's design)
 python3 grade.py opus grading-local                # grade everything in runs/
 python3 summarize.py grading-local
 ```

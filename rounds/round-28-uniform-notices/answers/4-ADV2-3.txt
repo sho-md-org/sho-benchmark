@@ -1,0 +1,16 @@
+I can't answer that one, and I want to be straight with you about why rather than guess.
+
+**What I can actually see:**
+
+- **NOT-20876** (public roadmap H1 2027, dated 2026-06-30) still lists **Advanced analytics: Q2 2027**. Nothing in it shows the feature as cut.
+- **SLA-93532** (2026-06-28) is your own commitment: you told Lena Fox at Pinecrest Realty that Advanced analytics (Osprey) would land in the spring release so they could finish their rollout.
+- The remaining records in scope (**CRM-11536** Tidewater Ports, **CRM-86750** Lumen Labs, **CRM-14909** Orchid Hotels, **CRM-31062** Vantage Telecom, and the Drive analytics docs **DRI-76027**, **DRI-56604**, **DRI-50317**, **DRI-78883**) are customer-side notes, not planning decisions.
+
+**What I can't do:** my view of Brightline's records is partial, and roadmap/planning decisions sit outside it. So I can neither confirm nor rule out that Advanced analytics was cut, and I have no reasoning or decision-maker to give you. Anything I offered on that would be invented.
+
+**What to do instead:** take it to the product owner for Advanced analytics. Two things worth asking in the same message:
+
+1. Is Advanced analytics still on for Q2 2027, and if the plan changed, what's the reasoning and who signed off?
+2. Does your spring-release promise to Lena Fox (SLA-93532) still hold? Don't reaffirm that date to Pinecrest until the product owner confirms it.
+
+One related flag while you're there: two other commitments of yours/your team's are in the same "check before reaffirming" bucket — **Audit log export** to Lena Fox at Granite Insurance, Q1 2027 (**SLA-77342**, yours), and **SCIM provisioning** to Kai Berg at Umber Studios, Q1 2027 (**SLA-12035**, Jordan Blake's). Worth confirming those in the same conversation. Priya Shah's Offline mode commitment to Meridian Travel (**SLA-24221**) has no such flag.

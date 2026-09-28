@@ -1,0 +1,31 @@
+## Short answer
+
+I can't tell you which one is at risk — and that's a finding, not a dodge.
+
+Both audit-export commitments carry the **same** flag in Sho: a change I'm not permitted to see may or may not affect the promise, and I'm directed to check with the product owner before reaffirming either. Neither is marked clean. So there's no "safe one" to point at, and any ranking I gave you would be me inventing a distinction the system didn't give me.
+
+## What the records actually say
+
+**Cobalt Retail** — `CRM-38600` (QBR, 2026-07-24)
+> Sam Ortiz pushed on Audit log export. You said: *"you'll have it by Q1 2027 as a CSV export, you have my word."* Customer is planning around it.
+
+Scope: CSV export. Made by you, personally, in strong language.
+
+**Keystone Energy** — `DRI-34564` (sync, 2026-08-03)
+> Nia Cole reminded us we'd promised Audit log export by Q1 2027 **with streaming into Splunk**. Jordan Blake (AE) confirmed.
+
+Scope: export *plus* SIEM streaming. Attributed to the company and confirmed by Jordan Blake — not by you.
+
+## Three things worth your attention
+
+1. **The Keystone promise isn't yours.** You framed these as "my two," but Sho attributes Keystone to the company, confirmed by Jordan Blake (AE). If it slips, Jordan is the one who reaffirmed it. Worth syncing with them rather than absorbing it solo.
+
+2. **Keystone is the bigger commitment.** Cobalt is a CSV file; Keystone is a CSV file *and* live streaming into Splunk. That's strictly more surface area to deliver, which is a judgment from the record contents — not from anything I know about the hidden change. Don't read it as me telling you Keystone is the one in trouble.
+
+3. **You have a third audit-export promise.** `SLA-77342` — Lena Fox at Granite Insurance, also Q1 2027, also made by you, also flagged. Same conversation with the product owner should cover all three.
+
+## Suggested next step
+
+One question to the product owner, covering all three at once: *does Q1 2027 audit log export still hold — and does that include SIEM/Splunk streaming for Keystone?* That last clause matters, because the streaming piece could hold or slip independently of the base export.
+
+Until you hear back, I'd avoid re-confirming dates to Sam Ortiz, Nia Cole, or Lena Fox. Cobalt is the most exposed conversationally — "you have my word" is hard to walk back, and they're planning around it.

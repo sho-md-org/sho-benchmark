@@ -1,0 +1,49 @@
+## Keystone Energy — QBR Brief
+
+**⚠️ Before the call:** the one commitment that matters most to this account — **audit log export with SIEM/Splunk streaming by Q1 2027** (`DRI-34564`, confirmed by Jordan Blake, AE) — is flagged. There may be a development on it that isn't visible to me. **Ask the product owner whether that date still holds before you reaffirm it on the call.** Don't restate Q1 2027 to Nia Cole until you have that answer.
+
+### Where things stand
+
+Keystone is an active, high-touch account — 15+ logged touchpoints since April across at least six workstreams. The dominant theme all year has been **audit readiness and exports**: five separate audit-prep sessions (`CRM-90377` May 8, `CRM-17727` Jun 17, `DRI-85107` Jun 8, `DRI-48005` Jun 25, `CRM-56742` Aug 17, `DRI-84961` Aug 24). That's the spine of the QBR.
+
+Secondary threads:
+- **Security review** — three sessions (`CRM-25431` Apr 7, `CRM-64056` Jul 7, `CRM-30791` Jul 23). Your own QBR-prep note (`CRM-93344`, Aug 25) lists "follow up on security review" as the next action, and it doesn't appear to have closed.
+- **Integrations** — `DRI-31273` (Aug 10, you + Sam Lee), tied to QBR prep.
+- **Commercial** — pricing discussed most recently on `CRM-78617` (Sep 25, Jordan Blake), with offline mode as the follow-up. Pricing surfacing this close to a QBR is worth knowing before you walk in.
+- **Service health** — uptime reviewed Sep 23 (`CRM-19012`, Sam Lee); rate limits back in June (`CRM-60405`); latency in April (`CRM-23178`).
+
+### Open commitments
+
+| Commitment | Source | Status |
+|---|---|---|
+| Audit log export w/ SIEM (Splunk) streaming, Q1 2027 | `DRI-34564` | **Flagged — verify with product owner first** |
+| Security review follow-up (your action) | `CRM-93344` | Open, no closure logged |
+| Webhooks follow-up | `CRM-56742` | Open (owner: Omar Haddad) |
+| Offline mode follow-up | `CRM-78617` | Open (owner: Jordan Blake) |
+
+The other commitments Sho surfaced (offline mode → Meridian Travel, SCIM → Umber Studios, advanced analytics → Pinecrest, audit log export → Granite Insurance) belong to **other accounts** — don't bring them into this room, though note that audit log export is promised to more than one customer, so any slip there is not a Keystone-only conversation.
+
+### Risks
+
+1. **The audit log export date is the single biggest exposure.** Nia Cole raised it unprompted in the Aug 3 sync — she is tracking it. If the date has moved and you reaffirm it now, the correction lands worse later.
+2. **Audit prep has been discussed six times in five months without a visible close.** From Keystone's seat that may read as drift. Come with a status, not another discussion.
+3. **Owner churn.** Dana Ortiz, Ana Petrova, Tess Brown, Omar Haddad, Sam Lee, Priya Shah and Jordan Blake all own threads on this account. Nobody outside you is holding the whole picture, and follow-ups chain from one owner to another (`CRM-60405` → audit prep, `CRM-15788` → audit prep).
+4. **Pricing is live the same week as the QBR** (`CRM-78617`). Confirm with Jordan where that stands so you aren't surprised mid-call.
+
+### What to say
+
+**Open with the audit story.** It's what they care about: "Audit readiness has been our shared focus since May — here's where exports stand and what closes before your audit window."
+
+**On audit log export / Splunk streaming:** if you haven't heard back from the product owner, say *"I want to give you a precise answer on the Q1 date rather than a directional one — let me come back to you this week with it in writing."* That is credible and buys you the confirmation. Do not commit or de-commit on the call.
+
+**On security review:** own the gap — it's been your action since Aug 25. Name a date.
+
+**Consolidate ownership:** offer a single point of contact for audit + security + exports. Given the owner spread, this is the highest-value thing you can give them and it costs nothing.
+
+**Close by asking what their audit timeline actually is.** Everything in the record is us discussing their audit; nothing records their deadline. That answer reprioritizes the rest.
+
+### Two things to do before the call
+1. Ask the product owner about the Q1 2027 audit log export commitment (`DRI-34564`).
+2. Ask Jordan Blake where the pricing conversation from Sep 25 landed (`CRM-78617`).
+
+One caveat on sourcing: most CRM entries are one-line summaries without outcomes, so the status column above reflects the absence of a logged close, not confirmed inaction. If you have notes outside these systems on the security review or webhooks, they'd override what I've inferred.

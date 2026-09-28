@@ -1,0 +1,18 @@
+**Short answer: I can't see anything indicating that IdP-initiated SSO changed — and nothing I have access to says SSO changed at all.**
+
+What's on record:
+
+- **Public roadmap (NOT-20876, 2026-06-30)** — the most recent roadmap I can see — still lists "SSO (SAML), SP- and IdP-initiated: Q1 2027" as a single line item. No split between the two, no date difference.
+- The three SSO records titled "Sso questions" (NOT-29159, NOT-40327, SLA-21939, SLA-95210) are stubs — owner names and "update next week," no substance on scope.
+
+The external promises that would be affected, none of which are yours:
+
+- **CRM-31062** — Vantage Telecom: Priya Shah (AE) promised Q1 2027 "including IdP-initiated login from Okta, you have my word."
+- **CRM-62434** — Umber Studios: Priya Shah committed SSO by March *with IdP-initiated sign-in*, logged as a **renewal condition**.
+- **CRM-64756** — Delta Freight: Tess Brown (CS) promised end of Q1, no IdP-initiated specifics.
+
+So two of the three commitments name IdP-initiated explicitly, and one of those is tied to a renewal — meaning if a scope change did happen, it lands hardest on Umber Studios.
+
+**My read:** your question sounds like it came from something you heard elsewhere. I have no visibility into it, so I'd rather not guess in either direction — please confirm with the SSO product owner before you say anything to a customer, and loop in Priya since both IdP-specific promises are hers.
+
+One separate flag while you're checking in with product: three commitments on your context, including two you made yourself — **Advanced analytics to Lena Fox/Pinecrest (SLA-93532)** and **Audit log export to Lena Fox/Granite Insurance (SLA-77342)**, plus **SCIM to Umber Studios (SLA-12035)** — are marked as needing product-owner confirmation before you reaffirm them. Worth batching into the same conversation. Note that Umber Studios is carrying both an SSO renewal condition and a flagged SCIM promise.

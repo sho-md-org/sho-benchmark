@@ -1,0 +1,24 @@
+## Short answer: none of your tracked promises are on SSO itself
+
+I searched the SSO records and the commitment register. Every SSO-titled record in your name is discussion notes, not a promise:
+
+- `DRI-18519` — Harbor Clinics, SSO questions + notifications (you, Ana Petrova)
+- `DRI-79562` — Norrland AB, SSO questions + offline (you, Priya Shah)
+- `CRM-74174` — Evergreen Bank, SSO questions, next step is audit prep
+- `SLA-21939`, `NOT-29833`, `NOT-58902` — status update and internal notes
+
+None of these contain a dated commitment to a customer, so there's nothing on SSO proper to be affected.
+
+## What's adjacent and does need care
+
+Two commitments sit in the identity/security domain customers usually bundle with "SSO," so they're likely what prompted the question:
+
+**`SLA-77342` — Audit log export, Granite Insurance (Lena Fox), by Q1 2027, including SIEM streaming.** This one is yours. It's flagged: there may be a change on it that I can't see, so **check with the product owner before you reaffirm the Q1 2027 date or the SIEM streaming scope to Lena.** Worth noting your Evergreen Bank SSO call (`CRM-74174`) has "follow up on audit prep" as its next step — if that conversation drifts toward audit log commitments, hold the same line.
+
+**`SLA-12035` — SCIM provisioning, Umber Studios (Kai Berg), by Q1 2027.** Also flagged, but this was promised by Jordan Blake (AE), not you. SCIM is the closest thing to SSO in the register, since it's the provisioning half of an identity rollout. If a customer raises it with you, route to Jordan and the product owner rather than restating the date.
+
+Your third commitment, `SLA-93532` (Advanced analytics/Osprey, Pinecrest Realty, spring release), is also flagged but unrelated to SSO.
+
+## Suggested next step
+
+Ask the product owner one question covering both flagged items you touch: does the Q1 2027 Audit log export date, including SIEM streaming, still hold for Granite Insurance? Until you have that, I'd avoid re-confirming dates in writing on either audit log export or SCIM — safe to keep discussing SSO configuration itself, since nothing is committed there.

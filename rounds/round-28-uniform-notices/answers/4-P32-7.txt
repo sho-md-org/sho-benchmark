@@ -1,0 +1,37 @@
+## Harbor Clinics — QBR Brief
+
+Pulled from the CRM/Drive record. Up front: **the record is thin.** No ARR, renewal date, seat count, usage trend, or health score is available to me — so this is a relationship-and-commitments brief, not a numbers brief. If you want data slides, you'll need those from ops separately.
+
+---
+
+### 1. Where things stand
+
+Steady, high-frequency contact — 15+ touchpoints since April, most recently the mobile app call on 2026-09-21 (CRM-49374). Threads in play across the year: integrations (CRM-97969, CRM-75336), latency (CRM-94239), hosting/SSO (CRM-34883), sandbox (CRM-36695, DRI-18426), dashboards (CRM-64035), offline (CRM-39320), onboarding (CRM-48825), roadmap (CRM-41255), pricing/billing (DRI-40615).
+
+**The pattern worth noticing:** ownership is scattered. Sam Lee, Leo Grant, Priya Shah, Omar Haddad, Tess Brown, Ana Petrova, Dana Ortiz, Jordan Blake, and you all own separate Harbor threads. No single internal throughline. That's a QBR-sized problem in itself.
+
+### 2. Open commitments
+
+**Data retention controls — by Q1 2027.** Made by Jordan Blake (AE) to Ines Park. Ines raised it at the 2026-05-15 sync and Jordan reconfirmed it on the spot (DRI-80868). No later change to this commitment in the record — **safe to reaffirm on the call.** It's the one hard date Harbor is holding us to, and it's four months out.
+
+**EU data residency — no commitment, and keep it that way.** Ada Moss asked on 2026-06-09; the answer given was "exploring, no dates yet" (CRM-89966). Nothing has moved since. If Ada raises it again, repeat that framing verbatim. Don't let Q1 2027 retention momentum pull a residency date out of you — they're different things and Harbor may hear them as one.
+
+### 3. Risks
+
+**Audit prep is a four-month open loop.** "Follow up on audit prep" is the logged next step on 2026-04-08 (CRM-45542), 2026-05-14 (CRM-35862), and 2026-07-24 (CRM-48825), and it resurfaced in the support-queue discussion on 2026-08-19 (DRI-20995). Five months, no logged resolution. If Harbor has an audit deadline, this is your exposure — and it plausibly connects to the retention-controls commitment.
+
+**Three internal "churn" discussions in eight weeks** — DRI-17076 (Jul 20), DRI-26772 (Sep 6), DRI-17950 (Sep 11, you and Tess Brown). **Caveat: I can't tell from these notes whether "churn" means Harbor's renewal risk or a churn-analytics use case they're building** — each note pairs it with a product topic (analytics, sandbox, dashboards). Check your own recollection of the Sep 11 conversation before you walk in. If it's renewal risk, it's the single most important thing on this list and the brief above is underweighting it.
+
+**Fragmented ownership** (see above) — Harbor has likely told the same story to four different people.
+
+### 4. What to say
+
+1. **Lead with the commitment you can keep.** "Data retention controls remain on track for Q1 2027" — you have a clean, reconfirmed record behind it.
+2. **Get ahead of audit prep.** Don't wait for Ines or Ada to raise it. "I want to close the loop on audit prep — it's been open on our side since spring. What's your actual deadline?" Naming your own gap buys credibility for everything else.
+3. **Hold the line on EU data residency:** exploring, no dates. Offer a written update cadence instead of a date.
+4. **Propose a single point of contact.** Frame it as a service improvement, not an admission: one owner for Harbor threads going forward.
+5. **Ask what they'd fix.** With this many parallel threads, the highest-value QBR minute is open-ended.
+
+---
+
+**Separate, not for this call:** two of your own commitments on other accounts are flagged in the system as possibly affected by a decision I can't see — Advanced analytics to Lena Fox (Pinecrest Realty, SLA-93532) and Audit log export to Lena Fox (Granite Insurance, SLA-77342). Check with the product owner before reaffirming either. Neither touches Harbor, but both are yours and both involve the same contact name.

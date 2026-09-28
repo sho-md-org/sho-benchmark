@@ -1,0 +1,48 @@
+## Harbor Clinics QBR Brief — call week of Sep 28, 2026
+
+### Where things stand
+The account is active and broad — 14+ touchpoints since April across multiple workstreams, with ownership spread over several people rather than concentrated in one CSM.
+
+| Theme | Latest touchpoint | Owner |
+|---|---|---|
+| Mobile app | CRM-49374 (Sep 21) — most recent contact | Sam Lee |
+| Offline | CRM-39320 (Aug 26) | Priya Shah |
+| Dashboards | CRM-64035 (Aug 26) | Ana Petrova |
+| Support queue | DRI-20995 (Aug 19, with you and Leo Grant) | Leo Grant |
+| Integrations | CRM-75336 (Jul 25), CRM-97969 (Apr 25) | Omar Haddad |
+| Onboarding | CRM-48825 (Jul 24) | Priya Shah |
+| Hosting | CRM-34883 (Jul 15) | Sam Lee |
+| Roadmap | CRM-41255 (Jun 14) | Tess Brown |
+| Notifications | CRM-78984 (Jun 15), CRM-73374 (May 24) | Dana Ortiz / Ana Petrova |
+| Sandbox | CRM-36695 (Jun 13) | Jordan Blake |
+| Latency | CRM-94239 (Jun 2) | you |
+| Audit prep | CRM-35862 (May 14) | Leo Grant |
+
+Notably, the last QBR prep record is CRM-45542 (Apr 8) and the Sep 21 mobile app call (CRM-49374) closed with "follow up on QBR prep" — so this call is the expected next step, and they'll likely arrive with an agenda.
+
+### Open commitments
+**Data retention controls — by Q1 2027.** Committed to Ines Park; Ines raised it at the May 15 sync (DRI-80868) and Jordan Blake (AE) confirmed it on the spot. No later change to this commitment appears in the records, so it's safe to reaffirm as it stands. Since Jordan made the confirmation, loop him in before the call so you're both saying the same thing.
+
+That is the only standing delivery commitment to Harbor Clinics I can find.
+
+### Risks
+1. **EU data residency is the live exposure.** Ada Moss asked about it on Jun 9 (CRM-89966) and the answer was "exploring, no dates yet." Three-plus months later there's still no dated answer in the records. Expect this to resurface at the QBR, possibly tied to their audit work. Do not offer a date — get a current read from the product owner before the call so you're not repeating "exploring" for a second quarter.
+2. **Fragmented ownership.** Seven different owners across twelve threads. The risk isn't any single item, it's that Harbor may perceive no one holding the whole account. Worth pre-empting.
+3. **Long-running audit prep thread.** Audit prep runs from April (CRM-45542) through August (DRI-20995) as a recurring "next step" without a visible close-out. Confirm internally whether it's actually done before the call; if it isn't, they'll notice.
+4. **Stale threads.** Notifications, sandbox, latency, and roadmap have no touchpoint since mid-June. Check whether those closed or just went quiet.
+
+### What to say
+- **Open with the commitment you can keep.** Data retention controls remain on track for Q1 2027 — name it early and unprompted. It's the strongest thing you have and it answers Ines directly.
+- **Handle EU data residency head-on, with honesty about status.** "You asked in June and I owe you a better answer than 'exploring.' Here's where it actually is." Bring whatever the product owner gives you. If there's still no date, say that plainly and commit to a specific date by which you'll have an answer — that's a commitment you control.
+- **Name the ownership issue before they do.** Propose a single point of contact (you) with a consolidated view, and name the specialists behind each workstream. Turns a weakness into a structure story.
+- **Close out the old threads explicitly.** Walk the June–August items and mark each done, dropped, or active. Clearing four stale threads reads as competence.
+- **Ask what changed on their side.** Twelve threads suggest their priorities have shifted since April; get their current top three so the next quarter isn't equally scattered.
+
+### Prep before the call
+- Get a current read on EU data residency from the product owner (CRM-89966).
+- Confirm with Jordan Blake that Q1 2027 for data retention controls is still the line you're both holding (DRI-80868).
+- Confirm audit prep status with Leo Grant (CRM-35862, DRI-20995).
+
+---
+
+**Separate from Harbor — two of your own commitments need checking.** Not for this call, but flagging while it's in front of you: your Advanced analytics (Osprey) promise to Lena Fox at Pinecrest Realty for the spring release (SLA-93532) and your Audit log export promise to Lena Fox / Granite Insurance for Q1 2027 (SLA-77342) both carry notices that something may have changed. Check with the product owner before you reaffirm either one to those customers.

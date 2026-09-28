@@ -1,0 +1,37 @@
+# Harbor Clinics — QBR Brief
+
+## Where things stand
+Twelve months of steady, broad engagement — no escalations or churn signals in the record. Activity spans onboarding (CRM-48825), integrations (CRM-97969, CRM-75336), sandbox (CRM-36695), notifications (CRM-73374), latency (CRM-94239), audit prep (CRM-35862), support queue (DRI-20995), and most recently the mobile app (CRM-49374, 2026-09-21 — the freshest touchpoint, owner Sam Lee, with QBR prep as the stated next step).
+
+Account is multi-threaded on our side: Sam Lee, Leo Grant, Omar Haddad, Priya Shah, Ana Petrova, Jordan Blake, and you. Main customer contact on commitments is **Ines Park**.
+
+A recurring thread worth noting: **audit/compliance** comes up repeatedly (CRM-35862, CRM-48825 → audit prep, DRI-20995, and audit prep was the follow-up out of the very first QBR prep call CRM-45542). That's likely the center of gravity for this QBR.
+
+## Open commitment
+**Data retention controls — by Q1 2027.** Made by Jordan Blake (AE) to Ines Park; Ines raised it at the 2026-05-15 sync and Jordan confirmed it on the spot (DRI-80868). No later change to this commitment appears in the record, so you can treat it as standing.
+
+This is the only commitment on file for Harbor Clinics. The other commitments visible to me belong to different accounts (Pinecrest, Meridian, Umber, Granite) — don't let those bleed into this conversation.
+
+## Risks
+1. **The retention commitment is the one hard-dated promise, and it wasn't yours.** Jordan confirmed it verbally in a meeting. Before the call, confirm with the product owner that Q1 2027 is still the live target — a verbal AE confirmation four months old is the weakest kind of commitment to reaffirm cold.
+2. **Ines tracks commitments and will raise them.** She did exactly that in May. Expect her to ask for a retention status update unprompted.
+3. **Ownership is scattered.** Seven internal owners across ten touchpoints means no single person holds the account narrative. If Ines asks "who owns X," you want answers ready.
+4. **Thin record detail.** The CRM entries are one-liners with no outcomes recorded. I can't tell you whether integrations, latency, or the mobile app thread actually resolved. Worth a quick check with Omar (integrations) and Sam (mobile) before the call rather than guessing on the call.
+
+## What to say
+
+**Open with the compliance story.** It's their throughline. "Over the past year we've worked through onboarding, integrations, sandbox, and your audit prep — and retention controls are the next piece."
+
+**On data retention controls:** confirm Q1 2027 only after you've checked with the product owner. If you've confirmed, say it plainly with the date. If you haven't, say: "Retention controls are tracked for Q1 2027 — let me confirm the current release timing and come back to you this week." Don't hedge vaguely; give her a date for your answer.
+
+**On the mobile app:** this was the September conversation and it's unresolved in the record. Get Sam's status first, then either report progress or ask Ines what her rollout timeline needs.
+
+**Ask for, don't just report:** what's driving their retention requirement (regulatory deadline? internal audit?), and whether anything changed in their audit timeline. That tells you whether Q1 2027 is comfortable or tight for them.
+
+**Close with a named owner per thread** — it directly addresses the scattered-ownership risk and reads as account maturity rather than an apology.
+
+## Before the call — two things
+1. Ask the product owner whether Q1 2027 still holds for data retention controls (DRI-80868). Loop Jordan Blake in, since he made the commitment.
+2. Get current status on mobile (Sam Lee, CRM-49374) and integrations (Omar Haddad, CRM-75336).
+
+One caveat on sourcing: the CRM records are summary-level only, so "no open issues" reflects an absence of recorded escalations, not a verified all-clear.

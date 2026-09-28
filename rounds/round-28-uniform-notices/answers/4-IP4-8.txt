@@ -1,0 +1,33 @@
+## Short answer
+
+I can't rank them. **Both** audit-export commitments carry the same flag in Sho: a change I can't see may or may not affect the promise, and I'm told to check with the product owner before either one is reaffirmed. So neither comes back "clean" — treating one as safe would be wrong.
+
+## What the records actually say
+
+**Cobalt Retail — CRM-38600** (QBR, 2026-07-24)
+> Sam Ortiz pushed on Audit log export. Maya Chen (CS): "you'll have it by Q1 2027 as a CSV export, you have my word." Customer is planning around it.
+
+Yours, personally worded, scope = CSV export.
+
+**Keystone Energy — DRI-34564** (sync, 2026-08-03)
+> Nia Cole reminded us that we told them Audit log export by Q1 2027 with streaming into Splunk. Jordan Blake (AE) confirmed.
+
+Scope = export **plus SIEM/Splunk streaming**.
+
+## Two things to correct in the framing
+
+1. **Keystone isn't logged as your promise.** Sho attributes it to "Company, confirmed by Jordan Blake (AE)" via DRI-34564. You're on Keystone audit-prep calls (DRI-48005, DRI-84961), but the commitment of record sits with Jordan. If you go chase it, loop him in rather than owning it solo.
+
+2. **You have a third audit-export promise, not two.** SLA-77342 (2026-05-26): you told Lena Fox at Granite Insurance Q1 2027 *including SIEM streaming*. It carries the same flag. That one's squarely yours and looks like it's off your radar.
+
+## The one difference I can see
+
+Scope, not status. Cobalt is plain CSV; Keystone and Granite both include SIEM streaming on the same Q1 2027 date. Streaming is the larger commitment, so if anything shifts, the two streaming promises have more surface area — and Granite is the one with your name on it.
+
+## Suggested next step
+
+One message to the audit-log-export product owner covering all three, e.g.:
+
+> Three Q1 2027 audit-export commitments outstanding: Cobalt Retail (CSV, CRM-38600), Keystone Energy (+Splunk streaming, DRI-34564), Granite Insurance (+SIEM streaming, SLA-77342). Before I reaffirm any of these to customers, can you confirm scope and date still hold — specifically whether SIEM streaming is in for Q1?
+
+Until that comes back, I'd hold off on re-confirming either date to Sam Ortiz or Lena Fox. Want me to draft that message?
