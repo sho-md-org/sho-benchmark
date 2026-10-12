@@ -1,0 +1,24 @@
+# Dependabot version updates (SHO-722a).
+# Weekly on Monday, at most 3 open PRs per ecosystem, and all minor and patch
+# bumps in an ecosystem arrive as one grouped PR. Major bumps stay separate.
+# Security updates are a repository setting, not part of this file.
+#
+# No GitHub Actions entry yet: this repo has no .github/workflows on main, and
+# Dependabot errors for the github-actions ecosystem when a repo has no workflow
+# files. Add an entry when the first workflow lands.
+
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 3
+    groups:
+      npm-minor-and-patch:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
