@@ -1,0 +1,18 @@
+## Short answer: nothing I can see indicates the IdP-initiated piece changed
+
+I checked the SSO records and the commitment flags, and there's no change on record for either half of SSO:
+
+- **NOT-20876** (Public roadmap H1 2027, dated 2026-06-30) still lists it as one combined line: *"SSO (SAML), SP- and IdP-initiated: Q1 2027."* SP- and IdP-initiated aren't split into separate items or separate dates there.
+- **CRM-31062** (Vantage Telecom QBR, 2026-06-08) is the most specific promise on file — Priya Shah told Ines Park "you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word," and the note says the customer is planning around it. Nothing later in the SSO records revises that.
+- The rest of the SSO trail (**SLA-21939**, **SLA-95210**, **NOT-29833**, **NOT-58902**, **NOT-30257**, **NOT-29159**, **NOT-40327**, **DRI-18519**, **CRM-74174**) is thin — meeting stubs and "owner + related area" notes with no scope detail. Owners differ across them (Leo Grant, Jordan Blake, Ana Petrova, you), so there's no single obvious SSO product owner in these records.
+
+Sho did not attach any flag to SSO, so I'd treat the Q1 2027 SSO promise as standing normally.
+
+**Two caveats before you repeat this to a customer:**
+
+1. Your question sounds like you heard something specific. I don't have a source for it, and absence of a record isn't proof — if someone told you IdP-initiated slipped or got descoped, that's newer than anything here. Worth asking them where it came from.
+2. Because Vantage is planning a rollout around the Okta IdP-initiated path specifically, I'd confirm with whoever actually owns SSO before reconfirming the date to Ines Park. That promise was Priya's, not yours, so Priya should be in that loop.
+
+**Separately, flagged while I was looking** — three unrelated commitments came back with a "check with the product owner before reaffirming" flag, two of which are yours: Advanced analytics to Lena Fox / Pinecrest Realty (**SLA-93532**) and Audit log export to Lena Fox / Granite Insurance (**SLA-77342**), plus SCIM to Kai Berg / Umber Studios (**SLA-12035**, Jordan's). I can't see what's behind those flags. Offline mode to Tom Hale (**SLA-24221**) came back clean.
+
+Want me to draft the question to the SSO owner, or dig into the analytics/audit-log flags?

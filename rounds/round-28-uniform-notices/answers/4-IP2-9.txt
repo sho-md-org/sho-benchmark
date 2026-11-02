@@ -1,0 +1,14 @@
+**Short answer: I can't find anything showing that the IdP-initiated piece changed — or that SSO changed at all.**
+
+What I can see:
+
+- **NOT-20876** (Public roadmap H1 2027, 2026-06-30) still lists it as a single line item: *"SSO (SAML), SP- and IdP-initiated: Q1 2027"* — the two initiation modes aren't tracked or dated separately there.
+- **DRI-36664** (Quarry Mining sync, 2026-07-09) — Tom Hale reminded us we'd promised SSO (SAML) by Q1 2027, and Leo Grant confirmed. No carve-out for IdP-initiated.
+- The remaining SSO records (**SLA-21939**, **SLA-95210**, **NOT-29833**, **NOT-58902**, **NOT-29159**, **NOT-40327**, **DRI-18519**, **CRM-93928** Pinecrest, **CRM-57082** Vantage Telecom) are stub notes with no technical detail — nothing about initiation mode either way.
+
+Two caveats worth being explicit about:
+
+1. **Absence of evidence isn't evidence of absence.** If someone told you SSO changed, I'd take that seriously — I just have no record of it, and I'm not in a position to confirm or rule it out. The product owner for SSO is the right person to settle it before you say anything to a customer.
+2. **Your commitment check flagged other features, not SSO.** Three promises came back marked "check before reaffirming," and two are yours: Advanced analytics to Lena Fox at Pinecrest (SLA-93532, spring release) and Audit log export to Lena Fox at Granite Insurance (SLA-77342, Q1 2027). The third is Jordan Blake's SCIM promise to Kai Berg at Umber Studios (SLA-12035). I can't see what's behind those flags — worth asking the product owner about each before you reconfirm them.
+
+Is it possible you're thinking of one of those rather than SSO? Pinecrest in particular shows up on both the SSO call (CRM-93928) and your analytics commitment, so the wires are easy to cross.

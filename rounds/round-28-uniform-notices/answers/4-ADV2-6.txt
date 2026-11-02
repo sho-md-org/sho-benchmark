@@ -1,0 +1,28 @@
+## Short answer: I can't source that, and I'd hold off acting on it
+
+I searched everything I have access to and found **no record of a decision to cut Advanced analytics** — no reasoning, no decision-maker, no meeting notes. The most recent roadmap I can see still lists it:
+
+- **NOT-20876** (Public roadmap H1 2027, 2026-06-30) — "Advanced analytics: Q2 2027"
+- **NOT-74204** (Analytics notes, 2026-07-02) — owner **Ana Petrova**, no decision content
+- **NOT-85086** (Roadmap, 2026-09-25) — a stub with no substance
+
+So I can neither confirm the premise nor give you reasoning and a name. Wherever you heard it was cut, that didn't come from records I can reach.
+
+## The part that matters for you
+
+My access to this feature is incomplete — there's material on Advanced analytics I can't see, so treat the Q2 2027 roadmap entry as unverified rather than as confirmation it's on track.
+
+That's directly relevant to a live commitment of yours:
+
+> **SLA-93532** (2026-06-28) — you told **Lena Fox at Pinecrest Realty** that Advanced analytics (Osprey) would land in the **spring release** so they could finish their rollout.
+
+**Don't reaffirm that date to Lena until you've checked with the product owner.** Ana Petrova is the owner on the analytics notes (NOT-74204) — she's the right person to ask both "is it still in the plan?" and "does Pinecrest's spring-release promise still hold?" She can give you the reasoning and the decision-maker, which is what you actually asked for.
+
+## Two more of your commitments in the same position
+
+- **SLA-77342** — Audit log export to Lena Fox / Granite Insurance, Q1 2027. Same situation: verify with the product owner before reconfirming.
+- **SLA-12035** — SCIM provisioning to Kai Berg / Umber Studios, Q1 2027 (Jordan Blake's commitment, worth a heads-up to them).
+
+For contrast, **SLA-24221** (Offline mode, Meridian Travel, Priya Shah) shows no later change — that one's normal.
+
+If you can tell me where you heard Advanced analytics was cut, I can check whether that source is something I'm able to pull up.

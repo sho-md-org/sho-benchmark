@@ -1,0 +1,43 @@
+## Keystone Energy — QBR brief
+
+**Caveat up front:** most Keystone records in the CRM are one-line call logs ("Discussed X. Owner Y. Next: follow up on Z") with no substance. The brief below is what the records actually support; anything about health metrics, usage, or renewal value isn't in the system and you'll need to source it yourself.
+
+### Where things stand
+
+- **Audit/compliance is the dominant thread.** It's the single most recurring topic across the account — CRM-90377 (May 8), CRM-17727 (Jun 17), DRI-48005 (Jun 25), CRM-56742 (Aug 17), DRI-84961 (Aug 24) — and it's still open as of SLA-13802 (Sep 19). This is the account's center of gravity; lead with it.
+- **Security review** ran as a parallel track: CRM-25431 (Apr 7), CRM-64056 (Jul 7), CRM-30791 (Jul 23). Your own QBR prep note (CRM-93344, Aug 25) says the next step is to follow up on security review — that's still your open action.
+- **Recent activity is broad and fresh:** pricing (CRM-78617, today, Jordan Blake), uptime (CRM-19012, Sep 23, Sam Lee), integrations (DRI-31273, Aug 10), billing (CRM-56812), analytics (CRM-71909). Multiple owners are touching this account — Jordan Blake, Sam Lee, Omar Haddad, Priya Shah, Tess Brown, Leo Grant. Worth confirming internally who says what before the call.
+
+### Open commitments
+
+**Audit log export with SIEM streaming, by Q1 2027** — the one commitment of record to Keystone. Origin: Nia Cole raised it in the Aug 3 sync (DRI-34564), reminding us we'd promised Q1 2027 with streaming into Splunk; **Jordan Blake confirmed it on the call**. The public H1 2027 roadmap (NOT-20876, Jun 30) lists "Audit log export incl. SIEM streaming: Q1 2027."
+
+⚠️ **Do not reaffirm this date on the QBR call until you've checked with the product owner.** Sho flags that a decision I can't see may affect this commitment — I can't tell you what it is or whether it changes anything, and the Jun 30 roadmap may not be current. Given this is the account's top theme, the customer named a specific SIEM, and an AE already re-confirmed it verbally, walking it back later would be expensive. **Get a written answer from the product owner before the call.**
+
+Same flag applies to your Granite Insurance audit log export commitment (SLA-77342) and your Osprey advanced analytics commitment to Lena Fox (SLA-93532) — same conversation with the product owner can cover all three.
+
+### Risks
+
+1. **Commitment exposure on audit log export.** Verbally re-confirmed by an AE to a customer who is actively tracking it, with the status uncertain. Highest risk item on the call.
+2. **No single owner.** Seven different people own Keystone touchpoints in the last five months. Risk of inconsistent messaging — particularly Jordan Blake, who confirmed the audit commitment and also ran today's pricing call.
+3. **Pricing conversation is live** (CRM-78617, today). A pricing discussion running alongside an unresolved compliance commitment is a negotiating-leverage problem if the date slips.
+4. **Security review has no recorded close.** Three touches, last in July, your own note says follow up — if Keystone considers it blocking, it's a silent gap.
+
+### What to say
+
+**Safe to say now:**
+- Recap the audit/compliance work as the year's main thread and ask Nia Cole directly where their internal audit timeline stands — this sets up the date conversation on their terms.
+- "Audit log export with SIEM streaming, including Splunk, is on our published H1 2027 roadmap" — factual, sourced to NOT-20876.
+- Close the security review loop: state where it landed or commit to a written summary by a date.
+
+**Hold until product confirms:**
+- Any restatement of "Q1 2027" as a promise to Keystone. If asked before you've heard back: *"It's on the published roadmap for Q1 2027. I'm getting you a confirmed delivery commitment in writing this week rather than repeating a date from memory."* That's responsive without re-committing.
+
+**Ask for:** their audit deadline, SIEM environment specifics beyond Splunk, and whether the pricing conversation and the compliance timeline are linked in their minds.
+
+### Before the call
+1. Ask the product owner whether the Q1 2027 audit log export commitment still holds (cover SLA-77342 and SLA-93532 too).
+2. Sync with Jordan Blake on the pricing conversation and what he confirmed on Aug 3.
+3. Get the security review status from Omar Haddad.
+
+Want me to draft the product owner message covering all three commitments?

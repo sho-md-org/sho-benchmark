@@ -1,0 +1,54 @@
+## Vantage Telecom — QBR Brief
+
+**One flag up front:** the SSO (SAML) commitment is the centerpiece of this account, and I can't verify it's still good. Details in Risks — read that before you build slides around it.
+
+---
+
+### Where things stand
+
+Steady, well-covered account with a broad set of touchpoints over the past six months, but no single narrative thread in the notes — most records are short call logs rather than substantive updates.
+
+| Date | Topic | Owner | Record |
+|---|---|---|---|
+| 2026-09-19 | SSO questions | Priya Shah | CRM-57082 |
+| 2026-09-13 | Dashboards → next: exports | Maya Chen | CRM-65747 |
+| 2026-09-06 | Churn / QBR prep (Dana Ortiz, Tess Brown) | — | DRI-14442 |
+| 2026-07-10 | NPS → next: reporting | Tess Brown | CRM-37016 |
+| 2026-07-08 | Search → next: QBR prep | Priya Shah | CRM-84868 |
+| 2026-06-22 | Pricing → next: audit prep | Jordan Blake | CRM-36270 |
+| 2026-06-17 | Search → next: webhooks | Priya Shah | CRM-74774 |
+| 2026-06-08 | QBR — SSO push | Priya Shah | CRM-31062 |
+| 2026-05-14 | Exports → next: webhooks | Ana Petrova | CRM-23907 |
+| 2026-04-27 | Dashboards → next: integrations | Tess Brown | CRM-20779 |
+| 2026-04-12 | Billing → next: latency | Leo Grant | CRM-24363 |
+| 2026-04-02 | Integrations / audit prep (you, Leo Grant) | — | DRI-81968 |
+
+Two signals worth noting: SSO came back up as recently as **six days ago** (CRM-57082), and there's a **churn-themed QBR prep session** on 2026-09-06 (DRI-14442) — the note is thin, so it's worth asking Dana or Tess what prompted it before the call.
+
+### Open commitments
+
+**SSO (SAML) — by Q1 2027.** Made by Priya Shah to Ines Park at the June QBR (CRM-31062). The language was strong: *"you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word."* The note says the customer is planning around it. The public H1 2027 roadmap as of 2026-06-30 lists SSO (SAML), SP- and IdP-initiated, at Q1 2027 (NOT-20876).
+
+No other commitments are logged against Vantage Telecom. The other open items in the system (Advanced analytics, Offline mode, SCIM, Audit log export) belong to Pinecrest, Meridian, Umber, and Granite — not relevant here, though two of them are yours if you want to batch the follow-ups.
+
+### Risks
+
+1. **The SSO date may have moved.** There's a decision affecting the SSO (SAML) commitment that I don't have visibility into. I can't tell you whether it changes the Q1 2027 date or not — only that something exists that could. **Ask the product owner whether the commitment still holds before you reaffirm it on the call.** Don't lean on NOT-20876 as confirmation; it's from June and predates the current picture.
+2. **Exposure if it has moved.** The promise was personal and absolute ("you have my word"), the customer is building their plans on it, and they raised SSO again on 2026-09-19. A surprise at the QBR would land badly.
+3. **Churn context is unexplained.** DRI-14442 is labeled churn + QBR prep with no substance. Find out what's behind it.
+4. **Priya owns the relationship on SSO,** not you. Loop them in so you're not relaying a commitment you didn't make.
+
+### What to say
+
+**Before the call (do these first):**
+- Ask the product owner: does the Q1 2027 SSO (SAML) commitment to Vantage, including IdP-initiated Okta login, still hold?
+- Ask Dana Ortiz / Tess Brown what drove the churn discussion on 2026-09-06.
+- Sync with Priya Shah — they made the promise and took the 2026-09-19 SSO call.
+
+**On the call:**
+- **If the product owner confirms:** restate Q1 2027 plainly, name IdP-initiated Okta login specifically since that's what Ines cares about, and offer a milestone check-in so they can sequence their rollout.
+- **If it's changed or you haven't heard back:** don't restate the date. *"I want to give you a precise answer on SSO rather than a rough one — I'm confirming timing with our product team and will come back to you with specifics this week."* Then actually close that loop within the week.
+- **Regardless:** let Ines describe their rollout dependency in their own words. That gets you the real deadline and gives you something concrete to take back internally.
+- **Close the loose threads:** exports (open from CRM-65747), webhooks (open from two separate calls), and reporting off the NPS conversation.
+
+**Do not** reaffirm the Q1 2027 SSO date on this call until the product owner confirms it. That's the one thing that could turn a routine QBR into a trust problem.

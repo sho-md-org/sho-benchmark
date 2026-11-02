@@ -1,0 +1,48 @@
+## Keystone Energy — QBR brief (call w/c Sept 28, 2026)
+
+### ⚠️ Read this first
+The one hard commitment on this account — **audit log export with SIEM/Splunk streaming by Q1 2027** ([DRI-34564](DRI-34564), confirmed by Jordan Blake on the Aug 3 sync) — is flagged in Sho: a decision I don't have visibility into may or may not affect it. **Do not reaffirm the Q1 2027 date on the call until you've checked with the product owner.** The public roadmap ([NOT-20876](NOT-20876), June 30) still shows Q1 2027, but that document predates the flag, so don't treat it as confirmation. There's also a roadmap note dated this week ([NOT-77133](NOT-77133), owner Jordan Blake, tied to audit prep) — worth asking Jordan about before the call.
+
+### Where things stand
+Keystone is an active, high-touch account — roughly 25 logged touchpoints across the year, heaviest in the last quarter. Recent threads:
+
+- **Audit readiness** is the dominant theme all year: [CRM-90377](CRM-90377) (May), [CRM-17727](CRM-17727) (Jun), [DRI-48005](DRI-48005), [DRI-85107](DRI-85107), [CRM-56742](CRM-56742) (Aug, owner Omar Haddad), [DRI-84961](DRI-84961) (Aug 24, you + Sam Lee on exports).
+- **Security review** ran across three calls ([CRM-25431](CRM-25431) Apr, [CRM-64056](CRM-64056) Jul 7, [CRM-30791](CRM-30791) Jul 23) and is the open next step from your own QBR prep call ([CRM-93344](CRM-93344), Aug 25).
+- **Commercial motion is live**: pricing discussion Sept 25 with Jordan Blake, next step "offline" ([CRM-78617](CRM-78617)).
+- **Ops topics**: uptime Sept 23 ([CRM-19012](CRM-19012)), webhooks ([SLA-40947](SLA-40947)), integrations ([DRI-31273](DRI-31273)), rate limits ([CRM-60405](CRM-60405)).
+
+### Open commitments
+| Commitment | Source | Owner | Status |
+|---|---|---|---|
+| Audit log export + SIEM/Splunk streaming, Q1 2027 | [DRI-34564](DRI-34564) | Company, confirmed by Jordan Blake (AE) | **Flagged — verify with product owner before reaffirming** |
+| Security review follow-up | [CRM-93344](CRM-93344) | You | Open since Aug 25 |
+| Webhooks follow-up | [CRM-56742](CRM-56742) | Omar Haddad | Open since Aug 17 |
+
+No other Keystone-specific promises surfaced.
+
+### Risks
+1. **Date exposure on audit log export.** Nia Cole raised it unprompted on Aug 3 — it's on their side of the record, tied to their audit program. If the date is moving, hearing it at a QBR as a confirmation and later as a slip is the worst sequence.
+2. **Audit timeline dependency.** Nearly every thread this year routes back to audit prep; the export feature is the load-bearing piece of that.
+3. **Pricing + delivery colliding.** A pricing conversation opened Sept 25 while the biggest feature commitment is uncertain. Coordinate with Jordan before the call so you two aren't sending different signals.
+4. **Ownership sprawl.** Keystone calls have had at least eight different internal owners this year (Omar, Dana, Ana, Priya, Tess, Leo, Sam, Jordan). Follow-ups are easy to drop.
+
+### What to say
+**On audit log export** — acknowledge without re-committing:
+> "I know audit log export with Splunk streaming is the piece your audit program depends on, and I've got it as our top tracked item for you. I'm confirming the delivery detail with our product team this week and will come back to you with specifics in writing rather than give you a date off the cuff."
+
+That's honest, doesn't retract anything, and doesn't lock you in.
+
+**On security review** — close your own open loop: summarize where the review landed across the three sessions and what remains.
+
+**On the year** — anchor on the breadth of engagement: onboarding through integrations, webhooks, rate limits, uptime. It's a real adoption story.
+
+**On pricing** — defer to Jordan, and say so explicitly so it doesn't look like avoidance.
+
+**Ask them:** their internal audit milestone dates. That tells you how much slack actually exists if the date does move.
+
+### Before the call
+1. Ask the product owner whether the Q1 2027 audit log export commitment still holds. **This is the blocker** — everything else in the brief is safe to deliver as-is.
+2. Sync with Jordan Blake on pricing and on [NOT-77133](NOT-77133).
+3. Close or status the webhooks follow-up with Omar Haddad.
+
+One related heads-up: you personally made an audit log export commitment to Lena Fox at Granite Insurance ([SLA-77342](SLA-77342)) that carries the same flag, and an advanced analytics commitment to Pinecrest Realty ([SLA-93532](SLA-93532)) that's also flagged. Different accounts, out of scope for this brief, but the same "check before reaffirming" caution applies.

@@ -1,0 +1,42 @@
+## Aster Health — QBR brief (call week of Sep 28, 2026)
+
+### Where things stand
+Activity across the year clusters on five recurring threads, all sourced from CRM/Drive records:
+
+| Thread | Latest record | Note |
+|---|---|---|
+| Support queue | CRM-97035 (Jun 14), NOT-80501 (Aug 18) | Longest-running open thread; Omar Haddad owns the Notion page, which links to churn |
+| Sandbox | CRM-64767 (May 17) | Three touches Apr–May, then quiet |
+| Dashboards | CRM-75476 (Jul 21) | Most recent product-feature touch |
+| Latency | CRM-68765 (Jun 22) | Next step logged as "follow up on churn" |
+| Pricing | DRI-53905 (Sep 10) | Most recent record overall — pricing discussed alongside support queue |
+| SSO / audit prep | DRI-46065 (Aug 7), DRI-48323 (Jun 13) | Both tie back to churn/audit |
+
+Account contacts appearing in records: Omar Haddad, Ana Petrova, Dana Ortiz (customer side); Omar Aziz is the contact on the rate-limits commitment. Internal owners are split across Maya, Leo Grant, Sam Lee, Priya Shah, Ana Petrova, Tess Brown.
+
+An NPS session (DRI-36735) is dated Sep 28 — that's this coming week, likely just before or alongside your QBR.
+
+### Open commitments
+**Higher API rate limits — delivered.** Priya Shah (AE) committed to Omar Aziz for October (DRI-86231, Jun 12). Crane shipped Sep 20 with rate limits raised for all paid plans (SLA-26281). This is a clean win and landed ahead of the promise — lead with it.
+
+No other commitments to Aster Health appear in the records I can see.
+
+### Risks
+1. **Churn is the connective tissue.** Five separate records (CRM-64767, CRM-68765, CRM-76005, DRI-46065, DRI-48323, NOT-80501) list churn as the next step or related topic. No single record says why, but the pattern is the strongest signal in the file.
+2. **Pricing surfaced most recently** (DRI-53905, Sep 10) and was discussed together with the support queue — pricing pressure plus service friction is the classic pre-renewal combination.
+3. **Support queue never closed out.** It runs Apr → Jun → Aug with no resolution recorded, and your own QBR prep note (CRM-70994) set "follow up on support queue" as the next action back on Jun 3.
+4. **Ownership is fragmented** across six internal people, which makes it likely the customer has heard inconsistent answers.
+5. **Latency and sandbox went quiet** after May/June without a recorded resolution — if either is still open on their side, it will come up unprompted.
+
+### What to say
+- **Open on the win:** "We told you higher API rate limits by October — they went live September 20 for all paid plans." Concrete, early, verifiable.
+- **Name the support queue before they do.** It's been open since April. Come with a status and an owner rather than letting them raise it.
+- **Ask directly about pricing.** It came up two weeks ago; find out whether it's a budget-cycle question or a value question, because the answers are different.
+- **Close the loop on latency and sandbox** — ask whether both are resolved on their side. If they are, get that on the record.
+- **Consolidate ownership.** Offer a single point of contact for follow-ups; the six-owner spread is fixable and shows well.
+
+### Two things to handle before the call
+- **Don't put new dates on anything.** The only Aster commitment on file is already delivered; anything else you promise in the room is net-new.
+- **If audit log export comes up:** your commitment on that feature (SLA-77342, Q1 2027) is to Lena Fox at Granite Insurance, not Aster — and it's flagged as possibly affected by a decision I can't see. Check with the product owner before reaffirming that timeline to anyone. The same flag applies to your advanced analytics commitment to Pinecrest (SLA-93532). Neither is an Aster commitment, but Aster's audit-prep thread makes the topic likely to surface.
+
+**Gap to fill:** the records I can access contain no renewal date, ARR, health score, or NPS number for Aster Health. If those exist elsewhere, pull them — the churn signal above is qualitative only, and you'll want the renewal date in hand before the call.

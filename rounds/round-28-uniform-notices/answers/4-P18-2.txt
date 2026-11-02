@@ -1,0 +1,55 @@
+## Cobalt Retail — QBR Brief (call week of Sep 28, 2026)
+
+**⚠️ Read this first:** Your Q1 2027 audit log export promise to Sam Ortiz (CRM-38600) is flagged — there may be a newer decision affecting it that I can't see. **Do not reaffirm the date on the call until you've checked with the product owner.** The public roadmap (NOT-20876, dated 2026-06-30) still lists "Audit log export incl. SIEM streaming: Q1 2027," but that record predates the flag, so don't lean on it as confirmation.
+
+### Where things stand
+
+The account is active and broadly healthy — steady cadence across multiple workstreams, no escalations in the record.
+
+| Thread | Latest | Owner |
+|---|---|---|
+| QBR prep | CRM-12694 (Aug 4) | Jordan Blake |
+| Billing | DRI-75222 (Aug 11) — Ana Petrova, Omar Haddad | Omar Haddad |
+| Notifications | CRM-35990 (Aug 1) | Omar Haddad |
+| Reporting | CRM-94849 (Jul 23) | Priya Shah |
+| Pricing | CRM-87224 (Jun 23) | Priya Shah |
+| Audit prep | CRM-24323 (Jun 12) | Omar Haddad |
+| Onboarding | CRM-16603 (Jun 15), CRM-49779 (Apr 27) | Omar Haddad / Priya Shah |
+| Dashboards | CRM-24697 (May 26) | Tess Brown |
+| Roadmap | CRM-70221 (Apr 20) | You |
+
+Audit prep is the connective tissue — it's the "next step" out of pricing (CRM-87224), QBR prep (CRM-12694), and billing (DRI-75222), and you posted an update on it as recently as Sep 19 (SLA-13802), noting roadmap was up next. That makes audit log export the center of gravity for this QBR.
+
+### Open commitments
+
+1. **Audit log export, CSV, by Q1 2027** — yours, to Sam Ortiz, made at the Jul 24 QBR (CRM-38600). Your words: "you have my word." Sam is **planning around it**. Status flagged; verify before restating.
+2. **Roadmap walkthrough** — you owned the roadmap thread (CRM-70221) and signaled roadmap discussion for the week of Sep 21 (SLA-13802). Cobalt will expect this at the QBR.
+
+Nothing else in the Cobalt record set is an outstanding promise — the other threads are open conversations, not obligations.
+
+### Risks
+
+- **Audit log export date (high).** Highest-exposure item: an explicit personal commitment, a customer building plans on it, and an unresolved question over whether it still holds. If the date has moved and Sam hears it first from someone else — or hears you re-confirm it and then walks it back — that's the credibility hit.
+- **Scope drift on the same feature (medium).** You promised *CSV export*; the public roadmap entry bundles *SIEM streaming*. Worth confirming which Sam is expecting, so "delivered" means the same thing to both of you.
+- **Owner churn (low-medium).** Five different owners across Cobalt threads in six months (Jordan, Omar, Priya, Tess, you). Fine internally, but it can read as no single point of accountability. Consider naming yourself as the through-line for the audit workstream.
+- **Stale threads (low).** Dashboards (May) and onboarding (Apr/Jun) haven't been touched in months — check whether they closed cleanly or just went quiet.
+
+### What to say
+
+**Before the call:** ping the audit log export product owner. One question: *"Does the Q1 2027 audit log export date still hold for Cobalt Retail? I committed to it in writing in July and I'm in front of the customer next week."*
+
+**If the date is confirmed:** restate it plainly, and pin down CSV vs. SIEM streaming scope with Sam in the same breath.
+
+**If it has moved, or you can't reach the owner in time,** don't improvise a new date. Say something like:
+
+> "On audit log export — I know you're building your plans around it, so I want to give you a firm answer rather than a fast one. I'm confirming the delivery timeline with our product team and I'll come back to you with a date in writing by [day]. Let's also make sure we're aligned on scope: my commitment to you was CSV export — tell me if SIEM streaming is in your requirements too."
+
+That holds the relationship without putting a second promise at risk.
+
+**Elsewhere on the agenda:**
+- Open by closing the loop on audit prep — it's what they've been tracking across pricing, billing, and QBR prep.
+- Walk the roadmap you flagged on Sep 19; Sandbox environments (Q4 2026) is the nearest-term item if you want something concrete to offer.
+- Ask Omar for the billing outcome from DRI-75222 before the call so pricing doesn't surface as a surprise.
+- Quick status check on dashboards and onboarding — confirm closed or reopen deliberately.
+
+**One ask to leave them with:** get Sam to state, on the call, what "done" looks like for audit log export and what date their own audit depends on. That gives you a real constraint to take back to product instead of a soft deadline.

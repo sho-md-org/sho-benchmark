@@ -1,0 +1,52 @@
+## Aster Health QBR Brief
+
+**Prepared 2026-09-25 · Call next week**
+
+### Headline: you have one clean win to lead with
+
+**Higher API rate limits — delivered.** Priya Shah (AE) committed this to Omar Aziz "by October" (DRI-86231, 2026-06-12). It shipped 2026-09-20 as Crane, raising rate limits for all paid plans (SLA-26281). You made the date with room to spare. This is the only tracked Aster Health commitment, and it's closed.
+
+### Where things stand
+
+The account has been active but diffuse — 12+ touchpoints since April across six different Brightline owners (Maya Chen, Leo Grant, Ana Petrova, Priya Shah, Sam Lee, Tess Brown, Jordan Blake). Recurring threads:
+
+| Theme | Records |
+|---|---|
+| Sandbox | CRM-62644, CRM-64767, DRI-86962 |
+| Exports | CRM-45213, CRM-76005 |
+| Dashboards | CRM-57156, CRM-75476 |
+| Latency | CRM-16329, CRM-68765 |
+| Audit prep | DRI-48323, CRM-45213 |
+| SSO / security review | DRI-46065, CRM-26522, CRM-16329 |
+| NPS | CRM-26522, DRI-36735 |
+
+Customer-side contacts appearing most: Omar Haddad, Ana Petrova, Dana Ortiz, Omar Aziz.
+
+### Risks
+
+1. **Churn keeps surfacing as the next action.** Five separate records close with a churn follow-up: CRM-64767, CRM-76005, CRM-68765, DRI-46065, DRI-48323. No record shows that follow-up ever landing. This is the thing I'd want an answer on before you walk into the room — what's driving it, and who owns it.
+2. **Latency raised twice in eight days** (CRM-16329 on 06-14, CRM-68765 on 06-22) with no recorded resolution. If it's still live, it will come up.
+3. **Ownership churn on our side.** Seven different Brightline owners across the account in six months. Expect them to notice.
+4. **Audit prep is an open thread** (DRI-48323, CRM-45213) tied to their security review. Know the status before the call.
+
+### What I'd say
+
+- **Open on the rate limits.** "We told Omar in June you'd have higher API rate limits by October — that went live on September 20th." Concrete, on time, theirs to use now.
+- **Name the ownership sprawl before they do.** Propose a single point of contact going forward.
+- **Ask, don't assert, on latency and audit prep.** The records show these were discussed; none show them resolved. Going in claiming they're fixed is the main way this call goes badly.
+- **Go after the churn signal directly.** Something has been prompting that follow-up repeatedly since April. The QBR is the right venue to surface it rather than let it stay implicit.
+
+### Gaps you should fill before the call
+
+The record trail is thin — titles and next-steps, little substance. Not visible to me: renewal date, ARR, current NPS score, support queue state (CRM-70994 flagged it as your follow-up in June), or whether latency and audit prep closed. Worth 20 minutes with Leo Grant and Ana Petrova, who own the most open threads.
+
+Note: DRI-36735 (NPS) is dated 2026-09-28 — after today. Looks like a scheduled session, possibly just before or after your QBR. Worth checking whether it should feed the QBR or follow it.
+
+### Separately — two of your own commitments need a check
+
+Not Aster, so they don't affect this brief, but both are yours and both are flagged:
+
+- **Advanced analytics (Osprey) to Lena Fox, Pinecrest Realty**, by spring release (SLA-93532)
+- **Audit log export to Lena Fox, Granite Insurance**, by Q1 2027 (SLA-77342)
+
+For each of these, there's a decision I can't see that may have changed the promise. I can't tell you whether it did. Before you reaffirm either commitment to the customer, check with the product owner that it still holds.

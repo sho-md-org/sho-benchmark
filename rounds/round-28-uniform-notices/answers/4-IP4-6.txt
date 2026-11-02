@@ -1,0 +1,38 @@
+## Short answer
+
+I can't rank them — and that's the finding, not a dodge.
+
+Both audit-export commitments come back from Sho with the **same flag**: a decision I don't have visibility into may or may not have changed the promise, and I'm told to check with the product owner before either of you reaffirms it. Since the flag is identical on both, nothing in what I can see lets me call one safer than the other. Treating either as solid right now would be guessing.
+
+## What's actually different between them (visible facts)
+
+| | **Cobalt Retail** | **Keystone Energy** |
+|---|---|---|
+| Source | CRM-38600 (QBR, 2026-07-24) | DRI-34564 (sync notes, 2026-08-03) |
+| Promised to | Sam Ortiz | Nia Cole |
+| Scope | Audit log export **as a CSV export** | Audit log export **with streaming into Splunk** |
+| Deadline | Q1 2027 | Q1 2027 |
+| Who promised | You — "you have my word" | Company promise, **confirmed by Jordan Blake (AE)** |
+| Sho status | Flagged | Flagged |
+
+Two things worth your attention here:
+
+**Scope differs materially.** Cobalt was promised CSV export. Keystone was promised SIEM/Splunk streaming — a strictly larger commitment. If delivery ends up partial, those two promises fail in different ways, so they need separate conversations rather than one update.
+
+**Keystone isn't really your promise.** DRI-34564 records it as a company commitment confirmed by Jordan Blake, not something you made. You own the Cobalt one outright (CRM-38600, with personal-word framing). Jordan should be in the loop on Keystone, not just you.
+
+**You have a third one you didn't mention.** SLA-77342 (2026-05-26) — you told Lena Fox at Granite Insurance audit log export by Q1 2027 *including SIEM streaming*, so they can finish their rollout. Same flag, and it's a rollout dependency. If you're reviewing exposure, this belongs in the set.
+
+## Context that does *not* clear things up
+
+The public roadmap (NOT-20876, 2026-06-30) lists "Audit log export incl. SIEM streaming: Q1 2027," consistent with all three promises. But that snapshot predates the sync notes and predates whatever Sho is flagging, so it isn't confirmation — don't lean on it with customers.
+
+NOT-77133 (2026-09-26) is a roadmap note with Jordan Blake as owner, but he's an AE, so he's likely not the product owner Sho means. Worth identifying the actual PM for Audit log export rather than assuming.
+
+## What I'd do
+
+1. **Ask the product owner one question covering all three**: does Q1 2027 audit log export still hold, and specifically does SIEM/Splunk streaming still hold, or only CSV? That single answer resolves Cobalt, Keystone, and Granite at once.
+2. **Hold off reaffirming to Sam Ortiz, Nia Cole, and Lena Fox** until that comes back — all three are planning around these dates.
+3. **Loop in Jordan Blake** on Keystone, since he's the one who confirmed it.
+
+I can draft the note to the product owner if you tell me who that is, or the customer-facing updates once you have their answer. I'd also suggest not sending anything outward until then.

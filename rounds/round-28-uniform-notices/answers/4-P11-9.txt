@@ -1,0 +1,48 @@
+## Vantage Telecom — QBR brief
+
+**⚠️ Read this first:** The SSO (SAML) promise on this account is flagged. There may be a decision I can't see that affects whether it still holds — I can't tell you either way. **Do not reaffirm the Q1 2027 SSO date on the call until you've checked with the product owner.** That's the single most important prep item, and SSO is almost certainly what Ines opens with.
+
+### Where things stand
+
+Vantage is an active, high-touch account — roughly a dozen touchpoints since April across four owners (you, Priya Shah, Jordan Blake, Tess Brown, plus Leo Grant and Ana Petrova). Recent activity clusters hard around two themes:
+
+- **SSO** — three touches in the last six weeks (CRM-10757 on 8/4 handed off to SSO questions, DRI-67178 on 9/11, CRM-57082 on 9/19, with "follow up on roadmap" as the next step). This is the live thread.
+- **Dashboards / exports / reporting** — a recurring loop since April (CRM-20779, CRM-23907, CRM-10757, CRM-65747 on 9/13, your call, next step "follow up on exports"). It keeps getting revisited, which usually means it isn't resolved.
+
+Also on the record: pricing (CRM-36270, 6/22, Jordan, next step audit prep), billing (CRM-24363), search (CRM-74774, CRM-84868), NPS (CRM-37016), integrations (DRI-81968).
+
+### Open commitment
+
+| Commitment | Made by | To | Due | Source |
+|---|---|---|---|---|
+| SSO (SAML), incl. IdP-initiated login from Okta | Priya Shah (AE) | Ines Park | Q1 2027 | CRM-31062 |
+
+From the 6/8 QBR: Ines pushed, Priya said *"you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word."* Note the specificity — the Okta IdP-initiated detail is a separate promise inside the promise, and it's the kind of thing that gets missed. **Customer is planning around it.** This is the only commitment on record for Vantage.
+
+### Risks
+
+1. **SSO reaffirmation risk (highest).** Flagged above. If you restate the date and it has moved, you compound a hard commitment made by someone else. Ask Priya and the product owner before the call.
+2. **Churn is already a topic internally.** DRI-14442 (9/6, Dana Ortiz + Tess Brown) is titled "Churn" and explicitly covers QBR prep. You weren't in that meeting — get the substance from Dana or Tess before you walk in, so you're not the last to know your own account's risk framing.
+3. **Escalating SSO cadence.** Three SSO conversations in six weeks, ending on "follow up on roadmap," reads as a customer losing confidence in the date and looking for reassurance. Combined with the churn thread, treat SSO as the renewal gate.
+4. **Owner fragmentation.** Six different internal owners across ten records. Vantage is likely getting inconsistent answers, which is its own trust problem.
+5. **Unclosed dashboards/exports loop.** Five months of recurring exports and dashboards discussion with no resolution on record.
+
+### What to say
+
+**On SSO** — don't re-commit to the date until you've verified it. If you haven't heard back in time, the honest line is: *"I know Q1 2027 is what you're planning around, and I want to give you a confirmed answer rather than a repeated one. I'm getting that directly from the product owner and coming back to you this week with a firm date."* Then actually come back within the week. That's a stronger position than a confident restatement you can't back — and if the date has slipped, this phrasing means you haven't dug the hole deeper.
+
+**On dashboards/exports** — name the loop yourself before they do: *"We've been circling exports since May. Here's what I'm doing to close it, and here's the date."* Bring one concrete owner and one date.
+
+**On ownership** — offer yourself as the single point of contact. Six owners is a fixable problem and fixing it visibly buys goodwill.
+
+**On renewal** — if churn comes up, listen more than you pitch. The internal churn discussion happened without you; let the customer tell you their version.
+
+### Before the call
+- [ ] Ask the product owner whether the SSO (SAML) Q1 2027 commitment — including Okta IdP-initiated login — still holds. **Blocking.**
+- [ ] Get the churn context from Dana Ortiz or Tess Brown (DRI-14442).
+- [ ] Ask Priya what was covered in the 9/19 SSO call (CRM-57082) and what "follow up on roadmap" meant.
+- [ ] Get a date for the exports/dashboards thread.
+
+---
+
+Separately, three of your own commitments on other accounts carry the same flag — Advanced analytics to Lena Fox at Pinecrest (SLA-93532) and Audit log export to Lena Fox at Granite (SLA-77342) are yours; SCIM to Umber (SLA-12035) is Jordan's. Not QBR material, but worth clearing with the product owner in the same conversation since you'll be asking anyway.

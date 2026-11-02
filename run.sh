@@ -1,6 +1,6 @@
 #!/bin/bash
 # run.sh <arm 1|4> <cell> <n>   One agent run. Needs the `claude` CLI signed in.
-# SCOPE=feature (round 13) or SCOPE=promise (round 15, default) picks the notice design for arm 4.
+# SCOPE=feature (round 13), SCOPE=promise (round 15, default) or SCOPE=promise-v2 (round 28) picks the notice design for arm 4.
 set -e
 B="$(cd "$(dirname "$0")" && pwd)"; A=$1; C=$2; N=$3; OUT="$B/runs/$A-$C-$N"; mkdir -p "$OUT"; cd "$OUT"
 eval "$(python3 -c "

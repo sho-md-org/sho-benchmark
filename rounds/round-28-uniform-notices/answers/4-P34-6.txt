@@ -1,0 +1,53 @@
+## Aster Health — QBR brief
+*Prepared 2026-09-25. Sources cited by record ID.*
+
+### Bottom line
+One clean win to lead with (API rate limits shipped ahead of the promised date), a set of long-running open threads with no recorded resolution, and churn language appearing in three separate notes. The account file is thin — see the caveat at the end.
+
+### Where things stand
+
+| Thread | Last touch | State |
+|---|---|---|
+| API rate limits | SLA-26281 (2026-09-20) | **Shipped.** Crane live, limits raised for all paid plans |
+| Dashboards | DRI-75615 (2026-09-17), CRM-75476 (2026-07-21) | Recurring since April (CRM-57156); still open |
+| Pricing | DRI-53905 (2026-09-10) | Raised recently, internal only — no customer-facing outcome recorded |
+| Search | DRI-36553 (2026-07-19), DRI-75615 | Discussed against roadmap; no commitment on record |
+| SSO questions | DRI-46065 (2026-08-07) | Open; discussed alongside churn |
+| NPS | DRI-30445 (2026-07-05) | Open; a further session is on the calendar for 2026-09-28 (DRI-36735) |
+| Audit prep | DRI-48323 (2026-06-13), CRM-45213 | Open since April |
+| Support queue | CRM-97035 (2026-06-14), CRM-88906, DRI-53905 | Recurring complaint, four months running |
+| Exports | CRM-45213 / DRI-23711 (April) | No activity in five months |
+| Latency, sandbox, hosting | CRM-68765 (2026-06-22), CRM-62644, CRM-81799 | Quiet since June |
+
+Contacts: Omar Haddad and Ana Petrova appear most often on their side. Note DRI-86231 records an **Omar Aziz** — likely a different person; worth confirming who owns the API relationship before you name them.
+
+### Open commitments
+
+**Higher API rate limits — to Omar Aziz, due October** (made by Priya Shah, AE; DRI-86231). **Delivered and safe to affirm.** Crane shipped 2026-09-20 (SLA-26281), ahead of the deadline. This is your strongest QBR moment.
+
+That is the only commitment on record tied to Aster Health. Nothing in the file commits Brightline to dates on dashboards, search, SSO, exports, or audit tooling — so don't let the QBR conversation imply otherwise.
+
+### Risks
+
+1. **Churn is in the notes three times** — DRI-48323 (audit prep), DRI-46065 (SSO), CRM-68765 (latency follow-up). Three different topics, three different colleagues. Treat this as the real agenda of the call.
+2. **Support queue is the most-repeated complaint** (April → September, no resolution logged) and it's the one issue that would explain the churn language. Go in with actual ticket data.
+3. **Ownership churn on our side** — Leo Grant, Sam Lee, Dana Ortiz, Jordan Blake and you all appear as owners across ten months. From Aster's seat this reads as no single point of contact.
+4. **Pricing surfaced two weeks ago** (DRI-53905) with no recorded outcome. Assume they may raise it; know your position before the call.
+5. **Audit/export ask:** Aster has open "audit prep" and "exports" threads. Brightline does have an audit-log-export commitment on the books, but it belongs to a **different account** and is currently flagged as under review. Do not reuse that date here — Aster has no such commitment, and offering one would create an obligation that doesn't exist.
+
+### What to say
+
+- **Open with the win:** "We committed to higher API rate limits by October — that shipped on September 20, ahead of schedule, and it's live across your paid plans."
+- **Name the support experience before they do:** acknowledge it's been a recurring theme since spring, and bring a specific remediation (named owner, response targets) rather than a general apology.
+- **Fix the ownership question:** state plainly that you're the single point of contact going forward. This is cheap to say and directly addresses risk 3.
+- **On dashboards and search:** these have cycled for two quarters. Either bring a roadmap position you can stand behind or say explicitly that they're not committed — don't let them drift another quarter in ambiguity.
+- **Hold the line on new dates:** for anything not yet committed, take it away and come back. Nothing in the record authorizes a date.
+- **Close on renewal posture:** given the churn signals, ask directly what would make them confident renewing, and take the answer verbatim.
+
+### Two things to do before the call
+
+1. **Pull live support ticket data** — volume, age, breaches. The record shows the complaint but not the numbers, and you'll be asked.
+2. **Separately from Aster:** two of your own commitments on other accounts — advanced analytics for Pinecrest Realty (SLA-93532) and audit log export for Granite Insurance (SLA-77342) — are flagged as possibly affected by a decision I can't see. Check with the product owner before you reaffirm either to those customers. Neither affects the Aster QBR; flagging so they don't catch you out elsewhere.
+
+### Caveat on sourcing
+The Aster records are topic-level logs ("Discussed dashboards and search") with almost no substance, decisions, or outcomes captured. The threads and dates above are reliable; the *state* of each thread is inferred from silence rather than from anything recorded as resolved. If anything here matters to how you run the call, confirm it with Leo Grant or Dana Ortiz, who owned the most Aster touchpoints.

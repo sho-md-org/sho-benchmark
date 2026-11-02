@@ -1,0 +1,22 @@
+I can't answer this one from what I have access to — and there's a caution attached that I want to flag for you.
+
+**What I can see:**
+
+- **NOT-20876** (Public roadmap H1 2027, Notion, 2026-06-30) still lists **Advanced analytics: Q2 2027**. That's the most recent roadmap record available to me, and it shows the feature *on* the plan, not cut.
+- Nothing in the records I can reach documents a removal, a rationale, or a decision-maker. No planning doc, no decision log, no exec thread.
+
+So I can't give you the reasoning or the name — not because it's a hard question, but because whatever would answer it isn't in my view. I'd rather say that plainly than reconstruct a story from the QBR notes and analytics docs, which would be guesswork.
+
+**The part you should act on:**
+
+You have an open commitment on this feature:
+
+> **SLA-93532** (#cs: Pinecrest Realty, 2026-06-28) — you told **Lena Fox at Pinecrest Realty** that Advanced analytics (Osprey) would land in the **spring release** so they could finish their rollout.
+
+That promise carries a flag: I can't verify whether it still holds. **Check with the product owner before you reaffirm the spring-release date to Lena** — don't repeat the commitment to Pinecrest on the strength of the public roadmap alone.
+
+Two other commitments of yours carry the same caution, in case you're touching those accounts:
+- **SLA-77342** — Audit log export to Lena Fox / Granite Insurance, by Q1 2027.
+- **SLA-12035** — SCIM provisioning to Kai Berg / Umber Studios, by Q1 2027 (Jordan Blake's commitment, not yours).
+
+**Suggested next step:** ask the Advanced analytics product owner directly — something like *"What's the current status of Advanced analytics for 2027? I committed the spring release to Pinecrest Realty in June and need to know whether that still stands, and what to tell them if it doesn't."* That gets you both the answer and the reasoning, from the person who can actually give it.

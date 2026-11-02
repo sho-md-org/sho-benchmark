@@ -1,0 +1,41 @@
+## Vantage Telecom — QBR brief (call next week)
+
+### ⚠️ Read this first
+The single biggest item on this account — **SSO (SAML)** — is flagged. Priya Shah (AE) told Ines Park at the June QBR: *"you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word"* (`CRM-31062`). Vantage is planning their rollout around that date.
+
+**There may have been a decision affecting that commitment that I can't see.** I can't tell you whether it still holds or what changed. **Check with the product owner before you reaffirm the Q1 2027 date or the Okta IdP-initiated detail on this call.** If you don't get an answer in time, don't restate the date — say you'll confirm the timeline in writing after the call.
+
+### Where things stand
+Steady, high-touch account — roughly monthly contact since April, no gaps:
+- **SSO is the live thread.** It's dominated the last six weeks: `CRM-10757` (Aug 4, dashboards call → next step *follow up on SSO questions*), `DRI-67178` (Sep 11, Dana Ortiz/Omar Haddad), `CRM-57082` (Sep 19, Priya Shah, next step *follow up on roadmap*). The customer keeps coming back to it, and the next step is already pointed at roadmap — they will ask.
+- **Dashboards/reporting** is the recurring product theme: `CRM-20779` (Apr), `CRM-10757` (Aug), `CRM-65747` (Sep 13, your call, next step *follow up on exports*).
+- **Exports/webhooks** open since May (`CRM-23907`).
+- **Pricing** touched June 22 with Jordan Blake, next step *audit prep* (`CRM-36270`).
+- **Integrations + audit prep** from April (`DRI-81968`, you and Leo Grant).
+- **NPS** discussed July 10 (`CRM-37016`) and again Sep 11 (`DRI-67178`).
+
+### Risks
+1. **SSO expectation gap (highest).** A personally-worded promise with a specific date and a specific technical detail, made to the exec who pushed for it, with rollout planning attached. If anything has moved, this is a trust event, not a roadmap slip. Resolve with the product owner pre-call.
+2. **Churn is already on the internal radar.** `DRI-14442` (Sep 6, Dana Ortiz + Tess Brown) is explicitly a *churn* discussion tied to QBR prep. Ask Dana what drove it before you walk in — the record doesn't say, and you don't want to be the last to know.
+3. **Owner churn on our side.** Six different Brightline owners across nine touchpoints (Priya, Jordan, Tess, Ana, Leo, you). Easy for the customer to feel handed around.
+4. **Open loops with no visible closure:** exports (May), webhooks (May/June), audit prep (Apr and Jun). Each next-step reference chains to another topic rather than a resolution.
+
+### What to say
+- **Open with continuity, not features:** name yourself as the through-line, acknowledge the multiple owners, and state who owns what going forward.
+- **On SSO — let them talk first.** "I know SSO is the thing you're planning around. Where does your rollout stand?" That gets you their dependency dates without you committing to ours. Then: confirmed timeline in writing within X days. Only restate Q1 2027 if the product owner has confirmed it still holds.
+- **On dashboards/exports,** close the loop from Sep 13 — bring the exports answer rather than a next step.
+- **On audit prep,** it's been open since April across two owners. Either schedule it or take it off the table.
+- **Do not** relitigate pricing unless they raise it; Jordan owns that thread.
+- **Land on:** one named owner, three dated commitments, written recap same day.
+
+### Pre-call to-dos
+| Who | Ask |
+|---|---|
+| Product owner | Does the SSO (SAML) Q1 2027 commitment — including Okta IdP-initiated login — still hold? |
+| Dana Ortiz | What prompted the churn discussion in `DRI-14442`? |
+| Priya Shah | What came out of the Sep 19 SSO call (`CRM-57082`)? |
+| Ana Petrova | Status on exports/webhooks (`CRM-23907`) |
+
+---
+
+*Side note, unrelated to this call:* two of your own commitments elsewhere carry the same flag — Advanced analytics to Lena Fox at Pinecrest (`SLA-93532`) and audit log export to Lena Fox at Granite (`SLA-77342`). Same guidance: check with the product owner before reaffirming either.

@@ -1,0 +1,22 @@
+Short answer: no — nothing I can see indicates the IdP-initiated piece of SSO changed.
+
+**What the records actually say**
+
+- **NOT-20876** (Public roadmap H1 2027, 2026-06-30) still lists it as one line: *"SSO (SAML), SP- and IdP-initiated: Q1 2027."* SP- and IdP-initiated are not split into separate dates or separate line items anywhere I can find.
+- The SSO commitments on file all assume both flavors ship together:
+  - **CRM-31062** (Vantage Telecom, 2026-06-08) — Priya Shah: *"by Q1 2027, including IdP-initiated login from Okta, you have my word."*
+  - **CRM-62434** (Umber Studios, 2026-08-17) — Priya Shah: SSO by **March**, with IdP-initiated sign-in. Logged as a renewal condition.
+  - **DRI-36664** (Quarry Mining, 2026-07-09) — Leo Grant confirmed Q1 2027.
+  - **CRM-74447** (Riverton City, 2026-08-18) — Tess Brown: "early next year."
+- The three "SSO questions" items (**NOT-29159**, **NOT-40327**, **SLA-95210**, **SLA-21939**) are all stubs — owner and "offline next week" pings, no substance on IdP-initiated behavior.
+
+So if someone told you "the SSO plan changed," that framing isn't reflected in anything on file, and I'd want to know where they heard it before you pass it on.
+
+**Two things worth flagging while you're here**
+
+1. **Umber Studios has a tighter date than the roadmap.** "By March" as a renewal condition (CRM-62434) is effectively the very end of Q1 2027. If SSO lands late in the quarter, the roadmap is met and the renewal condition is not. That gap is worth closing regardless of the IdP-initiated question.
+2. **Before you reaffirm anything to a customer**, check with the product owner on your own two open commitments — Advanced analytics for Lena Fox / Pinecrest (SLA-93532) and Audit log export for Granite Insurance (SLA-77342). I can't independently verify those still hold, so don't restate them in writing until the product owner confirms.
+
+One caveat on scope: none of the SSO promises above are yours — they're Priya's, Leo's, and Tess's. If you're being asked to answer a customer on one of those, I'd loop in the AE who made it rather than speaking to it directly.
+
+Want me to draft the note to the product owner covering the Umber Studios date gap and your two open commitments?

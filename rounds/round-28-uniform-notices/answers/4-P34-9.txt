@@ -1,0 +1,35 @@
+## Aster Health — QBR Brief
+
+### Where things stand
+
+The one hard commitment to this account is **delivered**. Priya Shah (AE) told Omar Aziz they'd have higher API rate limits by October (DRI-86231, 2026-06-12, where Omar raised it and Priya confirmed). Crane shipped 2026-09-20 — rate limits raised for all paid plans (SLA-26281). You're ahead of the deadline with about a week to spare. That's the headline for the call.
+
+Account activity across the year has been steady but unremarkable: sandbox (DRI-86962, CRM-62644, CRM-64767), exports (CRM-45213, CRM-76005), dashboards (CRM-57156, CRM-75476, DRI-75615), latency (CRM-16329, CRM-68765), hosting (CRM-81799), integrations (DRI-82652), mobile app (DRI-95946), SSO (DRI-46065), audit prep (DRI-48323). Main contacts are Omar Haddad and Ana Petrova, with Omar Aziz on the AE-side sync.
+
+### Open commitments
+
+**Higher API rate limits — shipped, safe to confirm.** No caveats attached to this one; you can state it plainly.
+
+Nothing else is outstanding to Aster Health in the records I can see.
+
+### Risks
+
+**"Churn" is the recurring next-step across five separate records** — CRM-76005, CRM-64767, CRM-68765, DRI-48323, DRI-46065, spanning April through August. No record explains why, and there's no escalation, health score, or renewal date in what I can reach. That pattern is either a real retention concern nobody wrote up or a logging artifact. Worth resolving internally before the call rather than walking in blind — ask Leo Grant or Dana Ortiz, who own several of those follow-ups.
+
+**Record quality is genuinely thin.** Almost every entry is a one-line log with a topic and a next step, no substance. I can't give you usage trends, ARR, renewal timing, or open support volume because none of it is in these records. If you need those for the QBR, they'll have to come from another system.
+
+**An NPS session is dated 2026-09-28** (DRI-36735, Omar Haddad and Ana Petrova) — that's three days out, likely before or near your call. Check whether the score lands first; a fresh NPS number changes the tone of the conversation either way.
+
+**Latency and support queue both have unclosed threads.** Two latency calls in June (CRM-16329, CRM-68765) and a support-queue follow-up you own from the June QBR prep call (CRM-70994). Expect Omar to raise at least one of these.
+
+### What to say
+
+Lead with the rate limits win — named commitment, named date, delivered early. It's the strongest thing you have and it answers a request Omar personally escalated in June.
+
+Then go listening-mode on latency and the support queue. You have open threads there and no data to defend a position, so asking is better than asserting. Ask directly about renewal sentiment too — given how often churn shows up as a follow-up, better to surface it yourself than have it surface at renewal.
+
+Avoid committing to anything new on dashboards, exports, or SSO. Those have been discussed repeatedly with no recorded outcome, which usually means no one has scoped them.
+
+### One flag outside this account
+
+Three of your org's commitments carry notices that a decision I can't see may have changed them — two are yours: **advanced analytics** to Lena Fox at Pinecrest Realty (SLA-93532) and **audit log export** to Lena Fox at Granite Insurance (SLA-77342). The third is SCIM provisioning to Umber Studios (SLA-12035, Jordan Blake). None touch Aster Health, so they don't affect this brief — but check with the product owner before you reaffirm either of yours on any upcoming call.

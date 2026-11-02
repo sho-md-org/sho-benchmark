@@ -1,0 +1,55 @@
+## Keystone Energy — QBR brief
+
+**Headline for you before anything else:** the one hard commitment on this account is flagged. Do not reaffirm the audit log export date on the call until you've talked to the product owner.
+
+---
+
+### 1. Where things stand
+
+The record trail is active but thin — most entries are one-line call logs without outcomes, so I can't give you usage metrics, health score, or renewal numbers from these sources. What I can reconstruct:
+
+- **Recent activity is heavy and multi-threaded.** Pricing discussion two days ago with Jordan Blake (`CRM-78617`, next step: offline mode), uptime with Sam Lee on 9/23 (`CRM-19012`, next step: NPS). A pricing conversation this close to a QBR usually means commercial terms are live — worth confirming with Jordan before you walk in.
+- **Audit/compliance is the dominant theme all year.** Audit prep recurs from May through August across at least six records (`CRM-90377`, `CRM-17727`, `CRM-56742`, `DRI-85107`, `DRI-48005`, `DRI-84961`). This is their center of gravity.
+- **Security review ran Apr–Jul** (`CRM-25431`, `CRM-64056`, `CRM-30791`). Your own QBR prep note from 8/25 (`CRM-93344`) lists "follow up on security review" as the open next step — I found no record closing it. Assume it's still open and check before the call.
+- **Other threads touched:** integrations (`DRI-31273`), rate limits (`CRM-60405`), onboarding (`CRM-15788`, `CRM-86748`), latency (`CRM-23178`), reporting/analytics (`CRM-71045`, `CRM-71078`).
+- **Ownership is spread across at least seven people** — you, Jordan Blake, Sam Lee, Omar Haddad, Priya Shah, Tess Brown, Dana Ortiz. No single internal narrative. Sync with Jordan and Sam beforehand or you'll get surprised in the room.
+
+### 2. Open commitments
+
+**Audit log export with SIEM streaming into Splunk — by Q1 2027.** Source: `DRI-34564`, the 8/3 sync where Nia Cole raised it and Jordan Blake confirmed it on the company's behalf. This is a confirmed commitment to Keystone, and it lines up exactly with their year-long audit-prep focus. Expect Nia to open the QBR with it.
+
+⚠️ **This commitment is flagged.** There's a decision I don't have visibility into that may or may not affect it. I can't tell you what it is or whether the date still holds. **Ask the product owner whether the Q1 2027 audit log export commitment still stands, and do it before the call.** If you don't get an answer in time, see the script in section 4.
+
+Separately, your own audit log export commitment to Lena Fox at Granite Insurance (`SLA-77342`, also Q1 2027) carries the same flag. Not a Keystone item, but it's the same feature and quarter — one conversation with the product owner covers both.
+
+### 3. Risks
+
+1. **The flagged commitment is the whole ballgame.** Reaffirming a date that has quietly moved, to a customer who has spent five months on audit prep, is the fastest way to lose this account's trust. This is the one thing to get right.
+2. **Commercial exposure is stacked on top.** Pricing was discussed on 9/25 and audit log export is the feature they're counting on. If the date is soft and pricing is being renegotiated simultaneously, those two collide badly. Know Jordan's position before you're in the room.
+3. **The security review may be an unclosed loop** you flagged yourself a month ago. Nia will likely ask.
+4. **No consolidated account story.** Seven owners, no shared record of outcomes. Highest-probability failure mode is two Brightline people saying different things.
+5. **Thin evidence base for the QBR itself.** You have no documented wins, metrics, or adoption data in these records. Pull those from the product/usage side — the CRM won't give them to you.
+
+### 4. What to say
+
+**If the product owner confirms the date holds:**
+> "Audit log export with Splunk streaming is on track for Q1 2027 — that's what we committed on August 3rd and it stands."
+
+**If it has changed:** let the product owner or Jordan deliver the specifics. Your line is to acknowledge, not to spin.
+
+**If you don't have an answer before the call — use this, and do not improvise past it:**
+> "I know audit log export with Splunk streaming by Q1 2027 is the commitment, and I know how central it is to your audit work. I'm getting you a confirmed status from our product team rather than repeating a date from memory. You'll have it in writing by [specific day]."
+
+That holds the room without creating a new promise. Set a real date and hit it.
+
+**For the rest of the call:**
+- **Open on audit/compliance**, not on a feature tour. It's their priority and it should visibly be yours.
+- **Close the security review loop explicitly** — either report the outcome or commit to a date for it.
+- **Let Jordan own pricing.** Don't let a commercial question get answered by a CS reassurance on the roadmap; that's how a soft date becomes a contractual expectation.
+- **Ask Nia what "done" looks like** for their audit cycle — timeline, auditor, what evidence they need from us. That gives you a concrete deliverable to organize the next quarter around.
+
+---
+
+**Before the call, in order:** (1) ask the product owner about the Q1 2027 audit log export commitment — covers Keystone and Granite; (2) check the security review status from `CRM-93344`; (3) align with Jordan on where pricing stands.
+
+I haven't contacted the product owner or anyone else — that outreach is yours to make. Happy to draft the message to them if useful.

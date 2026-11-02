@@ -1,0 +1,22 @@
+I can't source that for you — and I want to be careful about how I say why.
+
+**What I can see**
+
+- **NOT-20876** (Notion, public roadmap H1 2027, 2026-06-30) still lists **Advanced analytics: Q2 2027**. That's the most recent roadmap document I have access to.
+- **SLA-93532** (Slack #cs, 2026-06-28) is your own commitment: you told Lena Fox at Pinecrest Realty that Advanced analytics (Osprey) would land in the spring release so they could finish their rollout.
+- The rest of the Advanced analytics material I can reach is account-level QBR and usage notes (**CRM-86750** Lumen Labs, **CRM-31062** Vantage Telecom, **CRM-14909** Orchid Hotels, **CRM-11536** Tidewater Ports, plus the Drive analytics docs **DRI-76027**, **DRI-78883**, **DRI-56604**, **DRI-50317**) — customer demand and usage, not planning decisions.
+
+**Why I can't answer the actual question**
+
+There is planning material on Advanced analytics that sits outside my access, so I have no visibility into whether a scope change happened, what the reasoning was, or who signed off. I'm not able to confirm or deny the premise of your question, and I won't guess at reasoning or attribute a decision to anyone from records I can't read. Anything I produced here would be invented.
+
+**What to do**
+
+Ask **the product owner** for Advanced analytics directly — for the decision, the rationale, and the decision-maker. Worth pairing that with a second question, since you have exposure: whether your Pinecrest/Lena Fox spring-release commitment (SLA-93532) still holds. Please don't reaffirm that date to Lena until the product owner confirms it.
+
+Two related commitments of yours carry the same caveat and are worth raising in the same conversation:
+
+- **SLA-77342** — Audit log export to Lena Fox / Granite Insurance, by Q1 2027 (yours)
+- **SLA-12035** — SCIM provisioning to Kai Berg / Umber Studios, by Q1 2027 (Jordan Blake's)
+
+I can draft the note to the product owner covering all three if that's useful.

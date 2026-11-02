@@ -1,0 +1,12 @@
+I can't answer that from what I have access to.
+
+**What I can see:**
+- **NOT-20876** (Public roadmap H1 2027, 2026-06-30) still lists **Advanced analytics: Q2 2027**. There's no cut recorded in it.
+- **SLA-93532** (2026-06-28) is your commitment to Lena Fox at Pinecrest Realty: Advanced analytics (Osprey) in the spring release so they can finish their rollout.
+- The remaining records surfaced are account-side analytics notes and QBRs (CRM-11536, CRM-86750, CRM-14909, CRM-31062, DRI-76027, DRI-56604, DRI-50317, DRI-78883) — customer demand signal, not planning decisions.
+
+**The important flag:** the context tool attaches a notice to your Pinecrest commitment saying a decision exists that I don't have visibility into, which may or may not affect it. I can't tell you what it says, whether it's the cut you're describing, or who made it — I genuinely don't have it, and I'm not permitted to characterize it either way.
+
+So I can't confirm the premise that Advanced analytics was cut, and I can't give you reasoning or a decision-maker.
+
+**What to do:** ask the product owner for Advanced analytics directly — both for the status of the Q2 2027 roadmap line and, specifically, whether your spring-release promise to Lena Fox still holds. Don't reaffirm that date to Pinecrest until you have their answer. Same notice is attached to two of your other commitments worth raising in the same conversation: **SLA-77342** (Audit log export to Lena Fox / Granite Insurance, Q1 2027) and **SLA-12035** (SCIM provisioning, Jordan Blake to Kai Berg at Umber Studios, Q1 2027). Only **SLA-24221** (Offline mode, Priya Shah to Meridian Travel) came back clean.

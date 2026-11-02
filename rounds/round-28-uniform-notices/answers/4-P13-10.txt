@@ -1,0 +1,27 @@
+**Context check:** The SSO (SAML) commitment to Quarry Mining is clean — no notice, no later change found. It's corroborated by the public roadmap (NOT-20876: "SSO (SAML), SP- and IdP-initiated: Q1 2027") and was reconfirmed by Leo Grant to Tom Hale on 2026-07-09 (DRI-36664). Safe to reaffirm.
+
+---
+
+**Draft reply for the AE:**
+
+> Subject: Re: SSO (SAML) timing
+>
+> Hi Tom,
+>
+> Yes — SSO (SAML) is still on track for Q1 2027, exactly as we committed. Nothing has changed since we confirmed it on our July 9 sync.
+>
+> For specifics: the scope is SAML SSO supporting both SP-initiated and IdP-initiated flows, and it sits on our published H1 2027 roadmap for Q1. SCIM provisioning is targeted for the same quarter, in case that's part of your rollout plan.
+>
+> As we get closer, I'd like to get you into the early-access group so your IT team can test against your IdP before general availability. Happy to set up a technical session with our product team in the new year to walk through the integration details and your timeline.
+>
+> Anything else your security review needs from us in the meantime, just say the word.
+>
+> Best,
+> Leo
+
+---
+
+Two notes for you, Leo:
+
+1. I kept the commitment language firm ("still on track," "nothing has changed") since the record supports it, but I framed the early-access offer as an intent rather than a date, so it doesn't create a second commitment to track.
+2. Unrelated to this email, but flagging since it's your account: the **Custom roles** promise to Ironwood Legal (SLA-46650) carries a notice that something outside my visibility may affect it. Check with the product owner before you reaffirm that one to Robin. Worth noting the public roadmap (NOT-20876) currently lists Custom roles as Q2 2027, which is already later than the "before their April reorg" commitment.

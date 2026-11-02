@@ -1,0 +1,30 @@
+## Aster Health — QBR brief
+
+**Headline:** one clear win to lead with; the rest of the file is thin, and I'd treat the churn/pricing thread as the real agenda.
+
+### Where things stand
+Activity has been steady but low-signal all year — recurring touchpoints on sandbox (`DRI-86962`, `CRM-62644`, `CRM-64767`), exports (`CRM-45213`, `CRM-76005`), support queue (`CRM-88906`, `CRM-97035`), dashboards (`CRM-75476`, `DRI-75615`), and NPS (`DRI-30445`). Ownership is scattered across Leo Grant, Sam Lee, Tess Brown, Ana Petrova and you, with no single narrative thread.
+
+Most recent substantive touches: dashboards + search with Omar Haddad on 2026-09-17 (`DRI-75615`), and a pricing conversation on 2026-09-10 (`DRI-53905`). An NPS session is on the calendar for 2026-09-28 (`DRI-36735`) — that lands before or around your call, so its result may change your framing.
+
+### Open commitments
+**Higher API rate limits — delivered.** Priya Shah (AE) committed to Omar Aziz that rate limits would be raised by October (`DRI-86231`, 2026-06-12). Crane shipped 2026-09-20, raising limits for all paid plans (`SLA-26281`). You're ahead of the deadline — lead with this.
+
+That is the only commitment on record for Aster Health. Nothing else outstanding is owed to this account.
+
+### Risks
+1. **Churn keeps surfacing as the next step** — three separate calls closed with "follow up on churn" (`CRM-64767`, `CRM-76005`, `CRM-68765`), and an audit-prep session with Dana Ortiz and Jordan Blake discussed churn directly (`DRI-48323`, 2026-06-13). Nobody appears to have closed that loop.
+2. **Pricing is live and you weren't in the room** — `DRI-53905` (2026-09-10) was a Dana Ortiz internal discussion. Sync with Dana before the QBR so you don't get surprised on commercials.
+3. **Latency raised in June** (`CRM-68765`) with no recorded resolution. Assume it may come back up.
+4. **Contact ambiguity** — the rate-limit commitment names Omar Aziz, while meeting notes consistently show Omar Haddad. Confirm who's who before the call.
+5. **Record quality is the underlying risk.** Every Aster record is a one-line summary with no outcomes, metrics or decisions. I can tell you what was discussed, not what was agreed. Pull usage/support numbers directly before you walk in.
+
+### What to say
+- **Open on delivery:** "We committed to higher API rate limits by October — that shipped September 20th, ahead of schedule, and it applies across your paid plans." Ask Omar what it unblocks on their side.
+- **Convert the open threads into a plan:** name sandbox, exports, dashboards and support queue explicitly, and propose one owner and one date each. The scatter across five internal owners is the thing to fix.
+- **Ask about latency directly** rather than waiting for it.
+- **Don't open pricing** until you've spoken to Dana; if they raise it, take it away rather than negotiating live.
+- **Use the 9/28 NPS result** as your health check if it's in by then.
+
+### Separate flag — not for this call
+Two commitments of yours to *other* accounts have open questions I can't resolve from here: advanced analytics to Lena Fox at Pinecrest Realty (`SLA-93532`) and audit log export to Lena Fox at Granite Insurance (`SLA-77342`). Check with the product owner before reaffirming either — worth doing this week since both are yours.

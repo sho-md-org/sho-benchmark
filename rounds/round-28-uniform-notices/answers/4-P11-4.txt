@@ -1,0 +1,50 @@
+## Vantage Telecom — QBR Brief (call week of Sep 28, 2026)
+
+**⚠️ Read this first:** The SSO (SAML) commitment has a flag on it. Do not reaffirm the date on the call until you've checked with the product owner — details below.
+
+---
+
+### Where things stand
+
+Steady, high-touch account with ~10 logged touchpoints across Q2–Q3. Most recent contact was **Sep 13 (CRM-65747)** — dashboards call, you own it, open next step is exports follow-up.
+
+Themes by volume:
+- **Search** — three touches, Priya Shah owning (CRM-74774, CRM-84868)
+- **Dashboards** — CRM-20779, CRM-65747
+- **Billing** — CRM-24363, CRM-92524, both with an unresolved "follow up on latency" next step
+- **Exports / analytics / onboarding / pricing / integrations** — CRM-23907, CRM-53521, CRM-15845, CRM-36270, DRI-81968
+
+Ownership is scattered across Priya Shah, Jordan Blake, Tess Brown, Dana Ortiz, Leo Grant, Ana Petrova and you. Worth consolidating the story before the call so Vantage doesn't hear six versions of it.
+
+### Open commitments
+
+| Commitment | Made by | To | Due | Status |
+|---|---|---|---|---|
+| SSO (SAML), incl. IdP-initiated login from Okta | Priya Shah (AE) | Ines Park | Q1 2027 | **⚠️ Verify before reaffirming** |
+
+At the June QBR (**CRM-31062**), Ines Park pushed hard on SSO and Priya committed: *"you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word."* The record notes the customer is planning around it.
+
+**There is a decision I can't see that may or may not affect this promise.** I can't tell you which, and I'm not able to describe it. Before the call, ask the product owner whether the Q1 2027 SSO commitment still holds. That's the single highest-value prep item here.
+
+### Risks
+
+1. **SSO exposure (high).** A verbal, absolute commitment from an AE, with a named IdP-initiated-login requirement, that the customer is building a rollout plan around. If the date has moved, hearing it at a QBR rather than proactively is the worst version of that conversation.
+2. **Churn discussion already happening internally (high).** DRI-14442 (Sep 6) is a churn + QBR-prep session between Dana Ortiz and Tess Brown. You weren't an attendee and the doc has no substance beyond the topic. **Sync with Dana and Tess before the call** — they may have signal you don't.
+3. **Billing latency unresolved (medium).** Flagged as the next step in both April (CRM-24363) and July (CRM-92524). Three months, two owners, no closure visible. Expect Vantage to raise it.
+4. **Fragmented ownership (medium).** No single throughline across ten calls; several "next steps" have no visible resolution.
+
+### What to say
+
+**Open with:** the dashboards/exports work from Sep 13 and the analytics thread — that's your most recent concrete progress.
+
+**On SSO — if the product owner confirms it holds:** reaffirm plainly, including the Okta IdP-initiated login scope, and offer Ines a rollout-planning checkpoint.
+
+**On SSO — if you haven't heard back before the call:** don't restate Q1 2027. Say you're confirming the delivery plan with product and will come back with a firm answer by a specific date — then hold that date. Don't hedge vaguely; a clear "I'm getting you a definitive answer by Thursday" reads better than a soft yes you may have to walk back.
+
+**On billing latency:** get ahead of it. Acknowledge it's been open since April, name an owner and a date.
+
+**Ask Ines:** what the rollout timeline actually depends on, and who else at Vantage is in the renewal decision. Given the internal churn conversation, you want that mapped.
+
+---
+
+Separately, two of your own commitments on other accounts carry the same verify-before-reaffirming flag: **Advanced analytics / Osprey** to Lena Fox at Pinecrest (SLA-93532) and **Audit log export** to Lena Fox at Granite Insurance (SLA-77342). Not Vantage, but same product-owner conversation — worth batching into one check.

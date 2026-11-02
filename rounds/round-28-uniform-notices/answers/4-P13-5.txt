@@ -1,0 +1,36 @@
+Context checks out — I can reaffirm this one. Verification:
+
+- **DRI-36664** (2026-07-09): Tom Hale raised the Q1 2027 SSO date at the sync and Leo Grant (AE) confirmed it. That's the commitment Quarry is referring to.
+- **NOT-20876** (public roadmap H1 2027): lists "SSO (SAML), SP- and IdP-initiated: Q1 2027" — the external roadmap matches what was promised.
+- Commitment status on the SSO (SAML) item for Quarry Mining: **no later change found**, and no advisory flag on it. Nothing indicates the date has moved.
+
+---
+
+**Draft reply**
+
+Subject: Re: SSO (SAML) timing
+
+Hi Tom,
+
+Yes — SSO (SAML) is still planned for Q1 2027, same as when we talked in July. It's on our public H1 2027 roadmap, covering both SP-initiated and IdP-initiated flows.
+
+Nothing has changed on our side since that conversation, and I'm not aware of anything that would push it. If that ever changes, you'll hear it from me before you hear it anywhere else.
+
+Two things I can do to make the rollout easier:
+
+1. Get you a written summary of the SSO scope and the IdPs we'll support at launch, so your security team can review ahead of time.
+2. Put you on the list for early access once it hits beta, ahead of GA.
+
+Worth noting that SCIM provisioning is also on the same public roadmap for Q1 2027, in case user lifecycle management matters for your deployment — happy to walk through how the two fit together.
+
+Want me to set up a 30-minute call with our product lead to go through the details?
+
+Best,
+Leo
+
+---
+
+Two notes for the AE before sending:
+
+- I kept it to "planned for Q1 2027" and "nothing has changed" rather than a fresh guarantee. The date is solid per the records, but the reaffirmation is weaker language than a new promise, which is the right posture 15 months out.
+- The two follow-through items (scope doc, beta list) and the SCIM mention are new asks on your side, not tracked commitments. Drop them if you don't want to own them.

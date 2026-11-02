@@ -1,0 +1,31 @@
+## Short answer: none of them — you have no tracked SSO commitments
+
+I searched the SSO records and the commitment register. Every SSO item that touches you is a discussion or notes record, not a promise with a deliverable or date:
+
+- **DRI-18519** — Harbor Clinics SSO questions, you + Ana Petrova (2026-08-08)
+- **DRI-79562** — Norrland AB SSO questions, you + Priya Shah (2026-04-05)
+- **CRM-74174** — Evergreen Bank SSO call, you as owner (2026-08-22); next step is audit prep follow-up
+- **SLA-21939** (2026-05-01), **NOT-29833** (2026-04-01), **NOT-58902** (2026-04-16) — your SSO status updates and notes
+
+None of these record a commitment to a customer on an SSO date or scope, so there's nothing on SSO to be affected.
+
+## But two of your *other* promises are flagged, and one is SSO-adjacent
+
+The commitment register flags these for you before you reaffirm them:
+
+| Commitment | Customer | Source | Made by |
+|---|---|---|---|
+| Advanced analytics (Osprey) in the spring release | Lena Fox, Pinecrest Realty | **SLA-93532** | You |
+| Audit log export by Q1 2027 | Lena Fox, Granite Insurance | **SLA-77342** | You |
+| SCIM provisioning by Q1 2027 | Kai Berg, Umber Studios | **SLA-12035** | Jordan Blake (AE) |
+
+For each of these, there's a decision I don't have visibility into that may or may not change the promise. I can't confirm, deny, or describe it — **check with the product owner before reaffirming any of them to the customer.**
+
+Two things worth your attention:
+
+1. **SCIM provisioning (SLA-12035) is the one to watch if "SSO" is shorthand for identity work in your conversations.** SCIM sits in the same identity/provisioning bucket as SSO, and it's flagged. It's Jordan Blake's promise, not yours, but if you've been fielding Umber Studios' SSO questions you may be the one who ends up restating it.
+2. **Audit log export (SLA-77342) is flagged and your Evergreen Bank SSO call ends in "follow up on audit prep" (CRM-74174).** Different accounts — Granite Insurance vs. Evergreen Bank — so the promise itself doesn't carry over. Just don't let the audit-prep follow-up turn into a restatement of an export timeline.
+
+For contrast: the Offline mode promise to Meridian Travel (**SLA-24221**, Priya Shah) came back clean — no later change found.
+
+**Suggested next step:** one message to the product owner covering SLA-93532, SLA-77342, and SLA-12035 together, asking whether each still holds. Until you hear back, keep SSO conversations at the level of the discussions already on record — that's a position you can hold safely, since you never made a datable SSO promise in the first place. Want me to draft that message?

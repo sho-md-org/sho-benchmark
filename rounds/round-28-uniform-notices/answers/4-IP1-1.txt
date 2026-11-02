@@ -1,0 +1,25 @@
+## Short answer: none of them — you don't have a tracked SSO promise
+
+I checked your commitments and every SSO record you appear on. There's no commitment by you on SSO itself.
+
+**What the SSO records actually are** — all discussion, no promise:
+
+- `SLA-21939` (2026-05-01) — your Slack update on SSO questions
+- `NOT-29833`, `NOT-58902` — your notes, owner you
+- `DRI-18519` (Harbor Clinics), `DRI-79562` (Norrland AB) — meeting notes
+- `CRM-74174` (Evergreen Bank) — call, next step is audit prep
+
+None of these record a dated deliverable to a customer, so there's nothing on SSO to be affected.
+
+**The closest thing to an SSO promise isn't yours:** SCIM provisioning to Kai Berg (Umber Studios) by Q1 2027 (`SLA-12035`) — that's identity/provisioning territory and customers often bundle it with SSO, but it was made by **Jordan Blake (AE)**. It does carry a flag that something outside my visibility may bear on it, so if a customer raises it with you, route it to Jordan and the product owner rather than confirming it yourself.
+
+**Your two actual commitments, both flagged, neither SSO:**
+
+| Commitment | Customer | Due | Source |
+|---|---|---|---|
+| Advanced analytics (Osprey) | Lena Fox, Pinecrest Realty | Spring release | `SLA-93532` |
+| Audit log export | Lena Fox, Granite Insurance | Q1 2027 | `SLA-77342` |
+
+For both, there's a decision I can't see that may or may not change them — I can't tell you which way, and I can't tell whether it changes anything at all. **Check with the product owner before you reaffirm either one to Lena.** Worth noting both are to the same contact, so a single conversation with the product owner covers your exposure there.
+
+One thing to confirm: if by "SSO" you meant the broader identity/access bundle as a customer would use the term, then SCIM (`SLA-12035`) is the one in scope — but the promise-holder to chase is Jordan, not you.

@@ -1,0 +1,29 @@
+## Short answer: none of your tracked commitments are on SSO
+
+I checked every SSO record and the full commitment list. There are **no commitments attributed to you (or anyone) on the SSO feature** — so nothing on SSO is flagged as affected.
+
+**The SSO records I found are all discussion/notes, no promises attached:**
+
+| Record | Date | What it is |
+|---|---|---|
+| `NOT-29833` | 2026-04-01 | Your notes, related: billing |
+| `DRI-79562` | 2026-04-05 | Norrland AB call, you + Priya Shah |
+| `NOT-58902` | 2026-04-16 | Your notes, related: sandbox |
+| `SLA-21939` | 2026-05-01 | Your Slack update, "offline next week" |
+| `DRI-18519` | 2026-08-08 | Harbor Clinics, you + Ana Petrova |
+| `CRM-74174` | 2026-08-22 | Evergreen Bank, next step: audit prep |
+
+## What you may actually be thinking of
+
+Two things in the identity/security area *are* flagged, and they're easy to mentally file under "SSO":
+
+1. **Audit log export** — to Lena Fox / Granite Insurance, by Q1 2027 (`SLA-77342`). **This one is yours**, and it's flagged: a later change may or may not affect it. Before you reaffirm the Q1 2027 date to Granite, **check with the product owner** that it still holds. `CRM-74174` (Evergreen Bank) also has an "audit prep" follow-up, so this may touch two accounts.
+2. **SCIM provisioning** — to Kai Berg / Umber Studios, by Q1 2027 (`SLA-12035`). Also flagged, but **made by Jordan Blake (AE), not you.** SCIM is usually sold alongside SSO, so if a customer raises it with you, route it to Jordan rather than speaking to it yourself.
+
+Separately, your **Advanced analytics (Osprey)** promise to Lena Fox / Pinecrest Realty for the spring release (`SLA-93532`) is flagged too — unrelated to SSO, but it's the same contact name as your Granite Insurance commitment, worth being careful which Lena Fox you're writing to.
+
+Your **Offline mode** item is clean — though note that one was made by Priya Shah, not you (`SLA-24221`, no later change found).
+
+## Suggested next step
+
+If a customer is pressing you on SSO specifically, you're not carrying a dated promise there, so you're free to answer from current product status. Where you do need to be careful is **audit log export**: ask the product owner whether Q1 2027 still holds before you put that date in writing again.

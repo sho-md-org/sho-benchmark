@@ -1,0 +1,27 @@
+I can't answer that one — and I want to be precise about why rather than guess.
+
+## What I can actually see
+
+Nothing in the records available to me says Advanced analytics was cut, and nothing gives a reason or a decision-maker. The most recent planning document I can read still lists it:
+
+- **NOT-20876** (Notion, *Public roadmap H1 2027*, 2026-06-30) — "Advanced analytics: Q2 2027"
+
+So I can't confirm your premise, and I also can't rule it out. Sho flags that there's material bearing on Advanced analytics outside my access, so treating the roadmap entry above as current would be unwise. The exact reasoning and the decision-maker you're asking for aren't something I can retrieve — **the product owner for Advanced analytics is who to ask.**
+
+## The reason this matters for you specifically
+
+You have an open commitment on this feature:
+
+- **SLA-93532** (Slack #cs, 2026-06-28) — you told Lena Fox at Pinecrest Realty that Advanced analytics (Osprey) would land in the spring release so they could finish their rollout.
+
+Please check with the product owner before you reaffirm that date to Lena, and before Pinecrest builds more rollout planning on it.
+
+## One more, while you're there
+
+Your other open commitment carries the same "verify before reaffirming" flag:
+
+- **SLA-77342** — Audit log export to Lena Fox / Granite Insurance, by Q1 2027.
+
+Same advice: confirm with the product owner before restating that timeline. (For contrast, Priya Shah's Offline mode commitment to Meridian Travel shows no later change, so that one looks stable.)
+
+If you'd like, I can draft the note to the product owner covering both features, or draft a holding reply to Lena that doesn't commit to a date until you hear back.

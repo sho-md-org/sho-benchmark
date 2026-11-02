@@ -1,0 +1,18 @@
+## Short answer: none of your SSO promises are affected — because you don't have any SSO commitments on record.
+
+**What I found on SSO (`SLA-21939`, `NOT-29833`, `NOT-58902`, `DRI-18519`, `DRI-79562`, `CRM-74174`):** all six are discussions, notes, and call logs — Q&A sessions with Harbor Clinics, Norrland AB, and Evergreen Bank. None of them contain a dated commitment or deliverable you promised a customer. So there's nothing on SSO proper to re-check.
+
+**But your tracked commitments do have flags, just on other features:**
+
+| Commitment | Source | Status |
+|---|---|---|
+| Advanced analytics (Osprey) to Lena Fox, Pinecrest Realty — by spring release | `SLA-93532` | ⚠️ Flagged |
+| Audit log export to Lena Fox, Granite Insurance — by Q1 2027 | `SLA-77342` | ⚠️ Flagged |
+
+For both, there's something outside my visibility that may or may not change the promise. I can't tell you which way it goes, or even whether it moves at all. **Check with the product owner before you reaffirm either date to Lena Fox** — note she's the contact on both, so a single conversation covers them.
+
+**One adjacent item worth your attention:** `SLA-12035` commits SCIM provisioning to Kai Berg (Umber Studios) by Q1 2027, and it carries the same flag. SCIM is identity provisioning, so it's the closest thing to an "SSO promise" in the commitment set — and if you've been fielding the SSO questions at Evergreen Bank and Harbor Clinics, it may come up in your conversations. It was made by **Jordan Blake (AE)**, not you, so it's Jordan's to resolve with the product owner — but you'd want to know before you speak to it.
+
+`SLA-24221` (Offline mode, Priya Shah → Meridian Travel) is clean — no later change found.
+
+**Suggested next step:** one message to the product owner covering Osprey analytics, audit log export, and SCIM — then you can respond to Lena Fox with confirmed dates rather than restating the originals.

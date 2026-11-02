@@ -1,0 +1,35 @@
+## Short answer
+
+I can't tell you which one is at risk — and that's the actual finding, not a dodge.
+
+Both audit-export commitments came back carrying the **same flag**: a decision I don't have visibility into may or may not affect them. It's attached to Cobalt's and Keystone's identically. Nothing in the records I can read distinguishes their risk level, so any ranking I gave you would be invented. Before you reaffirm either one, check with the product owner for audit log export.
+
+## What I can compare
+
+| | **Cobalt Retail** (CRM-38600) | **Keystone Energy** (DRI-34564) |
+|---|---|---|
+| Date | 2026-07-24 (QBR) | 2026-08-03 (sync) |
+| Promised to | Sam Ortiz | Nia Cole |
+| Scope | CSV export only | Export **+ streaming into Splunk** |
+| Target | Q1 2027 | Q1 2027 |
+| Who promised | **You** — "you have my word" | **Company**, confirmed by Jordan Blake (AE) |
+
+Two things worth correcting in how you framed this:
+
+**Keystone isn't your promise.** Per DRI-34564, Nia Cole reminded the room of an existing company commitment and Jordan Blake confirmed it. You're carrying it, but Jordan owns the reaffirmation.
+
+**Your actual second one is Granite Insurance.** SLA-77342 (2026-05-26) — you told Lena Fox audit log export by Q1 2027 *including SIEM streaming*, tied to her rollout. Same flag, same deadline, and it wasn't in your question. If you're doing an exposure sweep, that's the one that looks forgotten.
+
+## The one real difference in exposure
+
+Cobalt's is the **narrowest** promise — CSV only, a subset of what the public roadmap lists (NOT-20876: "Audit log export incl. SIEM streaming: Q1 2027"). Keystone's and Granite's both lean on the SIEM streaming piece as well, so they have more surface area that needs confirming. That's a scope observation, not a read on the flagged decision.
+
+Offsetting that: Cobalt is where you said *"you have my word,"* and the note records that the customer is planning around it. Highest personal credibility at stake, narrowest technical ask.
+
+## Suggested next steps
+
+1. Ask the audit-log-export product owner whether the Q1 2027 date still holds — cover CSV export and SIEM streaming separately, since your three promises split along that line.
+2. Hold off on reaffirming to Sam Ortiz, Nia Cole, or Lena Fox until that comes back.
+3. Loop Jordan Blake in on Keystone — it's a company commitment he confirmed, not yours to re-commit alone.
+
+Want me to draft the note to the product owner covering all three?

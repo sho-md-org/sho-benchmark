@@ -1,0 +1,55 @@
+# Cobalt Retail — QBR Brief
+
+**Prepared 2026-09-25 · Primary contact: Sam Ortiz · Account owners across records: Jordan Blake (AE), Priya Shah, Omar Haddad**
+
+## ⚠️ Read this before the call
+
+Your Q1 2027 audit log export commitment to Sam Ortiz (`CRM-38600`) carries a flag: **a decision I can't see may have changed this promise.** Sam is planning around it, and you gave your word in writing.
+
+**Do not reaffirm the Q1 2027 CSV export date on this call until you've checked with the product owner for Audit log export (Lark).** That's the single highest-value prep item — ideally resolved before the call, not during it.
+
+## Where things stand
+
+Engagement is steady and broad — roughly ten touchpoints since April across onboarding, dashboards, reporting, notifications, pricing, billing, and roadmap. Nothing in the record reads as an escalation or at-risk signal.
+
+The dominant thread is **audit readiness**. It recurs as the follow-up item from June through August: `CRM-24323` (Jun 12), `CRM-87224` (Jun 23), `DRI-75222` (Aug 11, with Ana Petrova and Omar Haddad), and `CRM-12694` (Aug 4, QBR prep, owner Jordan Blake). Audit log export is the account's center of gravity, not a side request.
+
+Recent activity by month: pricing and onboarding in June, reporting Jul 23, the QBR commitment Jul 24, notifications Aug 1, QBR prep Aug 4, billing Aug 11. **No records after Aug 11** — a six-week gap going into the QBR.
+
+## Open commitments
+
+| Commitment | Source | Owed to | Due | Status |
+|---|---|---|---|---|
+| Audit log export, delivered as CSV | `CRM-38600` | Sam Ortiz | Q1 2027 | ⚠️ Verify with product owner before reaffirming |
+
+That is the only Cobalt Retail commitment on record. Three other flagged commitments surfaced in my search — `SLA-93532` (Advanced analytics, Pinecrest Realty), `SLA-77342` (Audit log export, Granite Insurance), `SLA-12035` (SCIM, Umber Studios) — belong to other accounts. Note the pattern: **Audit log export is promised to at least two customers on the same Q1 2027 horizon**, so whatever you learn from the product owner likely affects Granite Insurance too.
+
+## Risks
+
+**Audit log export timing (high).** Your Q1 2027 promise was specific and personal, made to a customer who is building plans around it, and it's now flagged as possibly affected by a decision outside my visibility. If the date has moved, a QBR is exactly where that needs handling deliberately.
+
+**Single-point dependency (medium).** Audit readiness is the through-line of this relationship. There's no second value story in the records to lean on if the export slips.
+
+**Ownership diffusion (low-medium).** Five different owners appear across ten records — you, Jordan Blake, Priya Shah, Omar Haddad, Tess Brown. Sam may be getting inconsistent answers depending on who he reaches.
+
+**Coverage gap (low).** Every record is a call summary with a "next: follow up on X" line; there's no evidence those follow-ups closed. Unresolved threads include latency, rate limits (twice), trial conversion, and security review.
+
+## What to say
+
+**Open with audit readiness.** It's what Sam cares about. Acknowledge it's been the consistent thread since June and that you've treated it as the priority.
+
+**On the export date — two scripts depending on what you learn:**
+
+*If the product owner confirms Q1 2027 holds:* reaffirm plainly, and offer something concrete — a checkpoint date, a scope confirmation that CSV meets his audit requirement, an early-access or beta window.
+
+*If you haven't heard back, or the date has moved:* do not improvise. Say you're doing a delivery-scope review on the export and will come back with a confirmed date and plan by a specific day — then name that day and hold it. Resist giving a softer version of the old date; a vague reaffirmation you later walk back costs more than a short, honest deferral.
+
+**Name a single owner.** Offer Sam one point of contact for audit log export so he stops getting different answers from different people.
+
+**Close the loose threads.** Bring status on latency, rate limits, and the security review — even "no change" beats silence, and it shows the follow-ups weren't dropped.
+
+**Ask what "audit-ready" means to him.** Get his actual deadline and scope requirement on the record. If his audit is earlier than Q1 2027, you need to know now.
+
+## Suggested next step
+
+Message the Audit log export (Lark) product owner today: does the Q1 2027 CSV commitment to Cobalt Retail still hold? Flag that Granite Insurance (`SLA-77342`) sits on the same feature and horizon, so one answer covers both. I can draft that message if you'd like.

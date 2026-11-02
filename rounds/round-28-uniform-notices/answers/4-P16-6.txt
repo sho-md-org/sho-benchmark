@@ -1,0 +1,47 @@
+## Keystone Energy — QBR Brief
+
+**⚠️ Read this first:** The audit log export commitment to Keystone (`DRI-34564`) is flagged. There's a decision I can't see that may or may not have changed it. **Do not reaffirm the Q1 2027 date on the call until you've checked with the product owner.** That's the single highest-priority pre-call action.
+
+---
+
+### Where things stand
+
+Keystone has been a high-touch account all year, with **audit prep as the dominant thread** — it recurs across at least six touchpoints from May through August (`CRM-90377` 5/08, `CRM-60405` 6/04, `DRI-85107` 6/08, `CRM-15788` 6/10, `CRM-17727` 6/17, `DRI-48005` 6/25, `CRM-56742` 8/17, `DRI-84961` 8/24). Their security/compliance workstream is the center of gravity for this relationship.
+
+Other threads: integrations (`DRI-31273`, 8/10), rate limits (`CRM-60405`, 6/04), onboarding (`CRM-15788`, 6/10), and pricing (raised in `DRI-48005`, 6/25).
+
+Your last QBR prep touchpoint was **8/25** (`CRM-93344`), where you owned the next step: *follow up on security review*. Worth confirming that's closed before the call — it's a month old.
+
+### Open commitments
+
+| Commitment | Source | Owner | Status |
+|---|---|---|---|
+| Audit log export with SIEM streaming (Splunk), by Q1 2027 | `DRI-34564` | Company, confirmed by Jordan Blake (AE) | **⚠️ Flagged — verify before reaffirming** |
+
+Context on the flagged one: in the 8/03 sync (`DRI-34564`), Nia Cole reminded the team that Keystone was told audit log export would land by Q1 2027 with streaming into Splunk, and **Jordan Blake confirmed it on the spot**. That's a confirmed, customer-facing date on their highest-salience feature.
+
+Separately — your own audit log export commitment to Lena Fox at Granite Insurance (`SLA-77342`, Q1 2027) carries the same flag. Same feature, so one conversation with the product owner likely covers both. Your Osprey advanced analytics commitment to Lena Fox at Pinecrest (`SLA-93532`) is also flagged.
+
+### Risks
+
+1. **Reaffirmation risk on audit log export (highest).** Keystone has already been told Q1 2027 twice, the second time confirmed by an AE. If the underlying date has moved and you restate it at the QBR, you compound the exposure. Conversely, if you go silent on it after two confirmations, Nia Cole will read that as a signal. Neither improvising nor dodging is good — get the answer beforehand.
+2. **Ownership churn.** Named owners across Keystone touchpoints include Dana Ortiz, Tess Brown, Priya Shah, Ana Petrova, Omar Haddad, and you. Six owners in five months on one account risks dropped threads and inconsistent messaging.
+3. **Unclosed follow-ups.** Several records end with a "next step" and no visible closure: security review (`CRM-93344`), webhooks (`CRM-56742`), support queue (`CRM-17727`), notifications (`CRM-90377`). Expect Keystone to ask about at least one.
+4. **Pricing surfaced in June** (`DRI-48005`) with no visible resolution — could resurface at a QBR.
+
+### What to say
+
+**Do before the call:**
+- Ask the product owner whether the Q1 2027 audit log export + Splunk streaming commitment still holds. Cover Granite Insurance (`SLA-77342`) in the same ask.
+- Confirm with Jordan Blake what exactly he committed to on 8/03, so your framing matches his.
+- Close the loop internally on the security review follow-up you own.
+
+**On the call:**
+- **Lead with audit/compliance.** It's their priority — open there rather than a generic health recap.
+- **On audit log export:** if the product owner confirms, restate Q1 2027 with Splunk streaming plainly. If they say it's changed, deliver the revised date directly with a reason — don't soften it into ambiguity. If you can't reach them in time, say you're confirming scope and sequencing with the product team and will come back within a specific number of days. Do not repeat the date on the strength of the old record alone.
+- **Name a single point of contact** going forward, given the owner churn. That's a credibility win that costs nothing.
+- **Pre-empt the loose threads** — webhooks, support queue, notifications — with status rather than waiting to be asked.
+
+---
+
+**Caveat on sourcing:** most Keystone records are one-line summaries (topic, owner, next step) without substance. I've flagged the recurring themes accurately, but I can't tell you the *content* of the audit prep discussions or whether those follow-ups closed. If you want firmer ground, Omar Haddad and Sam Lee appear most often alongside you and would fill the gaps fastest. I also found no renewal date, contract value, usage data, or health score in what I can see — if those belong in the QBR, they'll need to come from elsewhere.

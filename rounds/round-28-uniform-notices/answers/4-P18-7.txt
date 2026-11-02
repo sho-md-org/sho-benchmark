@@ -1,0 +1,75 @@
+## Cobalt Retail — QBR Brief
+
+**One flag before you go in:** your Q1 2027 audit log export commitment has a status I can't fully verify. Details in Risks — read that before you prep talking points.
+
+---
+
+### Where things stand
+
+Cobalt Retail is an active, steadily-engaged account with a wide surface area of touchpoints across the last six months. Account contacts on record: **Sam Ortiz** (pushed the audit requirement). Internal owners rotate across Maya (you), Jordan Blake, Priya Shah, Omar Haddad, and Tess Brown.
+
+Recent activity by theme:
+
+| Theme | Record | Date | Internal owner |
+|---|---|---|---|
+| QBR prep | CRM-12694 | 2026-08-04 | Jordan Blake |
+| Billing | DRI-75222 | 2026-08-11 | Ana Petrova, Omar Haddad |
+| Notifications | CRM-35990 | 2026-08-01 | Omar Haddad |
+| Reporting | CRM-94849 | 2026-07-23 | Priya Shah |
+| Pricing | CRM-87224 | 2026-06-23 | Priya Shah |
+| Audit prep | CRM-24323 | 2026-06-12 | Omar Haddad |
+| Onboarding | CRM-16603 / CRM-49779 | 2026-06-15 / 04-27 | Omar Haddad / Priya Shah |
+| NPS | CRM-92187 | 2026-06-09 | Tess Brown |
+| Dashboards | CRM-24697 | 2026-05-26 | Tess Brown |
+| Search | CRM-36268 | 2026-05-22 | Maya Chen |
+| Roadmap | CRM-70221 | 2026-04-20 | Maya Chen |
+| Webhooks | CRM-98822 | 2026-04-01 | Priya Shah |
+
+**Notable pattern:** "audit prep" is the single most persistent thread — it's the stated next step out of the QBR prep call (CRM-12694), the pricing call (CRM-87224), and it reappears in the August billing discussion (DRI-75222). This is the account's center of gravity right now, and it's what Sam will want to talk about.
+
+### Open commitments
+
+**1. Audit log export → Sam Ortiz, by Q1 2027 (CRM-38600, 2026-07-24)**
+Your exact words on the last QBR: *"you'll have it by Q1 2027 as a CSV export, you have my word."* The record explicitly notes **the customer is planning around it**. This is the highest-stakes item on the call — see Risks.
+
+For context, the public H1 2027 roadmap (NOT-20876, dated 2026-06-30) lists "Audit log export incl. SIEM streaming: Q1 2027" — but that document predates the current quarter and I can't treat it as current confirmation.
+
+**2. Follow-ups logged but not closed in the records I can see:**
+- Audit prep follow-up out of CRM-12694 (owner Jordan Blake) — no closure record found
+- Trial conversion follow-up out of CRM-24323 (owner Omar Haddad)
+- Security review follow-up out of CRM-70221 and CRM-36268 — both yours, both still open in the trail
+- Rate limits follow-up out of CRM-16603 and CRM-24697
+
+Worth confirming internally which of these actually closed; the CRM trail doesn't show resolution.
+
+### Risks
+
+**🔴 The audit log export commitment may have moved.** There is a decision affecting this feature that sits outside my visibility. I can't tell you what it says, whether it changes your Q1 2027 date, or even whether it's relevant — only that it exists and touches this promise.
+
+What this means practically: **do not reaffirm the Q1 2027 CSV export date on the call until you've checked with the product owner.** You gave Sam your word on this in writing, and he's building his plan around it. If the date has moved and you restate it, you compound a personal commitment that's already load-bearing. If it hasn't moved, you've lost nothing by checking.
+
+Action before the call: get a yes/no from the product owner on whether Q1 2027 CSV export still holds.
+
+**🟡 Ownership churn.** Five different internal owners across twelve touchpoints in six months. Sam may perceive discontinuity. Worth naming proactively.
+
+**🟡 Unclosed follow-up loops.** Several "next: follow up on X" items have no visible closure. If Sam raises any of these, you don't want to be caught unaware.
+
+**🟡 Pricing + billing both active.** CRM-87224 (June) and DRI-75222 (August) suggest a live commercial conversation. Sync with Priya and Ana before the call so you're not contradicted.
+
+### What to say
+
+**Open with continuity, not features.** Acknowledge the owner rotation directly — "I want to make sure you're not re-explaining context to us" — and name yourself as the through-line.
+
+**On audit log export — two scripts depending on what the product owner tells you:**
+
+*If the date holds:* Reaffirm plainly and give Sam a concrete next checkpoint, not just a quarter. He's planning around it; a date plus a check-in beats a date alone.
+
+*If the date has moved, or you haven't been able to confirm:* Don't improvise on the call. Say something like — *"I know audit log export is what you're planning against, and I gave you a firm date last quarter. I want to give you an updated answer with the same confidence, not a softer one, so let me come back to you within [X] days with specifics from the product team."* This buys you a real answer without walking back a promise you may not need to walk back. Set the follow-up date on the call and hold it.
+
+**On the audit thread generally.** It's been the recurring next step since June. Come with a consolidated status across audit prep, the export commitment, and the security review follow-up you own (CRM-70221, CRM-36268) — treating it as one workstream rather than four loose threads will land well.
+
+**Close by asking what's changed on his side.** The records show what Cobalt discussed with us but very little about their internal drivers. Worth surfacing.
+
+---
+
+**Before the call:** (1) product owner — does Q1 2027 audit log export still hold; (2) Jordan Blake — audit prep follow-up status; (3) Priya/Ana — where pricing and billing actually stand.

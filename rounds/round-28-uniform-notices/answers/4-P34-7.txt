@@ -1,0 +1,55 @@
+## Aster Health QBR Brief
+
+A caveat up front: the Aster Health records in Sho are one-line call/meeting stubs (topic + owner + next step), not substantive notes. So the "where things stand" section below is a reliable map of *what's been discussed and by whom*, but it won't give you numbers or specifics. The commitment data is solid.
+
+### 1. Where things stand
+
+Recurring themes across ~13 touchpoints, April–September 2026:
+
+| Theme | Records | Notes |
+|---|---|---|
+| Sandbox | DRI-86962, CRM-62644, CRM-64767 | Heavy April–May activity, then goes quiet |
+| Exports | CRM-45213, CRM-76005 | Both 2026-04-18, owner Leo Grant |
+| Dashboards | CRM-57156, CRM-75476 | Most recent was 2026-07-21 (Sam Lee) |
+| Latency | CRM-16329, CRM-68765 | Two calls a week apart in mid-June |
+| Audit prep | DRI-48323 | 2026-06-13, Dana Ortiz + Jordan Blake |
+| NPS | CRM-26522, DRI-36735 | DRI-36735 is dated **2026-09-28** — upcoming |
+| Hosting | CRM-81799 | Tess Brown |
+| QBR prep | DRI-70983, CRM-70994 | Last prep touch 2026-06-03, owner you |
+
+**Contacts:** Omar Haddad and Ana Petrova appear in the Drive meeting notes (DRI-70983, DRI-36735, DRI-86962). Separately, Omar Aziz is the contact on the API commitment call (DRI-86231) — different person, don't merge them in the deck.
+
+**Heads-up on sequencing:** DRI-36735 (NPS + audit prep, with Omar Haddad and Ana Petrova) is dated 2026-09-28 — that lands *before* your call. Its output should feed the QBR, so hold the final brief until after it.
+
+### 2. Open commitments
+
+**Higher API rate limits — to Omar Aziz, due October. ✅ Shipped early.**
+Priya Shah (AE) confirmed this in the 2026-06-12 sync (DRI-86231) after Omar raised it. Crane went live 2026-09-20, raising API rate limits for all paid plans (SLA-26281). This is your clean win — delivered ~6 weeks ahead of the October date.
+
+This is the **only** open commitment on the Aster Health account. Nothing else is outstanding to them.
+
+### 3. Risks
+
+- **Churn is the dominant follow-up thread.** Four separate records route to churn as the next step (CRM-64767, CRM-76005, CRM-68765, and the audit-prep meeting DRI-48323). That's the strongest signal in the file and it's not concentrated in one topic — it follows sandbox, exports, *and* latency conversations. Treat this as the real subject of the QBR.
+- **Latency.** Two calls eight days apart in June (CRM-16329, CRM-68765), both handed off — one to security review, one to churn. Unresolved as far as the records show, and never revisited after June.
+- **Account ownership is fragmented.** Eight different owners across thirteen records (you, Leo Grant, Ana Petrova, Priya Shah, Tess Brown, Sam Lee, Dana Ortiz, Jordan Blake). No single thread of continuity — which may be *why* churn keeps surfacing.
+- **Engagement has thinned.** Nine records April–June, three July–September. The cadence dropped off after the June audit-prep meeting.
+- **Open loops never closed in the records:** security review (CRM-26522, CRM-16329), SSO questions (CRM-57156), support queue (CRM-70994, your own follow-up from June), hosting (CRM-81799).
+
+### 4. What to say
+
+**Lead with delivery.** "We committed to higher API rate limits by October — that shipped September 20, ahead of schedule." Concrete, on the record, and it answers the specific thing Omar Aziz escalated in June. This is the one place you can speak with full confidence.
+
+**Then get ahead of latency.** Don't wait for them to raise it. Acknowledge the two June conversations, say where it landed, and bring a status — the records show it going into a security review and never coming back out. Find that answer before the call; an unanswered latency question sitting next to a churn signal is your biggest exposure.
+
+**Name the coverage problem yourself.** Offer a single point of contact (you) going forward. Eight owners in six months is something they've almost certainly felt, and volunteering the fix is much stronger than defending it.
+
+**Close the stale loops explicitly.** Come with a one-line status on the support queue, SSO, and hosting. These are small, but they're your own outstanding follow-ups and clearing them demonstrates the continuity you're promising.
+
+**Use the Sept 28 NPS session as input, not a separate track.** Whatever score and audit-prep feedback comes out of DRI-36735 should shape the QBR narrative directly.
+
+### One thing outside this brief
+
+Three of your team's commitments to *other* accounts surfaced alongside this request and carry flags in Sho — including two of your own: Advanced analytics to Lena Fox (Pinecrest Realty, SLA-93532) and Audit log export to Lena Fox (Granite Insurance, SLA-77342). None touch Aster Health, so they don't belong in this deck. But if either comes up elsewhere, **check with the product owner before reaffirming the timeline** — Sho flags that something may have changed on both. Worth a note in your own queue.
+
+**Gap to close before the call:** the records give you topics, not substance — no ARR, renewal date, usage trend, or current NPS. If you have those elsewhere, they're what turns this outline into a QBR.

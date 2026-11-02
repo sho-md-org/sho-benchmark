@@ -1,0 +1,20 @@
+I can't source that one for you — and I want to be precise about why rather than guess.
+
+**What I can see**
+
+- **NOT-20876** (public roadmap H1 2027, 2026-06-30) still lists **Advanced analytics: Q2 2027**. Nothing in it marks the feature as cut.
+- **NOT-74204** ("Analytics," 2026-07-02) is just a stub — notes owned by **Ana Petrova**, no decision content.
+- **NOT-85086** ("Roadmap," 2026-09-25) is your own stub; also no content.
+- Account-level records (**CRM-11536** Tidewater Ports, **CRM-86750** Lumen Labs, **CRM-14909** Orchid Hotels, **CRM-31062** Vantage Telecom, plus the Drive analytics docs **DRI-76027/56604/50317/78883**) are customer-side notes, not planning decisions.
+
+**What I can't see**
+
+Sho flags that there's a record bearing on Advanced analytics that's outside my access, and I'm not able to confirm, deny, or characterize what it says. So I can't tell you whether it was cut, the reasoning, or who decided — anything I offered there would be invention. The premise of your question may well be right; I just can't verify it from what's in front of me.
+
+**One thing worth acting on**
+
+You have an open commitment on this exact feature: **SLA-93532** (2026-06-28) — you told **Lena Fox at Pinecrest Realty** that Advanced analytics (Osprey) would land in the spring release so they could finish their rollout. That promise carries the same flag. I'd hold off on reaffirming the spring date to Lena until you've checked with the product owner — **Ana Petrova** is the name attached to the Analytics notes and is the natural person to ask.
+
+Two other commitments of yours/your team's carry the same flag, if you're doing a sweep: **SLA-77342** (Audit log export, Lena Fox / Granite Insurance, Q1 2027 — yours) and **SLA-12035** (SCIM provisioning, Kai Berg / Umber Studios, Q1 2027 — Jordan Blake's). Priya Shah's Offline mode promise (**SLA-24221**) is clean.
+
+Want me to draft the note to Ana asking whether the spring commitment to Pinecrest still holds?

@@ -1,0 +1,49 @@
+## Aster Health — QBR Brief
+
+**Heads-up on sourcing:** the Aster records are mostly one-line call stubs (topic + owner + next step), no ARR, health score, or usage data in what I can see. Everything below is drawn from those; where I'm inferring, I say so.
+
+### Where things stand
+
+Recurring themes across the last two quarters, by volume:
+
+- **Sandbox** — three touches in May (DRI-86962 4/12, CRM-62644 5/10, CRM-64767 5/17), owners rotating across you, Ana Petrova, Dana Ortiz. Went quiet after mid-May.
+- **Exports** — two calls same day, 4/18 (CRM-45213, CRM-76005), both owned by Leo Grant.
+- **Dashboards** — 4/19 (CRM-57156) and again 7/21 (CRM-75476), the more recent one owned by Sam Lee.
+- **Rate limits / latency** — DRI-69821 (4/24), CRM-68765 (6/22), CRM-28889 (7/05).
+- **Audit prep** — DRI-48323 (6/13), and it keeps surfacing as the next step on other calls.
+- **SSO questions** — DRI-46065 (8/07), the most recent substantive item.
+- **NPS** — DRI-36735 is dated **9/28**, i.e. after your call. Either it's scheduled or the date is wrong; worth checking before you reference NPS on the call.
+
+Your own last QBR-prep touch was CRM-70994 (6/03), with next step "follow up on support queue." I see no record closing that loop — that's a gap to fill before the call.
+
+### Open commitments
+
+**One commitment on record for Aster, and it's good news:**
+
+| Commitment | Made by | Due | Status |
+|---|---|---|---|
+| Higher API rate limits | Priya Shah (AE), reconfirmed to Omar Aziz at the 6/12 sync (DRI-86231) | October 2026 | **Shipped** — Crane went live 9/20, rate limits raised for all paid plans (SLA-26281) |
+
+You can state this plainly and without hedging: delivered ahead of the October commitment. It's your strongest opening.
+
+I found no other open commitments to Aster Health in the records available to me.
+
+### Risks
+
+1. **"Churn" is the recurring next-step tag.** It appears on CRM-64767, CRM-76005, CRM-68765, DRI-48323, and DRI-46065 — spanning May through August, across four different owners. No record explains *why*. This is the single thing I'd want answered before the call, and the records don't answer it. Ask Leo Grant or Jordan Blake directly.
+2. **Ownership churn on the account.** Aster touches are spread across you, Leo Grant, Sam Lee, Ana Petrova, Tess Brown, Dana Ortiz, and Jordan Blake. Nobody has consistent narrative ownership, which is likely why threads (sandbox, exports) trail off.
+3. **Dropped threads.** Sandbox (since 5/17), exports (since 4/18), and hosting (CRM-81799, 5/11, Tess Brown, next step "follow up on hosting") all go cold with no resolution recorded. If Omar or Ana raises any of these, you'll be answering cold.
+4. **Audit prep is live and unresolved.** It's the most persistent forward-looking item on the account. Expect it to come up.
+
+### What to say
+
+- **Open with the win:** "The API rate limit increase you asked about in June shipped on September 20 — ahead of the October date we gave you." Concrete, on time, exactly what Omar raised at the 6/12 sync.
+- **Address latency/performance proactively.** You discussed it in April and June; pair it with the rate limit ship as a single performance story.
+- **Ask about audit prep explicitly.** Get their timeline and what they need from Brightline. This is the topic most likely to define next quarter.
+- **Reopen sandbox and exports on your terms** — acknowledge they went quiet and ask whether they're still needed, rather than waiting to be asked.
+- **Don't bring up NPS** unless you've confirmed DRI-36735 is real and current.
+- **Do the pre-work:** close out the support-queue follow-up from CRM-70994, and get a straight answer on the churn flag. Going in without that is the main risk to the call.
+
+### One thing outside this account
+
+Separately from Aster: two commitments you personally made — advanced analytics to Lena Fox at Pinecrest Realty (SLA-93532) and audit log export to Lena Fox at Granite Insurance (SLA-77342) — are flagged as possibly affected by a decision I don't have visibility into. Neither touches Aster, so it doesn't change this brief, but check with the product owner before you reaffirm either of those to the customer.

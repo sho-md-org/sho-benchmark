@@ -1,0 +1,29 @@
+## Short answer: I can't tell you which one is at risk — both are flagged the same way
+
+Both audit-export promises carry an identical notice in Sho: *a change I can't see may or may not affect the promise, and I should check with the product owner before either of them is reaffirmed.* There's no visible signal that separates them, so any ranking I gave you would be invented. Treat both as unconfirmed until the product owner answers.
+
+One correction to the framing of your question, though: **only one of these two is actually yours.**
+
+| | Cobalt Retail | Keystone Energy |
+|---|---|---|
+| Source | `CRM-38600` (QBR, 2026-07-24) | `DRI-34564` (sync, 2026-08-03) |
+| Who promised | **Maya Chen (you)** — "you have my word" | Company commitment, **confirmed by Jordan Blake (AE)** to Nia Cole |
+| Customer contact | Sam Ortiz | Nia Cole |
+| Scope | Audit log export, **CSV** | Audit log export **+ streaming into Splunk** |
+| Date | Q1 2027 | Q1 2027 |
+| Sho status | Flagged — ask product owner | Flagged — ask product owner |
+
+So the Keystone conversation needs to be coordinated with Jordan Blake, not owned by you unilaterally.
+
+## Two things worth flagging that aren't about the hidden change
+
+1. **The Keystone scope is strictly larger.** Cobalt was promised a CSV export; Keystone was promised export *plus* SIEM streaming into Splunk. That's more moving parts and a dependency Cobalt doesn't have — an inherent delivery risk visible right in the records, independent of anything Sho is withholding. Worth raising with the product owner as its own question.
+2. **You have a third audit-export promise.** `SLA-77342` — audit log export to Lena Fox at Granite Insurance, also Q1 2027, also flagged. You asked about two; there are three on the same feature and the same date. Whatever the product owner tells you probably applies to all three, so ask once and cover the set.
+
+(Separately, `SLA-93532` — your Advanced analytics / Osprey promise to Lena Fox at Pinecrest Realty for the spring release — is also flagged. Not audit-export, but it's yours and it's outstanding.)
+
+## What I'd do
+
+Send the product owner one message covering all three audit-export commitments — Cobalt (`CRM-38600`), Keystone (`DRI-34564`, cc Jordan Blake), Granite (`SLA-77342`) — asking whether the Q1 2027 date still holds and whether the Splunk streaming piece specifically is still in scope. Until that comes back, don't re-confirm the date to Sam Ortiz, Nia Cole, or Lena Fox; if any of them pushes, "I'm reconfirming the timeline internally and will come back to you this week" is accurate and safe.
+
+Want me to draft that message to the product owner?

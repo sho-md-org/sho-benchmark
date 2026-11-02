@@ -1,0 +1,31 @@
+## Short answer: none of your tracked promises are SSO promises
+
+I checked every SSO record and every commitment attributed to you. There is no commitment on SSO itself in the system.
+
+**The SSO records are discussions, not promises:**
+
+| Record | What it is |
+|---|---|
+| `SLA-21939` (2026-05-01) | Your Slack update on SSO questions |
+| `NOT-29833`, `NOT-58902` (April) | Your Notion notes, SSO questions |
+| `DRI-79562` (Norrland AB), `DRI-18519` (Harbor Clinics) | Meeting notes you attended |
+| `CRM-74174` (Evergreen Bank, 2026-08-22) | Your call; next step is audit prep follow-up |
+
+None of these record a dated commitment to a customer, so there's nothing on SSO to be affected.
+
+## What is flagged, and why it may matter to you
+
+Two of the flagged commitments sit close enough to SSO that customers often bundle them into an "SSO conversation," so I want to name them explicitly:
+
+- **`SLA-12035` — SCIM provisioning** to Kai Berg (Umber Studios), by Q1 2027. Made by **Jordan Blake (AE)**, not you. SCIM is identity provisioning and usually rides alongside SSO in the same buying discussion.
+- **`SLA-77342` — Audit log export** to Lena Fox (Granite Insurance), by Q1 2027. **Yours.** Relevant because your Evergreen Bank SSO call (`CRM-74174`) has an audit-prep follow-up attached.
+
+Also flagged, though not identity-related: **`SLA-93532` — Advanced analytics (Osprey)**, spring release, to Lena Fox (Pinecrest Realty). Yours.
+
+On all three, a decision exists that I can't see and that may or may not change the promise. I can't tell you what it is or whether it actually affects any of them. **Before you reaffirm any of these to a customer, check with the product owner that the promise still holds.**
+
+One commitment came back clean: **`SLA-24221` — Offline mode** to Tom Hale (Meridian Travel), by Q2, made by Priya Shah. No later change found.
+
+## Suggested next step
+
+If the SSO question came from a specific account, tell me which one and I'll trace that thread directly. Note that Lena Fox appears on two different accounts here — Pinecrest Realty (`SLA-93532`) and Granite Insurance (`SLA-77342`) — so if you're drafting to Lena, confirm which account you mean before sending.

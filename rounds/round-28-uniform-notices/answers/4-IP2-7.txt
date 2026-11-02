@@ -1,0 +1,27 @@
+I can't answer that one — and the shape of the question is exactly what I have to be careful about.
+
+**What I can see**
+
+The published roadmap (NOT-20876, 2026-06-30) lists SSO as a single line item: *"SSO (SAML), SP- and IdP-initiated: Q1 2027."* SP- and IdP-initiated aren't tracked separately there.
+
+Two commitments promise it, both from Priya Shah (AE), and both call out IdP-initiated explicitly:
+
+- **Vantage Telecom** (CRM-31062, 2026-06-08) — Ines Park pushed on SAML; Priya: *"you'll have it by Q1 2027, including IdP-initiated login from Okta, you have my word."* Customer is planning around it.
+- **Umber Studios** (CRM-62434, 2026-08-17) — Priya committed SAML by March *with IdP-initiated sign-in*. Logged as a **renewal condition**.
+
+**Why I can't confirm the IdP-initiated detail**
+
+Both of those commitments come back flagged: there's a decision affecting them that sits outside what I'm cleared to see. I'm not able to confirm, deny, or narrow down what it covers — and answering "yes, it's the IdP-initiated part" or "no, that part's fine" would do exactly that, either way. So I can't scope it for you, even to rule the piece in or out.
+
+**What to do**
+
+Take it to the product owner for SSO before you reaffirm anything to either account. The question worth asking them is the specific one you're already asking: *does the Q1 2027 commitment still hold for IdP-initiated specifically, or only SP-initiated?* That's the detail both customers were promised by name.
+
+Two things to weight when you raise it:
+
+1. Umber Studios is a **renewal condition**, so a scope change there has contract consequences, not just expectation-management ones.
+2. Priya made both promises, so loop her in — she's the one who said "you have my word," and Vantage has an open SSO follow-up thread already (CRM-57082, 2026-09-19).
+
+Until you hear back, I'd avoid restating the IdP-initiated detail to either customer, including in a "just checking in" note.
+
+Unrelated to SSO, three other commitments in your orbit came back with the same flag — Advanced analytics/Osprey to Pinecrest (SLA-93532, yours), Audit log export to Granite Insurance (SLA-77342, yours), and SCIM to Umber Studios (SLA-12035, Jordan Blake). Since Umber now has two flagged items against it, that account may be worth a single consolidated check with product rather than piecemeal ones.

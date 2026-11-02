@@ -1,0 +1,28 @@
+## Short answer: none — you have no SSO promises on record
+
+I searched the SSO material and the commitment register. The SSO records touching you are all discussion notes, not promises:
+
+- `DRI-18519` — Harbor Clinics, SSO questions + notifications (2026-08-08)
+- `DRI-79562` — Norrland AB, with Priya Shah (2026-04-05)
+- `SLA-21939` — your Slack update on SSO questions (2026-05-01)
+- `NOT-29833`, `NOT-58902` — Notion notes you own (2026-04)
+- `CRM-74174` — Evergreen Bank call, next step "follow up on audit prep" (2026-08-22)
+
+None of these carries a commitment to a customer on an SSO date or deliverable. Other SSO notes in the system are owned by Jordan Blake (`NOT-29159`), Sam Lee (`SLA-95210`), and Leo Grant (`NOT-40327`), not you.
+
+## What *is* flagged, and why it probably prompted the question
+
+Two commitments of yours are flagged — both on identity/compliance-adjacent features that people often bundle with "SSO," which may be why this came up:
+
+| Commitment | Source | To | Status |
+|---|---|---|---|
+| Advanced analytics (Osprey) in the spring release | `SLA-93532` | Lena Fox, Pinecrest Realty | ⚠️ Flagged |
+| Audit log export by Q1 2027 | `SLA-77342` | Lena Fox, Granite Insurance | ⚠️ Flagged |
+
+For each, Sho's notice says a decision exists that I can't see and that may or may not change the promise. I can't confirm, deny, or describe that decision — and neither should you, since I can't tell you what it is. **Before reaffirming either one to the customer, check with the product owner that the promise still holds.**
+
+One adjacent item worth knowing about, though it isn't yours to answer for: SCIM provisioning for Kai Berg (Umber Studios), Q1 2027, committed by Jordan Blake (`SLA-12035`), is flagged the same way. SCIM usually ships alongside SSO, so if a customer asks you about it, route them to Jordan rather than answering directly.
+
+Everything else in your register is clean: Offline mode for Tom Hale at Meridian Travel (`SLA-24221`, Priya Shah's commitment) shows no later change.
+
+If "SSO" in your question was shorthand for a specific customer conversation — Harbor Clinics or Evergreen Bank, say — tell me which and I'll re-check that account specifically.

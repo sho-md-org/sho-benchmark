@@ -1,0 +1,52 @@
+# Harbor Clinics — QBR Brief
+*Prepared 2026-09-25 · sources cited inline*
+
+## Where things stand
+
+Harbor Clinics is an active, multi-threaded account with steady contact across CS, AE, and support — roughly monthly touchpoints since April. Recent activity clusters around three themes:
+
+- **Mobile app** — most recent call, 2026-09-21, owner Sam Lee; next step was explicitly "follow up on QBR prep" (`CRM-49374`). Also discussed internally 2026-09-08 (`DRI-35782`).
+- **Churn / retention** — three internal discussions in the last ~9 weeks: 2026-07-20 (`DRI-17076`, with analytics), 2026-09-06 (`DRI-26772`, with sandbox), 2026-09-11 (`DRI-17950`, you and Tess Brown, with dashboards). This is the most-repeated internal topic on the account.
+- **Compliance / audit** — audit prep call 2026-05-14 (`CRM-35862`, next step: exports), support-queue + audit prep 2026-08-19 (`DRI-20995`), onboarding call that also routed back to audit prep 2026-07-24 (`CRM-48825`).
+
+Other threads on file: roadmap reviews 2026-06-14 and 2026-08-14 (`CRM-41255`, `CRM-28952` — next step there was a **case study**, worth confirming), integrations (`CRM-97969`, `CRM-75336`), sandbox (`CRM-36695`, `DRI-18426`), pricing/billing (`DRI-40615`), latency (`CRM-94239`), notifications (`CRM-73374`).
+
+⚠️ One caveat on the record quality: most CRM/Drive entries are one-line stubs with topic + owner and no substance or outcome. Treat the themes above as reliable, but don't walk into the QBR assuming you know *what was decided* on any of them — verify live with the owners named.
+
+## Open commitments
+
+| Commitment | To | Made by | Due | Status |
+|---|---|---|---|---|
+| Data retention controls | Ines Park (Harbor Clinics) | Jordan Blake (AE) | Q1 2027 | Confirmed, no later change found (`DRI-80868`) |
+
+This is the only tracked commitment to Harbor Clinics. Ines Park raised it in the 2026-05-15 sync and Jordan confirmed it on the spot. It's consistent with the public roadmap, which also lists Data retention controls as Q1 2027 (`NOT-20876`) — **safe to reaffirm on the call.**
+
+**One open question, not a commitment:** Ada Moss asked about EU data residency on 2026-06-09 and was told we were exploring it with no dates (`CRM-89966`). The public roadmap has since published EU data residency as Q1 2027 (`NOT-20876`). Since that's a published date, you can update her — but frame it as "now on the public roadmap for Q1 2027," not as a commitment we made to them.
+
+## Risks
+
+1. **Retention signal.** Churn has come up in three separate internal conversations in nine weeks, twice in September alone. Whatever is driving that, it is the QBR's real agenda. Go in knowing the answer from Leo Grant / Tess Brown before the call.
+2. **Ownership churn on our side.** Eight different owners appear across Harbor's threads (Sam Lee, Leo Grant, Priya Shah, Dana Ortiz, Tess Brown, Jordan Blake, Omar Haddad, Ana Petrova, plus you). No single consistent owner is visible in the records. Customers feel this as "we keep re-explaining ourselves."
+3. **Dangling follow-ups.** Several "next steps" have no visible closure: exports (from audit prep), case study (from the August roadmap call), and QBR prep itself (from the September mobile-app call). Expect at least one of these to be raised back at you.
+4. **Compliance timing.** Their audit prep interest plus the Q1 2027 retention-controls date means their audit cycle may land before or near delivery. Worth asking directly when their audit window is.
+
+## What to say
+
+- **Open by naming the commitment you're keeping:** "Data retention controls are on track for Q1 2027 — that's what Jordan confirmed to Ines in May, and it's on our public roadmap." This is your strongest opening because it's verifiable on both sides.
+- **Update Ada on EU data residency:** now published for Q1 2027, an upgrade from "exploring, no dates" in June.
+- **Ask, don't assert, on the recent threads** — mobile app, sandbox, analytics/dashboards. You have topics but not outcomes; let them tell you where each landed.
+- **Close your own loops proactively:** exports, the case study, and any open support-queue items. Bringing these up first is cheaper than being asked.
+- **Probe the retention risk indirectly:** ask what would make the next 12 months a clear win for them, and who else on their side needs to see value.
+
+**Do not commit to anything new on this call** beyond retention controls without checking with the owner first — especially on analytics or audit/export features.
+
+## One flag outside Harbor Clinics
+
+Two of your *own* commitments on other accounts are flagged as potentially affected by a decision I can't see, and should not be reaffirmed as-is:
+
+- **Advanced analytics (Osprey), spring release** → Lena Fox, Pinecrest Realty (`SLA-93532`)
+- **Audit log export, Q1 2027** → Lena Fox, Granite Insurance (`SLA-77342`)
+
+Check with the product owner before restating either. Neither touches the Harbor QBR, but Lena Fox appears on both and you may see her before next week.
+
+Want me to draft the QBR deck outline or a pre-call email to Ines and Ada from this?

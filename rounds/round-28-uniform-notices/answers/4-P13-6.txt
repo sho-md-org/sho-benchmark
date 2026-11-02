@@ -1,0 +1,31 @@
+Context checks out, so this is a straightforward reaffirm:
+
+- **DRI-36664** (2026-07-09 sync): Tom Hale raised the Q1 2027 SSO date and Leo Grant confirmed it. No later change to that commitment.
+- **NOT-20876** (public roadmap H1 2027): "SSO (SAML), SP- and IdP-initiated: Q1 2027" — the public roadmap still matches what was promised.
+
+Draft reply:
+
+---
+
+**Subject:** Re: SSO (SAML) timing
+
+Hi Tom,
+
+Yes — SSO (SAML) is still planned for Q1 2027, same as what we confirmed on our July 9 call. It's on our public H1 2027 roadmap, covering both SP-initiated and IdP-initiated flows.
+
+A couple of things that may be useful as you plan on your side:
+
+- SCIM provisioning is also targeted for Q1 2027, if you want user lifecycle management landing alongside SSO.
+- Once we're closer and have a firm release window, I'd like to get your IdP details (Okta, Entra, etc.) from your IT team so we can line up a configuration session rather than have you wait in the general queue.
+
+Happy to set up a short call if you'd like to walk through the rollout plan with your security team.
+
+Best,
+Leo Grant
+
+---
+
+Two notes for the AE:
+
+1. The Q1 2027 date is a quarter-level roadmap target, not a contractual date. The draft says "planned for" and "targeted" deliberately — worth keeping that phrasing unless you have a signed commitment I don't see.
+2. Separately, and not for this email: you have an open **custom roles** commitment to Ironwood Legal (SLA-46650). Before reaffirming that one to anyone, check with the product owner that it still holds — I can't verify its current status.
